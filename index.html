@@ -202,7 +202,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • live draft + immediate post-draft scan + weekly command center • v2.3</div>
+    <div class="sub">Multi-manager beta • live draft + immediate post-draft scan + weekly command center • v2.4</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -395,7 +395,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
+          Live Sleeper roster/injury status and trending activity are automatic. v2.4 also filters inactive, historical, and unsigned NFL free-agent records from recommendations. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
         </div>
       </div>
     </aside>
@@ -403,7 +403,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.3 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
+  v2.4 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now filters stale/historical player records and adds league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -555,13 +555,46 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return 7;
   }
 
+  const blockedHistoricalPlayers = new Set([
+    'toddgurley',
+    'antoniobrown',
+    'julianedelman'
+  ]);
+
+  function isRecommendationEligiblePlayer(p) {
+    if(!p) return false;
+
+    const name=norm(pName(p));
+    if(blockedHistoricalPlayers.has(name)) return false;
+
+    // Sleeper's master player database contains historical/stale records whose
+    // search_rank can still look surprisingly strong. Never recommend an
+    // explicitly inactive player.
+    if(p.active === false) return false;
+
+    const status=String(p.status||'').toLowerCase();
+    const allowedStatuses=new Set([
+      '', 'active', 'injured reserve', 'physically unable to perform',
+      'non football injury', 'suspended'
+    ]);
+    if(!allowedStatuses.has(status)) return false;
+
+    // For draft/waiver recommendations, require a current NFL team.
+    // Legitimate unsigned NFL free agents can remain in Sleeper's player
+    // database, but they should not surface as "steals" until they sign.
+    const team=String(p.team||'').trim().toUpperCase();
+    if(!team || team==='FA') return false;
+
+    return true;
+  }
+
   function dynamicPlayerBoard() {
     const out=[];
     Object.entries(state.players).forEach(([id,p])=>{
       let pos=String(p.position||'').toUpperCase();
       if(pos==='DST') pos='DEF';
       if(!['QB','RB','WR','TE','K','DEF'].includes(pos)) return;
-      if(p.status && !['Active','Injured Reserve','Physically Unable to Perform'].includes(p.status)) return;
+      if(!isRecommendationEligiblePlayer(p)) return;
       const name=pName(p);
       const n=norm(name);
       let sleeperRank=Number(p.search_rank);
@@ -1220,6 +1253,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     const cutoff=postDraftMarketCutoff();
     const steals=pool
       .filter(b=>!b.wasDrafted)
+      .filter(b=>b.team && b.team!=='FA')
       .filter(b=>['RB','WR','TE','QB'].includes(b.pos))
       .map(b=>({...b,stealScore:postDraftStealScore(b,ctx)}))
       .filter(b=>b.ecrRank<=cutoff+25 || b.trendAdds>=250 || b.stealScore>=68)
