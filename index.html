@@ -51,8 +51,100 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 #pickPlanCard{border-color:#355a70;background:linear-gradient(135deg,#111f35,#13283a)}
 .error{padding:10px;border-radius:10px;background:#321820;color:#ffc2ca;border:1px solid #66303b;font-size:13px}
 .footer{color:var(--muted);font-size:11px;line-height:1.5;margin:12px 2px 30px}
-@media(max-width:780px){.grid{grid-template-columns:1fr} .controls{width:100%} .field.grow{flex:1} .field.grow input{width:100%} .roster{grid-template-columns:1fr 1fr}}
-@media(max-width:430px){.rec{grid-template-columns:38px minmax(0,1fr) 46px;padding:8px} .roster{grid-template-columns:1fr} .clock strong{font-size:19px}}
+@media(max-width:780px){
+  html,body{max-width:100%;overflow-x:hidden}
+  .shell{width:100%;max-width:100%;padding:10px}
+  header{display:block}
+  header>div:first-child{margin-bottom:12px}
+  h1{font-size:24px;line-height:1.08}
+  .sub{font-size:13px;line-height:1.35}
+  .controls{
+    width:100%;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:9px;
+    align-items:stretch
+  }
+  .controls .field,.controls .field.grow{width:100%;min-width:0}
+  .controls input,.controls select,#myName,#leagueId{width:100%!important;min-width:0}
+  .controls>.primary{width:100%}
+  .statusbar{gap:6px}
+  .pill{font-size:11px;padding:6px 8px;max-width:100%;overflow-wrap:anywhere}
+  .tabs{width:100%}
+  .tab{flex:1}
+  .grid{grid-template-columns:minmax(0,1fr)}
+  .card{width:100%;max-width:100%;padding:11px;overflow:hidden}
+  .card h2{font-size:23px}
+  .card h3{font-size:18px}
+  .tiny,.meta,.players,.row>div{min-width:0;overflow-wrap:anywhere;word-break:normal}
+  .hero{
+    grid-template-columns:minmax(0,1fr);
+    gap:10px
+  }
+  .clock{
+    text-align:left;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    flex-wrap:wrap
+  }
+  .clock>div:last-child{margin-left:auto}
+  .clock strong{font-size:20px}
+  .bigpick{font-size:28px}
+  .recs{min-width:0}
+  .rec{
+    grid-template-columns:42px minmax(0,1fr);
+    gap:9px;
+    align-items:start;
+    width:100%;
+    max-width:100%;
+    padding:10px
+  }
+  .rec .name{
+    white-space:normal;
+    overflow:visible;
+    text-overflow:clip;
+    line-height:1.15
+  }
+  .rec .score{
+    grid-column:2;
+    text-align:left;
+    font-size:12px;
+    color:var(--muted);
+    margin-top:-3px
+  }
+  .tag{
+    font-size:9px;
+    line-height:1.2;
+    white-space:normal
+  }
+  .roster{grid-template-columns:1fr 1fr}
+  .row{grid-template-columns:minmax(0,1fr) auto}
+  .row button{padding:8px 10px;min-height:38px}
+  .timeline{
+    max-width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch
+  }
+  #pickPlanHeadline{font-size:19px!important;line-height:1.18}
+}
+@media(max-width:430px){
+  .shell{padding:8px}
+  h1{font-size:22px}
+  .card{padding:10px;border-radius:13px}
+  .roster{grid-template-columns:1fr}
+  .statusbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pill{text-align:center}
+  .rec{grid-template-columns:36px minmax(0,1fr);padding:9px 8px}
+  .rank{font-size:10px}
+  .rank b{font-size:17px}
+  .name{font-size:17px}
+  .meta{font-size:11px;line-height:1.35}
+  .clock>div:last-child{margin-left:0;width:100%}
+  .clock button{width:100%}
+  .footer{font-size:10px}
+}
 </style>
 </head>
 <body>
@@ -60,7 +152,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Same-league multi-manager beta • live Sleeper sync + personalized recommendations</div>
+    <div class="sub">Same-league multi-manager beta • live Sleeper sync + personalized recommendations • mobile fix</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
