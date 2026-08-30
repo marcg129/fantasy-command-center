@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Access GRANTed '26 — Multi-Manager Beta</title>
+<style>
+:root {
+  --bg:#08101f; --panel:#111b2f; --panel2:#16223a; --text:#eef4ff; --muted:#91a4c5;
+  --line:#2a3a5f; --accent:#5ce1e6; --good:#66e39b; --warn:#ffd166; --bad:#ff6b7a;
+  --rb:#5fe0a0; --wr:#58b9ff; --qb:#ff6e9f; --te:#ffb454; --k:#b9a7ff; --def:#c77952;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+button,input,select{font:inherit}
+.shell{max-width:1280px;margin:0 auto;padding:14px}
+header{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:12px}
+h1{font-size:clamp(20px,4vw,32px);margin:0} .sub{color:var(--muted);font-size:13px}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:end}
+.field{display:grid;gap:4px} .field label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+input,select{background:#0d1729;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 11px;min-height:42px}
+button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:pointer;font-weight:750}
+.primary{background:var(--accent);color:#031317} .ghost{background:#1b2944;color:var(--text);border:1px solid var(--line)}
+.danger{background:#3b1c29;color:#ffd8df;border:1px solid #653044}
+.statusbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.pill{border:1px solid var(--line);background:#0d1729;border-radius:999px;padding:7px 10px;font-size:12px;color:var(--muted)}
+.pill.good{color:var(--good);border-color:#25533b} .pill.warn{color:var(--warn);border-color:#665326} .pill.bad{color:var(--bad);border-color:#64313a}
+.tabs{display:flex;gap:8px;margin:12px 0} .tab{background:#13213a;color:var(--muted)} .tab.active{background:#263a62;color:var(--text)}
+.grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(290px,.75fr);gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:13px;min-width:0}
+.card h2,.card h3{margin:0 0 9px} .tiny{font-size:12px;color:var(--muted)} 
+.hero{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;background:linear-gradient(135deg,#172845,#11243b);}
+.bigpick{font-size:clamp(23px,5vw,42px);font-weight:900;line-height:1.05} .clock{text-align:right}
+.clock strong{font-size:24px}
+.recs{display:grid;gap:8px}
+.rec{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:10px;align-items:center;padding:10px;border:1px solid var(--line);background:var(--panel2);border-radius:12px}
+.rec:first-child{border-color:#3d7d82;background:#163239}
+.rank{font-size:12px;color:var(--muted);text-align:center} .rank b{font-size:18px;color:var(--text);display:block}
+.name{font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .meta{font-size:12px;color:var(--muted);margin-top:2px}
+.score{font-size:18px;font-weight:900;text-align:right} .tag{font-size:10px;font-weight:800;border-radius:999px;padding:3px 6px;display:inline-block;margin:3px 3px 0 0;background:#263653;color:#caddff}
+.pos{font-weight:900} .RB{color:var(--rb)} .WR{color:var(--wr)} .QB{color:var(--qb)} .TE{color:var(--te)} .K{color:var(--k)} .DEF{color:var(--def)}
+.roster{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.slot{border:1px solid var(--line);border-radius:10px;padding:8px;background:#0e1728;min-width:0} .slot .players{font-size:12px;color:#c9d6ed;margin-top:3px;overflow:hidden;text-overflow:ellipsis}
+.timeline{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px} .pickbox{min-width:76px;border:1px solid var(--line);border-radius:9px;padding:8px;background:#0f192b;text-align:center;font-size:11px}
+.pickbox.mine{border-color:#3e8b91;background:#163137} .pickbox.now{outline:2px solid var(--warn)}
+.list{display:grid;gap:6px} .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;align-items:center;padding:7px 0;border-bottom:1px solid #22314f} .row:last-child{border-bottom:0}
+.search{width:100%;margin-bottom:8px}
+.hidden{display:none!important}
+.notice{padding:10px;border-radius:10px;background:#2b2411;color:#ffe49a;border:1px solid #5e5123;font-size:13px}
+.goodbox{padding:10px;border-radius:10px;background:#112a20;color:#baf6d2;border:1px solid #27513e;font-size:13px}
+#pickPlanCard{border-color:#355a70;background:linear-gradient(135deg,#111f35,#13283a)}
+.error{padding:10px;border-radius:10px;background:#321820;color:#ffc2ca;border:1px solid #66303b;font-size:13px}
+.footer{color:var(--muted);font-size:11px;line-height:1.5;margin:12px 2px 30px}
+@media(max-width:780px){.grid{grid-template-columns:1fr} .controls{width:100%} .field.grow{flex:1} .field.grow input{width:100%} .roster{grid-template-columns:1fr 1fr}}
+@media(max-width:430px){.rec{grid-template-columns:38px minmax(0,1fr) 46px;padding:8px} .roster{grid-template-columns:1fr} .clock strong{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header>
+  <div>
+    <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
+    <div class="sub">Same-league multi-manager beta • live Sleeper sync + personalized recommendations</div>
+  </div>
+  <div class="controls">
+    <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
+    <div class="field"><label>Sleeper username / display name</label><input id="myName" value="" placeholder="enter your Sleeper name" list="managerSuggestions" style="width:185px"><datalist id="managerSuggestions"></datalist></div>
+    <button class="primary" id="connectBtn">Connect</button>
+  </div>
+</header>
+
+<div class="statusbar">
+  <span class="pill" id="apiStatus">Not connected</span>
+  <span class="pill" id="leagueStatus">League —</span>
+  <span class="pill" id="draftStatus">Draft —</span>
+  <span class="pill" id="syncStatus">Auto-sync off</span>
+  <span class="pill" id="managerStatus">Manager —</span>
+  <span class="pill good">Strategy data: Aug 30</span>
+</div>
+
+<div class="tabs">
+  <button class="tab active" id="draftTab">Draft Day</button>
+  <button class="tab" id="weeklyTab">Weekly</button>
+</div>
+
+<section id="draftMode">
+  <div class="card hero">
+    <div>
+      <div class="tiny" id="turnLabel">Connect to Sleeper to begin</div>
+      <div class="bigpick" id="turnHeadline">Ready for draft sync</div>
+      <div class="tiny" id="turnSub">Same-league beta: enter any manager in this Sleeper league. Keepers, traded picks, roster construction, and pick spacing are detected automatically.</div>
+    </div>
+    <div class="clock">
+      <div class="tiny">NEXT AUTO REFRESH</div>
+      <strong id="refreshClock">—</strong>
+      <div><button class="ghost" id="refreshBtn">Refresh now</button></div>
+    </div>
+  </div>
+
+  <div class="card" id="pickPlanCard" style="margin-top:12px">
+    <div class="tiny" id="pickPlanLabel">DRAFT PLAN</div>
+    <div id="pickPlanHeadline" style="font-size:20px;font-weight:900;margin:3px 0 4px">Connect to load your exact pick plan.</div>
+    <div class="tiny" id="pickPlanText">The plan is generated from the connected manager's actual keepers, roster construction, traded picks, and next-pick spacing.</div>
+  </div>
+
+  <div class="grid" style="margin-top:12px">
+    <div>
+      <div class="card">
+        <h2>Best choices right now</h2>
+        <div class="tiny" style="margin-bottom:9px">Scores combine market value, your roster construction, 2-FLEX depth, your unusual QB scoring, and whether a player is likely to survive to your next pick.</div>
+        <div id="recommendations" class="recs"></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Upcoming picks</h3>
+        <div class="timeline" id="timeline"></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Available board</h3>
+        <input class="search" id="playerSearch" placeholder="Search available players">
+        <div class="tiny" style="margin-bottom:6px">Manual fallback: if Sleeper is lagging, tap “Taken” to hide a player. API picks and manual marks are merged.</div>
+        <div id="availableList" class="list"></div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3>My roster construction</h3>
+        <div id="rosterSummary" class="roster"></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Draft intelligence</h3>
+        <div id="intelligence" class="list"></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Recent picks</h3>
+        <div id="recentPicks" class="list"></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Fallback controls</h3>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button class="ghost" id="downloadBtn">Download snapshot</button>
+          <button class="danger" id="clearManualBtn">Clear manual marks</button>
+        </div>
+        <div id="fallbackMsg" class="tiny" style="margin-top:8px"></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section id="weeklyMode" class="hidden">
+  <div class="card">
+    <h2>Weekly Command Center</h2>
+    <div class="goodbox">This shares the same Sleeper connection. It already pulls your roster and matchup. After the draft, the recommendation layer can be expanded with current projections, injuries, waivers, and trade analysis without building a second app.</div>
+    <div class="controls" style="margin-top:12px">
+      <div class="field"><label>Week</label><input id="weekInput" type="number" min="1" max="18" value="1" style="width:90px"></div>
+      <button class="primary" id="weeklyRefreshBtn">Load week</button>
+    </div>
+  </div>
+  <div class="grid" style="margin-top:12px">
+    <div class="card"><h3>My roster</h3><div id="weeklyRoster" class="list"><div class="tiny">Connect first.</div></div></div>
+    <div class="card"><h3>Matchup</h3><div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div></div>
+  </div>
+</section>
+
+<div class="footer">
+  v2.1 same-league beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only.
+</div>
+</div>
+
+<script>
+(() => {
+  const BASE = 'https://api.sleeper.app/v1';
+  const ecrOverrides = {"jahmyrgibbs":1,"bijanrobinson":2,"jamarrchase":3,"pukanacua":4,"jaxonsmithnjigba":5,"amonrastbrown":6,"christianmccaffrey":7,"jonathantaylor":8,"ceedeelamb":9,"jamescook":10,"justinjefferson":11,"chasebrown":12,"drakelondon":13,"saquonbarkley":14,"ajbrown":15,"devonachane":16,"brockbowers":17,"nicocollins":18,"omarionhampton":19,"derrickhenry":20,"kennethwalker":21,"ashtonjeanty":22,"georgepickens":23,"chrisolave":24,"treymcbride":25,"joshallen":26,"maliknabers":27,"rasheerice":28,"devontasmith":29,"zayflowers":30,"kyrenwilliams":31,"teehiggins":32,"javontewilliams":33,"lamarjackson":34,"breecehall":35,"tetairoamcmillan":36,"garrettwilson":37,"jaylenwaddle":38,"laddmcconkey":39,"joshjacobs":40,"colstonloveland":41,"emekaegbuka":42,"jeremiyahlove":43,"drakemaye":44,"travisetienne":45,"terrymclaurin":46,"dandreswift":47,"joeburrow":48,"davanteadams":49,"lutherburden":50,"camskattebo":51,"jamesonwilliams":52,"tylerwarren":53,"buckyirving":54,"quinshonjudkins":55,"davidmontgomery":56,"christianwatson":57,"djmoore":58,"jaydendaniels":59,"mikeevans":60,"romeodunze":61,"jalenhurts":62,"bhayshultuten":63,"jadarianprice":64,"treveyonhenderson":65,"parkerwashington":66,"calebwilliams":67,"tuckerkraft":68,"marvinharrison":69,"rhamondrestevenson":70,"justinherbert":71,"carnelltate":72,"jaylenwarren":73,"trevorlawrence":74,"brianthomas":75,"dkmetcalf":76,"tonypollard":77,"dakprescott":78,"haroldfannin":79,"samlaporta":80,"ricodowdle":81,"chrisgodwin":82,"jonathonbrooks":83,"kylepitts":84,"courtlandsutton":85,"jkdobbins":86,"michaelpittman":87,"quentinjohnston":88,"michaelwilson":89,"chubahubbard":90,"brockpurdy":91,"joshdowns":92,"blakecorum":93,"georgekittle":94,"alecpierce":95,"jaxsondart":96,"wandalerobinson":97,"jacorycroskeymerritt":98,"bonix":99,"stefondiggs":100};
+  const newsAdjustments = {"pukanacua":{"label":"GROIN WATCH","delta":-2,"note":"Groin soreness; expected for Week 1, but first-round opportunity cost matters."},"christianmccaffrey":{"label":"AGE / WORKLOAD RISK","delta":-3,"note":"30 years old after a 413-touch 2025; camp muscle tightness adds risk."},"devonachane":{"label":"QB CONTEXT RISK","delta":-3,"note":"High passing-game dependence; Miami's QB context adds volatility."},"ashtonjeanty":{"label":"ANKLE / W1 RISK","delta":-4,"note":"Low ankle sprain; not considered long-term, but Week 1 availability is not guaranteed."},"maliknabers":{"label":"ACL/MENISCUS RETURN","delta":-3,"note":"Practicing, but returning from ACL/meniscus rehab makes early-season explosiveness uncertain."},"breecehall":{"label":"GROIN WATCH","delta":-2,"note":"Expected back for Week 1, but groin strains can recur for RBs."},"joshjacobs":{"label":"GROIN WATCH","delta":-2,"note":"Green Bay remains optimistic; monitor workload/availability."},"lutherburden":{"label":"RETURNING FROM GROIN","delta":-1,"note":"Back at practice but still ramping toward full work."},"treveyonhenderson":{"label":"ANKLE — EXPECTED W1","delta":0,"note":"Latest reports are encouraging; expected to be ready for Week 1."},"mikeevans":{"label":"MINOR GROIN","delta":0,"note":"Current expectation is that he plays Week 1."},"alecpierce":{"label":"JUST OFF PUP","delta":-1,"note":"Activated from PUP; Week 1 is the goal, but workload is still ramping."},"jordyntyson":{"label":"HAMSTRING — MAJOR RISK","delta":-14,"note":"Expected absence could extend into October; avoid near old ADP."},"travishunter":{"label":"OFFENSIVE ROLE DOWN","delta":-12,"note":"Jaguars have tilted his workload heavily toward defense, reducing fantasy receiving volume."},"debosamuel":{"label":"RISING","delta":4,"note":"Back in San Francisco and climbing as the WR room consolidates."},"romeodoubs":{"label":"RISING","delta":4,"note":"Clear New England WR2 role has pushed his market upward."},"jonathonbrooks":{"label":"RISING","delta":4,"note":"Preseason usage suggests he is consolidating the Carolina backfield lead."},"jkdobbins":{"label":"RISING","delta":3,"note":"Trending as Denver's early-down hammer and useful RB2/flex."},"jaylenwaddle":{"label":"TARGET","delta":5,"note":"Denver's high-volume passing environment gives him WR1 upside at a WR2 price."},"chasebrown":{"label":"TARGET","delta":5,"note":"Strong receiving/rushing profile plus favorable schedule; excellent fit for this league's yardage bonuses."},"blakecorum":{"label":"UPSIDE BENCH","delta":4,"note":"Cheap path to top-10 RB weeks if Kyren Williams misses time."},"buckyirving":{"label":"ROLE / HEALTH RISK","delta":-4,"note":"Shoulder surgery plus Kenneth Gainwell competition lowers confidence."},"jamesonwilliams":{"label":"VOLATILE","delta":-3,"note":"Big-play ceiling, but weekly floor was difficult to trust."},"courtlandsutton":{"label":"TARGET COMPETITION","delta":-3,"note":"Jaylen Waddle's arrival lowers Sutton's target ceiling."},"mikewashington":{"label":"HANDCUFF RISER","delta":5,"note":"Strong preseason and Jeanty's ankle make him a premium insurance back."}};
+  const $ = id => document.getElementById(id);
+  const state = {
+    league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
+    myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false
+  };
+
+  const suffixRe = /\b(jr|sr|ii|iii|iv)\b/g;
+  function norm(s) {
+    return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+      .replace(/['’.-]/g,'').replace(suffixRe,'').replace(/\s+/g,'').trim();
+  }
+  function esc(s) { return String(s??'').replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+  function pName(p) {
+    if (!p) return 'Unknown';
+    return p.full_name || [p.first_name,p.last_name].filter(Boolean).join(' ') || p.player_id || 'Unknown';
+  }
+  function pickName(pk) {
+    const m=pk.metadata||{};
+    return [m.first_name,m.last_name].filter(Boolean).join(' ') || pName(state.players[pk.player_id]) || pk.player_id;
+  }
+  function setPill(id,text,kind='') {
+    const el=$(id); el.textContent=text; el.className='pill'+(kind?' '+kind:'');
+  }
+
+  async function jget(url) {
+    const r=await fetch(url,{cache:'no-store'});
+    if(!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
+    return r.json();
+  }
+
+  function populateManagerSuggestions() {
+    const dl=$('managerSuggestions');
+    if(!dl) return;
+    dl.innerHTML=state.users.map(u=>{
+      const username=u.username||'';
+      const display=u.display_name||'';
+      const label=display && norm(display)!==norm(username) ? `${username} — ${display}` : username;
+      return `<option value="${esc(username||display)}">${esc(label)}</option>`;
+    }).join('');
+  }
+
+  function managerDisplayName() {
+    const u=state.users.find(x=>String(x.user_id)===String(state.myUserId));
+    return u?.display_name || u?.username || 'Manager';
+  }
+
+  function findMyIdentity() {
+    state.myUserId=null;
+    state.myRosterId=null;
+    const q=norm($('myName').value);
+    if(!q) return false;
+    const u=state.users.find(x=>norm(x.username)===q || norm(x.display_name)===q || norm(x.metadata?.team_name)===q);
+    if(!u) return false;
+    state.myUserId=u.user_id;
+    const r=state.rosters.find(x=>String(x.owner_id)===String(u.user_id));
+    if(r) state.myRosterId=Number(r.roster_id);
+    return !!state.myRosterId;
+  }
+
+  async function loadPlayers() {
+    if(Object.keys(state.players).length) return;
+    const data=await jget(`${BASE}/players/nfl?active=true`);
+    state.players=data||{};
+  }
+
+  async function connect() {
+    const lid=$('leagueId').value.trim();
+    if(!/^\d+$/.test(lid)) return showError('League ID must be numeric.');
+    $('connectBtn').disabled=true; setPill('apiStatus','Connecting…','warn');
+    try {
+      const [league,drafts,users,rosters]=await Promise.all([
+        jget(`${BASE}/league/${lid}`),
+        jget(`${BASE}/league/${lid}/drafts`),
+        jget(`${BASE}/league/${lid}/users`),
+        jget(`${BASE}/league/${lid}/rosters`)
+      ]);
+      state.league=league; state.users=users||[]; state.rosters=rosters||[];
+      populateManagerSuggestions();
+      state.draft=(drafts||[]).find(d=>String(d.season)===String(league.season)) || (drafts||[])[0];
+      if(!state.draft) throw new Error('No draft found for this league.');
+      if(!findMyIdentity()) {
+        const names=state.users.map(u=>u.username||u.display_name).filter(Boolean).join(', ');
+        throw new Error(`Manager not found. Enter an exact Sleeper username/display name. League managers: ${names}`);
+      }
+      await loadPlayers();
+      state.connected=true;
+      setPill('apiStatus','Sleeper connected','good');
+      setPill('leagueStatus',`${league.name||'League'} • ${league.total_rosters||'?'} teams`,'good');
+      setPill('managerStatus',`${managerDisplayName()} • roster ${state.myRosterId}`,'good');
+      await refreshDraft();
+      startTimer();
+      
+    } catch(e) {
+      console.error(e); setPill('apiStatus','Connection failed','bad'); showError(e?.message || 'Could not connect to Sleeper. Check internet access, league ID, and browser network settings.');
+    } finally { $('connectBtn').disabled=false; }
+  }
+
+  async function refreshDraft() {
+    if(!state.connected || !state.draft) return;
+    try {
+      const [draft,picks,traded]=await Promise.all([
+        jget(`${BASE}/draft/${state.draft.draft_id}`),
+        jget(`${BASE}/draft/${state.draft.draft_id}/picks`),
+        jget(`${BASE}/draft/${state.draft.draft_id}/traded_picks`)
+      ]);
+      state.draft=draft; state.picks=picks||[]; state.traded=traded||[];
+      setPill('draftStatus',`${draft.status||'unknown'} • ${draft.settings?.rounds||16} rounds`,draft.status==='drafting'?'warn':'good');
+      renderAll();
+      state.countdown=3;
+    } catch(e) { console.error(e); setPill('syncStatus','Sync error','bad'); }
+  }
+
+  function startTimer() {
+    if(state.timer) clearInterval(state.timer);
+    state.countdown=3;
+    state.timer=setInterval(async()=>{
+      state.countdown--;
+      $('refreshClock').textContent=state.countdown>0 ? `${state.countdown}s` : 'sync';
+      if(state.countdown<=0) {
+        await refreshDraft();
+        state.countdown=3;
+      }
+      setPill('syncStatus','Auto-sync every 3s','good');
+    },1000);
+  }
+
+  function draftedIds() {
+    const s=new Set(state.picks.map(p=>String(p.player_id)));
+    for(const x of state.manualTaken) s.add(String(x));
+    return s;
+  }
+
+  function tierForRank(rank) {
+    if(rank<=10) return 1;
+    if(rank<=24) return 2;
+    if(rank<=40) return 3;
+    if(rank<=63) return 4;
+    if(rank<=89) return 5;
+    if(rank<=133) return 6;
+    return 7;
+  }
+
+  function dynamicPlayerBoard() {
+    const out=[];
+    Object.entries(state.players).forEach(([id,p])=>{
+      let pos=String(p.position||'').toUpperCase();
+      if(pos==='DST') pos='DEF';
+      if(!['QB','RB','WR','TE','K','DEF'].includes(pos)) return;
+      if(p.status && !['Active','Injured Reserve','Physically Unable to Perform'].includes(p.status)) return;
+      const name=pName(p);
+      const n=norm(name);
+      let sleeperRank=Number(p.search_rank);
+      if(!Number.isFinite(sleeperRank) || sleeperRank<=0) sleeperRank=999;
+      const ecrRank=Number(ecrOverrides[n] || sleeperRank);
+      const news=newsAdjustments[n] || null;
+      out.push({
+        rank:ecrRank,ecrRank,sleeperRank,tier:tierForRank(ecrRank),news,
+        name,pos,team:p.team||'FA',player_id:String(id),pdata:p
+      });
+    });
+    out.sort((a,b)=>a.ecrRank-b.ecrRank || a.sleeperRank-b.sleeperRank || a.name.localeCompare(b.name));
+    return out;
+  }
+  function myPicks() {
+    return state.picks.filter(p=>Number(p.roster_id)===Number(state.myRosterId));
+  }
+
+  function rosterCounts() {
+    const c={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0};
+    const names={QB:[],RB:[],WR:[],TE:[],K:[],DEF:[]};
+    for(const pk of myPicks()) {
+      let pos=(pk.metadata?.position || state.players[pk.player_id]?.position || '').toUpperCase();
+      if(pos==='DST') pos='DEF';
+      if(!c.hasOwnProperty(pos)) continue;
+      c[pos]++; names[pos].push(pickName(pk));
+    }
+    return {c,names};
+  }
+
+  function myKeepers() {
+    return myPicks().filter(p=>p.is_keeper);
+  }
+
+  function keeperProfile() {
+    const counts={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0};
+    const names={QB:[],RB:[],WR:[],TE:[],K:[],DEF:[]};
+    for(const pk of myKeepers()) {
+      let pos=(pk.metadata?.position || state.players[pk.player_id]?.position || '').toUpperCase();
+      if(pos==='DST') pos='DEF';
+      if(!counts.hasOwnProperty(pos)) continue;
+      counts[pos]++;
+      names[pos].push(pickName(pk));
+    }
+    return {counts,names};
+  }
+
+  function keeperSummaryText() {
+    const ks=myKeepers().sort((a,b)=>Number(a.pick_no)-Number(b.pick_no));
+    if(!ks.length) return 'No keepers';
+    return ks.map(p=>{
+      const pos=(p.metadata?.position || state.players[p.player_id]?.position || '').toUpperCase();
+      return `${pickName(p)} (${pos || '?'}, R${p.round})`;
+    }).join(' • ');
+  }
+
+  function futureLivePicksBetween(a,b) {
+    if(!a || !b || b<=a) return 999;
+    const occupied=occupiedPickNos();
+    let count=0;
+    for(let n=a+1;n<b;n++) if(!occupied.has(n)) count++;
+    return count;
+  }
+
+  function closePickPair(upcoming,following) {
+    if(!upcoming || !following) return null;
+    const between=futureLivePicksBetween(upcoming,following);
+    return between<=4 ? {between,upcoming,following} : null;
+  }
+
+  function skillFoundationText(counts) {
+    const bits=[];
+    if(counts.RB) bits.push(`${counts.RB} RB`);
+    if(counts.WR) bits.push(`${counts.WR} WR`);
+    if(counts.TE) bits.push(`${counts.TE} TE`);
+    if(counts.QB) bits.push(`${counts.QB} QB`);
+    return bits.length ? bits.join(' + ') : 'no skill-position keepers';
+  }
+
+  function slotOwner(round,slot) {
+    const orig=Number(state.draft.slot_to_roster_id?.[String(slot)]);
+    if(!orig) return null;
+    const t=state.traded.find(x=>Number(x.round)===round && Number(x.roster_id)===orig && String(x.season||state.league?.season)===String(state.league?.season));
+    return t ? Number(t.owner_id) : orig;
+  }
+
+  function snakeSlotForPick(pickNo) {
+    const teams=Number(state.draft.settings?.teams || state.league?.total_rosters || 10);
+    const round=Math.floor((pickNo-1)/teams)+1;
+    const within=(pickNo-1)%teams+1;
+    const slot=round%2===1 ? within : teams-within+1;
+    return {round,slot,owner:slotOwner(round,slot)};
+  }
+
+  function occupiedPickNos() {
+    return new Set(state.picks.map(p=>Number(p.pick_no)).filter(Number.isFinite));
+  }
+
+  function keeperPickNos() {
+    return new Set(state.picks.filter(p=>p.is_keeper).map(p=>Number(p.pick_no)).filter(Number.isFinite));
+  }
+
+  function actualProgressPick() {
+    const rounds=Number(state.draft?.settings?.rounds||16);
+    const teams=Number(state.draft?.settings?.teams||state.league?.total_rosters||10);
+    const occupied=occupiedPickNos();
+    for(let n=1;n<=rounds*teams;n++) if(!occupied.has(n)) return n;
+    return rounds*teams+1;
+  }
+
+  function nextMineAfter(currentPick, includeCurrent=true) {
+    const rounds=Number(state.draft.settings?.rounds||16), teams=Number(state.draft.settings?.teams||10);
+    const occupied=occupiedPickNos();
+    for(let n=includeCurrent?currentPick:currentPick+1;n<=rounds*teams;n++) {
+      if(occupied.has(n)) continue; // keeper slots and already-made picks are not future selections
+      if(snakeSlotForPick(n).owner===Number(state.myRosterId)) return n;
+    }
+    return null;
+  }
+
+  function liveOrdinalAtPick(pickNo) {
+    if(!pickNo) return null;
+    const keepers=keeperPickNos();
+    let k=0;
+    for(const n of keepers) if(n<=pickNo) k++;
+    return Math.max(1,pickNo-k);
+  }
+
+  function keeperAdjustedRank(b) {
+    let removedAhead=0;
+    for(const pk of state.picks.filter(p=>p.is_keeper)) {
+      const name=norm(pickName(pk));
+      const kr=Number(ecrOverrides[name] || 999);
+      if(kr < b.ecrRank) removedAhead++;
+    }
+    return Math.max(1,b.ecrRank-removedAhead);
+  }
+
+  const qbCustom = {
+    'Josh Allen':25,'Joe Burrow':22,'Lamar Jackson':18,'Drake Maye':17,'Justin Herbert':17,
+    'Brock Purdy':14,'Jared Goff':14,'Trevor Lawrence':13,'Caleb Williams':12,
+    'Jayden Daniels':10,'Jalen Hurts':8,'Jaxson Dart':8,'Bo Nix':8,'Matthew Stafford':12,
+    'Jordan Love':10,'Baker Mayfield':8
+  };
+
+  function pickPlanFor(pickNo, counts, followingPick=null) {
+    if(!pickNo) return {headline:'Draft complete',text:'No future selections detected.'};
+    const x=snakeSlotForPick(pickNo);
+    const kp=keeperProfile();
+    const pair=closePickPair(pickNo,followingPick);
+    const foundation=skillFoundationText(kp.counts);
+
+    if(pair) return {
+      headline:`${x.round}.${String(x.slot).padStart(2,'0')}: Paired-pick leverage activated`,
+      text:`Only ${pair.between} live selections occur before your next pick. Your keeper foundation is ${foundation}. Use this pick on the scarcer high-value tier, then take the best survivor at your next selection rather than treating the picks independently.`
+    };
+
+    if(x.round===1) {
+      let bias='Stay strictly inside the elite RB/WR tier.';
+      if(counts.RB<counts.WR) bias='Your current construction leans WR, so use RB as the tiebreaker between equal-tier players.';
+      else if(counts.WR<counts.RB) bias='Your current construction leans RB, so use WR as the tiebreaker between equal-tier players.';
+      return {
+        headline:`1.${String(x.slot).padStart(2,'0')}: Secure an elite foundation piece`,
+        text:`${bias} Take a clear value faller over forcing positional balance. Avoid early QB unless the market creates an extreme outlier; avoid TE if you already roster a premium one.`
+      };
+    }
+    if(x.round===2) return {
+      headline:`2.${String(x.slot).padStart(2,'0')}: Add another premium starter`,
+      text:`Build from your actual keeper/round-one construction (${skillFoundationText(counts)}). Prioritize the strongest RB/WR tier; this remains a 10-team, 1-QB league even with custom passing scoring.`
+    };
+    if(x.round===3) return {
+      headline:`3.${String(x.slot).padStart(2,'0')}: Finish the premium core`,
+      text:counts.QB===0 ?
+        'Elite QB becomes viable if the RB/WR tier has flattened, especially Josh Allen in this scoring. Otherwise keep taking the best RB/WR value.' :
+        'QB is already solved. Keep attacking RB/WR value and do not spend a premium pick on a redundant TE.'
+    };
+    if(x.round<=6) return {
+      headline:`Round ${x.round}: Fill FLEX depth and solve remaining starters`,
+      text:counts.QB===0 ?
+        'RB/WR still drive the two FLEX spots. If an efficient high-volume QB reaches a fair price, you can take him now. Avoid redundant premium TE investment.' :
+        'With QB handled, keep hammering RB/WR. Prioritize upside and injury-away running backs over low-ceiling bench fillers.'
+    };
+    if(x.round<=12) return {
+      headline:`Round ${x.round}: Build an upside bench`,
+      text:'Favor breakout paths, ambiguous backfields, injury-away RBs and receivers with expanding roles. Avoid QB2/TE2 unless the value is extreme.'
+    };
+    return {
+      headline:`Round ${x.round}: Finish efficiently`,
+      text:'Kicker and DST belong here. Use remaining bench spots on upside, not name recognition.'
+    };
+  }
+
+  function pickSpecificAdjustment(b, upcomingPick, counts, followingPick=null) {
+    if(!upcomingPick) return 0;
+    const x=snakeSlotForPick(upcomingPick);
+    const pair=closePickPair(upcomingPick,followingPick);
+    let d=0;
+
+    if(x.round===1) {
+      if(b.pos==='RB'||b.pos==='WR') d+=9;
+      if(counts.RB<counts.WR && b.pos==='RB') d+=7;
+      if(counts.WR<counts.RB && b.pos==='WR') d+=7;
+      if(b.pos==='QB') d-=110;
+      if(b.pos==='TE' && counts.TE===0) d-=35;
+    } else if(x.round===2) {
+      if(b.pos==='RB'||b.pos==='WR') d+=10;
+      if(counts.RB<counts.WR && b.pos==='RB') d+=5;
+      if(counts.WR<counts.RB && b.pos==='WR') d+=5;
+      if(b.pos==='QB') d-=45;
+    } else if(x.round===3) {
+      if(b.pos==='RB'||b.pos==='WR') d+=8;
+      if(counts.QB===0 && b.name==='Josh Allen') d+=22;
+      if(counts.QB===0 && b.name==='Lamar Jackson') d+=11;
+      if(counts.QB===0 && b.pos==='QB' && !['Josh Allen','Lamar Jackson'].includes(b.name)) d-=8;
+    } else if(x.round>=5 && x.round<=7 && counts.QB===0 && b.pos==='QB') {
+      d+=18;
+    }
+
+    // When two selections are unusually close, the first pick should favor scarce RB/WR
+    // rather than prematurely filling a one-starter position.
+    if(pair) {
+      if(b.pos==='RB'||b.pos==='WR') d+=8;
+      if(b.pos==='QB' && x.round<=3) d-=5;
+      if(b.pos==='TE' && counts.TE>=1) d-=20;
+    }
+
+    return d;
+  }
+
+  function scorePlayer(b,upcomingPick,followingPick,counts,currentPick) {
+    const adjRank=keeperAdjustedRank(b);
+    const upcomingOrdinal=liveOrdinalAtPick(upcomingPick||currentPick)||1;
+    const followingOrdinal=liveOrdinalAtPick(followingPick);
+    const round=Math.floor(((upcomingPick||currentPick)-1)/(state.draft.settings?.teams||10))+1;
+
+    // Keeper-adjusted market value is the strongest base signal.
+    let score=1000-adjRank*5.1;
+    const pos=b.pos;
+
+    if(pos==='RB') {
+      if(counts.RB<2) score+=40;
+      else if(counts.RB<4) score+=24;
+      else if(counts.RB<6) score+=10;
+      if(b.ecrRank<=22) score+=10; // yardage-bonus/bell-cow ceiling
+    }
+    if(pos==='WR') {
+      if(counts.WR<2) score+=31;
+      else if(counts.WR<4) score+=23;
+      else if(counts.WR<6) score+=12;
+      if(b.ecrRank<=18) score+=5;
+    }
+    if(pos==='QB') {
+      if(counts.QB>=1) score-=280;
+      else {
+        score += qbCustom[b.name]||0;
+        if(round>=5) score+=14;
+        if(round>=7) score+=18;
+      }
+    }
+    if(pos==='TE') {
+      if(counts.TE>=1) score-=380;
+      else if(round<5) score-=20;
+    }
+    if(pos==='K'||pos==='DEF') {
+      if(round<13) score-=560;
+      if(pos==='K'&&counts.K) score-=300;
+      if(pos==='DEF'&&counts.DEF) score-=300;
+    }
+
+    // Latest news is intentionally a smaller modifier than talent/tier.
+    if(b.news) score+=Number(b.news.delta||0)*3;
+
+    score += pickSpecificAdjustment(b,upcomingPick,counts,followingPick);
+
+    // Market fallers still available deserve attention.
+    if(adjRank < upcomingOrdinal-5) score+=Math.min(42,(upcomingOrdinal-adjRank)*1.6);
+
+    // Will he plausibly survive to our following pick?
+    if(followingOrdinal && adjRank <= followingOrdinal-3 && adjRank >= upcomingOrdinal-8) score+=19;
+
+    // While waiting for our pick, identify players who may not survive the intervening selections.
+    if(currentPick && upcomingPick && currentPick<upcomingPick && adjRank<=upcomingOrdinal) score+=6;
+
+    return score;
+  }
+  function availableBoard() {
+    const taken=draftedIds();
+    return dynamicPlayerBoard().filter(b=>{
+      if(b.player_id && taken.has(String(b.player_id))) return false;
+      // Name fallback catches occasional mapping misses among keeper picks.
+      const nn=norm(b.name);
+      if(state.picks.some(p=>norm(pickName(p))===nn)) return false;
+      return true;
+    });
+  }
+
+  function recommendationData() {
+    const current=actualProgressPick();
+    const mine=nextMineAfter(current,true);
+    const after=mine ? nextMineAfter(mine,false) : null;
+    const {c}=rosterCounts();
+    const board=availableBoard().map(b=>{
+      const adjustedRank=keeperAdjustedRank(b);
+      return {...b,adjustedRank,score:scorePlayer(b,mine||current,after,c,current)};
+    }).sort((a,b)=>b.score-a.score);
+    return {
+      current,mine,after,board,c,
+      currentOrdinal:liveOrdinalAtPick(current),
+      mineOrdinal:liveOrdinalAtPick(mine),
+      afterOrdinal:liveOrdinalAtPick(after)
+    };
+  }
+
+  function tagsFor(b,info) {
+    const tags=[];
+    if(b.adjustedRank < (info.mineOrdinal||info.currentOrdinal||1)-5) tags.push('FALLING VALUE');
+    if(info.afterOrdinal && b.adjustedRank <= info.afterOrdinal-3) tags.push('UNLIKELY TO RETURN');
+    if(info.current < info.mine && b.adjustedRank <= info.mineOrdinal) tags.push('AT RISK BEFORE YOU');
+    if(b.pos==='RB' && info.c.RB<2) tags.push('RB NEED');
+    if(b.pos==='WR' && info.c.WR<2) tags.push('WR NEED');
+    if(b.pos==='QB' && info.c.QB===0 && (qbCustom[b.name]||0)>=17) tags.push('CUSTOM QB BOOST');
+    if(b.pos==='TE' && info.c.TE>=1) tags.push('TE ALREADY SOLVED');
+    if(b.news?.label) tags.push(b.news.label);
+    tags.push(`TIER ${b.tier}`);
+    return tags;
+  }
+
+  function renderRecommendations() {
+    const info=recommendationData();
+    const top=info.board.slice(0,7);
+    $('recommendations').innerHTML=top.map((b,i)=>{
+      const tags=tagsFor(b,info).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+      return `<div class="rec">
+        <div class="rank">OUR<br><b>${i+1}</b></div>
+        <div><div class="name">${esc(b.name)} <span class="pos ${b.pos}">${b.pos}</span></div>
+          <div class="meta">${esc(b.team)} • ECR #${b.ecrRank} • keeper-adjusted ~#${b.adjustedRank} • Sleeper #${b.sleeperRank}</div><div>${tags}</div>${b.news?.note?`<div class="tiny" style="margin-top:4px">${esc(b.news.note)}</div>`:""}</div>
+        <div class="score">${Math.round(b.score)}</div>
+      </div>`;
+    }).join('') || '<div class="tiny">No board data available.</div>';
+  }
+
+  function renderTurn() {
+    if(!state.connected) return;
+    const current=actualProgressPick();
+    const x=snakeSlotForPick(current);
+    const myTurn=x.owner===Number(state.myRosterId);
+    const mine=nextMineAfter(current,true);
+    const after=mine ? nextMineAfter(mine,false):null;
+    $('turnLabel').textContent=myTurn ? 'YOU ARE ON THE CLOCK' : `Current live pick: ${x.round}.${String(x.slot).padStart(2,'0')}`;
+    $('turnHeadline').textContent=myTurn ? `Pick ${x.round}.${String(x.slot).padStart(2,'0')} — choose now` : (mine ? `${managerDisplayName()} next: #${mine}` : `${managerDisplayName()}: draft complete`);
+    $('turnSub').textContent=mine ?
+      `${Math.max(0,mine-current)} board slots until you • next after that ${after? '#'+after:'—'} • keepers: ${keeperSummaryText()}` :
+      `Keepers: ${keeperSummaryText()}`;
+    $('turnHeadline').style.color=myTurn?'var(--warn)':'var(--text)';
+  }
+
+  function renderPickPlan() {
+    if(!state.connected) return;
+    const info=recommendationData();
+    const plan=pickPlanFor(info.mine,info.c,info.after);
+    $('pickPlanHeadline').textContent=plan.headline;
+    $('pickPlanText').textContent=plan.text;
+    const x=info.mine ? snakeSlotForPick(info.mine) : null;
+    $('pickPlanLabel').textContent=x ? `YOUR NEXT LIVE PICK • ${x.round}.${String(x.slot).padStart(2,'0')} • live selection ~${info.mineOrdinal}` : 'DRAFT PLAN';
+  }
+
+  function renderTimeline() {
+    const current=actualProgressPick(), teams=Number(state.draft.settings?.teams||10);
+    const arr=[];
+    for(let n=current;n<Math.min(current+18, Number(state.draft.settings?.rounds||16)*teams+1);n++) {
+      const x=snakeSlotForPick(n), mine=x.owner===Number(state.myRosterId);
+      arr.push(`<div class="pickbox ${mine?'mine':''} ${n===current?'now':''}"><b>#${n}</b><br>${x.round}.${String(x.slot).padStart(2,'0')}<br>${mine?'YOU':('R'+(x.owner??'?'))}</div>`);
+    }
+    $('timeline').innerHTML=arr.join('');
+  }
+
+  function renderRoster() {
+    const {c,names}=rosterCounts();
+    const desired={QB:1,RB:5,WR:5,TE:1,K:1,DEF:1};
+    $('rosterSummary').innerHTML=Object.keys(desired).map(pos=>`<div class="slot">
+      <div><span class="pos ${pos}">${pos}</span> <b>${c[pos]||0}</b><span class="tiny"> / target ${desired[pos]}</span></div>
+      <div class="players">${esc((names[pos]||[]).join(', ')||'—')}</div></div>`).join('');
+  }
+
+  function renderIntel() {
+    const info=recommendationData(), msgs=[];
+    const kp=keeperProfile();
+    const pair=closePickPair(info.mine,info.after);
+
+    if(kp.counts.TE>=1) {
+      const who=kp.names.TE.join(', ');
+      msgs.push(['TE keeper advantage',`${who} already gives you a starting TE foundation. Redundant premium TE picks are heavily deprioritized.`]);
+    } else if(info.c.TE>=1) {
+      msgs.push(['TE solved','You already drafted a starting TE, so the engine now reduces redundant TE value.']);
+    }
+
+    if(kp.counts.QB>=1) {
+      msgs.push(['QB keeper advantage',`${kp.names.QB.join(', ')} already solves your one-QB starting slot. QB2 is a low priority.`]);
+    } else if(info.c.QB===0) {
+      msgs.push(['QB scoring matters','6 passing-TD points and -4 interceptions boost efficient passers. Still, 10 teams + 1 QB means you should demand value rather than chase a run.']);
+    }
+
+    if(info.c.RB<info.c.WR) {
+      msgs.push(['Construction lean','Your roster currently has more WR than RB. Equal-tier RBs receive a modest tiebreaker boost.']);
+    } else if(info.c.WR<info.c.RB) {
+      msgs.push(['Construction lean','Your roster currently has more RB than WR. Equal-tier WRs receive a modest tiebreaker boost.']);
+    } else {
+      msgs.push(['Construction balanced','RB and WR counts are currently balanced; value and tier scarcity drive the recommendation more than position need.']);
+    }
+
+    if(info.mine && info.after) {
+      msgs.push(['Pick spacing',`Your next live pick is #${info.mine} (about the ${info.mineOrdinal}th non-keeper selection); the next is #${info.after} (about ${info.afterOrdinal}). Keeper-filled slots are skipped automatically.`]);
+    }
+
+    if(pair) {
+      msgs.push(['Paired-pick leverage',`Only ${pair.between} live selections occur between your next two picks. The first pick is optimized partly around what should survive to the second.`]);
+    }
+
+    msgs.push(['Keeper profile',keeperSummaryText()]);
+    msgs.push(['Playoff structure','Eight of ten teams make the playoffs. Favor ceiling and late-season roster strength over drafting an overly safe September bench.']);
+    $('intelligence').innerHTML=msgs.map(([a,b])=>`<div class="row"><div><b>${esc(a)}</b><div class="tiny">${esc(b)}</div></div></div>`).join('');
+  }
+
+  function renderRecent() {
+    const sorted=[...state.picks].filter(p=>!p.is_keeper).sort((a,b)=>Number(b.pick_no)-Number(a.pick_no)).slice(0,8);
+    $('recentPicks').innerHTML=sorted.map(p=>`<div class="row"><div><b>#${p.pick_no} ${esc(pickName(p))}</b><div class="tiny">${esc(p.metadata?.position||'')} • roster ${p.roster_id}</div></div></div>`).join('') || '<div class="tiny">No live picks yet.</div>';
+  }
+
+  function renderAvailable() {
+    const q=norm($('playerSearch').value);
+    const info=recommendationData();
+    const board=info.board.filter(b=>!q || norm(b.name).includes(q) || norm(b.team).includes(q) || norm(b.pos).includes(q)).slice(0,60);
+    $('availableList').innerHTML=board.map(b=>`<div class="row">
+      <div><b>${esc(b.name)} <span class="pos ${b.pos}">${b.pos}</span></b><div class="tiny">${esc(b.team)} • ECR #${b.ecrRank} • adjusted ~#${b.adjustedRank} • Sleeper #${b.sleeperRank}${b.news?.label?` • ${esc(b.news.label)}`:""}</div></div>
+      <button class="ghost takenBtn" data-pid="${esc(b.player_id||norm(b.name))}" data-name="${esc(b.name)}">Taken</button>
+    </div>`).join('');
+    document.querySelectorAll('.takenBtn').forEach(btn=>btn.addEventListener('click',()=>{
+      state.manualTaken.add(btn.dataset.pid);
+      if(!btn.dataset.pid || !/^\d+$/.test(btn.dataset.pid)) {
+        // mapping fallback: match by name on future render
+        const match=dynamicPlayerBoard().find(x=>norm(x.name)===norm(btn.dataset.name));
+        if(match?.player_id) state.manualTaken.add(match.player_id);
+      }
+      renderAll();
+    }));
+  }
+
+  function renderAll() {
+    renderTurn(); renderPickPlan(); renderRecommendations(); renderTimeline(); renderRoster(); renderIntel(); renderRecent(); renderAvailable();
+  }
+
+  function showError(msg) {
+    $('fallbackMsg').innerHTML=`<span style="color:var(--bad)">${esc(msg)}</span>`;
+  }
+
+  function snapshot() {
+    const info=recommendationData();
+    return {
+      generated_at:new Date().toISOString(), league_id:$('leagueId').value, draft_id:state.draft?.draft_id,
+      manager:managerDisplayName(), keeper_summary:keeperSummaryText(),
+      my_roster_id:state.myRosterId, current_pick:info.current, my_next_pick:info.mine, my_following_pick:info.after,
+      my_picks:myPicks().map(p=>({pick_no:p.pick_no,round:p.round,name:pickName(p),position:p.metadata?.position})),
+      recent_picks:[...state.picks].filter(p=>!p.is_keeper).sort((a,b)=>Number(b.pick_no)-Number(a.pick_no)).slice(0,15).map(p=>({pick_no:p.pick_no,name:pickName(p),position:p.metadata?.position})),
+      recommendations:info.board.slice(0,12).map(b=>({name:b.name,pos:b.pos,team:b.team,ecr_rank:b.ecrRank,keeper_adjusted_rank:b.adjustedRank,sleeper_rank:b.sleeperRank,tier:b.tier,news:b.news?.label||null,score:Math.round(b.score)}))
+    };
+  }
+
+  function downloadSnapshot() {
+    const blob=new Blob([JSON.stringify(snapshot(),null,2)],{type:'application/json'});
+    const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='access-granted-draft-snapshot.json'; a.click();
+    setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+  }
+
+  async function loadWeekly() {
+    if(!state.connected) return showError('Connect to Sleeper first.');
+    const week=Math.max(1,Math.min(18,Number($('weekInput').value)||1));
+    try {
+      const [matchups,rosters]=await Promise.all([
+        jget(`${BASE}/league/${state.league.league_id}/matchups/${week}`),
+        jget(`${BASE}/league/${state.league.league_id}/rosters`)
+      ]);
+      state.rosters=rosters||state.rosters;
+      const my=state.rosters.find(r=>Number(r.roster_id)===Number(state.myRosterId));
+      const names=(my?.players||[]).map(id=>state.players[id]).filter(Boolean).sort((a,b)=>String(a.position).localeCompare(String(b.position)));
+      $('weeklyRoster').innerHTML=names.map(p=>`<div class="row"><div><b>${esc(pName(p))} <span class="pos ${p.position}">${p.position}</span></b><div class="tiny">${esc(p.team||'FA')}${p.injury_status?' • '+esc(p.injury_status):''}</div></div></div>`).join('')||'<div class="tiny">Roster not populated yet.</div>';
+      const mine=(matchups||[]).find(m=>Number(m.roster_id)===Number(state.myRosterId));
+      const opp=mine ? (matchups||[]).find(m=>m.matchup_id===mine.matchup_id && Number(m.roster_id)!==Number(state.myRosterId)) : null;
+      $('weeklyMatchup').innerHTML=mine?`<div class="row"><div><b>Your roster ${mine.roster_id}</b><div class="tiny">Current points: ${mine.points??0}</div></div></div>
+      <div class="row"><div><b>Opponent roster ${opp?.roster_id??'TBD'}</b><div class="tiny">Current points: ${opp?.points??0}</div></div></div>
+      <div class="notice">Sleeper's public API does not provide a full projection/news optimization feed. The next version can layer projections, injuries, waiver availability, and current web/news analysis on top of this synced roster.</div>`:
+      '<div class="tiny">Matchup not available yet.</div>';
+    } catch(e) { console.error(e); showError('Weekly data failed to load.'); }
+  }
+
+  $('connectBtn').addEventListener('click',connect);
+  $('refreshBtn').addEventListener('click',refreshDraft);
+  $('playerSearch').addEventListener('input',renderAvailable);
+  $('clearManualBtn').addEventListener('click',()=>{state.manualTaken.clear();renderAll();});
+  $('downloadBtn').addEventListener('click',downloadSnapshot);
+  $('weeklyRefreshBtn').addEventListener('click',loadWeekly);
+  $('draftTab').addEventListener('click',()=>{$('draftTab').classList.add('active');$('weeklyTab').classList.remove('active');$('draftMode').classList.remove('hidden');$('weeklyMode').classList.add('hidden');});
+  $('weeklyTab').addEventListener('click',()=>{$('weeklyTab').classList.add('active');$('draftTab').classList.remove('active');$('weeklyMode').classList.remove('hidden');$('draftMode').classList.add('hidden'); if(state.connected) loadWeekly();});
+  renderAvailable(); renderRoster(); renderRecommendations(); renderIntel();
+})();
+</script>
+</body>
+</html>
