@@ -51,6 +51,38 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 #pickPlanCard{border-color:#355a70;background:linear-gradient(135deg,#111f35,#13283a)}
 .error{padding:10px;border-radius:10px;background:#321820;color:#ffc2ca;border:1px solid #66303b;font-size:13px}
 .footer{color:var(--muted);font-size:11px;line-height:1.5;margin:12px 2px 30px}
+.weekly-hero{display:flex;justify-content:space-between;align-items:end;gap:14px;background:linear-gradient(135deg,#13233a,#122a35)}
+.weekly-controls{display:flex;gap:8px;align-items:end;flex-wrap:wrap}
+.weekly-controls input{width:82px}
+.weekly-section-head{display:flex;gap:10px;align-items:end;justify-content:space-between;margin-bottom:8px}
+.compact-search{width:210px;max-width:100%}
+.weekly-table{display:grid;gap:7px}
+.waiver-row{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:9px;align-items:start;padding:9px;border:1px solid var(--line);border-radius:10px;background:#101a2d}
+.waiver-row.strong{border-color:#315c47;background:#10261d}
+.waiver-row.watch{border-color:#5b4d27;background:#25200f}
+.waiver-rank{text-align:center;color:var(--muted);font-size:10px}.waiver-rank b{display:block;color:var(--text);font-size:17px}
+.value-badge{min-width:42px;text-align:center;font-weight:900;font-size:16px}
+.whyline{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.35}
+.weekly-roster{display:grid;gap:6px}
+.roster-player{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:8px;border-bottom:1px solid #22314f}
+.roster-player:last-child{border-bottom:0}
+.role-label{font-size:9px;font-weight:850;border-radius:999px;padding:3px 6px;background:#263653;color:#caddff}
+.role-label.starter{background:#18372c;color:#aef0c8}
+.role-label.bench{background:#2c2a3e;color:#d5ccff}
+.role-label.ir{background:#3c222a;color:#ffd1d8}
+.action-plan{display:grid;gap:7px;margin-top:8px}
+.action-item{display:grid;grid-template-columns:30px minmax(0,1fr);gap:8px;align-items:start;padding:8px 0;border-top:1px solid #29405c}
+.action-item:first-child{border-top:0}
+.action-num{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:#24415d;font-weight:900}
+.two-mini{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.labelish{letter-spacing:.08em;margin-bottom:5px}
+.sleeper-credit{margin-top:8px;text-align:right}
+.caveat-copy{line-height:1.55}
+.postdraft-steal{border-color:#66531f;background:#2a230f}
+.steal-label{display:inline-block;font-size:9px;font-weight:900;letter-spacing:.06em;padding:3px 6px;border-radius:999px;background:#4a3b10;color:#ffe68d;margin-top:3px}
+.churn-now{color:var(--good);font-weight:850}
+
+
 @media(max-width:780px){
   html,body{max-width:100%;overflow-x:hidden}
   .shell{width:100%;max-width:100%;padding:10px}
@@ -145,6 +177,24 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   .clock button{width:100%}
   .footer{font-size:10px}
 }
+
+@media(max-width:780px){
+  .weekly-hero{display:grid;grid-template-columns:1fr}
+  .weekly-controls{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .weekly-controls .field{width:100%}
+  .weekly-controls input{width:100%}
+  .weekly-controls button{width:100%}
+  .weekly-section-head{display:grid;grid-template-columns:1fr}
+  .compact-search{width:100%}
+  .two-mini{grid-template-columns:1fr}
+  .waiver-row{grid-template-columns:34px minmax(0,1fr)}
+  .waiver-row .value-badge{grid-column:2;text-align:left;font-size:12px}
+}
+@media(max-width:430px){
+  .weekly-controls{grid-template-columns:1fr}
+  .waiver-row{padding:8px 7px}
+}
+
 </style>
 </head>
 <body>
@@ -152,7 +202,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Same-league multi-manager beta • live Sleeper sync + personalized recommendations • mobile fix</div>
+    <div class="sub">Multi-manager beta • live draft + immediate post-draft scan + weekly command center • v2.3</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -245,22 +295,115 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <section id="weeklyMode" class="hidden">
-  <div class="card">
-    <h2>Weekly Command Center</h2>
-    <div class="goodbox">This shares the same Sleeper connection. It already pulls your roster and matchup. After the draft, the recommendation layer can be expanded with current projections, injuries, waivers, and trade analysis without building a second app.</div>
-    <div class="controls" style="margin-top:12px">
-      <div class="field"><label>Week</label><input id="weekInput" type="number" min="1" max="18" value="1" style="width:90px"></div>
-      <button class="primary" id="weeklyRefreshBtn">Load week</button>
+  <div class="card weekly-hero">
+    <div>
+      <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
+      <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
+      <div class="tiny">Designed to catch immediate post-draft waiver value first, then grow into lineup, waiver, opponent, trade, and playoff optimization.</div>
+    </div>
+    <div class="weekly-controls">
+      <div class="field"><label>Mode</label>
+        <select id="weeklyModeSelect">
+          <option value="postdraft">Immediate Post-Draft Scan</option>
+          <option value="weekly">Normal Weekly Check</option>
+        </select>
+      </div>
+      <div class="field"><label>Week</label><input id="weekInput" type="number" min="1" max="18" value="1"></div>
+      <button class="primary" id="weeklyRefreshBtn">Run Post-Draft Scan</button>
     </div>
   </div>
+
+  <div class="statusbar" style="margin-top:10px">
+    <span class="pill" id="weeklyStatePill">NFL state —</span>
+    <span class="pill" id="waiverPill">Waiver —</span>
+    <span class="pill" id="scanModePill">Mode —</span>
+    <span class="pill good">Sleeper rosters: live</span>
+    <span class="pill warn">External strategy/news: Aug 30 snapshot</span>
+  </div>
+
+  <div class="card" style="margin-top:12px;border-color:#36556f">
+    <div class="tiny">THIS WEEK'S ACTION PLAN</div>
+    <div id="weeklyActionPlan" class="action-plan">
+      <div class="tiny">Connect to Sleeper and run a weekly check.</div>
+    </div>
+  </div>
+
   <div class="grid" style="margin-top:12px">
-    <div class="card"><h3>My roster</h3><div id="weeklyRoster" class="list"><div class="tiny">Connect first.</div></div></div>
-    <div class="card"><h3>Matchup</h3><div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div></div>
+    <div>
+      <div class="card" id="postDraftScanCard">
+        <div class="weekly-section-head">
+          <div>
+            <h3>Undrafted steals</h3>
+            <div class="tiny">Players who survived the draft despite having enough market/upside value to deserve immediate review. This panel is most useful in the first hours after the draft.</div>
+          </div>
+          <span class="pill warn" id="postDraftWindowPill">POST-DRAFT</span>
+        </div>
+        <div id="postDraftSteals" class="weekly-table"><div class="tiny">Run an Immediate Post-Draft Scan.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
+            <h3>Best available adds</h3>
+            <div class="tiny">League-specific free agents only. In Post-Draft mode, undrafted upside and roster-churn value get extra weight; trending activity remains only a signal.</div>
+          </div>
+          <input id="weeklyFaSearch" class="compact-search" placeholder="Search free agents">
+        </div>
+        <div id="weeklyAdds" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+        <div class="tiny sleeper-credit">Trending add/drop data: Sleeper, previous 24 hours.</div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Add / Drop opportunities</h3>
+        <div class="tiny" style="margin-bottom:8px">Compares available-player value with your weakest expendable bench spots. “Review” is intentional — this beta will not tell you to churn a good player just because of one ranking.</div>
+        <div id="weeklyMoves" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Trending & recent league activity</h3>
+        <div class="two-mini">
+          <div>
+            <div class="tiny labelish">TRENDING ADDS — NFL</div>
+            <div id="weeklyTrendingAdds" class="list"><div class="tiny">—</div></div>
+          </div>
+          <div>
+            <div class="tiny labelish">RECENT LEAGUE MOVES</div>
+            <div id="weeklyTransactions" class="list"><div class="tiny">—</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="card">
+        <h3>My roster</h3>
+        <div id="weeklyRosterSummary" class="tiny" style="margin-bottom:8px">Connect first.</div>
+        <div id="weeklyRoster" class="weekly-roster"><div class="tiny">Connect first.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Drop review</h3>
+        <div class="tiny" style="margin-bottom:8px">Lowest-confidence roster spots first. Early picks, keepers, and starters receive extra protection.</div>
+        <div id="weeklyDrops" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>Opponent snapshot</h3>
+        <div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <h3>What this beta does not know yet</h3>
+        <div class="tiny caveat-copy">
+          Live Sleeper roster/injury status and trending activity are automatic. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
+        </div>
+      </div>
+    </aside>
   </div>
 </section>
 
 <div class="footer">
-  v2.1 same-league beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only.
+  v2.3 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -272,7 +415,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   const $ = id => document.getElementById(id);
   const state = {
     league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
-    myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false
+    myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false,
+    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'postdraft'
   };
 
   const suffixRe = /\b(jr|sr|ii|iii|iv)\b/g;
@@ -891,25 +1035,442 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     setTimeout(()=>URL.revokeObjectURL(a.href),1000);
   }
 
+
+  function managerForRosterId(rosterId) {
+    const r=state.rosters.find(x=>Number(x.roster_id)===Number(rosterId));
+    const u=r ? state.users.find(x=>String(x.user_id)===String(r.owner_id)) : null;
+    return u?.display_name || u?.username || `Roster ${rosterId}`;
+  }
+
+  function weeklyBoardMap() {
+    return new Map(dynamicPlayerBoard().map(b=>[String(b.player_id),b]));
+  }
+
+  function rosteredPlayerIds() {
+    const ids=new Set();
+    for(const r of state.rosters||[]) for(const id of (r.players||[])) ids.add(String(id));
+    return ids;
+  }
+
+  function draftedPlayerIds() {
+    return new Set((state.picks||[]).map(p=>String(p.player_id)).filter(Boolean));
+  }
+
+  function isDraftComplete() {
+    return ['complete','post_draft'].includes(String(state.draft?.status||'').toLowerCase());
+  }
+
+  function liveDraftedCount() {
+    return (state.picks||[]).filter(p=>!p.is_keeper).length;
+  }
+
+  function postDraftMarketCutoff() {
+    // 10 teams x 16 rounds is 160 board slots, but keeper-filled slots reduce live selections.
+    // Use the larger of live draft volume + a small buffer or 140 to avoid overreacting to deep fliers.
+    return Math.max(140,Math.min(175,liveDraftedCount()+20));
+  }
+
+  function trendMap(rows) {
+    return new Map((rows||[]).map(x=>[String(x.player_id),Number(x.count)||0]));
+  }
+
+  function clamp(n,min,max) { return Math.max(min,Math.min(max,n)); }
+
+  function weeklyBaseValue(b) {
+    if(!b) return 1;
+    const market=Math.min(Number(b.ecrRank)||999,Number(b.sleeperRank)||999);
+    let value=100-(market-1)*0.40;
+    if(b.pos==='RB'||b.pos==='WR') value+=2;
+    if(b.news) value+=(Number(b.news.delta)||0)*0.55;
+    const p=b.pdata||{};
+    if(Number(p.depth_chart_order)===1) value+=2;
+    else if(Number(p.depth_chart_order)===2 && b.pos==='RB') value+=1.5;
+    if(Number(p.age)>0 && Number(p.age)<=24 && (b.pos==='RB'||b.pos==='WR')) value+=1;
+    const injury=String(p.injury_status||'').toUpperCase();
+    if(['OUT','IR','PUP'].includes(injury)) value-=8;
+    return clamp(value,2,99);
+  }
+
+  function myWeeklyContext() {
+    const my=state.rosters.find(r=>Number(r.roster_id)===Number(state.myRosterId));
+    const starters=new Set((my?.starters||[]).map(String));
+    const reserve=new Set((my?.reserve||[]).map(String));
+    const players=(my?.players||[]).map(String);
+    const counts={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0};
+    for(const id of players) {
+      const p=state.players[id];
+      let pos=String(p?.position||'').toUpperCase();
+      if(pos==='DST') pos='DEF';
+      if(counts.hasOwnProperty(pos)) counts[pos]++;
+    }
+    return {my,starters,reserve,players,counts};
+  }
+
+  function freeAgentScore(b,ctx,addMap,dropMap,mode='weekly') {
+    let v=weeklyBaseValue(b);
+    const adds=addMap.get(String(b.player_id))||0;
+    const drops=dropMap.get(String(b.player_id))||0;
+    if(adds>0) v+=Math.min(8,Math.log10(adds+1)*3.1);
+    if(drops>0) v-=Math.min(5,Math.log10(drops+1)*2.0);
+
+    if((b.pos==='RB'||b.pos==='WR') && ctx.counts[b.pos]<5) v+=3;
+    if(b.pos==='QB' && ctx.counts.QB>=1) v-=9;
+    if(b.pos==='TE' && ctx.counts.TE>=1) v-=8;
+    if(b.pos==='K' && ctx.counts.K>=1) v-=15;
+    if(b.pos==='DEF' && ctx.counts.DEF>=1) v-=13;
+
+    // Bench construction: favor upside skill players.
+    if((b.pos==='RB'||b.pos==='WR') && Number(b.pdata?.age||99)<=25) v+=1.5;
+
+    if(mode==='postdraft') {
+      const cutoff=postDraftMarketCutoff();
+      if((b.pos==='RB'||b.pos==='WR'||b.pos==='TE') && b.ecrRank<=cutoff) {
+        v+=Math.min(10,Math.max(0,(cutoff-b.ecrRank)/12));
+      }
+      if(b.pos==='RB' && Number(b.pdata?.depth_chart_order)===2) v+=2.5;
+      if(b.pos==='RB'||b.pos==='WR') v+=2;
+      // Immediately after a 1-QB draft, skill-player churn is usually more valuable than QB2/TE2.
+      if(b.pos==='QB' && ctx.counts.QB>=1) v-=5;
+      if(b.pos==='TE' && ctx.counts.TE>=1) v-=4;
+    }
+    return clamp(v,1,100);
+  }
+
+  function freeAgentReasons(b,ctx,addMap) {
+    const reasons=[];
+    const adds=addMap.get(String(b.player_id))||0;
+    if(adds>=1000) reasons.push(`hot add: ${adds.toLocaleString()} in 24h`);
+    else if(adds>=100) reasons.push(`trending: ${adds.toLocaleString()} adds`);
+    if(b.news?.label) reasons.push(b.news.label.toLowerCase());
+    if((b.pos==='RB'||b.pos==='WR') && ctx.counts[b.pos]<5) reasons.push(`${b.pos} depth fits roster`);
+    if(Number(b.pdata?.depth_chart_order)===1) reasons.push('listed starter');
+    else if(Number(b.pdata?.depth_chart_order)===2 && b.pos==='RB') reasons.push('RB2 / contingency path');
+    if((b.ecrRank||999)<=150) reasons.push(`market rank ${b.ecrRank}`);
+    return reasons.slice(0,3).join(' • ') || 'available depth / upside';
+  }
+
+  function freeAgentPool(ctx,mode=state.weeklyMode||'weekly') {
+    const rostered=rosteredPlayerIds();
+    const drafted=draftedPlayerIds();
+    const addMap=trendMap(state.trendingAdds), dropMap=trendMap(state.trendingDrops);
+    return dynamicPlayerBoard()
+      .filter(b=>b.player_id && !rostered.has(String(b.player_id)))
+      .filter(b=>['QB','RB','WR','TE','K','DEF'].includes(b.pos))
+      .map(b=>({
+        ...b,
+        weeklyValue:freeAgentScore(b,ctx,addMap,dropMap,mode),
+        trendAdds:addMap.get(String(b.player_id))||0,
+        wasDrafted:drafted.has(String(b.player_id))
+      }))
+      .sort((a,b)=>b.weeklyValue-a.weeklyValue || a.ecrRank-b.ecrRank);
+  }
+
+  function draftPickForPlayer(id) {
+    return state.picks.find(p=>String(p.player_id)===String(id) && Number(p.roster_id)===Number(state.myRosterId));
+  }
+
+  function dropCandidates(ctx) {
+    const board=weeklyBoardMap();
+    const keeperIds=new Set(state.picks.filter(p=>p.is_keeper && Number(p.roster_id)===Number(state.myRosterId)).map(p=>String(p.player_id)));
+    const rows=[];
+    for(const id of ctx.players) {
+      const b=board.get(String(id));
+      const p=state.players[id];
+      if(!p) continue;
+      let pos=String(p.position||'').toUpperCase(); if(pos==='DST') pos='DEF';
+      const pick=draftPickForPlayer(id);
+      const round=Number(pick?.round)||99;
+      const isStarter=ctx.starters.has(String(id));
+      const isReserve=ctx.reserve.has(String(id));
+      const isKeeper=keeperIds.has(String(id));
+      const value=weeklyBaseValue(b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p});
+      let dropability=100-value;
+      if(isStarter) dropability-=38;
+      if(isKeeper) dropability-=35;
+      if(round<=4) dropability-=30;
+      else if(round<=8) dropability-=17;
+      else if(round>=13) dropability+=7;
+      if(pos==='QB' && ctx.counts.QB>1) dropability+=10;
+      if(pos==='TE' && ctx.counts.TE>1) dropability+=9;
+      if(pos==='K'||pos==='DEF') dropability+=5;
+      if(isReserve) dropability-=5;
+      rows.push({
+        id,name:pName(p),pos,team:p.team||'FA',injury:p.injury_status||'',round,
+        isStarter,isKeeper,isReserve,value,dropability:clamp(dropability,0,100),board:b
+      });
+    }
+    return rows.sort((a,b)=>b.dropability-a.dropability);
+  }
+
+  function postDraftStealScore(b,ctx) {
+    let s=b.weeklyValue;
+    const cutoff=postDraftMarketCutoff();
+    if(!b.wasDrafted) s+=8;
+    if(b.ecrRank<=cutoff) s+=Math.min(14,(cutoff-b.ecrRank)/7);
+    if(b.trendAdds>=500) s+=4;
+    if(b.trendAdds>=2000) s+=3;
+    if(b.pos==='RB' && Number(b.pdata?.depth_chart_order)===2) s+=3;
+    if((b.pos==='RB'||b.pos==='WR') && Number(b.pdata?.age||99)<=25) s+=2;
+    if(b.pos==='QB' && ctx.counts.QB>=1) s-=10;
+    if(b.pos==='TE' && ctx.counts.TE>=1) s-=8;
+    return clamp(s,1,120);
+  }
+
+  function renderPostDraftSteals(ctx,pool) {
+    const cutoff=postDraftMarketCutoff();
+    const steals=pool
+      .filter(b=>!b.wasDrafted)
+      .filter(b=>['RB','WR','TE','QB'].includes(b.pos))
+      .map(b=>({...b,stealScore:postDraftStealScore(b,ctx)}))
+      .filter(b=>b.ecrRank<=cutoff+25 || b.trendAdds>=250 || b.stealScore>=68)
+      .sort((a,b)=>b.stealScore-a.stealScore || a.ecrRank-b.ecrRank)
+      .slice(0,10);
+
+    $('postDraftWindowPill').textContent=isDraftComplete()?'DRAFT COMPLETE':'PRE-DRAFT PREVIEW';
+    $('postDraftWindowPill').className='pill '+(isDraftComplete()?'good':'warn');
+
+    $('postDraftSteals').innerHTML=steals.length ? steals.map((b,i)=>{
+      const urgency=b.stealScore>=82?'IMMEDIATE REVIEW':(b.stealScore>=70?'STRONG WATCH':'WATCH');
+      return `<div class="waiver-row postdraft-steal">
+        <div class="waiver-rank">STEAL<b>${i+1}</b></div>
+        <div><b>${esc(b.name)} <span class="pos ${b.pos}">${b.pos}</span></b>
+          <div class="meta">${esc(b.team)} • ECR ${b.ecrRank} • Sleeper ${b.sleeperRank} • undrafted</div>
+          <span class="steal-label">${urgency}</span>
+          <div class="whyline">${esc(freeAgentReasons(b,ctx,trendMap(state.trendingAdds)))} • survived a draft with ${liveDraftedCount()} live selections</div>
+        </div>
+        <div class="value-badge">${Math.round(b.stealScore)}</div>
+      </div>`;
+    }).join('') : '<div class="goodbox">No obvious undrafted steal clears the current beta threshold. That is useful information — do not churn just to make a move.</div>';
+    return steals;
+  }
+
+  function renderWeeklyRoster(ctx) {
+    const board=weeklyBoardMap();
+    const rosterRows=ctx.players.map(id=>{
+      const p=state.players[id];
+      if(!p) return null;
+      let pos=String(p.position||'').toUpperCase(); if(pos==='DST') pos='DEF';
+      const b=board.get(String(id));
+      const role=ctx.reserve.has(id)?'IR':(ctx.starters.has(id)?'STARTER':'BENCH');
+      return {id,p,pos,b,role,value:weeklyBaseValue(b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p})};
+    }).filter(Boolean).sort((a,b)=>{
+      const order={STARTER:0,BENCH:1,IR:2};
+      return order[a.role]-order[b.role] || b.value-a.value;
+    });
+
+    const starters=rosterRows.filter(x=>x.role==='STARTER').length;
+    const bench=rosterRows.filter(x=>x.role==='BENCH').length;
+    const ir=rosterRows.filter(x=>x.role==='IR').length;
+    $('weeklyRosterSummary').textContent=`${rosterRows.length} rostered • ${starters} starters • ${bench} bench • ${ir} IR`;
+
+    $('weeklyRoster').innerHTML=rosterRows.map(x=>`<div class="roster-player">
+      <div><b>${esc(pName(x.p))} <span class="pos ${x.pos}">${x.pos}</span></b>
+        <div class="tiny">${esc(x.p.team||'FA')}${x.p.injury_status?' • '+esc(x.p.injury_status):''} • value ${Math.round(x.value)}</div>
+      </div>
+      <span class="role-label ${x.role.toLowerCase()}">${x.role}</span>
+    </div>`).join('') || '<div class="tiny">Roster not populated yet.</div>';
+  }
+
+  function renderWeeklyAdds(ctx) {
+    const addMap=trendMap(state.trendingAdds);
+    const pool=freeAgentPool(ctx,state.weeklyMode);
+    const q=norm($('weeklyFaSearch')?.value||'');
+    const shown=pool.filter(b=>!q || norm(b.name).includes(q) || norm(b.team).includes(q) || norm(b.pos).includes(q)).slice(0,18);
+
+    $('weeklyAdds').innerHTML=shown.map((b,i)=>{
+      const cls=b.weeklyValue>=72?'strong':(b.weeklyValue>=60?'watch':'');
+      return `<div class="waiver-row ${cls}">
+        <div class="waiver-rank">ADD<b>${i+1}</b></div>
+        <div><b>${esc(b.name)} <span class="pos ${b.pos}">${b.pos}</span></b>
+          <div class="meta">${esc(b.team)} • ECR ${b.ecrRank} • Sleeper ${b.sleeperRank}${b.pdata?.injury_status?' • '+esc(b.pdata.injury_status):''}</div>
+          <div class="whyline">${esc(freeAgentReasons(b,ctx,addMap))}</div>
+        </div>
+        <div class="value-badge">${Math.round(b.weeklyValue)}</div>
+      </div>`;
+    }).join('') || '<div class="tiny">No matching free agents found.</div>';
+    return pool;
+  }
+
+  function renderWeeklyDrops(ctx) {
+    const drops=dropCandidates(ctx).slice(0,7);
+    $('weeklyDrops').innerHTML=drops.map((d,i)=>{
+      const label=d.dropability>=58?'REVIEW DROP':(d.dropability>=42?'FRINGE':'HOLD');
+      return `<div class="waiver-row ${d.dropability>=58?'watch':''}">
+        <div class="waiver-rank">#<b>${i+1}</b></div>
+        <div><b>${esc(d.name)} <span class="pos ${d.pos}">${d.pos}</span></b>
+          <div class="meta">${esc(d.team)}${d.round<99?' • drafted R'+d.round:''}${d.isStarter?' • starter':''}${d.isKeeper?' • keeper':''}</div>
+          <div class="whyline">${label}${d.isStarter?' • starter protected':''}${d.round<=8?' • draft capital protected':''}</div>
+        </div>
+        <div class="value-badge">${Math.round(d.dropability)}<div class="tiny">drop</div></div>
+      </div>`;
+    }).join('') || '<div class="tiny">No roster data.</div>';
+    return drops;
+  }
+
+  function renderWeeklyMoves(ctx,pool,drops) {
+    const rows=[];
+    const post=state.weeklyMode==='postdraft';
+    const candidates=pool.filter(x=>['RB','WR','QB','TE'].includes(x.pos)).slice(0,post?16:10);
+    const dropPool=drops.filter(d=>!d.isStarter && !d.isKeeper).slice(0,post?7:5);
+
+    for(const add of candidates) {
+      // Compare against the weakest realistic bench player, but protect same-position depth when thin.
+      let bestDrop=null, bestGap=-999;
+      for(const drop of dropPool) {
+        let gap=add.weeklyValue-drop.value;
+        if(add.pos===drop.pos) gap+=1.5;
+        if((drop.pos==='RB'||drop.pos==='WR') && ctx.counts[drop.pos]<=4 && add.pos!==drop.pos) gap-=3;
+        if(drop.round<=8) gap-=4;
+        if(gap>bestGap){bestGap=gap;bestDrop=drop;}
+      }
+      if(!bestDrop) continue;
+      const threshold=post?2:4;
+      if(bestGap<threshold) continue;
+      rows.push({add,drop:bestDrop,gap:bestGap});
+      if(rows.length>=(post?7:5)) break;
+    }
+
+    $('weeklyMoves').innerHTML=rows.length ? rows.map((m,i)=>{
+      const strongCut=post?10:14, reviewCut=post?5:8;
+      const verdict=m.gap>=strongCut?'STRONG REVIEW':(m.gap>=reviewCut?'REVIEW':'MONITOR');
+      return `<div class="waiver-row ${m.gap>=strongCut?'strong':'watch'}">
+        <div class="waiver-rank">${verdict==='STRONG REVIEW'?'!':'↕'}</div>
+        <div><b>ADD: ${esc(m.add.name)} <span class="pos ${m.add.pos}">${m.add.pos}</span></b>
+          <div class="meta">DROP CANDIDATE: ${esc(m.drop.name)} <span class="pos ${m.drop.pos}">${m.drop.pos}</span>${m.add.wasDrafted?'':' • ADD WENT UNDRAFTED'}</div>
+          <div class="whyline">${verdict} • internal roster-value gap +${Math.round(m.gap)}.${post?' Post-draft mode intentionally scans more aggressively, but still protects starters/keepers/early picks.':''} Verify current news before submitting.</div>
+        </div>
+        <div class="value-badge">+${Math.round(m.gap)}</div>
+      </div>`;
+    }).join('') : '<div class="goodbox">No clear churn move currently clears the beta threshold. Holding is a valid recommendation.</div>';
+    return rows;
+  }
+
+  function renderWeeklyTrending(ctx) {
+    const rostered=rosteredPlayerIds();
+    const rows=(state.trendingAdds||[]).map(x=>{
+      const p=state.players[String(x.player_id)];
+      if(!p) return null;
+      return {id:String(x.player_id),p,count:Number(x.count)||0,available:!rostered.has(String(x.player_id))};
+    }).filter(Boolean).slice(0,10);
+    $('weeklyTrendingAdds').innerHTML=rows.map(x=>`<div class="row">
+      <div><b>${esc(pName(x.p))} <span class="pos ${x.p.position}">${x.p.position}</span></b>
+        <div class="tiny">${x.count.toLocaleString()} adds • ${x.available?'<span style="color:var(--good)">AVAILABLE IN THIS LEAGUE</span>':'rostered'}</div>
+      </div>
+    </div>`).join('') || '<div class="tiny">No trending data.</div>';
+  }
+
+  function renderWeeklyTransactions() {
+    const rows=[...(state.transactions||[])].filter(t=>t.status==='complete').sort((a,b)=>Number(b.created)-Number(a.created)).slice(0,10);
+    $('weeklyTransactions').innerHTML=rows.map(t=>{
+      const adds=Object.keys(t.adds||{}).map(id=>pName(state.players[id])).join(', ');
+      const drops=Object.keys(t.drops||{}).map(id=>pName(state.players[id])).join(', ');
+      const manager=(t.roster_ids||[]).length===1?managerForRosterId(t.roster_ids[0]):(t.type==='trade'?'Multiple teams':'League');
+      const parts=[];
+      if(adds) parts.push(`added ${adds}`);
+      if(drops) parts.push(`dropped ${drops}`);
+      if(t.type==='trade'&&!adds&&!drops) parts.push('completed a trade');
+      return `<div class="row"><div><b>${esc(manager)}</b><div class="tiny">${esc(parts.join(' • ')||t.type)}</div></div></div>`;
+    }).join('') || '<div class="tiny">No completed transactions found for this week yet.</div>';
+  }
+
+  function renderWeeklyMatchup(matchups,ctx) {
+    const mine=(matchups||[]).find(m=>Number(m.roster_id)===Number(state.myRosterId));
+    const opp=mine ? (matchups||[]).find(m=>m.matchup_id===mine.matchup_id && Number(m.roster_id)!==Number(state.myRosterId)) : null;
+    if(!mine || !opp) {
+      $('weeklyMatchup').innerHTML='<div class="tiny">Matchup is not populated yet. This is normal immediately after the draft.</div>';
+      return;
+    }
+    const board=weeklyBoardMap();
+    const oppPlayers=(opp.players||[]).map(id=>({id:String(id),p:state.players[String(id)],b:board.get(String(id))}))
+      .filter(x=>x.p).sort((a,b)=>weeklyBaseValue(b.b)-weeklyBaseValue(a.b)).slice(0,6);
+    $('weeklyMatchup').innerHTML=`<div class="row"><div><b>vs. ${esc(managerForRosterId(opp.roster_id))}</b>
+      <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}</div></div></div>
+      <div class="tiny labelish" style="margin-top:6px">TOP OPPONENT ASSETS</div>
+      ${oppPlayers.map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${x.p.position}">${x.p.position}</span></b><div class="tiny">${esc(x.p.team||'FA')}</div></div></div>`).join('')}`;
+  }
+
+  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[]) {
+    const items=[];
+    const post=state.weeklyMode==='postdraft';
+    const top=pool[0];
+    const topSteal=steals[0];
+    const urgent=pool.find(x=>x.trendAdds>=500 && x.weeklyValue>=58);
+
+    if(post && topSteal) {
+      items.push(`<b>Immediate post-draft scan:</b> ${esc(topSteal.name)} is the top undrafted value still available. ${topSteal.stealScore>=82?'<span class="churn-now">Review before the league starts churning.</span>':'Put him at the top of your watchlist.'}`);
+    }
+
+    if(moves?.length && moves[0].gap>=(post?5:8)) {
+      items.push(`<b>Review ${esc(moves[0].add.name)} over ${esc(moves[0].drop.name)}.</b> The beta sees a meaningful roster-value upgrade. Confirm current role/injury news before submitting.`);
+    } else if(top) {
+      items.push(`<b>${post?'Keep scanning the undrafted pool':'Run a free-agent scan'}.</b> ${esc(top.name)} is currently the top available fit, but no automatic churn move clears the stronger threshold.`);
+    }
+
+    if(urgent && (!topSteal || urgent.player_id!==topSteal.player_id)) {
+      items.push(`<b>Market movement:</b> ${esc(urgent.name)} is available here and has ${urgent.trendAdds.toLocaleString()} Sleeper adds in the last 24 hours.`);
+    }
+
+    const fringe=drops.find(d=>!d.isStarter&&!d.isKeeper&&d.dropability>=48);
+    if(fringe) items.push(`<b>Churn slot:</b> ${esc(fringe.name)} is currently your lowest-confidence expendable bench spot. Compare every attractive free agent against him rather than dropping automatically.`);
+
+    const waiverPos=Number(ctx.my?.settings?.waiver_position);
+    if(Number.isFinite(waiverPos)&&waiverPos>0) items.push(`<b>Waiver priority:</b> you are currently #${waiverPos}. Preserve it for a material upgrade rather than a lateral move.`);
+
+    if(!items.length) items.push('<b>No urgent move detected.</b> Holding your roster is better than making a transaction for its own sake.');
+    $('weeklyActionPlan').innerHTML=items.slice(0,5).map((x,i)=>`<div class="action-item"><div class="action-num">${i+1}</div><div>${x}</div></div>`).join('');
+  }
+
   async function loadWeekly() {
     if(!state.connected) return showError('Connect to Sleeper first.');
     const week=Math.max(1,Math.min(18,Number($('weekInput').value)||1));
+    state.weeklyWeek=week;
+    state.weeklyMode=$('weeklyModeSelect')?.value||'postdraft';
+    $('weeklyRefreshBtn').disabled=true;
+    $('weeklyRefreshBtn').textContent=state.weeklyMode==='postdraft'?'Scanning…':'Checking…';
     try {
-      const [matchups,rosters]=await Promise.all([
+      const results=await Promise.allSettled([
         jget(`${BASE}/league/${state.league.league_id}/matchups/${week}`),
-        jget(`${BASE}/league/${state.league.league_id}/rosters`)
+        jget(`${BASE}/league/${state.league.league_id}/rosters`),
+        jget(`${BASE}/players/nfl/trending/add?lookback_hours=24&limit=50`),
+        jget(`${BASE}/players/nfl/trending/drop?lookback_hours=24&limit=30`),
+        jget(`${BASE}/league/${state.league.league_id}/transactions/${week}`),
+        jget(`${BASE}/state/nfl`)
       ]);
-      state.rosters=rosters||state.rosters;
-      const my=state.rosters.find(r=>Number(r.roster_id)===Number(state.myRosterId));
-      const names=(my?.players||[]).map(id=>state.players[id]).filter(Boolean).sort((a,b)=>String(a.position).localeCompare(String(b.position)));
-      $('weeklyRoster').innerHTML=names.map(p=>`<div class="row"><div><b>${esc(pName(p))} <span class="pos ${p.position}">${p.position}</span></b><div class="tiny">${esc(p.team||'FA')}${p.injury_status?' • '+esc(p.injury_status):''}</div></div></div>`).join('')||'<div class="tiny">Roster not populated yet.</div>';
-      const mine=(matchups||[]).find(m=>Number(m.roster_id)===Number(state.myRosterId));
-      const opp=mine ? (matchups||[]).find(m=>m.matchup_id===mine.matchup_id && Number(m.roster_id)!==Number(state.myRosterId)) : null;
-      $('weeklyMatchup').innerHTML=mine?`<div class="row"><div><b>Your roster ${mine.roster_id}</b><div class="tiny">Current points: ${mine.points??0}</div></div></div>
-      <div class="row"><div><b>Opponent roster ${opp?.roster_id??'TBD'}</b><div class="tiny">Current points: ${opp?.points??0}</div></div></div>
-      <div class="notice">Sleeper's public API does not provide a full projection/news optimization feed. The next version can layer projections, injuries, waiver availability, and current web/news analysis on top of this synced roster.</div>`:
-      '<div class="tiny">Matchup not available yet.</div>';
-    } catch(e) { console.error(e); showError('Weekly data failed to load.'); }
+      const val=i=>results[i].status==='fulfilled'?results[i].value:null;
+      const matchups=val(0)||[];
+      const rosters=val(1)||state.rosters;
+      state.trendingAdds=val(2)||[];
+      state.trendingDrops=val(3)||[];
+      state.transactions=val(4)||[];
+      state.nflState=val(5)||state.nflState;
+      state.rosters=rosters;
+
+      const ctx=myWeeklyContext();
+      if(!ctx.my) throw new Error('Your roster could not be found after refresh.');
+
+      const nfl=state.nflState;
+      setPill('weeklyStatePill',nfl?`${nfl.season_type||''} • NFL week ${nfl.display_week||nfl.week||week}`:`Week ${week}`,nfl?'good':'warn');
+      const waiverPos=Number(ctx.my.settings?.waiver_position);
+      setPill('waiverPill',Number.isFinite(waiverPos)&&waiverPos>0?`Waiver priority #${waiverPos}`:'Waiver status loaded','good');
+      setPill('scanModePill',state.weeklyMode==='postdraft'?'Immediate post-draft scan':'Normal weekly check',state.weeklyMode==='postdraft'?'warn':'good');
+
+      renderWeeklyRoster(ctx);
+      const pool=renderWeeklyAdds(ctx);
+      const steals=renderPostDraftSteals(ctx,pool);
+      const drops=renderWeeklyDrops(ctx);
+      const moves=renderWeeklyMoves(ctx,pool,drops);
+      renderWeeklyTrending(ctx);
+      renderWeeklyTransactions();
+      renderWeeklyMatchup(matchups,ctx);
+      renderWeeklyActionPlan(ctx,pool,drops,moves,steals);
+      $('postDraftScanCard').style.display=state.weeklyMode==='postdraft'?'block':'none';
+    } catch(e) {
+      console.error(e);
+      $('weeklyActionPlan').innerHTML=`<div class="error">${esc(e?.message||'Weekly data failed to load.')}</div>`;
+    } finally {
+      $('weeklyRefreshBtn').disabled=false;
+      $('weeklyRefreshBtn').textContent=state.weeklyMode==='postdraft'?'Run Post-Draft Scan':'Run Weekly Check';
+    }
   }
 
   $('connectBtn').addEventListener('click',connect);
@@ -918,6 +1479,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   $('clearManualBtn').addEventListener('click',()=>{state.manualTaken.clear();renderAll();});
   $('downloadBtn').addEventListener('click',downloadSnapshot);
   $('weeklyRefreshBtn').addEventListener('click',loadWeekly);
+  $('weeklyModeSelect').addEventListener('change',()=>{
+    state.weeklyMode=$('weeklyModeSelect').value;
+    $('weeklyRefreshBtn').textContent=state.weeklyMode==='postdraft'?'Run Post-Draft Scan':'Run Weekly Check';
+    $('postDraftScanCard').style.display=state.weeklyMode==='postdraft'?'block':'none';
+    if(state.connected) loadWeekly();
+  });
+  $('weeklyFaSearch').addEventListener('input',()=>{ if(state.connected){ const ctx=myWeeklyContext(); renderWeeklyAdds(ctx); } });
   $('draftTab').addEventListener('click',()=>{$('draftTab').classList.add('active');$('weeklyTab').classList.remove('active');$('draftMode').classList.remove('hidden');$('weeklyMode').classList.add('hidden');});
   $('weeklyTab').addEventListener('click',()=>{$('weeklyTab').classList.add('active');$('draftTab').classList.remove('active');$('weeklyMode').classList.remove('hidden');$('draftMode').classList.add('hidden'); if(state.connected) loadWeekly();});
   renderAvailable(); renderRoster(); renderRecommendations(); renderIntel();
