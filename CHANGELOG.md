@@ -4,6 +4,32 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.9.1 — Availability Freshness Guardrails
+**2026-08-31**
+
+- Separate active game-week injury concerns from stale preseason/early-week Questionable tags.
+- Use days until kickoff, practice participation, and Sleeper status freshness to determine whether a Questionable tag should affect recommendations.
+- Treat Questionable players outside the game-week practice window as EARLY WATCH with no automatic scoring penalty.
+- Treat Questionable tags older than 48 hours with no practice context as STALE TAG with no automatic scoring penalty.
+- Keep DNP, limited practice, Doubtful, Out, IR, PUP, and NFI designations actionable.
+- Show active vs. stale availability counts separately in the Practice & Availability panel.
+- Prevent stale Questionable tags from creating matchup-health alerts or Weekly Action Plan warnings.
+- Preserve all v2.9 practice/injury integration and existing Start/Sit, waiver, roster-utility, IR/PUP, recent-transaction, K/DST, and QB2 guardrails.
+
+## v2.9 — Practice & Availability Intelligence
+**2026-08-31**
+
+- Add Sleeper practice-participation data to weekly player evaluation.
+- Normalize full, limited, and did-not-participate practice statuses.
+- Add injury designation, injury/body-part detail when available, and freshness of Sleeper's latest player-status update.
+- Add a Practice & Availability panel for rostered players.
+- Add availability-risk adjustments to the Start / Sit Optimizer.
+- Add current practice/injury context to weekly waiver and free-agent scoring.
+- Add availability context to roster-utility scoring and matchup health.
+- Add availability warnings to the weekly action plan.
+- Treat full practice as a modest positive signal and DNP/limited participation as risk context rather than standalone sit decisions.
+- Preserve usage intelligence, live game context, weather, recommendation coherence, recent-transaction protection, IR/PUP guardrails, K/DST protection, and QB2 suppression.
+
 ## v2.8 — Usage & Opportunity Intelligence
 **2026-08-31**
 

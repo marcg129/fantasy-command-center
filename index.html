@@ -104,6 +104,15 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .usage-chip.good{border-color:#276c50;color:#6ee7b7}
 .usage-chip.warn{border-color:#795f1b;color:#fde68a}
 .usage-chip.bad{border-color:#71313b;color:#fda4af}
+.avail-good{border-color:#2d6b50;background:#10251c}
+.avail-watch{border-color:#795f1b;background:#2a210f}
+.avail-bad{border-color:#71313b;background:#2a1117}
+.avail-neutral{border-color:#31405e;background:#11192d}
+.avail-chip{font-size:9px;font-weight:850;border:1px solid #33415f;border-radius:999px;padding:2px 6px;color:var(--muted)}
+.avail-chip.good{border-color:#276c50;color:#6ee7b7}
+.avail-chip.warn{border-color:#795f1b;color:#fde68a}
+.avail-chip.bad{border-color:#71313b;color:#fda4af}
+
 
 
 
@@ -232,7 +241,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • live weekly usage intelligence • v2.8</div>
+    <div class="sub">Multi-manager beta • live practice & availability intelligence • v2.9.1</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -329,7 +338,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.8 adds recent NFL usage, opportunities, snap share, and workload trends to Sleeper roster/injury data plus live game context.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.9 adds live practice participation, injury-detail freshness, and availability monitoring to Sleeper data, recent workload, game context, and weather.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -350,6 +359,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <span class="pill good">Sleeper rosters: live</span>
     <span class="pill" id="gameDataPill">Game context —</span>
     <span class="pill" id="usageDataPill">Usage data —</span>
+    <span class="pill" id="availabilityDataPill">Availability —</span>
     <span class="pill warn">External strategy/news: Aug 30 snapshot</span>
   </div>
 
@@ -377,12 +387,23 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div class="weekly-section-head">
           <div>
             <h3>Start / Sit Optimizer</h3>
-            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.8 combines player value, injury/role, recent opportunities and snap share, plus opponent, game total, venue/roof, and available outdoor weather.</div>
+            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.9 combines player value, current injury/practice status, recent opportunities and snap share, plus opponent, game total, venue/roof, and available outdoor weather.</div>
           </div>
           <span class="pill" id="lineupStatusPill">Lineup —</span>
         </div>
         <div id="weeklyLineupSummary" class="goodbox" style="margin-bottom:8px">Run a weekly check.</div>
         <div id="weeklyStartSit" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
+            <h3>Practice & Availability</h3>
+            <div class="tiny">Live Sleeper practice participation, injury designation, body-part detail when available, and freshness of the latest player-status update. Stale preseason/early-week Questionable tags are separated from active game-week concerns instead of being treated equally.</div>
+          </div>
+          <span class="pill" id="availabilityPanelPill">Availability —</span>
+        </div>
+        <div id="weeklyAvailability" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
       </div>
 
       <div class="card" style="margin-top:12px">
@@ -468,7 +489,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.8 adds nflverse recent player stats and snap-count workload intelligence to Start/Sit, waiver, and roster-utility scoring, with reduced-weight prior-season fallback before current-year usage is available; live game context, weather, recommendation coherence, recent-transaction protection, IR/PUP guardrails, K/DST protection, and QB2 suppression remain intact, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.8 now adds nflverse player stats and snap-count workload signals. Independent projections, route participation, detailed practice reports, red-zone opportunity, and continuously refreshed news are still future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.9.1 separates active game-week availability concerns from stale preseason/early-week Questionable tags, using practice participation, status freshness, and days until kickoff so old Q tags do not distort Start/Sit, matchup-health, waiver, or action-plan recommendations, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.8 now adds nflverse player stats and snap-count workload signals. Independent projections, route participation, detailed practice reports, red-zone opportunity, and continuously refreshed news are still future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -476,7 +497,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.8 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.9.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -1692,6 +1713,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(mode==='weekly' && b.pdata) {
       v+=gameEnvAdjustmentForPlayer(b.pdata)*0.75;
       v+=usageAdjustmentForPlayer(b.pdata)*0.85;
+      v+=availabilityAdjustmentForPlayer(b.pdata)*0.70;
     }
 
     if(mode==='postdraft') {
@@ -1720,6 +1742,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if((b.pos==='RB'||b.pos==='WR') && ctx.activeCounts[b.pos]<5) reasons.push(`${b.pos} depth fits roster`);
     if(b.news?.label) reasons.push(b.news.label.toLowerCase());
     if((b.ecrRank||999)<=150) reasons.push(`market rank ${b.ecrRank}`);
+
+    const availability=b.pdata?availabilitySummaryText(b.pdata):'';
+    if(availability) reasons.push(availability);
 
     const usage=b.pdata?usageSummaryText(b.pdata):'';
     if(usage) reasons.push(usage);
@@ -1980,6 +2005,280 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       </div>`;
     }).join('') : '<div class="goodbox">No obvious undrafted steal clears the current beta threshold. That is useful information — do not churn just to make a move.</div>';
     return steals;
+  }
+
+  function practiceCode(p) {
+    const raw=String(
+      p?.practice_participation ||
+      p?.practice_status ||
+      ''
+    ).trim().toUpperCase();
+
+    if(!raw) return '';
+    if(raw==='DNP' || raw.includes('DID NOT PARTICIPATE') || raw.includes('DID NOT PRACTICE')) return 'DNP';
+    if(raw==='LIMITED' || raw==='LP' || raw.includes('LIMITED')) return 'LIMITED';
+    if(raw==='FULL' || raw==='FP' || raw.includes('FULL')) return 'FULL';
+    return raw;
+  }
+
+  function injuryBodyPart(p) {
+    return String(
+      p?.injury_body_part ||
+      p?.injury_body ||
+      p?.injury_notes ||
+      ''
+    ).trim();
+  }
+
+  function newsUpdatedMs(p) {
+    let n=Number(p?.news_updated||0);
+    if(!Number.isFinite(n) || n<=0) return null;
+    if(n<1e12) n*=1000;
+    return n;
+  }
+
+  function hoursSinceNewsUpdate(p) {
+    const ms=newsUpdatedMs(p);
+    if(!ms) return null;
+    return Math.max(0,(Date.now()-ms)/(60*60*1000));
+  }
+
+  function relativeHoursText(hours) {
+    if(!Number.isFinite(hours)) return 'update time unavailable';
+    if(hours<1) return 'updated <1h ago';
+    if(hours<24) return `updated ${Math.round(hours)}h ago`;
+    return `updated ${Math.round(hours/24)}d ago`;
+  }
+
+  function daysUntilPlayerGame(p) {
+    const c=gameContextForPlayer(p);
+    const kick=c?.game ? kickoffDate(c.game) : null;
+    if(!kick) return null;
+    return (kick.getTime()-Date.now())/(24*60*60*1000);
+  }
+
+  function availabilitySignal(p) {
+    if(!p) {
+      return {
+        label:'NO DATA', cls:'avail-neutral', chip:'',
+        adjustment:0, active:false, stale:false, reason:''
+      };
+    }
+
+    const injury=normalizedInjuryStatus(p);
+    const practice=practiceCode(p);
+    const age=hoursSinceNewsUpdate(p);
+    const daysToGame=daysUntilPlayerGame(p);
+
+    const inGameWeek = !Number.isFinite(daysToGame) || daysToGame <= 5.5;
+    const fresh24 = Number.isFinite(age) && age <= 24;
+    const fresh48 = Number.isFinite(age) && age <= 48;
+    const stale48 = Number.isFinite(age) && age > 48;
+
+    // Hard availability designations are always actionable.
+    if(['OUT','IR','PUP','NFI'].some(x=>injury.startsWith(x))) {
+      return {
+        label:'HIGH RISK', cls:'avail-bad', chip:'bad',
+        adjustment:-100, active:true, stale:false,
+        reason: injury || 'unavailable'
+      };
+    }
+
+    if(injury==='DOUBTFUL') {
+      const adj=(inGameWeek || fresh48) ? -18 : -10;
+      return {
+        label:'HIGH RISK', cls:'avail-bad', chip:'bad',
+        adjustment:adj, active:true, stale:!inGameWeek && stale48,
+        reason:'Doubtful'
+      };
+    }
+
+    // Practice participation is more meaningful than an isolated Q tag.
+    if(practice==='DNP') {
+      const adj=injury==='QUESTIONABLE' ? -9 : -5;
+      return {
+        label:'MONITOR', cls:'avail-watch', chip:'warn',
+        adjustment:adj, active:true, stale:false,
+        reason:'Did not practice'
+      };
+    }
+
+    if(practice==='LIMITED') {
+      const adj=injury==='QUESTIONABLE' ? -4 : -2;
+      return {
+        label:'WATCH', cls:'avail-watch', chip:'warn',
+        adjustment:adj, active:true, stale:false,
+        reason:'Limited practice'
+      };
+    }
+
+    if(practice==='FULL') {
+      const adj=injury==='QUESTIONABLE' ? 1 : 1.5;
+      return {
+        label:'AVAILABLE', cls:'avail-good', chip:'good',
+        adjustment:adj, active:false, stale:false,
+        reason:'Full practice'
+      };
+    }
+
+    if(injury==='QUESTIONABLE') {
+      // Sleeper often carries preseason / old Questionable tags forward.
+      // Without a current practice report, do not treat a 2–4 day old tag
+      // the same as an official game-week concern.
+      if(!inGameWeek) {
+        return {
+          label:'EARLY WATCH', cls:'avail-neutral', chip:'',
+          adjustment:0, active:false, stale:true,
+          reason:'Questionable tag before game-week practice window'
+        };
+      }
+
+      if(fresh24) {
+        return {
+          label:'MONITOR', cls:'avail-watch', chip:'warn',
+          adjustment:-3, active:true, stale:false,
+          reason:'Fresh Questionable tag'
+        };
+      }
+
+      if(fresh48) {
+        return {
+          label:'WATCH', cls:'avail-watch', chip:'warn',
+          adjustment:-1.5, active:true, stale:false,
+          reason:'Questionable tag awaiting practice context'
+        };
+      }
+
+      return {
+        label:'STALE TAG', cls:'avail-neutral', chip:'',
+        adjustment:0, active:false, stale:true,
+        reason:'Questionable tag is older than 48h with no practice context'
+      };
+    }
+
+    if(injury) {
+      return {
+        label:'CHECK', cls:'avail-neutral', chip:'',
+        adjustment: stale48 ? 0 : -0.5,
+        active: !stale48, stale: stale48,
+        reason: injury
+      };
+    }
+
+    return {
+      label:'AVAILABLE', cls:'avail-good', chip:'good',
+      adjustment:0, active:false, stale:false,
+      reason:'No current injury/practice concern'
+    };
+  }
+
+  function availabilityAdjustmentForPlayer(p) {
+    return availabilitySignal(p).adjustment;
+  }
+
+  function availabilityLevel(p) {
+    const s=availabilitySignal(p);
+    return {label:s.label,cls:s.cls,chip:s.chip};
+  }
+
+  function availabilitySummaryText(p) {
+    if(!p) return '';
+    const injury=normalizedInjuryStatus(p);
+    const practice=practiceCode(p);
+    const body=injuryBodyPart(p);
+    const signal=availabilitySignal(p);
+    const parts=[];
+
+    if(injury) parts.push(injury);
+    if(practice) parts.push(`practice ${practice}`);
+    if(body) parts.push(body);
+
+    const age=hoursSinceNewsUpdate(p);
+    if(Number.isFinite(age)) parts.push(relativeHoursText(age));
+
+    if(signal.stale && signal.label==='EARLY WATCH') parts.push('before game-week practice window');
+    else if(signal.stale && signal.label==='STALE TAG') parts.push('stale tag');
+
+    return parts.join(' • ');
+  }
+
+  function renderAvailabilityPanel(ctx) {
+    const ids=ctx.players
+      .filter(id=>['QB','RB','WR','TE','K'].includes(normalizedFantasyPos(state.players[String(id)])));
+
+    const rows=ids.map(id=>{
+      const p=state.players[String(id)];
+      const injury=normalizedInjuryStatus(p);
+      const practice=practiceCode(p);
+      const signal=availabilitySignal(p);
+      const level={label:signal.label,cls:signal.cls,chip:signal.chip};
+      return {
+        id:String(id),p,injury,practice,level,signal,adj:signal.adjustment,
+        starter:ctx.starters.has(String(id)),
+        reserve:ctx.reserve.has(String(id)),
+        age:hoursSinceNewsUpdate(p)
+      };
+    }).sort((a,b)=>{
+      const risk=x=>{
+        if(x.signal.active && x.level.label==='HIGH RISK') return 5;
+        if(x.signal.active && x.level.label==='MONITOR') return 4;
+        if(x.signal.active && x.level.label==='WATCH') return 3;
+        if(x.signal.stale) return 1;
+        return 0;
+      };
+      return risk(b)-risk(a) || Number(b.starter)-Number(a.starter);
+    });
+
+    const activeFlags=rows.filter(x=>x.signal.active);
+    const staleFlags=rows.filter(x=>x.signal.stale && (x.injury || x.practice));
+    const flagged=rows.filter(x=>x.signal.active || x.signal.stale || x.reserve);
+
+    const relevant=flagged.length?flagged:rows.filter(x=>x.starter).slice(0,8);
+
+    const riskyStarters=rows.filter(x=>x.starter && x.signal.active).length;
+
+    setPill(
+      'availabilityDataPill',
+      riskyStarters
+        ? `Availability: ${riskyStarters} active starter flag${riskyStarters===1?'':'s'}`
+        : `Availability: no active starter flags`,
+      riskyStarters?'warn':'good'
+    );
+
+    const panelText = activeFlags.length
+      ? `${activeFlags.length} active • ${staleFlags.length} stale`
+      : (staleFlags.length ? `0 active • ${staleFlags.length} stale` : 'No current flags');
+
+    setPill(
+      'availabilityPanelPill',
+      panelText,
+      activeFlags.length?'warn':'good'
+    );
+
+    $('weeklyAvailability').innerHTML=relevant.map(x=>{
+      const p=x.p;
+      const pos=normalizedFantasyPos(p);
+      const body=injuryBodyPart(p);
+      const statusParts=[];
+      if(x.injury) statusParts.push(x.injury);
+      if(x.practice) statusParts.push(`PRACTICE ${x.practice}`);
+      if(x.reserve) statusParts.push('RESERVE / IR SLOT');
+      const summary=statusParts.join(' • ') || 'No current injury/practice flag';
+
+      return `<div class="waiver-row ${x.level.cls}">
+        <div class="waiver-rank">${x.starter?'S':'B'}</div>
+        <div>
+          <b>${esc(pName(p))} <span class="pos ${pos}">${pos}</span></b>
+          <div class="meta">${esc(p.team||'FA')} • ${esc(summary)}</div>
+          <div class="usage-grid">
+            <span class="avail-chip ${x.level.chip}">${esc(x.level.label)}</span>
+            ${body?`<span class="avail-chip">${esc(body)}</span>`:''}
+            ${Number.isFinite(x.age)?`<span class="avail-chip">${esc(relativeHoursText(x.age))}</span>`:''}
+          </div>
+          <div class="whyline">${esc(x.signal.reason||'Availability context')} • adjustment ${x.adj>=0?'+':''}${Math.round(x.adj*10)/10}. ${x.signal.stale?'This tag is informational and is not being treated as an active Week '+state.weeklyWeek+' concern.':'Practice status informs availability/risk but does not replace matchup, workload, or player-quality analysis.'}</div>
+        </div>
+      </div>`;
+    }).join('') || '<div class="goodbox">No current practice/injury concerns detected for this roster.</div>';
   }
 
   async function loadUsageSeason(kind,season) {
@@ -2359,10 +2658,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p}
     );
 
-    const injury=normalizedInjuryStatus(p);
-    if(['IR','PUP','NFI','OUT'].some(x=>injury.startsWith(x))) score-=100;
-    else if(injury==='DOUBTFUL') score-=28;
-    else if(injury==='QUESTIONABLE') score-=7;
+    score+=availabilityAdjustmentForPlayer(p);
 
     const dc=Number(p.depth_chart_order);
     if(dc===1) score+=3;
@@ -2471,7 +2767,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div>
           <b>START ${esc(pName(inc.p))} <span class="pos ${normalizedFantasyPos(inc.p)}">${normalizedFantasyPos(inc.p)}</span></b>
           <div class="meta">${out?`SIT ${esc(pName(out.p))} • `:''}${esc(inc.p.team||'FA')}${normalizedInjuryStatus(inc.p)?' • '+esc(normalizedInjuryStatus(inc.p)):''}</div>
-          <div class="whyline">${esc(usageSummaryText(inc.p)||'Usage baseline unavailable')} • ${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Continuously refreshed news is still pending.</div>
+          <div class="whyline">${esc(availabilitySummaryText(inc.p)||'No current availability flag')} • ${esc(usageSummaryText(inc.p)||'Usage baseline unavailable')} • ${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Detailed live news is still pending.</div>
         </div>
         <div class="value-badge">${Math.round(inc.score)}</div>
       </div>`);
@@ -2688,7 +2984,10 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       else if(ctx.counts[d.pos]<=5) v+=3;
     }
 
-    if(d.board?.pdata) v+=usageAdjustmentForPlayer(d.board.pdata)*0.55;
+    if(d.board?.pdata) {
+      v+=usageAdjustmentForPlayer(d.board.pdata)*0.55;
+      v+=availabilityAdjustmentForPlayer(d.board.pdata)*0.45;
+    }
 
     if(d.round<=8) v+=6;
     if(d.isOptimizedStarter) v+=32;
@@ -2885,24 +3184,18 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
     const myStarterIds=(mine.starters||[]).map(String).filter(id=>id && id!=='0');
     const myHealth=myStarterIds.map(id=>state.players[id]).filter(Boolean)
-      .filter(p=>{
-        const s=normalizedInjuryStatus(p);
-        return ['QUESTIONABLE','DOUBTFUL','OUT','IR','PUP','NFI'].some(x=>s.startsWith(x));
-      });
+      .filter(p=>availabilitySignal(p).active);
 
     const oppHealth=oppStarterIds.map(id=>state.players[id]).filter(Boolean)
-      .filter(p=>{
-        const s=normalizedInjuryStatus(p);
-        return ['QUESTIONABLE','DOUBTFUL','OUT','IR','PUP','NFI'].some(x=>s.startsWith(x));
-      });
+      .filter(p=>availabilitySignal(p).active);
 
     $('weeklyMatchup').innerHTML=
       `<div class="row"><div><b>Week ${state.weeklyWeek}: ${esc(managerDisplayName())} vs. ${esc(managerForRosterId(opp.roster_id))}</b>
         <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}</div>
       </div></div>
       <div class="row"><div><b>Lineup health</b>
-        <div class="tiny">You: ${myHealth.length?myHealth.map(p=>`${esc(pName(p))} (${esc(normalizedInjuryStatus(p))})`).join(', '):'no major starter flags'}<br>
-        Opponent: ${oppHealth.length?oppHealth.map(p=>`${esc(pName(p))} (${esc(normalizedInjuryStatus(p))})`).join(', '):'no major starter flags'}</div>
+        <div class="tiny">You: ${myHealth.length?myHealth.map(p=>`${esc(pName(p))} (${esc(availabilitySummaryText(p)||availabilityLevel(p).label)})`).join(', '):'no major starter flags'}<br>
+        Opponent: ${oppHealth.length?oppHealth.map(p=>`${esc(pName(p))} (${esc(availabilitySummaryText(p)||availabilityLevel(p).label)})`).join(', '):'no major starter flags'}</div>
       </div></div>
       <div class="tiny labelish" style="margin-top:6px">TOP OPPONENT STARTERS</div>
       ${oppPlayers.slice(0,6).map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${normalizedFantasyPos(x.p)}">${normalizedFantasyPos(x.p)}</span></b><div class="tiny">${esc(x.p.team||'FA')} • value ${Math.round(x.score)}${gameEnvironmentTextForPlayer(x.p)?' • '+esc(gameEnvironmentTextForPlayer(x.p)):''}</div></div></div>`).join('')}`;
@@ -2922,6 +3215,17 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(ctx.activeOverage>0) {
       items.push(`<b>Roster cleanup required:</b> you currently have ${ctx.activeOverage} more active player${ctx.activeOverage===1?'':'s'} than the normal roster capacity detected by the app.`);
     }
+    const availabilityFlags=ctx.players
+      .filter(id=>ctx.starters.has(String(id)))
+      .map(id=>state.players[String(id)])
+      .filter(Boolean)
+      .filter(p=>availabilitySignal(p).active);
+
+    if(availabilityFlags.length) {
+      const p=availabilityFlags[0];
+      items.push(`<b>Availability watch:</b> ${esc(pName(p))} is ${esc(availabilityLevel(p).label.toLowerCase())}${availabilitySummaryText(p)?' • '+esc(availabilitySummaryText(p)):''}. Re-run the scan after practice/injury updates.`);
+    }
+
     const lineupCheck=optimizedLineup(ctx);
     const currentCheck=currentLineupAssignments(ctx);
     const currentIdsForPlan=new Set(currentCheck.filter(x=>x.id).map(x=>x.id));
@@ -3013,6 +3317,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
       renderWeeklyRoster(ctx);
       renderWeeklyIR(ctx);
+      renderAvailabilityPanel(ctx);
       const lineup=renderStartSit(ctx);
       renderUsagePanel(ctx);
       const pool=renderWeeklyAdds(ctx);
