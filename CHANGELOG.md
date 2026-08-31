@@ -4,6 +4,20 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.8 — Usage & Opportunity Intelligence
+**2026-08-31**
+
+- Add nflverse weekly player-stat data to the Weekly Command Center.
+- Add nflverse offensive snap-count data and recent snap-share context.
+- Add a Usage & Opportunity panel for rostered QB/RB/WR/TE players.
+- Track recent carries, targets, receptions, passing volume, scrimmage production, target share, and offensive snap percentage when available.
+- Detect rising, stable, and falling short-term workload trends.
+- Add workload-based adjustments to the Start / Sit Optimizer.
+- Add recent-usage adjustments to weekly free-agent scoring and add/drop context.
+- Add a modest usage component to roster-utility scoring so low-opportunity bench assets are easier to distinguish from useful depth.
+- Fall back to a deliberately reduced-weight late-season prior-year workload baseline before enough current-season games exist.
+- Preserve live game context, weather, Start/Sit-to-waiver coherence, recent-transaction protection, IR/PUP guardrails, required K/DST protection, and QB2 suppression.
+
 ## v2.7 — Live Game Context & Weather
 **2026-08-30**
 

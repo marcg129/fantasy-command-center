@@ -96,6 +96,15 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .env-chip.good{border-color:#266b50;color:#6ee7b7}
 .env-chip.warn{border-color:#795f1b;color:#fde68a}
 .env-chip.bad{border-color:#71313b;color:#fda4af}
+.usage-rising{border-color:#2d6b50;background:#10251c}
+.usage-falling{border-color:#6e4c25;background:#2a210f}
+.usage-stable{border-color:#31405e;background:#11192d}
+.usage-grid{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px}
+.usage-chip{font-size:9px;font-weight:850;border:1px solid #33415f;border-radius:999px;padding:2px 6px;color:var(--muted)}
+.usage-chip.good{border-color:#276c50;color:#6ee7b7}
+.usage-chip.warn{border-color:#795f1b;color:#fde68a}
+.usage-chip.bad{border-color:#71313b;color:#fda4af}
+
 
 
 
@@ -223,7 +232,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • live weekly game context • v2.7</div>
+    <div class="sub">Multi-manager beta • live weekly usage intelligence • v2.8</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -320,7 +329,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.7 adds live NFL schedule/game-environment context and outdoor weather to the existing Sleeper roster and injury layer.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.8 adds recent NFL usage, opportunities, snap share, and workload trends to Sleeper roster/injury data plus live game context.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -340,6 +349,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <span class="pill" id="scanModePill">Normal weekly check</span>
     <span class="pill good">Sleeper rosters: live</span>
     <span class="pill" id="gameDataPill">Game context —</span>
+    <span class="pill" id="usageDataPill">Usage data —</span>
     <span class="pill warn">External strategy/news: Aug 30 snapshot</span>
   </div>
 
@@ -367,7 +377,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div class="weekly-section-head">
           <div>
             <h3>Start / Sit Optimizer</h3>
-            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.7 adds opponent, game total, venue/roof, and available outdoor weather context to player value, roster role, and injury status.</div>
+            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.8 combines player value, injury/role, recent opportunities and snap share, plus opponent, game total, venue/roof, and available outdoor weather.</div>
           </div>
           <span class="pill" id="lineupStatusPill">Lineup —</span>
         </div>
@@ -378,8 +388,19 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <div class="weekly-section-head">
           <div>
+            <h3>Usage & Opportunity</h3>
+            <div class="tiny">Recent carries, targets, passing volume, snap share, and workload direction from nflverse. Before enough current-season games exist, the app falls back to a reduced-weight late-season baseline from the prior year.</div>
+          </div>
+          <span class="pill" id="usagePanelPill">Usage —</span>
+        </div>
+        <div id="weeklyUsage" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
             <h3>Best available adds</h3>
-            <div class="tiny">League-specific free agents only. Normal Weekly mode focuses on roster utility and season-long opportunity; Post-Draft mode adds extra undrafted-upside weighting. Week-specific matchup scoring will deepen in the next data-enrichment version.</div>
+            <div class="tiny">League-specific free agents only. Normal Weekly mode now weighs recent workload, snap share, game environment, roster utility, and season-long opportunity; Post-Draft mode still adds extra undrafted-upside weighting.</div>
           </div>
           <input id="weeklyFaSearch" class="compact-search" placeholder="Search free agents">
         </div>
@@ -447,7 +468,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.7 adds live nflverse schedule/game-environment context and Open-Meteo outdoor forecasts to the weekly lineup and waiver models, while preserving the Start/Sit-to-waiver coherence layer, recent-transaction protection, IR/PUP guardrails, required K/DST protection, and QB2 suppression, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.7 now reads NFL schedule/game-environment data and attempts outdoor forecasts, but independent projections, practice-report detail, snap/route usage, and continuously refreshed news are still future layers. Weather is intentionally a modest adjustment rather than an automatic bench signal.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.8 adds nflverse recent player stats and snap-count workload intelligence to Start/Sit, waiver, and roster-utility scoring, with reduced-weight prior-season fallback before current-year usage is available; live game context, weather, recommendation coherence, recent-transaction protection, IR/PUP guardrails, K/DST protection, and QB2 suppression remain intact, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.8 now adds nflverse player stats and snap-count workload signals. Independent projections, route participation, detailed practice reports, red-zone opportunity, and continuously refreshed news are still future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -455,7 +476,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.7 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.8 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -467,6 +488,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     'https://github.com/nflverse/nflverse-data/releases/download/schedules/schedules.csv',
     'https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv'
   ];
+
+  const PLAYER_STATS_URL = season =>
+    `https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_${season}.csv`;
+
+  const SNAP_COUNTS_URL = season =>
+    `https://github.com/nflverse/nflverse-data/releases/download/snap_counts/snap_counts_${season}.csv`;
+
 
   const HOME_COORDS = {
     ARI:[33.5276,-112.2626], ATL:[33.7554,-84.4008], BAL:[39.2780,-76.6227],
@@ -499,7 +527,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   const state = {
     league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
     myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false,
-    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null
+    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null,usageStatsCache:{},usageSnapsCache:{},usageStatsIndex:null,usageSnapIndex:null,usageByPlayer:new Map(),usageSource:null,usageError:null
   };
 
   const suffixRe = /\b(jr|sr|ii|iii|iv)\b/g;
@@ -528,6 +556,12 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
   async function tget(url) {
     const r=await fetch(url,{cache:'no-store'});
+    if(!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
+    return r.text();
+  }
+
+  async function tgetCached(url) {
+    const r=await fetch(url,{cache:'default'});
     if(!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
     return r.text();
   }
@@ -1657,6 +1691,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
     if(mode==='weekly' && b.pdata) {
       v+=gameEnvAdjustmentForPlayer(b.pdata)*0.75;
+      v+=usageAdjustmentForPlayer(b.pdata)*0.85;
     }
 
     if(mode==='postdraft') {
@@ -1685,6 +1720,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if((b.pos==='RB'||b.pos==='WR') && ctx.activeCounts[b.pos]<5) reasons.push(`${b.pos} depth fits roster`);
     if(b.news?.label) reasons.push(b.news.label.toLowerCase());
     if((b.ecrRank||999)<=150) reasons.push(`market rank ${b.ecrRank}`);
+
+    const usage=b.pdata?usageSummaryText(b.pdata):'';
+    if(usage) reasons.push(usage);
 
     const gc=b.pdata?gameContextForPlayer(b.pdata):null;
     if(gc && Number.isFinite(gc.game.total_line)) reasons.push(`${gc.home?'vs':'@'} ${gc.opp} • O/U ${gc.game.total_line}`);
@@ -1944,6 +1982,347 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return steals;
   }
 
+  async function loadUsageSeason(kind,season) {
+    const cache=kind==='stats'?state.usageStatsCache:state.usageSnapsCache;
+    if(Object.prototype.hasOwnProperty.call(cache,season)) return cache[season];
+
+    const url=kind==='stats'?PLAYER_STATS_URL(season):SNAP_COUNTS_URL(season);
+    try {
+      const raw=await tgetCached(url);
+      const rows=parseCSV(raw);
+      cache[season]=rows;
+      return rows;
+    } catch(e) {
+      cache[season]=[];
+      return [];
+    }
+  }
+
+  function regularRows(rows) {
+    return (rows||[]).filter(r=>{
+      const t=String(r.season_type||r.game_type||'REG').toUpperCase();
+      return t==='REG' || t==='REGULAR';
+    });
+  }
+
+  function buildUsageIndex(rows,type) {
+    const byId=new Map(),byName=new Map(),byPfr=new Map();
+
+    const add=(map,key,row)=>{
+      if(!key) return;
+      const k=String(key);
+      if(!map.has(k)) map.set(k,[]);
+      map.get(k).push(row);
+    };
+
+    for(const r of rows||[]) {
+      if(type==='stats') {
+        add(byId,r.player_id,r);
+        add(byName,norm(r.player_display_name||r.player_name||r.player),r);
+      } else {
+        add(byPfr,r.pfr_player_id,r);
+        add(byName,norm(r.player),r);
+      }
+    }
+    return {byId,byName,byPfr};
+  }
+
+  function rowsForUsagePlayer(p,index,type) {
+    if(!p||!index) return [];
+
+    if(type==='stats') {
+      for(const id of [p.gsis_id,p.stats_id,p.player_id]) {
+        if(id && index.byId.has(String(id))) return index.byId.get(String(id));
+      }
+    } else {
+      for(const id of [p.pfr_id,p.pfr_player_id]) {
+        if(id && index.byPfr.has(String(id))) return index.byPfr.get(String(id));
+      }
+    }
+
+    return index.byName.get(norm(pName(p)))||[];
+  }
+
+  function pctNumber(v) {
+    const n=nnum(v);
+    if(!Number.isFinite(n)) return null;
+    return n<=1.2?n*100:n;
+  }
+
+  function avgNumeric(rows,field) {
+    const vals=(rows||[]).map(r=>nnum(r[field])).filter(Number.isFinite);
+    if(!vals.length) return null;
+    return vals.reduce((a,b)=>a+b,0)/vals.length;
+  }
+
+  function sumNumeric(row,fields) {
+    return fields.reduce((s,f)=>s+(nnum(row?.[f])||0),0);
+  }
+
+  function usageOpportunityValue(row,pos) {
+    if(pos==='RB') return (nnum(row.carries)||0) + 1.5*(nnum(row.targets)||0);
+    if(pos==='WR'||pos==='TE') return nnum(row.targets)||0;
+    if(pos==='QB') return nnum(row.attempts)||0;
+    return 0;
+  }
+
+  function usageSummaryForPlayer(p) {
+    if(!p || !state.usageStatsIndex) return null;
+    const sid=String(p.player_id||p.gsis_id||norm(pName(p)));
+    if(state.usageByPlayer.has(sid)) return state.usageByPlayer.get(sid);
+
+    const pos=normalizedFantasyPos(p);
+    const stats=rowsForUsagePlayer(p,state.usageStatsIndex,'stats')
+      .filter(r=>Number(r.week)>0)
+      .sort((a,b)=>Number(a.week)-Number(b.week))
+      .slice(-4);
+
+    if(!stats.length) {
+      state.usageByPlayer.set(sid,null);
+      return null;
+    }
+
+    const snaps=state.usageSnapIndex
+      ? rowsForUsagePlayer(p,state.usageSnapIndex,'snaps')
+          .filter(r=>Number(r.week)>0)
+          .sort((a,b)=>Number(a.week)-Number(b.week))
+          .slice(-4)
+      : [];
+
+    const games=stats.length;
+    const carries=avgNumeric(stats,'carries')||0;
+    const targets=avgNumeric(stats,'targets')||0;
+    const receptions=avgNumeric(stats,'receptions')||0;
+    const attempts=avgNumeric(stats,'attempts')||0;
+    const rushYds=avgNumeric(stats,'rushing_yards')||0;
+    const recYds=avgNumeric(stats,'receiving_yards')||0;
+    const passYds=avgNumeric(stats,'passing_yards')||0;
+    const fpPpr=avgNumeric(stats,'fantasy_points_ppr');
+    const targetShare=avgNumeric(stats,'target_share');
+
+    const snapVals=snaps.map(r=>pctNumber(r.offense_pct)).filter(Number.isFinite);
+    const snapPct=snapVals.length?snapVals.reduce((a,b)=>a+b,0)/snapVals.length:null;
+
+    const opps=stats.map(r=>usageOpportunityValue(r,pos));
+    const latest=opps.slice(-2);
+    const prior=opps.slice(-4,-2);
+    const latestAvg=latest.length?latest.reduce((a,b)=>a+b,0)/latest.length:null;
+    const priorAvg=prior.length?prior.reduce((a,b)=>a+b,0)/prior.length:null;
+    const trendPct=(Number.isFinite(latestAvg)&&Number.isFinite(priorAvg)&&priorAvg>0)
+      ? (latestAvg-priorAvg)/priorAvg
+      : 0;
+
+    const u={
+      games,carries,targets,receptions,attempts,rushYds,recYds,passYds,fpPpr,
+      targetShare,snapPct,trendPct,
+      weeks:stats.map(r=>Number(r.week)).filter(Number.isFinite),
+      sourceSeason:state.usageSource?.statsSeason||null,
+      fallback:!!state.usageSource?.fallback
+    };
+    state.usageByPlayer.set(sid,u);
+    return u;
+  }
+
+  function usageAdjustmentForPlayer(p) {
+    const u=usageSummaryForPlayer(p);
+    if(!u) return 0;
+    const pos=normalizedFantasyPos(p);
+    let adj=0;
+
+    if(pos==='RB') {
+      const opp=u.carries + 1.5*u.targets;
+      if(opp>=20) adj+=5;
+      else if(opp>=16) adj+=3.5;
+      else if(opp>=12) adj+=2;
+      else if(opp>=8) adj+=0.5;
+      else if(opp<5) adj-=3;
+
+      if(u.targets>=4) adj+=1.5;
+      else if(u.targets>=2.5) adj+=0.5;
+    } else if(pos==='WR'||pos==='TE') {
+      if(u.targets>=9) adj+=5;
+      else if(u.targets>=7) adj+=3.5;
+      else if(u.targets>=5) adj+=1.5;
+      else if(u.targets<3) adj-=2.5;
+
+      if(Number.isFinite(u.targetShare)) {
+        if(u.targetShare>=0.25) adj+=2;
+        else if(u.targetShare>=0.20) adj+=1;
+        else if(u.targetShare<0.10) adj-=1.5;
+      }
+    } else if(pos==='QB') {
+      if(u.attempts>=36) adj+=3;
+      else if(u.attempts>=31) adj+=1.5;
+      else if(u.attempts<25) adj-=1.5;
+    }
+
+    if(Number.isFinite(u.snapPct)) {
+      if(u.snapPct>=80) adj+=1.5;
+      else if(u.snapPct>=65) adj+=0.75;
+      else if(u.snapPct<35) adj-=2;
+      else if(u.snapPct<50) adj-=1;
+    }
+
+    if(u.trendPct>=0.30) adj+=2;
+    else if(u.trendPct>=0.15) adj+=1;
+    else if(u.trendPct<=-0.30) adj-=2;
+    else if(u.trendPct<=-0.15) adj-=1;
+
+    // Prior-year data is useful context for Week 1, not a current workload guarantee.
+    if(u.fallback) adj*=0.65;
+
+    return clamp(adj,-7,8);
+  }
+
+  function usageTrend(u) {
+    if(!u) return {label:'NO DATA',cls:''};
+    if(u.trendPct>=0.20) return {label:'RISING',cls:'good'};
+    if(u.trendPct<=-0.20) return {label:'FALLING',cls:'bad'};
+    return {label:'STABLE',cls:''};
+  }
+
+  function usageSummaryText(p) {
+    const u=usageSummaryForPlayer(p);
+    if(!u) return '';
+    const pos=normalizedFantasyPos(p);
+    const parts=[];
+
+    if(pos==='RB') {
+      parts.push(`${u.carries.toFixed(1)} carries/g`);
+      parts.push(`${u.targets.toFixed(1)} targets/g`);
+    } else if(pos==='WR'||pos==='TE') {
+      parts.push(`${u.targets.toFixed(1)} targets/g`);
+      if(Number.isFinite(u.targetShare)) parts.push(`${Math.round(u.targetShare*100)}% tgt share`);
+    } else if(pos==='QB') {
+      parts.push(`${u.attempts.toFixed(1)} attempts/g`);
+    }
+
+    if(Number.isFinite(u.snapPct)) parts.push(`${Math.round(u.snapPct)}% snaps`);
+    return parts.join(' • ');
+  }
+
+  async function loadWeeklyUsageContext(week,ctx) {
+    state.usageError=null;
+    state.usageByPlayer=new Map();
+
+    try {
+      const season=scheduleSeason();
+      const prior=season-1;
+
+      const [currentStats,priorStats,currentSnaps,priorSnaps]=await Promise.all([
+        loadUsageSeason('stats',season),
+        loadUsageSeason('stats',prior),
+        loadUsageSeason('snaps',season),
+        loadUsageSeason('snaps',prior)
+      ]);
+
+      const currentEligible=regularRows(currentStats).filter(r=>Number(r.week)>0 && Number(r.week)<Number(week));
+      const useCurrent=currentEligible.length>=20;
+
+      const statsRows=useCurrent
+        ? currentEligible
+        : regularRows(priorStats).filter(r=>Number(r.week)>0);
+
+      const currentSnapEligible=regularRows(currentSnaps).filter(r=>Number(r.week)>0 && Number(r.week)<Number(week));
+      const useCurrentSnaps=useCurrent && currentSnapEligible.length>=20;
+      const snapRows=useCurrentSnaps
+        ? currentSnapEligible
+        : regularRows(priorSnaps).filter(r=>Number(r.week)>0);
+
+      if(!statsRows.length) throw new Error('No nflverse weekly player-stat rows were available.');
+
+      state.usageStatsIndex=buildUsageIndex(statsRows,'stats');
+      state.usageSnapIndex=snapRows.length?buildUsageIndex(snapRows,'snaps'):null;
+      state.usageSource={
+        statsSeason:useCurrent?season:prior,
+        snapSeason:useCurrentSnaps?season:prior,
+        fallback:!useCurrent,
+        throughWeek:useCurrent?Math.max(...currentEligible.map(r=>Number(r.week)||0)):null
+      };
+
+      const sourceText=state.usageSource.fallback
+        ? `${prior} late-season baseline`
+        : `${season} through W${state.usageSource.throughWeek}`;
+
+      setPill('usageDataPill',`Usage: ${sourceText}`,'good');
+      setPill('usagePanelPill',sourceText,state.usageSource.fallback?'warn':'good');
+      return true;
+    } catch(e) {
+      state.usageError=e;
+      state.usageStatsIndex=null;
+      state.usageSnapIndex=null;
+      state.usageSource=null;
+      setPill('usageDataPill','Usage unavailable','warn');
+      setPill('usagePanelPill','Usage unavailable','warn');
+      return false;
+    }
+  }
+
+  function renderUsagePanel(ctx) {
+    if(!state.usageStatsIndex) {
+      $('weeklyUsage').innerHTML='<div class="tiny">Usage data is unavailable right now. The rest of the weekly model will continue without it.</div>';
+      return;
+    }
+
+    const ids=ctx.players
+      .filter(id=>!ctx.reserve.has(String(id)))
+      .filter(id=>['QB','RB','WR','TE'].includes(normalizedFantasyPos(state.players[String(id)])));
+
+    const rows=ids.map(id=>{
+      const p=state.players[String(id)];
+      const u=usageSummaryForPlayer(p);
+      return {
+        id:String(id),p,u,
+        starter:ctx.starters.has(String(id)),
+        adj:usageAdjustmentForPlayer(p)
+      };
+    }).filter(x=>x.u)
+      .sort((a,b)=>Number(b.starter)-Number(a.starter) || b.adj-a.adj)
+      .slice(0,12);
+
+    if(!rows.length) {
+      $('weeklyUsage').innerHTML='<div class="tiny">No matching recent usage data was found for this roster.</div>';
+      return;
+    }
+
+    $('weeklyUsage').innerHTML=rows.map(x=>{
+      const pos=normalizedFantasyPos(x.p);
+      const t=usageTrend(x.u);
+      const cls=t.label==='RISING'?'usage-rising':(t.label==='FALLING'?'usage-falling':'usage-stable');
+      const source=x.u.fallback?`${x.u.sourceSeason} baseline`:`${x.u.sourceSeason} current`;
+      const chips=[];
+
+      if(pos==='RB') {
+        chips.push(`${x.u.carries.toFixed(1)} car/g`);
+        chips.push(`${x.u.targets.toFixed(1)} tgt/g`);
+        chips.push(`${Math.round(x.u.rushYds+x.u.recYds)} scrimmage yds/g`);
+      } else if(pos==='WR'||pos==='TE') {
+        chips.push(`${x.u.targets.toFixed(1)} tgt/g`);
+        chips.push(`${x.u.receptions.toFixed(1)} rec/g`);
+        if(Number.isFinite(x.u.targetShare)) chips.push(`${Math.round(x.u.targetShare*100)}% tgt share`);
+      } else if(pos==='QB') {
+        chips.push(`${x.u.attempts.toFixed(1)} att/g`);
+        chips.push(`${Math.round(x.u.passYds)} pass yds/g`);
+      }
+
+      if(Number.isFinite(x.u.snapPct)) chips.push(`${Math.round(x.u.snapPct)}% snaps`);
+      if(Number.isFinite(x.u.fpPpr)) chips.push(`${x.u.fpPpr.toFixed(1)} PPR pts/g`);
+
+      return `<div class="waiver-row ${cls}">
+        <div class="waiver-rank">${x.starter?'S':'B'}</div>
+        <div>
+          <b>${esc(pName(x.p))} <span class="pos ${pos}">${pos}</span></b>
+          <div class="meta">${esc(x.p.team||'FA')} • ${esc(source)} • last ${x.u.games} game${x.u.games===1?'':'s'}</div>
+          <div class="usage-grid">
+            ${chips.map(c=>`<span class="usage-chip">${esc(c)}</span>`).join('')}
+            <span class="usage-chip ${t.cls}">${t.label}</span>
+          </div>
+          <div class="whyline">Weekly usage adjustment: ${x.adj>=0?'+':''}${Math.round(x.adj*10)/10}. ${x.u.fallback?'Prior-season workload is intentionally down-weighted.':'Recent workload is now part of Start/Sit and waiver scoring.'}</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
   function normalizedFantasyPos(p) {
     let pos=String(p?.position||'').toUpperCase();
     if(pos==='DST') pos='DEF';
@@ -1990,6 +2369,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     else if(dc===2 && ['RB','WR','TE'].includes(pos)) score+=1;
 
     score+=gameEnvAdjustmentForPlayer(p);
+    score+=usageAdjustmentForPlayer(p);
 
     return score;
   }
@@ -2091,7 +2471,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div>
           <b>START ${esc(pName(inc.p))} <span class="pos ${normalizedFantasyPos(inc.p)}">${normalizedFantasyPos(inc.p)}</span></b>
           <div class="meta">${out?`SIT ${esc(pName(out.p))} • `:''}${esc(inc.p.team||'FA')}${normalizedInjuryStatus(inc.p)?' • '+esc(normalizedInjuryStatus(inc.p)):''}</div>
-          <div class="whyline">${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Usage/news enrichment is still pending.</div>
+          <div class="whyline">${esc(usageSummaryText(inc.p)||'Usage baseline unavailable')} • ${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Continuously refreshed news is still pending.</div>
         </div>
         <div class="value-badge">${Math.round(inc.score)}</div>
       </div>`);
@@ -2118,7 +2498,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       rows.push(`<div class="waiver-row lineup-hold">
         <div class="waiver-rank">✓</div>
         <div><b>HOLD CURRENT LINEUP</b>
-          <div class="whyline">No bench player currently clears the baseline start/sit threshold. Schedule/game-total/weather context is now included when available; usage and continuously refreshed news remain future inputs.</div>
+          <div class="whyline">No bench player currently clears the baseline start/sit threshold. Schedule/game-total/weather and recent workload are included when available; continuously refreshed news remains a future input.</div>
         </div>
       </div>`);
     }
@@ -2307,6 +2687,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       if(ctx.counts[d.pos]<=4) v+=6;
       else if(ctx.counts[d.pos]<=5) v+=3;
     }
+
+    if(d.board?.pdata) v+=usageAdjustmentForPlayer(d.board.pdata)*0.55;
 
     if(d.round<=8) v+=6;
     if(d.isOptimizedStarter) v+=32;
@@ -2624,11 +3006,15 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       setPill('waiverPill',Number.isFinite(waiverPos)&&waiverPos>0?`Waiver priority #${waiverPos}`:'Waiver status loaded','good');
       setPill('scanModePill',state.weeklyMode==='postdraft'?'Immediate post-draft scan':'Normal weekly check',state.weeklyMode==='postdraft'?'warn':'good');
 
-      await loadWeeklyGameContext(week,ctx,matchups);
+      await Promise.all([
+        loadWeeklyGameContext(week,ctx,matchups),
+        loadWeeklyUsageContext(week,ctx)
+      ]);
 
       renderWeeklyRoster(ctx);
       renderWeeklyIR(ctx);
       const lineup=renderStartSit(ctx);
+      renderUsagePanel(ctx);
       const pool=renderWeeklyAdds(ctx);
       const steals=renderPostDraftSteals(ctx,pool);
       const drops=renderWeeklyDrops(ctx);
