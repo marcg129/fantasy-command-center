@@ -4,6 +4,22 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.12.1 — Trade Realism Guardrails
+**2026-08-31**
+
+- Rework trade values with a nonlinear market-rank curve so elite players separate meaningfully from ordinary starters.
+- Reduce QB trade-value inflation for this 10-team, 1-QB format while retaining a modest boost for the league's 6-point passing-TD scoring.
+- Recalibrate positional need/surplus scoring against the wider trade-value scale.
+- Exclude opponent keepers from default trade targets until keeper-rights/cost transfer rules are explicitly modeled.
+- Add a roster-utility simulator for QB, RB, WR, TE, and two FLEX spots.
+- Require every displayed trade to improve the connected manager's optimized roster and provide positive projected roster impact to the trade partner.
+- Add elite-asset premiums and tighter market-value tolerances to 1-for-1 proposals.
+- Increase the consolidation discount on 2-for-1 offers so two middling players do not automatically equal one elite starter.
+- Require stronger two-sided lineup/depth improvement for 2-for-1 packages.
+- Reduce the recommendation panel from eight proposals to a maximum of five higher-quality trade concepts.
+- Show market value plus projected roster impact for both sides directly on each recommendation.
+- Raise the Weekly Action Plan threshold so only stronger trade concepts are surfaced.
+
 ## v2.12 — Trade Intelligence
 **2026-08-31**
 
