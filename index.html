@@ -206,7 +206,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • weekly-first roster management • v2.5.5</div>
+    <div class="sub">Multi-manager beta • weekly-first roster management • v2.5.6</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -406,7 +406,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. v2.5.5 keeps the roster-utility model and weekly-first workflow, with the Weekly tab now visually selected by default so the highlighted navigation matches the displayed page, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.5.6 keeps the roster-utility model and weekly-first workflow, suppresses unnecessary QB2 waiver adds when a healthy elite QB1 already solves the position, and hides players the manager just dropped from recommendations for 24 hours, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
         </div>
       </div>
     </aside>
@@ -414,7 +414,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.5.5 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
+  v2.5.6 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -1247,8 +1247,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
     // Strongly suppress redundant one-starter positions.
     if(b.pos==='QB') {
-      if(ctx.counts.QB>=1) v-=18;
-      if(ctx.counts.QB>=2) v-=18;
+      if(ctx.counts.QB>=1) v-=22;
+      if(ctx.counts.QB>=2) v-=22;
+      if(strongQBAlreadySolved(ctx)) v-=35;
     }
     if(b.pos==='TE') {
       if(ctx.counts.TE>=1) v-=14;
@@ -1297,13 +1298,73 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return reasons.slice(0,3).join(' • ') || 'available depth / upside';
   }
 
+  function recentlyDroppedByMeIds(hours=24) {
+    const ids=new Set();
+    const cutoff=Date.now()-(hours*60*60*1000);
+
+    for(const t of (state.transactions||[])) {
+      let created=Number(t.created||0);
+      // Sleeper normally returns milliseconds, but normalize seconds just in case.
+      if(created>0 && created<1e12) created*=1000;
+      if(created && created<cutoff) continue;
+
+      for(const [playerId,rosterId] of Object.entries(t.drops||{})) {
+        if(Number(rosterId)===Number(state.myRosterId)) ids.add(String(playerId));
+      }
+    }
+    return ids;
+  }
+
+  function strongQBAlreadySolved(ctx) {
+    if(ctx.counts.QB<1) return false;
+
+    const board=weeklyBoardMap();
+    let best=0;
+    let healthyStarterFound=false;
+
+    for(const id of ctx.players) {
+      const p=state.players[String(id)];
+      if(!p || String(p.position||'').toUpperCase()!=='QB') continue;
+
+      const injury=normalizedInjuryStatus(p);
+      const unavailable=['OUT','IR','PUP','NFI'].some(code=>injury.startsWith(code));
+      if(ctx.starters.has(String(id)) && !unavailable) healthyStarterFound=true;
+
+      const b=board.get(String(id));
+      const v=weeklyBaseValue(
+        b||{
+          ecrRank:Number(p.search_rank)||999,
+          sleeperRank:Number(p.search_rank)||999,
+          pos:'QB',
+          pdata:p
+        }
+      );
+      best=Math.max(best,v);
+    }
+
+    // A healthy, high-end QB1 means a waiver QB2 is roster clutter in this format.
+    return healthyStarterFound && best>=88;
+  }
+
   function freeAgentPool(ctx,mode=state.weeklyMode||'weekly') {
     const rostered=rosteredPlayerIds();
     const drafted=draftedPlayerIds();
+    const recentSelfDrops=recentlyDroppedByMeIds(24);
+    const qbSolved=strongQBAlreadySolved(ctx);
     const addMap=trendMap(state.trendingAdds), dropMap=trendMap(state.trendingDrops);
+
     return dynamicPlayerBoard()
       .filter(b=>b.player_id && !rostered.has(String(b.player_id)))
       .filter(b=>['QB','RB','WR','TE','K','DEF'].includes(b.pos))
+
+      // Do not immediately recommend undoing the manager's own transaction.
+      .filter(b=>!recentSelfDrops.has(String(b.player_id)))
+
+      // In this 10-team, 1-QB format, a healthy elite QB1 suppresses QB2 waiver
+      // recommendations. QB adds can return later if the starter is weak,
+      // unavailable, on bye, or we build an explicit streaming/upgrade mode.
+      .filter(b=>!(b.pos==='QB' && qbSolved))
+
       .map(b=>({
         ...b,
         weeklyValue:freeAgentScore(b,ctx,addMap,dropMap,mode),

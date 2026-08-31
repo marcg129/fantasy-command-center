@@ -1,0 +1,39 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Python helper artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node artifacts if tooling is added later
+node_modules/
+dist/
+build/
+.cache/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local-only exports / snapshots
+snapshots/
+exports/
