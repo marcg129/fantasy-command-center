@@ -206,7 +206,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • weekly-first roster management • v2.5.6</div>
+    <div class="sub">Multi-manager beta • weekly-first roster management • v2.5.7</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -308,19 +308,19 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
         <select id="weeklyModeSelect">
+          <option value="weekly" selected>Normal Weekly Check</option>
           <option value="postdraft">Immediate Post-Draft Scan</option>
-          <option value="weekly">Normal Weekly Check</option>
         </select>
       </div>
       <div class="field"><label>Week</label><input id="weekInput" type="number" min="1" max="18" value="1"></div>
-      <button class="primary" id="weeklyRefreshBtn">Run Post-Draft Scan</button>
+      <button class="primary" id="weeklyRefreshBtn">Run Weekly Check</button>
     </div>
   </div>
 
   <div class="statusbar" style="margin-top:10px">
     <span class="pill" id="weeklyStatePill">NFL state —</span>
     <span class="pill" id="waiverPill">Waiver —</span>
-    <span class="pill" id="scanModePill">Mode —</span>
+    <span class="pill" id="scanModePill">Normal weekly check</span>
     <span class="pill good">Sleeper rosters: live</span>
     <span class="pill warn">External strategy/news: Aug 30 snapshot</span>
   </div>
@@ -406,7 +406,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.5.6 keeps the roster-utility model and weekly-first workflow, suppresses unnecessary QB2 waiver adds when a healthy elite QB1 already solves the position, and hides players the manager just dropped from recommendations for 24 hours, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.5.7 keeps the roster-utility model and weekly-first workflow, defaults to the Normal Weekly Check, suppresses unnecessary QB2 waiver adds, hides recently dropped players from re-add recommendations, and gives newly added players a 24-hour protection window before they can become automatic churn candidates, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
         </div>
       </div>
     </aside>
@@ -414,7 +414,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.5.6 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
+  v2.5.7 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -427,7 +427,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   const state = {
     league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
     myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false,
-    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'postdraft'
+    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly'
   };
 
   const suffixRe = /\b(jr|sr|ii|iii|iv)\b/g;
@@ -1315,6 +1315,22 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return ids;
   }
 
+  function recentlyAddedByMeIds(hours=24) {
+    const ids=new Set();
+    const cutoff=Date.now()-(hours*60*60*1000);
+
+    for(const t of (state.transactions||[])) {
+      let created=Number(t.created||0);
+      if(created>0 && created<1e12) created*=1000;
+      if(created && created<cutoff) continue;
+
+      for(const [playerId,rosterId] of Object.entries(t.adds||{})) {
+        if(Number(rosterId)===Number(state.myRosterId)) ids.add(String(playerId));
+      }
+    }
+    return ids;
+  }
+
   function strongQBAlreadySolved(ctx) {
     if(ctx.counts.QB<1) return false;
 
@@ -1386,6 +1402,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         .map(p=>String(p.player_id))
     );
     const rows=[];
+    const recentAdds=recentlyAddedByMeIds(24);
 
     for(const id of ctx.players) {
       const b=board.get(String(id));
@@ -1405,6 +1422,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       const soleRequired=(pos==='K' && ctx.counts.K<=1) || (pos==='DEF' && ctx.counts.DEF<=1);
       const redundantQB=pos==='QB' && ctx.counts.QB>1 && !isStarter;
       const redundantTE=pos==='TE' && ctx.counts.TE>1 && !isStarter;
+      const recentlyAdded=recentAdds.has(String(id));
 
       const value=weeklyBaseValue(
         b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p}
@@ -1433,11 +1451,15 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
       if(isReserve) dropability-=20;
 
+      // Avoid whiplash immediately after a transaction. Newly added players get
+      // a 24-hour evaluation window unless the user manually decides otherwise.
+      if(recentlyAdded) dropability-=80;
+
       rows.push({
         id,name:pName(p),pos,team:p.team||'FA',
         injury:p.injury_status||'',sleeperStatus:p.status||'',round,
         isStarter,isKeeper,isReserve,irEligible,protectedInjuryStash,
-        soleRequired,redundantQB,redundantTE,
+        soleRequired,redundantQB,redundantTE,recentlyAdded,
         value,dropability:clamp(dropability,0,100),board:b
       });
     }
@@ -1600,7 +1622,10 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       let label='HOLD';
       let explanation='';
 
-      if(d.irEligible && ctx.irOpen>0) {
+      if(d.recentlyAdded) {
+        label='RECENT ADD — EVALUATE';
+        explanation=' • added within 24h • protected from automatic churn';
+      } else if(d.irEligible && ctx.irOpen>0) {
         label='MOVE TO IR';
         explanation=' • IR slot available • excluded from automatic drop pairings';
       } else if(d.protectedInjuryStash || d.irEligible) {
@@ -1689,6 +1714,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       .filter(d=>!d.soleRequired)
       .filter(d=>!d.irEligible)
       .filter(d=>!d.protectedInjuryStash)
+      .filter(d=>!d.recentlyAdded)
       .filter(d=>{
         const raw=`${d.injury||''} ${d.sleeperStatus||''}`.toUpperCase().replace(/[_-]/g,' ');
         return !/(^|\s)(IR|PUP|NFI)(\s|$)/.test(raw);
@@ -1833,7 +1859,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
     const safeDrops=drops.filter(d=>
       !d.isStarter && !d.isKeeper && !d.soleRequired &&
-      !d.irEligible && !d.protectedInjuryStash
+      !d.irEligible && !d.protectedInjuryStash && !d.recentlyAdded
     );
     const churn=[...safeDrops].sort((a,b)=>{
       const sa=(100-effectiveKeepValue(a,ctx))+(a.redundantQB?20:0)+(a.redundantTE?10:0);

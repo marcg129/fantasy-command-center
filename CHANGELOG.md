@@ -4,6 +4,15 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.5.7 — Weekly Default & Recent-Add Protection
+**2026-08-30**
+
+- Make Normal Weekly Check the default Weekly Command Center mode.
+- Keep Immediate Post-Draft Scan available as an optional mode.
+- Protect players the manager added within the previous 24 hours from automatic churn recommendations.
+- Label recently added players for evaluation instead of immediately suggesting they be dropped.
+- Preserve the existing recently-dropped-player and QB2 recommendation guardrails.
+
 ## v2.5.6 — QB2 Waiver Guardrails
 **2026-08-30**
 
