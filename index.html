@@ -88,6 +88,15 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .conf-high{color:var(--good);font-weight:900}
 .conf-med{color:var(--warn);font-weight:900}
 .conf-low{color:var(--muted);font-weight:900}
+.game-env-high{border-color:#3a614e;background:#10241c}
+.game-env-low{border-color:#684c24;background:#2a210f}
+.game-env-neutral{border-color:#303d5b;background:#11192c}
+.game-env-line{display:flex;gap:7px;flex-wrap:wrap;margin-top:4px}
+.env-chip{font-size:9px;font-weight:850;border:1px solid #32405e;border-radius:999px;padding:2px 6px;color:var(--muted)}
+.env-chip.good{border-color:#266b50;color:#6ee7b7}
+.env-chip.warn{border-color:#795f1b;color:#fde68a}
+.env-chip.bad{border-color:#71313b;color:#fda4af}
+
 
 
 .postdraft-steal{border-color:#66531f;background:#2a230f}
@@ -214,7 +223,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • weekly lineup command center • v2.6.1</div>
+    <div class="sub">Multi-manager beta • live weekly game context • v2.7</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -311,7 +320,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. Current start/sit scores use live Sleeper roster/injury data plus the strategy layer; richer matchup, weather, usage, and news inputs come next.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.7 adds live NFL schedule/game-environment context and outdoor weather to the existing Sleeper roster and injury layer.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -330,6 +339,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <span class="pill" id="waiverPill">Waiver —</span>
     <span class="pill" id="scanModePill">Normal weekly check</span>
     <span class="pill good">Sleeper rosters: live</span>
+    <span class="pill" id="gameDataPill">Game context —</span>
     <span class="pill warn">External strategy/news: Aug 30 snapshot</span>
   </div>
 
@@ -357,7 +367,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div class="weekly-section-head">
           <div>
             <h3>Start / Sit Optimizer</h3>
-            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. This v2.6 baseline uses player value, roster role, and injury status; opponent, weather, usage, and current-news adjustments are planned for the next data-enrichment layer.</div>
+            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.7 adds opponent, game total, venue/roof, and available outdoor weather context to player value, roster role, and injury status.</div>
           </div>
           <span class="pill" id="lineupStatusPill">Lineup —</span>
         </div>
@@ -419,6 +429,17 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       </div>
 
       <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
+            <h3>Game environment</h3>
+            <div class="tiny">Selected-week schedule, betting environment, venue and weather context for teams represented in your starting lineup. Weather is only scored for outdoor/open-roof games when a forecast is in range.</div>
+          </div>
+          <span class="pill" id="weatherPill">Weather —</span>
+        </div>
+        <div id="weeklyGameEnvironment" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
         <h3>Matchup snapshot</h3>
         <div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div>
       </div>
@@ -426,7 +447,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.6.1 adds a decision-coherence layer between Start / Sit and waiver logic: a player graded into the optimized starting lineup cannot simultaneously be an automatic drop candidate, while a current QB/TE starter displaced by the optimizer can become the redundant bench option, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.7 adds live nflverse schedule/game-environment context and Open-Meteo outdoor forecasts to the weekly lineup and waiver models, while preserving the Start/Sit-to-waiver coherence layer, recent-transaction protection, IR/PUP guardrails, required K/DST protection, and QB2 suppression, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.7 now reads NFL schedule/game-environment data and attempts outdoor forecasts, but independent projections, practice-report detail, snap/route usage, and continuously refreshed news are still future layers. Weather is intentionally a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -434,20 +455,51 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.6.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
+  v2.7 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
 <script>
 (() => {
   const BASE = 'https://api.sleeper.app/v1';
+  const SCHEDULE_URLS = [
+    'https://cdn.jsdelivr.net/gh/nflverse/nfldata@master/data/games.csv',
+    'https://github.com/nflverse/nflverse-data/releases/download/schedules/schedules.csv',
+    'https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv'
+  ];
+
+  const HOME_COORDS = {
+    ARI:[33.5276,-112.2626], ATL:[33.7554,-84.4008], BAL:[39.2780,-76.6227],
+    BUF:[42.7738,-78.7868], CAR:[35.2258,-80.8528], CHI:[41.8623,-87.6167],
+    CIN:[39.0954,-84.5160], CLE:[41.5061,-81.6995], DAL:[32.7473,-97.0945],
+    DEN:[39.7439,-105.0201], DET:[42.3400,-83.0456], GB:[44.5013,-88.0622],
+    HOU:[29.6847,-95.4107], IND:[39.7601,-86.1639], JAX:[30.3239,-81.6373],
+    KC:[39.0489,-94.4839], LV:[36.0909,-115.1833], LAC:[33.9535,-118.3392],
+    LAR:[33.9535,-118.3392], MIA:[25.9580,-80.2389], MIN:[44.9736,-93.2575],
+    NE:[42.0909,-71.2643], NO:[29.9511,-90.0812], NYG:[40.8135,-74.0745],
+    NYJ:[40.8135,-74.0745], PHI:[39.9008,-75.1675], PIT:[40.4468,-80.0158],
+    SEA:[47.5952,-122.3316], SF:[37.4032,-121.9698], TB:[27.9759,-82.5033],
+    TEN:[36.1665,-86.7713], WAS:[38.9078,-76.8645]
+  };
+
+  const NEUTRAL_STADIUM_COORDS = [
+    [/melbourne cricket|mcg/i,[-37.81997,144.98345]],
+    [/maracan/i,[-22.9121,-43.2302]],
+    [/tottenham/i,[51.6043,-0.0665]],
+    [/wembley/i,[51.5560,-0.2796]],
+    [/stade de france/i,[48.9245,2.3601]],
+    [/bernab/i,[40.4531,-3.6883]],
+    [/allianz|bayern munich/i,[48.2188,11.6247]],
+    [/banorte|azteca/i,[19.3029,-99.1505]]
+  ];
+
   const ecrOverrides = {"jahmyrgibbs":1,"bijanrobinson":2,"jamarrchase":3,"pukanacua":4,"jaxonsmithnjigba":5,"amonrastbrown":6,"christianmccaffrey":7,"jonathantaylor":8,"ceedeelamb":9,"jamescook":10,"justinjefferson":11,"chasebrown":12,"drakelondon":13,"saquonbarkley":14,"ajbrown":15,"devonachane":16,"brockbowers":17,"nicocollins":18,"omarionhampton":19,"derrickhenry":20,"kennethwalker":21,"ashtonjeanty":22,"georgepickens":23,"chrisolave":24,"treymcbride":25,"joshallen":26,"maliknabers":27,"rasheerice":28,"devontasmith":29,"zayflowers":30,"kyrenwilliams":31,"teehiggins":32,"javontewilliams":33,"lamarjackson":34,"breecehall":35,"tetairoamcmillan":36,"garrettwilson":37,"jaylenwaddle":38,"laddmcconkey":39,"joshjacobs":40,"colstonloveland":41,"emekaegbuka":42,"jeremiyahlove":43,"drakemaye":44,"travisetienne":45,"terrymclaurin":46,"dandreswift":47,"joeburrow":48,"davanteadams":49,"lutherburden":50,"camskattebo":51,"jamesonwilliams":52,"tylerwarren":53,"buckyirving":54,"quinshonjudkins":55,"davidmontgomery":56,"christianwatson":57,"djmoore":58,"jaydendaniels":59,"mikeevans":60,"romeodunze":61,"jalenhurts":62,"bhayshultuten":63,"jadarianprice":64,"treveyonhenderson":65,"parkerwashington":66,"calebwilliams":67,"tuckerkraft":68,"marvinharrison":69,"rhamondrestevenson":70,"justinherbert":71,"carnelltate":72,"jaylenwarren":73,"trevorlawrence":74,"brianthomas":75,"dkmetcalf":76,"tonypollard":77,"dakprescott":78,"haroldfannin":79,"samlaporta":80,"ricodowdle":81,"chrisgodwin":82,"jonathonbrooks":83,"kylepitts":84,"courtlandsutton":85,"jkdobbins":86,"michaelpittman":87,"quentinjohnston":88,"michaelwilson":89,"chubahubbard":90,"brockpurdy":91,"joshdowns":92,"blakecorum":93,"georgekittle":94,"alecpierce":95,"jaxsondart":96,"wandalerobinson":97,"jacorycroskeymerritt":98,"bonix":99,"stefondiggs":100};
   const newsAdjustments = {"pukanacua":{"label":"GROIN WATCH","delta":-2,"note":"Groin soreness; expected for Week 1, but first-round opportunity cost matters."},"christianmccaffrey":{"label":"AGE / WORKLOAD RISK","delta":-3,"note":"30 years old after a 413-touch 2025; camp muscle tightness adds risk."},"devonachane":{"label":"QB CONTEXT RISK","delta":-3,"note":"High passing-game dependence; Miami's QB context adds volatility."},"ashtonjeanty":{"label":"ANKLE / W1 RISK","delta":-4,"note":"Low ankle sprain; not considered long-term, but Week 1 availability is not guaranteed."},"maliknabers":{"label":"ACL/MENISCUS RETURN","delta":-3,"note":"Practicing, but returning from ACL/meniscus rehab makes early-season explosiveness uncertain."},"breecehall":{"label":"GROIN WATCH","delta":-2,"note":"Expected back for Week 1, but groin strains can recur for RBs."},"joshjacobs":{"label":"GROIN WATCH","delta":-2,"note":"Green Bay remains optimistic; monitor workload/availability."},"lutherburden":{"label":"RETURNING FROM GROIN","delta":-1,"note":"Back at practice but still ramping toward full work."},"treveyonhenderson":{"label":"ANKLE — EXPECTED W1","delta":0,"note":"Latest reports are encouraging; expected to be ready for Week 1."},"mikeevans":{"label":"MINOR GROIN","delta":0,"note":"Current expectation is that he plays Week 1."},"alecpierce":{"label":"JUST OFF PUP","delta":-1,"note":"Activated from PUP; Week 1 is the goal, but workload is still ramping."},"jordyntyson":{"label":"HAMSTRING — MAJOR RISK","delta":-14,"note":"Expected absence could extend into October; avoid near old ADP."},"travishunter":{"label":"OFFENSIVE ROLE DOWN","delta":-12,"note":"Jaguars have tilted his workload heavily toward defense, reducing fantasy receiving volume."},"debosamuel":{"label":"RISING","delta":4,"note":"Back in San Francisco and climbing as the WR room consolidates."},"romeodoubs":{"label":"RISING","delta":4,"note":"Clear New England WR2 role has pushed his market upward."},"jonathonbrooks":{"label":"RISING","delta":4,"note":"Preseason usage suggests he is consolidating the Carolina backfield lead."},"jkdobbins":{"label":"RISING","delta":3,"note":"Trending as Denver's early-down hammer and useful RB2/flex."},"jaylenwaddle":{"label":"TARGET","delta":5,"note":"Denver's high-volume passing environment gives him WR1 upside at a WR2 price."},"chasebrown":{"label":"TARGET","delta":5,"note":"Strong receiving/rushing profile plus favorable schedule; excellent fit for this league's yardage bonuses."},"blakecorum":{"label":"UPSIDE BENCH","delta":4,"note":"Cheap path to top-10 RB weeks if Kyren Williams misses time."},"buckyirving":{"label":"ROLE / HEALTH RISK","delta":-4,"note":"Shoulder surgery plus Kenneth Gainwell competition lowers confidence."},"jamesonwilliams":{"label":"VOLATILE","delta":-3,"note":"Big-play ceiling, but weekly floor was difficult to trust."},"courtlandsutton":{"label":"TARGET COMPETITION","delta":-3,"note":"Jaylen Waddle's arrival lowers Sutton's target ceiling."},"mikewashington":{"label":"HANDCUFF RISER","delta":5,"note":"Strong preseason and Jeanty's ankle make him a premium insurance back."}};
   const $ = id => document.getElementById(id);
   const state = {
     league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
     myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false,
-    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly'
+    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null
   };
 
   const suffixRe = /\b(jr|sr|ii|iii|iv)\b/g;
@@ -473,6 +525,324 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
     return r.json();
   }
+
+  async function tget(url) {
+    const r=await fetch(url,{cache:'no-store'});
+    if(!r.ok) throw new Error(`HTTP ${r.status} — ${url}`);
+    return r.text();
+  }
+
+  function parseCSV(csv) {
+    const rows=[];
+    let row=[],field='',quoted=false;
+    for(let i=0;i<csv.length;i++) {
+      const c=csv[i],n=csv[i+1];
+      if(c==='"') {
+        if(quoted && n==='"'){ field+='"'; i++; }
+        else quoted=!quoted;
+      } else if(c===',' && !quoted) {
+        row.push(field); field='';
+      } else if((c==='\n'||c==='\r') && !quoted) {
+        if(c==='\r' && n==='\n') i++;
+        row.push(field); field='';
+        if(row.some(x=>x!=='')) rows.push(row);
+        row=[];
+      } else {
+        field+=c;
+      }
+    }
+    if(field.length||row.length){ row.push(field); rows.push(row); }
+    if(rows.length<2) return [];
+    const headers=rows[0].map(x=>x.trim());
+    return rows.slice(1).map(r=>{
+      const o={};
+      headers.forEach((h,i)=>o[h]=r[i]??'');
+      return o;
+    });
+  }
+
+  function nnum(v) {
+    if(v===null||v===undefined||v==='') return null;
+    const n=Number(v);
+    return Number.isFinite(n)?n:null;
+  }
+
+  function canonTeam(t) {
+    t=String(t||'').trim().toUpperCase();
+    const aliases={JAC:'JAX',WSH:'WAS',LA:'LAR',STL:'LAR',OAK:'LV',SD:'LAC'};
+    return aliases[t]||t;
+  }
+
+  async function loadScheduleData() {
+    if(state.scheduleAll?.length) return state.scheduleAll;
+    let lastErr=null;
+    for(const url of SCHEDULE_URLS) {
+      try {
+        const raw=await tget(url);
+        const rows=parseCSV(raw);
+        if(rows.length>1000) {
+          state.scheduleAll=rows;
+          return rows;
+        }
+      } catch(e) { lastErr=e; }
+    }
+    throw lastErr||new Error('NFL schedule data unavailable');
+  }
+
+  function scheduleSeason() {
+    const leagueSeason=Number(state.league?.season);
+    const nflSeason=Number(state.nflState?.season);
+    if(Number.isFinite(leagueSeason)) return leagueSeason;
+    if(Number.isFinite(nflSeason)) return nflSeason;
+    return new Date().getFullYear();
+  }
+
+  function gameForTeam(team) {
+    return state.gameByTeam.get(canonTeam(team))||null;
+  }
+
+  function opponentForTeam(team) {
+    const g=gameForTeam(team);
+    if(!g) return null;
+    const t=canonTeam(team);
+    return t===g.home_team ? g.away_team : g.home_team;
+  }
+
+  function firstSunday(year,month0) {
+    const d=new Date(Date.UTC(year,month0,1));
+    const add=(7-d.getUTCDay())%7;
+    return 1+add;
+  }
+
+  function easternUtcOffset(dateStr) {
+    const [y,m,d]=String(dateStr||'').split('-').map(Number);
+    if(!y||!m||!d) return '-04:00';
+    const dstStart=firstSunday(y,2)+7; // second Sunday in March
+    const dstEnd=firstSunday(y,10);   // first Sunday in November
+    if(m>3 && m<11) return '-04:00';
+    if(m===3 && d>=dstStart) return '-04:00';
+    if(m===11 && d<dstEnd) return '-04:00';
+    return '-05:00';
+  }
+
+  function kickoffDate(g) {
+    if(!g?.gameday) return null;
+    const time=(g.gametime&&g.gametime.includes(':'))?g.gametime:'13:00';
+    const dt=new Date(`${g.gameday}T${time}:00${easternUtcOffset(g.gameday)}`);
+    return Number.isNaN(dt.getTime())?null:dt;
+  }
+
+  function stadiumCoords(g) {
+    const stadium=String(g?.stadium||'');
+    for(const [re,coords] of NEUTRAL_STADIUM_COORDS) if(re.test(stadium)) return coords;
+    return HOME_COORDS[canonTeam(g?.home_team)]||null;
+  }
+
+  function weatherApplicable(g) {
+    const roof=String(g?.roof||'').toLowerCase();
+    return !['dome','closed'].includes(roof);
+  }
+
+  async function loadWeatherForGame(g) {
+    if(!g?.game_id || !weatherApplicable(g)) return null;
+    const cached=state.weatherByGame.get(g.game_id);
+    if(cached && Date.now()-cached.fetchedAt < 30*60*1000) return cached.data;
+
+    const coords=stadiumCoords(g);
+    const kick=kickoffDate(g);
+    if(!coords||!kick) return null;
+
+    const daysAway=(kick.getTime()-Date.now())/(24*60*60*1000);
+    if(daysAway>16.5 || daysAway<-1) return null;
+
+    const [lat,lon]=coords;
+    const url='https://api.open-meteo.com/v1/forecast'
+      +`?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}`
+      +'&hourly=temperature_2m,precipitation_probability,precipitation,weather_code,wind_speed_10m,wind_gusts_10m'
+      +'&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&timezone=GMT&forecast_days=16';
+
+    try {
+      const data=await jget(url);
+      const times=data?.hourly?.time||[];
+      if(!times.length) return null;
+      const target=kick.getTime();
+      let bestI=0,bestDiff=Infinity;
+      for(let i=0;i<times.length;i++) {
+        const ms=Date.parse(times[i]+'Z');
+        const diff=Math.abs(ms-target);
+        if(diff<bestDiff){bestDiff=diff;bestI=i;}
+      }
+      const w={
+        temp:nnum(data.hourly.temperature_2m?.[bestI]),
+        precipProb:nnum(data.hourly.precipitation_probability?.[bestI]),
+        precipitation:nnum(data.hourly.precipitation?.[bestI]),
+        code:nnum(data.hourly.weather_code?.[bestI]),
+        wind:nnum(data.hourly.wind_speed_10m?.[bestI]),
+        gust:nnum(data.hourly.wind_gusts_10m?.[bestI]),
+        forecastTime:times[bestI]
+      };
+      state.weatherByGame.set(g.game_id,{data:w,fetchedAt:Date.now()});
+      return w;
+    } catch(e) {
+      return null;
+    }
+  }
+
+  async function loadWeeklyGameContext(week,ctx,matchups=[]) {
+    state.gameContextError=null;
+    try {
+      const all=await loadScheduleData();
+      const season=scheduleSeason();
+      const games=all.filter(r=>
+        Number(r.season)===Number(season) &&
+        Number(r.week)===Number(week) &&
+        String(r.game_type||'REG').toUpperCase()==='REG'
+      ).map(r=>({
+        ...r,
+        game_id:r.game_id,
+        season:Number(r.season),
+        week:Number(r.week),
+        home_team:canonTeam(r.home_team),
+        away_team:canonTeam(r.away_team),
+        spread_line:nnum(r.spread_line),
+        total_line:nnum(r.total_line),
+        away_moneyline:nnum(r.away_moneyline),
+        home_moneyline:nnum(r.home_moneyline),
+        away_rest:nnum(r.away_rest),
+        home_rest:nnum(r.home_rest)
+      }));
+
+      state.scheduleGames=games;
+      state.gameByTeam=new Map();
+      for(const g of games) {
+        state.gameByTeam.set(g.home_team,g);
+        state.gameByTeam.set(g.away_team,g);
+      }
+
+      const mine=(matchups||[]).find(m=>Number(m.roster_id)===Number(state.myRosterId));
+      const opp=mine ? (matchups||[]).find(m=>m.matchup_id===mine.matchup_id && Number(m.roster_id)!==Number(state.myRosterId)) : null;
+      const relevantIds=new Set([
+        ...(ctx.my?.starters||[]),
+        ...(opp?.starters||[])
+      ].map(String).filter(x=>x&&x!=='0'));
+
+      const relevantGames=new Map();
+      for(const id of relevantIds) {
+        const p=state.players[id];
+        const g=gameForTeam(p?.team);
+        if(g) relevantGames.set(g.game_id,g);
+      }
+
+      const outdoor=[...relevantGames.values()].filter(weatherApplicable);
+      await Promise.all(outdoor.map(g=>loadWeatherForGame(g)));
+
+      setPill('gameDataPill',games.length?`NFL context: ${games.length} games`:'NFL context: no games',games.length?'good':'warn');
+      const wxCount=outdoor.filter(g=>state.weatherByGame.get(g.game_id)?.data).length;
+      setPill('weatherPill',outdoor.length?`${wxCount}/${outdoor.length} outdoor forecasts`:'No outdoor starter games',wxCount||!outdoor.length?'good':'warn');
+      return games;
+    } catch(e) {
+      state.gameContextError=e;
+      state.scheduleGames=[];
+      state.gameByTeam=new Map();
+      setPill('gameDataPill','NFL context unavailable','warn');
+      setPill('weatherPill','Weather unavailable','warn');
+      return [];
+    }
+  }
+
+  function gameContextForPlayer(p) {
+    if(!p) return null;
+    const team=canonTeam(p.team);
+    const g=gameForTeam(team);
+    if(!g) return null;
+    const home=team===g.home_team;
+    const opp=home?g.away_team:g.home_team;
+    const weather=state.weatherByGame.get(g.game_id)?.data||null;
+    return {game:g,team,opp,home,weather};
+  }
+
+  function gameEnvAdjustmentForPlayer(p) {
+    const c=gameContextForPlayer(p);
+    if(!c) return 0;
+    const pos=normalizedFantasyPos(p);
+    let adj=0;
+    const total=c.game.total_line;
+
+    if(Number.isFinite(total)) {
+      if(pos==='DEF') {
+        if(total<=40) adj+=3;
+        else if(total<=43) adj+=1.5;
+        else if(total>=50) adj-=3;
+        else if(total>=47) adj-=1.5;
+      } else if(pos==='K') {
+        if(total>=49) adj+=2;
+        else if(total<=40) adj-=1.5;
+      } else {
+        if(total>=50) adj+=4;
+        else if(total>=47) adj+=2.5;
+        else if(total>=44) adj+=1;
+        else if(total<=40) adj-=2.5;
+        else if(total<=42) adj-=1;
+      }
+    }
+
+    const w=c.weather;
+    if(w && weatherApplicable(c.game)) {
+      if((w.wind||0)>=20) {
+        if(pos==='QB') adj-=6;
+        if(pos==='WR') adj-=4;
+        if(pos==='TE') adj-=2;
+        if(pos==='K') adj-=8;
+        if(pos==='RB') adj+=1;
+        if(pos==='DEF') adj+=1;
+      } else if((w.wind||0)>=15) {
+        if(pos==='QB') adj-=3;
+        if(pos==='WR') adj-=2;
+        if(pos==='TE') adj-=1;
+        if(pos==='K') adj-=4;
+      }
+
+      if((w.precipProb||0)>=60 && (w.precipitation||0)>=0.02) {
+        if(pos==='QB') adj-=2;
+        if(pos==='WR') adj-=1.5;
+        if(pos==='TE') adj-=1;
+        if(pos==='K') adj-=1.5;
+        if(pos==='RB') adj+=0.5;
+      }
+
+      if((w.temp??99)<=25) {
+        if(pos==='QB') adj-=1;
+        if(pos==='WR') adj-=0.5;
+        if(pos==='K') adj-=2;
+      }
+    }
+    return adj;
+  }
+
+  function weatherSummary(g) {
+    if(!g) return '';
+    const roof=String(g.roof||'').toLowerCase();
+    if(['dome','closed'].includes(roof)) return roof==='dome'?'Dome':'Closed roof';
+    const w=state.weatherByGame.get(g.game_id)?.data;
+    if(!w) return 'Weather not in range / unavailable';
+    const parts=[];
+    if(Number.isFinite(w.temp)) parts.push(`${Math.round(w.temp)}°F`);
+    if(Number.isFinite(w.wind)) parts.push(`${Math.round(w.wind)} mph wind`);
+    if(Number.isFinite(w.gust) && w.gust>=18) parts.push(`gust ${Math.round(w.gust)}`);
+    if(Number.isFinite(w.precipProb)) parts.push(`${Math.round(w.precipProb)}% precip`);
+    return parts.join(' • ');
+  }
+
+  function gameEnvironmentTextForPlayer(p) {
+    const c=gameContextForPlayer(p);
+    if(!c) return '';
+    const g=c.game;
+    const total=Number.isFinite(g.total_line)?`O/U ${g.total_line}`:'O/U —';
+    const site=c.home?'vs.':'@';
+    const wx=weatherSummary(g);
+    return `${site} ${c.opp} • ${total}${wx?' • '+wx:''}`;
+  }
+
 
   function populateManagerSuggestions() {
     const dl=$('managerSuggestions');
@@ -1285,6 +1655,10 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(dc===2 && b.pos==='RB') v+=3;
     if(dc===2 && b.pos==='WR') v+=1.5;
 
+    if(mode==='weekly' && b.pdata) {
+      v+=gameEnvAdjustmentForPlayer(b.pdata)*0.75;
+    }
+
     if(mode==='postdraft') {
       const cutoff=postDraftMarketCutoff();
       if((b.pos==='RB'||b.pos==='WR'||b.pos==='TE') && b.ecrRank<=cutoff) {
@@ -1311,6 +1685,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if((b.pos==='RB'||b.pos==='WR') && ctx.activeCounts[b.pos]<5) reasons.push(`${b.pos} depth fits roster`);
     if(b.news?.label) reasons.push(b.news.label.toLowerCase());
     if((b.ecrRank||999)<=150) reasons.push(`market rank ${b.ecrRank}`);
+
+    const gc=b.pdata?gameContextForPlayer(b.pdata):null;
+    if(gc && Number.isFinite(gc.game.total_line)) reasons.push(`${gc.home?'vs':'@'} ${gc.opp} • O/U ${gc.game.total_line}`);
 
     if(adds>=5000) reasons.push(`trend signal: ${adds.toLocaleString()} adds`);
     else if(adds>=500) reasons.push(`trending: ${adds.toLocaleString()} adds`);
@@ -1612,6 +1989,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(dc===1) score+=3;
     else if(dc===2 && ['RB','WR','TE'].includes(pos)) score+=1;
 
+    score+=gameEnvAdjustmentForPlayer(p);
+
     return score;
   }
 
@@ -1712,7 +2091,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div>
           <b>START ${esc(pName(inc.p))} <span class="pos ${normalizedFantasyPos(inc.p)}">${normalizedFantasyPos(inc.p)}</span></b>
           <div class="meta">${out?`SIT ${esc(pName(out.p))} • `:''}${esc(inc.p.team||'FA')}${normalizedInjuryStatus(inc.p)?' • '+esc(normalizedInjuryStatus(inc.p)):''}</div>
-          <div class="whyline">Baseline lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Week-specific opponent/weather/usage data is not yet included.</div>
+          <div class="whyline">${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Usage/news enrichment is still pending.</div>
         </div>
         <div class="value-badge">${Math.round(inc.score)}</div>
       </div>`);
@@ -1739,7 +2118,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       rows.push(`<div class="waiver-row lineup-hold">
         <div class="waiver-rank">✓</div>
         <div><b>HOLD CURRENT LINEUP</b>
-          <div class="whyline">No bench player currently clears the baseline start/sit threshold. This will become more matchup-sensitive once schedule, usage, weather, and live-news inputs are added.</div>
+          <div class="whyline">No bench player currently clears the baseline start/sit threshold. Schedule/game-total/weather context is now included when available; usage and continuously refreshed news remain future inputs.</div>
         </div>
       </div>`);
     }
@@ -2054,6 +2433,56 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     }).join('') || '<div class="tiny">No completed transactions found for this week yet.</div>';
   }
 
+  function renderGameEnvironment(ctx,matchups=[]) {
+    const starterIds=(ctx.my?.starters||[]).map(String).filter(x=>x&&x!=='0');
+    const teams=new Map();
+    for(const id of starterIds) {
+      const p=state.players[id];
+      const c=gameContextForPlayer(p);
+      if(c) teams.set(c.team,{...c,p});
+    }
+
+    if(!teams.size) {
+      $('weeklyGameEnvironment').innerHTML='<div class="tiny">No selected-week game context found for your current starters.</div>';
+      return;
+    }
+
+    const rows=[...teams.values()].sort((a,b)=>{
+      const ta=Number.isFinite(a.game.total_line)?a.game.total_line:44;
+      const tb=Number.isFinite(b.game.total_line)?b.game.total_line:44;
+      return tb-ta;
+    });
+
+    $('weeklyGameEnvironment').innerHTML=rows.map(c=>{
+      const g=c.game;
+      const total=g.total_line;
+      const env=Number.isFinite(total)?(total>=48?'high':(total<=41?'low':'neutral')):'neutral';
+      const cls=env==='high'?'game-env-high':(env==='low'?'game-env-low':'game-env-neutral');
+      const spread=Number.isFinite(g.spread_line)?`Spread ${g.spread_line>0?'+':''}${g.spread_line}`:'Spread —';
+      const kickoff=kickoffDate(g);
+      const time=kickoff?kickoff.toLocaleString([],{
+        weekday:'short',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'
+      }):`${g.gameday||''} ${g.gametime||''}`;
+      const roof=g.roof?String(g.roof):'roof —';
+      const wx=weatherSummary(g);
+      const adj=gameEnvAdjustmentForPlayer(c.p);
+
+      return `<div class="waiver-row ${cls}">
+        <div class="waiver-rank">${esc(c.team)}</div>
+        <div>
+          <b>${c.home?'vs.':'@'} ${esc(c.opp)}${Number.isFinite(total)?` • O/U ${total}`:''}</b>
+          <div class="meta">${esc(time)} • ${esc(g.stadium||'stadium TBD')}</div>
+          <div class="game-env-line">
+            <span class="env-chip ${env==='high'?'good':(env==='low'?'warn':'')}">${esc(spread)}</span>
+            <span class="env-chip">${esc(roof)}</span>
+            <span class="env-chip">${esc(wx)}</span>
+          </div>
+          <div class="whyline">Representative starter adjustment for ${esc(pName(c.p))}: ${adj>=0?'+':''}${Math.round(adj*10)/10}. Game total and severe outdoor weather are deliberately modest inputs.</div>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
   function renderWeeklyMatchup(matchups,ctx) {
     const mine=(matchups||[]).find(m=>Number(m.roster_id)===Number(state.myRosterId));
     const opp=mine ? (matchups||[]).find(m=>m.matchup_id===mine.matchup_id && Number(m.roster_id)!==Number(state.myRosterId)) : null;
@@ -2094,7 +2523,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         Opponent: ${oppHealth.length?oppHealth.map(p=>`${esc(pName(p))} (${esc(normalizedInjuryStatus(p))})`).join(', '):'no major starter flags'}</div>
       </div></div>
       <div class="tiny labelish" style="margin-top:6px">TOP OPPONENT STARTERS</div>
-      ${oppPlayers.slice(0,6).map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${normalizedFantasyPos(x.p)}">${normalizedFantasyPos(x.p)}</span></b><div class="tiny">${esc(x.p.team||'FA')} • baseline value ${Math.round(x.score)}</div></div></div>`).join('')}`;
+      ${oppPlayers.slice(0,6).map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${normalizedFantasyPos(x.p)}">${normalizedFantasyPos(x.p)}</span></b><div class="tiny">${esc(x.p.team||'FA')} • value ${Math.round(x.score)}${gameEnvironmentTextForPlayer(x.p)?' • '+esc(gameEnvironmentTextForPlayer(x.p)):''}</div></div></div>`).join('')}`;
   }
 
   function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[]) {
@@ -2195,6 +2624,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       setPill('waiverPill',Number.isFinite(waiverPos)&&waiverPos>0?`Waiver priority #${waiverPos}`:'Waiver status loaded','good');
       setPill('scanModePill',state.weeklyMode==='postdraft'?'Immediate post-draft scan':'Normal weekly check',state.weeklyMode==='postdraft'?'warn':'good');
 
+      await loadWeeklyGameContext(week,ctx,matchups);
+
       renderWeeklyRoster(ctx);
       renderWeeklyIR(ctx);
       const lineup=renderStartSit(ctx);
@@ -2204,6 +2635,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       const moves=renderWeeklyMoves(ctx,pool,drops);
       renderWeeklyTrending(ctx);
       renderWeeklyTransactions();
+      renderGameEnvironment(ctx,matchups);
       renderWeeklyMatchup(matchups,ctx);
       renderWeeklyActionPlan(ctx,pool,drops,moves,steals);
       $('postDraftScanCard').style.display=state.weeklyMode==='postdraft'?'block':'none';

@@ -4,6 +4,19 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.7 — Live Game Context & Weather
+**2026-08-30**
+
+- Add nflverse schedule/game-environment data to the weekly scan.
+- Match players to their selected-week opponent, venue, roof type, spread and game total.
+- Add an outdoor-weather integration using Open-Meteo when the selected game is within forecast range.
+- Add a Game Environment panel for teams represented in the current starting lineup.
+- Add game-total and severe-weather adjustments to the Start / Sit Optimizer.
+- Add selected-week game-environment context to free-agent scoring and explanations.
+- Add opponent/game-environment details to the Matchup Snapshot.
+- Keep weather effects deliberately modest so rain or cold alone do not create exaggerated sit recommendations.
+- Preserve v2.6.1 recommendation-coherence, IR/PUP, recent-transaction, K/DST and QB2 guardrails.
+
 ## v2.6.1 — Recommendation Coherence Fix
 **2026-08-30**
 
