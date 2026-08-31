@@ -112,6 +112,17 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .avail-chip.good{border-color:#276c50;color:#6ee7b7}
 .avail-chip.warn{border-color:#795f1b;color:#fde68a}
 .avail-chip.bad{border-color:#71313b;color:#fda4af}
+.news-negative{border-color:#71313b;background:#2a1117}
+.news-positive{border-color:#2d6b50;background:#10251c}
+.news-watch{border-color:#795f1b;background:#2a210f}
+.news-neutral{border-color:#31405e;background:#11192d}
+.news-link{color:#8ed8ff;text-decoration:none;font-weight:850}
+.news-link:hover{text-decoration:underline}
+.news-chip{font-size:9px;font-weight:850;border:1px solid #33415f;border-radius:999px;padding:2px 6px;color:var(--muted)}
+.news-chip.good{border-color:#276c50;color:#6ee7b7}
+.news-chip.warn{border-color:#795f1b;color:#fde68a}
+.news-chip.bad{border-color:#71313b;color:#fda4af}
+
 
 
 
@@ -241,7 +252,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • live practice & availability intelligence • v2.9.3</div>
+    <div class="sub">Multi-manager beta • automated news intelligence • v2.10</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -338,7 +349,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.9 adds live practice participation, injury-detail freshness, and availability monitoring to Sleeper data, recent workload, game context, and weather.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.10 adds automated NFL news intelligence to Sleeper availability, workload, game context, and weather.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -360,7 +371,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <span class="pill" id="gameDataPill">Game context —</span>
     <span class="pill" id="usageDataPill">Usage data —</span>
     <span class="pill" id="availabilityDataPill">Availability —</span>
-    <span class="pill warn">External strategy/news: Aug 30 snapshot</span>
+    <span class="pill" id="newsDataPill">News —</span>
+    <span class="pill warn">Strategy rankings: Aug 30 snapshot</span>
   </div>
 
   <div class="card" style="margin-top:12px;border-color:#36556f">
@@ -387,12 +399,23 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div class="weekly-section-head">
           <div>
             <h3>Start / Sit Optimizer</h3>
-            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.9 combines player value, current injury/practice status, recent opportunities and snap share, plus opponent, game total, venue/roof, and available outdoor weather.</div>
+            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.10 combines player value, current injury/practice status, recent workload, automated news signals, opponent, game total, venue/roof, and available outdoor weather.</div>
           </div>
           <span class="pill" id="lineupStatusPill">Lineup —</span>
         </div>
         <div id="weeklyLineupSummary" class="goodbox" style="margin-bottom:8px">Run a weekly check.</div>
         <div id="weeklyStartSit" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
+            <h3>News Intelligence</h3>
+            <div class="tiny">Automated NFL headlines collected by GitHub Actions from public publisher feeds. Player-name matches and keyword classification create a modest fantasy-impact signal; source links remain the final verification layer.</div>
+          </div>
+          <span class="pill" id="newsPanelPill">News —</span>
+        </div>
+        <div id="weeklyNews" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
       </div>
 
       <div class="card" style="margin-top:12px">
@@ -489,7 +512,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.9.3 adds a 72-hour freshness threshold before the game-week practice window, so recent Questionable updates remain EARLY WATCH while older preseason/early-week tags become STALE instead of all being grouped together, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.8 now adds nflverse player stats and snap-count workload signals. Independent projections, route participation, detailed practice reports, red-zone opportunity, and continuously refreshed news are still future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.10 adds a zero-cost GitHub Actions news pipeline and same-origin data/news.json feed. Direct player-name headline matches receive small recency/confidence-weighted adjustments in Start/Sit, waiver, roster utility, and the Weekly Action Plan; all source links remain visible for verification, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.10 now adds an automated headline feed generated by GitHub Actions. News classification is intentionally conservative and uses publisher-provided headlines/descriptions rather than scraping full articles. Independent projections, route participation, and richer red-zone opportunity remain future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -497,7 +520,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.9.3 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.10 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -548,7 +571,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   const state = {
     league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
     myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false,
-    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null,usageStatsCache:{},usageSnapsCache:{},usageStatsIndex:null,usageSnapIndex:null,usageByPlayer:new Map(),usageSource:null,usageError:null
+    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null,usageStatsCache:{},usageSnapsCache:{},usageStatsIndex:null,usageSnapIndex:null,usageByPlayer:new Map(),usageSource:null,usageError:null,newsFeed:null,newsError:null,newsMatchCache:new Map()
   };
 
   const suffixRe = /\b(jr|sr|ii|iii|iv)\b/g;
@@ -1714,6 +1737,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       v+=gameEnvAdjustmentForPlayer(b.pdata)*0.75;
       v+=usageAdjustmentForPlayer(b.pdata)*0.85;
       v+=availabilityAdjustmentForPlayer(b.pdata)*0.70;
+      v+=newsAdjustmentForPlayer(b.pdata)*0.75;
     }
 
     if(mode==='postdraft') {
@@ -1742,6 +1766,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if((b.pos==='RB'||b.pos==='WR') && ctx.activeCounts[b.pos]<5) reasons.push(`${b.pos} depth fits roster`);
     if(b.news?.label) reasons.push(b.news.label.toLowerCase());
     if((b.ecrRank||999)<=150) reasons.push(`market rank ${b.ecrRank}`);
+
+    const news=b.pdata?newsSummaryText(b.pdata):'';
+    if(news) reasons.push(news);
 
     const availability=b.pdata?availabilitySummaryText(b.pdata):'';
     if(availability) reasons.push(availability);
@@ -2005,6 +2032,208 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       </div>`;
     }).join('') : '<div class="goodbox">No obvious undrafted steal clears the current beta threshold. That is useful information — do not churn just to make a move.</div>';
     return steals;
+  }
+
+  function newsFileUrl() {
+    // Same-origin on GitHub Pages. Local file:// testing usually cannot fetch
+    // sibling JSON due browser security rules, so hosted Pages is the real test.
+    return `./data/news.json?ts=${Date.now()}`;
+  }
+
+  async function loadNewsIntelligence() {
+    state.newsError=null;
+    state.newsMatchCache=new Map();
+
+    try {
+      const data=await jget(newsFileUrl());
+      const articles=Array.isArray(data?.articles)?data.articles:[];
+      state.newsFeed={...data,articles};
+
+      const age=data?.generated_at ? (Date.now()-Date.parse(data.generated_at))/(60*60*1000) : null;
+      const fresh=Number.isFinite(age) ? age<=8 : true;
+      const label=articles.length
+        ? `News: ${articles.length} articles${Number.isFinite(age)?` • ${Math.max(0,Math.round(age))}h old`:''}`
+        : 'News: no articles';
+
+      setPill('newsDataPill',label,articles.length && fresh?'good':'warn');
+      setPill(
+        'newsPanelPill',
+        articles.length ? `${articles.length} feed articles` : 'No feed articles',
+        articles.length && fresh?'good':'warn'
+      );
+      return articles;
+    } catch(e) {
+      state.newsError=e;
+      state.newsFeed={generated_at:null,articles:[]};
+      setPill(
+        'newsDataPill',
+        location.protocol==='file:' ? 'News: hosted version required' : 'News unavailable',
+        'warn'
+      );
+      setPill('newsPanelPill','News unavailable','warn');
+      return [];
+    }
+  }
+
+  function newsArticleAgeHours(a) {
+    const ms=Date.parse(a?.published_at||'');
+    if(!Number.isFinite(ms)) return null;
+    return Math.max(0,(Date.now()-ms)/(60*60*1000));
+  }
+
+  function newsArticlesForPlayer(p) {
+    if(!p || !state.newsFeed?.articles?.length) return [];
+    const key=String(p.player_id||norm(pName(p)));
+    if(state.newsMatchCache.has(key)) return state.newsMatchCache.get(key);
+
+    const name=norm(pName(p));
+    if(!name || name.length<5) return [];
+
+    const out=[];
+    for(const a of state.newsFeed.articles) {
+      const title=norm(a.title||'');
+      const summary=norm(a.summary||'');
+      let strength=0;
+      if(title.includes(name)) strength=1;
+      else if(summary.includes(name)) strength=0.35;
+      if(!strength) continue;
+
+      const age=newsArticleAgeHours(a);
+      if(Number.isFinite(age) && age>168) continue;
+      out.push({...a,matchStrength:strength,ageHours:age});
+    }
+
+    out.sort((a,b)=>{
+      const aa=Number.isFinite(a.ageHours)?a.ageHours:9999;
+      const bb=Number.isFinite(b.ageHours)?b.ageHours:9999;
+      return aa-bb;
+    });
+
+    state.newsMatchCache.set(key,out);
+    return out;
+  }
+
+  function newsAdjustmentForPlayer(p) {
+    const articles=newsArticlesForPlayer(p).slice(0,3);
+    if(!articles.length) return 0;
+
+    let total=0;
+    for(const a of articles) {
+      // Headlines can mention multiple players. Only direct title-name matches
+      // are allowed to materially alter the model; summary-only matches display
+      // in the panel but have near-zero algorithmic influence.
+      if((a.matchStrength||0)<0.9) continue;
+
+      const age=Number.isFinite(a.ageHours)?a.ageHours:72;
+      const recency=clamp(1-(age/120),0.20,1);
+      const confidence=clamp(Number(a.confidence)||0.65,0.2,1);
+      total+=(Number(a.score_adjustment)||0)*recency*confidence;
+    }
+    return clamp(total,-10,7);
+  }
+
+  function topNewsForPlayer(p) {
+    return newsArticlesForPlayer(p)[0]||null;
+  }
+
+  function newsSummaryText(p) {
+    const a=topNewsForPlayer(p);
+    if(!a) return '';
+    const age=Number.isFinite(a.ageHours)
+      ? (a.ageHours<24?`${Math.max(1,Math.round(a.ageHours))}h ago`:`${Math.round(a.ageHours/24)}d ago`)
+      : '';
+    return `News ${String(a.impact||'neutral').toUpperCase()}: ${a.title}${age?' • '+age:''}`;
+  }
+
+  function safeExternalUrl(url) {
+    try {
+      const u=new URL(String(url||''));
+      return /^https?:$/.test(u.protocol)?u.href:'#';
+    } catch(e) {
+      return '#';
+    }
+  }
+
+  function renderNewsPanel(ctx,pool=[]) {
+    if(!state.newsFeed?.articles?.length) {
+      const note=location.protocol==='file:'
+        ? 'The automated news JSON cannot usually be loaded from a local file. Test News Intelligence on the GitHub Pages version after adding the data/news.json pipeline files.'
+        : 'No automated news articles are available right now. The rest of the weekly model continues without a news adjustment.';
+      $('weeklyNews').innerHTML=`<div class="goodbox">${esc(note)}</div>`;
+      return;
+    }
+
+    const playerMap=new Map();
+    for(const id of ctx.players) {
+      const p=state.players[String(id)];
+      if(p) playerMap.set(String(p.player_id||id),p);
+    }
+    for(const b of (pool||[]).slice(0,18)) {
+      if(b?.pdata) playerMap.set(String(b.pdata.player_id||b.player_id),b.pdata);
+    }
+
+    const matches=[];
+    for(const p of playerMap.values()) {
+      const articles=newsArticlesForPlayer(p).slice(0,2);
+      for(const a of articles) {
+        matches.push({
+          p,a,
+          adj:newsAdjustmentForPlayer(p),
+          rostered:ctx.players.includes(String(p.player_id))
+        });
+      }
+    }
+
+    matches.sort((a,b)=>{
+      const aa=Number.isFinite(a.a.ageHours)?a.a.ageHours:9999;
+      const bb=Number.isFinite(b.a.ageHours)?b.a.ageHours:9999;
+      return aa-bb;
+    });
+
+    const dedup=[];
+    const seen=new Set();
+    for(const x of matches) {
+      const key=`${x.p.player_id}|${x.a.url||x.a.title}`;
+      if(seen.has(key)) continue;
+      seen.add(key);
+      dedup.push(x);
+      if(dedup.length>=12) break;
+    }
+
+    if(!dedup.length) {
+      const generated=state.newsFeed.generated_at
+        ? new Date(state.newsFeed.generated_at).toLocaleString()
+        : 'unknown';
+      $('weeklyNews').innerHTML=
+        `<div class="goodbox">Feed loaded (${state.newsFeed.articles.length} articles; generated ${esc(generated)}), but no recent player-specific headline matched this roster or the top free-agent pool.</div>`;
+      return;
+    }
+
+    $('weeklyNews').innerHTML=dedup.map(x=>{
+      const impact=String(x.a.impact||'neutral').toLowerCase();
+      const cls=impact==='negative'?'news-negative':
+        (impact==='positive'?'news-positive':
+          (impact==='watch'?'news-watch':'news-neutral'));
+      const chip=impact==='negative'?'bad':(impact==='positive'?'good':(impact==='watch'?'warn':''));
+      const age=Number.isFinite(x.a.ageHours)
+        ? (x.a.ageHours<24?`${Math.max(1,Math.round(x.a.ageHours))}h ago`:`${Math.round(x.a.ageHours/24)}d ago`)
+        : '';
+      const direct=(x.a.matchStrength||0)>=0.9;
+      const url=safeExternalUrl(x.a.url);
+
+      return `<div class="waiver-row ${cls}">
+        <div class="waiver-rank">${x.rostered?'R':'FA'}</div>
+        <div>
+          <b>${esc(pName(x.p))} <span class="pos ${normalizedFantasyPos(x.p)}">${normalizedFantasyPos(x.p)}</span></b>
+          <div class="meta">${esc(x.a.source||'News')} ${age?'• '+esc(age):''} • ${direct?'DIRECT HEADLINE MATCH':'SUMMARY MATCH'}</div>
+          <div class="usage-grid">
+            <span class="news-chip ${chip}">${esc(String(x.a.category||x.a.impact||'news').toUpperCase())}</span>
+            <span class="news-chip">model adj ${x.adj>=0?'+':''}${Math.round(x.adj*10)/10}</span>
+          </div>
+          <div class="whyline"><a class="news-link" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(x.a.title||'Open source')}</a></div>
+        </div>
+      </div>`;
+    }).join('');
   }
 
   function practiceCode(p) {
@@ -2686,6 +2915,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
     score+=gameEnvAdjustmentForPlayer(p);
     score+=usageAdjustmentForPlayer(p);
+    score+=newsAdjustmentForPlayer(p);
 
     return score;
   }
@@ -2787,7 +3017,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div>
           <b>START ${esc(pName(inc.p))} <span class="pos ${normalizedFantasyPos(inc.p)}">${normalizedFantasyPos(inc.p)}</span></b>
           <div class="meta">${out?`SIT ${esc(pName(out.p))} • `:''}${esc(inc.p.team||'FA')}${normalizedInjuryStatus(inc.p)?' • '+esc(normalizedInjuryStatus(inc.p)):''}</div>
-          <div class="whyline">${esc(availabilitySummaryText(inc.p)||'No current availability flag')} • ${esc(usageSummaryText(inc.p)||'Usage baseline unavailable')} • ${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Detailed live news is still pending.</div>
+          <div class="whyline">${esc(newsSummaryText(inc.p)||'No matched recent news')} • ${esc(availabilitySummaryText(inc.p)||'No current availability flag')} • ${esc(usageSummaryText(inc.p)||'Usage baseline unavailable')} • ${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>.</div>
         </div>
         <div class="value-badge">${Math.round(inc.score)}</div>
       </div>`);
@@ -3007,6 +3237,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(d.board?.pdata) {
       v+=usageAdjustmentForPlayer(d.board.pdata)*0.55;
       v+=availabilityAdjustmentForPlayer(d.board.pdata)*0.45;
+      v+=newsAdjustmentForPlayer(d.board.pdata)*0.35;
     }
 
     if(d.round<=8) v+=6;
@@ -3235,6 +3466,19 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(ctx.activeOverage>0) {
       items.push(`<b>Roster cleanup required:</b> you currently have ${ctx.activeOverage} more active player${ctx.activeOverage===1?'':'s'} than the normal roster capacity detected by the app.`);
     }
+    const newsFlags=ctx.players
+      .filter(id=>ctx.starters.has(String(id)))
+      .map(id=>state.players[String(id)])
+      .filter(Boolean)
+      .map(p=>({p,adj:newsAdjustmentForPlayer(p),article:topNewsForPlayer(p)}))
+      .filter(x=>x.article && Math.abs(x.adj)>=3)
+      .sort((a,b)=>Math.abs(b.adj)-Math.abs(a.adj));
+
+    if(newsFlags.length) {
+      const x=newsFlags[0];
+      items.push(`<b>News watch:</b> ${esc(pName(x.p))} has a recent ${x.adj<0?'negative':'positive'} headline signal (${x.adj>=0?'+':''}${Math.round(x.adj*10)/10}). Verify the source in News Intelligence before acting.`);
+    }
+
     const availabilityFlags=ctx.players
       .filter(id=>ctx.starters.has(String(id)))
       .map(id=>state.players[String(id)])
@@ -3332,7 +3576,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
       await Promise.all([
         loadWeeklyGameContext(week,ctx,matchups),
-        loadWeeklyUsageContext(week,ctx)
+        loadWeeklyUsageContext(week,ctx),
+        loadNewsIntelligence()
       ]);
 
       renderWeeklyRoster(ctx);
@@ -3341,6 +3586,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       const lineup=renderStartSit(ctx);
       renderUsagePanel(ctx);
       const pool=renderWeeklyAdds(ctx);
+      renderNewsPanel(ctx,pool);
       const steals=renderPostDraftSteals(ctx,pool);
       const drops=renderWeeklyDrops(ctx);
       const moves=renderWeeklyMoves(ctx,pool,drops);

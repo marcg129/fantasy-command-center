@@ -4,6 +4,20 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.10 — Automated News Intelligence
+**2026-08-31**
+
+- Add a zero-cost GitHub Actions news pipeline for the hosted GitHub Pages app.
+- Collect publisher-provided NFL RSS/feed metadata from CBS Sports, ProFootballTalk/NBC Sports, and NFL.com when available.
+- Store only feed-supplied headline, description, source URL, publication time, and heuristic classification; do not scrape full articles.
+- Add a News Intelligence panel for recent roster and top-free-agent headlines.
+- Match news to players by name and distinguish direct headline matches from weaker summary matches.
+- Add conservative recency- and confidence-weighted news adjustments to Start/Sit, waiver, and roster-utility scoring.
+- Add significant starter news to the Weekly Action Plan.
+- Keep source links visible so users can verify important reports before acting.
+- Refresh the hosted news feed every two hours during NFL-season months and only commit when data changes.
+- Preserve availability freshness, usage, weather/game context, recommendation coherence, recent-transaction, IR/PUP, K/DST, and QB2 guardrails.
+
 ## v2.9.3 — Early-Watch Freshness Threshold
 **2026-08-31**
 
