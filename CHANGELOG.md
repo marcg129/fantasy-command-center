@@ -4,6 +4,16 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.11.1 — Churn Recommendation Coherence
+**2026-08-31**
+
+- Centralize primary churn-slot selection into one shared roster-utility function.
+- Make Drop Review, Add / Drop Opportunities, and the Waiver Claim Planner agree on the same primary drop candidate.
+- Rank the canonical churn candidate first in Drop Review and label it PRIMARY CHURN.
+- Continue showing other drop candidates as secondary review options.
+- Preserve structural QB2/TE2 redundancy logic, draft-capital protection, recent-add protection, IR/PUP protection, and Start/Sit coherence.
+- Suppress generic neutral +0 news headlines from free-agent rationale and other player-news summaries, even if an older news.json still contains them.
+
 ## v2.11 — Waiver Claim Planner
 **2026-08-31**
 
