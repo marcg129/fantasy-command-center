@@ -214,7 +214,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • weekly lineup command center • v2.6</div>
+    <div class="sub">Multi-manager beta • weekly lineup command center • v2.6.1</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -426,7 +426,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.6 adds a legal-lineup Start / Sit Optimizer, richer selected-week matchup context, starter injury alerts, and lineup recommendations while retaining roster-utility waiver logic, recent-transaction protection, IR/PUP guardrails, and QB2 suppression, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.6.1 adds a decision-coherence layer between Start / Sit and waiver logic: a player graded into the optimized starting lineup cannot simultaneously be an automatic drop candidate, while a current QB/TE starter displaced by the optimizer can become the redundant bench option, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
         </div>
       </div>
     </aside>
@@ -434,7 +434,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.6 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
+  v2.6.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -1424,6 +1424,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     const rows=[];
     const recentAdds=recentlyAddedByMeIds(24);
 
+    // Decision-coherence layer:
+    // any player the Start/Sit Optimizer wants in the starting lineup is
+    // protected from the waiver churn engine during the same scan.
+    const optimizedStarterIds=new Set(
+      optimizedLineup(ctx).filter(x=>x?.id).map(x=>String(x.id))
+    );
+
     for(const id of ctx.players) {
       const b=board.get(String(id));
       const p=state.players[id];
@@ -1435,13 +1442,27 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       const pick=draftPickForPlayer(id);
       const round=Number(pick?.round)||99;
       const isStarter=ctx.starters.has(String(id));
+      const isOptimizedStarter=optimizedStarterIds.has(String(id));
       const isReserve=ctx.reserve.has(String(id));
       const isKeeper=keeperIds.has(String(id));
       const irEligible=isLikelyIREligible(p) && !isReserve;
       const protectedInjuryStash=isProtectedInjuryStash(p);
       const soleRequired=(pos==='K' && ctx.counts.K<=1) || (pos==='DEF' && ctx.counts.DEF<=1);
-      const redundantQB=pos==='QB' && ctx.counts.QB>1 && !isStarter;
-      const redundantTE=pos==='TE' && ctx.counts.TE>1 && !isStarter;
+
+      // At one-starter positions, the optimizer determines which player is the
+      // protected starter. If Purdy grades ahead of Goff, Purdy cannot also be
+      // the suggested drop; Goff becomes the redundant QB2 instead.
+      const redundantQB=pos==='QB' && ctx.counts.QB>1 && !isOptimizedStarter;
+      const redundantTE=pos==='TE' && ctx.counts.TE>1 && !isOptimizedStarter;
+
+      const displacedOneStarter=
+        isStarter && !isOptimizedStarter &&
+        ((pos==='QB' && ctx.counts.QB>1) || (pos==='TE' && ctx.counts.TE>1));
+
+      // Current starters remain protected unless the optimizer explicitly
+      // displaces them at a redundant one-starter position.
+      const lineupProtected=isOptimizedStarter || (isStarter && !displacedOneStarter);
+
       const recentlyAdded=recentAdds.has(String(id));
 
       const value=weeklyBaseValue(
@@ -1450,7 +1471,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
       let dropability=100-value;
 
-      if(isStarter) dropability-=48;
+      if(lineupProtected) dropability-=55;
+      if(displacedOneStarter) dropability+=12;
       if(isKeeper) dropability-=42;
 
       if(round<=4) dropability-=32;
@@ -1478,7 +1500,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       rows.push({
         id,name:pName(p),pos,team:p.team||'FA',
         injury:p.injury_status||'',sleeperStatus:p.status||'',round,
-        isStarter,isKeeper,isReserve,irEligible,protectedInjuryStash,
+        isStarter,isOptimizedStarter,lineupProtected,displacedOneStarter,
+        isKeeper,isReserve,irEligible,protectedInjuryStash,
         soleRequired,redundantQB,redundantTE,recentlyAdded,
         value,dropability:clamp(dropability,0,100),board:b
       });
@@ -1823,7 +1846,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       let label='HOLD';
       let explanation='';
 
-      if(d.recentlyAdded) {
+      if(d.isOptimizedStarter) {
+        label='START/SIT PROTECTED';
+        explanation=' • optimizer grades this player into the starting lineup • excluded from automatic churn';
+      } else if(d.displacedOneStarter) {
+        label='REDUNDANT AFTER LINEUP CHANGE';
+        explanation=' • current starter is displaced by the optimizer and may be reviewed as QB2/TE2';
+      } else if(d.recentlyAdded) {
         label='RECENT ADD — EVALUATE';
         explanation=' • added within 24h • protected from automatic churn';
       } else if(d.irEligible && ctx.irOpen>0) {
@@ -1901,7 +1930,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     }
 
     if(d.round<=8) v+=6;
-    if(d.isStarter) v+=25;
+    if(d.isOptimizedStarter) v+=32;
+    else if(d.isStarter && !d.displacedOneStarter) v+=22;
+    if(d.displacedOneStarter) v-=12;
     if(d.isKeeper) v+=25;
 
     return clamp(v,1,100);
@@ -1911,7 +1942,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     const post=state.weeklyMode==='postdraft';
 
     const dropPool=drops
-      .filter(d=>!d.isStarter && !d.isKeeper)
+      .filter(d=>!d.lineupProtected && !d.isKeeper)
       .filter(d=>!d.soleRequired)
       .filter(d=>!d.irEligible)
       .filter(d=>!d.protectedInjuryStash)
@@ -2097,7 +2128,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     }
 
     const safeDrops=drops.filter(d=>
-      !d.isStarter && !d.isKeeper && !d.soleRequired &&
+      !d.lineupProtected && !d.isKeeper && !d.soleRequired &&
       !d.irEligible && !d.protectedInjuryStash && !d.recentlyAdded
     );
     const churn=[...safeDrops].sort((a,b)=>{

@@ -4,6 +4,15 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.6.1 — Recommendation Coherence Fix
+**2026-08-30**
+
+- Add a shared decision-coherence layer between Start / Sit and waiver recommendations.
+- Protect every player selected by the optimized lineup from automatic drop/churn recommendations in the same scan.
+- At redundant one-starter positions, allow the optimizer to redefine which QB/TE is the starter and which becomes the expendable backup.
+- Prevent contradictory output such as recommending Brock Purdy as both a Week 1 starter and the roster's primary drop candidate.
+- Update drop-review labels to distinguish optimizer-protected starters from current starters displaced by a recommended lineup change.
+
 ## v2.6 — Weekly Lineup Command Center
 **2026-08-30**
 
