@@ -4,6 +4,19 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.6 — Weekly Lineup Command Center
+**2026-08-30**
+
+- Add a Start / Sit Optimizer that builds a legal lineup from the manager's active Sleeper roster.
+- Read the league's roster-position structure when determining valid starter and FLEX assignments.
+- Compare the current Sleeper lineup against an optimized baseline lineup.
+- Add START / SIT recommendations with confidence labels and value gaps.
+- Add starter injury alerts for major injury/reserve designations.
+- Expand the selected-week matchup panel with opponent starters and lineup-health flags.
+- Add lineup issues to the weekly action plan.
+- Preserve roster-utility waiver logic, recent-add/drop protection, IR/PUP safeguards, and unnecessary-QB2 suppression.
+- Clearly label the current optimizer as a baseline pending richer matchup, usage, weather, and live-news data.
+
 ## v2.5.7 — Weekly Default & Recent-Add Protection
 **2026-08-30**
 

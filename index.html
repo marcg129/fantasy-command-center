@@ -81,6 +81,14 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .ir-row{border-color:#31507a;background:#111f36}
 .protected-row{opacity:.82}
 .signal-note{font-size:9px;color:var(--muted);font-weight:800;letter-spacing:.04em}
+.lineup-swap{border-color:#365d4b;background:#10251d}
+.lineup-hold{border-color:#2d3c5b;background:#111a2d}
+.lineup-alert{border-color:#6a5020;background:#2a220f}
+.lineup-slot{font-size:9px;font-weight:900;letter-spacing:.06em;color:var(--muted)}
+.conf-high{color:var(--good);font-weight:900}
+.conf-med{color:var(--warn);font-weight:900}
+.conf-low{color:var(--muted);font-weight:900}
+
 
 .postdraft-steal{border-color:#66531f;background:#2a230f}
 .steal-label{display:inline-block;font-size:9px;font-weight:900;letter-spacing:.06em;padding:3px 6px;border-radius:999px;background:#4a3b10;color:#ffe68d;margin-top:3px}
@@ -206,7 +214,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • weekly-first roster management • v2.5.7</div>
+    <div class="sub">Multi-manager beta • weekly lineup command center • v2.6</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -303,7 +311,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Designed to catch immediate post-draft waiver value first, then grow into lineup, waiver, opponent, trade, and playoff optimization.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. Current start/sit scores use live Sleeper roster/injury data plus the strategy layer; richer matchup, weather, usage, and news inputs come next.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -348,8 +356,20 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <div class="weekly-section-head">
           <div>
+            <h3>Start / Sit Optimizer</h3>
+            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. This v2.6 baseline uses player value, roster role, and injury status; opponent, weather, usage, and current-news adjustments are planned for the next data-enrichment layer.</div>
+          </div>
+          <span class="pill" id="lineupStatusPill">Lineup —</span>
+        </div>
+        <div id="weeklyLineupSummary" class="goodbox" style="margin-bottom:8px">Run a weekly check.</div>
+        <div id="weeklyStartSit" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
             <h3>Best available adds</h3>
-            <div class="tiny">League-specific free agents only. In Post-Draft mode, undrafted upside and roster-churn value get extra weight; trending activity remains only a signal.</div>
+            <div class="tiny">League-specific free agents only. Normal Weekly mode focuses on roster utility and season-long opportunity; Post-Draft mode adds extra undrafted-upside weighting. Week-specific matchup scoring will deepen in the next data-enrichment version.</div>
           </div>
           <input id="weeklyFaSearch" class="compact-search" placeholder="Search free agents">
         </div>
@@ -399,14 +419,14 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       </div>
 
       <div class="card" style="margin-top:12px">
-        <h3>Opponent snapshot</h3>
+        <h3>Matchup snapshot</h3>
         <div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div>
       </div>
 
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.5.7 keeps the roster-utility model and weekly-first workflow, defaults to the Normal Weekly Check, suppresses unnecessary QB2 waiver adds, hides recently dropped players from re-add recommendations, and gives newly added players a 24-hour protection window before they can become automatic churn candidates, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.6 adds a legal-lineup Start / Sit Optimizer, richer selected-week matchup context, starter injury alerts, and lineup recommendations while retaining roster-utility waiver logic, recent-transaction protection, IR/PUP guardrails, and QB2 suppression, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. Independent projections, practice reports, weather, snap/route data, Vegas totals, and current web news are not yet continuously fed into this static page. Those are the next layers before Week 1.
         </div>
       </div>
     </aside>
@@ -414,7 +434,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.5.7 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
+  v2.6 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, and league-specific free-agent detection, Sleeper trending signals, an Immediate Post-Draft Scan for undrafted steals, more aggressive-but-protected roster churn review, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -1524,6 +1544,187 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return steals;
   }
 
+  function normalizedFantasyPos(p) {
+    let pos=String(p?.position||'').toUpperCase();
+    if(pos==='DST') pos='DEF';
+    return pos;
+  }
+
+  function startingLineupSlots() {
+    const positions=(state.league?.roster_positions||[]).map(x=>String(x).toUpperCase());
+    const benchLike=new Set(['BN','BENCH','IR','TAXI']);
+    return positions.filter(x=>!benchLike.has(x));
+  }
+
+  function eligibleForLineupSlot(pos,slot) {
+    pos=String(pos||'').toUpperCase();
+    slot=String(slot||'').toUpperCase();
+    if(pos==='DST') pos='DEF';
+    if(slot==='DST') slot='DEF';
+
+    if(slot===pos) return true;
+    if(['FLEX','W/R/T','WRRB_FLEX','REC_FLEX'].includes(slot)) return ['RB','WR','TE'].includes(pos);
+    if(['W/R','WRRB'].includes(slot)) return ['RB','WR'].includes(pos);
+    if(['W/T','WRTE'].includes(slot)) return ['WR','TE'].includes(pos);
+    if(['R/T','RBTE'].includes(slot)) return ['RB','TE'].includes(pos);
+    if(['SUPER_FLEX','SUPERFLEX','Q/W/R/T'].includes(slot)) return ['QB','RB','WR','TE'].includes(pos);
+    return false;
+  }
+
+  function weeklyLineupScoreForId(id) {
+    const p=state.players[String(id)];
+    if(!p) return -999;
+    const pos=normalizedFantasyPos(p);
+    const b=weeklyBoardMap().get(String(id));
+    let score=weeklyBaseValue(
+      b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p}
+    );
+
+    const injury=normalizedInjuryStatus(p);
+    if(['IR','PUP','NFI','OUT'].some(x=>injury.startsWith(x))) score-=100;
+    else if(injury==='DOUBTFUL') score-=28;
+    else if(injury==='QUESTIONABLE') score-=7;
+
+    const dc=Number(p.depth_chart_order);
+    if(dc===1) score+=3;
+    else if(dc===2 && ['RB','WR','TE'].includes(pos)) score+=1;
+
+    return score;
+  }
+
+  function currentLineupAssignments(ctx) {
+    const slots=startingLineupSlots();
+    const starterIds=(ctx.my?.starters||[]).map(String);
+    return slots.map((slot,i)=>{
+      const id=starterIds[i] && starterIds[i]!=='0' ? starterIds[i] : null;
+      return {slot,index:i,id,p:id?state.players[id]:null,score:id?weeklyLineupScoreForId(id):-999};
+    });
+  }
+
+  function optimizedLineup(ctx) {
+    const slots=startingLineupSlots();
+    const activeIds=ctx.players.filter(id=>!ctx.reserve.has(String(id)));
+
+    const players=activeIds.map(id=>({
+      id:String(id),
+      p:state.players[String(id)],
+      pos:normalizedFantasyPos(state.players[String(id)]),
+      score:weeklyLineupScoreForId(id)
+    })).filter(x=>x.p);
+
+    // Fill the most restrictive slots first, then flexible slots.
+    const flexNames=new Set(['FLEX','W/R/T','WRRB_FLEX','REC_FLEX','W/R','WRRB','W/T','WRTE','R/T','RBTE','SUPER_FLEX','SUPERFLEX','Q/W/R/T']);
+    const order=slots.map((slot,index)=>({slot,index,flex:flexNames.has(slot)}))
+      .sort((a,b)=>Number(a.flex)-Number(b.flex));
+
+    const used=new Set();
+    const assignments=new Array(slots.length).fill(null);
+
+    for(const s of order) {
+      const eligible=players
+        .filter(x=>!used.has(x.id) && eligibleForLineupSlot(x.pos,s.slot))
+        .sort((a,b)=>b.score-a.score);
+
+      const chosen=eligible[0]||null;
+      if(chosen) {
+        used.add(chosen.id);
+        assignments[s.index]={slot:s.slot,index:s.index,id:chosen.id,p:chosen.p,score:chosen.score};
+      } else {
+        assignments[s.index]={slot:s.slot,index:s.index,id:null,p:null,score:-999};
+      }
+    }
+    return assignments;
+  }
+
+  function lineupConfidence(gap) {
+    if(gap>=12) return {label:'HIGH',cls:'conf-high'};
+    if(gap>=6) return {label:'MODERATE',cls:'conf-med'};
+    return {label:'LEAN',cls:'conf-low'};
+  }
+
+  function renderStartSit(ctx) {
+    const current=currentLineupAssignments(ctx);
+    const optimal=optimizedLineup(ctx);
+
+    const currentIds=new Set(current.filter(x=>x.id).map(x=>x.id));
+    const optimalIds=new Set(optimal.filter(x=>x.id).map(x=>x.id));
+
+    const incoming=optimal.filter(x=>x.id && !currentIds.has(x.id));
+    const outgoing=current.filter(x=>x.id && !optimalIds.has(x.id));
+    const emptySlots=optimal.filter(x=>!x.id);
+
+    const currentScore=current.filter(x=>x.id).reduce((s,x)=>s+x.score,0);
+    const optimalScore=optimal.filter(x=>x.id).reduce((s,x)=>s+x.score,0);
+    const gap=Math.max(0,optimalScore-currentScore);
+
+    if(emptySlots.length) {
+      setPill('lineupStatusPill',`${emptySlots.length} lineup slot${emptySlots.length===1?'':'s'} unfilled`,'warn');
+    } else if(incoming.length) {
+      setPill('lineupStatusPill',`${incoming.length} change${incoming.length===1?'':'s'} suggested`,'warn');
+    } else {
+      setPill('lineupStatusPill','Current lineup looks optimal','good');
+    }
+
+    $('weeklyLineupSummary').innerHTML=
+      `<b>Week ${state.weeklyWeek} baseline lineup check:</b> `+
+      `${incoming.length?`${incoming.length} possible change${incoming.length===1?'':'s'}`:'no baseline changes detected'} `+
+      `• current score ${Math.round(currentScore)} • optimized ${Math.round(optimalScore)} `+
+      `${gap>0?`• improvement +${Math.round(gap)}`:''}`;
+
+    const rows=[];
+
+    for(const inc of incoming) {
+      // Prefer an outgoing player eligible for the same slot; otherwise use the
+      // lowest-scoring outgoing starter as the comparison.
+      let out=outgoing
+        .filter(x=>x.p && eligibleForLineupSlot(normalizedFantasyPos(x.p),inc.slot))
+        .sort((a,b)=>a.score-b.score)[0];
+
+      if(!out) out=[...outgoing].sort((a,b)=>a.score-b.score)[0]||null;
+
+      const individualGap=out ? inc.score-out.score : inc.score;
+      const conf=lineupConfidence(individualGap);
+      rows.push(`<div class="waiver-row lineup-swap">
+        <div class="waiver-rank"><span class="lineup-slot">${esc(inc.slot)}</span><b>↑</b></div>
+        <div>
+          <b>START ${esc(pName(inc.p))} <span class="pos ${normalizedFantasyPos(inc.p)}">${normalizedFantasyPos(inc.p)}</span></b>
+          <div class="meta">${out?`SIT ${esc(pName(out.p))} • `:''}${esc(inc.p.team||'FA')}${normalizedInjuryStatus(inc.p)?' • '+esc(normalizedInjuryStatus(inc.p)):''}</div>
+          <div class="whyline">Baseline lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>. Week-specific opponent/weather/usage data is not yet included.</div>
+        </div>
+        <div class="value-badge">${Math.round(inc.score)}</div>
+      </div>`);
+    }
+
+    // Flag current starters with major injury designations even if there is no
+    // obvious replacement.
+    for(const cur of current) {
+      if(!cur.id || !cur.p) continue;
+      const inj=normalizedInjuryStatus(cur.p);
+      if(!inj) continue;
+      if(['OUT','IR','PUP','NFI','DOUBTFUL'].some(x=>inj.startsWith(x))) {
+        rows.push(`<div class="waiver-row lineup-alert">
+          <div class="waiver-rank">!</div>
+          <div><b>LINEUP ALERT: ${esc(pName(cur.p))} <span class="pos ${normalizedFantasyPos(cur.p)}">${normalizedFantasyPos(cur.p)}</span></b>
+            <div class="meta">${esc(cur.slot)} • ${esc(inj)}</div>
+            <div class="whyline">Do not leave an unavailable/high-risk player in the starting lineup. Re-run the optimizer after roster or injury updates.</div>
+          </div>
+        </div>`);
+      }
+    }
+
+    if(!rows.length) {
+      rows.push(`<div class="waiver-row lineup-hold">
+        <div class="waiver-rank">✓</div>
+        <div><b>HOLD CURRENT LINEUP</b>
+          <div class="whyline">No bench player currently clears the baseline start/sit threshold. This will become more matchup-sensitive once schedule, usage, weather, and live-news inputs are added.</div>
+        </div>
+      </div>`);
+    }
+
+    $('weeklyStartSit').innerHTML=rows.join('');
+    return {current,optimal,incoming,outgoing,currentScore,optimalScore};
+  }
+
   function renderWeeklyRoster(ctx) {
     const board=weeklyBoardMap();
     const rosterRows=ctx.players.map(id=>{
@@ -1825,17 +2026,44 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   function renderWeeklyMatchup(matchups,ctx) {
     const mine=(matchups||[]).find(m=>Number(m.roster_id)===Number(state.myRosterId));
     const opp=mine ? (matchups||[]).find(m=>m.matchup_id===mine.matchup_id && Number(m.roster_id)!==Number(state.myRosterId)) : null;
+
     if(!mine || !opp) {
-      $('weeklyMatchup').innerHTML='<div class="tiny">Matchup is not populated yet. This is normal immediately after the draft.</div>';
+      $('weeklyMatchup').innerHTML='<div class="tiny">Matchup is not populated yet for the selected week.</div>';
       return;
     }
+
     const board=weeklyBoardMap();
-    const oppPlayers=(opp.players||[]).map(id=>({id:String(id),p:state.players[String(id)],b:board.get(String(id))}))
-      .filter(x=>x.p).sort((a,b)=>weeklyBaseValue(b.b)-weeklyBaseValue(a.b)).slice(0,6);
-    $('weeklyMatchup').innerHTML=`<div class="row"><div><b>vs. ${esc(managerForRosterId(opp.roster_id))}</b>
-      <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}</div></div></div>
-      <div class="tiny labelish" style="margin-top:6px">TOP OPPONENT ASSETS</div>
-      ${oppPlayers.map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${x.p.position}">${x.p.position}</span></b><div class="tiny">${esc(x.p.team||'FA')}</div></div></div>`).join('')}`;
+    const oppStarterIds=(opp.starters||[]).map(String).filter(id=>id && id!=='0');
+    const oppPlayers=oppStarterIds.map(id=>({
+      id,
+      p:state.players[id],
+      b:board.get(id),
+      score:weeklyLineupScoreForId(id)
+    })).filter(x=>x.p).sort((a,b)=>b.score-a.score);
+
+    const myStarterIds=(mine.starters||[]).map(String).filter(id=>id && id!=='0');
+    const myHealth=myStarterIds.map(id=>state.players[id]).filter(Boolean)
+      .filter(p=>{
+        const s=normalizedInjuryStatus(p);
+        return ['QUESTIONABLE','DOUBTFUL','OUT','IR','PUP','NFI'].some(x=>s.startsWith(x));
+      });
+
+    const oppHealth=oppStarterIds.map(id=>state.players[id]).filter(Boolean)
+      .filter(p=>{
+        const s=normalizedInjuryStatus(p);
+        return ['QUESTIONABLE','DOUBTFUL','OUT','IR','PUP','NFI'].some(x=>s.startsWith(x));
+      });
+
+    $('weeklyMatchup').innerHTML=
+      `<div class="row"><div><b>Week ${state.weeklyWeek}: ${esc(managerDisplayName())} vs. ${esc(managerForRosterId(opp.roster_id))}</b>
+        <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}</div>
+      </div></div>
+      <div class="row"><div><b>Lineup health</b>
+        <div class="tiny">You: ${myHealth.length?myHealth.map(p=>`${esc(pName(p))} (${esc(normalizedInjuryStatus(p))})`).join(', '):'no major starter flags'}<br>
+        Opponent: ${oppHealth.length?oppHealth.map(p=>`${esc(pName(p))} (${esc(normalizedInjuryStatus(p))})`).join(', '):'no major starter flags'}</div>
+      </div></div>
+      <div class="tiny labelish" style="margin-top:6px">TOP OPPONENT STARTERS</div>
+      ${oppPlayers.slice(0,6).map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${normalizedFantasyPos(x.p)}">${normalizedFantasyPos(x.p)}</span></b><div class="tiny">${esc(x.p.team||'FA')} • baseline value ${Math.round(x.score)}</div></div></div>`).join('')}`;
   }
 
   function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[]) {
@@ -1852,6 +2080,17 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(ctx.activeOverage>0) {
       items.push(`<b>Roster cleanup required:</b> you currently have ${ctx.activeOverage} more active player${ctx.activeOverage===1?'':'s'} than the normal roster capacity detected by the app.`);
     }
+    const lineupCheck=optimizedLineup(ctx);
+    const currentCheck=currentLineupAssignments(ctx);
+    const currentIdsForPlan=new Set(currentCheck.filter(x=>x.id).map(x=>x.id));
+    const optimalIdsForPlan=new Set(lineupCheck.filter(x=>x.id).map(x=>x.id));
+    const lineupChanges=lineupCheck.filter(x=>x.id && !currentIdsForPlan.has(x.id));
+
+    if(lineupChanges.length) {
+      const first=lineupChanges[0];
+      items.push(`<b>Lineup review:</b> ${esc(pName(first.p))} currently grades into the optimized Week ${state.weeklyWeek} starting lineup. Review the Start / Sit Optimizer before kickoff.`);
+    }
+
 
     if(irCandidates.length && ctx.irOpen>0) {
       items.push(`<b>Use IR before dropping:</b> ${esc(pName(irCandidates[0]))} is ${esc(normalizedInjuryStatus(irCandidates[0]))}. Move him to IR first if Sleeper allows it; ${ctx.irOpen} IR slot${ctx.irOpen===1?' is':'s are'} open.`);
@@ -1927,6 +2166,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
       renderWeeklyRoster(ctx);
       renderWeeklyIR(ctx);
+      const lineup=renderStartSit(ctx);
       const pool=renderWeeklyAdds(ctx);
       const steals=renderPostDraftSteals(ctx,pool);
       const drops=renderWeeklyDrops(ctx);
