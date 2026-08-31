@@ -4,6 +4,21 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.12 — Trade Intelligence
+**2026-08-31**
+
+- Add a league-wide Trade Intelligence module to Weekly mode.
+- Build relative RB/WR/QB/TE strength, need, and surplus profiles for every roster in the connected league.
+- Generate mutually complementary 1-for-1 trade concepts using player value and positional fit.
+- Generate selective 2-for-1 consolidation packages when the connected manager can convert surplus depth into a stronger single asset.
+- Use season-long trade value rather than one-week weather/game-environment scoring.
+- Add modest recent-usage, availability, news, age, draft-capital, and keeper-context adjustments to trade value.
+- Protect the connected manager's current keepers, recent additions, and injury stashes from default outgoing proposals.
+- Add a conservative acquisition premium to opponent keeper targets and display their keeper round.
+- Detect the league trade deadline when Sleeper exposes it and stop generating proposals after the deadline.
+- Add the strongest trade concept to the Weekly Action Plan when it clears the fit threshold.
+- Keep proposals player-only for this release; future draft-pick valuation and league-specific keeper-rights transfer rules remain future work.
+
 ## v2.11.1 — Churn Recommendation Coherence
 **2026-08-31**
 
