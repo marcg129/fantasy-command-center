@@ -241,7 +241,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • live practice & availability intelligence • v2.9.1</div>
+    <div class="sub">Multi-manager beta • live practice & availability intelligence • v2.9.3</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -399,7 +399,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div class="weekly-section-head">
           <div>
             <h3>Practice & Availability</h3>
-            <div class="tiny">Live Sleeper practice participation, injury designation, body-part detail when available, and freshness of the latest player-status update. Stale preseason/early-week Questionable tags are separated from active game-week concerns instead of being treated equally.</div>
+            <div class="tiny">Live Sleeper practice participation, injury designation, body-part detail when available, and freshness of the latest player-status update. Active game-week concerns, recent early-watch updates, and genuinely stale tags are tracked separately. Before the practice window, Questionable updates older than 72 hours are treated as stale.</div>
           </div>
           <span class="pill" id="availabilityPanelPill">Availability —</span>
         </div>
@@ -489,7 +489,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.9.1 separates active game-week availability concerns from stale preseason/early-week Questionable tags, using practice participation, status freshness, and days until kickoff so old Q tags do not distort Start/Sit, matchup-health, waiver, or action-plan recommendations, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.8 now adds nflverse player stats and snap-count workload signals. Independent projections, route participation, detailed practice reports, red-zone opportunity, and continuously refreshed news are still future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.9.3 adds a 72-hour freshness threshold before the game-week practice window, so recent Questionable updates remain EARLY WATCH while older preseason/early-week tags become STALE instead of all being grouped together, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.8 now adds nflverse player stats and snap-count workload signals. Independent projections, route participation, detailed practice reports, red-zone opportunity, and continuously refreshed news are still future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -497,7 +497,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.9.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.9.3 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -2126,10 +2126,20 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       // Without a current practice report, do not treat a 2–4 day old tag
       // the same as an official game-week concern.
       if(!inGameWeek) {
+        // Before the game-week practice window, recency still matters.
+        // A fresh Questionable tag is worth tracking; an old preseason tag is stale.
+        if(Number.isFinite(age) && age <= 72) {
+          return {
+            label:'EARLY WATCH', cls:'avail-neutral', chip:'',
+            adjustment:0, active:false, early:true, stale:false,
+            reason:'Recent injury update, but still before the game-week practice window'
+          };
+        }
+
         return {
-          label:'EARLY WATCH', cls:'avail-neutral', chip:'',
-          adjustment:0, active:false, stale:true,
-          reason:'Questionable tag before game-week practice window'
+          label:'STALE TAG', cls:'avail-neutral', chip:'',
+          adjustment:0, active:false, early:false, stale:true,
+          reason:'Old Questionable tag with no current game-week practice context'
         };
       }
 
@@ -2196,8 +2206,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     const age=hoursSinceNewsUpdate(p);
     if(Number.isFinite(age)) parts.push(relativeHoursText(age));
 
-    if(signal.stale && signal.label==='EARLY WATCH') parts.push('before game-week practice window');
-    else if(signal.stale && signal.label==='STALE TAG') parts.push('stale tag');
+    if(signal.early && signal.label==='EARLY WATCH') parts.push('recent early-watch');
+    else if(signal.stale && signal.label==='STALE TAG') parts.push('stale preseason/early-week tag');
 
     return parts.join(' • ');
   }
@@ -2230,8 +2240,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     });
 
     const activeFlags=rows.filter(x=>x.signal.active);
+    const earlyFlags=rows.filter(x=>x.signal.early && (x.injury || x.practice));
     const staleFlags=rows.filter(x=>x.signal.stale && (x.injury || x.practice));
-    const flagged=rows.filter(x=>x.signal.active || x.signal.stale || x.reserve);
+    const flagged=rows.filter(x=>x.signal.active || x.signal.early || x.signal.stale || x.reserve);
 
     const relevant=flagged.length?flagged:rows.filter(x=>x.starter).slice(0,8);
 
@@ -2245,13 +2256,16 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       riskyStarters?'warn':'good'
     );
 
-    const panelText = activeFlags.length
-      ? `${activeFlags.length} active • ${staleFlags.length} stale`
-      : (staleFlags.length ? `0 active • ${staleFlags.length} stale` : 'No current flags');
+    const countParts=[];
+    countParts.push(`${activeFlags.length} active`);
+    if(earlyFlags.length) countParts.push(`${earlyFlags.length} early`);
+    if(staleFlags.length) countParts.push(`${staleFlags.length} stale`);
 
     setPill(
       'availabilityPanelPill',
-      panelText,
+      (earlyFlags.length || staleFlags.length || activeFlags.length)
+        ? countParts.join(' • ')
+        : 'No current flags',
       activeFlags.length?'warn':'good'
     );
 
@@ -2275,7 +2289,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
             ${body?`<span class="avail-chip">${esc(body)}</span>`:''}
             ${Number.isFinite(x.age)?`<span class="avail-chip">${esc(relativeHoursText(x.age))}</span>`:''}
           </div>
-          <div class="whyline">${esc(x.signal.reason||'Availability context')} • adjustment ${x.adj>=0?'+':''}${Math.round(x.adj*10)/10}. ${x.signal.stale?'This tag is informational and is not being treated as an active Week '+state.weeklyWeek+' concern.':'Practice status informs availability/risk but does not replace matchup, workload, or player-quality analysis.'}</div>
+          <div class="whyline">${esc(x.signal.reason||'Availability context')} • adjustment ${x.adj>=0?'+':''}${Math.round(x.adj*10)/10}. ${
+            x.signal.early
+              ? `Fresh status, but too early to treat as an active Week ${state.weeklyWeek} concern.`
+              : (x.signal.stale
+                  ? `Old status with no fresh supporting practice context; not treated as an active Week ${state.weeklyWeek} concern.`
+                  : 'Practice status informs availability/risk but does not replace matchup, workload, or player-quality analysis.')
+          }</div>
         </div>
       </div>`;
     }).join('') || '<div class="goodbox">No current practice/injury concerns detected for this roster.</div>';

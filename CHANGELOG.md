@@ -4,6 +4,25 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.9.3 — Early-Watch Freshness Threshold
+**2026-08-31**
+
+- Add a 72-hour freshness threshold for Questionable tags before the game-week practice window.
+- Keep recently updated Questionable players as EARLY WATCH with no scoring penalty.
+- Reclassify older preseason/early-week Questionable tags as STALE TAG.
+- Prevent 4–7 day-old injury tags from being counted as fresh early-watch information.
+- Preserve zero scoring adjustment for both early-watch and stale pre-practice-window tags.
+
+## v2.9.2 — Early-Watch vs. Stale Status
+**2026-08-31**
+
+- Separate fresh EARLY WATCH injury statuses from genuinely STALE Questionable tags.
+- Keep recently updated Questionable players outside the game-week practice window at zero scoring adjustment.
+- Count active, early-watch, and stale availability statuses separately in the Practice & Availability panel.
+- Clarify that a fresh early-watch status is current information but not yet actionable.
+- Clarify that a stale tag is old information without fresh supporting practice context.
+- Preserve active injury/practice alerts, matchup-health logic, Start/Sit scoring, waiver logic, and Weekly Action Plan behavior.
+
 ## v2.9.1 — Availability Freshness Guardrails
 **2026-08-31**
 
