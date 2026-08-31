@@ -118,6 +118,17 @@ RULES = [
     ),
 ]
 
+NOISE_PATTERNS = [
+    re.compile(r"\b(mvp|rookie of the year|offensive rookie of the year|defensive rookie of the year)\b.*\b(odds|bet|betting|market|board|favorite)", re.I),
+    re.compile(r"\b(odds board|betting odds|best bets?|prop bets?|sportsbook|wager|parlay)\b", re.I),
+    re.compile(r"\b(power rankings?|mock draft|draft grades?|way-too-early|award odds)\b", re.I),
+]
+
+def is_fantasy_noise(title: str, summary: str) -> bool:
+    text = f"{title} {summary[:250]}"
+    return any(pattern.search(text) for pattern in NOISE_PATTERNS)
+
+
 
 def clean_text(value: str | None) -> str:
     value = html.unescape(value or "")
@@ -298,6 +309,9 @@ def main() -> int:
         if url and not valid_url(url):
             url = ""
         article["url"] = url
+
+        if is_fantasy_noise(article["title"], article.get("summary", "")):
+            continue
 
         article.update(
             classify(

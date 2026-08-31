@@ -4,6 +4,20 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.11 — Waiver Claim Planner
+**2026-08-31**
+
+- Add a Waiver Claim Planner that converts add/drop opportunities into an ordered claim strategy.
+- Read the connected roster's waiver position and exposed league waiver-budget/clear-day settings when available.
+- Raise the required upgrade threshold for managers holding premium waiver priority.
+- Add competition-risk labels using Sleeper 24-hour add trends and player value.
+- Add fallback claim ordering so secondary targets can be queued behind the preferred player.
+- Add conservative FAAB starting-bid suggestions when a waiver budget is detected.
+- Preserve the existing churn-slot, IR, recent-transaction, K/DST, QB2, and Start/Sit coherence guardrails.
+- Tighten automated-news quality by suppressing betting/award-odds, power-ranking, mock-draft, and similar fantasy-irrelevant headlines.
+- Hide generic neutral +0 news items from the News Intelligence panel.
+- Update the GitHub Actions workflow package to checkout/setup-python v7.
+
 ## v2.10 — Automated News Intelligence
 **2026-08-31**
 
