@@ -4,6 +4,12 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.12.3.1 — Trade Fit Score Cap Fix
+**2026-08-31**
+
+- Fix the remaining 2-for-1 trade-fit calculation so heuristic fit scores are capped at 95 as intended.
+- Preserve all v2.12.3 target-tier raw-value ceilings, aggressive-consolidation labels, and trade guardrails.
+
 ## v2.12.3 — Trade Value Tier Calibration
 **2026-08-31**
 
