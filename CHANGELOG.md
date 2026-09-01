@@ -4,6 +4,20 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.12.2 — Consolidation Trade Guardrails
+**2026-08-31**
+
+- Tighten 2-for-1 trade generation after reviewing recommendations across all league rosters.
+- Require the incoming consolidation target to be clearly more valuable than the best outgoing player by himself.
+- Reject same-position near-peer upgrades that also require giving away another meaningful asset.
+- Add a 1-QB league guardrail so a modest QB upgrade cannot justify attaching a useful RB/WR/TE asset.
+- Add a raw outgoing-value ceiling so the consolidation discount cannot hide an extreme overpay.
+- Require a larger projected roster improvement for the connected manager on 2-for-1 trades.
+- Reject packages where the trade partner captures a disproportionately larger share of the projected benefit.
+- Tighten minimum two-sided roster-impact thresholds for 1-for-1 trades.
+- Show raw outgoing value alongside discounted package value for 2-for-1 recommendations.
+- Replace HIGH CONFIDENCE wording with STRONG CANDIDATE to better reflect heuristic trade analysis.
+
 ## v2.12.1 — Trade Realism Guardrails
 **2026-08-31**
 
