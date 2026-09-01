@@ -4,6 +4,17 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.12.3 — Trade Value Tier Calibration
+**2026-08-31**
+
+- Add target-tier raw-value ceilings for 2-for-1 trades.
+- Allow a somewhat larger consolidation premium for true elite targets while sharply reducing acceptable overpay for lower-tier targets.
+- Filter packages like a top TE plus a strong QB for a merely strong WR when the raw outgoing value is excessive.
+- Preserve plausible aggressive offers for elite assets when both roster-impact tests remain positive.
+- Label surviving 2-for-1 packages with 130%+ raw-value cost as AGGRESSIVE CONSOLIDATION instead of STRONG CANDIDATE.
+- Show the raw-offer percentage directly on 2-for-1 recommendations.
+- Cap heuristic trade-fit scores at 95 to reduce false precision.
+
 ## v2.12.2 — Consolidation Trade Guardrails
 **2026-08-31**
 
