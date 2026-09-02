@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T11:19:05.616183Z",
+  "generated_at": "2026-09-02T16:35:03.478302Z",
   "lookback_days": 7,
-  "article_count": 12,
+  "article_count": 15,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "George Kittle, Nick Bosa traveling to Australia as 49ers stars aim to return for Week 1 vs. Rams, per report",
+      "summary": "Kittle and Bosa are both recovering from season-ending injuries in 2025",
+      "url": "https://www.cbssports.com/nfl/news/george-kittle-nick-bosa-49ers-rams-australia/",
+      "published_at": "2026-09-02T15:19:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "One reason each NFC team could disappoint its fan base: Are expectations too high for Rams?",
+      "summary": "A look at the biggest red flags across the conference, from the Rams' sky-high expectations to the 49ers' constant injury woes",
+      "url": "https://www.cbssports.com/nfl/news/one-reason-each-nfc-team-could-disappoint-its-fan-base-are-expectations-too-high-for-rams/",
+      "published_at": "2026-09-02T14:16:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "2027 NFL Draft WR rankings: Former FCS product rises as Jeremiah Smith holds top honors",
+      "summary": "Ranking one of the most-hyped NFL Draft receiver classes in recent memory",
+      "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-wr-rankings-jeremiah-smith/",
+      "published_at": "2026-09-02T13:41:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
+      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
+      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-week-1-2026-fade-the-dallas-cowboys/",
+      "published_at": "2026-09-02T13:21:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Best NFL player for every franchise before and after 2000: Peyton Manning earns unique distinction",
+      "summary": "From Peyton Manning and Tom Brady to Jim Brown and Jerry Rice, we pick each NFL franchise's best player from two eras",
+      "url": "https://www.cbssports.com/nfl/news/best-nfl-player-every-franchise-ebefore-after-2000/",
+      "published_at": "2026-09-02T12:41:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Making sense of Cowboys' surprising roster cuts ahead of 2026 season: Joe Milton, Jaydon Blue and more",
+      "summary": "Dallas let go of a few notable players on roster cutdown day in 2026. Here are the reasons why",
+      "url": "https://www.cbssports.com/nfl/news/making-sense-of-cowboys-surprising-roster-cuts/",
+      "published_at": "2026-09-02T11:35:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Colts GM Chris Ballard blasts NFL players returning to college: 'Stupidest s--- I've ever heard'",
       "summary": "Ballard joins a growing list of football figures criticizing former NFL players seeking another year of college eligibility",
@@ -42,18 +114,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Making sense of Cowboys' surprising roster cuts ahead of 2026 season: Joe Milton, Jaydon Blue and more",
-      "summary": "Dallas let go of a few notable players on roster cutdown day in 2026. Here are the reasons why",
-      "url": "https://www.cbssports.com/nfl/news/making-sense-of-cowboys-surprising-roster-cuts/",
-      "published_at": "2026-09-01T20:24:04Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -81,34 +141,10 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
-      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
-      "url": "https://www.cbssports.com/betting/news/nfl-survivor-pool-picks-knockout-strategy-guide-week-1-2026-fade-the-dallas-cowboys/",
-      "published_at": "2026-09-01T16:55:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Grading every NFL team's 2026 preseason: Rams ace the summer, Falcons fail amid quarterback uncertainty",
       "summary": "From Fernando Mendoza's uneven debut with the Raiders to Aaron Donald's return to the Rams, here are the biggest developments and final grades from the 2026 preseason",
       "url": "https://www.cbssports.com/nfl/news/2026-nfl-preseason-grades-falcons-rams/",
       "published_at": "2026-09-01T16:23:49Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2027 NFL Draft WR rankings: Former FCS product rises as Jeremiah Smith holds top honors",
-      "summary": "Ranking one of the most-hyped NFL Draft receiver classes in recent memory",
-      "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-wr-rankings-jeremiah-smith/",
-      "published_at": "2026-09-01T16:02:18Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
