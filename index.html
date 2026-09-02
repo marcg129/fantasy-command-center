@@ -104,6 +104,15 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .usage-chip.good{border-color:#276c50;color:#6ee7b7}
 .usage-chip.warn{border-color:#795f1b;color:#fde68a}
 .usage-chip.bad{border-color:#71313b;color:#fda4af}
+.outlook-grid{display:flex;flex-wrap:wrap;gap:5px;margin-top:5px}
+.outlook-chip{display:inline-flex;align-items:center;border:1px solid #34466c;border-radius:999px;padding:2px 6px;font-size:9px;color:#cbd8ef}
+.outlook-chip.pos{color:#6ee7b7;border-color:#276c50}
+.outlook-chip.neg{color:#fca5a5;border-color:#71394a}
+.outlook-chip.neutral{color:#cbd8ef}
+.outlook-confidence{font-weight:900}
+.outlook-confidence.high{color:#6ee7b7}
+.outlook-confidence.medium{color:#fde68a}
+.outlook-confidence.low{color:#fca5a5}
 .avail-good{border-color:#2d6b50;background:#10251c}
 .avail-watch{border-color:#795f1b;background:#2a210f}
 .avail-bad{border-color:#71313b;background:#2a1117}
@@ -410,7 +419,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.11 adds a league-aware Waiver Claim Planner and tighter fantasy-relevance filtering for automated news.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.14 adds one shared Weekly Outlook & Opportunity engine for player-week scoring, Start/Sit decisions, and weekly free-agent context.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -431,6 +440,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <span class="pill good">Sleeper rosters: live</span>
     <span class="pill" id="gameDataPill">Game context —</span>
     <span class="pill" id="usageDataPill">Usage data —</span>
+    <span class="pill" id="outlookDataPill">Weekly outlook —</span>
     <span class="pill" id="availabilityDataPill">Availability —</span>
     <span class="pill" id="newsDataPill">News —</span>
     <span class="pill warn">Strategy rankings: Aug 30 snapshot</span>
@@ -459,8 +469,20 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <div class="weekly-section-head">
           <div>
+            <h3>Weekly Outlook & Opportunity</h3>
+            <div class="tiny">Shared player-week model used by Start/Sit and weekly free-agent evaluation. The Outlook score is a decision-support score, not projected fantasy points. Data confidence measures input completeness, not certainty of performance.</div>
+          </div>
+          <span class="pill" id="outlookPanelPill">Outlook —</span>
+        </div>
+        <div id="weeklyOutlookSummary" class="goodbox" style="margin-bottom:8px">Run a weekly check.</div>
+        <div id="weeklyOutlook" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
             <h3>Start / Sit Optimizer</h3>
-            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster. v2.10 combines player value, current injury/practice status, recent workload, automated news signals, opponent, game total, venue/roof, and available outdoor weather.</div>
+            <div class="tiny">Optimizes the selected week's legal starting lineup from your active Sleeper roster using the shared v2.14 Weekly Outlook model: market value, role, recent opportunity, availability, news, opponent/game environment, and weather where applicable.</div>
           </div>
           <span class="pill" id="lineupStatusPill">Lineup —</span>
         </div>
@@ -627,7 +649,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.13.1 adds a touch-friendly Trade Explorer player picker for mobile browsers while preserving the v2.13 Trade Style controls and player-focused Trade Explorer while keeping the same centralized trade valuation and hard realism guardrails. Explorer can shop a selected player from the connected roster or build offer paths for a selected opponent player, with projected roster-utility impact shown for both teams, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.10 now adds an automated headline feed generated by GitHub Actions. News classification is intentionally conservative and uses publisher-provided headlines/descriptions rather than scraping full articles. Independent projections, route participation, and richer red-zone opportunity remain future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.13.1 adds a touch-friendly Trade Explorer player picker for mobile browsers while preserving the v2.13 Trade Style controls and player-focused Trade Explorer while keeping the same centralized trade valuation and hard realism guardrails. Explorer can shop a selected player from the connected roster or build offer paths for a selected opponent player, with projected roster-utility impact shown for both teams, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.10 now adds an automated headline feed generated by GitHub Actions. News classification is intentionally conservative and uses publisher-provided headlines/descriptions rather than scraping full articles. v2.14 now centralizes the available weekly signals into a shared Outlook score and data-confidence layer. Independent projection feeds, route participation, and richer red-zone opportunity remain future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -635,7 +657,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.13.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.14 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, a shared Weekly Outlook & Opportunity engine, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -1854,10 +1876,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(dc===2 && b.pos==='WR') v+=1.5;
 
     if(mode==='weekly' && b.pdata) {
-      v+=gameEnvAdjustmentForPlayer(b.pdata)*0.75;
-      v+=usageAdjustmentForPlayer(b.pdata)*0.85;
-      v+=availabilityAdjustmentForPlayer(b.pdata)*0.70;
-      v+=newsAdjustmentForPlayer(b.pdata)*0.75;
+      v+=weeklyOutlookAdjustmentForPlayer(b.pdata,{
+        role:0,
+        game:0.75,
+        opportunity:0.85,
+        availability:0.70,
+        news:0.75
+      });
     }
 
     if(mode==='postdraft') {
@@ -1895,6 +1920,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
     const usage=b.pdata?usageSummaryText(b.pdata):'';
     if(usage) reasons.push(usage);
+
+    if(b.pdata) {
+      const o=weeklyOutlookForPlayer(b.pdata);
+      if(o && Math.abs(o.context)>=4) {
+        reasons.push(`weekly context ${o.context>=0?'+':''}${Math.round(o.context*10)/10}`);
+      }
+    }
 
     const gc=b.pdata?gameContextForPlayer(b.pdata):null;
     if(gc && Number.isFinite(gc.game.total_line)) reasons.push(`${gc.home?'vs':'@'} ${gc.opp} • O/U ${gc.game.total_line}`);
@@ -2940,6 +2972,222 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     }
   }
 
+  function weeklyRoleAdjustmentForPlayer(p) {
+    if(!p) return 0;
+    const pos=normalizedFantasyPos(p);
+    const dc=Number(p.depth_chart_order);
+    if(dc===1) return 3;
+    if(dc===2 && ['RB','WR','TE'].includes(pos)) return 1;
+    return 0;
+  }
+
+  function weeklyOutlookConfidence(p) {
+    let points=15;
+    const notes=[];
+
+    const u=usageSummaryForPlayer(p);
+    if(u) {
+      if(u.fallback) {
+        points+=18;
+        notes.push('prior-season usage baseline');
+      } else {
+        points+=35;
+        notes.push('current-season usage');
+      }
+    } else {
+      notes.push('usage unavailable');
+    }
+
+    const gc=gameContextForPlayer(p);
+    if(gc) {
+      points+=18;
+      notes.push('opponent/game context');
+      if(Number.isFinite(gc.game?.total_line)) points+=6;
+      if(weatherApplicable(gc.game) && gc.weather) {
+        points+=5;
+        notes.push('weather');
+      }
+    } else {
+      notes.push('game context unavailable');
+    }
+
+    const av=availabilitySignal(p);
+    if(av) {
+      if(av.active) points+=12;
+      else if(av.stale || av.early) points+=4;
+      else points+=8;
+    }
+
+    if(state.newsFeed?.articles?.length) points+=4;
+
+    const score=clamp(points,0,100);
+    const label=score>=78?'HIGH':(score>=55?'MEDIUM':'LOW');
+    const cls=label==='HIGH'?'high':(label==='MEDIUM'?'medium':'low');
+    return {score,label,cls,notes};
+  }
+
+  function weeklyOutlookForPlayer(p) {
+    if(!p) return null;
+    const id=String(p.player_id||'');
+    const pos=normalizedFantasyPos(p);
+    const b=weeklyBoardMap().get(id);
+    const fallbackBoard=b||{
+      ecrRank:Number(p.search_rank)||999,
+      sleeperRank:Number(p.search_rank)||999,
+      pos,
+      pdata:p
+    };
+
+    const base=weeklyBaseValue(fallbackBoard);
+    const role=weeklyRoleAdjustmentForPlayer(p);
+    const opportunity=usageAdjustmentForPlayer(p);
+    const availability=availabilityAdjustmentForPlayer(p);
+    const game=gameEnvAdjustmentForPlayer(p);
+    const news=newsAdjustmentForPlayer(p);
+
+    const score=base+role+opportunity+availability+game+news;
+    const confidence=weeklyOutlookConfidence(p);
+
+    return {
+      id,pos,base,role,opportunity,availability,game,news,
+      context:role+opportunity+availability+game+news,
+      score,confidence
+    };
+  }
+
+  function weeklyOutlookAdjustmentForPlayer(p,weights={}) {
+    const o=weeklyOutlookForPlayer(p);
+    if(!o) return 0;
+    return (
+      o.role*(weights.role??0) +
+      o.opportunity*(weights.opportunity??1) +
+      o.availability*(weights.availability??1) +
+      o.game*(weights.game??1) +
+      o.news*(weights.news??1)
+    );
+  }
+
+  function weeklyOutlookReasonParts(p,o=weeklyOutlookForPlayer(p)) {
+    if(!p || !o) return [];
+    const parts=[];
+    const u=usageSummaryForPlayer(p);
+    const av=availabilitySignal(p);
+    const gc=gameContextForPlayer(p);
+    const news=newsSummaryText(p);
+
+    if(u) {
+      const trend=usageTrend(u).label;
+      parts.push(`${usageSummaryText(p)}${trend!=='STABLE'?` • ${trend.toLowerCase()} workload`:''}`);
+    } else {
+      parts.push('usage baseline unavailable');
+    }
+
+    if(av?.active) parts.push(`${av.label}: ${av.reason}`);
+    else if(av?.stale) parts.push('stale injury tag ignored as an active concern');
+    else if(av?.early) parts.push('fresh early-watch injury info; too early for a game-week penalty');
+
+    if(gc) {
+      const total=Number.isFinite(gc.game?.total_line)?` • O/U ${gc.game.total_line}`:'';
+      parts.push(`${gc.home?'vs':'@'} ${gc.opp}${total}`);
+    } else {
+      parts.push('game environment unavailable');
+    }
+
+    if(news) parts.push(news);
+    return parts.slice(0,4);
+  }
+
+  function weeklyOutlookWhyText(p,o=weeklyOutlookForPlayer(p)) {
+    return weeklyOutlookReasonParts(p,o).join(' • ');
+  }
+
+  function renderWeeklyOutlook(ctx) {
+    const ids=ctx.players
+      .filter(id=>!ctx.reserve.has(String(id)))
+      .filter(id=>['QB','RB','WR','TE'].includes(normalizedFantasyPos(state.players[String(id)])));
+
+    const rows=ids.map(id=>{
+      const p=state.players[String(id)];
+      const outlook=weeklyOutlookForPlayer(p);
+      return {
+        id:String(id),p,outlook,
+        starter:ctx.starters.has(String(id))
+      };
+    }).filter(x=>x.p && x.outlook)
+      .sort((a,b)=>
+        Number(b.starter)-Number(a.starter) ||
+        b.outlook.score-a.outlook.score
+      );
+
+    if(!rows.length) {
+      setPill('outlookPanelPill','Outlook unavailable','warn');
+      setPill('outlookDataPill','Weekly outlook unavailable','warn');
+      $('weeklyOutlookSummary').innerHTML='No active QB/RB/WR/TE players were available for the weekly outlook.';
+      $('weeklyOutlook').innerHTML='<div class="tiny">No weekly outlook rows available.</div>';
+      return [];
+    }
+
+    const currentUsage=rows.filter(x=>{
+      const u=usageSummaryForPlayer(x.p);
+      return u && !u.fallback;
+    }).length;
+    const fallbackUsage=rows.filter(x=>usageSummaryForPlayer(x.p)?.fallback).length;
+    const high=rows.filter(x=>x.outlook.confidence.label==='HIGH').length;
+    const medium=rows.filter(x=>x.outlook.confidence.label==='MEDIUM').length;
+    const low=rows.filter(x=>x.outlook.confidence.label==='LOW').length;
+
+    const sourceText=currentUsage
+      ? `${currentUsage} current-usage player${currentUsage===1?'':'s'}`
+      : (fallbackUsage?`${fallbackUsage} prior-season baseline${fallbackUsage===1?'':'s'}`:'usage unavailable');
+
+    setPill(
+      'outlookPanelPill',
+      `${high} high • ${medium} med • ${low} low data`,
+      low?'warn':'good'
+    );
+    setPill(
+      'outlookDataPill',
+      `Outlook: ${sourceText}`,
+      currentUsage?'good':'warn'
+    );
+
+    $('weeklyOutlookSummary').innerHTML=
+      `<b>Week ${state.weeklyWeek} shared outlook:</b> ${rows.length} active skill-position players evaluated • ${esc(sourceText)}. `+
+      `Scores combine market/role quality with current weekly context; they are <b>not fantasy-point projections</b>.`;
+
+    $('weeklyOutlook').innerHTML=rows.slice(0,12).map(x=>{
+      const o=x.outlook;
+      const pos=normalizedFantasyPos(x.p);
+      const components=[
+        ['base',o.base],
+        ['role',o.role],
+        ['opportunity',o.opportunity],
+        ['availability',o.availability],
+        ['game',o.game],
+        ['news',o.news]
+      ];
+
+      const chips=components.map(([label,val])=>{
+        const rounded=Math.round(val*10)/10;
+        const cls=rounded>0?'pos':(rounded<0?'neg':'neutral');
+        return `<span class="outlook-chip ${cls}">${esc(label)} ${rounded>0?'+':''}${rounded}</span>`;
+      }).join('');
+
+      return `<div class="waiver-row">
+        <div class="waiver-rank">${x.starter?'S':'B'}</div>
+        <div>
+          <b>${esc(pName(x.p))} <span class="pos ${pos}">${pos}</span></b>
+          <div class="meta">${esc(x.p.team||'FA')} • Week ${state.weeklyWeek} outlook • data <span class="outlook-confidence ${o.confidence.cls}">${o.confidence.label}</span></div>
+          <div class="outlook-grid">${chips}</div>
+          <div class="whyline">${esc(weeklyOutlookWhyText(x.p,o)||'No additional weekly context is currently available.')}</div>
+        </div>
+        <div class="value-badge">${Math.round(o.score)}<div class="tiny">outlook</div></div>
+      </div>`;
+    }).join('');
+
+    return rows;
+  }
+
   function renderUsagePanel(ctx) {
     if(!state.usageStatsIndex) {
       $('weeklyUsage').innerHTML='<div class="tiny">Usage data is unavailable right now. The rest of the weekly model will continue without it.</div>';
@@ -3035,23 +3283,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   function weeklyLineupScoreForId(id) {
     const p=state.players[String(id)];
     if(!p) return -999;
-    const pos=normalizedFantasyPos(p);
-    const b=weeklyBoardMap().get(String(id));
-    let score=weeklyBaseValue(
-      b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p}
-    );
-
-    score+=availabilityAdjustmentForPlayer(p);
-
-    const dc=Number(p.depth_chart_order);
-    if(dc===1) score+=3;
-    else if(dc===2 && ['RB','WR','TE'].includes(pos)) score+=1;
-
-    score+=gameEnvAdjustmentForPlayer(p);
-    score+=usageAdjustmentForPlayer(p);
-    score+=newsAdjustmentForPlayer(p);
-
-    return score;
+    return weeklyOutlookForPlayer(p)?.score ?? -999;
   }
 
   function currentLineupAssignments(ctx) {
@@ -3151,7 +3383,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div>
           <b>START ${esc(pName(inc.p))} <span class="pos ${normalizedFantasyPos(inc.p)}">${normalizedFantasyPos(inc.p)}</span></b>
           <div class="meta">${out?`SIT ${esc(pName(out.p))} • `:''}${esc(inc.p.team||'FA')}${normalizedInjuryStatus(inc.p)?' • '+esc(normalizedInjuryStatus(inc.p)):''}</div>
-          <div class="whyline">${esc(newsSummaryText(inc.p)||'No matched recent news')} • ${esc(availabilitySummaryText(inc.p)||'No current availability flag')} • ${esc(usageSummaryText(inc.p)||'Usage baseline unavailable')} • ${esc(gameEnvironmentTextForPlayer(inc.p)||'Game environment unavailable')} • lineup-value edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • <span class="${conf.cls}">${conf.label} CONFIDENCE</span>.</div>
+          <div class="whyline">${esc(weeklyOutlookWhyText(inc.p)||'No additional weekly context available')} • outlook edge ${individualGap>=0?'+':''}${Math.round(individualGap)} • decision <span class="${conf.cls}">${conf.label}</span> • data ${esc(weeklyOutlookForPlayer(inc.p)?.confidence?.label||'LOW')}.</div>
         </div>
         <div class="value-badge">${Math.round(inc.score)}</div>
       </div>`);
@@ -3195,7 +3427,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       let pos=String(p.position||'').toUpperCase(); if(pos==='DST') pos='DEF';
       const b=board.get(String(id));
       const role=ctx.reserve.has(id)?'IR':(ctx.starters.has(id)?'STARTER':'BENCH');
-      return {id,p,pos,b,role,value:weeklyBaseValue(b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p})};
+      const outlook=weeklyOutlookForPlayer(p);
+      return {id,p,pos,b,role,value:outlook?.score??weeklyBaseValue(b||{ecrRank:Number(p.search_rank)||999,sleeperRank:Number(p.search_rank)||999,pos,pdata:p}),outlook};
     }).filter(Boolean).sort((a,b)=>{
       const order={STARTER:0,BENCH:1,IR:2};
       return order[a.role]-order[b.role] || b.value-a.value;
@@ -3208,7 +3441,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
     $('weeklyRoster').innerHTML=rosterRows.map(x=>`<div class="roster-player">
       <div><b>${esc(pName(x.p))} <span class="pos ${x.pos}">${x.pos}</span></b>
-        <div class="tiny">${esc(x.p.team||'FA')}${x.p.injury_status?' • '+esc(x.p.injury_status):''} • value ${Math.round(x.value)}</div>
+        <div class="tiny">${esc(x.p.team||'FA')}${x.p.injury_status?' • '+esc(x.p.injury_status):''} • outlook ${Math.round(x.value)}${x.outlook?` • data ${esc(x.outlook.confidence.label)}`:''}</div>
       </div>
       <span class="role-label ${x.role.toLowerCase()}">${x.role}</span>
     </div>`).join('') || '<div class="tiny">Roster not populated yet.</div>';
@@ -4779,9 +5012,22 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       .filter(Boolean)
       .filter(p=>availabilitySignal(p).active);
 
+    const opportunityWatch=ctx.players
+      .filter(id=>!ctx.reserve.has(String(id)))
+      .map(id=>state.players[String(id)])
+      .filter(Boolean)
+      .map(p=>({p,o:weeklyOutlookForPlayer(p),u:usageSummaryForPlayer(p)}))
+      .filter(x=>x.o && x.u && !x.u.fallback && Math.abs(x.o.opportunity)>=3)
+      .sort((a,b)=>Math.abs(b.o.opportunity)-Math.abs(a.o.opportunity))[0] || null;
+
     if(availabilityFlags.length) {
       const p=availabilityFlags[0];
       items.push(`<b>Availability watch:</b> ${esc(pName(p))} is ${esc(availabilityLevel(p).label.toLowerCase())}${availabilitySummaryText(p)?' • '+esc(availabilitySummaryText(p)):''}. Re-run the scan after practice/injury updates.`);
+    }
+
+    if(opportunityWatch) {
+      const dir=opportunityWatch.o.opportunity>0?'positive':'negative';
+      items.push(`<b>Opportunity watch:</b> ${esc(pName(opportunityWatch.p))} has a ${dir} recent-workload signal (${opportunityWatch.o.opportunity>=0?'+':''}${Math.round(opportunityWatch.o.opportunity*10)/10}). Review Weekly Outlook before making a lineup or waiver decision.`);
     }
 
     const lineupCheck=optimizedLineup(ctx);
@@ -4895,6 +5141,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       renderWeeklyRoster(ctx);
       renderWeeklyIR(ctx);
       renderAvailabilityPanel(ctx);
+      renderWeeklyOutlook(ctx);
       const lineup=renderStartSit(ctx);
       renderUsagePanel(ctx);
       const pool=renderWeeklyAdds(ctx);

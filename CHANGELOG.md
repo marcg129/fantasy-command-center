@@ -4,6 +4,23 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.14 — Weekly Outlook & Opportunity Engine
+**2026-09-01**
+
+- Add a shared Weekly Outlook & Opportunity engine for player-week decision support.
+- Centralize market/base value, depth-chart role, recent usage/opportunity, injury/practice availability, game environment, weather, and automated news into one player-week evaluation object.
+- Make the Start/Sit Optimizer consume the shared Weekly Outlook score rather than rebuilding its own independent weekly score.
+- Make weekly free-agent scoring consume the same underlying weekly context components while preserving roster-construction and positional-redundancy rules.
+- Add a Weekly Outlook panel showing each active QB/RB/WR/TE's overall outlook score and the individual base, role, opportunity, availability, game, and news adjustments.
+- Add data-confidence labels (HIGH / MEDIUM / LOW) based on the completeness and freshness of available usage, game, weather, availability, and news inputs.
+- Explicitly distinguish the Outlook score from projected fantasy points and distinguish data confidence from certainty of player performance.
+- Show Weekly Outlook and data confidence in the roster side panel.
+- Improve Start/Sit explanations so they reference the same weekly-outlook reasoning used by the optimizer.
+- Add a conservative Opportunity Watch to the Weekly Action Plan when current-season workload produces a material positive or negative signal.
+- Preserve prior-season Week 1 usage as a reduced-confidence baseline rather than presenting it as current workload.
+- Preserve HOLD/no-action behavior when the shared weekly model does not identify a meaningful edge.
+- Independent projection feeds, route participation, and richer red-zone opportunity remain future data layers.
+
 ## v2.13.1 — Mobile Trade Player Picker
 **2026-09-01**
 
