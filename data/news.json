@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-02T16:35:03.478302Z",
+  "generated_at": "2026-09-02T21:04:02.913288Z",
   "lookback_days": 7,
-  "article_count": 15,
+  "article_count": 20,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Jets work out Justin Tucker: Eight-time All Pro accused of sexual misconduct gets look from New York",
+      "summary": "The 36-year-old former All-Pro was released from the Ravens in 2025 following misconduct allegations and previously had tryouts with the Saints and Colts",
+      "url": "https://www.cbssports.com/nfl/news/jets-work-out-kicker-justin-tucker/",
+      "published_at": "2026-09-02T19:51:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Klint Kubiak names Kirk Cousins starter over No. 1 pick Fernando Mendoza",
+      "summary": "The Raiders break a six-year streak of past QBs drafted No. 1 overall starting in Week 1",
+      "url": "https://www.cbssports.com/nfl/news/klint-kubiak-names-kirk-cousins-starter-over-no-1-pick-fernando-mendoza/",
+      "published_at": "2026-09-02T18:38:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Agent's Take: Does Cam Skattebo need better advice after recent Giants antics?",
+      "summary": "A former NFL agent explains what Skattebo needs to hear about his recent practice incidents, unnecessary injury risks and standing with new Giants coach John Harbaugh",
+      "url": "https://www.cbssports.com/nfl/news/agents-take-cam-skattebos-giants/",
+      "published_at": "2026-09-02T18:27:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Bears-Panthers, Vikings-Packers markets",
+      "summary": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
+      "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-bears-panthers-vikings-packers-markets/",
+      "published_at": "2026-09-02T17:51:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Browns coach Todd Monken hasn't watched tape on Deshaun Watson's disastrous stretch with Cleveland",
+      "summary": "Monken says he wants to think 'every player we have is elite'",
+      "url": "https://www.cbssports.com/nfl/news/browns-todd-monken-hasnt-watched-tape-on-deshaun-watsons-disastrous-stretch-with-cleveland/",
+      "published_at": "2026-09-02T17:38:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "George Kittle, Nick Bosa traveling to Australia as 49ers stars aim to return for Week 1 vs. Rams, per report",
       "summary": "Kittle and Bosa are both recovering from season-ending injuries in 2025",
