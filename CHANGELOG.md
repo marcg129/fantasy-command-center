@@ -4,6 +4,25 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.13 — Trade Explorer & Trade Styles
+**2026-09-01**
+
+- Add a persistent Trade Style control with Conservative, Balanced, and Aggressive modes.
+- Keep Balanced as the v2.12.3.1 baseline while centralizing all style-specific thresholds in one trade configuration.
+- Conservative mode requires tighter market fairness and stronger projected gains for both managers.
+- Aggressive mode widens negotiation ranges and consolidation premiums without disabling keeper, 1-QB, raw-overpay, or two-sided-benefit guardrails.
+- Add a Trade Explorer view alongside the automatic League Scan.
+- Add rostered-player search with automatic ownership detection.
+- When the selected player is on the connected manager's roster, lock that player into every outgoing proposal and show realistic return targets across the league.
+- When the selected player belongs to another manager, lock that player as the target and generate realistic offers using only the connected manager's roster.
+- For opponent targets, surface Best Balanced, Cheapest Plausible, and Acceptance-Leaning offer paths when distinct options exist.
+- Show fantasy owner/team context for every explored target.
+- Add projected roster-utility change as both raw utility and percentage impact for each manager.
+- Clarify that roster-impact percentages are model utility estimates, not projected win probability.
+- Keep opponent keepers out of numerical trade recommendations until keeper-rights/cost transfer is explicitly modeled.
+- Redirect unrostered player searches toward Add/Drop rather than manufacturing trade advice.
+- Keep the League Scan and Trade Explorer on the same underlying valuation, roster simulator, and proposal evaluators to avoid contradictory trade logic.
+
 ## v2.12.3.1 — Trade Fit Score Cap Fix
 **2026-08-31**
 

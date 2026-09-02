@@ -139,6 +139,25 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .trade-chip.warn{border-color:#795f1b;color:#fde68a}
 .trade-chip.premium{border-color:#5c4c91;color:#d9ceff}
 
+.trade-toolbar{display:flex;gap:10px;align-items:end;justify-content:space-between;flex-wrap:wrap;margin:8px 0}
+.trade-view-toggle{display:flex;gap:6px;flex-wrap:wrap}
+.trade-mode-btn{background:#14233b;color:var(--muted);border:1px solid var(--line);min-height:38px;padding:8px 11px}
+.trade-mode-btn.active{background:#27405f;color:var(--text);border-color:#47749b}
+.trade-style-note{font-size:10px;color:var(--muted);margin-top:4px;max-width:620px}
+.trade-explorer-search{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;margin:8px 0}
+.trade-explorer-search input{width:100%;min-width:0}
+.trade-selected{border:1px solid #355a70;background:#102033;border-radius:10px;padding:10px;margin:8px 0}
+.trade-selected-title{font-weight:900;font-size:15px}
+.trade-owner{font-size:11px;color:var(--muted);margin-top:3px}
+.trade-lane{font-size:9px;font-weight:900;letter-spacing:.05em;border-radius:999px;padding:3px 6px;display:inline-block;margin:0 4px 3px 0;border:1px solid #405b7d;color:#cfe3ff}
+.trade-lane.cheap{border-color:#416c58;color:#aef0c8}
+.trade-lane.aggressive{border-color:#795f1b;color:#fde68a}
+.trade-benefits{display:flex;gap:6px;flex-wrap:wrap;margin-top:5px}
+.trade-benefit{font-size:9px;font-weight:850;border-radius:999px;padding:2px 6px;border:1px solid #33415f;color:var(--muted)}
+.trade-benefit.good{border-color:#276c50;color:#6ee7b7}
+.trade-benefit.warn{border-color:#795f1b;color:#fde68a}
+.trade-explorer-empty{padding:11px;border:1px dashed #35506d;border-radius:10px;color:var(--muted);font-size:12px}
+
 
 
 
@@ -270,7 +289,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • trade & waiver intelligence • v2.12.3.1</div>
+    <div class="sub">Multi-manager beta • trade explorer & weekly intelligence • v2.13</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -492,12 +511,41 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div class="weekly-section-head">
           <div>
             <h3>Trade Intelligence</h3>
-            <div class="tiny">Scans every roster for complementary strengths and weaknesses, then proposes player-only packages that must pass market-value, lineup-impact, roster-fit, and consolidation guardrails for both teams. Current keepers and injury stashes are protected from default outgoing offers.</div>
+            <div class="tiny">Use League Scan to surface selective opportunities automatically, or Trade Explorer to shop one of your players or target a specific player on another roster. Both views use the same market-value, roster-impact, keeper, and consolidation guardrails.</div>
           </div>
           <span class="pill" id="tradeIntelPill">Trades —</span>
         </div>
-        <div id="weeklyTradeProfile" class="goodbox" style="margin-bottom:8px">Run a weekly check.</div>
-        <div id="weeklyTrades" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+
+        <div class="trade-toolbar">
+          <div class="field">
+            <label for="tradeStyleSelect">Trade style</label>
+            <select id="tradeStyleSelect">
+              <option value="conservative">Conservative</option>
+              <option value="balanced" selected>Balanced</option>
+              <option value="aggressive">Aggressive</option>
+            </select>
+            <div id="tradeStyleNote" class="trade-style-note">Balanced keeps the current realism guardrails and allows selective consolidation for premium assets.</div>
+          </div>
+          <div class="trade-view-toggle" aria-label="Trade view">
+            <button id="tradeScanBtn" class="trade-mode-btn active" type="button">League Scan</button>
+            <button id="tradeExplorerBtn" class="trade-mode-btn" type="button">Trade Explorer</button>
+          </div>
+        </div>
+
+        <div id="tradeScanView">
+          <div id="weeklyTradeProfile" class="goodbox" style="margin-bottom:8px">Run a weekly check.</div>
+          <div id="weeklyTrades" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+        </div>
+
+        <div id="tradeExplorerView" class="hidden">
+          <div class="trade-explorer-search">
+            <input id="tradePlayerSearch" list="tradePlayerOptions" placeholder="Search a rostered player — e.g. Chase Brown or Derrick Henry" autocomplete="off">
+            <datalist id="tradePlayerOptions"></datalist>
+            <button id="tradePlayerSearchBtn" class="ghost" type="button">Explore player</button>
+          </div>
+          <div id="tradeExplorerSelected" class="trade-explorer-empty">Select one of your players to see realistic return options, or select another manager's player to see what it could reasonably cost you.</div>
+          <div id="tradeExplorerResults" class="weekly-table" style="margin-top:8px"></div>
+        </div>
       </div>
 
       <div class="card" style="margin-top:12px">
@@ -553,7 +601,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.12.3.1 preserves the v2.12.3 trade-value calibration and fixes the remaining 2-for-1 fit-score cap so heuristic trade scores cannot display above 95, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.10 now adds an automated headline feed generated by GitHub Actions. News classification is intentionally conservative and uses publisher-provided headlines/descriptions rather than scraping full articles. Independent projections, route participation, and richer red-zone opportunity remain future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.13 adds Trade Style controls (Conservative, Balanced, Aggressive) and a player-focused Trade Explorer while keeping the same centralized trade valuation and hard realism guardrails. Explorer can shop a selected player from the connected roster or build offer paths for a selected opponent player, with projected roster-utility impact shown for both teams, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.10 now adds an automated headline feed generated by GitHub Actions. News classification is intentionally conservative and uses publisher-provided headlines/descriptions rather than scraping full articles. Independent projections, route participation, and richer red-zone opportunity remain future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -561,7 +609,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.12.3.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, player-only trade intelligence, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.13 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -612,8 +660,13 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   const state = {
     league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
     myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false,
-    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null,usageStatsCache:{},usageSnapsCache:{},usageStatsIndex:null,usageSnapIndex:null,usageByPlayer:new Map(),usageSource:null,usageError:null,newsFeed:null,newsError:null,newsMatchCache:new Map()
+    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null,usageStatsCache:{},usageSnapsCache:{},usageStatsIndex:null,usageSnapIndex:null,usageByPlayer:new Map(),usageSource:null,usageError:null,newsFeed:null,newsError:null,newsMatchCache:new Map(),tradeStyle:'balanced',tradeView:'scan',tradeExplorerPlayerId:null
   };
+
+  try {
+    const savedTradeStyle=localStorage.getItem('fcc_trade_style_v1');
+    if(['conservative','balanced','aggressive'].includes(savedTradeStyle)) state.tradeStyle=savedTradeStyle;
+  } catch(_) {}
 
   const suffixRe = /\b(jr|sr|ii|iii|iv)\b/g;
   function norm(s) {
@@ -3818,12 +3871,45 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return false;
   }
 
-  function outgoingTradeCandidates(profile) {
+  function tradeStyleConfig(style=state.tradeStyle||'balanced') {
+    const configs={
+      conservative:{
+        key:'conservative',label:'Conservative',minOutgoingValue:50,minTargetValue:55,
+        one:{tolElite:3,tolStrong:4,tolOther:6,minMy:2.5,minOpp:1.25,minFit:1.6,minScore:76,eliteUnderpay:0},
+        two:{secondWeight:.45,minMy:5.5,minOpp:1.5,minFit:2.0,minScore:78,premiumOffset:-1,maxGap:9,
+          minUpgradeElite:8,minUpgradeOther:11,samePosNear:13,partnerRatio:.65,
+          rawElite:[1.30,2],rawStrong:[1.26,3],rawMid:[1.22,4],rawLow:[1.18,4]}
+      },
+      balanced:{
+        key:'balanced',label:'Balanced',minOutgoingValue:45,minTargetValue:48,
+        one:{tolElite:5,tolStrong:7,tolOther:9,minMy:1.75,minOpp:.75,minFit:1.25,minScore:68,eliteUnderpay:2},
+        two:{secondWeight:.50,minMy:4.0,minOpp:1.0,minFit:1.6,minScore:70,premiumOffset:-4,maxGap:14,
+          minUpgradeElite:6,minUpgradeOther:9,samePosNear:10,partnerRatio:.45,
+          rawElite:[1.40,2],rawStrong:[1.35,3],rawMid:[1.30,4],rawLow:[1.25,4]}
+      },
+      aggressive:{
+        key:'aggressive',label:'Aggressive',minOutgoingValue:40,minTargetValue:42,
+        one:{tolElite:7,tolStrong:10,tolOther:12,minMy:1.0,minOpp:.25,minFit:.8,minScore:60,eliteUnderpay:5},
+        two:{secondWeight:.55,minMy:2.5,minOpp:.5,minFit:1.05,minScore:62,premiumOffset:-7,maxGap:18,
+          minUpgradeElite:4,minUpgradeOther:6,samePosNear:6,partnerRatio:.28,
+          rawElite:[1.48,3],rawStrong:[1.42,4],rawMid:[1.36,5],rawLow:[1.30,5]}
+      }
+    };
+    return configs[style]||configs.balanced;
+  }
+
+  function tradeStyleDescription(style=state.tradeStyle||'balanced') {
+    if(style==='conservative') return 'Conservative shows fewer, cleaner deals: tighter market-value tolerances, stronger two-sided roster gains, and less willingness to overpay in consolidation.';
+    if(style==='aggressive') return 'Aggressive surfaces more negotiation-starting offers and tolerates a larger premium for meaningful upgrades, while keeper, 1-QB, raw-overpay, and two-sided-benefit guardrails remain active.';
+    return 'Balanced keeps the current realism guardrails and allows selective consolidation for premium assets.';
+  }
+
+  function outgoingTradeCandidates(profile,cfg=tradeStyleConfig()) {
     return profile.rows
       .filter(x=>!x.reserve && !x.injuryStash)
-      .filter(x=>!x.keeper) // protect current keepers from default offers
+      .filter(x=>!x.keeper)
       .filter(x=>!recentlyAddedForRoster(profile.rosterId,x.id,48))
-      .filter(x=>x.value>=45)
+      .filter(x=>x.value>=cfg.minOutgoingValue)
       .map(x=>({
         ...x,
         surplusScore:profile.surplus[x.pos]||0
@@ -3835,19 +3921,17 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       );
   }
 
-  function incomingTradeTargets(profile,myProfile) {
+  function incomingTradeTargets(profile,myProfile,cfg=tradeStyleConfig()) {
     return profile.rows
       .filter(x=>!x.reserve && !x.injuryStash)
-      // Until keeper-rights transfer is modeled, do not casually recommend
-      // trying to acquire another manager's keeper.
       .filter(x=>!x.keeper)
-      .filter(x=>x.value>=48)
+      .filter(x=>x.value>=cfg.minTargetValue)
       .map(x=>({
         ...x,
         targetNeed:myProfile.need[x.pos]||0,
         ownerSurplus:profile.surplus[x.pos]||0
       }))
-      .filter(x=>x.targetNeed>=0.45 || x.value>=88)
+      .filter(x=>x.targetNeed>=0.45 || x.value>=88 || cfg.key==='aggressive')
       .sort((a,b)=>
         (b.targetNeed+b.ownerSurplus)-(a.targetNeed+a.ownerSurplus) ||
         b.value-a.value
@@ -3877,7 +3961,6 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     total+=take('RB',2);
     total+=take('WR',2);
 
-    // Two FLEX positions can use RB/WR/TE.
     const flex=active
       .filter(x=>['RB','WR','TE'].includes(x.pos) && !used.has(x.id))
       .sort((a,b)=>b.value-a.value)
@@ -3885,7 +3968,6 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     for(const x of flex) used.add(x.id);
     total+=flex.reduce((s,x)=>s+x.value,0);
 
-    // Useful depth matters, but far less than starting-lineup value.
     const bench=active
       .filter(x=>['RB','WR','TE'].includes(x.pos) && !used.has(x.id))
       .sort((a,b)=>b.value-a.value)
@@ -3893,7 +3975,6 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     const benchWeights=[0.12,0.08,0.05];
     total+=bench.reduce((s,x,i)=>s+x.value*(benchWeights[i]||0),0);
 
-    // QB2 is insurance in a 1-QB format, not a major weekly asset.
     const qbs=active.filter(x=>x.pos==='QB').sort((a,b)=>b.value-a.value);
     if(qbs[1]) total+=qbs[1].value*0.04;
 
@@ -3905,24 +3986,12 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     const myBefore=tradeRosterUtility(myProfile.rows);
     const oppBefore=tradeRosterUtility(oppProfile.rows);
 
-    const incomingTarget={
-      ...target,
-      reserve:false,
-      starter:false,
-      keeper:false,
-      keeperRound:null
-    };
+    const incomingTarget={...target,reserve:false,starter:false,keeper:false,keeperRound:null};
     const myAfterRows=myProfile.rows
       .filter(x=>!giveIds.has(String(x.id)))
       .concat([incomingTarget]);
 
-    const incomingGives=gives.map(x=>({
-      ...x,
-      reserve:false,
-      starter:false,
-      keeper:false,
-      keeperRound:null
-    }));
+    const incomingGives=gives.map(x=>({...x,reserve:false,starter:false,keeper:false,keeperRound:null}));
     const oppAfterRows=oppProfile.rows
       .filter(x=>String(x.id)!==String(target.id))
       .concat(incomingGives);
@@ -3933,7 +4002,9 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return {
       myDelta:myAfter-myBefore,
       oppDelta:oppAfter-oppBefore,
-      myBefore,myAfter,oppBefore,oppAfter
+      myBefore,myAfter,oppBefore,oppAfter,
+      myPct:myBefore>0?((myAfter-myBefore)/myBefore)*100:0,
+      oppPct:oppBefore>0?((oppAfter-oppBefore)/oppBefore)*100:0
     };
   }
 
@@ -3947,7 +4018,6 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   function proposalNeedFit(myProfile,oppProfile,target,gives) {
     let fit=(myProfile.need[target.pos]||0)*1.2;
     fit+=(oppProfile.surplus[target.pos]||0)*0.7;
-
     for(const g of gives) {
       fit+=(oppProfile.need[g.pos]||0)*1.0;
       fit+=(myProfile.surplus[g.pos]||0)*0.55;
@@ -3955,13 +4025,10 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return fit;
   }
 
-  function tradeProposalValue(gives,target) {
+  function tradeProposalValue(gives,target,cfg=tradeStyleConfig()) {
     if(gives.length===1) return gives[0].value;
-
     const sorted=[...gives].sort((a,b)=>b.value-a.value);
-    // Strong consolidation discount. Two decent players are not automatically
-    // worth one elite starter just because their raw values add up.
-    return sorted[0].value + sorted[1].value*0.50;
+    return sorted[0].value + sorted[1].value*cfg.two.secondWeight;
   }
 
   function tradeDeadlineWeek() {
@@ -3973,191 +4040,162 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return (gives||[]).reduce((s,x)=>s+(Number(x.value)||0),0);
   }
 
-  function strongestOutgoing(gives) {
-    return [...(gives||[])].sort((a,b)=>b.value-a.value)[0] || null;
-  }
-
-  function secondOutgoing(gives) {
-    return [...(gives||[])].sort((a,b)=>b.value-a.value)[1] || null;
-  }
-
   function oneQBLeague() {
     const slots=state.league?.roster_positions||[];
     return slots.filter(x=>String(x).toUpperCase()==='QB').length<=1;
   }
 
-  function twoForOneGuardrail(myProfile,opp,target,gives,impact,packageValue) {
+  function rawCeilingForTarget(target,cfg) {
+    const [mult,add]=target.value>=95 ? cfg.two.rawElite
+      : target.value>=90 ? cfg.two.rawStrong
+      : target.value>=80 ? cfg.two.rawMid
+      : cfg.two.rawLow;
+    return target.value*mult+add;
+  }
+
+  function twoForOneGuardrail(myProfile,opp,target,gives,impact,packageValue,cfg=tradeStyleConfig()) {
     if(gives.length!==2) return {ok:true,reason:''};
 
     const sorted=[...gives].sort((a,b)=>b.value-a.value);
     const top=sorted[0], second=sorted[1];
     const raw=rawTradeOfferValue(gives);
     const samePos=sorted.find(x=>x.pos===target.pos);
+    const minUpgrade=target.value>=94 ? cfg.two.minUpgradeElite : cfg.two.minUpgradeOther;
 
-    // A 2-for-1 should be a true consolidation: the acquired player should be
-    // clearly better than either outgoing player by himself.
-    const minUpgrade=target.value>=94 ? 6 : 9;
     if(target.value-top.value<minUpgrade) {
       return {ok:false,reason:'target is not enough better than the best outgoing player'};
     }
 
-    // Do not pay a near-peer at the same position plus another useful starter
-    // just to make a modest upgrade.
-    if(samePos && samePos.value>=target.value-10 && second.value>=48) {
+    if(samePos && samePos.value>=target.value-cfg.two.samePosNear && second.value>=48) {
       return {ok:false,reason:'same-position near-peer plus another asset is an overpay'};
     }
 
-    // In a 10-team 1-QB league, QB upgrades are not worth attaching a meaningful
-    // RB/WR/TE starter unless the current QB is materially weak.
     if(oneQBLeague() && target.pos==='QB') {
       const outgoingQB=sorted.find(x=>x.pos==='QB');
       const extra=sorted.find(x=>x.pos!=='QB');
       const qbNeed=myProfile.need.QB||0;
-
+      const needFloor=cfg.key==='aggressive'?1.9:2.4;
+      const upgradeFloor=cfg.key==='aggressive'?15:18;
       if(outgoingQB && extra && extra.value>=45) {
-        if(qbNeed<2.4 || target.value-outgoingQB.value<18) {
+        if(qbNeed<needFloor || target.value-outgoingQB.value<upgradeFloor) {
           return {ok:false,reason:'1-QB upgrade does not justify attaching a meaningful skill-position asset'};
         }
       }
     }
 
-    // Raw roster capital matters too. Consolidation discounts are real, but they
-    // should not hide an extreme overpay.
-    let rawCeiling=0;
-    if(target.value>=95) rawCeiling=target.value*1.40+2;
-    else if(target.value>=90) rawCeiling=target.value*1.35+3;
-    else if(target.value>=80) rawCeiling=target.value*1.30+4;
-    else rawCeiling=target.value*1.25+4;
-
-    if(raw>rawCeiling) {
+    if(raw>rawCeilingForTarget(target,cfg)) {
       return {ok:false,reason:'raw outgoing value is too large for this target tier even after consolidation discount'};
     }
 
-    // If the other manager benefits far more than we do, "both sides improve"
-    // is technically true but strategically misleading.
-    if(impact.oppDelta>0 && impact.myDelta < impact.oppDelta*0.45) {
+    if(impact.oppDelta>0 && impact.myDelta < impact.oppDelta*cfg.two.partnerRatio) {
       return {ok:false,reason:'partner captures too much of the projected trade benefit'};
     }
 
-    // A 2-for-1 needs to create a meaningful lineup upgrade for us.
-    if(impact.myDelta<4.0) {
+    if(impact.myDelta<cfg.two.minMy) {
       return {ok:false,reason:'consolidation gain is too small'};
     }
 
     return {ok:true,reason:''};
   }
 
-  function generateTradeProposals(myProfile,profiles) {
+  function oneForOneTolerance(target,cfg) {
+    return target.value>=90?cfg.one.tolElite:(target.value>=80?cfg.one.tolStrong:cfg.one.tolOther);
+  }
+
+  function evaluateOneForOneProposal(myProfile,opp,give,target,cfg=tradeStyleConfig(),intentional=false) {
+    if(!give||!target||String(give.id)===String(target.id)) return null;
+    if(target.keeper) return null;
+
+    const fit=proposalNeedFit(myProfile,opp,target,[give]);
+    const impact=simulateTradeImpact(myProfile,opp,[give],target);
+    const premium=eliteTradePremium(target);
+    const marketGap=give.value-target.value;
+    const tolerance=oneForOneTolerance(target,cfg);
+    const fitFloor=cfg.one.minFit*(intentional?.65:1);
+    const scoreFloor=cfg.one.minScore-(intentional?4:0);
+
+    if(Math.abs(marketGap-premium)>tolerance) return null;
+    if(target.value>=90 && give.value<target.value-cfg.one.eliteUnderpay) return null;
+    if(impact.myDelta<cfg.one.minMy || impact.oppDelta<cfg.one.minOpp) return null;
+    if(fit<fitFloor) return null;
+
+    const fairnessPenalty=Math.abs(marketGap-premium);
+    const score=clamp(
+      58 +
+      Math.min(12,impact.myDelta*2.4) +
+      Math.min(12,impact.oppDelta*2.4) +
+      fit*2.5 -
+      fairnessPenalty*1.7,
+      0,95
+    );
+    if(score<scoreFloor) return null;
+
+    return {type:'1-for-1',partner:opp,target,gives:[give],offerValue:give.value,targetValue:target.value,fit,valueGap:marketGap,impact,score,style:cfg.key};
+  }
+
+  function evaluateTwoForOneProposal(myProfile,opp,gives,target,cfg=tradeStyleConfig(),intentional=false) {
+    if(!target || !Array.isArray(gives) || gives.length!==2 || target.keeper) return null;
+    const [a,b]=gives;
+    if(!a||!b||String(a.id)===String(b.id)) return null;
+    if(a.pos===b.pos && (opp.need[a.pos]||0)<(intentional?.45:.70)) return null;
+    if(Math.max(a.value,b.value)>=target.value-1) return null;
+
+    const packageValue=tradeProposalValue(gives,target,cfg);
+    const premium=eliteTradePremium(target)+(target.value>=90?3:0);
+    const marketGap=packageValue-target.value;
+    const fit=proposalNeedFit(myProfile,opp,target,gives);
+    const impact=simulateTradeImpact(myProfile,opp,gives,target);
+    const guard=twoForOneGuardrail(myProfile,opp,target,gives,impact,packageValue,cfg);
+    const fitFloor=cfg.two.minFit*(intentional?.75:1);
+    const scoreFloor=cfg.two.minScore-(intentional?4:0);
+
+    if(!guard.ok) return null;
+    if(marketGap<premium+cfg.two.premiumOffset || marketGap>cfg.two.maxGap) return null;
+    if(impact.myDelta<cfg.two.minMy || impact.oppDelta<cfg.two.minOpp) return null;
+    if(fit<fitFloor) return null;
+
+    const fairnessPenalty=Math.abs(marketGap-premium);
+    const score=clamp(
+      56 +
+      Math.min(14,impact.myDelta*2.5) +
+      Math.min(14,impact.oppDelta*2.5) +
+      fit*2.2 -
+      fairnessPenalty*1.4 + 2,
+      0,95
+    );
+    if(score<scoreFloor) return null;
+
+    return {type:'2-for-1',partner:opp,target,gives:[a,b],offerValue:packageValue,targetValue:target.value,fit,valueGap:marketGap,impact,score,style:cfg.key};
+  }
+
+  function generateTradeProposals(myProfile,profiles,options={}) {
+    const cfg=options.cfg||tradeStyleConfig();
     const proposals=[];
 
     for(const opp of profiles) {
       if(opp.rosterId===myProfile.rosterId) continue;
-
-      const gives=outgoingTradeCandidates(myProfile).slice(0,10);
-      const targets=incomingTradeTargets(opp,myProfile).slice(0,10);
+      const gives=outgoingTradeCandidates(myProfile,cfg).slice(0,cfg.key==='aggressive'?13:10);
+      const targets=incomingTradeTargets(opp,myProfile,cfg).slice(0,cfg.key==='aggressive'?13:10);
       if(!gives.length || !targets.length) continue;
 
-      // 1-for-1: require reasonable market value AND measurable benefit to both
-      // optimized rosters. "Need fit" alone is not enough.
       for(const target of targets) {
         for(const give of gives) {
-          if(give.id===target.id) continue;
-
-          const fit=proposalNeedFit(myProfile,opp,target,[give]);
-          const impact=simulateTradeImpact(myProfile,opp,[give],target);
-          const premium=eliteTradePremium(target);
-          const marketGap=give.value-target.value;
-
-          const tolerance=target.value>=90?5:(target.value>=80?7:9);
-          if(Math.abs(marketGap-premium)>tolerance) continue;
-
-          // Elite targets should not be suggested for obvious underpays.
-          if(target.value>=90 && give.value<target.value-2) continue;
-
-          // Both teams must have a defensible football reason to do it.
-          if(impact.myDelta<1.75 || impact.oppDelta<0.75) continue;
-          if(fit<1.25) continue;
-
-          const fairnessPenalty=Math.abs(marketGap-premium);
-          const score=clamp(
-            58 +
-            Math.min(12,impact.myDelta*2.4) +
-            Math.min(12,impact.oppDelta*2.4) +
-            fit*2.5 -
-            fairnessPenalty*1.7,
-            0,95
-          );
-
-          if(score<68) continue;
-
-          proposals.push({
-            type:'1-for-1',
-            partner:opp,
-            target,
-            gives:[give],
-            offerValue:give.value,
-            targetValue:target.value,
-            fit,
-            valueGap:marketGap,
-            impact,
-            score
-          });
+          const p=evaluateOneForOneProposal(myProfile,opp,give,target,cfg,false);
+          if(p) proposals.push(p);
         }
       }
 
-      // 2-for-1: require an actual consolidation upgrade for us and lineup/depth
-      // improvement for the partner. Elite targets require a visible overpay.
-      const pairPool=gives.slice(0,8);
-      for(const target of targets.filter(x=>x.value>=68).slice(0,8)) {
+      const pairPool=gives.slice(0,cfg.key==='aggressive'?10:8);
+      for(const target of targets.filter(x=>x.value>=Math.max(62,cfg.minTargetValue)).slice(0,cfg.key==='aggressive'?10:8)) {
         for(let i=0;i<pairPool.length;i++) {
           for(let j=i+1;j<pairPool.length;j++) {
-            const a=pairPool[i], b=pairPool[j];
-            if(a.pos===b.pos && (opp.need[a.pos]||0)<0.70) continue;
-            if(Math.max(a.value,b.value)>=target.value-1) continue;
-
-            const packageValue=tradeProposalValue([a,b],target);
-            const premium=eliteTradePremium(target)+(target.value>=90?3:0);
-            const marketGap=packageValue-target.value;
-            const fit=proposalNeedFit(myProfile,opp,target,[a,b]);
-            const impact=simulateTradeImpact(myProfile,opp,[a,b],target);
-            const guard=twoForOneGuardrail(myProfile,opp,target,[a,b],impact,packageValue);
-
-            if(!guard.ok) continue;
-            if(marketGap<premium-4 || marketGap>14) continue;
-            if(impact.myDelta<4.0 || impact.oppDelta<1.0) continue;
-            if(fit<1.6) continue;
-
-            const fairnessPenalty=Math.abs(marketGap-premium);
-            const score=clamp(
-              56 +
-              Math.min(14,impact.myDelta*2.5) +
-              Math.min(14,impact.oppDelta*2.5) +
-              fit*2.2 -
-              fairnessPenalty*1.4 +
-              2,
-              0,95
-            );
-
-            if(score<70) continue;
-
-            proposals.push({
-              type:'2-for-1',
-              partner:opp,
-              target,
-              gives:[a,b],
-              offerValue:packageValue,
-              targetValue:target.value,
-              fit,
-              valueGap:marketGap,
-              impact,
-              score
-            });
+            const p=evaluateTwoForOneProposal(myProfile,opp,[pairPool[i],pairPool[j]],target,cfg,false);
+            if(p) proposals.push(p);
           }
         }
       }
     }
 
-    // Keep the best version of each target/partner/type and cap the panel.
     const bestByKey=new Map();
     for(const p of proposals) {
       const key=`${p.partner.rosterId}|${p.target.id}|${p.type}`;
@@ -4165,19 +4203,324 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       if(!old || p.score>old.score) bestByKey.set(key,p);
     }
 
-    return [...bestByKey.values()]
-      .sort((a,b)=>b.score-a.score)
-      .slice(0,5);
+    const cap=cfg.key==='conservative'?3:(cfg.key==='aggressive'?8:5);
+    return [...bestByKey.values()].sort((a,b)=>b.score-a.score).slice(0,cap);
+  }
+
+  function tradeProfileForPlayerId(profiles,id) {
+    const sid=String(id);
+    return (profiles||[]).find(p=>p.ctx.players.includes(sid)) || null;
+  }
+
+  function fantasyTeamForRosterId(rosterId) {
+    const r=state.rosters.find(x=>Number(x.roster_id)===Number(rosterId));
+    const u=r ? state.users.find(x=>String(x.user_id)===String(r.owner_id)) : null;
+    return u?.metadata?.team_name || u?.display_name || u?.username || `Roster ${rosterId}`;
+  }
+
+  function tradePlayerOwnerText(profile) {
+    if(!profile) return 'Free agent';
+    const team=fantasyTeamForRosterId(profile.rosterId);
+    const manager=profile.manager;
+    return norm(team)===norm(manager) ? manager : `${team} • ${manager}`;
+  }
+
+  function populateTradeExplorerOptions() {
+    const list=$('tradePlayerOptions');
+    if(!list) return;
+    const rows=[];
+    for(const r of (state.rosters||[])) {
+      const manager=managerForRosterId(r.roster_id);
+      const team=fantasyTeamForRosterId(r.roster_id);
+      for(const id of (r.players||[])) {
+        const p=state.players[String(id)];
+        if(!p) continue;
+        const pos=normalizedFantasyPos(p);
+        if(!['QB','RB','WR','TE'].includes(pos)) continue;
+        rows.push({name:pName(p),pos,team:p.team||'FA',manager,fantasyTeam:team});
+      }
+    }
+    rows.sort((a,b)=>a.name.localeCompare(b.name));
+    list.innerHTML=rows.map(x=>`<option value="${esc(x.name)}" label="${esc(`${x.pos} • ${x.team} • ${x.fantasyTeam}`)}"></option>`).join('');
+  }
+
+  function resolveTradeExplorerPlayer(query) {
+    const q=norm(query);
+    if(!q) return null;
+    const rostered=rosteredPlayerIds();
+    const all=Object.entries(state.players||{})
+      .map(([id,p])=>({id:String(id),p,name:pName(p),rostered:rostered.has(String(id))}))
+      .filter(x=>['QB','RB','WR','TE'].includes(normalizedFantasyPos(x.p)));
+    const exact=all.filter(x=>norm(x.name)===q).sort((a,b)=>Number(b.rostered)-Number(a.rostered));
+    if(exact.length) return exact[0];
+    const prefix=all.filter(x=>norm(x.name).startsWith(q)).sort((a,b)=>Number(b.rostered)-Number(a.rostered)||a.name.localeCompare(b.name));
+    if(prefix.length===1) return prefix[0];
+    const partial=all.filter(x=>norm(x.name).includes(q)).sort((a,b)=>Number(b.rostered)-Number(a.rostered)||a.name.localeCompare(b.name));
+    return partial.length===1?partial[0]:null;
+  }
+
+  function explorerTargetsForProfile(profile,cfg) {
+    return profile.rows
+      .filter(x=>!x.keeper)
+      .filter(x=>x.value>=Math.max(35,cfg.minTargetValue-10))
+      .sort((a,b)=>b.value-a.value);
+  }
+
+  function explorerGivePool(myProfile,cfg) {
+    return outgoingTradeCandidates(myProfile,cfg).slice(0,cfg.key==='aggressive'?14:11);
+  }
+
+  function shopSelectedPlayer(myProfile,profiles,selected,cfg) {
+    const proposals=[];
+    const locked=myProfile.rows.find(x=>String(x.id)===String(selected.id));
+    if(!locked) return proposals;
+
+    for(const opp of profiles) {
+      if(opp.rosterId===myProfile.rosterId) continue;
+      const targets=explorerTargetsForProfile(opp,cfg).slice(0,14);
+      for(const target of targets) {
+        const one=evaluateOneForOneProposal(myProfile,opp,locked,target,cfg,true);
+        if(one) proposals.push(one);
+      }
+
+      const extras=explorerGivePool(myProfile,cfg).filter(x=>String(x.id)!==String(locked.id)).slice(0,9);
+      for(const target of targets.filter(x=>x.value>=62).slice(0,10)) {
+        for(const extra of extras) {
+          const two=evaluateTwoForOneProposal(myProfile,opp,[locked,extra],target,cfg,true);
+          if(two) proposals.push(two);
+        }
+      }
+    }
+
+    const bestByTarget=new Map();
+    for(const p of proposals) {
+      const old=bestByTarget.get(String(p.target.id));
+      if(!old || p.score>old.score || (p.score===old.score && p.impact.myPct>old.impact.myPct)) bestByTarget.set(String(p.target.id),p);
+    }
+    return [...bestByTarget.values()]
+      .sort((a,b)=>b.score-a.score || b.impact.myPct-a.impact.myPct)
+      .slice(0,cfg.key==='aggressive'?14:10);
+  }
+
+  function targetSelectedPlayer(myProfile,oppProfile,target,cfg) {
+    const proposals=[];
+    const gives=explorerGivePool(myProfile,cfg);
+
+    for(const give of gives) {
+      const one=evaluateOneForOneProposal(myProfile,oppProfile,give,target,cfg,true);
+      if(one) proposals.push(one);
+    }
+
+    const pairPool=gives.slice(0,cfg.key==='aggressive'?11:9);
+    for(let i=0;i<pairPool.length;i++) {
+      for(let j=i+1;j<pairPool.length;j++) {
+        const two=evaluateTwoForOneProposal(myProfile,oppProfile,[pairPool[i],pairPool[j]],target,cfg,true);
+        if(two) proposals.push(two);
+      }
+    }
+
+    const keyFor=p=>p.gives.map(x=>x.id).sort().join('|');
+    const unique=new Map();
+    for(const p of proposals) {
+      const key=keyFor(p);
+      const old=unique.get(key);
+      if(!old || p.score>old.score) unique.set(key,p);
+    }
+    return [...unique.values()].sort((a,b)=>b.score-a.score);
+  }
+
+  function explorerOfferLanes(proposals) {
+    if(!proposals.length) return [];
+    const lanes=[];
+    const seen=new Set();
+    const add=(label,kind,p)=>{
+      if(!p) return;
+      const key=p.gives.map(x=>x.id).sort().join('|');
+      if(seen.has(key)) return;
+      seen.add(key); lanes.push({label,kind,proposal:p});
+    };
+
+    const balanced=[...proposals].sort((a,b)=>b.score-a.score)[0];
+    const cheapest=[...proposals].sort((a,b)=>rawTradeOfferValue(a.gives)-rawTradeOfferValue(b.gives) || b.score-a.score)[0];
+    const acceptance=[...proposals].sort((a,b)=>b.impact.oppPct-a.impact.oppPct || b.score-a.score)[0];
+    add('Best balanced offer','balanced',balanced);
+    add('Cheapest plausible offer','cheap',cheapest);
+    add('Acceptance-leaning offer','aggressive',acceptance);
+    return lanes;
+  }
+
+  function tradeConfidenceLabel(p) {
+    const rawRatio=p.type==='2-for-1' ? rawTradeOfferValue(p.gives)/Math.max(1,p.targetValue) : p.offerValue/Math.max(1,p.targetValue);
+    if(p.type==='2-for-1' && rawRatio>=1.30) return {label:'AGGRESSIVE CONSOLIDATION',cls:'trade-watch',rawRatio};
+    if(p.score>=88) return {label:'STRONG CANDIDATE',cls:'trade-strong',rawRatio};
+    if(p.score>=76) return {label:'GOOD FIT',cls:'trade-good',rawRatio};
+    return {label:'EXPLORE',cls:'trade-watch',rawRatio};
+  }
+
+  function renderTradeProposalCard(p,i,{laneLabel='',laneKind='',explorer=false}={}) {
+    const giveNames=p.gives.map(x=>x.name).join(' + ');
+    const target=p.target;
+    const partner=p.partner.manager;
+    const ownerText=tradePlayerOwnerText(p.partner);
+    const conf=tradeConfidenceLabel(p);
+    const myPct=p.impact?.myPct||0;
+    const oppPct=p.impact?.oppPct||0;
+    const myDelta=p.impact?.myDelta||0;
+    const oppDelta=p.impact?.oppDelta||0;
+    const raw=rawTradeOfferValue(p.gives);
+    const rosterImpact=`your ${myPct>=0?'+':''}${myPct.toFixed(1)}% • partner ${oppPct>=0?'+':''}${oppPct.toFixed(1)}%`;
+
+    return `<div class="waiver-row ${conf.cls}">
+      <div class="waiver-rank">${explorer?'OPTION':'TRADE'}<b>${i+1}</b></div>
+      <div>
+        ${laneLabel?`<span class="trade-lane ${laneKind}">${esc(laneLabel)}</span>`:''}
+        <b>GET ${esc(target.name)} <span class="pos ${target.pos}">${target.pos}</span></b>
+        <div class="meta">from ${esc(ownerText)} • OFFER ${esc(giveNames)} • ${esc(p.type)}</div>
+        <div class="trade-profile">
+          <span class="trade-chip ${conf.label==='AGGRESSIVE CONSOLIDATION'?'warn':'good'}">${esc(conf.label)}</span>
+          <span class="trade-chip">market ${Math.round(p.offerValue)} ↔ ${Math.round(p.targetValue)}</span>
+          ${p.type==='2-for-1'?`<span class="trade-chip">raw offer ${Math.round(raw)} • ${(conf.rawRatio*100).toFixed(0)}%</span>`:''}
+          <span class="trade-chip good">your roster ${myDelta>=0?'+':''}${myDelta.toFixed(1)} • ${myPct>=0?'+':''}${myPct.toFixed(1)}%</span>
+          <span class="trade-chip good">their roster ${oppDelta>=0?'+':''}${oppDelta.toFixed(1)} • ${oppPct>=0?'+':''}${oppPct.toFixed(1)}%</span>
+        </div>
+        <div class="whyline">Projected roster impact: ${esc(rosterImpact)}. ${p.type==='2-for-1'?'This is a consolidation package, so the engine separately checks discounted package value and raw outgoing value.':'This is a direct value/roster-fit exchange.'} These percentages are roster-utility estimates, not projected win percentage.</div>
+      </div>
+      <div class="value-badge">${Math.round(p.score)}<div class="tiny">fit</div></div>
+    </div>`;
+  }
+
+  function renderTradeScan(myProfile,profiles,deadline,cfg) {
+    const needs=tradePriorityPositions(myProfile,'need').slice(0,3);
+    const surplus=tradePriorityPositions(myProfile,'surplus').slice(0,3);
+    const keepers=myProfile.rows.filter(x=>x.keeper);
+    const needText=needs.length ? needs.map(x=>`${x.pos} ${x.score>=2.2?'HIGH':(x.score>=1.2?'MED':'LEAN')}`).join(', ') : 'no major positional deficiency';
+    const surplusText=surplus.length ? surplus.map(x=>`${x.pos} ${x.score>=2.2?'STRONG':(x.score>=1.2?'PLUS':'LEAN')}`).join(', ') : 'no obvious surplus';
+
+    $('weeklyTradeProfile').innerHTML=
+      `<b>Trade profile:</b> Need — ${esc(needText)} • Surplus — ${esc(surplusText)} • Style — ${esc(cfg.label)}`+
+      `${deadline?` • Deadline W${deadline}`:''}`+
+      `${keepers.length?`<div class="trade-profile">${keepers.map(k=>`<span class="trade-chip premium">${esc(k.name)} • keeper R${k.keeperRound}</span>`).join('')}</div>`:''}`+
+      `<div class="tiny" style="margin-top:5px">Current keepers and recent additions are excluded from default outgoing proposals; opponent keepers remain excluded until keeper-rights transfer is modeled. HOLD remains a valid result.</div>`;
+
+    const proposals=generateTradeProposals(myProfile,profiles,{cfg});
+    setPill('tradeIntelPill',proposals.length?`${proposals.length} ${cfg.label.toLowerCase()} package${proposals.length===1?'':'s'}`:'No clean trade fit',proposals.length?'good':'warn');
+
+    if(!proposals.length) {
+      $('weeklyTrades').innerHTML='<div class="goodbox"><b>No clean mutually beneficial player-only trade is showing at this trade style.</b><br>Holding is better than forcing a deal. You can switch Trade Style or use Trade Explorer if you have a specific player in mind.</div>';
+      return proposals;
+    }
+    $('weeklyTrades').innerHTML=proposals.map((p,i)=>renderTradeProposalCard(p,i)).join('');
+    return proposals;
+  }
+
+  function renderTradeExplorer(myProfile,profiles,cfg) {
+    populateTradeExplorerOptions();
+    const selectedId=state.tradeExplorerPlayerId;
+    if(!selectedId) {
+      setPill('tradeIntelPill','Explorer — select player','');
+      $('tradeExplorerSelected').className='trade-explorer-empty';
+      $('tradeExplorerSelected').innerHTML='Select one of your players to see realistic return options, or select another manager\'s player to see what it could reasonably cost you.';
+      $('tradeExplorerResults').innerHTML='';
+      return [];
+    }
+
+    const p=state.players[String(selectedId)];
+    if(!p) {
+      state.tradeExplorerPlayerId=null;
+      $('tradeExplorerSelected').className='trade-explorer-empty';
+      $('tradeExplorerSelected').textContent='That player could not be found. Search again.';
+      $('tradeExplorerResults').innerHTML='';
+      return [];
+    }
+
+    const owner=tradeProfileForPlayerId(profiles,selectedId);
+    if(!owner) {
+      setPill('tradeIntelPill','Free agent — use Add/Drop','warn');
+      $('tradeExplorerSelected').className='trade-selected';
+      $('tradeExplorerSelected').innerHTML=`<div class="trade-selected-title">${esc(pName(p))} <span class="pos ${normalizedFantasyPos(p)}">${normalizedFantasyPos(p)}</span></div><div class="trade-owner">This player is not rostered in the league. Use Best Available Adds / Add-Drop instead of Trade Explorer.</div>`;
+      $('tradeExplorerResults').innerHTML='';
+      return [];
+    }
+
+    const selected=owner.rows.find(x=>String(x.id)===String(selectedId));
+    const mine=owner.rosterId===myProfile.rosterId;
+    const ownerText=tradePlayerOwnerText(owner);
+    const direction=mine?'SHOP THIS PLAYER':'TARGET THIS PLAYER';
+    $('tradeExplorerSelected').className='trade-selected';
+    $('tradeExplorerSelected').innerHTML=`
+      <div class="trade-selected-title">${esc(selected.name)} <span class="pos ${selected.pos}">${selected.pos}</span> • value ${Math.round(selected.value)}</div>
+      <div class="trade-owner">${esc(selected.team)} • ${esc(ownerText)} • ${direction} • ${esc(cfg.label)} style${selected.keeper?` • KEEPER R${selected.keeperRound}`:''}</div>`;
+
+    if(selected.keeper) {
+      setPill('tradeIntelPill','Keeper trade withheld','warn');
+      $('tradeExplorerResults').innerHTML='<div class="notice"><b>Keeper-specific trade math is intentionally withheld for now.</b><br>The app does not yet model how keeper rights and round cost transfer after a trade in this league, so a numerical offer could be misleading.</div>';
+      return [];
+    }
+
+    if(mine) {
+      const proposals=shopSelectedPlayer(myProfile,profiles,selected,cfg);
+      setPill('tradeIntelPill',proposals.length?`${proposals.length} realistic return${proposals.length===1?'':'s'}`:'No realistic return found',proposals.length?'good':'warn');
+      if(!proposals.length) {
+        $('tradeExplorerResults').innerHTML='<div class="goodbox"><b>No realistic return clears the current style guardrails with this player locked into the outgoing side.</b><br>Try a different trade style, or revisit after roster values/roles change.</div>';
+        return [];
+      }
+      $('tradeExplorerResults').innerHTML=`<div class="tiny" style="margin-bottom:4px">Showing the strongest realistic players you could pursue while keeping ${esc(selected.name)} in every outgoing offer. Results are deduplicated by target player.</div>`+
+        proposals.map((p,i)=>renderTradeProposalCard(p,i,{explorer:true})).join('');
+      return proposals;
+    }
+
+    const proposals=targetSelectedPlayer(myProfile,owner,selected,cfg);
+    const lanes=explorerOfferLanes(proposals);
+    setPill('tradeIntelPill',lanes.length?`${lanes.length} offer path${lanes.length===1?'':'s'}`:'No realistic offer found',lanes.length?'good':'warn');
+    if(!lanes.length) {
+      $('tradeExplorerResults').innerHTML='<div class="goodbox"><b>No offer from your current roster clears the selected trade-style guardrails for this target.</b><br>That can be the correct answer. Aggressive mode can widen the negotiation range without disabling the hard realism protections.</div>';
+      return [];
+    }
+    $('tradeExplorerResults').innerHTML=`<div class="tiny" style="margin-bottom:4px">Offers are generated only from your roster. “Cheapest plausible” minimizes raw outgoing value; “acceptance-leaning” favors the partner's projected roster gain while keeping yours positive.</div>`+
+      lanes.map((x,i)=>renderTradeProposalCard(x.proposal,i,{laneLabel:x.label,laneKind:x.kind,explorer:true})).join('');
+    return lanes.map(x=>x.proposal);
+  }
+
+  function setTradeView(view,rerender=true) {
+    state.tradeView=view==='explorer'?'explorer':'scan';
+    $('tradeScanBtn')?.classList.toggle('active',state.tradeView==='scan');
+    $('tradeExplorerBtn')?.classList.toggle('active',state.tradeView==='explorer');
+    $('tradeScanView')?.classList.toggle('hidden',state.tradeView!=='scan');
+    $('tradeExplorerView')?.classList.toggle('hidden',state.tradeView!=='explorer');
+    if(rerender && state.connected) renderTradeIntelligence(myWeeklyContext());
+  }
+
+  function chooseTradeExplorerPlayer() {
+    const input=$('tradePlayerSearch');
+    const found=resolveTradeExplorerPlayer(input?.value||'');
+    if(!found) {
+      state.tradeExplorerPlayerId=null;
+      setPill('tradeIntelPill','Player not found','warn');
+      $('tradeExplorerSelected').className='trade-explorer-empty';
+      $('tradeExplorerSelected').textContent='No unique player matched that search. Type a fuller player name and try again.';
+      $('tradeExplorerResults').innerHTML='';
+      return;
+    }
+    state.tradeExplorerPlayerId=String(found.id);
+    if(input) input.value=found.name;
+    if(state.connected) renderTradeIntelligence(myWeeklyContext());
   }
 
   function renderTradeIntelligence(ctx) {
     const deadline=tradeDeadlineWeek();
+    const cfg=tradeStyleConfig();
+    if($('tradeStyleSelect')) $('tradeStyleSelect').value=cfg.key;
+    if($('tradeStyleNote')) $('tradeStyleNote').textContent=tradeStyleDescription(cfg.key);
+    setTradeView(state.tradeView,false);
+    populateTradeExplorerOptions();
+
     if(deadline && state.weeklyWeek>deadline) {
       setPill('tradeIntelPill',`Deadline passed (W${deadline})`,'warn');
-      $('weeklyTradeProfile').innerHTML=
-        `<b>Trade market closed.</b> League setting shows a Week ${deadline} trade deadline.`;
-      $('weeklyTrades').innerHTML=
-        '<div class="tiny">No trade proposals are generated after the detected league trade deadline.</div>';
+      $('weeklyTradeProfile').innerHTML=`<b>Trade market closed.</b> League setting shows a Week ${deadline} trade deadline.`;
+      $('weeklyTrades').innerHTML='<div class="tiny">No trade proposals are generated after the detected league trade deadline.</div>';
+      $('tradeExplorerSelected').className='trade-explorer-empty';
+      $('tradeExplorerSelected').innerHTML=`Trade deadline passed in Week ${deadline}; Trade Explorer is disabled for recommendation purposes.`;
+      $('tradeExplorerResults').innerHTML='';
       return [];
     }
 
@@ -4190,81 +4533,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       return [];
     }
 
-    const needs=tradePriorityPositions(myProfile,'need').slice(0,3);
-    const surplus=tradePriorityPositions(myProfile,'surplus').slice(0,3);
-    const keepers=myProfile.rows.filter(x=>x.keeper);
-
-    const needText=needs.length
-      ? needs.map(x=>`${x.pos} ${x.score>=2.2?'HIGH':(x.score>=1.2?'MED':'LEAN')}`).join(', ')
-      : 'no major positional deficiency';
-
-    const surplusText=surplus.length
-      ? surplus.map(x=>`${x.pos} ${x.score>=2.2?'STRONG':(x.score>=1.2?'PLUS':'LEAN')}`).join(', ')
-      : 'no obvious surplus';
-
-    $('weeklyTradeProfile').innerHTML=
-      `<b>Trade profile:</b> Need — ${esc(needText)} • Surplus — ${esc(surplusText)}`+
-      `${deadline?` • Deadline W${deadline}`:''}`+
-      `${keepers.length?`<div class="trade-profile">${keepers.map(k=>`<span class="trade-chip premium">${esc(k.name)} • keeper R${k.keeperRound}</span>`).join('')}</div>`:''}`+
-      `<div class="tiny" style="margin-top:5px">Current keepers are excluded from default outgoing proposals, and opponent keepers are also excluded until keeper-rights transfer is modeled. Every shown package must improve your optimized roster, leave the partner with positive projected roster impact, and stay within a target-tier raw-value ceiling. Larger 2-for-1 overpays that still pass are labeled AGGRESSIVE CONSOLIDATION rather than presented as ordinary strong fits. Player-only packages for now; future-pick valuation is not yet modeled.</div>`;
-
-    const proposals=generateTradeProposals(myProfile,profiles);
-    setPill(
-      'tradeIntelPill',
-      proposals.length?`${proposals.length} package${proposals.length===1?'':'s'} to explore`:'No clean trade fit',
-      proposals.length?'good':'warn'
-    );
-
-    if(!proposals.length) {
-      $('weeklyTrades').innerHTML=
-        '<div class="goodbox"><b>No clean mutually beneficial player-only trade is showing right now.</b><br>Holding is better than forcing a deal. Re-check after injuries, role changes, or roster churn change team needs.</div>';
-      return [];
-    }
-
-    $('weeklyTrades').innerHTML=proposals.map((p,i)=>{
-      const giveNames=p.gives.map(x=>x.name).join(' + ');
-      const partner=p.partner.manager;
-      const target=p.target;
-      const targetKeeper=tradeKeeperLabel(target);
-      const myNeed=myProfile.need[target.pos]||0;
-      const theirNeed=Math.max(...p.gives.map(x=>p.partner.need[x.pos]||0));
-      const rawRatio=p.type==='2-for-1'
-        ? rawTradeOfferValue(p.gives)/Math.max(1,p.targetValue)
-        : p.offerValue/Math.max(1,p.targetValue);
-      const confidence=(p.type==='2-for-1' && rawRatio>=1.30)
-        ? 'AGGRESSIVE CONSOLIDATION'
-        : (p.score>=88?'STRONG CANDIDATE':(p.score>=76?'GOOD FIT':'EXPLORE'));
-      const cls=(p.type==='2-for-1' && rawRatio>=1.30)
-        ? 'trade-watch'
-        : (p.score>=88?'trade-strong':(p.score>=76?'trade-good':'trade-watch'));
-      const myDelta=p.impact?.myDelta||0;
-      const oppDelta=p.impact?.oppDelta||0;
-
-      return `<div class="waiver-row ${cls}">
-        <div class="waiver-rank">TRADE<b>${i+1}</b></div>
-        <div>
-          <b>GET ${esc(target.name)} <span class="pos ${target.pos}">${target.pos}</span></b>
-          <div class="meta">with ${esc(partner)} • OFFER ${esc(giveNames)} • ${esc(p.type)}</div>
-          <div class="trade-profile">
-            <span class="trade-chip good">${esc(confidence)}</span>
-            <span class="trade-chip">market ${Math.round(p.offerValue)} ↔ ${Math.round(p.targetValue)}</span>
-            ${p.type==='2-for-1'?`<span class="trade-chip">raw offer ${Math.round(rawTradeOfferValue(p.gives))} • ${(rawRatio*100).toFixed(0)}%</span>`:''}
-            <span class="trade-chip good">your roster ${myDelta>=0?'+':''}${myDelta.toFixed(1)}</span>
-            <span class="trade-chip good">their roster ${oppDelta>=0?'+':''}${oppDelta.toFixed(1)}</span>
-            <span class="trade-chip">your ${target.pos} need ${myNeed.toFixed(1)}</span>
-            <span class="trade-chip">their need ${theirNeed.toFixed(1)}</span>
-          </div>
-          <div class="whyline">Why it can work: this package clears both the market-value check and the two-sided roster-impact check. ${
-            p.type==='2-for-1'
-              ? 'You consolidate depth into a clearly stronger single starter; the raw outgoing value, discounted package value, and two-sided roster impact all clear the overpay guardrails.'
-              : 'The exchange improves both optimized roster constructions rather than relying only on a positional-need label.'
-          }</div>
-        </div>
-        <div class="value-badge">${Math.round(p.score)}<div class="tiny">fit</div></div>
-      </div>`;
-    }).join('');
-
-    return proposals;
+    if(state.tradeView==='explorer') return renderTradeExplorer(myProfile,profiles,cfg);
+    return renderTradeScan(myProfile,profiles,deadline,cfg);
   }
 
   function renderWeeklyTrending(ctx) {
@@ -4476,7 +4746,8 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       const tradeDeadline=tradeDeadlineWeek();
       if(!tradeDeadline || state.weeklyWeek<=tradeDeadline) {
         const bestTrade=generateTradeProposals(myTradeProfile,tradeProfiles)[0];
-        if(bestTrade && bestTrade.score>=74) {
+        const actionTradeFloor=tradeStyleConfig().key==='conservative'?80:(tradeStyleConfig().key==='aggressive'?68:74);
+        if(bestTrade && bestTrade.score>=actionTradeFloor) {
           items.push(`<b>Trade market:</b> Explore ${esc(bestTrade.target.name)} from ${esc(bestTrade.partner.manager)} for ${esc(bestTrade.gives.map(x=>x.name).join(' + '))}. This grades as a complementary roster-fit deal, not an urgent transaction.`);
         }
       }
@@ -4567,6 +4838,20 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     if(state.connected) loadWeekly();
   });
   $('weeklyFaSearch').addEventListener('input',()=>{ if(state.connected){ const ctx=myWeeklyContext(); renderWeeklyAdds(ctx); } });
+  if($('tradeStyleSelect')) {
+    $('tradeStyleSelect').value=state.tradeStyle;
+    $('tradeStyleNote').textContent=tradeStyleDescription(state.tradeStyle);
+    $('tradeStyleSelect').addEventListener('change',()=>{
+      state.tradeStyle=$('tradeStyleSelect').value;
+      try { localStorage.setItem('fcc_trade_style_v1',state.tradeStyle); } catch(_) {}
+      $('tradeStyleNote').textContent=tradeStyleDescription(state.tradeStyle);
+      if(state.connected) renderTradeIntelligence(myWeeklyContext());
+    });
+  }
+  $('tradeScanBtn')?.addEventListener('click',()=>setTradeView('scan'));
+  $('tradeExplorerBtn')?.addEventListener('click',()=>setTradeView('explorer'));
+  $('tradePlayerSearchBtn')?.addEventListener('click',chooseTradeExplorerPlayer);
+  $('tradePlayerSearch')?.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); chooseTradeExplorerPlayer(); } });
   $('draftTab').addEventListener('click',()=>{$('draftTab').classList.add('active');$('weeklyTab').classList.remove('active');$('draftMode').classList.remove('hidden');$('weeklyMode').classList.add('hidden');});
   $('weeklyTab').addEventListener('click',()=>{$('weeklyTab').classList.add('active');$('draftTab').classList.remove('active');$('weeklyMode').classList.remove('hidden');$('draftMode').classList.add('hidden'); if(state.connected) loadWeekly();});
   renderAvailable(); renderRoster(); renderRecommendations(); renderIntel();
