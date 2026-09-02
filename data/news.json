@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-01T21:02:36.632746Z",
+  "generated_at": "2026-09-02T00:14:50.571088Z",
   "lookback_days": 7,
-  "article_count": 11,
+  "article_count": 12,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Colts GM Chris Ballard blasts NFL players returning to college: 'Stupidest s--- I've ever heard'",
+      "summary": "Ballard joins a growing list of football figures criticizing former NFL players seeking another year of college eligibility",
+      "url": "https://www.cbssports.com/nfl/news/chris-ballard-nfl-players-returning-college/",
+      "published_at": "2026-09-01T21:17:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Malik Nabers injury status: Giants WR shares honest assessment of progress, Week 1 availability",
       "summary": "Nabers' availability for Week 1 is still up in the air",
