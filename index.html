@@ -144,8 +144,28 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 .trade-mode-btn{background:#14233b;color:var(--muted);border:1px solid var(--line);min-height:38px;padding:8px 11px}
 .trade-mode-btn.active{background:#27405f;color:var(--text);border-color:#47749b}
 .trade-style-note{font-size:10px;color:var(--muted);margin-top:4px;max-width:620px}
-.trade-explorer-search{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;margin:8px 0}
+.trade-explorer-search{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;margin:8px 0;align-items:start}
 .trade-explorer-search input{width:100%;min-width:0}
+.trade-explorer-input-wrap{position:relative;min-width:0}
+.trade-player-suggestions{
+  position:absolute;z-index:80;left:0;right:0;top:calc(100% + 5px);
+  max-height:340px;overflow-y:auto;-webkit-overflow-scrolling:touch;
+  border:1px solid #405b7d;border-radius:10px;background:#0f1730;
+  box-shadow:0 12px 28px rgba(0,0,0,.42);padding:5px
+}
+.trade-player-suggestions.hidden{display:none}
+.trade-player-suggestion{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  min-height:48px;padding:8px 9px;margin:0;border:0;border-bottom:1px solid #283657;
+  border-radius:7px;background:transparent;color:var(--text);text-align:left;cursor:pointer
+}
+.trade-player-suggestion:last-child{border-bottom:0}
+.trade-player-suggestion:hover,.trade-player-suggestion:focus{background:#18294a;outline:none}
+.trade-suggestion-main{min-width:0;font-weight:850;font-size:13px}
+.trade-suggestion-meta{display:block;color:var(--muted);font-size:10px;font-weight:500;margin-top:2px;overflow-wrap:anywhere}
+.trade-suggestion-side{flex:0 0 auto;font-size:9px;font-weight:900;border:1px solid #405b7d;border-radius:999px;padding:3px 6px;color:#cfe3ff}
+.trade-suggestion-side.mine{border-color:#276c50;color:#6ee7b7}
+.trade-suggestion-empty{padding:10px;color:var(--muted);font-size:11px}
 .trade-selected{border:1px solid #355a70;background:#102033;border-radius:10px;padding:10px;margin:8px 0}
 .trade-selected-title{font-weight:900;font-size:15px}
 .trade-owner{font-size:11px;color:var(--muted);margin-top:3px}
@@ -280,6 +300,10 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 @media(max-width:430px){
   .weekly-controls{grid-template-columns:1fr}
   .waiver-row{padding:8px 7px}
+  .trade-explorer-search{grid-template-columns:1fr}
+  .trade-explorer-search>button{width:100%}
+  .trade-player-suggestions{max-height:300px}
+  .trade-player-suggestion{min-height:52px;padding:9px}
 }
 
 </style>
@@ -539,8 +563,10 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 
         <div id="tradeExplorerView" class="hidden">
           <div class="trade-explorer-search">
-            <input id="tradePlayerSearch" list="tradePlayerOptions" placeholder="Search a rostered player — e.g. Chase Brown or Derrick Henry" autocomplete="off">
-            <datalist id="tradePlayerOptions"></datalist>
+            <div class="trade-explorer-input-wrap">
+              <input id="tradePlayerSearch" placeholder="Search a rostered player — e.g. Chase Brown or Derrick Henry" autocomplete="off" autocapitalize="words" spellcheck="false" aria-autocomplete="list" aria-controls="tradePlayerSuggestions" aria-expanded="false">
+              <div id="tradePlayerSuggestions" class="trade-player-suggestions hidden" role="listbox" aria-label="Rostered player suggestions"></div>
+            </div>
             <button id="tradePlayerSearchBtn" class="ghost" type="button">Explore player</button>
           </div>
           <div id="tradeExplorerSelected" class="trade-explorer-empty">Select one of your players to see realistic return options, or select another manager's player to see what it could reasonably cost you.</div>
@@ -601,7 +627,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       <div class="card" style="margin-top:12px">
         <h3>What this beta does not know yet</h3>
         <div class="tiny caveat-copy">
-          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.13 adds Trade Style controls (Conservative, Balanced, Aggressive) and a player-focused Trade Explorer while keeping the same centralized trade valuation and hard realism guardrails. Explorer can shop a selected player from the connected roster or build offer paths for a selected opponent player, with projected roster-utility impact shown for both teams, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.10 now adds an automated headline feed generated by GitHub Actions. News classification is intentionally conservative and uses publisher-provided headlines/descriptions rather than scraping full articles. Independent projections, route participation, and richer red-zone opportunity remain future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
+          Live Sleeper roster/injury status and trending activity are automatic. After a transaction, Sleeper's public roster feed can take a short time to reflect the change even when this page is force-refreshing its API requests. v2.13.1 adds a touch-friendly Trade Explorer player picker for mobile browsers while preserving the v2.13 Trade Style controls and player-focused Trade Explorer while keeping the same centralized trade valuation and hard realism guardrails. Explorer can shop a selected player from the connected roster or build offer paths for a selected opponent player, with projected roster-utility impact shown for both teams, while preserving required K/DST protection, QB/TE redundancy penalties, lighter trend weighting, and Sleeper depth-chart role weighting. The app knows whether a player is rostered, but this beta does not reliably distinguish every league-specific moment when an unrostered player is an immediate free agent versus subject to waivers — confirm the transaction button in Sleeper before acting. v2.10 now adds an automated headline feed generated by GitHub Actions. News classification is intentionally conservative and uses publisher-provided headlines/descriptions rather than scraping full articles. Independent projections, route participation, and richer red-zone opportunity remain future layers. Prior-season usage is automatically down-weighted when it is used as a Week 1 baseline, and weather remains a modest adjustment rather than an automatic bench signal.
         </div>
       </div>
     </aside>
@@ -609,7 +635,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.13 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.13.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -4225,23 +4251,91 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     return norm(team)===norm(manager) ? manager : `${team} • ${manager}`;
   }
 
-  function populateTradeExplorerOptions() {
-    const list=$('tradePlayerOptions');
-    if(!list) return;
+  function tradeExplorerRosteredRows() {
     const rows=[];
     for(const r of (state.rosters||[])) {
       const manager=managerForRosterId(r.roster_id);
-      const team=fantasyTeamForRosterId(r.roster_id);
+      const fantasyTeam=fantasyTeamForRosterId(r.roster_id);
+      const mine=Number(r.roster_id)===Number(state.myRosterId);
       for(const id of (r.players||[])) {
         const p=state.players[String(id)];
         if(!p) continue;
         const pos=normalizedFantasyPos(p);
         if(!['QB','RB','WR','TE'].includes(pos)) continue;
-        rows.push({name:pName(p),pos,team:p.team||'FA',manager,fantasyTeam:team});
+        rows.push({
+          id:String(id),
+          name:pName(p),
+          pos,
+          nflTeam:p.team||'FA',
+          manager,
+          fantasyTeam,
+          mine
+        });
       }
     }
-    rows.sort((a,b)=>a.name.localeCompare(b.name));
-    list.innerHTML=rows.map(x=>`<option value="${esc(x.name)}" label="${esc(`${x.pos} • ${x.team} • ${x.fantasyTeam}`)}"></option>`).join('');
+    return rows.sort((a,b)=>
+      Number(b.mine)-Number(a.mine) ||
+      a.name.localeCompare(b.name)
+    );
+  }
+
+  function hideTradeExplorerSuggestions() {
+    const box=$('tradePlayerSuggestions');
+    const input=$('tradePlayerSearch');
+    if(box) {
+      box.classList.add('hidden');
+      box.innerHTML='';
+    }
+    input?.setAttribute('aria-expanded','false');
+  }
+
+  function renderTradeExplorerSuggestions(query='',forceOpen=false) {
+    const box=$('tradePlayerSuggestions');
+    const input=$('tradePlayerSearch');
+    if(!box || !input || !state.connected) return;
+
+    const q=norm(query);
+    let rows=tradeExplorerRosteredRows();
+
+    if(q) {
+      rows=rows.filter(x=>
+        norm(x.name).includes(q) ||
+        norm(x.fantasyTeam).includes(q) ||
+        norm(x.manager).includes(q) ||
+        norm(x.nflTeam).includes(q)
+      );
+    }
+
+    // On focus with an empty box, show a useful browse list led by the connected
+    // manager's own players. Once typing starts, show up to 30 live matches.
+    rows=rows.slice(0,q?30:24);
+
+    if(!rows.length) {
+      box.innerHTML='<div class="trade-suggestion-empty">No rostered player matches that search.</div>';
+    } else {
+      box.innerHTML=rows.map(x=>`
+        <button class="trade-player-suggestion" type="button" role="option" data-player-id="${esc(x.id)}" data-player-name="${esc(x.name)}">
+          <span class="trade-suggestion-main">
+            ${esc(x.name)} <span class="pos ${x.pos}">${x.pos}</span>
+            <span class="trade-suggestion-meta">${esc(x.nflTeam)} • ${esc(x.fantasyTeam)}${x.mine?' • your roster':` • ${esc(x.manager)}`}</span>
+          </span>
+          <span class="trade-suggestion-side ${x.mine?'mine':''}">${x.mine?'YOURS':'OPPONENT'}</span>
+        </button>
+      `).join('');
+    }
+
+    if(forceOpen || document.activeElement===input || q) {
+      box.classList.remove('hidden');
+      input.setAttribute('aria-expanded','true');
+    }
+  }
+
+  function populateTradeExplorerOptions() {
+    // Kept as the central refresh hook used by Trade Intelligence. Desktop and
+    // mobile now use the same custom picker instead of relying on <datalist>,
+    // which is inconsistently exposed by iOS/mobile browsers.
+    const input=$('tradePlayerSearch');
+    if(input && document.activeElement===input) renderTradeExplorerSuggestions(input.value,true);
   }
 
   function resolveTradeExplorerPlayer(query) {
@@ -4850,8 +4944,47 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   }
   $('tradeScanBtn')?.addEventListener('click',()=>setTradeView('scan'));
   $('tradeExplorerBtn')?.addEventListener('click',()=>setTradeView('explorer'));
-  $('tradePlayerSearchBtn')?.addEventListener('click',chooseTradeExplorerPlayer);
-  $('tradePlayerSearch')?.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); chooseTradeExplorerPlayer(); } });
+  $('tradePlayerSearchBtn')?.addEventListener('click',()=>{
+    hideTradeExplorerSuggestions();
+    chooseTradeExplorerPlayer();
+  });
+
+  if($('tradePlayerSearch')) {
+    const input=$('tradePlayerSearch');
+
+    input.addEventListener('focus',()=>renderTradeExplorerSuggestions(input.value,true));
+    input.addEventListener('input',()=>renderTradeExplorerSuggestions(input.value,true));
+    input.addEventListener('keydown',e=>{
+      if(e.key==='Enter'){
+        e.preventDefault();
+        hideTradeExplorerSuggestions();
+        chooseTradeExplorerPlayer();
+      } else if(e.key==='Escape') {
+        hideTradeExplorerSuggestions();
+      }
+    });
+
+    // Delay blur closing just enough for a touch/click on a suggestion to land.
+    input.addEventListener('blur',()=>setTimeout(()=>{
+      if(!$('tradePlayerSuggestions')?.contains(document.activeElement)) hideTradeExplorerSuggestions();
+    },160));
+  }
+
+  $('tradePlayerSuggestions')?.addEventListener('click',e=>{
+    const btn=e.target.closest('.trade-player-suggestion');
+    if(!btn) return;
+    const id=btn.dataset.playerId;
+    const name=btn.dataset.playerName;
+    if(!id) return;
+    state.tradeExplorerPlayerId=String(id);
+    if($('tradePlayerSearch')) $('tradePlayerSearch').value=name||'';
+    hideTradeExplorerSuggestions();
+    if(state.connected) renderTradeIntelligence(myWeeklyContext());
+  });
+
+  document.addEventListener('click',e=>{
+    if(!e.target.closest('.trade-explorer-input-wrap')) hideTradeExplorerSuggestions();
+  });
   $('draftTab').addEventListener('click',()=>{$('draftTab').classList.add('active');$('weeklyTab').classList.remove('active');$('draftMode').classList.remove('hidden');$('weeklyMode').classList.add('hidden');});
   $('weeklyTab').addEventListener('click',()=>{$('weeklyTab').classList.add('active');$('draftTab').classList.remove('active');$('weeklyMode').classList.remove('hidden');$('draftMode').classList.add('hidden'); if(state.connected) loadWeekly();});
   renderAvailable(); renderRoster(); renderRecommendations(); renderIntel();

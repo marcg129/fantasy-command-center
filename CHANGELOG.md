@@ -4,6 +4,17 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.13.1 — Mobile Trade Player Picker
+**2026-09-01**
+
+- Replace the Trade Explorer's browser-dependent HTML datalist with a custom touch-friendly player suggestion panel.
+- Show rostered-player guidance consistently on desktop, iPhone, and other mobile browsers.
+- Show player position, NFL team, fantasy team, manager ownership, and YOURS / OPPONENT status directly in search suggestions.
+- Prioritize the connected manager's own roster when browsing the player list with an empty search.
+- Allow Trade Explorer search to match player name, NFL team, fantasy team, or manager.
+- Stack the Trade Explorer search button below the search field on narrow mobile screens.
+- Preserve all v2.13 trade-style and trade-value logic; this update changes only the player-selection UX.
+
 ## v2.13 — Trade Explorer & Trade Styles
 **2026-09-01**
 
