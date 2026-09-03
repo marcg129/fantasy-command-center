@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-03T11:15:10.582941Z",
+  "generated_at": "2026-09-03T16:26:07.401978Z",
   "lookback_days": 7,
-  "article_count": 20,
+  "article_count": 25,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "Browns exec draws criticism for wearing 'Los Angeles made me do it' sweater amid Myles Garrett trade",
+      "summary": "The distressed sweater made an unintentional statement and angered Browns fans once again",
+      "url": "https://www.cbssports.com/nfl/news/browns-exec-wears-la-sweater-myles-garrett-trade/",
+      "published_at": "2026-09-03T15:28:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2027 NFL Draft breakout candidates: CJ Carr could become top-10 pick, plus one prospect at every position",
+      "summary": "The Notre Dame quarterback appears ready to turn an impressive offseason into a standout 2026 campaign",
+      "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-breakout-candidates-cj-carr-prospects-to-watch/",
+      "published_at": "2026-09-03T15:21:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ranking NFL's top 10 quarterback-coach duos for 2026: Patrick Mahomes, Andy Reid dethroned by NFC West risers",
+      "summary": "The NFC West dominates the list, with one team now claiming top honors over the Chiefs' duo",
+      "url": "https://www.cbssports.com/nfl/news/ranking-nfls-top-10-quarterback-coach-duos-for-2026/",
+      "published_at": "2026-09-03T14:56:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
+      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
+      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-week-1-2026-fade-dallas-cowboys/",
+      "published_at": "2026-09-03T14:44:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Wilson's 2027 NFL Draft big board: Dante Moore over Arch Manning as eight QBs crack preseason top 50",
+      "summary": "Despite the hype, this year's QB class may look more like 2025 and 2026 than the 2024 group that produced six top-12 picks",
+      "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-big-board-top-50-prospects-preseason-rankings/",
+      "published_at": "2026-09-03T13:14:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams' bold Australia plan could change how NFL teams travel, but the 49ers aren't buying it",
+      "summary": "Los Angeles is set to arrive Down Under less than 24 hours before kickoff for its Week 1 matchup with San Francisco",
+      "url": "https://www.cbssports.com/nfl/news/rams-australia-travel-plans-49ers-week-1/",
+      "published_at": "2026-09-03T12:50:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Renner's 2027 NFL Draft scouting series: Arch Manning tops QB rankings, another passer draws Drake Maye comp",
+      "summary": "Manning leads a talented quarterback class that also features Drew Mestemaker, Dante Moore and Trinidad Chambliss",
+      "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-qb-rankings-arch-manning/",
+      "published_at": "2026-09-03T11:53:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "2026 Minnesota Vikings betting preview, predictions: Four NFL player props to target before Week 1",
       "summary": "Lock in these NFL player props for Justin Jefferson and Aaron Jones before Minnesota's Week 1 matchup against the Packers",
@@ -129,18 +213,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
-      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
-      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-week-1-2026-fade-the-dallas-cowboys/",
-      "published_at": "2026-09-02T13:21:49Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Best NFL player for every franchise before and after 2000: Peyton Manning earns unique distinction",
       "summary": "From Peyton Manning and Tom Brady to Jim Brown and Jerry Rice, we pick each NFL franchise's best player from two eras",
       "url": "https://www.cbssports.com/nfl/news/best-nfl-player-every-franchise-ebefore-after-2000/",
@@ -241,18 +313,6 @@
       "summary": "Darrell Luter drew more claims than any other player following roster cuts",
       "url": "https://www.cbssports.com/nfl/news/nfl-waiver-claims-raiders-darrell-luter/",
       "published_at": "2026-09-01T14:36:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Aaron Donald sits out practice: Rams admit returning star might not play Week 1 in Australia",
-      "summary": "A day after officially coming out of retirement, Donald missed Monday's practice and his Week 1 status remains unclear",
-      "url": "https://www.cbssports.com/nfl/news/aaron-donald-rams-practice-week-1/",
-      "published_at": "2026-09-01T14:21:12Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
