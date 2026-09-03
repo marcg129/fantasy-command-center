@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T00:16:32.077715Z",
+  "generated_at": "2026-09-03T04:39:31.295204Z",
   "lookback_days": 7,
   "article_count": 20,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "2026 Minnesota Vikings betting preview, predictions: Four NFL player props to target before Week 1",
+      "summary": "Lock in these NFL player props for Justin Jefferson and Aaron Jones before Minnesota's Week 1 matchup against the Packers",
+      "url": "https://www.cbssports.com/betting/news/2026-minnesota-vikings-betting-preview-predictions-four-nfl-player-props-to-target-before-week-1/",
+      "published_at": "2026-09-03T03:19:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Bears-Panthers, Vikings-Packers markets",
+      "summary": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
+      "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-bears-panthers-vikings-packers-markets/",
+      "published_at": "2026-09-03T02:09:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Jets work out Justin Tucker: Eight-time All Pro accused of sexual misconduct gets look from New York",
       "summary": "The 36-year-old former All-Pro was released from the Ravens in 2025 following misconduct allegations and previously had tryouts with the Saints and Colts",
@@ -54,18 +78,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, Underdog: Bears-Panthers, Vikings-Packers markets",
-      "summary": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
-      "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-underdog-bears-panthers-vikings-packers-markets/",
-      "published_at": "2026-09-02T17:51:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -241,18 +253,6 @@
       "summary": "A day after officially coming out of retirement, Donald missed Monday's practice and his Week 1 status remains unclear",
       "url": "https://www.cbssports.com/nfl/news/aaron-donald-rams-practice-week-1/",
       "published_at": "2026-09-01T14:21:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Aaron Donald is back: What NFL history says about his super duo with Myles Garrett",
-      "summary": "Donald's return gives the Rams two generational pass rushers with five Defensive Player of the Year awards between them",
-      "url": "https://www.cbssports.com/nfl/news/aaron-donald-myles-garrett-nfl-history/",
-      "published_at": "2026-09-01T14:10:52Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
