@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-03T21:02:39.049013Z",
+  "generated_at": "2026-09-04T00:06:54.055341Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,90 @@
   ],
   "articles": [
     {
+      "title": "Former NFL quarterback Mark Sanchez to plead guilty in Indianapolis stabbing case",
+      "summary": "Sanchez and the victim are also working to resolve their civil dispute",
+      "url": "https://www.cbssports.com/nfl/news/mark-sanchez-to-plead-guilty-in-stabbing-case/",
+      "published_at": "2026-09-03T23:30:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Former Giants Super Bowl champion questions both top-10 NFL Draft picks, calls one a 'tremendous risk'",
+      "summary": "Raul Allegre preferred another defender over Arvell Reese and has concerns about Francis Mauigoa's long-term health",
+      "url": "https://www.cbssports.com/nfl/news/giants-arvell-reese-francis-mauigoa-2026-nfl-draft-picks/",
+      "published_at": "2026-09-03T23:06:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants' Cam Skattebo considered retirement after gruesome injury; explains relationship with John Harbaugh",
+      "summary": "Skattebo suffered a nasty injury that derailed his rookie season",
+      "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-says-he-considered-retirement/",
+      "published_at": "2026-09-03T22:56:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Colts name Anthony Richardson backup QB: What's next for former first-rounder with trade request in rearview",
+      "summary": "There is no time like the present for Richardson to start salvaging his career",
+      "url": "https://www.cbssports.com/nfl/news/colts-anthony-richardson-backup-qb-whats-next/",
+      "published_at": "2026-09-03T22:51:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' Von Miller secures desired No. 40 from teammate with rare compensation that could last a lifetime",
+      "summary": "The veteran pass rusher gave Dallas fullback Hunter Luepke equity in his poultry business, Greener Pastures Chicken, to secure the jersey number he wore in high school and college",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-von-miller-no-40-uniform-teammate-compensation/",
+      "published_at": "2026-09-03T21:48:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL schedule: Dates, times, matchups, TV, live streaming for all 272 games",
+      "summary": "Here is the full week-by-week schedule for the 2026 season",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-schedule-dates-times/",
+      "published_at": "2026-09-03T21:23:46Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL says Patriots' distracting video board tactic did not violate league rules",
+      "summary": "The disorienting use of All-22 footage on field goal attempts remains legal, the NFL said after footage of the tactic went viral",
+      "url": "https://www.cbssports.com/nfl/news/nfl-says-patriots-distracting-video-board-tactic-legal/",
+      "published_at": "2026-09-03T21:20:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Agent's Take: Why the Patriots and superstar Christian Gonzalez are embroiled in a contract impasse",
       "summary": "Devon Witherspoon's record-setting deal reset the market, leaving the Patriots to work through cash-flow and guarantee benchmarks for their star cornerback before the season kicks off next week",
       "url": "https://www.cbssports.com/nfl/news/agents-take-why-the-patriots-and-superstar-christian-gonzalez-are-embroiled-in-a-contract-impasse/",
@@ -37,18 +121,6 @@
       "summary": "It doesn't appear that Tomlin is in a rush to get back into coaching",
       "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
       "published_at": "2026-09-03T20:45:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Former Giants Super Bowl champion questions both top-10 NFL Draft picks, calls one a 'tremendous risk'",
-      "summary": "Raul Allegre preferred another defender over Arvell Reese and has concerns about Francis Mauigoa's long-term health",
-      "url": "https://www.cbssports.com/nfl/news/giants-arvell-reese-francis-mauigoa-2026-nfl-draft-picks/",
-      "published_at": "2026-09-03T19:54:11Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -90,18 +162,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Giants' Cam Skattebo considered retirement after gruesome injury; explains relationship with John Harbaugh",
-      "summary": "Skattebo suffered a nasty injury that derailed his rookie season",
-      "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-says-he-considered-retirement/",
-      "published_at": "2026-09-03T18:01:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -337,54 +397,6 @@
       "summary": "A look at the biggest red flags across the conference, from the Rams' sky-high expectations to the 49ers' constant injury woes",
       "url": "https://www.cbssports.com/nfl/news/one-reason-each-nfc-team-could-disappoint-its-fan-base-are-expectations-too-high-for-rams/",
       "published_at": "2026-09-02T14:16:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best NFL player for every franchise before and after 2000: Peyton Manning earns unique distinction",
-      "summary": "From Peyton Manning and Tom Brady to Jim Brown and Jerry Rice, we pick each NFL franchise's best player from two eras",
-      "url": "https://www.cbssports.com/nfl/news/best-nfl-player-every-franchise-ebefore-after-2000/",
-      "published_at": "2026-09-02T12:41:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Making sense of Cowboys' surprising roster cuts ahead of 2026 season: Joe Milton, Jaydon Blue and more",
-      "summary": "Dallas let go of a few notable players on roster cutdown day in 2026. Here are the reasons why",
-      "url": "https://www.cbssports.com/nfl/news/making-sense-of-cowboys-surprising-roster-cuts/",
-      "published_at": "2026-09-02T11:35:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Colts GM Chris Ballard blasts NFL players returning to college: 'Stupidest s--- I've ever heard'",
-      "summary": "Ballard joins a growing list of football figures criticizing former NFL players seeking another year of college eligibility",
-      "url": "https://www.cbssports.com/nfl/news/chris-ballard-nfl-players-returning-college/",
-      "published_at": "2026-09-01T21:17:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Malik Nabers injury status: Giants WR shares honest assessment of progress, Week 1 availability",
-      "summary": "Nabers' availability for Week 1 is still up in the air",
-      "url": "https://www.cbssports.com/nfl/news/malik-nabers-injury-status-giants-wr-shares-honest-assessment-of-progress-week-1-availability/",
-      "published_at": "2026-09-01T20:37:13Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "injury",
