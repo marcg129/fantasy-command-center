@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T00:06:54.055341Z",
+  "generated_at": "2026-09-04T04:34:11.260890Z",
   "lookback_days": 7,
   "article_count": 32,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Former Steelers coach Mike Tomlin 'having the time of my life' in retirement",
+      "summary": "It doesn't appear that Tomlin is in a rush to get back into coaching",
+      "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
+      "published_at": "2026-09-04T01:50:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
+      "summary": "The NFL's handling of Nacua remains a mystery, but it has big implications for the Rams' championship hopes",
+      "url": "https://www.cbssports.com/nfl/news/puka-nacua-suspension-watch-will-nfl-discipline-rams-star/",
+      "published_at": "2026-09-04T00:43:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Former NFL quarterback Mark Sanchez to plead guilty in Indianapolis stabbing case",
       "summary": "Sanchez and the victim are also working to resolve their civil dispute",
@@ -117,34 +141,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Former Steelers coach Mike Tomlin 'having the time of my life' in retirement",
-      "summary": "It doesn't appear that Tomlin is in a rush to get back into coaching",
-      "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-having-the-time-of-my-life-in-retirement/",
-      "published_at": "2026-09-03T20:45:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Michael Wilson to sign massive extension: Why Cards made him one of NFL's top-paid No. 2 WRs",
       "summary": "Arizona made a good move in locking up Wilson, who posted career highs across the board in 2025",
       "url": "https://www.cbssports.com/nfl/news/cardinals-sign-michael-wilson-to-massive-extension/",
       "published_at": "2026-09-03T19:41:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
-      "summary": "The NFL's handling of Nacua remains a mystery, but it has big implications for the Rams' championship hopes",
-      "url": "https://www.cbssports.com/nfl/news/puka-nacua-suspension-watch-will-nfl-discipline-rams-star/",
-      "published_at": "2026-09-03T19:36:23Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
