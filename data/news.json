@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T15:14:36.135618Z",
+  "generated_at": "2026-09-05T18:18:46.010817Z",
   "lookback_days": 7,
   "article_count": 32,
   "sources": [
@@ -21,10 +21,22 @@
   ],
   "articles": [
     {
+      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
+      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
+      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-advice-week-1-2026-fade-cowboys/",
+      "published_at": "2026-09-05T18:05:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Agent's Take: How the Rams built a salary-cap super team around Matthew Stafford",
       "summary": "Here's how the Rams fit their stars under the salary cap and what the spending spree means for their future",
       "url": "https://www.cbssports.com/nfl/news/agents-take-rams-2026-salary-cap-super-bowl-window/",
-      "published_at": "2026-09-04T22:06:46Z",
+      "published_at": "2026-09-05T15:18:44Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -73,18 +85,6 @@
       "summary": "The elimination of the seniors category and reduction in the number of voters are among the biggest changes",
       "url": "https://www.cbssports.com/nfl/news/pro-football-hall-of-fame-voting-changes-bill-belichick-snub/",
       "published_at": "2026-09-04T16:21:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
-      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
-      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-week-1-2026-fade-cowboys/",
-      "published_at": "2026-09-04T15:51:34Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
