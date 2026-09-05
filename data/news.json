@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T18:18:46.010817Z",
+  "generated_at": "2026-09-05T22:03:30.893161Z",
   "lookback_days": 7,
   "article_count": 32,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Browns offensive lineman receives NFL's first big fine of 2026 season",
+      "summary": "Players usually aren't fined this much during the preseason",
+      "url": "https://www.cbssports.com/nfl/news/browns-offensive-lineman-receives-nfls-first-big-fine-of-2026-season/",
+      "published_at": "2026-09-05T20:22:07Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
       "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
@@ -385,18 +397,6 @@
       "summary": "Despite the hype, this year's QB class may look more like 2025 and 2026 than the 2024 group that produced six top-12 picks",
       "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-big-board-top-50-prospects-preseason-rankings/",
       "published_at": "2026-09-03T13:14:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams' bold Australia plan could change how NFL teams travel, but the 49ers aren't buying it",
-      "summary": "Los Angeles is set to arrive Down Under less than 24 hours before kickoff for its Week 1 matchup with San Francisco",
-      "url": "https://www.cbssports.com/nfl/news/rams-australia-travel-plans-49ers-week-1/",
-      "published_at": "2026-09-03T12:50:06Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
