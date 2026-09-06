@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T23:54:00.962069Z",
+  "generated_at": "2026-09-06T04:39:48.293329Z",
   "lookback_days": 7,
   "article_count": 32,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Vikings legend Harrison Smith returning to Minnesota on a one-year deal, per report",
+      "summary": "The 37-year-old safety, who leads all active players with 39 career interceptions, returns for his 15th season on a $12.25 million deal to anchor Minnesota's defense.",
+      "url": "https://www.cbssports.com/nfl/news/vikings-legend-harrison-smith-returning-to-minnesota-on-a-one-year-deal-per-report/",
+      "published_at": "2026-09-06T00:45:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Browns offensive lineman receives NFL's first big fine of 2026 season",
       "summary": "Players usually aren't fined this much during the preseason",
@@ -385,18 +397,6 @@
       "summary": "The Notre Dame quarterback appears ready to turn an impressive offseason into a standout 2026 campaign",
       "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-breakout-candidates-cj-carr-prospects-to-watch/",
       "published_at": "2026-09-03T15:21:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Wilson's 2027 NFL Draft big board: Dante Moore over Arch Manning as eight QBs crack preseason top 50",
-      "summary": "Despite the hype, this year's QB class may look more like 2025 and 2026 than the 2024 group that produced six top-12 picks",
-      "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-big-board-top-50-prospects-preseason-rankings/",
-      "published_at": "2026-09-03T13:14:54Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
