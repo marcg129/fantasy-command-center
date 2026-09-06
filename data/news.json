@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-06T15:28:26.737153Z",
+  "generated_at": "2026-09-06T18:18:07.952990Z",
   "lookback_days": 7,
-  "article_count": 32,
+  "article_count": 33,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,42 @@
   ],
   "articles": [
     {
+      "title": "Roger Goodell extended as NFL commissioner for four more years, through 2030 season",
+      "summary": "Goodell is now under contract through what will be his 24th season as the league's commissioner",
+      "url": "https://www.cbssports.com/nfl/news/roger-goodell-extended-as-nfl-commissioner-four-more-years/",
+      "published_at": "2026-09-06T17:25:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
+      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
+      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-advice-week-1-2026-fade-the-cowboys/",
+      "published_at": "2026-09-06T16:09:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
+      "summary": "San Francisco made room for long snapper Jon Weeks ahead of the opener in Melbourne, a move that could signal George Kittle is ready to return from an Achilles tear.",
+      "url": "https://www.cbssports.com/nfl/news/49ers-player-gets-cut-after-flying-16-hours-to-australia/",
+      "published_at": "2026-09-06T15:22:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Vikings legend Harrison Smith returning to Minnesota on a one-year deal, per report",
       "summary": "The 37-year-old safety, who leads all active players with 39 career interceptions, returns for his 15th season on a $12.25 million deal to anchor Minnesota's defense.",
       "url": "https://www.cbssports.com/nfl/news/vikings-legend-harrison-smith-returning-to-minnesota-on-a-one-year-deal-per-report/",
@@ -37,18 +73,6 @@
       "summary": "Players usually aren't fined this much during the preseason",
       "url": "https://www.cbssports.com/nfl/news/browns-offensive-lineman-receives-nfls-first-big-fine-of-2026-season/",
       "published_at": "2026-09-05T20:22:07Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
-      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
-      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-advice-week-1-2026-fade-cowboys/",
-      "published_at": "2026-09-05T18:05:02Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -313,18 +337,6 @@
       "summary": "Here's everything you need to know about the NFL for Sept. 3",
       "url": "https://www.cbssports.com/nfl/news/nfl-teams-that-can-win-super-bowl-top-qb-coach-combos-for-2026-and-49ers-just-left-for-australia/",
       "published_at": "2026-09-03T16:58:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Ranking NFL's top 10 quarterback-coach duos for 2026: Patrick Mahomes, Andy Reid dethroned by NFC West risers",
-      "summary": "The NFC West dominates the list, with one team now claiming top honors over the Chiefs' duo",
-      "url": "https://www.cbssports.com/nfl/news/ranking-nfls-top-10-quarterback-coach-duos-for-2026/",
-      "published_at": "2026-09-03T16:27:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
