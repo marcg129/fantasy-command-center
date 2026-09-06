@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T18:18:07.952990Z",
+  "generated_at": "2026-09-06T22:07:42.475904Z",
   "lookback_days": 7,
   "article_count": 33,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "2026 NFL schedule: Dates, times, matchups, TV, live streaming for all 272 games",
+      "summary": "Here is the full week-by-week schedule for the 2026 season",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-schedule-dates-times/",
+      "published_at": "2026-09-06T19:15:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Roger Goodell extended as NFL commissioner for four more years, through 2030 season",
       "summary": "Goodell is now under contract through what will be his 24th season as the league's commissioner",
@@ -265,18 +277,6 @@
       "summary": "The veteran pass rusher gave Dallas fullback Hunter Luepke equity in his poultry business, Greener Pastures Chicken, to secure the jersey number he wore in high school and college",
       "url": "https://www.cbssports.com/nfl/news/cowboys-von-miller-no-40-uniform-teammate-compensation/",
       "published_at": "2026-09-03T21:48:49Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL schedule: Dates, times, matchups, TV, live streaming for all 272 games",
-      "summary": "Here is the full week-by-week schedule for the 2026 season",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-schedule-dates-times/",
-      "published_at": "2026-09-03T21:23:46Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
