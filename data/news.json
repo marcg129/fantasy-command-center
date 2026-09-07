@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T04:42:31.099145Z",
+  "generated_at": "2026-09-07T12:33:42.602621Z",
   "lookback_days": 7,
   "article_count": 33,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "2026 NFL Week 1 early odds: Cowboys road favorites vs. Giants, while Panthers in familiar position vs. Bears",
+      "summary": "Here's a look at the lines for Week 1 in the NFL as we open up the 2026 season",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-1-early-odds-cowboys-road-favorites-vs-giants-while-panthers-in-familiar-position-vs-bears/",
+      "published_at": "2026-09-07T10:01:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL predictions: Final record for all 32 teams, Super Bowl LXI pick, playoff matchups and MVP winner",
+      "summary": "We just went through and predicted the entire 2026 NFL season",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-predictions-final-record-for-all-32-teams-super-bowl-lxi-pick-playoff-matchups-and-mvp-winner/",
+      "published_at": "2026-09-07T10:00:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
       "summary": "San Francisco made room for long snapper Jon Weeks ahead of the opener in Melbourne, a move that could signal George Kittle is ready to return from an Achilles tear.",
@@ -49,18 +73,6 @@
       "summary": "Goodell is now under contract through what will be his 24th season as the league's commissioner",
       "url": "https://www.cbssports.com/nfl/news/roger-goodell-extended-as-nfl-commissioner-four-more-years/",
       "published_at": "2026-09-06T17:25:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
-      "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
-      "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-advice-week-1-2026-fade-the-cowboys/",
-      "published_at": "2026-09-06T16:09:34Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -389,18 +401,6 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Browns exec draws criticism for wearing 'Los Angeles made me do it' sweater amid Myles Garrett trade",
-      "summary": "The distressed sweater made an unintentional statement and angered Browns fans once again",
-      "url": "https://www.cbssports.com/nfl/news/browns-exec-wears-la-sweater-myles-garrett-trade/",
-      "published_at": "2026-09-03T15:28:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     },
