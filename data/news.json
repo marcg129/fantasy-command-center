@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07T18:44:01.757465Z",
+  "generated_at": "2026-09-07T22:50:40.535055Z",
   "lookback_days": 7,
-  "article_count": 32,
+  "article_count": 33,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for SMU vs. Florida State, college football Monday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for SMU vs. Florida State, NFL, MLB betting on Monday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-smu-florida-state-college-football-monday/",
+      "published_at": "2026-09-07T21:29:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys three-time Pro Bowler Tyler Smith to undergo thumb surgery, out 4-6 weeks",
+      "summary": "Dallas has 'a ton of confidence' in Smith's replacement to hold down the fort in his absence",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-tyler-smith-to-undergo-thumb-surgery/",
+      "published_at": "2026-09-07T20:27:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
     {
       "title": "2026 NFL schedule: Week 1 kickoff times, matchups, TV, live streaming, plus rest of slate",
       "summary": "Here is the full week-by-week schedule for the 2026 season",
@@ -85,18 +109,6 @@
       "summary": "We just went through and predicted the entire 2026 NFL season",
       "url": "https://www.cbssports.com/nfl/news/2026-nfl-predictions-final-record-for-all-32-teams-super-bowl-lxi-pick-playoff-matchups-and-mvp-winner/",
       "published_at": "2026-09-07T13:54:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Florida State vs. SMU, college football Monday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for SMU vs. Florida State, NFL, MLB betting on Monday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-florida-state-smu-college-football-monday/",
-      "published_at": "2026-09-07T13:53:05Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
