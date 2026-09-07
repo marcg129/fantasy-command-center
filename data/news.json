@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T23:54:30.336170Z",
+  "generated_at": "2026-09-07T04:42:31.099145Z",
   "lookback_days": 7,
   "article_count": 33,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
+      "summary": "San Francisco made room for long snapper Jon Weeks ahead of the opener in Melbourne, a move that could signal George Kittle is ready to return from an Achilles tear.",
+      "url": "https://www.cbssports.com/nfl/news/49ers-player-gets-cut-after-flying-16-hours-to-australia/",
+      "published_at": "2026-09-07T01:26:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "2026 NFL schedule: Dates, times, matchups, TV, live streaming for all 272 games",
       "summary": "Here is the full week-by-week schedule for the 2026 season",
@@ -49,18 +61,6 @@
       "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
       "url": "https://www.cbssports.com/betting/news/nfl-survivor-picks-knockout-pool-strategy-guide-advice-week-1-2026-fade-the-cowboys/",
       "published_at": "2026-09-06T16:09:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "49ers player gets cut after flying 16 hours to Australia: Why he might be sent home and why they made the move",
-      "summary": "San Francisco made room for long snapper Jon Weeks ahead of the opener in Melbourne, a move that could signal George Kittle is ready to return from an Achilles tear.",
-      "url": "https://www.cbssports.com/nfl/news/49ers-player-gets-cut-after-flying-16-hours-to-australia/",
-      "published_at": "2026-09-06T15:22:23Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
