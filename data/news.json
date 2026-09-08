@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T04:37:07.711291Z",
+  "generated_at": "2026-09-08T11:19:51.817355Z",
   "lookback_days": 7,
-  "article_count": 33,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Patriots, Christian Gonzalez agree to four-year, $135 million extension to reset the cornerback market",
+      "summary": "The record deal includes $102 million guaranteed and makes Gonzalez the highest-paid Patriot ever",
+      "url": "https://www.cbssports.com/nfl/news/patriots-christian-gonzalez-extension-cornerback/",
+      "published_at": "2026-09-08T07:31:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL survivor pool picks, advice, best knockout strategy, Week 1, 2026: Fade the Dallas Cowboys",
       "summary": "SportsLine's advanced computer model just locked in its top Week 1 NFL survivor picks",
@@ -309,18 +321,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Puka Nacua suspension watch: Will NFL discipline Rams star WR? How might a suspension impact L.A.?",
-      "summary": "The NFL's handling of Nacua remains a mystery, but it has big implications for the Rams' championship hopes",
-      "url": "https://www.cbssports.com/nfl/news/puka-nacua-suspension-watch-will-nfl-discipline-rams-star/",
-      "published_at": "2026-09-04T00:43:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Former NFL quarterback Mark Sanchez to plead guilty in Indianapolis stabbing case",
       "summary": "Sanchez and the victim are also working to resolve their civil dispute",
       "url": "https://www.cbssports.com/nfl/news/mark-sanchez-to-plead-guilty-in-stabbing-case/",
@@ -397,18 +397,6 @@
       "summary": "Arizona made a good move in locking up Wilson, who posted career highs across the board in 2025",
       "url": "https://www.cbssports.com/nfl/news/cardinals-sign-michael-wilson-to-massive-extension/",
       "published_at": "2026-09-03T19:41:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL legend Emmitt Smith accused in lawsuit of scamming company out of millions: It was 'like a Ponzi scheme'",
-      "summary": "The Cowboys legend is in hot water after being hit with a lawsuit this week",
-      "url": "https://www.cbssports.com/nfl/news/nfl-legend-emmitt-smith-accused-in-lawsuit-scam/",
-      "published_at": "2026-09-03T19:00:47Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
