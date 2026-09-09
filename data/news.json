@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-09T00:15:19.047884Z",
+  "generated_at": "2026-09-09T04:48:43.094618Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 1 picks and score predictions: Seahawks destroy Patriots in Super Bowl rematch, Rams prevail",
+      "summary": "Here's your weekly dose of John Breech's NFL picks for every game as Seattle hosts a Super Bowl rematch and Patrick Mahomes returns from injury",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-picks-and-predictions-chiefs-seahawks-patriots/",
+      "published_at": "2026-09-09T01:12:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers first-rounder Max Iheanachor has up to $200,000 in property stolen during home invasion",
+      "summary": "Iheanachor is the latest NFL player to become a burglary victim",
+      "url": "https://www.cbssports.com/nfl/news/steelers-rookie-max-iheanachor-home-invasion/",
+      "published_at": "2026-09-09T00:04:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Baker Mayfield, Buccaneers agree to massive three-year contract extension",
       "summary": "The massive contract ends tense negotiations which seemingly came to a pause at the start of training camp",
@@ -66,18 +90,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 picks and score predictions: Seahawks destroy Patriots in Super Bowl rematch, Rams prevail",
-      "summary": "Here's your weekly dose of John Breech's NFL picks for every game as Seattle hosts a Super Bowl rematch and Patrick Mahomes returns from injury",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-picks-and-predictions-chiefs-seahawks-patriots/",
-      "published_at": "2026-09-08T19:25:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
