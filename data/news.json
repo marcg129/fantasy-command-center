@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-09T04:48:43.094618Z",
+  "generated_at": "2026-09-09T11:23:54.111289Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -49,18 +49,6 @@
       "summary": "The massive contract ends tense negotiations which seemingly came to a pause at the start of training camp",
       "url": "https://www.cbssports.com/nfl/news/baker-mayfield-buccaneers-contract-extension/",
       "published_at": "2026-09-08T22:10:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Seahawks-Patriots, Ohio State-Texas, MLB today",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Tuesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-seahawks-patriots-ohio-state-texas-mlb-tuesday/",
-      "published_at": "2026-09-08T21:26:22Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -373,6 +361,18 @@
       "summary": "Players usually aren't fined this much during the preseason",
       "url": "https://www.cbssports.com/nfl/news/browns-offensive-lineman-receives-nfls-first-big-fine-of-2026-season/",
       "published_at": "2026-09-05T20:22:07Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Agent's Take: How the Rams built a salary-cap super team around Matthew Stafford",
+      "summary": "Here's how the Rams fit their stars under the salary cap and what the spending spree means for their future",
+      "url": "https://www.cbssports.com/nfl/news/agents-take-rams-2026-salary-cap-super-bowl-window/",
+      "published_at": "2026-09-05T15:18:44Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
