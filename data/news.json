@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T21:10:00.826476Z",
+  "generated_at": "2026-09-09T00:15:19.047884Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Baker Mayfield, Buccaneers agree to massive three-year contract extension",
+      "summary": "The massive contract ends tense negotiations which seemingly came to a pause at the start of training camp",
+      "url": "https://www.cbssports.com/nfl/news/baker-mayfield-buccaneers-contract-extension/",
+      "published_at": "2026-09-08T22:10:29Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Seahawks-Patriots, Ohio State-Texas, MLB today",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-seahawks-patriots-ohio-state-texas-mlb-tuesday/",
+      "published_at": "2026-09-08T21:26:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Aaron Donald will not play in Rams' opener against 49ers in Australia: When will legendary DT make 2026 debut?",
       "summary": "Donald will reportedly not even travel with the team to Melbourne",
@@ -337,54 +361,6 @@
       "summary": "Players usually aren't fined this much during the preseason",
       "url": "https://www.cbssports.com/nfl/news/browns-offensive-lineman-receives-nfls-first-big-fine-of-2026-season/",
       "published_at": "2026-09-05T20:22:07Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Agent's Take: How the Rams built a salary-cap super team around Matthew Stafford",
-      "summary": "Here's how the Rams fit their stars under the salary cap and what the spending spree means for their future",
-      "url": "https://www.cbssports.com/nfl/news/agents-take-rams-2026-salary-cap-super-bowl-window/",
-      "published_at": "2026-09-05T15:18:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 Minnesota Vikings betting preview, predictions: Four NFL player props to target before Week 1",
-      "summary": "Lock in these NFL player props for Justin Jefferson and Aaron Jones before Minnesota's Week 1 matchup against the Packers",
-      "url": "https://www.cbssports.com/betting/news/2026-minnesota-vikings-betting-preview-predictions-four-nfl-player-props-to-target-before-week-1/",
-      "published_at": "2026-09-04T19:35:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2027 NFL Draft predictions: Our experts pick No. 1 overall, biggest riser, strongest position and more",
-      "summary": "A potentially loaded quarterback class garners significant attention, but the EDGE and WR groups should also be strong",
-      "url": "https://www.cbssports.com/nfl/draft/news/2027-nfl-draft-predictions-no-1-pick-risers-sleepers/",
-      "published_at": "2026-09-04T18:45:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Pro Football Hall of Fame makes massive voting changes after Bill Belichick snub: 7 things to know",
-      "summary": "The elimination of the seniors category and reduction in the number of voters are among the biggest changes",
-      "url": "https://www.cbssports.com/nfl/news/pro-football-hall-of-fame-voting-changes-bill-belichick-snub/",
-      "published_at": "2026-09-04T16:21:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
