@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-10T00:15:26.598839Z",
+  "generated_at": "2026-09-10T04:49:54.846362Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "Patriots' A.J. Brown injures ankle, misses most of second half in loss to Seahawks",
+      "summary": "Brown limped off slowly and went to the locker room for X-rays",
+      "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
+      "published_at": "2026-09-10T04:05:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Seahawks' Sam Darnold injures hip in win over Patriots, fracture ruled out",
+      "summary": "Darnold went back to the locker room and was ruled out just before halftime",
+      "url": "https://www.cbssports.com/nfl/news/sam-darnold-hip-exits-seahawks-patriots-season-opener/",
+      "published_at": "2026-09-10T03:53:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 1 NFL picks: Rams edge 49ers, Bills end skid vs. Texans",
+      "summary": "Pete Prisco reveals all of his season-opening picks, including a healthy dose of Patrick Mahomes in a win over the Broncos",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-1-nfl-picks/",
+      "published_at": "2026-09-10T01:30:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 1 injury report: A rundown of every team's current injury situation",
+      "summary": "Here's how each team is faring from an injury standpoint",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-injury-report-a-rundown-of-every-teams-current-injury-situation/",
+      "published_at": "2026-09-09T23:58:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Seahawks vs. Patriots: Super Bowl LX rematch kicks off 2026 season as Seattle begins defense of title",
       "summary": "The 2026 NFL season begins on a Wednesday and features a rematch of Super Bowl LX",
@@ -49,18 +97,6 @@
       "summary": "A look at the markets by position for 2026",
       "url": "https://www.cbssports.com/nfl/news/highest-paid-players-at-every-nfl-position-2026/",
       "published_at": "2026-09-09T22:48:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 1 NFL picks: Seahawks dominate Patriots once again, Bills end skid vs. Texans",
-      "summary": "Pete Prisco reveals all of his season-opening picks, including a healthy dose of Patrick Mahomes in a win over the Broncos",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-1-nfl-picks/",
-      "published_at": "2026-09-09T22:47:57Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -313,30 +349,6 @@
       "summary": "Andy Reid says Mahomes has looked normal in practice, but left tackle Josh Simmons is trending toward missing Monday's opener",
       "url": "https://www.cbssports.com/nfl/news/patrick-mahomes-injury-update-chiefs-qb/",
       "published_at": "2026-09-08T18:22:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL Preseason All-Rookie Team: Fernando Mendoza, Caleb Downs headline selections",
-      "summary": "From Raiders quarterback Fernando Mendoza to Cowboys defensive back Caleb Downs, these are the rookies positioned to become major contributors in 2026",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-all-rookie-team/",
-      "published_at": "2026-09-08T18:00:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "CBS Sports predicts every NFL division winner: Experts high on Cowboys, fading Chiefs, and split on NFC North",
-      "summary": "CBS Sports experts make their top picks for every NFL division",
-      "url": "https://www.cbssports.com/nfl/news/cbs-sports-predicts-nfl-division-winners/",
-      "published_at": "2026-09-08T14:47:34Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
