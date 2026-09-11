@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T11:21:55.528512Z",
+  "generated_at": "2026-09-11T16:29:10.778879Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,15 +21,123 @@
   ],
   "articles": [
     {
-      "title": "BetMGM bonus code CBSSPORTS: Get $1,500 in bonus bets for Rams vs. 49ers in 2026 NFL Australia Game",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for 49ers vs. Rams betting on Thursday",
-      "url": "https://www.cbssports.com/betting/news/betmgm-bonus-code-cbssports-get-1500-bonus-bets-rams-49ers-2026-nfl-australia-game/",
-      "published_at": "2026-09-11T00:11:25Z",
+      "title": "Myles Garrett gets shut out vs. 49ers: What NFL's best defensive player said after listless Rams debut",
+      "summary": "Myles Garrett recorded zero tackles and zero sacks in his Rams debut, citing a lingering knee injury during the season-opening loss to the 49ers",
+      "url": "https://www.cbssports.com/nfl/news/myles-garrett-gets-shut-out-vs-49ers-what-he-said-after-listless-debut/",
+      "published_at": "2026-09-11T15:41:08Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Vikings-Packers, Cowboys-Giants markets",
+      "summary": "SportsLine's advanced model has locked in its Week 1 NFL predictions from 10,000 simulations",
+      "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-prophetx-vikings-packers-cowboys-giants-markets/",
+      "published_at": "2026-09-11T15:41:00Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Do the Dolphins have the worst roster in NFL history? A look at their cap space, signings, depth, experience",
+      "summary": "A look at what makes this Dolphins team so alarming",
+      "url": "https://www.cbssports.com/nfl/news/dolphins-roster-dead-cap-space-nfl-worst/",
+      "published_at": "2026-09-11T15:33:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 1's most underrated games: Why you should watch these three under the radar games",
+      "summary": "A look at some of the less talked about games you should be watching to kick off the 2026 season",
+      "url": "https://www.cbssports.com/nfl/news/week-1s-most-underrated-games-dolphins-raiders/",
+      "published_at": "2026-09-11T15:17:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Sean McVay defends Rams' travel schedule following ugly loss to 49ers in Australia",
+      "summary": "McVay says the 49ers were the No. 1 reason why his team fell to 0-1",
+      "url": "https://www.cbssports.com/nfl/news/sean-mcvay-rams-travel-schedule-49ers-australia/",
+      "published_at": "2026-09-11T14:43:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bills vs. Texans: Houston seeks fifth consecutive home win over Josh Allen in 2026 season opener",
+      "summary": "Buffalo has to buck a recent trend in order to start the season in the win column",
+      "url": "https://www.cbssports.com/nfl/news/bills-vs-texans-how-to-watch-preview-prediction/",
+      "published_at": "2026-09-11T14:11:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Seahawks can keep winning with Drew Lock, but history offers one big warning",
+      "summary": "History shows good teams can survive a short-term QB injury — and Seattle has the roster to do it",
+      "url": "https://www.cbssports.com/nfl/news/seahawks-can-win-with-drew-lock-history-offers-big-warning/",
+      "published_at": "2026-09-11T13:57:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 1 2026 bold predictions: Can Tua Tagovailoa best Aaron Rodgers in Pittsburgh?",
+      "summary": "Five bold predictions to start the NFL season, from Tua Tagovailoa outdoing Rodgers to Josh Allen finally overcoming his Houston woes",
+      "url": "https://www.cbssports.com/nfl/news/week-1-2026-bold-predictions-tua-tagovailoa-aaron-rodgers/",
+      "published_at": "2026-09-11T13:30:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "49ers stun sluggish Rams for NFL's first game in Australia; college football Week 2 preview",
+      "summary": "Plus our final MLB Rookie Rankings of 2026",
+      "url": "https://www.cbssports.com/nfl/news/49ers-sluggish-rams-nfl-australia-college-football-preview/",
+      "published_at": "2026-09-11T12:47:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Where to watch Colts vs. Ravens: TV channel, live stream, prediction, pick, odds, spread",
+      "summary": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons",
+      "url": "https://www.cbssports.com/nfl/news/where-to-watch-colts-vs-ravens-stream-picks-odds/",
+      "published_at": "2026-09-11T12:12:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -42,18 +150,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "FanDuel promo code: Get $350 bonus bets for Rams vs. 49ers betting, 2026 NFL Australia Game",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to make your picks for 49ers vs. Rams",
-      "url": "https://www.cbssports.com/betting/news/fanduel-promo-code-get-350-bonus-bets-rams-vs-49ers-betting-2026-nfl-australia-game/",
-      "published_at": "2026-09-10T23:42:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -73,18 +169,6 @@
       "summary": "The NFL is headed Down Under for an NFC West showdown",
       "url": "https://www.cbssports.com/nfl/news/rams-vs-49ers-preview-prediction-australia-where-to-watch/",
       "published_at": "2026-09-10T23:35:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: 49ers-Rams, Vikings-Packers markets",
-      "summary": "SportsLine's advanced model has locked in its Week 1 NFL predictions today from 10,000 simulations",
-      "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-prophetx-49ers-rams-vikings-packers-markets/",
-      "published_at": "2026-09-10T23:16:27Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -246,102 +330,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Five bold predictions for 2026 season: New MVP title contender, Saints go from worst to first in division",
-      "summary": "A young quarterback eyes an MVP campaign, while overhauled units like the Cowboys' defense and the Saints' offense look to make major leaps in 2026",
-      "url": "https://www.cbssports.com/nfl/news/five-bold-predictions-for-2026-season-jordan-love-mvp/",
-      "published_at": "2026-09-10T12:55:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 picks: Our experts face off on 49ers vs. Rams in Australia, Bills at Texans and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-picks-experts-face-off/",
-      "published_at": "2026-09-10T12:00:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Houston house of horrors: Why Josh Allen has struggled vs. Texans' turbo-charged defense",
-      "summary": "Allen faces the defense best equipped to shut him down to kick off the Bills' 2026 season",
-      "url": "https://www.cbssports.com/nfl/news/why-josh-allen-has-struggled-vs-texans-turbo-charged-defense/",
-      "published_at": "2026-09-10T11:23:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Was Carnell Tate worth the No. 4 pick? What history says about expectations for the 2026 first-round WRs",
-      "summary": "Recent history shows top-10 wide receivers average 767 yards as rookies, raising the bar for Carnell Tate after the Titans invested the No. 4 pick in the Ohio State standout",
-      "url": "https://www.cbssports.com/nfl/news/was-carnell-tate-worth-the-no-4-pick-what-history-says/",
-      "published_at": "2026-09-10T11:00:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Upset alert in Week 1? Why these 5 NFL favorites could easily drop their 2026 season openers",
-      "summary": "Chiefs, Bears are among possible teams that are on upset alert entering Week 1",
-      "url": "https://www.cbssports.com/nfl/news/nfl-teams-on-upset-alert-in-week-1/",
-      "published_at": "2026-09-10T10:00:47Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 1 NFL picks: Rams edge 49ers, Bills end skid vs. Texans",
-      "summary": "Pete Prisco reveals all of his season-opening picks, including a healthy dose of Patrick Mahomes in a win over the Broncos",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-1-nfl-picks/",
-      "published_at": "2026-09-10T01:30:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 injury report: A rundown of every team's current injury situation",
-      "summary": "Here's how each team is faring from an injury standpoint",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-injury-report-a-rundown-of-every-teams-current-injury-situation/",
-      "published_at": "2026-09-09T23:58:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Seahawks vs. Patriots: Super Bowl LX rematch kicks off 2026 season as Seattle begins defense of title",
-      "summary": "The 2026 NFL season begins on a Wednesday and features a rematch of Super Bowl LX",
-      "url": "https://www.cbssports.com/nfl/news/seahawks-vs-patriots-where-to-watch-tv-streaming-odds-prediction/",
-      "published_at": "2026-09-09T23:15:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
