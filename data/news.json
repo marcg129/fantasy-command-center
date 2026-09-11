@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T00:10:42.577329Z",
+  "generated_at": "2026-09-11T04:41:07.593479Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "BetMGM bonus code CBSSPORTS: Get $1,500 in bonus bets for Rams vs. 49ers in 2026 NFL Australia Game",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for 49ers vs. Rams betting on Thursday",
+      "url": "https://www.cbssports.com/betting/news/betmgm-bonus-code-cbssports-get-1500-bonus-bets-rams-49ers-2026-nfl-australia-game/",
+      "published_at": "2026-09-11T00:11:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Patriots' A.J. Brown believed to have suffered high ankle sprain, expected to miss four weeks",
       "summary": "Brown will have an MRI today to determine the severity of the injury",
@@ -325,30 +337,6 @@
       "summary": "The 2026 NFL season begins on a Wednesday and features a rematch of Super Bowl LX",
       "url": "https://www.cbssports.com/nfl/news/seahawks-vs-patriots-where-to-watch-tv-streaming-odds-prediction/",
       "published_at": "2026-09-09T23:15:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Highest-paid players at every NFL position: Christian Gonzalez resets cornerback market with $132-million deal",
-      "summary": "A look at the markets by position for 2026",
-      "url": "https://www.cbssports.com/nfl/news/highest-paid-players-at-every-nfl-position-2026/",
-      "published_at": "2026-09-09T22:48:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Seahawks vs. Patriots: Why the NFL season is opening on a Wednesday for just the second time in 107 years",
-      "summary": "The league shifted the Patriots-Seahawks rematch to Wednesday so the defending champions could open the season ahead of a Thursday night kickoff in Australia.",
-      "url": "https://www.cbssports.com/nfl/news/patriots-at-seahawks-why-nfl-season-is-opening-wednesday/",
-      "published_at": "2026-09-09T22:45:54Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
