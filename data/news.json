@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-12T12:10:26.658645Z",
+  "generated_at": "2026-09-12T15:32:07.201453Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 1 odds, predictions, expert picks: Who has edge in Bills-Texans? Can Saints upset Lions?",
+      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 1",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-odds-expert-picks-best-bets-teasers-survivor/",
+      "published_at": "2026-09-12T15:18:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Tucker Kraft agrees to contract extension with Packers, earns top-three deal among tight ends, per report",
+      "summary": "Kraft and the Packers came to terms on a deal just over 24 hours out from the season opener",
+      "url": "https://www.cbssports.com/nfl/news/tucker-kraft-agrees-to-contract-extension-packers/",
+      "published_at": "2026-09-12T15:11:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 1 injuries: Giants' Malik Nabers, Bears' Rome Odunze listed as questionable",
       "summary": "Malik Nabers and Rome Odunze are questionable for the season opener, while Cameron Jordan is ruled out and Jonathon Brooks is cleared to return for the Panthers",
@@ -342,18 +366,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Aaron Rodgers responds to Packers' LaFleur saying Jordan Love is better pre-snap QB: 'Matt's a clown, man'",
-      "summary": "The four-time MVP laughed at the Packers' head coach, who praised Jordan Love's pre-snap quarterback abilities this offseason",
-      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-responds-to-packers-lafleur-jordan-love/",
-      "published_at": "2026-09-10T19:13:20Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
