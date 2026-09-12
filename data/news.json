@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-12T18:23:53.641379Z",
+  "generated_at": "2026-09-12T22:18:11.247156Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,10 @@
   ],
   "articles": [
     {
-      "title": "Lions restructure two contracts: What salary cap flexibility means for Sam LaPorta, Brian Branch extensions",
-      "summary": "Detroit reworked the deals of Amon-Ra St. Brown and Penei Sewell",
-      "url": "https://www.cbssports.com/nfl/news/lions-restructure-two-contracts-salary-cap-flexibility/",
-      "published_at": "2026-09-12T17:21:38Z",
+      "title": "Tucker Kraft, Michael Mayer join highest-paid tight ends with contract extensions",
+      "summary": "Kraft and Mayer came to terms with their teams just over 24 hours out from their season openers",
+      "url": "https://www.cbssports.com/nfl/news/tucker-kraft-agrees-to-contract-extension-packers/",
+      "published_at": "2026-09-12T18:49:56Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,10 +33,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Tucker Kraft, Michael Mayer join highest-paid tight ends with contract extensions",
-      "summary": "Kraft and Mayer came to terms with their teams just over 24 hours out from their season openers",
-      "url": "https://www.cbssports.com/nfl/news/tucker-kraft-agrees-to-contract-extension-packers/",
-      "published_at": "2026-09-12T15:59:55Z",
+      "title": "Lions restructure two contracts: What salary cap flexibility means for Sam LaPorta, Brian Branch extensions",
+      "summary": "Detroit reworked the deals of Amon-Ra St. Brown and Penei Sewell",
+      "url": "https://www.cbssports.com/nfl/news/lions-restructure-two-contracts-salary-cap-flexibility/",
+      "published_at": "2026-09-12T17:21:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -85,18 +85,6 @@
       "summary": "A wide-open division race kicks off in Week 1",
       "url": "https://www.cbssports.com/nfl/news/packers-vs-vikings-how-to-watch-preview-prediction/",
       "published_at": "2026-09-12T15:22:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 odds, predictions, expert picks: Who has edge in Bills-Texans? Can Saints upset Lions?",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 1",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-odds-expert-picks-best-bets-teasers-survivor/",
-      "published_at": "2026-09-12T15:18:35Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -162,18 +150,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 1 NFL picks: Bills end skid vs. Texans, Packers edge Vikings",
-      "summary": "Pete Prisco reveals all of his season-opening picks, including a healthy dose of Patrick Mahomes in a win over the Broncos",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-1-nfl-picks/",
-      "published_at": "2026-09-11T18:28:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -378,6 +354,18 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Previewing Rams vs. 49ers: Prediction as NFC west rivals clash in NFL Australia Game",
+      "summary": "The NFL is headed Down Under for an NFC West showdown",
+      "url": "https://www.cbssports.com/nfl/news/rams-vs-49ers-preview-prediction-australia-where-to-watch/",
+      "published_at": "2026-09-10T23:35:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
