@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T00:18:31.414505Z",
+  "generated_at": "2026-09-12T07:09:35.374493Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -145,18 +145,6 @@
       "summary": "A look at where to watch the Week 1 matchup in Jacksonville, as well as the top storylines to follow",
       "url": "https://www.cbssports.com/nfl/news/browns-vs-jaguars-how-to-watch-pick-spread-odds/",
       "published_at": "2026-09-11T17:16:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "How to bet on 2026 NFL Week 1: Betting guide, odds, game previews, trends, schedule, promo codes, more offers",
-      "summary": "Our NFL betting guide tells you where to bet on NFL Week 1, while providing odds, betting trends, schedule, promo offers, and more",
-      "url": "https://www.cbssports.com/betting/news/how-to-bet-on-2026-nfl-week-1-betting-guide-odds-game-previews-trends-schedule-promo-codes-more-offers/",
-      "published_at": "2026-09-11T16:34:29Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -354,6 +342,18 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Aaron Rodgers responds to Packers' LaFleur saying Jordan Love is better pre-snap QB: 'Matt's a clown, man'",
+      "summary": "The four-time MVP laughed at the Packers' head coach, who praised Jordan Love's pre-snap quarterback abilities this offseason",
+      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-responds-to-packers-lafleur-jordan-love/",
+      "published_at": "2026-09-10T19:13:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
