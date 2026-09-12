@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T20:58:17.865337Z",
+  "generated_at": "2026-09-12T00:18:31.414505Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 1 injuries: Giants' Malik Nabers, Bears' Rome Odunze listed as questionable",
+      "summary": "Malik Nabers and Rome Odunze are questionable for the season opener, while Cameron Jordan is ruled out and Jonathon Brooks is cleared to return for the Panthers",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-injuries-tracker-rome-odunze-alvin-kamara/",
+      "published_at": "2026-09-11T23:50:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
     {
       "title": "Steelers' Joey Porter Jr. denies seeking record contract as Week 1 deadline approaches",
       "summary": "Contract negotiations remain unresolved, but Porter says the business side of the NFL has not changed his desire to stay in Pittsburgh",
@@ -42,18 +54,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 injuries: Bears wideout Rome Odunze, Saints running back Alvin Kamara listed as questionable",
-      "summary": "Alvin Kamara and Rome Odunze are questionable for the season opener, while Cameron Jordan is ruled out and Jonathon Brooks is cleared to return for the Panthers",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-injuries-tracker-rome-odunze-alvin-kamara/",
-      "published_at": "2026-09-11T20:00:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     },
     {
