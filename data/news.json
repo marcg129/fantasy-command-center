@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-12T15:32:07.201453Z",
+  "generated_at": "2026-09-12T18:23:53.641379Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,10 @@
   ],
   "articles": [
     {
-      "title": "NFL Week 1 odds, predictions, expert picks: Who has edge in Bills-Texans? Can Saints upset Lions?",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 1",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-odds-expert-picks-best-bets-teasers-survivor/",
-      "published_at": "2026-09-12T15:18:35Z",
+      "title": "Lions restructure two contracts: What salary cap flexibility means for Sam LaPorta, Brian Branch extensions",
+      "summary": "Detroit reworked the deals of Amon-Ra St. Brown and Penei Sewell",
+      "url": "https://www.cbssports.com/nfl/news/lions-restructure-two-contracts-salary-cap-flexibility/",
+      "published_at": "2026-09-12T17:21:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,10 +33,70 @@
       "confidence": 0.88
     },
     {
-      "title": "Tucker Kraft agrees to contract extension with Packers, earns top-three deal among tight ends, per report",
-      "summary": "Kraft and the Packers came to terms on a deal just over 24 hours out from the season opener",
+      "title": "Tucker Kraft, Michael Mayer join highest-paid tight ends with contract extensions",
+      "summary": "Kraft and Mayer came to terms with their teams just over 24 hours out from their season openers",
       "url": "https://www.cbssports.com/nfl/news/tucker-kraft-agrees-to-contract-extension-packers/",
-      "published_at": "2026-09-12T15:11:35Z",
+      "published_at": "2026-09-12T15:59:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Titans vs. Jets: Robert Saleh makes debut as Tennessee coach against team that fired him",
+      "summary": "Saleh begins his tenure in Tennessee against his former team as both squads feature overhauled rosters and starting quarterbacks looking for a fresh start in Week 1",
+      "url": "https://www.cbssports.com/nfl/news/titans-vs-jets-where-to-watch-odds-prediction/",
+      "published_at": "2026-09-12T15:57:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cardinals vs. Chargers: Justin Herbert debuts new-look offense under Mike McDaniel for Los Angeles",
+      "summary": "Everything you need to know before Week 1's matchup, including storylines, predictions, and more",
+      "url": "https://www.cbssports.com/nfl/news/cardinals-vs-chargers-where-to-watch-prediction-odds/",
+      "published_at": "2026-09-12T15:42:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "How to bet on 2026 NFL Week 1: Betting guide, odds, trends, game previews, schedule, promo codes, more offers",
+      "summary": "Our NFL betting guide tells you where to bet on NFL Week 1, while providing odds, betting trends, schedule, promo offers, and more",
+      "url": "https://www.cbssports.com/betting/news/how-to-bet-on-2026-nfl-week-1-betting-guide-odds-trends-game-previews-schedule-promo-codes-more-offers/",
+      "published_at": "2026-09-12T15:27:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Packers vs. Vikings: Kyler Murray opens Minnesota career in NFC North showdown",
+      "summary": "A wide-open division race kicks off in Week 1",
+      "url": "https://www.cbssports.com/nfl/news/packers-vs-vikings-how-to-watch-preview-prediction/",
+      "published_at": "2026-09-12T15:22:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 1 odds, predictions, expert picks: Who has edge in Bills-Texans? Can Saints upset Lions?",
+      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 1",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-odds-expert-picks-best-bets-teasers-survivor/",
+      "published_at": "2026-09-12T15:18:35Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -318,54 +378,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "Previewing Rams vs. 49ers: Prediction as NFC west rivals clash in NFL Australia Game",
-      "summary": "The NFL is headed Down Under for an NFC West showdown",
-      "url": "https://www.cbssports.com/nfl/news/rams-vs-49ers-preview-prediction-australia-where-to-watch/",
-      "published_at": "2026-09-10T23:35:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Tua Tagovailoa day-to-day with oblique strain, status uncertain for Week 1: Who's up next for Falcons?",
-      "summary": "A look at the Falcons' depth chart if the top two QBs are unavailable against the Steelers",
-      "url": "https://www.cbssports.com/nfl/news/tua-tagovailoa-appears-to-suffer-injury-whos-next-michael-penix/",
-      "published_at": "2026-09-10T22:57:20Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Former NFL RB LeShon Johnson sentenced to five years in prison for operating dogfighting ring",
-      "summary": "Johnson surrendered 190 dogs, the largest number taken from one individual in a federal dogfighting case, according to the Department of Justice",
-      "url": "https://www.cbssports.com/nfl/news/nfl-leshon-johnson-prison-dogfighting/",
-      "published_at": "2026-09-10T22:56:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Malik Nabers injury status: Giants WR plays coy about Week 1 vs. Cowboys: 'I can't put my career at risk'",
-      "summary": "If Nabers plays in the season opener, it would be his first game action since September 2025",
-      "url": "https://www.cbssports.com/nfl/news/malik-nabers-injury-update-giants-cowboys/",
-      "published_at": "2026-09-10T21:41:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
