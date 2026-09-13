@@ -4,6 +4,23 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.14.1 — Positional Coverage Logic
+**2026-09-13**
+
+- Add required-position coverage detection using the league's actual starting roster positions.
+- Treat OUT / IR / PUP / NFI / DOUBTFUL players as unavailable for coverage planning while leaving ordinary QUESTIONABLE players usable unless later ruled out.
+- Detect when the connected roster does not have enough usable players to fill a required QB, RB, WR, TE, K, or DEF starting slot.
+- Temporarily boost legitimate free agents at an uncovered position instead of suppressing them as redundant depth.
+- Add a visible POSITIONAL COVERAGE PRIORITY banner to Best Available Adds.
+- Add COVERAGE NEED labels to relevant free-agent recommendations.
+- Propagate the same coverage need into Add/Drop Opportunities and Waiver Claim Planner.
+- Make coverage-restoring waiver claims more urgent without bypassing roster-value and transaction guardrails.
+- Add Coverage Priority to the Weekly Action Plan, including the top available replacement when one is detected.
+- Keep the injured starter protected from ordinary churn; replacement adds are compared against expendable bench assets instead.
+- Automatically remove the emergency boost once a usable replacement is actually on the roster.
+- Preserve the existing 24-hour recent-add protection, so a newly acquired replacement is not immediately suggested as the next drop.
+- Keep v2.14 Weekly Outlook, Start/Sit, trade, injury-freshness, and roster-utility logic otherwise unchanged.
+
 ## v2.14 — Weekly Outlook & Opportunity Engine
 **2026-09-01**
 
