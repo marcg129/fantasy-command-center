@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-12T22:18:11.247156Z",
+  "generated_at": "2026-09-13T04:48:33.920030Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Giants vs. Cowboys: NFC East rivals square off on 'Sunday Night Football' in John Harbaugh's debut",
+      "summary": "The league kicks off the first Sunday night of the season with a familiar matchup that now has plenty of new faces",
+      "url": "https://www.cbssports.com/nfl/news/giants-vs-cowboys-prediction-pick-odds-where-to-watch/",
+      "published_at": "2026-09-13T00:41:07Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 1 picks: Experts face off Bills at Texans, Packers-Vikings and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-picks-experts-face-off/",
+      "published_at": "2026-09-13T00:16:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Tucker Kraft, Michael Mayer join highest-paid tight ends with contract extensions",
       "summary": "Kraft and Mayer came to terms with their teams just over 24 hours out from their season openers",
@@ -45,46 +69,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Titans vs. Jets: Robert Saleh makes debut as Tennessee coach against team that fired him",
-      "summary": "Saleh begins his tenure in Tennessee against his former team as both squads feature overhauled rosters and starting quarterbacks looking for a fresh start in Week 1",
-      "url": "https://www.cbssports.com/nfl/news/titans-vs-jets-where-to-watch-odds-prediction/",
-      "published_at": "2026-09-12T15:57:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cardinals vs. Chargers: Justin Herbert debuts new-look offense under Mike McDaniel for Los Angeles",
-      "summary": "Everything you need to know before Week 1's matchup, including storylines, predictions, and more",
-      "url": "https://www.cbssports.com/nfl/news/cardinals-vs-chargers-where-to-watch-prediction-odds/",
-      "published_at": "2026-09-12T15:42:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "How to bet on 2026 NFL Week 1: Betting guide, odds, trends, game previews, schedule, promo codes, more offers",
       "summary": "Our NFL betting guide tells you where to bet on NFL Week 1, while providing odds, betting trends, schedule, promo offers, and more",
       "url": "https://www.cbssports.com/betting/news/how-to-bet-on-2026-nfl-week-1-betting-guide-odds-trends-game-previews-schedule-promo-codes-more-offers/",
       "published_at": "2026-09-12T15:27:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Packers vs. Vikings: Kyler Murray opens Minnesota career in NFC North showdown",
-      "summary": "A wide-open division race kicks off in Week 1",
-      "url": "https://www.cbssports.com/nfl/news/packers-vs-vikings-how-to-watch-preview-prediction/",
-      "published_at": "2026-09-12T15:22:30Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -201,18 +189,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Browns vs. Jaguars: What you need to know for the underrated matchup in Jacksonville",
-      "summary": "A look at where to watch the Week 1 matchup in Jacksonville, as well as the top storylines to follow",
-      "url": "https://www.cbssports.com/nfl/news/browns-vs-jaguars-how-to-watch-pick-spread-odds/",
-      "published_at": "2026-09-11T17:16:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Jeremiyah Love expected to play in Week 1 but questions remain about his workload",
       "summary": "The Cardinals expect their first-round running back to play against the Chargers, but there are still questions to answer",
       "url": "https://www.cbssports.com/nfl/news/jeremiyah-love-injury-update-cardinals-chargers/",
@@ -297,18 +273,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Bills vs. Texans: Houston seeks fifth consecutive home win over Josh Allen in 2026 season opener",
-      "summary": "Buffalo has to buck a recent trend in order to start the season in the win column",
-      "url": "https://www.cbssports.com/nfl/news/bills-vs-texans-how-to-watch-preview-prediction/",
-      "published_at": "2026-09-11T14:11:49Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Seahawks can keep winning with Drew Lock, but history offers one big warning",
       "summary": "History shows good teams can survive a short-term QB injury — and Seattle has the roster to do it",
       "url": "https://www.cbssports.com/nfl/news/seahawks-can-win-with-drew-lock-history-offers-big-warning/",
@@ -333,18 +297,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Where to watch Colts vs. Ravens: TV channel, live stream, prediction, pick, odds, spread",
-      "summary": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons",
-      "url": "https://www.cbssports.com/nfl/news/where-to-watch-colts-vs-ravens-stream-picks-odds/",
-      "published_at": "2026-09-11T12:12:21Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "Patriots' A.J. Brown believed to have suffered high ankle sprain, expected to miss four weeks",
       "summary": "Brown will have an MRI today to determine the severity of the injury",
       "url": "https://www.cbssports.com/nfl/news/patriots-a-j-brown-injures-ankle-ruled-out/",
@@ -361,6 +313,18 @@
       "summary": "The NFL is headed Down Under for an NFC West showdown",
       "url": "https://www.cbssports.com/nfl/news/rams-vs-49ers-preview-prediction-australia-where-to-watch/",
       "published_at": "2026-09-10T23:35:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Former NFL RB LeShon Johnson sentenced to five years in prison for operating dogfighting ring",
+      "summary": "Johnson surrendered 190 dogs, the largest number taken from one individual in a federal dogfighting case, according to the Department of Justice",
+      "url": "https://www.cbssports.com/nfl/news/nfl-leshon-johnson-prison-dogfighting/",
+      "published_at": "2026-09-10T22:56:32Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
