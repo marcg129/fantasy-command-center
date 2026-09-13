@@ -21,419 +21,51 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v7
-        with:
-          python-version: "3.12"
-
-      - name: Apply v2.14.1 positional coverage
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-
-          p=Path('index.html')
-          text=p.read_text(encoding='utf-8')
-          if 'v2.14.1' not in text:
-              text=text.replace('Multi-manager beta • weekly outlook engine • v2.14','Multi-manager beta • weekly outlook engine • v2.14.1')
-              text=text.replace('v2.14 weekly beta uses','v2.14.1 weekly beta uses')
-
-              css='.outlook-confidence.low{color:#fca5a5}\n'
-              extra=css+'''.coverage-priority{border-color:#8a6a00!important;background:#302b08!important;color:#fde68a!important}\n.coverage-priority b{color:#fff1a8}\n.coverage-chip{display:inline-flex;align-items:center;border:1px solid #9a7500;border-radius:999px;padding:2px 6px;font-size:9px;font-weight:900;color:#fde68a;background:#2f2906}\n'''
-              if css not in text: raise SystemExit('v2.14.1 CSS anchor missing')
-              text=text.replace(css,extra,1)
-
-              anchor="  function freeAgentScore(b,ctx,addMap,dropMap,mode='weekly') {"
-              i=text.index(anchor)
-              helpers=r'''  function requiredStarterCounts() {
-            const out={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0};
-            const positions=state.league?.roster_positions||[];
-            for(const raw of positions) {
-              let pos=String(raw||'').toUpperCase();
-              if(pos==='DST') pos='DEF';
-              if(Object.prototype.hasOwnProperty.call(out,pos)) out[pos]++;
-            }
-            if(!positions.length) { out.QB=1; out.RB=2; out.WR=2; out.TE=1; out.K=1; out.DEF=1; }
-            return out;
-          }
-
-          function playerUsableForRequiredStart(p) {
-            if(!p) return false;
-            const injury=normalizedInjuryStatus(p);
-            const status=String(p.status||'').toUpperCase();
-            if(['OUT','IR','PUP','NFI','DOUBTFUL','SUSPENDED','SUSP'].some(x=>injury.startsWith(x))) return false;
-            if(['INACTIVE','OUT','IR','PUP','NFI','SUSPENDED'].includes(status)) return false;
-            return true;
-          }
-
-          function positionalCoverageNeeds(ctx) {
-            const required=requiredStarterCounts();
-            const usable={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0};
-            const unavailable={QB:[],RB:[],WR:[],TE:[],K:[],DEF:[]};
-            for(const id of ctx.players||[]) {
-              if(ctx.reserve.has(String(id))) continue;
-              const p=state.players[String(id)];
-              if(!p) continue;
-              const pos=normalizedFantasyPos(p);
-              if(!Object.prototype.hasOwnProperty.call(usable,pos)) continue;
-              if(playerUsableForRequiredStart(p)) usable[pos]++;
-              else unavailable[pos].push(pName(p));
-            }
-            const needs=[];
-            for(const pos of Object.keys(required)) {
-              const req=Number(required[pos])||0;
-              if(req<=0) continue;
-              const have=Number(usable[pos])||0;
-              const shortage=Math.max(0,req-have);
-              if(shortage>0) needs.push({pos,required:req,usable:have,shortage,unavailable:unavailable[pos]||[],severity:(['QB','TE','K','DEF'].includes(pos)?3:2)+Math.min(2,shortage)});
-            }
-            return needs.sort((a,b)=>b.severity-a.severity || b.shortage-a.shortage);
-          }
-
-          function coverageNeedForPosition(ctx,pos) { return positionalCoverageNeeds(ctx).find(x=>x.pos===pos)||null; }
-          function hasCoverageNeed(ctx,pos) { return !!coverageNeedForPosition(ctx,pos); }
-          function coverageBoostForFreeAgent(ctx,pos) {
-            const need=coverageNeedForPosition(ctx,pos);
-            if(!need) return 0;
-            const base=['QB','TE','K','DEF'].includes(pos)?30:22;
-            return base+Math.min(8,(need.shortage-1)*4);
-          }
-
-          '''
-              text=text[:i]+helpers+text[i:]
-
-              old="""    // Strongly suppress redundant one-starter positions.
-            if(b.pos==='QB') {
-              if(ctx.counts.QB>=1) v-=22;
-              if(ctx.counts.QB>=2) v-=22;
-              if(strongQBAlreadySolved(ctx)) v-=35;
-            }
-            if(b.pos==='TE') {
-              if(ctx.counts.TE>=1) v-=14;
-              if(ctx.counts.TE>=2) v-=8;
-            }
-            if(b.pos==='K' && ctx.counts.K>=1) v-=28;
-            if(b.pos==='DEF' && ctx.counts.DEF>=1) v-=26;
-          """
-              new="""    // Required-position coverage takes precedence over ordinary redundancy.
-            const coverageNeed=coverageNeedForPosition(ctx,b.pos);
-            if(coverageNeed) v+=coverageBoostForFreeAgent(ctx,b.pos);
-            if(b.pos==='QB') {
-              if(!coverageNeed && ctx.counts.QB>=1) v-=22;
-              if(!coverageNeed && ctx.counts.QB>=2) v-=22;
-              if(!coverageNeed && strongQBAlreadySolved(ctx)) v-=35;
-            }
-            if(b.pos==='TE') {
-              if(!coverageNeed && ctx.counts.TE>=1) v-=14;
-              if(!coverageNeed && ctx.counts.TE>=2) v-=8;
-            }
-            if(b.pos==='K' && !coverageNeed && ctx.counts.K>=1) v-=28;
-            if(b.pos==='DEF' && !coverageNeed && ctx.counts.DEF>=1) v-=26;
-          """
-              if old not in text: raise SystemExit('v2.14.1 free-agent anchor missing')
-              text=text.replace(old,new,1)
-              text=text.replace("      if(b.pos==='TE' && ctx.counts.TE>=1) v-=6;","      if(b.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE')) v-=6;",1)
-              text=text.replace(".filter(b=>!(b.pos==='QB' && qbSolved))",".filter(b=>!(b.pos==='QB' && qbSolved && !hasCoverageNeed(ctx,'QB')))",1)
-
-              old="""    const reasons=[];
-            const adds=addMap.get(String(b.player_id))||0;
-          """
-              new="""    const reasons=[];
-            const adds=addMap.get(String(b.player_id))||0;
-            const coverageNeed=coverageNeedForPosition(ctx,b.pos);
-            if(coverageNeed) reasons.push(`URGENT ${b.pos} COVERAGE`);
-          """
-              if old not in text: raise SystemExit('v2.14.1 reasons anchor missing')
-              text=text.replace(old,new,1)
-
-              old="""    $('weeklyAdds').innerHTML=shown.map((b,i)=>{
-            const cls=b.weeklyValue>=72?'strong':(b.weeklyValue>=60?'watch':'');
-            return `<div class="waiver-row ${cls}">
-          """
-              new="""    const coverageNeeds=positionalCoverageNeeds(ctx);
-            const coverageBanner=coverageNeeds.length
-              ? `<div class="goodbox coverage-priority" style="margin-bottom:8px"><b>POSITIONAL COVERAGE PRIORITY:</b> ${coverageNeeds.map(n=>{ const names=n.unavailable.length?` (${n.unavailable.map(esc).join(', ')} unavailable)`:''; return `${n.pos}: ${n.usable}/${n.required} usable${names}`; }).join(' • ')}. Available players at these positions are temporarily boosted until a legal usable starter is restored.</div>`
-              : '';
-            $('weeklyAdds').innerHTML=coverageBanner + shown.map((b,i)=>{
-              const coverageNeed=coverageNeedForPosition(ctx,b.pos);
-              const cls=coverageNeed?'strong':(b.weeklyValue>=72?'strong':(b.weeklyValue>=60?'watch':''));
-              return `<div class="waiver-row ${cls}">
-          """
-              if old not in text: raise SystemExit('v2.14.1 adds anchor missing')
-              text=text.replace(old,new,1)
-              old='''          <div class="whyline">${esc(freeAgentReasons(b,ctx,addMap))}</div>\n'''
-              new='''          <div class="whyline">${coverageNeed?`<span class="coverage-chip">COVERAGE NEED</span> `:''}${esc(freeAgentReasons(b,ctx,addMap))}</div>\n'''
-              if old not in text: raise SystemExit('v2.14.1 add reason anchor missing')
-              text=text.replace(old,new,1)
-
-              text=text.replace("    if(b.pos==='TE' && ctx.counts.TE>=1) s-=16;","    if(b.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE')) s-=16;",1)
-              text=text.replace(".filter(b=>!(b.pos==='TE' && ctx.counts.TE>=1 && b.ecrRank>60))",".filter(b=>!(b.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE') && b.ecrRank>60))",1)
-              text=text.replace(".filter(x=>!(x.pos==='TE' && ctx.counts.TE>=1 && x.ecrRank>60))",".filter(x=>!(x.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE') && x.ecrRank>60))",1)
-
-              old="""      if(churn.redundantQB && ['RB','WR'].includes(add.pos)) gap+=5;
-            if(churn.redundantTE && ['RB','WR'].includes(add.pos)) gap+=3;
-
-            return {add,drop:churn,gap,keepValue};
-          """
-              new="""      if(churn.redundantQB && ['RB','WR'].includes(add.pos)) gap+=5;
-            if(churn.redundantTE && ['RB','WR'].includes(add.pos)) gap+=3;
-            const coverageNeed=coverageNeedForPosition(ctx,add.pos);
-            if(coverageNeed) gap+=6;
-            return {add,drop:churn,gap,keepValue,coverageNeed};
-          """
-              if old not in text: raise SystemExit('v2.14.1 moves anchor missing')
-              text=text.replace(old,new,1)
-              old="""          <div class="whyline">${verdict} • roster-utility gap ${m.gap>=0?'+':''}${Math.round(m.gap)} versus ${esc(m.drop.name)}'s effective keep value ${Math.round(m.keepValue)}. ${verdict==='HOLD / MONITOR'?'The available player does not currently clear the churn threshold. ':''}Verify current news/role before submitting.</div>
-          """
-              new="""          <div class="whyline">${m.coverageNeed?`<span class="coverage-chip">${m.add.pos} COVERAGE</span> `:''}${verdict} • roster-utility gap ${m.gap>=0?'+':''}${Math.round(m.gap)} versus ${esc(m.drop.name)}'s effective keep value ${Math.round(m.keepValue)}. ${m.coverageNeed?'This move restores a currently uncovered required starting position. ':''}${verdict==='HOLD / MONITOR'?'The available player does not currently clear the churn threshold. ':''}Verify current news/role before submitting.</div>
-          """
-              if old not in text: raise SystemExit('v2.14.1 move copy anchor missing')
-              text=text.replace(old,new,1)
-
-              old="""      let urgencyScore=m.gap + competition.level*1.5;
-            if(m.add.trendAdds>=20000) urgencyScore+=1.5;
-
-            let verdict='HOLD / MONITOR';
-          """
-              new="""      let urgencyScore=m.gap + competition.level*1.5;
-            if(m.add.trendAdds>=20000) urgencyScore+=1.5;
-            if(m.coverageNeed) urgencyScore+=8;
-
-            let verdict='HOLD / MONITOR';
-          """
-              if old not in text: raise SystemExit('v2.14.1 waiver urgency anchor missing')
-              text=text.replace(old,new,1)
-              old="""      if(m.gap>=threshold+4) {
-            verdict=profile.waiverBudget!==null?'AGGRESSIVE CLAIM':'WORTH USING PRIORITY';
-            cls='claim-burn';
-          } else if(m.gap>=threshold) {
-          """
-              new="""      if(m.coverageNeed && m.gap>=Math.max(5,threshold-6)) {
-            verdict=profile.waiverBudget!==null?'COVERAGE PRIORITY':'COVERAGE CLAIM';
-            cls='claim-burn';
-          } else if(m.gap>=threshold+4) {
-            verdict=profile.waiverBudget!==null?'AGGRESSIVE CLAIM':'WORTH USING PRIORITY';
-            cls='claim-burn';
-          } else if(m.gap>=threshold) {
-          """
-              if old not in text: raise SystemExit('v2.14.1 waiver verdict anchor missing')
-              text=text.replace(old,new,1)
-              old="""              i===0
-                ? `Highest-priority target based on roster upgrade and expected competition.`
-                : `Fallback target if higher claims fail or are not worth the cost.`
-          """
-              new="""              m.coverageNeed
-                ? `This claim restores a currently uncovered required ${m.add.pos} starting slot.`
-                : (i===0
-                    ? `Highest-priority target based on roster upgrade and expected competition.`
-                    : `Fallback target if higher claims fail or are not worth the cost.`)
-          """
-              if old not in text: raise SystemExit('v2.14.1 waiver copy anchor missing')
-              text=text.replace(old,new,1)
-
-              old="""    if(ctx.activeOverage>0) {
-            items.push(`<b>Roster cleanup required:</b> you currently have ${ctx.activeOverage} more active player${ctx.activeOverage===1?'':'s'} than the normal roster capacity detected by the app.`);
-          }
-            const newsFlags=ctx.players
-          """
-              new="""    if(ctx.activeOverage>0) {
-            items.push(`<b>Roster cleanup required:</b> you currently have ${ctx.activeOverage} more active player${ctx.activeOverage===1?'':'s'} than the normal roster capacity detected by the app.`);
-          }
-            const coverageNeeds=positionalCoverageNeeds(ctx);
-            if(coverageNeeds.length) {
-              const n=coverageNeeds[0];
-              const affected=n.unavailable.length?` ${n.unavailable.join(', ')} ${n.unavailable.length===1?'is':'are'} currently unlikely/unavailable.`:'';
-              const topCoverage=(pool||[]).find(x=>x.pos===n.pos);
-              items.push(`<b>Coverage priority:</b> only ${n.usable} usable ${n.pos}${n.usable===1?' is':'s are'} available for ${n.required} required starting slot${n.required===1?'':'s'}.${esc(affected)} ${topCoverage?`Top available replacement: ${esc(topCoverage.name)}.`:'Review available replacements immediately.'}`);
-            }
-            const newsFlags=ctx.players
-          """
-              if old not in text: raise SystemExit('v2.14.1 action-plan anchor missing')
-              text=text.replace(old,new,1)
-
-              text=text.replace('v2.14 now centralizes the available weekly signals into a shared Outlook score and data-confidence layer.','v2.14.1 now centralizes weekly signals and also propagates uncovered required-position needs into Best Available Adds, Add/Drop, Waiver Claims, and the Weekly Action Plan.')
-              text=text.replace('a shared Weekly Outlook & Opportunity engine, nflverse schedule/game-environment context','a shared Weekly Outlook & Opportunity engine, required-position coverage logic, nflverse schedule/game-environment context')
-
-          p.write_text(text,encoding='utf-8')
-
-          c=Path('CHANGELOG.md')
-          changelog=c.read_text(encoding='utf-8')
-          entry='''## v2.14.1 — Positional Coverage Logic\n**2026-09-13**\n\n- Add required-position coverage detection using the league's actual starting roster positions.\n- Treat OUT / IR / PUP / NFI / DOUBTFUL players as unavailable for coverage planning while leaving ordinary QUESTIONABLE players usable unless later ruled out.\n- Detect when the connected roster does not have enough usable players to fill a required QB, RB, WR, TE, K, or DEF starting slot.\n- Temporarily boost legitimate free agents at an uncovered position instead of suppressing them as redundant depth.\n- Add a visible POSITIONAL COVERAGE PRIORITY banner to Best Available Adds.\n- Add COVERAGE NEED labels to relevant free-agent recommendations.\n- Propagate the same coverage need into Add/Drop Opportunities and Waiver Claim Planner.\n- Make coverage-restoring waiver claims more urgent without bypassing roster-value and transaction guardrails.\n- Add Coverage Priority to the Weekly Action Plan, including the top available replacement when one is detected.\n- Keep the injured starter protected from ordinary churn; replacement adds are compared against expendable bench assets instead.\n- Automatically remove the emergency boost once a usable replacement is actually on the roster.\n- Preserve the existing 24-hour recent-add protection, so a newly acquired replacement is not immediately suggested as the next drop.\n- Keep v2.14 Weekly Outlook, Start/Sit, trade, injury-freshness, and roster-utility logic otherwise unchanged.\n\n'''
-          if '## v2.14.1 — Positional Coverage Logic' not in changelog:
-              pos=changelog.find('## v2.14')
-              changelog=changelog[:pos]+entry+changelog[pos:]
-              c.write_text(changelog,encoding='utf-8')
-          PY
-
-      - name: Validate v2.14.1 JavaScript
-        shell: bash
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re
-          t=Path('index.html').read_text(encoding='utf-8')
-          Path('/tmp/app.js').write_text('\n'.join(re.findall(r'<script>(.*?)</script>',t,re.S)),encoding='utf-8')
-          PY
-          node --check /tmp/app.js
-
-      - name: Commit v2.14.1
+      - name: Configure Git
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Apply v2.14.1 positional coverage
+        shell: bash
+        run: |
+          echo 'H4sICB8wp2oCA3YyMTRfdG9fdjIxNDEucGF0Y2gA7Fz7UhvHmv+fp2iTVCSFmUEXECAQPmBEQtkGDHK8p1yueGbUQhNGM5O5AIqh6jzEPsE+2nmS/X19mYssEZIttmq3nCqLuXR//d1v3ZORNx4z07zyUmavv/r54PSnwZuzn6zpiDmV2xUvGPE71nF2nM5W27LszU57y+2wVrPZ3dhYMU1zbv7K2traPIx//IOZG0aXrW0Y7Q7D3YHvsyBMbcfnzJ3YwRVPWBqyYztI7WTGXoXTqR2M2CsepDxmdszZKHSzKd2O2ITH3FphK2w44SyKw9+4mzIvYW4Wxxjhz5gXMNtNvRvOHJ7abMRvuB9GNN1iv/A48cKABdnUwSWL+dgXALCSLeYA5CjDkywa2SkQw2MsyVLgycZhPLV9PYTgxNzndsITwmjtu+/YTdtqbVgt9u9//Sc7DxOPBmHGq/AG8K84exNeee7K2o8/tpvtrtncMVudH39cWVtZM9nBaARwv2dezEdmpOYyV88c8ZTLNbPEC66AEGdY+yrjtYTozbBMktpxSi/jMCHWaShADwsMY26n7Oz9kK2zkwv8nL8/x+/p8Ql+j87eHw6P379hkW/PiDN2wrLAvrE9X8gJpBe4YEwQ0Dq3E88XaNzQXRiPvMCOZ+zd+8Hl8OTs9ODwzSAHmCUCUBb4PEmYbxOCceZDpGGWCgSPBIkAygNBnhsGAR5ghKJnFEIg0Bw2sSEpHoTZ1UTD1ctAkcYeFMzOmcneHRrsAv8+XBhsODDYawOosqPBccGwxA8lDkM+jcLYjj0okhNiWVAHM/GmwJeNY84ZGBCk4A9MB7IIBFOwSC4xLwCuNqgasySLohjUKnlNiakYmwUjqDokGqUTS4veZjde4hEl52eXJ4J7b9irs18GFwc/Ddj5xcnZxcnwn8wB50kdQ3bIgdxBLiDASHJg+bzTweAIvHa4LzhD6npDaxMlpqAEz1wYHAdOhaqcx2FkXxHJJIfEnvJC+AEHtV4AaFhp/Qgj2VkEnqVZAAZAQGS7H2zYUsxe+bY3Zee+QFpAfmtfF7BMMCcNY6FJcoJLExI2DWH0WSzwu/XSCTSEObPIlqyU2mDe2H7GxWppbAeJLa3jKrPjUQyulLihUT+PPayWzogVRNgHzq8h5wM5k9A0QJnrZyNtYSmoK4wg5tAyl08FWqSlYcDJ90jb5COx4mvOIzHXC37LSDOEkpE1xqEcBu6H08Ja3EkWB7sV4DaEKRwfRBPZBATSIMVi/C4iURE2Dg/cCVQq4VBHpXWS5iwNoa+ea/ugLuZT0C8wAnDiqatVOwxcMFBbUBkBT/sUAAilNUquK/XgCY810DsvETbU3jAhqJgUCiBM0KBJBncNloRYKuC3gGi7yjLnliTT9qCLIw+qh3FJdoXYQByD4dBaAb+D3UDlCk4Lj6sleZalfhheG+ySeL5+6aUGKceIG1IaMxOKn0wC2KQhNEepUpZ6PumFT+6ZheTxb72EnJWMT8TXFab9u/Du1RXZDyUjmLFBcOUFfIUVfr7Zgp9nK6Ny4BXB1ZqkUx8hs7hRQbfb3YFAuWU5TXdjo92tBt3ScBlySw8o4LZaHQq59GeHYq6TpWkYfHGgdTzuNXflhQneeFnSazWju90IEoMcxQ1rdfBk6gXmhHtXk7S30cY9YmwSxr0o9IIVZoWSdBNueuyNoFbcmmDsFzf0Mei7LudbztbD4oEk42yqh45HvLttLxnqh7f5ONfetDcfVtas3INEyqQVZaYauW137WbzhUfOPIXD23Vs9/oqDuF6e991mm2nuV16WUGjeL5wIebk2IzHLXu7MsideNGXkZdQMOp5gQ8lMJFg3O3avncVmMgypknPFXmNkkCvBWYnoe+N2Hc79tZmc140Ozs7JdlACqyL+3EIC0u8P3hvR9/dSkHtAEKFngrp7XF7p9klTguvZl6F4WiOde1R19lsVma1mu3NllvMurVTdzI3bWtnc9xyqovZ7VZzXExz7Pm1tlqdVmd+UqvVgtqIrLG1Y2whb2y38edZlJj+2xt5N/vyUt5QFEqS/iq82mx1H+F4aB5dHBwP2Rr7MBi8fvNP9vbgFNH17eB0yA4Hw4O99QqISRs+f+bz/urUjuEIekCDNdlmdLe6r9xGNcfdW5+091fMZRioOaRNWWSwKXGfLmTMrDgyAIUeCn/qqiWkulnKdYnIQmErmYi48qgb48KNidxPpldQMn7NElfE7JKXRQR0PUqslVu9lVBLWQYMOoXzthSr1v4XaEUaLqiN8jzczJMY6egpJAWVNDfPGXXQdjGgHJIofNgRL5Fm0CrrFJSqWMp8xKRcmSnngezIKutK5brECsk+coJpHPrJ6kLtHHvcH63u74nsbv9tOOJ76/Ja2E53Q9hOd/NZbaeKkovUa7Wq+yYyqF6rTaqvZ5CFdPY/TJBBpxNEfVml6dT+Oghv2YynsIlOecqcpkAwNyhnwKMIWqNth/57Q1XcpY/cgAoMoSrrMviTUNMsUSkj0ijKWkSpSMpO6ZatMyeLHYxF8VnOLQ0NFhVXlDk+NEgVJmPKiUlVUkpvbRgXbIihauAy65ZFpqhpRD7BUJMGutABCyLSSfyFpbmUFYsshbDzkNodnJ8IvUQmlEjV7mjVBnph5k6Q1XggB+o5pGSHDe4iuFeurZZFnntNWMKOp6FDJZsTh7cJlUuygotkQqezXrGGgnVJ0mRaFQXvlC8YoyhPQPfcmhLiNRilwcn6AaYSIwz+wUcyJWOUv4uaQwCFO6J8ECOSaTmJLwATf8HYiPjLfZlJKwJFQr2wZATJTub5VI6NiROo5gWby0BCuLyA3IiEZoiSQ/cW+FdJIvID6AOhcitaAkimMRzZ9xTe7yt+5h7l9frR5bCSEb87XB8O8oIQWTlSe9snL2HAAcLoqNAjPWUytgufS7zS2i0qSCQdcFVAEuvm4yzRHrGjSNgTiZmLNoatOQZlk2TxkUG+YZEpolr04BVnbCQz/MxLJqS5sCTZeTCTCH5/DDuYhkVRJFyqBl5ar+xJS6U0A8AEVplkjujlwGCkG01Eni0ywVhKt1znSX9GzR7NDYePqWyk98QAUuImI28iTSXQ1i2aSPbIF6GNDBdYUPcHV86M/eSlP2eOqgmhfqcc7BOOhwiV+upRvZUCdxFVwCAgSfKWHSSSEAxD+YgEbEfyGN4gnS0WTtZHPHFjLxKrVJpMeGwL0xln1MaI4Y18nuj4TfQUpiSroiJ8qbibINm0/URW6bYO9TrGU/iWWKLkt0upNhOistgJSgmqMoVJSCsgqolX0EzkaZBfJBDzIluqsgjLnktEUPvqD8owwlImgSIU9StISlESy3VAkqjHzYTbiWhrKSdoV8rXEaxM5bagQSiYJ4pF4Xts8oGUM7AWc2xYNHirUxDJU7kyDZsiRCZUW/+WJalQ1zLbC/2AOsvSWrLR0snKt+DyLbh8Cy7fgsv/2+ACw58PL3MBRdQ1PsqmSDeIk1IL/OvdC+oVqzC0oF1t5B1ko9IwVkXk4g7tt/A0H56KGqnahqgUmnYCFVGV4eaWqAy7zeeqDPfWEymUfdqoqxStITxULAs2mdAoDRPOQSj2QQb7au+sd5pw2/7YPD+/EF3vOJWWEJA9k2fU/flwLC6dEG7dUO3uRDkRESrI2nMnnidLpnIeqFOveZqrHIp1jCfTEwYwtzsiHMiENOlGTKUORKwDQ9IjAF6sFi223wyGeDMuvL1qSo9E7MRbfkc+X2qfSc9YgiiQe2TXDxP13OeygWGxN5I+1YvJ9QgKTTEwlC5XMqHH4KtUCGmz4zeD/zBY09pk4KzBuibJDJakNleGRxhlbggfhHwhSouuzgwMJiNwwoAkZeXOMZkFrkgoiF/2yAwDf2Zp2yW9LjzlyYVp31I2pEJo0cQxiq2xwoGIPo3xWJyj0FQYYKnjBMD+LPEo3M3Fk9KgfFc1T7+K5E05PdBOe4C2b8qmFBwHci8oR6z7PabYtcp3RQ1lw8LPyfzlBMz0EXVFlh35lCY+nugYRdr+hA6dwYKxT0GN9GECLvp8/Qp5kcmDGy8Og2mpA1caKzdqdBCl/FV6+CSwIwzPghTEn8HVmm/BppD2aUchDE/7rsJVJUY5fAovLKQbe8k1lrnx+K1UIdXPy9uBlFvr2PPNE3zzBN88wf/UEzxyhESx8P+sr8hTGv1X7nRub4jTRfi7ZWxvPl+v+2GX/j7QSR8GEw30CSDJ70u5YfBKsKLeYF9k24AcVUrc6H95d9hrGhf08+ECP8MBfl7j39HguNcE8NL43F/0idPcknr70pKs+jV/fX//8dMuHR+iqfCEdTk9tm/JF+bDcmwY9FdA71+m5CzqGHl/X6s1rDR8H0HnXyFJrTd29WhvXKfB/X4NxlZriJk14FsrjzgTpZVFphims4hbEzs5uw3oDAlc9cyiRLkODhiY3WgQLz7i6tPamgLyoAkArBfFkSUfGp1OSqjTMaF3h/3Wrri6OOy35dWHC301HOi3r/UFkMVlvhD9iTm8a0BvxXO1fC5QqeLvxZmI4zC+KMu3HuX4CGQbGtgY7oFXRCi7Qv1AHBmjxsSJeHApukSAUxkse0daKJEl7xdLJl/+Y+3s/bBm1E4u8HP+/hy/p8cn+NVnuXB5+f7yfHB6NDhS17VPVoJqun7X35cIWmKjK/ngpZP6XaOxkCCx1snpwavhyS8DAFqybLHWJ0ueouFJXVKyGK56lMYZXyyJfONOn+A5pRqv7qZ3c/aljbC/xBorzJbHXf6SPZa2CMW8j59oIn4xE7+Yit/X9EOTP356WGCUnjgSBtwtdVSNjLek3uAyvVRHa8iI6kofvBEJhtygF2Q8Nz3lKpSLUEA/FnM+lY2UdLUEYQ4GzLpQVHUO8zwsqamE8SRLl+xVxr5gSfIpj5tYQ4mo6iYY4744kpOLQry3oiyZ1KNThDCaOu9TJIGiD9H/qDlSCAUQSCqKsGs+S+pahRol2eRa1j8VB0fzQQKFxv19s8wnvNzrN5dKjA4vajglQitQlFugTi/Uvv8WQdSa2nf1pgHgJkGoSEYP3G+WkGaSbMmgL+UuNpYzyveamh4uKi8kej1ar/Jcr1cdXEimNy8l0vUqBEpfkbf04FreHcJ7DMmzvCbvhfBSciCkRy87vXZjTTLBC+ptQ6/fKEA+FAx5mNMB5WckNxDT03rdNpxGf9+xNBqmnV+y+3uGF2oFeqEXW+ik3JJrgi7rQ79ky8IGtDwUEo/5NGvsBSNyzXARIuqK+UAnyHx/4eKwvzKYZYu+ePFnWD5K2iEdFsSsY2TLB5Qsf7VOYWX9J60k3QmNzwNDs+JwqVnWf5JmNHvtdjWe0NxCWbaNOq1TCLTV+HGjoJeV6B1r+i5ph6zuGIQz8sS3dmTQ+Q76SzVMvyZL1RrRn2dVN3359BDL/0JHU+tOY3elZM1U9fQlOOuKp9q7O8p1/0puXvgAmdVubhqtbaS1O50to916nrR2RTsQwkImeheHtfv7/O7DBYj84QcRtuShehlSP4oRn/Y2G+xmrd8BnfIIxvo6A1lhcCVOb8rTz6Ujz2GA4ksfhy0dTldTL5bXLrT3ldDWh8vlXiW9KM7QFvscVlmNysr4qGYKckq6WR4rSHzcFvLpOUNzDkKFSU3MSpCXBROy2f1+C+DNPunw0iHtBUMSweV3hwc+1dmzyxB1mrD/hhjc2awE7jI5WpwLcXj6nPZT5jwBS+Wxv+IbrH4p34YDjXNrY3f5EIni9lOpqkJ9+px8GUWKOU/K69rcrNc5y7d3vx5Obm5uAh7lU7qFls6t8BiilSXXli35GIQ5HJTvgNW+j2hvga2LBoz1ZJeiMiA8p2MILy2sen+/s9PY67elV2lZm9oX7mzQjkVrZ2vnubYs9K4J6IFjSE3RppNH86mZNcUzOrju0JcIybXn+4WPygT9htjVdEOf9n2pafTusL0+HLTz/Zk5p7DUDLfLGl02h6Xq2i1r65/NEGJelDcIi9Pwylapwqrr29OofmO0jFaz2VC9ECGenWZbNGB2tree67D5oih9ITbmkkqcziOyztjFEJH5/51IvPYMwUThJNPyz+8vfqJTxN9/EZMe8i93Pldzh5Hbn7cXsT//q9if/1Xwt7FbCuiY0Cf1qKxW8z3xNYUKwbWGtK92s7VN9tVuNbvPe1gU1nWiTqW0miY1og3WMt8dyi/rqPVOm9h+Opmh2PNSDiNq5XkE4j9sSnVaSxDnP2DCKNlhpjMdSnnl52ae3B/QGYhH+9v2tVGCVapbDPrwxZlx8bHYLVcnPQCS30W+53rUtQF3QfXVehZdiaYtZYeWNl+k835KEuvvv/jK9H93ZDBs5CXMk4Yvt17KMwAsd2QoFyOCVf9SbBBbluUYUuStzaYQebuz/bwiX5jxJIixOmAuyXgSmVwsi6lL/SGBXhQi/6Y7VODYAleYkCtsV1xhu9VtS7ZuNp+XrSVtcSwyJCJEXr0AtccHtcaCoR8pFhsUglVZBa0pVVTScS2a+OLPYlcb0x7V+0f471jcjS/s4Hq/2/wze/hbYlywyFdWImyDvqHzRfUHZifpESUBl/kzGWkaDws5lMPf67tZGo7Ha+1N2UoQ20h03gVc2myq9kIOdL/f3S7gzXUn8lHUhshvCIStlzPzhRtCBTsbmx2j1WFrnc2NltHeeD4llJHpd9E5rH9fV0XxsX3J7did1BovLfGFpuhiV4KZONzWj8LQL8v4d9HpIFiOFdhT3ij08vdG6R2p+LJ3pL7lVw0rgavm9SZK6UZepOa4klBqNCHg8c/Dt2/6AjOhE5C1BxnkBYhKAfyk71hysqjx9/tb7Zc1WebUevW5d93my5r4VqrWEzxYkkwk/ce6QgunHYovaitZiN4x0fbzkn0un7yhL72c8I599UHb/AcbTghlmfa26ZONPWf/sa+Re3vrzj5yl3Jjr4oSsTIgNpZG5O0iCDnpB1Yp5ioSXn5m9e+/VN8QJJ64Des3KGC9ZrBa46EcrhufwePd6jrKXX8mWJRd9ZiAKpqaD+t0rTufD6rViWeE1cPnCqQHvSr797/+CwuXuo5W6Uxb/um8OI2b8KLFIc7/pvOfliOcw4N5vt5W1h/ilvIT+YE0H6nPhj7rlXtMECtvl+tzVV3YGlug4JWO89/LccvmUZ603DKebjWNPE3Q0qx8KSW33ePwFqLF8g+rS74Z0gPhJ1f3D46OoNnff/HWWg+kwtWDc+qLQDECGqfd0QPbSyI70ABp50Bn7av7+mpvncbsE9CVkiKWMZny1F7NQQtv9iD0avDqQkBU7lw+1GcR6EUir8VLsaAsBORG3q9yp+2l0tE1CV4MqY5ogKsPimJzMYq3kxmdcNBYPl5xNR6q3/Q9AqyiG58r7Kx8Qru6X/kfGCimMrLwh7+E0pKjkVUERZSij1OvBJKicyw+Rq0q5jxQZZGyhOpsNUWLorPd7Dxn4qfszA5Gnvjfk4goOp+N3FUTPd1ELyV6d4sTvTtKte7+cqJXnfZIhnb3aKL3ZDCPJ3p3ixM9nQhQXvey1e5tF+XyfzdzrTtNBFH4v08xJCZrbV22oTWUuhKECk2EmqVCjDHpQre6odim24qENPGXT6Av6JN4LnPdbbEam8gPhZ3dmTkzZ87lm3OOxApGNyC99MqSkIQNQhHJO8zJyFvb4CxXg3W7TAg8+Ro4B48WKDObam0lDMCbKT7E43JYby7vpdtatRcD6Guxewev0C3IDvVagfcqGN1GZ2Pe/Es1osa1ESwXLqH5PLXuj1eZT8XuY668yFLOvIZPwK6Gf42ZWHdAlA3kCSsQhfmgFjAf1NacWXuPAnt4B7/308spnpTTbtQ5ORRR66zdOvd2vQ1QqVazfv7z2w/QqD+/fvcWyEep8UAzopGEIvbax81Zrvq4Xak/89fKKnC/c/x6L2qJbscMSbU97huTXjCD6j/lqGoiN3F2wIGWux4QTToRaBPnCLa9OaF0/tbBH+hBuaCslHM5O8BBNDf4/3kIxkvZY0VlaRJqBJpkOsoCcr1MJINBwoWrrqiyCdW3yXWjWbwEpqfDBkedVwdiUxx3TtrdTgT73XVSA2Xkns6/MfWyLofgsMn8MYrH+YgJYqNh3xdEyFkySQe36gMs4ZJtUkKQzInJZhfX6ZTyYla2BK791W0Bm7m0D5KzCf7T7cmRCVtCdwmfE2XYY/in2YliKo2pUKV8Cbkp/+vW/43FtcrW3Gd7bW9tVapVEMmNrXqlWl+nTFbq7XqcTGk7QpbL++ZJlGZXLDyN64LxATMuvUQITkhUgT9m9eRjRPfwMd16GRXOrG9DSAH8lJze5FVZ2frI1aHuy9tNgxJT4IJkpDwbObNH186j6OYnyB+eZSDQgLSDmn3KNTewzZ0QWiHyCx3YVK/oj588LTlRTGp+48kILMXE5xV/MQPumW6EIQbH7HoFbAI4ST/bf7XXPrbBAYuaC+B70zTnILOlJIk/mtTe4WHUOj1tn6kp7Hjnnah7JN6ctkFj66k2Tb/FmYnfzUxbJo0Aiz2Va0HQwPOwVtOEf8ALTfvd5Ms0L8GJACW+yRXl90pKUZPcdrvLS4x71IetsInFQAoG+YcEgR0BHSBqTfkmkKewRRQk1McbHhl9rm5wMPAcc0woN9c+nb1i9zui9zIeDrF6keo2HQisgWUq2Q1ACOMFEgJAKHtvwAL9KLOJs6nfcwErIdyTkm8lkkiJcKLBqlrEUaFu0cNecYwd8YgXtNDy7xd14RD/YmFLLiPNEabMDeOeXeWXoHRa3PIsrGnR9UwfvweLVugtFsJjgEuVNtTxApM4zWTlhot40rTzuTl1FB4MksmEs3diwbgswoO8nLBqVByr0aASb/VqUF2r1pPXcxz+1WHm5EBTdfqwrJm8zwYfIuLNR9vi02xsgksJLL4dzSxWpTqeD+8K3c+5AqQs48r2y4LX8Iqb7PvMm3OaLBUJ5CqtkgcvY0ygAh5VRRoxD3vK+eu+vmWfL7/qXwmdz7mtC7IXJObtQvbvgvc5zzkmIxO85iW4eB4Wt9HwfBt/xIuUZrBMcFZgoWxJMUyvkuHtpv2Vg6PzpKajsaI8fISIE4WuF8JVP+VceZctdBVOJTWYITBDzIblFQiuMHvTxIQIooQQdaDFLVDrIvpFGxoFnv2OzT8+6ym1/rScFt27ve6yUqDKe7Xelk4DrmVEGU2Lv8zs0mK+N+/Z4es214Dd/XIYf8hCK30gD96l/fA5Nsvbg6yQQeDceeLbSxMHSg9+AaZZL+8hWgAA' | base64 -d | gzip -d > /tmp/v2141.patch
+          git apply --check /tmp/v2141.patch
+          git apply /tmp/v2141.patch
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          t=Path('index.html').read_text(encoding='utf-8')
+          assert 'v2.14.1' in t
+          assert 'POSITIONAL COVERAGE PRIORITY' in t
+          assert 'function positionalCoverageNeeds' in t
+          Path('/tmp/v2141.js').write_text('\n'.join(re.findall(r'<script>(.*?)</script>',t,re.S)),encoding='utf-8')
+          PY
+          node --check /tmp/v2141.js
           git add index.html CHANGELOG.md
           git commit -m "Add positional coverage logic"
 
       - name: Apply v2.14.2 league median intelligence
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          p=Path('index.html')
-          text=p.read_text(encoding='utf-8')
-          if 'v2.14.2' not in text:
-              text=text.replace('weekly outlook engine • v2.14.1','weekly outlook + median intelligence • v2.14.2')
-              text=text.replace('v2.14.1 weekly beta uses','v2.14.2 weekly beta uses')
-              text=text.replace('v2.14.1 now centralizes weekly signals and also propagates uncovered required-position needs into Best Available Adds, Add/Drop, Waiver Claims, and the Weekly Action Plan.','v2.14.2 now centralizes weekly signals, propagates uncovered required-position needs, and detects Sleeper league-median scoring so the matchup view can track the live extra result.')
-              text=text.replace('a shared Weekly Outlook & Opportunity engine, required-position coverage logic, nflverse schedule/game-environment context','a shared Weekly Outlook & Opportunity engine, required-position coverage logic, league-median intelligence, nflverse schedule/game-environment context')
-
-              anchor='.coverage-chip{display:inline-flex;align-items:center;border:1px solid #9a7500;border-radius:999px;padding:2px 6px;font-size:9px;font-weight:900;color:#fde68a;background:#2f2906}\n'
-              extra=anchor+'''\n.median-high{border-color:#2d6b50;background:#10251c}\n.median-low{border-color:#795f1b;background:#2a210f}\n.median-neutral{border-color:#31405e;background:#11192d}\n.median-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:8px}\n.median-stat{border:1px solid #33415f;border-radius:10px;padding:8px;background:#0d1729}\n.median-stat .k{font-size:9px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}\n.median-stat .v{font-size:18px;font-weight:900;margin-top:2px}\n@media(max-width:560px){.median-grid{grid-template-columns:1fr}}\n'''
-              if anchor not in text: raise SystemExit('v2.14.2 CSS anchor missing')
-              text=text.replace(anchor,extra,1)
-
-              old='''      <div class="card" style="margin-top:12px">\n        <h3>Matchup snapshot</h3>\n        <div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div>\n      </div>\n'''
-              new='''      <div class="card" style="margin-top:12px">\n        <div class="weekly-section-head">\n          <div>\n            <h3>League Median</h3>\n            <div class="tiny">Automatically detects Sleeper's extra weekly game against the league median and tracks the live threshold when the rule applies.</div>\n          </div>\n          <span class="pill" id="medianPill">Median —</span>\n        </div>\n        <div id="weeklyMedian" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>\n      </div>\n\n      <div class="card" style="margin-top:12px">\n        <h3>Matchup snapshot</h3>\n        <div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div>\n      </div>\n'''
-              if old not in text: raise SystemExit('v2.14.2 matchup-card anchor missing')
-              text=text.replace(old,new,1)
-
-              anchor='  function renderWeeklyMatchup(matchups,ctx) {'
-              i=text.index(anchor)
-              median=r'''  function leagueMedianConfigured() {
-            return Number(state.league?.settings?.league_average_match||0)===1;
-          }
-
-          function leagueMedianAppliesForWeek(week=state.weeklyWeek) {
-            if(!leagueMedianConfigured()) return false;
-            const playoffStart=Number(state.league?.settings?.playoff_week_start||0);
-            return !(playoffStart>0 && Number(week)>=playoffStart);
-          }
-
-          function leagueMedianSnapshot(matchups) {
-            const teams=(matchups||[]).filter(m=>Number.isFinite(Number(m?.roster_id))).map(m=>({rosterId:Number(m.roster_id),points:Number(m.points)||0})).sort((a,b)=>a.points-b.points);
-            if(!teams.length) return null;
-            const n=teams.length;
-            const median=n%2?teams[Math.floor(n/2)].points:(teams[n/2-1].points+teams[n/2].points)/2;
-            const mine=teams.find(x=>x.rosterId===Number(state.myRosterId));
-            const myPoints=mine?.points??0;
-            const margin=myPoints-median;
-            const anyScoring=teams.some(x=>x.points>0);
-            const rank=[...teams].sort((a,b)=>b.points-a.points).findIndex(x=>x.rosterId===Number(state.myRosterId))+1;
-            return {teams,median,myPoints,margin,anyScoring,rank};
-          }
-
-          function renderLeagueMedian(matchups,ctx) {
-            if(!leagueMedianConfigured()) {
-              setPill('medianPill','Median OFF','');
-              $('weeklyMedian').innerHTML='<div class="tiny">This league does not have Sleeper league-median scoring enabled.</div>';
-              return null;
-            }
-            if(!leagueMedianAppliesForWeek(state.weeklyWeek)) {
-              setPill('medianPill','Configured • playoffs','warn');
-              $('weeklyMedian').innerHTML='<div class="notice">League-median scoring is configured for the regular season, but it does not apply to this playoff week.</div>';
-              return null;
-            }
-            const snap=leagueMedianSnapshot(matchups);
-            setPill('medianPill','Median matchup ON','good');
-            if(!snap) {
-              $('weeklyMedian').innerHTML='<div class="tiny">Median rule detected, but weekly matchup scores are not populated yet.</div>';
-              return null;
-            }
-            const status=!snap.anyScoring
-              ? {label:'PREGAME',cls:'median-neutral',detail:'All league scores are still 0.00.'}
-              : snap.margin>0
-                ? {label:'ABOVE MEDIAN',cls:'median-high',detail:`Currently +${snap.margin.toFixed(2)} above the live median.`}
-                : snap.margin<0
-                  ? {label:'BELOW MEDIAN',cls:'median-low',detail:`Currently ${snap.margin.toFixed(2)} below the live median.`}
-                  : {label:'TIED WITH MEDIAN',cls:'median-neutral',detail:'Currently exactly on the live median.'};
-            $('weeklyMedian').innerHTML=`<div class="waiver-row ${status.cls}">
-              <div class="waiver-rank">LM</div>
-              <div>
-                <b>${status.label}</b>
-                <div class="whyline">${esc(status.detail)} Sleeper's <code>league_average_match</code> setting was detected automatically.</div>
-                <div class="median-grid">
-                  <div class="median-stat"><div class="k">Your live score</div><div class="v">${snap.myPoints.toFixed(2)}</div></div>
-                  <div class="median-stat"><div class="k">League median</div><div class="v">${snap.median.toFixed(2)}</div></div>
-                  <div class="median-stat"><div class="k">League score rank</div><div class="v">${snap.rank}/${snap.teams.length}</div></div>
-                </div>
-                <div class="whyline" style="margin-top:8px">The median is live and can move as every team scores. Probability Above Median is intentionally not shown yet; that requires a true fantasy-points projection/simulation layer rather than converting the Outlook score into a fake probability.</div>
-              </div>
-            </div>`;
-            return snap;
-          }
-
-          '''
-              text=text[:i]+median+text[i:]
-
-              old="""      `${gap>0?`• improvement +${Math.round(gap)}`:''}`;
-          """
-              new="""      `${gap>0?`• improvement +${Math.round(gap)}`:''}`+
-            `${leagueMedianAppliesForWeek(state.weeklyWeek)?' • league median matchup active':''}`;
-          """
-              if old not in text: raise SystemExit('v2.14.2 lineup anchor missing')
-              text=text.replace(old,new,1)
-
-              old="""      `<div class="row"><div><b>Week ${state.weeklyWeek}: ${esc(managerDisplayName())} vs. ${esc(managerForRosterId(opp.roster_id))}</b>
-                <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}</div>
-              </div></div>
-          """
-              new="""      `<div class="row"><div><b>Week ${state.weeklyWeek}: ${esc(managerDisplayName())} vs. ${esc(managerForRosterId(opp.roster_id))}</b>
-                <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}${leagueMedianAppliesForWeek(state.weeklyWeek)?' • plus league-median result':''}</div>
-              </div></div>
-          """
-              if old not in text: raise SystemExit('v2.14.2 matchup header anchor missing')
-              text=text.replace(old,new,1)
-
-              text=text.replace('  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[]) {','  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[],matchups=[]) {',1)
-              old='''    const irCandidates=ctx.players\n      .filter(id=>!ctx.reserve.has(String(id)))\n'''
-              new='''    const medianSnap=leagueMedianAppliesForWeek(state.weeklyWeek)?leagueMedianSnapshot(matchups):null;\n    if(medianSnap?.anyScoring && medianSnap.margin<0) {\n      items.push(`<b>League median race:</b> you are ${Math.abs(medianSnap.margin).toFixed(2)} points below the current Week ${state.weeklyWeek} median. Every expected point matters for both your head-to-head matchup and the extra median result.`);\n    } else if(medianSnap?.anyScoring && Math.abs(medianSnap.margin)<=6) {\n      items.push(`<b>League median race:</b> you are within ${Math.abs(medianSnap.margin).toFixed(2)} points of the live median. Treat marginal start/sit edges as more consequential this week.`);\n    }\n\n    const irCandidates=ctx.players\n      .filter(id=>!ctx.reserve.has(String(id)))\n'''
-              if old not in text: raise SystemExit('v2.14.2 action-plan anchor missing')
-              text=text.replace(old,new,1)
-
-              old='''      renderGameEnvironment(ctx,matchups);\n      renderWeeklyMatchup(matchups,ctx);\n      renderWeeklyActionPlan(ctx,pool,drops,moves,steals);\n'''
-              new='''      renderGameEnvironment(ctx,matchups);\n      renderLeagueMedian(matchups,ctx);\n      renderWeeklyMatchup(matchups,ctx);\n      renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups);\n'''
-              if old not in text: raise SystemExit('v2.14.2 load-weekly anchor missing')
-              text=text.replace(old,new,1)
-              p.write_text(text,encoding='utf-8')
-
-          c=Path('CHANGELOG.md')
-          changelog=c.read_text(encoding='utf-8')
-          entry='''## v2.14.2 — League Median Intelligence\n**2026-09-13**\n\n- Detect Sleeper's league-median rule automatically from `settings.league_average_match`.\n- Respect `playoff_week_start` so the extra median result is treated as a regular-season rule rather than applied during fantasy playoffs.\n- Add a League Median panel to Weekly mode showing the connected manager's live score, the live league median, score margin, and league score rank.\n- Calculate the median directly from the selected week's Sleeper matchup scores, including the average of the two middle scores in even-team leagues.\n- Label pregame, above-median, below-median, and tied states without presenting the live threshold as a projection.\n- Add league-median context to the Matchup Snapshot and Start/Sit summary.\n- Surface a Weekly Action Plan note when the connected team is below or very close to the live median.\n- Keep Start/Sit focused on maximizing expected lineup quality rather than inventing opponent-specific or median-specific probabilities.\n- Explicitly defer “Probability Above Median” until a defensible fantasy-points projection and league-wide simulation layer exists; Weekly Outlook scores are not converted into fake win probabilities.\n- Preserve all v2.14.1 positional-coverage logic and existing recommendation guardrails.\n\n'''
-          if '## v2.14.2 — League Median Intelligence' not in changelog:
-              pos=changelog.find('## v2.14.1')
-              changelog=changelog[:pos]+entry+changelog[pos:]
-              c.write_text(changelog,encoding='utf-8')
-          PY
-
-      - name: Validate v2.14.2 JavaScript
-        shell: bash
-        run: |
+          echo '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' | base64 -d | gzip -d > /tmp/v2142.patch
+          git apply --check /tmp/v2142.patch
+          git apply /tmp/v2142.patch
           python - <<'PY'
           from pathlib import Path
           import re
           t=Path('index.html').read_text(encoding='utf-8')
-          assert 'leagueMedianConfigured' in t
-          assert 'renderLeagueMedian' in t
+          assert 'v2.14.2' in t
+          assert 'function leagueMedianConfigured' in t
+          assert 'function renderLeagueMedian' in t
           assert 'POSITIONAL COVERAGE PRIORITY' in t
-          Path('/tmp/app.js').write_text('\n'.join(re.findall(r'<script>(.*?)</script>',t,re.S)),encoding='utf-8')
+          Path('/tmp/v2142.js').write_text('\n'.join(re.findall(r'<script>(.*?)</script>',t,re.S)),encoding='utf-8')
           PY
-          node --check /tmp/app.js
-
-      - name: Commit and push v2.14.2
-        shell: bash
-        run: |
+          node --check /tmp/v2142.js
           git add index.html CHANGELOG.md
           git commit -m "Add league median intelligence"
-          git push origin HEAD:main
+
+      - name: Push feature commits
+        shell: bash
+        run: git push origin HEAD:main
