@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T04:48:33.920030Z",
+  "generated_at": "2026-09-13T11:53:18.006859Z",
   "lookback_days": 7,
   "article_count": 26,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 1 odds, predictions, expert picks: Who has edge in Bills-Texans? Can Saints upset Lions?",
+      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 1",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-odds-expert-picks-best-bets-teasers-survivor/",
+      "published_at": "2026-09-13T10:01:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 1 NFL picks: Bills end skid vs. Texans, Packers edge Vikings",
+      "summary": "Pete Prisco reveals all of his season-opening picks, including a healthy dose of Patrick Mahomes in a win over the Broncos",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-1-nfl-picks/",
+      "published_at": "2026-09-13T10:00:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Giants vs. Cowboys: NFC East rivals square off on 'Sunday Night Football' in John Harbaugh's debut",
       "summary": "The league kicks off the first Sunday night of the season with a familiar matchup that now has plenty of new faces",
@@ -306,30 +330,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "Previewing Rams vs. 49ers: Prediction as NFC west rivals clash in NFL Australia Game",
-      "summary": "The NFL is headed Down Under for an NFC West showdown",
-      "url": "https://www.cbssports.com/nfl/news/rams-vs-49ers-preview-prediction-australia-where-to-watch/",
-      "published_at": "2026-09-10T23:35:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Former NFL RB LeShon Johnson sentenced to five years in prison for operating dogfighting ring",
-      "summary": "Johnson surrendered 190 dogs, the largest number taken from one individual in a federal dogfighting case, according to the Department of Justice",
-      "url": "https://www.cbssports.com/nfl/news/nfl-leshon-johnson-prison-dogfighting/",
-      "published_at": "2026-09-10T22:56:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
