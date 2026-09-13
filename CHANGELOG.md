@@ -4,6 +4,20 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.14.2 — League Median Intelligence
+**2026-09-13**
+
+- Detect Sleeper's league-median rule automatically from `settings.league_average_match`.
+- Respect `playoff_week_start` so the extra median result is treated as a regular-season rule rather than applied during fantasy playoffs.
+- Add a League Median panel to Weekly mode showing the connected manager's live score, the live league median, score margin, and league score rank.
+- Calculate the median directly from the selected week's Sleeper matchup scores, including the average of the two middle scores in even-team leagues.
+- Label pregame, above-median, below-median, and tied states without presenting the live threshold as a projection.
+- Add league-median context to the Matchup Snapshot and Start/Sit summary.
+- Surface a Weekly Action Plan note when the connected team is below or very close to the live median.
+- Keep Start/Sit focused on maximizing expected lineup quality rather than inventing opponent-specific or median-specific probabilities.
+- Explicitly defer “Probability Above Median” until a defensible fantasy-points projection and league-wide simulation layer exists; Weekly Outlook scores are not converted into fake win probabilities.
+- Preserve all v2.14.1 positional-coverage logic and existing recommendation guardrails.
+
 ## v2.14.1 — Positional Coverage Logic
 **2026-09-13**
 
