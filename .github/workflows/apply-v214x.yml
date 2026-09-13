@@ -1,0 +1,439 @@
+name: Apply v2.14.x updates
+
+on:
+  push:
+    paths:
+      - ".github/workflows/apply-v214x.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apply-v214x-updates
+  cancel-in-progress: false
+
+jobs:
+  update-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Apply v2.14.1 positional coverage
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p=Path('index.html')
+          text=p.read_text(encoding='utf-8')
+          if 'v2.14.1' not in text:
+              text=text.replace('Multi-manager beta • weekly outlook engine • v2.14','Multi-manager beta • weekly outlook engine • v2.14.1')
+              text=text.replace('v2.14 weekly beta uses','v2.14.1 weekly beta uses')
+
+              css='.outlook-confidence.low{color:#fca5a5}\n'
+              extra=css+'''.coverage-priority{border-color:#8a6a00!important;background:#302b08!important;color:#fde68a!important}\n.coverage-priority b{color:#fff1a8}\n.coverage-chip{display:inline-flex;align-items:center;border:1px solid #9a7500;border-radius:999px;padding:2px 6px;font-size:9px;font-weight:900;color:#fde68a;background:#2f2906}\n'''
+              if css not in text: raise SystemExit('v2.14.1 CSS anchor missing')
+              text=text.replace(css,extra,1)
+
+              anchor="  function freeAgentScore(b,ctx,addMap,dropMap,mode='weekly') {"
+              i=text.index(anchor)
+              helpers=r'''  function requiredStarterCounts() {
+            const out={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0};
+            const positions=state.league?.roster_positions||[];
+            for(const raw of positions) {
+              let pos=String(raw||'').toUpperCase();
+              if(pos==='DST') pos='DEF';
+              if(Object.prototype.hasOwnProperty.call(out,pos)) out[pos]++;
+            }
+            if(!positions.length) { out.QB=1; out.RB=2; out.WR=2; out.TE=1; out.K=1; out.DEF=1; }
+            return out;
+          }
+
+          function playerUsableForRequiredStart(p) {
+            if(!p) return false;
+            const injury=normalizedInjuryStatus(p);
+            const status=String(p.status||'').toUpperCase();
+            if(['OUT','IR','PUP','NFI','DOUBTFUL','SUSPENDED','SUSP'].some(x=>injury.startsWith(x))) return false;
+            if(['INACTIVE','OUT','IR','PUP','NFI','SUSPENDED'].includes(status)) return false;
+            return true;
+          }
+
+          function positionalCoverageNeeds(ctx) {
+            const required=requiredStarterCounts();
+            const usable={QB:0,RB:0,WR:0,TE:0,K:0,DEF:0};
+            const unavailable={QB:[],RB:[],WR:[],TE:[],K:[],DEF:[]};
+            for(const id of ctx.players||[]) {
+              if(ctx.reserve.has(String(id))) continue;
+              const p=state.players[String(id)];
+              if(!p) continue;
+              const pos=normalizedFantasyPos(p);
+              if(!Object.prototype.hasOwnProperty.call(usable,pos)) continue;
+              if(playerUsableForRequiredStart(p)) usable[pos]++;
+              else unavailable[pos].push(pName(p));
+            }
+            const needs=[];
+            for(const pos of Object.keys(required)) {
+              const req=Number(required[pos])||0;
+              if(req<=0) continue;
+              const have=Number(usable[pos])||0;
+              const shortage=Math.max(0,req-have);
+              if(shortage>0) needs.push({pos,required:req,usable:have,shortage,unavailable:unavailable[pos]||[],severity:(['QB','TE','K','DEF'].includes(pos)?3:2)+Math.min(2,shortage)});
+            }
+            return needs.sort((a,b)=>b.severity-a.severity || b.shortage-a.shortage);
+          }
+
+          function coverageNeedForPosition(ctx,pos) { return positionalCoverageNeeds(ctx).find(x=>x.pos===pos)||null; }
+          function hasCoverageNeed(ctx,pos) { return !!coverageNeedForPosition(ctx,pos); }
+          function coverageBoostForFreeAgent(ctx,pos) {
+            const need=coverageNeedForPosition(ctx,pos);
+            if(!need) return 0;
+            const base=['QB','TE','K','DEF'].includes(pos)?30:22;
+            return base+Math.min(8,(need.shortage-1)*4);
+          }
+
+          '''
+              text=text[:i]+helpers+text[i:]
+
+              old="""    // Strongly suppress redundant one-starter positions.
+            if(b.pos==='QB') {
+              if(ctx.counts.QB>=1) v-=22;
+              if(ctx.counts.QB>=2) v-=22;
+              if(strongQBAlreadySolved(ctx)) v-=35;
+            }
+            if(b.pos==='TE') {
+              if(ctx.counts.TE>=1) v-=14;
+              if(ctx.counts.TE>=2) v-=8;
+            }
+            if(b.pos==='K' && ctx.counts.K>=1) v-=28;
+            if(b.pos==='DEF' && ctx.counts.DEF>=1) v-=26;
+          """
+              new="""    // Required-position coverage takes precedence over ordinary redundancy.
+            const coverageNeed=coverageNeedForPosition(ctx,b.pos);
+            if(coverageNeed) v+=coverageBoostForFreeAgent(ctx,b.pos);
+            if(b.pos==='QB') {
+              if(!coverageNeed && ctx.counts.QB>=1) v-=22;
+              if(!coverageNeed && ctx.counts.QB>=2) v-=22;
+              if(!coverageNeed && strongQBAlreadySolved(ctx)) v-=35;
+            }
+            if(b.pos==='TE') {
+              if(!coverageNeed && ctx.counts.TE>=1) v-=14;
+              if(!coverageNeed && ctx.counts.TE>=2) v-=8;
+            }
+            if(b.pos==='K' && !coverageNeed && ctx.counts.K>=1) v-=28;
+            if(b.pos==='DEF' && !coverageNeed && ctx.counts.DEF>=1) v-=26;
+          """
+              if old not in text: raise SystemExit('v2.14.1 free-agent anchor missing')
+              text=text.replace(old,new,1)
+              text=text.replace("      if(b.pos==='TE' && ctx.counts.TE>=1) v-=6;","      if(b.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE')) v-=6;",1)
+              text=text.replace(".filter(b=>!(b.pos==='QB' && qbSolved))",".filter(b=>!(b.pos==='QB' && qbSolved && !hasCoverageNeed(ctx,'QB')))",1)
+
+              old="""    const reasons=[];
+            const adds=addMap.get(String(b.player_id))||0;
+          """
+              new="""    const reasons=[];
+            const adds=addMap.get(String(b.player_id))||0;
+            const coverageNeed=coverageNeedForPosition(ctx,b.pos);
+            if(coverageNeed) reasons.push(`URGENT ${b.pos} COVERAGE`);
+          """
+              if old not in text: raise SystemExit('v2.14.1 reasons anchor missing')
+              text=text.replace(old,new,1)
+
+              old="""    $('weeklyAdds').innerHTML=shown.map((b,i)=>{
+            const cls=b.weeklyValue>=72?'strong':(b.weeklyValue>=60?'watch':'');
+            return `<div class="waiver-row ${cls}">
+          """
+              new="""    const coverageNeeds=positionalCoverageNeeds(ctx);
+            const coverageBanner=coverageNeeds.length
+              ? `<div class="goodbox coverage-priority" style="margin-bottom:8px"><b>POSITIONAL COVERAGE PRIORITY:</b> ${coverageNeeds.map(n=>{ const names=n.unavailable.length?` (${n.unavailable.map(esc).join(', ')} unavailable)`:''; return `${n.pos}: ${n.usable}/${n.required} usable${names}`; }).join(' • ')}. Available players at these positions are temporarily boosted until a legal usable starter is restored.</div>`
+              : '';
+            $('weeklyAdds').innerHTML=coverageBanner + shown.map((b,i)=>{
+              const coverageNeed=coverageNeedForPosition(ctx,b.pos);
+              const cls=coverageNeed?'strong':(b.weeklyValue>=72?'strong':(b.weeklyValue>=60?'watch':''));
+              return `<div class="waiver-row ${cls}">
+          """
+              if old not in text: raise SystemExit('v2.14.1 adds anchor missing')
+              text=text.replace(old,new,1)
+              old='''          <div class="whyline">${esc(freeAgentReasons(b,ctx,addMap))}</div>\n'''
+              new='''          <div class="whyline">${coverageNeed?`<span class="coverage-chip">COVERAGE NEED</span> `:''}${esc(freeAgentReasons(b,ctx,addMap))}</div>\n'''
+              if old not in text: raise SystemExit('v2.14.1 add reason anchor missing')
+              text=text.replace(old,new,1)
+
+              text=text.replace("    if(b.pos==='TE' && ctx.counts.TE>=1) s-=16;","    if(b.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE')) s-=16;",1)
+              text=text.replace(".filter(b=>!(b.pos==='TE' && ctx.counts.TE>=1 && b.ecrRank>60))",".filter(b=>!(b.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE') && b.ecrRank>60))",1)
+              text=text.replace(".filter(x=>!(x.pos==='TE' && ctx.counts.TE>=1 && x.ecrRank>60))",".filter(x=>!(x.pos==='TE' && ctx.counts.TE>=1 && !hasCoverageNeed(ctx,'TE') && x.ecrRank>60))",1)
+
+              old="""      if(churn.redundantQB && ['RB','WR'].includes(add.pos)) gap+=5;
+            if(churn.redundantTE && ['RB','WR'].includes(add.pos)) gap+=3;
+
+            return {add,drop:churn,gap,keepValue};
+          """
+              new="""      if(churn.redundantQB && ['RB','WR'].includes(add.pos)) gap+=5;
+            if(churn.redundantTE && ['RB','WR'].includes(add.pos)) gap+=3;
+            const coverageNeed=coverageNeedForPosition(ctx,add.pos);
+            if(coverageNeed) gap+=6;
+            return {add,drop:churn,gap,keepValue,coverageNeed};
+          """
+              if old not in text: raise SystemExit('v2.14.1 moves anchor missing')
+              text=text.replace(old,new,1)
+              old="""          <div class="whyline">${verdict} • roster-utility gap ${m.gap>=0?'+':''}${Math.round(m.gap)} versus ${esc(m.drop.name)}'s effective keep value ${Math.round(m.keepValue)}. ${verdict==='HOLD / MONITOR'?'The available player does not currently clear the churn threshold. ':''}Verify current news/role before submitting.</div>
+          """
+              new="""          <div class="whyline">${m.coverageNeed?`<span class="coverage-chip">${m.add.pos} COVERAGE</span> `:''}${verdict} • roster-utility gap ${m.gap>=0?'+':''}${Math.round(m.gap)} versus ${esc(m.drop.name)}'s effective keep value ${Math.round(m.keepValue)}. ${m.coverageNeed?'This move restores a currently uncovered required starting position. ':''}${verdict==='HOLD / MONITOR'?'The available player does not currently clear the churn threshold. ':''}Verify current news/role before submitting.</div>
+          """
+              if old not in text: raise SystemExit('v2.14.1 move copy anchor missing')
+              text=text.replace(old,new,1)
+
+              old="""      let urgencyScore=m.gap + competition.level*1.5;
+            if(m.add.trendAdds>=20000) urgencyScore+=1.5;
+
+            let verdict='HOLD / MONITOR';
+          """
+              new="""      let urgencyScore=m.gap + competition.level*1.5;
+            if(m.add.trendAdds>=20000) urgencyScore+=1.5;
+            if(m.coverageNeed) urgencyScore+=8;
+
+            let verdict='HOLD / MONITOR';
+          """
+              if old not in text: raise SystemExit('v2.14.1 waiver urgency anchor missing')
+              text=text.replace(old,new,1)
+              old="""      if(m.gap>=threshold+4) {
+            verdict=profile.waiverBudget!==null?'AGGRESSIVE CLAIM':'WORTH USING PRIORITY';
+            cls='claim-burn';
+          } else if(m.gap>=threshold) {
+          """
+              new="""      if(m.coverageNeed && m.gap>=Math.max(5,threshold-6)) {
+            verdict=profile.waiverBudget!==null?'COVERAGE PRIORITY':'COVERAGE CLAIM';
+            cls='claim-burn';
+          } else if(m.gap>=threshold+4) {
+            verdict=profile.waiverBudget!==null?'AGGRESSIVE CLAIM':'WORTH USING PRIORITY';
+            cls='claim-burn';
+          } else if(m.gap>=threshold) {
+          """
+              if old not in text: raise SystemExit('v2.14.1 waiver verdict anchor missing')
+              text=text.replace(old,new,1)
+              old="""              i===0
+                ? `Highest-priority target based on roster upgrade and expected competition.`
+                : `Fallback target if higher claims fail or are not worth the cost.`
+          """
+              new="""              m.coverageNeed
+                ? `This claim restores a currently uncovered required ${m.add.pos} starting slot.`
+                : (i===0
+                    ? `Highest-priority target based on roster upgrade and expected competition.`
+                    : `Fallback target if higher claims fail or are not worth the cost.`)
+          """
+              if old not in text: raise SystemExit('v2.14.1 waiver copy anchor missing')
+              text=text.replace(old,new,1)
+
+              old="""    if(ctx.activeOverage>0) {
+            items.push(`<b>Roster cleanup required:</b> you currently have ${ctx.activeOverage} more active player${ctx.activeOverage===1?'':'s'} than the normal roster capacity detected by the app.`);
+          }
+            const newsFlags=ctx.players
+          """
+              new="""    if(ctx.activeOverage>0) {
+            items.push(`<b>Roster cleanup required:</b> you currently have ${ctx.activeOverage} more active player${ctx.activeOverage===1?'':'s'} than the normal roster capacity detected by the app.`);
+          }
+            const coverageNeeds=positionalCoverageNeeds(ctx);
+            if(coverageNeeds.length) {
+              const n=coverageNeeds[0];
+              const affected=n.unavailable.length?` ${n.unavailable.join(', ')} ${n.unavailable.length===1?'is':'are'} currently unlikely/unavailable.`:'';
+              const topCoverage=(pool||[]).find(x=>x.pos===n.pos);
+              items.push(`<b>Coverage priority:</b> only ${n.usable} usable ${n.pos}${n.usable===1?' is':'s are'} available for ${n.required} required starting slot${n.required===1?'':'s'}.${esc(affected)} ${topCoverage?`Top available replacement: ${esc(topCoverage.name)}.`:'Review available replacements immediately.'}`);
+            }
+            const newsFlags=ctx.players
+          """
+              if old not in text: raise SystemExit('v2.14.1 action-plan anchor missing')
+              text=text.replace(old,new,1)
+
+              text=text.replace('v2.14 now centralizes the available weekly signals into a shared Outlook score and data-confidence layer.','v2.14.1 now centralizes weekly signals and also propagates uncovered required-position needs into Best Available Adds, Add/Drop, Waiver Claims, and the Weekly Action Plan.')
+              text=text.replace('a shared Weekly Outlook & Opportunity engine, nflverse schedule/game-environment context','a shared Weekly Outlook & Opportunity engine, required-position coverage logic, nflverse schedule/game-environment context')
+
+          p.write_text(text,encoding='utf-8')
+
+          c=Path('CHANGELOG.md')
+          changelog=c.read_text(encoding='utf-8')
+          entry='''## v2.14.1 — Positional Coverage Logic\n**2026-09-13**\n\n- Add required-position coverage detection using the league's actual starting roster positions.\n- Treat OUT / IR / PUP / NFI / DOUBTFUL players as unavailable for coverage planning while leaving ordinary QUESTIONABLE players usable unless later ruled out.\n- Detect when the connected roster does not have enough usable players to fill a required QB, RB, WR, TE, K, or DEF starting slot.\n- Temporarily boost legitimate free agents at an uncovered position instead of suppressing them as redundant depth.\n- Add a visible POSITIONAL COVERAGE PRIORITY banner to Best Available Adds.\n- Add COVERAGE NEED labels to relevant free-agent recommendations.\n- Propagate the same coverage need into Add/Drop Opportunities and Waiver Claim Planner.\n- Make coverage-restoring waiver claims more urgent without bypassing roster-value and transaction guardrails.\n- Add Coverage Priority to the Weekly Action Plan, including the top available replacement when one is detected.\n- Keep the injured starter protected from ordinary churn; replacement adds are compared against expendable bench assets instead.\n- Automatically remove the emergency boost once a usable replacement is actually on the roster.\n- Preserve the existing 24-hour recent-add protection, so a newly acquired replacement is not immediately suggested as the next drop.\n- Keep v2.14 Weekly Outlook, Start/Sit, trade, injury-freshness, and roster-utility logic otherwise unchanged.\n\n'''
+          if '## v2.14.1 — Positional Coverage Logic' not in changelog:
+              pos=changelog.find('## v2.14')
+              changelog=changelog[:pos]+entry+changelog[pos:]
+              c.write_text(changelog,encoding='utf-8')
+          PY
+
+      - name: Validate v2.14.1 JavaScript
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          t=Path('index.html').read_text(encoding='utf-8')
+          Path('/tmp/app.js').write_text('\n'.join(re.findall(r'<script>(.*?)</script>',t,re.S)),encoding='utf-8')
+          PY
+          node --check /tmp/app.js
+
+      - name: Commit v2.14.1
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html CHANGELOG.md
+          git commit -m "Add positional coverage logic"
+
+      - name: Apply v2.14.2 league median intelligence
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          p=Path('index.html')
+          text=p.read_text(encoding='utf-8')
+          if 'v2.14.2' not in text:
+              text=text.replace('weekly outlook engine • v2.14.1','weekly outlook + median intelligence • v2.14.2')
+              text=text.replace('v2.14.1 weekly beta uses','v2.14.2 weekly beta uses')
+              text=text.replace('v2.14.1 now centralizes weekly signals and also propagates uncovered required-position needs into Best Available Adds, Add/Drop, Waiver Claims, and the Weekly Action Plan.','v2.14.2 now centralizes weekly signals, propagates uncovered required-position needs, and detects Sleeper league-median scoring so the matchup view can track the live extra result.')
+              text=text.replace('a shared Weekly Outlook & Opportunity engine, required-position coverage logic, nflverse schedule/game-environment context','a shared Weekly Outlook & Opportunity engine, required-position coverage logic, league-median intelligence, nflverse schedule/game-environment context')
+
+              anchor='.coverage-chip{display:inline-flex;align-items:center;border:1px solid #9a7500;border-radius:999px;padding:2px 6px;font-size:9px;font-weight:900;color:#fde68a;background:#2f2906}\n'
+              extra=anchor+'''\n.median-high{border-color:#2d6b50;background:#10251c}\n.median-low{border-color:#795f1b;background:#2a210f}\n.median-neutral{border-color:#31405e;background:#11192d}\n.median-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:8px}\n.median-stat{border:1px solid #33415f;border-radius:10px;padding:8px;background:#0d1729}\n.median-stat .k{font-size:9px;letter-spacing:.06em;color:var(--muted);text-transform:uppercase}\n.median-stat .v{font-size:18px;font-weight:900;margin-top:2px}\n@media(max-width:560px){.median-grid{grid-template-columns:1fr}}\n'''
+              if anchor not in text: raise SystemExit('v2.14.2 CSS anchor missing')
+              text=text.replace(anchor,extra,1)
+
+              old='''      <div class="card" style="margin-top:12px">\n        <h3>Matchup snapshot</h3>\n        <div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div>\n      </div>\n'''
+              new='''      <div class="card" style="margin-top:12px">\n        <div class="weekly-section-head">\n          <div>\n            <h3>League Median</h3>\n            <div class="tiny">Automatically detects Sleeper's extra weekly game against the league median and tracks the live threshold when the rule applies.</div>\n          </div>\n          <span class="pill" id="medianPill">Median —</span>\n        </div>\n        <div id="weeklyMedian" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>\n      </div>\n\n      <div class="card" style="margin-top:12px">\n        <h3>Matchup snapshot</h3>\n        <div id="weeklyMatchup" class="list"><div class="tiny">Connect first.</div></div>\n      </div>\n'''
+              if old not in text: raise SystemExit('v2.14.2 matchup-card anchor missing')
+              text=text.replace(old,new,1)
+
+              anchor='  function renderWeeklyMatchup(matchups,ctx) {'
+              i=text.index(anchor)
+              median=r'''  function leagueMedianConfigured() {
+            return Number(state.league?.settings?.league_average_match||0)===1;
+          }
+
+          function leagueMedianAppliesForWeek(week=state.weeklyWeek) {
+            if(!leagueMedianConfigured()) return false;
+            const playoffStart=Number(state.league?.settings?.playoff_week_start||0);
+            return !(playoffStart>0 && Number(week)>=playoffStart);
+          }
+
+          function leagueMedianSnapshot(matchups) {
+            const teams=(matchups||[]).filter(m=>Number.isFinite(Number(m?.roster_id))).map(m=>({rosterId:Number(m.roster_id),points:Number(m.points)||0})).sort((a,b)=>a.points-b.points);
+            if(!teams.length) return null;
+            const n=teams.length;
+            const median=n%2?teams[Math.floor(n/2)].points:(teams[n/2-1].points+teams[n/2].points)/2;
+            const mine=teams.find(x=>x.rosterId===Number(state.myRosterId));
+            const myPoints=mine?.points??0;
+            const margin=myPoints-median;
+            const anyScoring=teams.some(x=>x.points>0);
+            const rank=[...teams].sort((a,b)=>b.points-a.points).findIndex(x=>x.rosterId===Number(state.myRosterId))+1;
+            return {teams,median,myPoints,margin,anyScoring,rank};
+          }
+
+          function renderLeagueMedian(matchups,ctx) {
+            if(!leagueMedianConfigured()) {
+              setPill('medianPill','Median OFF','');
+              $('weeklyMedian').innerHTML='<div class="tiny">This league does not have Sleeper league-median scoring enabled.</div>';
+              return null;
+            }
+            if(!leagueMedianAppliesForWeek(state.weeklyWeek)) {
+              setPill('medianPill','Configured • playoffs','warn');
+              $('weeklyMedian').innerHTML='<div class="notice">League-median scoring is configured for the regular season, but it does not apply to this playoff week.</div>';
+              return null;
+            }
+            const snap=leagueMedianSnapshot(matchups);
+            setPill('medianPill','Median matchup ON','good');
+            if(!snap) {
+              $('weeklyMedian').innerHTML='<div class="tiny">Median rule detected, but weekly matchup scores are not populated yet.</div>';
+              return null;
+            }
+            const status=!snap.anyScoring
+              ? {label:'PREGAME',cls:'median-neutral',detail:'All league scores are still 0.00.'}
+              : snap.margin>0
+                ? {label:'ABOVE MEDIAN',cls:'median-high',detail:`Currently +${snap.margin.toFixed(2)} above the live median.`}
+                : snap.margin<0
+                  ? {label:'BELOW MEDIAN',cls:'median-low',detail:`Currently ${snap.margin.toFixed(2)} below the live median.`}
+                  : {label:'TIED WITH MEDIAN',cls:'median-neutral',detail:'Currently exactly on the live median.'};
+            $('weeklyMedian').innerHTML=`<div class="waiver-row ${status.cls}">
+              <div class="waiver-rank">LM</div>
+              <div>
+                <b>${status.label}</b>
+                <div class="whyline">${esc(status.detail)} Sleeper's <code>league_average_match</code> setting was detected automatically.</div>
+                <div class="median-grid">
+                  <div class="median-stat"><div class="k">Your live score</div><div class="v">${snap.myPoints.toFixed(2)}</div></div>
+                  <div class="median-stat"><div class="k">League median</div><div class="v">${snap.median.toFixed(2)}</div></div>
+                  <div class="median-stat"><div class="k">League score rank</div><div class="v">${snap.rank}/${snap.teams.length}</div></div>
+                </div>
+                <div class="whyline" style="margin-top:8px">The median is live and can move as every team scores. Probability Above Median is intentionally not shown yet; that requires a true fantasy-points projection/simulation layer rather than converting the Outlook score into a fake probability.</div>
+              </div>
+            </div>`;
+            return snap;
+          }
+
+          '''
+              text=text[:i]+median+text[i:]
+
+              old="""      `${gap>0?`• improvement +${Math.round(gap)}`:''}`;
+          """
+              new="""      `${gap>0?`• improvement +${Math.round(gap)}`:''}`+
+            `${leagueMedianAppliesForWeek(state.weeklyWeek)?' • league median matchup active':''}`;
+          """
+              if old not in text: raise SystemExit('v2.14.2 lineup anchor missing')
+              text=text.replace(old,new,1)
+
+              old="""      `<div class="row"><div><b>Week ${state.weeklyWeek}: ${esc(managerDisplayName())} vs. ${esc(managerForRosterId(opp.roster_id))}</b>
+                <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}</div>
+              </div></div>
+          """
+              new="""      `<div class="row"><div><b>Week ${state.weeklyWeek}: ${esc(managerDisplayName())} vs. ${esc(managerForRosterId(opp.roster_id))}</b>
+                <div class="tiny">Matchup ${mine.matchup_id} • current score ${mine.points??0}–${opp.points??0}${leagueMedianAppliesForWeek(state.weeklyWeek)?' • plus league-median result':''}</div>
+              </div></div>
+          """
+              if old not in text: raise SystemExit('v2.14.2 matchup header anchor missing')
+              text=text.replace(old,new,1)
+
+              text=text.replace('  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[]) {','  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[],matchups=[]) {',1)
+              old='''    const irCandidates=ctx.players\n      .filter(id=>!ctx.reserve.has(String(id)))\n'''
+              new='''    const medianSnap=leagueMedianAppliesForWeek(state.weeklyWeek)?leagueMedianSnapshot(matchups):null;\n    if(medianSnap?.anyScoring && medianSnap.margin<0) {\n      items.push(`<b>League median race:</b> you are ${Math.abs(medianSnap.margin).toFixed(2)} points below the current Week ${state.weeklyWeek} median. Every expected point matters for both your head-to-head matchup and the extra median result.`);\n    } else if(medianSnap?.anyScoring && Math.abs(medianSnap.margin)<=6) {\n      items.push(`<b>League median race:</b> you are within ${Math.abs(medianSnap.margin).toFixed(2)} points of the live median. Treat marginal start/sit edges as more consequential this week.`);\n    }\n\n    const irCandidates=ctx.players\n      .filter(id=>!ctx.reserve.has(String(id)))\n'''
+              if old not in text: raise SystemExit('v2.14.2 action-plan anchor missing')
+              text=text.replace(old,new,1)
+
+              old='''      renderGameEnvironment(ctx,matchups);\n      renderWeeklyMatchup(matchups,ctx);\n      renderWeeklyActionPlan(ctx,pool,drops,moves,steals);\n'''
+              new='''      renderGameEnvironment(ctx,matchups);\n      renderLeagueMedian(matchups,ctx);\n      renderWeeklyMatchup(matchups,ctx);\n      renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups);\n'''
+              if old not in text: raise SystemExit('v2.14.2 load-weekly anchor missing')
+              text=text.replace(old,new,1)
+              p.write_text(text,encoding='utf-8')
+
+          c=Path('CHANGELOG.md')
+          changelog=c.read_text(encoding='utf-8')
+          entry='''## v2.14.2 — League Median Intelligence\n**2026-09-13**\n\n- Detect Sleeper's league-median rule automatically from `settings.league_average_match`.\n- Respect `playoff_week_start` so the extra median result is treated as a regular-season rule rather than applied during fantasy playoffs.\n- Add a League Median panel to Weekly mode showing the connected manager's live score, the live league median, score margin, and league score rank.\n- Calculate the median directly from the selected week's Sleeper matchup scores, including the average of the two middle scores in even-team leagues.\n- Label pregame, above-median, below-median, and tied states without presenting the live threshold as a projection.\n- Add league-median context to the Matchup Snapshot and Start/Sit summary.\n- Surface a Weekly Action Plan note when the connected team is below or very close to the live median.\n- Keep Start/Sit focused on maximizing expected lineup quality rather than inventing opponent-specific or median-specific probabilities.\n- Explicitly defer “Probability Above Median” until a defensible fantasy-points projection and league-wide simulation layer exists; Weekly Outlook scores are not converted into fake win probabilities.\n- Preserve all v2.14.1 positional-coverage logic and existing recommendation guardrails.\n\n'''
+          if '## v2.14.2 — League Median Intelligence' not in changelog:
+              pos=changelog.find('## v2.14.1')
+              changelog=changelog[:pos]+entry+changelog[pos:]
+              c.write_text(changelog,encoding='utf-8')
+          PY
+
+      - name: Validate v2.14.2 JavaScript
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          t=Path('index.html').read_text(encoding='utf-8')
+          assert 'leagueMedianConfigured' in t
+          assert 'renderLeagueMedian' in t
+          assert 'POSITIONAL COVERAGE PRIORITY' in t
+          Path('/tmp/app.js').write_text('\n'.join(re.findall(r'<script>(.*?)</script>',t,re.S)),encoding='utf-8')
+          PY
+          node --check /tmp/app.js
+
+      - name: Commit and push v2.14.2
+        shell: bash
+        run: |
+          git add index.html CHANGELOG.md
+          git commit -m "Add league median intelligence"
+          git push origin HEAD:main
