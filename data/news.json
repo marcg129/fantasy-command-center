@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14T00:12:28.683941Z",
+  "generated_at": "2026-09-14T04:58:00.347483Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 1 grades for all 32 teams: Ravens roll to an 'A-,' Bills earn high mark for win over Texans",
+      "summary": "Here are the Week 1 grades for every team so far",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-grades-for-all-32-teams-ravens-roll-bills-earn-high-mark/",
+      "published_at": "2026-09-14T03:44:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Titans' fresh start produces one of their most embarrassing losses yet",
+      "summary": "Tennessee changed its coach, roster, logo and uniforms, but a 23-10 loss to New York exposed familiar problems across every phase of the game",
+      "url": "https://www.cbssports.com/nfl/news/titans-loss-to-jets-cam-ward-robert-saleh/",
+      "published_at": "2026-09-14T02:54:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Vikings' stunning win over Packers ends with final score that's never happened before in NFL history",
+      "summary": "Ladies and gentlemen, we have a scorigami!",
+      "url": "https://www.cbssports.com/nfl/news/scorigami-vikings-packers-nfl-history/",
+      "published_at": "2026-09-14T02:06:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 1 overreactions: Bears to score most and allow most points in NFL? Lamar Jackson for MVP?",
+      "summary": "Plus, was DJ Moore the best offseason addition in the NFL?",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-overreactions-bears-lamar-jackson-mvp/",
+      "published_at": "2026-09-14T00:32:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Polymarket promo code CBSSPORTS: $50 bonus for Giants-Cowboys, Sunday Night Football with Malik Nabers active",
       "summary": "Polymarket offers sign-up promotions for NFL predictions with the Polymarket promo code CBSSPORTS",
@@ -73,18 +121,6 @@
       "summary": "SportsLine's advanced model has locked in its Week 1 NFL predictions from 10,000 simulations",
       "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-prophetx-cowboys-giants-markets/",
       "published_at": "2026-09-13T22:33:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 overreactions: Bears to score most and allow most points in NFL? Lamar Jackson for MVP?",
-      "summary": "Plus, was DJ Moore the best offseason addition in the NFL?",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-overreactions-bears-lamar-jackson-mvp/",
-      "published_at": "2026-09-13T22:18:21Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -306,54 +342,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting NFL Week 1, Bengals-Bucs, Giants-Cowboys",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL betting on Sunday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-get-1500-bonus-bets-nfl-week-1-bengals-buccaneers-giants-cowboys/",
-      "published_at": "2026-09-13T13:10:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Titans vs. Jets: Robert Saleh makes debut as Tennessee coach against team that fired him",
-      "summary": "Saleh begins his tenure in Tennessee against his former team as both squads feature overhauled rosters and starting quarterbacks looking for a fresh start in Week 1",
-      "url": "https://www.cbssports.com/nfl/news/titans-vs-jets-where-to-watch-odds-prediction/",
-      "published_at": "2026-09-13T13:01:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jaguars vs. Browns: Deshaun Watson makes first start in almost two years",
-      "summary": "A look at where to watch the Week 1 matchup in Jacksonville, as well as the top storylines to follow",
-      "url": "https://www.cbssports.com/nfl/news/browns-vs-jaguars-how-to-watch-pick-spread-odds/",
-      "published_at": "2026-09-13T13:01:11Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Colts vs. Ravens: Lamar Jackson and Daniel Jones lead teams in Week 1 matchup",
-      "summary": "Lamar Jackson and Daniel Jones look to bounce back from injury-plagued seasons",
-      "url": "https://www.cbssports.com/nfl/news/where-to-watch-colts-vs-ravens-stream-picks-odds/",
-      "published_at": "2026-09-13T13:01:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
