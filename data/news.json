@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-14T04:58:00.347483Z",
+  "generated_at": "2026-09-14T12:48:07.431667Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "Chiefs vs. Broncos: Division rivals Patrick Mahomes, Bo Nix make their return in Monday night matchup",
+      "summary": "Patrick Mahomes and Bo Nix return from major injuries in an AFC West showdown",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-broncos-where-to-watch-odds-prediction/",
+      "published_at": "2026-09-14T11:41:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cover 32: Bengals see early returns from big offseason investment, plus game balls, biggest gaffes from Week 1",
+      "summary": "Tyler Sullivan dives into all the biggest items from Week 1 in the NFL, including Josh Allen ending his road woes against the Texans",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-storylines-game-balls-biggest-gaffes/",
+      "published_at": "2026-09-14T11:25:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL Week 2 early odds: Bills favored over Lions as Buffalo opens new stadium, Eagles road favorites",
+      "summary": "Here's a look at the lines for Week 2 in the NFL as we continue the start of the 2026 season",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-2-early-odds-bills-eagles/",
+      "published_at": "2026-09-14T11:17:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 1 grades for all 32 teams: Ravens roll to an 'A-,' Bills earn high mark for win over Texans",
       "summary": "Here are the Week 1 grades for every team so far",
@@ -325,18 +361,6 @@
       "summary": "Allen faces the defense best equipped to shut him down to kick off the Bills' 2026 season",
       "url": "https://www.cbssports.com/nfl/news/why-josh-allen-has-struggled-vs-texans-turbo-charged-defense/",
       "published_at": "2026-09-13T14:00:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Steelers' Joey Porter Jr. unlikely to play in Week 1: Possible landing spots for cornerback",
-      "summary": "Porter has been dealing with back and contract issues this summer",
-      "url": "https://www.cbssports.com/nfl/news/steelers-joey-porter-jr-possible-landing-spots/",
-      "published_at": "2026-09-13T13:19:25Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
