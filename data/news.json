@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T23:08:04.534247Z",
+  "generated_at": "2026-09-15T04:55:15.002487Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -21,6 +21,42 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 1 grades for all 32 teams: Chiefs earn an 'A' for destroying Broncos, Ravens roll to an 'A-'",
+      "summary": "Here are the Week 1 grades for every team so far",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-grades-for-all-32-teams-ravens-roll-bills-earn-high-mark/",
+      "published_at": "2026-09-15T03:19:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Broncos tried to lure Drew Brees out of retirement for AFC Championship after Bo Nix injury, per report",
+      "summary": "Brees reportedly gave serious consideration to joining Denver for its Super Bowl bid",
+      "url": "https://www.cbssports.com/nfl/news/broncos-drew-brees-comeback-bo-nix/",
+      "published_at": "2026-09-15T00:17:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chiefs vs. Broncos: Division rivals Patrick Mahomes, Bo Nix make their return in Monday night matchup",
+      "summary": "Patrick Mahomes and Bo Nix return from major injuries in an AFC West showdown",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-broncos-where-to-watch-odds-prediction/",
+      "published_at": "2026-09-14T23:14:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Lions' Isiah Pacheco undergoes back surgery, expected to miss significant time",
       "summary": "Pacheco reportedly faces a 12-week recovery and could return in December",
       "url": "https://www.cbssports.com/nfl/news/isiah-pacheco-injury-update-lions/",
@@ -37,18 +73,6 @@
       "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-broncos-vs-chiefs-monday-night-football/",
       "published_at": "2026-09-14T22:44:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs vs. Broncos: Division rivals Patrick Mahomes, Bo Nix make their return in Monday night matchup",
-      "summary": "Patrick Mahomes and Bo Nix return from major injuries in an AFC West showdown",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-broncos-where-to-watch-odds-prediction/",
-      "published_at": "2026-09-14T21:45:54Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -157,18 +181,6 @@
       "summary": "After suffering four concussions in his first 39 games, Olave chose the protective helmet cover to 'live regular life after football'",
       "url": "https://www.cbssports.com/nfl/news/saints-chris-olave-explains-why-he-wears-a-guardian-cap/",
       "published_at": "2026-09-14T14:39:07Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 grades for all 32 teams: Ravens roll to an 'A-,' Bills earn high mark for win over Texans",
-      "summary": "Here are the Week 1 grades for every team so far",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-grades-for-all-32-teams-ravens-roll-bills-earn-high-mark/",
-      "published_at": "2026-09-14T13:16:54Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -337,18 +349,6 @@
       "summary": "Ladies and gentlemen, we have a scorigami!",
       "url": "https://www.cbssports.com/nfl/news/bears-panthers-final-score-scorigami/",
       "published_at": "2026-09-13T21:31:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Deshaun Watson struggles in return as Browns leave Week 2 starting QB under evaluation",
-      "summary": "Monken defended Watson following Cleveland's 34-10 loss but said the Browns will \"evaluate everything\" before facing Tampa Bay",
-      "url": "https://www.cbssports.com/nfl/news/deshaun-browns-qb-todd-monken/",
-      "published_at": "2026-09-13T21:21:27Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
