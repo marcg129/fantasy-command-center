@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-15T11:45:01.423390Z",
+  "generated_at": "2026-09-15T16:59:37.421517Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Mike Tomlin invokes infamous 'Browns is the Browns' line after Cleveland loss, Todd Monken responds",
+      "summary": "Tomlin used his NBC debut to take a familiar shot at his former AFC North rival, prompting new Browns coach Todd Monken to push back",
+      "url": "https://www.cbssports.com/nfl/news/browns-todd-monken-mike-tomlin/",
+      "published_at": "2026-09-15T16:01:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL Week 2 injury panic meter: Myles Garrett, A.J. Brown, Sam Darnold sidelined with lower body issues",
+      "summary": "Gauging the outlook for some of the league's biggest Week 1 injuries",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-2-injury-panic-meter-myles-garrett-a-j-brown-sam-darnold/",
+      "published_at": "2026-09-15T15:59:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $350 in bonus bets for Cubs-Braves, Houston-Texas Tech, MLB on Tuesday",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Tuesday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-cubs-braves-houston-texas-tech-mlb-tuesday/",
+      "published_at": "2026-09-15T14:42:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting LSU-Ole Miss, Tigers-Blue Jays, MLB",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-lsu-ole-miss-tigers-blue-jays-mlb-tuesday/",
+      "published_at": "2026-09-15T13:18:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Six lessons learned from Week 1: Caleb Williams is taking another leap, don't forget about Trevor Lawrence",
+      "summary": "Plus, Kenneth Walker III might just be the answer to the Chiefs' biggest problem",
+      "url": "https://www.cbssports.com/nfl/news/six-lessons-learned-from-nfl-week-1/",
+      "published_at": "2026-09-15T12:42:18Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 picks and score predictions: Bills top Lions in Thursday shootout, Seahawks suffer shocking loss",
+      "summary": "Here's your weekly dose of John Breech's NFL picks",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-picks-score-predictions/",
+      "published_at": "2026-09-15T12:27:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Chiefs vs. Broncos overreactions: Should Sean Payton reclaim play-calling duties? Patrick Mahomes fully back?",
       "summary": "Are these storylines from Kansas City's 'Monday Night Football' win over Denver valid or mere overreactions?",
@@ -90,18 +162,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Broncos vs. Chiefs on Monday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-broncos-vs-chiefs-monday-night-football/",
-      "published_at": "2026-09-14T22:44:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -265,102 +325,6 @@
       "summary": "Polymarket offers sign-up promotions for NFL predictions with the Polymarket promo code CBSSPORTS",
       "url": "https://www.cbssports.com/nfl/news/polymarket-promo-code-cbssports-giants-cowboys-sunday-night-football-malik-nabers-active/",
       "published_at": "2026-09-14T00:04:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 winners, losers: Deshaun Watson disastrous in Browns offense, Bears light up scoreboard",
-      "summary": "Caleb Williams accounted for four touchdowns as Chicago made an emphatic statement, while Watson could already be running out of time in Cleveland",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-winners-losers-deshaun-watson/",
-      "published_at": "2026-09-14T00:00:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Cowboys-Giants, NFL Week 1 Sunday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Sunday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-in-bonus-bets-cowboys-giants-nfl-week-1-sunday-night-football/",
-      "published_at": "2026-09-13T23:13:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Giants vs. Cowboys: NFC East rivals square off on 'Sunday Night Football' in John Harbaugh's debut",
-      "summary": "The league kicks off the first Sunday night of the season with a familiar matchup that now has plenty of new faces",
-      "url": "https://www.cbssports.com/nfl/news/giants-vs-cowboys-prediction-pick-odds-where-to-watch/",
-      "published_at": "2026-09-13T23:01:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 1 NFL picks, predictions for Kalshi, Polymarket, ProphetX: Giants vs. Cowboys markets",
-      "summary": "SportsLine's advanced model has locked in its Week 1 NFL predictions from 10,000 simulations",
-      "url": "https://www.cbssports.com/prediction/news/week-1-nfl-picks-predictions-kalshi-polymarket-prophetx-cowboys-giants-markets/",
-      "published_at": "2026-09-13T22:33:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Steelers offense struggles vs. Falcons: Who's to blame, what needs fixing",
-      "summary": "Aaron Rodgers and Pittsburgh gained just 264 yards in a 20-13 win",
-      "url": "https://www.cbssports.com/nfl/news/steelers-offense-struggles-vs-falcons-whos-to-blame-what-needs-fixing/",
-      "published_at": "2026-09-13T21:40:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Vikings rule out QB Kyler Murray with a concussion in Minnesota debut vs. Packers",
-      "summary": "Murray's debut ends early with him being ruled out after a late hit in the first quarter",
-      "url": "https://www.cbssports.com/nfl/news/vikings-rule-out-qb-kyler-murray-with-a-concussion-vs-packers/",
-      "published_at": "2026-09-13T21:37:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bills vs. Texans takeaways: Josh Allen overcomes Houston defense in potential AFC championship preview",
-      "summary": "Buffalo earned a dramatic 36-31 victory as Allen finally overcame his struggles in Houston and the Bills' defense delivered when it mattered most",
-      "url": "https://www.cbssports.com/nfl/news/bills-texans-josh-allen-c-j-stroud/",
-      "published_at": "2026-09-13T21:32:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bears' wild win over Panthers ends with final score that's never happened before in NFL history",
-      "summary": "Ladies and gentlemen, we have a scorigami!",
-      "url": "https://www.cbssports.com/nfl/news/bears-panthers-final-score-scorigami/",
-      "published_at": "2026-09-13T21:31:43Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
