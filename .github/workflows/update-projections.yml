@@ -1,0 +1,62 @@
+name: Update fantasy projection data
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: "Optional NFL week override (1-18)"
+        required: false
+        type: string
+  push:
+    paths:
+      - "scripts/update_projections.py"
+      - ".github/workflows/update-projections.yml"
+  schedule:
+    # Every 2 hours during the NFL preseason/regular/postseason months.
+    # GitHub Actions cron is UTC.
+    - cron: "37 */2 * 1,2,8,9,10,11,12 *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fantasy-projections-update
+  cancel-in-progress: true
+
+jobs:
+  update-projections:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Build projection JSON
+        shell: bash
+        env:
+          WEEK_OVERRIDE: ${{ inputs.week }}
+        run: |
+          if [ -n "${WEEK_OVERRIDE}" ]; then
+            python scripts/update_projections.py --week "${WEEK_OVERRIDE}"
+          else
+            python scripts/update_projections.py
+          fi
+
+      - name: Commit changed projection data
+        shell: bash
+        run: |
+          if git diff --quiet -- data/projections.json; then
+            echo "No projection-data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add data/projections.json
+          git commit -m "Refresh fantasy projections"
+          git push
