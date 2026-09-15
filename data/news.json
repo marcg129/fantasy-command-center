@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-15T16:59:37.421517Z",
+  "generated_at": "2026-09-15T21:21:29.476657Z",
   "lookback_days": 7,
-  "article_count": 26,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Ole Miss-LSU, Tigers-Blue Jays, MLB",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-ole-miss-lsu-tigers-blue-jays-mlb-tuesday/",
+      "published_at": "2026-09-15T20:23:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $350 in bonus bets for Braves-Cubs, Houston-Texas Tech, MLB on Tuesday",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Tuesday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-braves-cubs-houston-texas-tech-mlb-tuesday/",
+      "published_at": "2026-09-15T20:10:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Super Bowl stock report for Week 2: 49ers are healthy and formidable, Chargers dig deeper hole",
+      "summary": "We assess the NFL title race after Week 1 and identify three upcoming games that could reshape the Super Bowl picture",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-super-bowl-stock-report-49ers/",
+      "published_at": "2026-09-15T19:42:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "From walk-on at North Texas to promising NFL Draft prospect: What early season says about QB Drew Mestemaker",
+      "summary": "After a 426-yard breakout performance against Oregon, former North Texas transfer Drew Mestemaker is rapidly rising in early 2027 NFL Draft evaluations",
+      "url": "https://www.cbssports.com/nfl/draft/news/walk-on-nfl-draft-prospect-qb-drew-mestemaker-oklahoma-state/",
+      "published_at": "2026-09-15T19:21:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 Week 2 NFL odds, start times, betting lines, spreads: Get Week 2 NFL picks, predictions for every game",
+      "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
+      "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-odds-betting-lines-spreads-picks-predictions/",
+      "published_at": "2026-09-15T18:16:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Mike Tomlin invokes infamous 'Browns is the Browns' line after Cleveland loss, Todd Monken responds",
       "summary": "Tomlin used his NBC debut to take a familiar shot at his former AFC North rival, prompting new Browns coach Todd Monken to push back",
@@ -42,30 +102,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets for Cubs-Braves, Houston-Texas Tech, MLB on Tuesday",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Tuesday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-cubs-braves-houston-texas-tech-mlb-tuesday/",
-      "published_at": "2026-09-15T14:42:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting LSU-Ole Miss, Tigers-Blue Jays, MLB",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Tuesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-lsu-ole-miss-tigers-blue-jays-mlb-tuesday/",
-      "published_at": "2026-09-15T13:18:22Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -313,18 +349,6 @@
       "summary": "Ladies and gentlemen, we have a scorigami!",
       "url": "https://www.cbssports.com/nfl/news/scorigami-vikings-packers-nfl-history/",
       "published_at": "2026-09-14T02:06:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Polymarket promo code CBSSPORTS: $50 bonus for Giants-Cowboys, Sunday Night Football with Malik Nabers active",
-      "summary": "Polymarket offers sign-up promotions for NFL predictions with the Polymarket promo code CBSSPORTS",
-      "url": "https://www.cbssports.com/nfl/news/polymarket-promo-code-cbssports-giants-cowboys-sunday-night-football-malik-nabers-active/",
-      "published_at": "2026-09-14T00:04:42Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
