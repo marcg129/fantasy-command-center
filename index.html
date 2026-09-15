@@ -333,6 +333,21 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   .trade-player-suggestion{min-height:52px;padding:9px}
 }
 
+
+.weekly-subnav-wrap{position:sticky;top:0;z-index:70;margin:10px 0 0;padding:7px 0;background:linear-gradient(180deg,rgba(8,16,31,.98),rgba(8,16,31,.94));backdrop-filter:blur(10px)}
+.weekly-subnav{display:flex;gap:7px;overflow-x:auto;padding:2px 1px 4px;scrollbar-width:thin}
+.weekly-subtab{flex:0 0 auto;display:inline-flex;align-items:center;gap:5px;min-height:38px;padding:8px 11px;border:1px solid var(--line);border-radius:999px;background:#101a2d;color:var(--muted);font-size:12px;font-weight:850;white-space:nowrap}
+.weekly-subtab.active{background:#263a62;color:var(--text);border-color:#42618f}
+.weekly-subtab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.weekly-tab-badge{display:none;min-width:18px;height:18px;padding:0 5px;border-radius:999px;place-items:center;background:#6a5020;color:#ffe49a;font-size:9px;font-weight:900}
+.weekly-tab-badge.show{display:inline-grid}
+.grid.weekly-single-column{grid-template-columns:minmax(0,1fr)}
+.weekly-empty-column{display:none!important}
+@media(max-width:560px){
+  .weekly-subnav-wrap{margin-left:-2px;margin-right:-2px}
+  .weekly-subtab{min-height:40px;padding:8px 12px}
+}
+
 </style>
 </head>
 <body>
@@ -340,7 +355,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • projections + weekly intelligence • v2.15</div>
+    <div class="sub">Multi-manager beta • weekly navigation + projections • v2.15.1</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -437,7 +452,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.15 adds a league-scored weekly projection foundation alongside the existing Outlook model, positional coverage, and league-median intelligence.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.15.1 organizes the growing weekly toolset into focused Overview, Lineup, Waivers, Trades, and Intel views while preserving the projection, Outlook, coverage, and league-median engines.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -463,6 +478,16 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <span class="pill" id="availabilityDataPill">Availability —</span>
     <span class="pill" id="newsDataPill">News —</span>
     <span class="pill warn">Strategy rankings: Aug 30 snapshot</span>
+  </div>
+
+  <div class="weekly-subnav-wrap" id="weeklySubnavWrap">
+    <nav class="weekly-subnav" id="weeklySubnav" aria-label="Weekly Command Center sections">
+      <button class="weekly-subtab active" type="button" data-weekly-tab="overview">Overview<span class="weekly-tab-badge" id="weeklyBadgeOverview"></span></button>
+      <button class="weekly-subtab" type="button" data-weekly-tab="lineup">Lineup<span class="weekly-tab-badge" id="weeklyBadgeLineup"></span></button>
+      <button class="weekly-subtab" type="button" data-weekly-tab="waivers">Waivers<span class="weekly-tab-badge" id="weeklyBadgeWaivers"></span></button>
+      <button class="weekly-subtab" type="button" data-weekly-tab="trades">Trades<span class="weekly-tab-badge" id="weeklyBadgeTrades"></span></button>
+      <button class="weekly-subtab" type="button" data-weekly-tab="intel">Intel<span class="weekly-tab-badge" id="weeklyBadgeIntel"></span></button>
+    </nav>
   </div>
 
   <div class="card" style="margin-top:12px;border-color:#36556f">
@@ -698,7 +723,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.15 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, a shared Weekly Outlook & Opportunity engine, required-position coverage logic, league-median intelligence, a league-scored weekly projection foundation, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.15.1 weekly beta uses Aug. 29/30 half-PPR expert consensus for the top of the board, removes league keepers from the available-player market, and then personalizes recommendations to whichever manager connects: their keeper positions, drafted roster, traded picks, exact future-pick spacing, and close-pick leverage. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, a shared Weekly Outlook & Opportunity engine, required-position coverage logic, league-median intelligence, a league-scored weekly projection foundation, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -1165,6 +1190,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       setPill('leagueStatus',`${league.name||'League'} • ${league.total_rosters||'?'} teams`,'good');
       setPill('managerStatus',`${managerDisplayName()} • roster ${state.myRosterId}`,'good');
       await refreshDraft();
+      await syncWeekToSleeperCurrent();
       if(!$('weeklyMode').classList.contains('hidden')) await loadWeekly();
       startTimer();
       
@@ -5532,6 +5558,150 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     $('weeklyActionPlan').innerHTML=items.slice(0,6).map((x,i)=>`<div class="action-item"><div class="action-num">${i+1}</div><div>${x}</div></div>`).join('');
   }
 
+  const WEEKLY_TAB_KEY='fcc_weekly_tab_v1';
+
+  function currentSleeperWeek(nfl=state.nflState) {
+    for(const value of [nfl?.week,nfl?.display_week,nfl?.leg]) {
+      const week=Number(value);
+      if(Number.isFinite(week) && week>=1 && week<=18) return Math.floor(week);
+    }
+    return null;
+  }
+
+  async function syncWeekToSleeperCurrent() {
+    try {
+      const nfl=await jget(`${BASE}/state/nfl`);
+      if(nfl) state.nflState=nfl;
+      const week=currentSleeperWeek(nfl);
+      if(week) {
+        state.weeklyWeek=week;
+        if($('weekInput')) $('weekInput').value=String(week);
+      }
+      return week;
+    } catch(e) {
+      console.warn('Could not prefill current Sleeper week',e);
+      return null;
+    }
+  }
+
+  function addWeeklyPanel(card,panel) {
+    if(!card) return;
+    const current=new Set(String(card.dataset.weeklyPanels||'').split(/\s+/).filter(Boolean));
+    current.add(panel);
+    card.dataset.weeklyPanels=[...current].join(' ');
+  }
+
+  function assignWeeklyPanels() {
+    const weekly=$('weeklyMode');
+    if(!weekly) return;
+
+    const byId={
+      overview:['weeklyActionPlan','weeklyMedian','weeklyProjection','weeklyMatchup','weeklyRoster'],
+      lineup:['weeklyStartSit','weeklyOutlook','weeklyAvailability','weeklyUsage','weeklyRoster','weeklyIR'],
+      waivers:['weeklyAdds','weeklyDrops','weeklyMoves','weeklyClaims','postDraftScanCard'],
+      trades:['tradeScanView','tradeExplorerView'],
+      intel:['weeklyNews','weeklyGameEnvironment','weeklyTrendingAdds','weeklyTrendingMoves']
+    };
+    for(const [panel,ids] of Object.entries(byId)) {
+      for(const id of ids) addWeeklyPanel($(id)?.closest('.card'),panel);
+    }
+
+    const titleRules=[
+      [/^weekly outlook & opportunity$/i,'lineup'],
+      [/^start \/ sit optimizer$/i,'lineup'],
+      [/^practice & availability$/i,'lineup'],
+      [/^usage & opportunity$/i,'lineup'],
+      [/^best available adds$/i,'waivers'],
+      [/^drop review$/i,'waivers'],
+      [/^add\s*\/\s*drop opportunities$/i,'waivers'],
+      [/^waiver claim planner$/i,'waivers'],
+      [/trade intelligence/i,'trades'],
+      [/^news intelligence$/i,'intel'],
+      [/^game environment$/i,'intel'],
+      [/^trending & recent league activity$/i,'intel'],
+      [/^what this beta does not know yet$/i,'intel'],
+      [/^league median$/i,'overview'],
+      [/^projection foundation$/i,'overview'],
+      [/^matchup snapshot$/i,'overview'],
+      [/^my roster$/i,'overview'],
+      [/^my roster$/i,'lineup']
+    ];
+
+    for(const card of weekly.querySelectorAll('.card')) {
+      if(card.classList.contains('weekly-hero')) continue;
+      const title=(card.querySelector('h3')?.textContent||'').trim();
+      for(const [re,panel] of titleRules) if(re.test(title)) addWeeklyPanel(card,panel);
+      if(!card.dataset.weeklyPanels) card.dataset.weeklyPanels='overview';
+    }
+  }
+
+  function updateWeeklyGridColumns() {
+    const grid=$('weeklyMode')?.querySelector('.grid');
+    if(!grid) return;
+    const columns=[...grid.children];
+    for(const col of columns) col.classList.remove('weekly-empty-column');
+    let visible=0;
+    for(const col of columns) {
+      const visibleCards=[...col.querySelectorAll(':scope > .card')].filter(card=>!card.classList.contains('hidden'));
+      const hasOther=[...col.children].some(el=>!el.classList.contains('card') && !el.classList.contains('hidden'));
+      if(visibleCards.length || hasOther) visible++;
+      else col.classList.add('weekly-empty-column');
+    }
+    grid.classList.toggle('weekly-single-column',visible<2);
+  }
+
+  function applyWeeklyTab(tab,{persist=true}={}) {
+    const allowed=['overview','lineup','waivers','trades','intel'];
+    if(!allowed.includes(tab)) tab='overview';
+    assignWeeklyPanels();
+
+    for(const card of document.querySelectorAll('#weeklyMode .card[data-weekly-panels]')) {
+      const panels=String(card.dataset.weeklyPanels||'').split(/\s+/);
+      card.classList.toggle('hidden',!panels.includes(tab));
+    }
+    for(const btn of document.querySelectorAll('#weeklySubnav [data-weekly-tab]')) {
+      const active=btn.dataset.weeklyTab===tab;
+      btn.classList.toggle('active',active);
+      btn.setAttribute('aria-current',active?'page':'false');
+    }
+    updateWeeklyGridColumns();
+    if(persist) {
+      try { localStorage.setItem(WEEKLY_TAB_KEY,tab); } catch(e) {}
+    }
+  }
+
+  function setWeeklyNavBadge(id,count) {
+    const el=$(id);
+    if(!el) return;
+    const n=Math.max(0,Math.min(9,Number(count)||0));
+    el.textContent=n?String(n):'';
+    el.classList.toggle('show',n>0);
+  }
+
+  function refreshWeeklyNavBadges() {
+    const lineup=document.querySelectorAll('#weeklyStartSit .lineup-alert,#weeklyStartSit .lineup-swap').length;
+    const waiverActions=document.querySelectorAll('#weeklyClaims .claim-burn,#weeklyClaims .claim-submit').length;
+    let coverage=0;
+    try {
+      if(state.connected) coverage=positionalCoverageNeeds(myWeeklyContext()).length;
+    } catch(e) {}
+    const intel=document.querySelectorAll('#weeklyNews .news-negative,#weeklyNews .news-watch,#weeklyGameEnvironment .game-env-low').length;
+
+    setWeeklyNavBadge('weeklyBadgeLineup',lineup);
+    setWeeklyNavBadge('weeklyBadgeWaivers',waiverActions+coverage);
+    setWeeklyNavBadge('weeklyBadgeIntel',intel);
+  }
+
+  function setupWeeklyNavigation() {
+    assignWeeklyPanels();
+    for(const btn of document.querySelectorAll('#weeklySubnav [data-weekly-tab]')) {
+      btn.addEventListener('click',()=>applyWeeklyTab(btn.dataset.weeklyTab));
+    }
+    let saved='overview';
+    try { saved=localStorage.getItem(WEEKLY_TAB_KEY)||'overview'; } catch(e) {}
+    applyWeeklyTab(saved,{persist:false});
+  }
+
   async function loadWeekly() {
     if(!state.connected) return showError('Connect to Sleeper first.');
     const week=Math.max(1,Math.min(18,Number($('weekInput').value)||1));
@@ -5594,6 +5764,10 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       renderWeeklyMatchup(matchups,ctx);
       renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups);
       $('postDraftScanCard').style.display=state.weeklyMode==='postdraft'?'block':'none';
+      refreshWeeklyNavBadges();
+      let activeWeeklyTab='overview';
+      try { activeWeeklyTab=localStorage.getItem(WEEKLY_TAB_KEY)||'overview'; } catch(e) {}
+      applyWeeklyTab(activeWeeklyTab,{persist:false});
     } catch(e) {
       console.error(e);
       $('weeklyActionPlan').innerHTML=`<div class="error">${esc(e?.message||'Weekly data failed to load.')}</div>`;
@@ -5609,6 +5783,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   $('clearManualBtn').addEventListener('click',()=>{state.manualTaken.clear();renderAll();});
   $('downloadBtn').addEventListener('click',downloadSnapshot);
   $('weeklyRefreshBtn').addEventListener('click',loadWeekly);
+  setupWeeklyNavigation();
   $('weeklyModeSelect').addEventListener('change',()=>{
     state.weeklyMode=$('weeklyModeSelect').value;
     $('weeklyRefreshBtn').textContent=state.weeklyMode==='postdraft'?'Run Post-Draft Scan':'Run Weekly Check';

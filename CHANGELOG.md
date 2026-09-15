@@ -4,6 +4,19 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.15.1 — Weekly Navigation & Current Week
+**2026-09-15**
+
+- Add sticky Weekly sub-navigation with focused Overview, Lineup, Waivers, Trades, and Intel views instead of one continuously growing page.
+- Keep the existing Draft Day / Weekly top-level navigation unchanged.
+- Preserve the selected Weekly sub-tab in browser storage so managers can return directly to the area they use most.
+- Add compact alert-count badges for actionable Lineup, Waiver, and Intel items after each weekly scan.
+- Allow cards such as My Roster to appear in more than one relevant view without duplicating their data or decision logic.
+- Collapse the weekly two-column grid to one column when the selected view only has content on one side, avoiding empty desktop space.
+- On every new Sleeper connection, read the live NFL state and default the editable Week field to Sleeper's current week.
+- Keep manual week selection fully available after connection for looking ahead or reviewing another week.
+- Preserve v2.15 projection scoring, Weekly Outlook, positional coverage, league median, waiver, trade, news, usage, weather, and injury logic unchanged.
+
 ## v2.15 — Projection Foundation
 **2026-09-15**
 
