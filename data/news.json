@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-15T04:55:15.002487Z",
+  "generated_at": "2026-09-15T11:45:01.423390Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Chiefs vs. Broncos overreactions: Should Sean Payton reclaim play-calling duties? Patrick Mahomes fully back?",
+      "summary": "Are these storylines from Kansas City's 'Monday Night Football' win over Denver valid or mere overreactions?",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-broncos-overreactions-sean-payton-patrick-mahomes/",
+      "published_at": "2026-09-15T11:43:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "These five rookies balled out in their NFL debuts, but is their early success sustainable?",
+      "summary": "A closer look at snap counts, pressure rates, usage and other underlying numbers helps separate potentially sustainable rookie performances from one-game outliers",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-rookies-week-1-standouts/",
+      "published_at": "2026-09-15T11:32:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 1 grades for all 32 teams: Chiefs earn an 'A' for destroying Broncos, Ravens roll to an 'A-'",
       "summary": "Here are the Week 1 grades for every team so far",
@@ -73,18 +97,6 @@
       "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-broncos-vs-chiefs-monday-night-football/",
       "published_at": "2026-09-14T22:44:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Broncos vs. Chiefs Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Kansas City vs. Denver betting on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-broncos-chiefs-monday-night-football/",
-      "published_at": "2026-09-14T21:02:28Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
