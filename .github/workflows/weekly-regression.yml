@@ -1,0 +1,53 @@
+name: Weekly regression tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'tests/**'
+      - '.github/workflows/weekly-regression.yml'
+  pull_request:
+    paths:
+      - 'index.html'
+      - 'tests/**'
+      - '.github/workflows/weekly-regression.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-regression-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  weekly-contract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate Weekly dependency contract
+        run: python tests/weekly_contract_test.py
+
+  sleeper-integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate Sleeper and same-origin Weekly data
+        run: python tests/weekly_api_smoke.py
