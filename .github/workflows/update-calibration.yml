@@ -1,0 +1,43 @@
+name: Update fantasy simulation calibration
+
+on:
+  workflow_run:
+    workflows: ["Update fantasy projection data"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fantasy-simulation-calibration
+  cancel-in-progress: true
+
+jobs:
+  update-calibration:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build calibration JSON
+        run: python scripts/update_calibration.py
+      - name: Commit changed calibration data
+        run: |
+          if git diff --quiet -- data/calibration.json; then
+            echo "No calibration-data changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/calibration.json
+          git commit -m "Refresh simulation calibration"
+          git pull --rebase origin main
+          git push
