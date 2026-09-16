@@ -367,7 +367,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • week-aware management • v2.18</div>
+    <div class="sub">Multi-manager beta • week-aware management • v2.18.1</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -464,7 +464,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.18 adds conservative one-week streaming recommendations for QB, TE, K, and DEF while preserving regression protection, lineup consensus, calibration, median strategy, and reliable usage.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.18.1 gives Streamer Finder its own QB/TE/K/DEF candidate pool and a direct waiver-review handoff while preserving conservative thresholds and regression protection.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -613,7 +613,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
         <div class="weekly-section-head">
           <div>
             <h3>Streamer Finder</h3>
-            <div class="tiny">One-week QB, TE, K, and DEF decisions. Compares your current starter with available options using league-scored projections first, then Weekly Outlook, game environment, and availability as supporting context. Small edges are treated as holds.</div>
+            <div class="tiny">One-week QB, TE, K, and DEF decisions. Uses a dedicated streaming candidate pool so strong incumbents still receive real free-agent comparisons. League-scored projections lead; Weekly Outlook, game environment, and availability provide supporting context. Small edges are treated as holds.</div>
           </div>
           <span class="pill" id="streamerPill">Streamers —</span>
         </div>
@@ -5686,6 +5686,26 @@ if(team.rosterId===mine.rosterId) {
     };
   }
 
+  function streamingCandidatePool(ctx) {
+    const rostered=rosteredPlayerIds();
+    const recentSelfDrops=recentlyDroppedByMeIds(24);
+    return dynamicPlayerBoard()
+      .filter(b=>b.player_id && !rostered.has(String(b.player_id)))
+      .filter(b=>['QB','TE','K','DEF'].includes(b.pos))
+      .filter(b=>!recentSelfDrops.has(String(b.player_id)))
+      .sort((a,b)=>{
+        const ap=projectedPointsForId(a.player_id), bp=projectedPointsForId(b.player_id);
+        if(Number.isFinite(bp)&&Number.isFinite(ap)&&bp!==ap) return bp-ap;
+        if(Number.isFinite(bp)&&!Number.isFinite(ap)) return -1;
+        if(!Number.isFinite(bp)&&Number.isFinite(ap)) return 1;
+        const ao=weeklyOutlookForPlayer(a.pdata||{})?.score, bo=weeklyOutlookForPlayer(b.pdata||{})?.score;
+        if(Number.isFinite(bo)&&Number.isFinite(ao)&&bo!==ao) return bo-ao;
+        if(Number.isFinite(bo)&&!Number.isFinite(ao)) return -1;
+        if(!Number.isFinite(bo)&&Number.isFinite(ao)) return 1;
+        return inSeasonMarketRank(a.pdata||{},a)-inSeasonMarketRank(b.pdata||{},b);
+      });
+  }
+
   function streamingRecommendationForPosition(ctx,pool,pos) {
     const current=streamingStarterForPosition(ctx,pos);
     const currentSnap=current?streamingPlayerSnapshot(current.id,current.p):null;
@@ -5732,7 +5752,8 @@ if(team.rosterId===mine.rosterId) {
     return {pos,status:'HOLD',kind:projectionEdge>0?'watch':'',threshold,current:currentSnap,best,projectionEdge,outlookEdge,reason:`NO-ACTION STREAMING EDGE: ${edgeText}; requires +${threshold.toFixed(1)} with supporting context before recommending a one-week move.`};
   }
 
-  function renderStreamerFinder(ctx,pool) {
+  function renderStreamerFinder(ctx) {
+    const pool=streamingCandidatePool(ctx);
     const positions=['QB','TE','K','DEF'];
     const rows=positions.map(pos=>streamingRecommendationForPosition(ctx,pool,pos));
     const streams=rows.filter(r=>r.status==='STREAM').length;
@@ -5756,10 +5777,15 @@ if(team.rosterId===mine.rosterId) {
           <b>${esc(r.status)}${r.best?` ${esc(bestName)} <span class="pos ${r.pos}">${r.pos}</span>`:''}</b>
           <div class="meta">${meta}</div>
           <div class="whyline">${esc(r.reason)}${r.status==='STREAM'?' Roster-space decisions stay in Drop Review/Waiver Planner; this card never assumes the current starter should be dropped.':''}</div>
+          ${r.status==='STREAM'?`<button class="ghost streamerWaiverBtn" type="button" style="margin-top:7px;min-height:34px;padding:6px 9px">Review waiver move</button>`:''}
         </div>
         <div class="value-badge">${Number.isFinite(r.best?.snap?.projection)?r.best.snap.projection.toFixed(1):'—'}</div>
       </div>`;
     }).join('');
+    document.querySelectorAll('.streamerWaiverBtn').forEach(btn=>btn.addEventListener('click',()=>{
+      const target=$('weeklyClaims')?.closest('.card')||$('weeklyDrops')?.closest('.card');
+      target?.scrollIntoView({behavior:'smooth',block:'start'});
+    }));
     return rows;
   }
 
@@ -6433,7 +6459,7 @@ if(team.rosterId===mine.rosterId) {
       const lineup=renderStartSit(ctx);
       renderUsagePanel(ctx);
       const pool=renderWeeklyAdds(ctx);
-      renderStreamerFinder(ctx,pool);
+      renderStreamerFinder(ctx);
       renderNewsPanel(ctx,pool);
       const steals=renderPostDraftSteals(ctx,pool);
       const drops=renderWeeklyDrops(ctx);

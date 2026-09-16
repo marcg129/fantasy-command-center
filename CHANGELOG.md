@@ -4,6 +4,15 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.18.1 — Streamer Candidate Pool Fix
+**2026-09-16**
+
+- Give Streamer Finder its own QB/TE/K/DEF candidate pool instead of reusing the normal waiver pool that intentionally suppresses backup-QB recommendations behind a strong QB1.
+- Always compare an incumbent QB such as Joe Burrow against actually unrostered streaming options before returning `HOLD`, rather than showing `no usable available comparison` solely because ordinary QB redundancy logic hid the candidates.
+- Keep the dedicated streaming pool free of ordinary QB/TE roster-redundancy penalties while preserving availability/usability screening inside the streaming recommendation itself.
+- Add a compact `Review waiver move` handoff to every `STREAM` result; the button scrolls to Waiver Planner/Drop Review and never auto-selects a player to cut.
+- Extend the permanent Weekly regression contract to require the dedicated streamer pool, prohibit strong-QB suppression inside it, verify the handoff wiring, and protect the updated Weekly pipeline.
+
 ## v2.18 — Streamer Finder
 **2026-09-16**
 
