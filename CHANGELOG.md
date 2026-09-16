@@ -4,6 +4,18 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.17 — Simulation Calibration Foundation
+**2026-09-16**
+
+- Begin collecting one stable pregame Sleeper projection snapshot per NFL week for empirical simulation calibration instead of permanently relying on fixed variance assumptions.
+- Refresh the weekly calibration snapshot through Thursday 6:00 PM Eastern, then freeze it so later projection changes cannot rewrite the baseline being evaluated.
+- Add an automated calibration job that compares completed frozen projections with realized Sleeper weekly PPR results using matching Sleeper player IDs.
+- Estimate projection-error dispersion by QB, RB, WR, TE, K, and DEF, while requiring at least two completed archived weeks and 50 samples at a position before empirical variance can influence simulations.
+- Shrink empirical variance estimates toward the conservative v1 baseline rather than switching abruptly to noisy early-season estimates.
+- Load `data/calibration.json` into Weekly Simulation and show whether variance is still `CALIBRATION COLLECTING` or has advanced to an empirical blend.
+- Keep the existing minimum variance floors, 12% same-team shared factor, projection-coverage requirements, pregame-only guardrail, lineup consensus, median strategy, waivers, trades, news, weather, and usage behavior.
+- Calibration collection starts with the current Week 2 projection cycle; do not fabricate a Week 1 archive after the fact because it would not represent the projection information that existed before Week 1 games.
+
 ## v2.16.4 — Enter-to-Connect Shortcut
 **2026-09-16**
 

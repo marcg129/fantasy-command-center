@@ -16,9 +16,11 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "projections.json"
+HISTORY_DIR = ROOT / "data" / "projection-history"
 UA = "FantasyCommandCenter-ProjectionsBot/1.0 (+GitHub Actions)"
 
 STATE_URL = "https://api.sleeper.app/v1/state/nfl"
@@ -131,6 +133,38 @@ def fetch_projection_payload(season: int, week: int) -> tuple[object, str]:
     raise RuntimeError("; ".join(errors))
 
 
+
+def write_calibration_history(output: dict, now: datetime) -> Path | None:
+    """Keep one stable pregame snapshot per NFL week for projection-error calibration.
+
+    The archive refreshes through Thursday 6:00 PM America/New_York, then freezes.
+    That gives the model a late-week pregame baseline without saving every 2-hour pull.
+    If a weekly archive does not exist yet, create one even after the cutoff rather than
+    losing the week entirely.
+    """
+    season = int(output.get("season") or 0)
+    week = int(output.get("week") or 0)
+    if season <= 0 or week < 1 or week > 18:
+        return None
+
+    HISTORY_DIR.mkdir(parents=True, exist_ok=True)
+    path = HISTORY_DIR / f"{season}-W{week:02d}.json"
+    local = now.astimezone(ZoneInfo("America/New_York"))
+    cutoff = local.replace(hour=18, minute=0, second=0, microsecond=0)
+    refresh_allowed = local.weekday() < 3 or (local.weekday() == 3 and local < cutoff)
+
+    if path.exists() and not refresh_allowed:
+        print(f"Calibration archive already frozen: {path}")
+        return None
+
+    archived = dict(output)
+    archived["calibration_snapshot"] = True
+    archived["snapshot_policy"] = "latest refresh through Thursday 18:00 America/New_York"
+    archived["snapshot_local_time"] = local.isoformat()
+    path.write_text(json.dumps(archived, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    print(f"Wrote calibration projection archive: {path}")
+    return path
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--season", type=int)
@@ -163,6 +197,7 @@ def main() -> int:
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(output, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    write_calibration_history(output, now)
     print(f"Wrote {len(players)} projected players for {season} Week {week} to {OUT}")
     print(f"Source: {source_url}")
     return 0
