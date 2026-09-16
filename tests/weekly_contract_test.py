@@ -22,6 +22,7 @@ required_ids = [
     "weeklyMedian",
     "weeklyProjection",
     "weeklySimulation",
+    "weeklyStreamers",
 ]
 
 # These are the core helpers directly or transitively required by loadWeekly().
@@ -48,6 +49,8 @@ required_functions = [
     "renderWeeklyDrops",
     "renderWeeklyMoves",
     "renderWaiverClaims",
+    "streamingRecommendationForPosition",
+    "renderStreamerFinder",
     "renderTradeIntelligence",
     "renderWeeklyTrending",
     "renderWeeklyTransactions",
@@ -77,6 +80,8 @@ required_fragments = [
     "PREGAME ONLY",
     "Sleeper username / display name",
     "Run Weekly Check",
+    "Streamer Finder",
+    "NO-ACTION STREAMING EDGE",
 ]
 
 errors = []
@@ -123,6 +128,7 @@ else:
         "renderWeeklyRoster(ctx)",
         "renderWeeklyOutlook(ctx)",
         "renderStartSit(ctx)",
+        "renderStreamerFinder(ctx,pool)",
         "renderProjectionPanel(matchups,ctx)",
         "renderWeeklySimulation(matchups,ctx)",
         "renderLeagueMedian(matchups,ctx,simulation)",
@@ -154,5 +160,5 @@ if errors:
 
 print(
     "Weekly contract PASS: DOM anchors, Weekly Check dependency chain, critical "
-    "projection/simulation helpers, event wiring, guardrail copy, and JavaScript syntax are intact."
+    "projection/simulation/streaming helpers, event wiring, guardrail copy, and JavaScript syntax are intact."
 )
