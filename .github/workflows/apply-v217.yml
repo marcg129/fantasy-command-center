@@ -50,13 +50,18 @@ jobs:
           grep -F '## v2.17 — Simulation Calibration Foundation' CHANGELOG.md
       - name: Commit update
         run: |
+          # The GitHub Actions token cannot create/modify workflow files in a push.
+          # Keep those generated changes out of this commit; they are applied directly
+          # after the validated app/script update lands.
+          git restore .github/workflows/update-projections.yml
+          rm -f .github/workflows/update-calibration.yml
           if git diff --quiet; then
-            echo 'No changes to commit.'
+            echo 'No non-workflow changes to commit.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html CHANGELOG.md scripts/update_projections.py scripts/update_calibration.py .github/workflows/update-projections.yml .github/workflows/update-calibration.yml
+          git add index.html CHANGELOG.md scripts/update_projections.py scripts/update_calibration.py
           git commit -m 'Add simulation calibration foundation'
           git pull --rebase origin main
           git push
