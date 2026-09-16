@@ -4,6 +4,13 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.16.4 — Enter-to-Connect Shortcut
+**2026-09-16**
+
+- Allow pressing `Enter` in the Sleeper username / display-name field to run the same connection flow as clicking the Connect button.
+- Prevent the keyboard shortcut from submitting twice while a connection attempt is already in progress.
+- Preserve the existing Connect button, manager datalist suggestions, current-week resolution, weekly navigation, lineup consensus, simulation, median strategy, usage, waivers, trades, news, weather, and availability behavior.
+
 ## v2.16.3 — Median Strategy Integration
 **2026-09-16**
 

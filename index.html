@@ -367,7 +367,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • week-aware management • v2.16.3</div>
+    <div class="sub">Multi-manager beta • week-aware management • v2.16.4</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -464,7 +464,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.16.3 resolves the active management week from Sleeper plus fresh same-season data snapshots, while preserving manual week selection, lineup consensus, simulation, and reliable usage.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.16.4 adds keyboard-friendly Sleeper connection while preserving current-week resolution, lineup consensus, simulation, and reliable usage.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -6275,6 +6275,11 @@ if(team.rosterId===mine.rosterId) {
   }
 
   $('connectBtn').addEventListener('click',connect);
+  $('myName').addEventListener('keydown',e=>{
+    if(e.key!=='Enter') return;
+    e.preventDefault();
+    if(!$('connectBtn').disabled) connect();
+  });
   $('refreshBtn').addEventListener('click',refreshDraft);
   $('playerSearch').addEventListener('input',renderAvailable);
   $('clearManualBtn').addEventListener('click',()=>{state.manualTaken.clear();renderAll();});
