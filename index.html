@@ -5878,7 +5878,7 @@ if(team.rosterId===mine.rosterId) {
       .map((c,index)=>({...c,priorityScore:transactionPriorityScore(c),_sourceOrder:index}))
       .sort((a,b)=>b.priorityScore-a.priorityScore || a._sourceOrder-b._sourceOrder);
 
-    return ranked.map(c=>{
+    const allocated=ranked.map(c=>{
       if(slots>0) {
         slots-=1;
         return {...c,resource:'OPEN SLOT',dropName:null,blocked:false};
@@ -5890,6 +5890,11 @@ if(team.rosterId===mine.rosterId) {
       }
       return {...c,resource:'BLOCKED — NO SAFE DROP',dropName:null,blocked:true};
     });
+
+    return [
+      ...allocated.filter(c=>!c.blocked),
+      ...allocated.filter(c=>c.blocked)
+    ];
   }
   // TRANSACTION_PRIORITY_CORE_END
 
@@ -5990,7 +5995,7 @@ if(team.rosterId===mine.rosterId) {
         <div>
           <b>${m.blocked?'HOLD':'ADD'} ${esc(m.name)} <span class="pos ${m.pos}">${m.pos}</span></b>
           <div class="meta">${esc(resourceText)} • ${esc(m.type)}${m.coverageNeed?' • COVERAGE NEED':''}</div>
-          <div class="whyline">${esc(impactText)}${esc(costText)}. ${m.blocked?'The higher-priority move consumes the available roster capacity and this move does not have a distinct protected churn path.':'This is the highest remaining transaction that fits the roster resources allocated ahead of it.'} Verify the transaction state in Sleeper before submitting.</div>
+          <div class="whyline">${esc(impactText)}${esc(costText)}. ${m.blocked?'This move does not have remaining open-slot capacity or a distinct protected churn path.':'This is the highest remaining transaction that fits the roster resources allocated ahead of it.'} Verify the transaction state in Sleeper before submitting.</div>
         </div>
         <div class="value-badge">${m.type==='STREAM'&&Number.isFinite(m.starterGain)?`+${m.starterGain.toFixed(1)}`:(Number.isFinite(m.rosterGain)?`${m.rosterGain>=0?'+':''}${Math.round(m.rosterGain)}`:'—')}<div class="tiny">${m.type==='STREAM'?'starter':'utility'}</div></div>
       </div>`;
