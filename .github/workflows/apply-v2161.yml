@@ -1,0 +1,40 @@
+name: Apply v2.16.1 usage reliability fix
+
+on:
+  push:
+    paths:
+      - "scripts/apply_v2161.py"
+      - ".github/workflows/apply-v2161.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Apply v2.16.1
+        run: python scripts/apply_v2161.py
+
+      - name: Validate frontend JavaScript
+        shell: bash
+        run: |
+          python -c "from pathlib import Path; import re; t=Path('index.html').read_text(encoding='utf-8'); s=re.findall(r'<script>(.*?)</script>',t,flags=re.S); assert s; Path('/tmp/fcc.js').write_text(chr(10).join(s),encoding='utf-8')"
+          node --check /tmp/fcc.js
+
+      - name: Commit update
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html CHANGELOG.md
+          if git diff --cached --quiet; then
+            echo "No application changes to commit."
+            exit 0
+          fi
+          git commit -m "Fix weekly usage loading"
+          git push origin HEAD:main
