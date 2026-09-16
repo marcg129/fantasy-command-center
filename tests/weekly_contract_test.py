@@ -49,6 +49,9 @@ required_functions = [
     "renderWeeklyDrops",
     "renderWeeklyMoves",
     "renderWaiverClaims",
+    "streamingThresholdForPosition",
+    "streamingStarterForPosition",
+    "streamingPlayerSnapshot",
     "streamingRecommendationForPosition",
     "renderStreamerFinder",
     "renderTradeIntelligence",
@@ -82,6 +85,8 @@ required_fragments = [
     "Run Weekly Check",
     "Streamer Finder",
     "NO-ACTION STREAMING EDGE",
+    "QB:2.0,TE:1.5,K:1.5,DEF:2.0",
+    "Roster-space decisions stay in Drop Review/Waiver Planner",
 ]
 
 errors = []
