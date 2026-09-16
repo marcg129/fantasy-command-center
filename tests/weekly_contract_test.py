@@ -86,6 +86,7 @@ required_fragments = [
     "Run Weekly Check",
     "Streamer Finder",
     "NO-ACTION STREAMING EDGE",
+    "MODEL CONFLICT",
     "QB:2.0,TE:1.5,K:1.5,DEF:2.0",
     "Roster-space decisions stay in Drop Review/Waiver Planner",
     "Review waiver move",
@@ -137,6 +138,20 @@ else:
     if "['QB','TE','K','DEF']" not in streamer_pool_body:
         errors.append("streamingCandidatePool() must be limited to QB/TE/K/DEF")
 
+streamer_reco_match = re.search(
+    r"function\s+streamingRecommendationForPosition\s*\(ctx,pool,pos\)\s*\{(.*?)\n\s*\}\n\n\s*function\s+renderStreamerFinder",
+    html,
+    flags=re.S,
+)
+if not streamer_reco_match:
+    errors.append("could not isolate streamingRecommendationForPosition()")
+else:
+    streamer_reco_body = streamer_reco_match.group(1)
+    if "projectionClears && !outlookNotStronglyAgainst" not in streamer_reco_body:
+        errors.append("streamer decisions must distinguish a cleared projection threshold from an Outlook conflict")
+    if "MODEL CONFLICT" not in streamer_reco_body:
+        errors.append("streamer model conflicts must carry an explicit MODEL CONFLICT label")
+
 streamer_render_match = re.search(
     r"function\s+renderStreamerFinder\s*\(ctx\)\s*\{(.*?)\n\s*\}\n\n\s*function\s+renderTradeIntelligence",
     html,
@@ -150,6 +165,8 @@ else:
         errors.append("renderStreamerFinder() must use the dedicated streaming candidate pool")
     if "streamerWaiverBtn" not in streamer_render_body or "scrollIntoView" not in streamer_render_body:
         errors.append("stream recommendations must include a working Review waiver move handoff")
+    if "r.status==='HOLD'?currentName:bestName" not in streamer_render_body:
+        errors.append("HOLD streamer headlines must name the incumbent starter, not the available comparison")
 
 # Verify the top-level Weekly Check pipeline still calls every major renderer.
 load_weekly_match = re.search(
