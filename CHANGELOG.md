@@ -4,6 +4,17 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.18.3 — Streamer → Waiver Planner Handoff
+**2026-09-16**
+
+- Carry the exact `STREAM` candidate selected in Streamer Finder into Waiver Claim Planner instead of only scrolling to the planner.
+- Pin a dedicated `STREAMER REVIEW` card that evaluates the candidate against an open roster slot or the existing canonical safe churn candidate.
+- Reuse `dropCandidates()`, `primaryChurnCandidate()`, and `effectiveKeepValue()` so the handoff follows the same roster-protection logic as Drop Review and ordinary add/drop decisions.
+- Surface `STREAM EDGE — NO SAFE DROP` when the one-week stream grades well but no protected roster move clears the existing churn threshold.
+- Never assume the incumbent QB/TE/K/DEF starter is the player to cut; the planner can show the stream edge without forcing a transaction.
+- Preserve ordinary Waiver Claim Planner rankings when no Streamer Finder handoff is selected, and clear stale pinned reviews on the next Weekly Check.
+- Add a permanent regression contract covering exact-candidate propagation, safe-drop reuse, and no-auto-incumbent-drop behavior.
+
 ## v2.18.2 — Streamer Decision Clarity
 **2026-09-16**
 

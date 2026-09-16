@@ -464,7 +464,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.18.2 clarifies Streamer Finder hold decisions by naming the incumbent and separating threshold misses from supporting-model conflicts.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.18.3 carries an exact Streamer Finder recommendation into Waiver Claim Planner for a safe roster-space review without assuming the incumbent starter should be dropped.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -808,7 +808,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
   const state = {
     league:null,draft:null,users:[],rosters:[],picks:[],traded:[],players:{},
     myRosterId:null,myUserId:null,manualTaken:new Set(),timer:null,countdown:0,connected:false,
-    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null,usageStatsCache:{},usageSnapsCache:{},usageStatsIndex:null,usageSnapIndex:null,usageByPlayer:new Map(),usageSource:null,usageError:null,newsFeed:null,newsError:null,newsMatchCache:new Map(),projectionFeed:null,projectionByPlayer:new Map(),projectionError:null,calibrationFeed:null,calibrationError:null,tradeStyle:'balanced',tradeView:'scan',tradeExplorerPlayerId:null
+    nflState:null,trendingAdds:[],trendingDrops:[],transactions:[],weeklyWeek:1,weeklyMode:'weekly',scheduleAll:null,scheduleGames:[],gameByTeam:new Map(),weatherByGame:new Map(),gameContextError:null,usageStatsCache:{},usageSnapsCache:{},usageStatsIndex:null,usageSnapIndex:null,usageByPlayer:new Map(),usageSource:null,usageError:null,newsFeed:null,newsError:null,newsMatchCache:new Map(),projectionFeed:null,projectionByPlayer:new Map(),projectionError:null,calibrationFeed:null,calibrationError:null,tradeStyle:'balanced',tradeView:'scan',tradeExplorerPlayerId:null,streamerWaiverReview:null,weeklyWaiverMoves:[],weeklyWaiverPool:[]
   };
 
   try {
@@ -4649,6 +4649,8 @@ if(team.rosterId===mine.rosterId) {
     const profile=waiverLeagueProfile(ctx);
     const threshold=waiverPriorityThreshold(profile);
     const openSlots=Math.max(0,(ctx.activeCapacity||0)-(ctx.activePlayers||0));
+    state.weeklyWaiverMoves=moves||[];
+    state.weeklyWaiverPool=pool||[];
 
     const candidates=(moves||[]).map((m,i)=>{
       const competition=waiverCompetitionRisk(m.add);
@@ -4691,10 +4693,52 @@ if(team.rosterId===mine.rosterId) {
       actionable.length?'warn':'good'
     );
 
+    const streamerReview=state.streamerWaiverReview;
+    const streamerDecision=streamerReview
+      ? (streamerReview.openSlots>0
+          ? 'OPEN SLOT'
+          : (streamerReview.safeDrop?'SAFE DROP':'STREAM EDGE — NO SAFE DROP'))
+      : '';
+    const streamerDropText=streamerReview
+      ? (streamerReview.openSlots>0
+          ? `ADD ${streamerReview.add.name} • open roster slot`
+          : (streamerReview.drop
+              ? `ADD ${streamerReview.add.name} • ${streamerReview.safeDrop?'DROP':'review drop'} ${streamerReview.drop.name}`
+              : `ADD ${streamerReview.add.name} • no eligible churn candidate`))
+      : '';
+    const streamerGapText=streamerReview && Number.isFinite(streamerReview.gap)
+      ? ` • roster-utility gap ${streamerReview.gap>=0?'+':''}${Math.round(streamerReview.gap)}`
+      : '';
+    const streamerProjectionText=streamerReview && Number.isFinite(streamerReview.projectionEdge)
+      ? `Projection edge ${streamerReview.projectionEdge>=0?'+':''}${streamerReview.projectionEdge.toFixed(1)} pts.`
+      : 'Projection-led stream recommendation.';
+    const streamerReviewHtml=streamerReview
+      ? `<div class="waiver-row ${streamerReview.safeDrop?'claim-submit':'claim-watch'}" style="margin-bottom:8px;border-width:2px">
+          <div class="waiver-rank">STREAM<b>↕</b></div>
+          <div>
+            <b>${esc(streamerReview.add.name)} <span class="pos ${streamerReview.add.pos}">${streamerReview.add.pos}</span></b>
+            <div class="meta">${esc(streamerDropText)}${streamerGapText}</div>
+            <div class="usage-grid">
+              <span class="claim-chip warn">STREAMER REVIEW</span>
+              <span class="claim-chip ${streamerReview.safeDrop?'good':'warn'}">${esc(streamerDecision)}</span>
+            </div>
+            <div class="whyline">${esc(streamerProjectionText)} ${
+              streamerReview.safeDrop
+                ? (streamerReview.openSlots>0
+                    ? 'The one-week stream can be reviewed without cutting anyone.'
+                    : `The existing churn model identifies ${esc(streamerReview.drop.name)} as a sufficiently expendable roster spot.`)
+                : `The stream itself grades well, but no existing safe churn candidate clears the +${streamerReview.reviewCut} roster-utility threshold. Do not force the transaction.`
+            } The incumbent ${esc(streamerReview.currentName||streamerReview.pos)} is never assumed to be the drop.</div>
+          </div>
+          <div class="value-badge">${Number.isFinite(streamerReview.projectionEdge)?`${streamerReview.projectionEdge>=0?'+':''}${streamerReview.projectionEdge.toFixed(1)}`:'—'}<div class="tiny">proj edge</div></div>
+        </div>`
+      : '';
+
     if(!ordered.length) {
       $('weeklyClaims').innerHTML=
-        `<div class="goodbox"><b>No waiver claim is justified right now.</b><br>${esc(profileBits.join(' • '))}. Holding your current priority/budget is a positive decision.</div>`;
-      return [];
+        streamerReviewHtml+
+        `<div class="goodbox"><b>No ordinary waiver claim is justified right now.</b><br>${esc(profileBits.join(' • '))}. Holding your current priority/budget is a positive decision.</div>`;
+      return streamerReview?[streamerReview]:[];
     }
 
     const sharedDrop=ordered[0]?.drop||null;
@@ -4705,6 +4749,7 @@ if(team.rosterId===mine.rosterId) {
           ? `${openSlots} active roster slot${openSlots===1?' is':'s are'} currently open, so some claims may not require a drop.`
           : (sharedDrop?`Primary churn slot: ${esc(sharedDrop.name)}.`:'Roster appears full.')
       }</div>`+
+      streamerReviewHtml+
       ordered.map((m,i)=>{
         const verdict=m.verdict;
         const comp=m.competition;
@@ -5765,6 +5810,42 @@ if(team.rosterId===mine.rosterId) {
     return {pos,status:'HOLD',kind:projectionEdge>0?'watch':'',threshold,current:currentSnap,best,projectionEdge,outlookEdge,reasonCode:'NO-ACTION EDGE',reason:`NO-ACTION STREAMING EDGE: ${edgeText}; projection does not clear the +${threshold.toFixed(1)}-point threshold with supporting context, so hold the incumbent.`};
   }
 
+  function streamerWaiverReviewForRecommendation(ctx,r) {
+    const add=r?.best?.b;
+    if(!add || r?.status!=='STREAM') return null;
+    const openSlots=Math.max(0,(ctx.activeCapacity||0)-(ctx.activePlayers||0));
+    const drops=dropCandidates(ctx);
+    const drop=primaryChurnCandidate(ctx,drops);
+    const keepValue=drop?effectiveKeepValue(drop,ctx):null;
+    let gap=drop && Number.isFinite(Number(add.weeklyValue))
+      ? Number(add.weeklyValue)-keepValue
+      : null;
+
+    if(drop && Number.isFinite(gap)) {
+      if(add.pos===drop.pos) gap+=1.5;
+      if((drop.pos==='RB'||drop.pos==='WR') && ctx.counts[drop.pos]<=4 && add.pos!==drop.pos) gap-=3;
+    }
+
+    const reviewCut=state.weeklyMode==='postdraft'?5:8;
+    const safeDrop=openSlots>0 || (!!drop && Number.isFinite(gap) && gap>=reviewCut);
+    return {
+      add,drop,openSlots,keepValue,gap,reviewCut,safeDrop,
+      projectionEdge:r.projectionEdge,
+      outlookEdge:r.outlookEdge,
+      pos:r.pos,
+      currentName:r.current?pName(r.current.p):null
+    };
+  }
+
+  function reviewStreamerWaiverMove(ctx,r) {
+    const review=streamerWaiverReviewForRecommendation(ctx,r);
+    if(!review) return;
+    state.streamerWaiverReview=review;
+    renderWaiverClaims(ctx,state.weeklyWaiverMoves,state.weeklyWaiverPool);
+    const target=$('weeklyClaims')?.closest('.card')||$('weeklyDrops')?.closest('.card');
+    target?.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
   function renderStreamerFinder(ctx) {
     const pool=streamingCandidatePool(ctx);
     const positions=['QB','TE','K','DEF'];
@@ -5772,7 +5853,7 @@ if(team.rosterId===mine.rosterId) {
     const streams=rows.filter(r=>r.status==='STREAM').length;
     setPill('streamerPill',streams?`${streams} stream${streams===1?'':'s'} to review`:'No streaming move',streams?'warn':'good');
 
-    $('weeklyStreamers').innerHTML=rows.map(r=>{
+    $('weeklyStreamers').innerHTML=rows.map((r,index)=>{
       const currentName=r.current?pName(r.current.p):'none';
       const bestName=r.best?pName(r.best.snap.p):'none';
       const currentProj=Number.isFinite(r.current?.projection)?r.current.projection.toFixed(1):'—';
@@ -5792,14 +5873,15 @@ if(team.rosterId===mine.rosterId) {
           <b>${esc(r.status)}${headlineName&&headlineName!=='none'?` ${esc(headlineName)} <span class="pos ${r.pos}">${r.pos}</span>`:''}</b>
           <div class="meta">${meta}</div>
           <div class="whyline">${decisionChip}${esc(r.reason)}${r.status==='STREAM'?' Roster-space decisions stay in Drop Review/Waiver Planner; this card never assumes the current starter should be dropped.':''}</div>
-          ${r.status==='STREAM'?`<button class="ghost streamerWaiverBtn" type="button" style="margin-top:7px;min-height:34px;padding:6px 9px">Review waiver move</button>`:''}
+          ${r.status==='STREAM'?`<button class="ghost streamerWaiverBtn" type="button" data-streamer-index="${index}" style="margin-top:7px;min-height:34px;padding:6px 9px">Review waiver move</button>`:''}
         </div>
         <div class="value-badge">${Number.isFinite(r.best?.snap?.projection)?r.best.snap.projection.toFixed(1):'—'}</div>
       </div>`;
     }).join('');
     document.querySelectorAll('.streamerWaiverBtn').forEach(btn=>btn.addEventListener('click',()=>{
-      const target=$('weeklyClaims')?.closest('.card')||$('weeklyDrops')?.closest('.card');
-      target?.scrollIntoView({behavior:'smooth',block:'start'});
+      const index=Number(btn.dataset.streamerIndex);
+      if(!Number.isInteger(index) || !rows[index]) return;
+      reviewStreamerWaiverMove(ctx,rows[index]);
     }));
     return rows;
   }
@@ -6427,6 +6509,7 @@ if(team.rosterId===mine.rosterId) {
 
   async function loadWeekly() {
     if(!state.connected) return showError('Connect to Sleeper first.');
+    state.streamerWaiverReview=null;
     const week=Math.max(1,Math.min(18,Number($('weekInput').value)||1));
     state.weeklyWeek=week;
     state.weeklyMode=$('weeklyModeSelect')?.value||'postdraft';

@@ -163,7 +163,9 @@ else:
     streamer_render_body = streamer_render_match.group(1)
     if "streamingCandidatePool(ctx)" not in streamer_render_body:
         errors.append("renderStreamerFinder() must use the dedicated streaming candidate pool")
-    if "streamerWaiverBtn" not in streamer_render_body or "scrollIntoView" not in streamer_render_body:
+    if "streamerWaiverBtn" not in streamer_render_body:
+        errors.append("stream recommendations must include a Review waiver move control")
+    if "scrollIntoView" not in streamer_render_body and "reviewStreamerWaiverMove(ctx,rows[index])" not in streamer_render_body:
         errors.append("stream recommendations must include a working Review waiver move handoff")
     if "r.status==='HOLD'?currentName:bestName" not in streamer_render_body:
         errors.append("HOLD streamer headlines must name the incumbent starter, not the available comparison")
