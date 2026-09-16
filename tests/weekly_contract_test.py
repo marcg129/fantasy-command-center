@@ -52,6 +52,7 @@ required_functions = [
     "streamingThresholdForPosition",
     "streamingStarterForPosition",
     "streamingPlayerSnapshot",
+    "streamingCandidatePool",
     "streamingRecommendationForPosition",
     "renderStreamerFinder",
     "renderTradeIntelligence",
@@ -87,6 +88,7 @@ required_fragments = [
     "NO-ACTION STREAMING EDGE",
     "QB:2.0,TE:1.5,K:1.5,DEF:2.0",
     "Roster-space decisions stay in Drop Review/Waiver Planner",
+    "Review waiver move",
 ]
 
 errors = []
@@ -119,6 +121,36 @@ for wiring in required_wiring:
     if wiring not in html:
         errors.append(f"missing required event wiring: {wiring}")
 
+# Verify the dedicated streamer pool exists and does not reuse the QB-suppression rule
+# from the ordinary waiver pool. Streamer Finder must compare strong incumbent QBs too.
+streamer_pool_match = re.search(
+    r"function\s+streamingCandidatePool\s*\(ctx\)\s*\{(.*?)\n\s*\}\n\n\s*function\s+streamingRecommendationForPosition",
+    html,
+    flags=re.S,
+)
+if not streamer_pool_match:
+    errors.append("could not isolate streamingCandidatePool()")
+else:
+    streamer_pool_body = streamer_pool_match.group(1)
+    if "strongQBAlreadySolved" in streamer_pool_body or "qbSolved" in streamer_pool_body:
+        errors.append("streamingCandidatePool() must not suppress QB comparisons for a strong incumbent QB")
+    if "['QB','TE','K','DEF']" not in streamer_pool_body:
+        errors.append("streamingCandidatePool() must be limited to QB/TE/K/DEF")
+
+streamer_render_match = re.search(
+    r"function\s+renderStreamerFinder\s*\(ctx\)\s*\{(.*?)\n\s*\}\n\n\s*function\s+renderTradeIntelligence",
+    html,
+    flags=re.S,
+)
+if not streamer_render_match:
+    errors.append("could not isolate renderStreamerFinder(ctx)")
+else:
+    streamer_render_body = streamer_render_match.group(1)
+    if "streamingCandidatePool(ctx)" not in streamer_render_body:
+        errors.append("renderStreamerFinder() must use the dedicated streaming candidate pool")
+    if "streamerWaiverBtn" not in streamer_render_body or "scrollIntoView" not in streamer_render_body:
+        errors.append("stream recommendations must include a working Review waiver move handoff")
+
 # Verify the top-level Weekly Check pipeline still calls every major renderer.
 load_weekly_match = re.search(
     r"async\s+function\s+loadWeekly\s*\(\)\s*\{(.*?)\n\s*\}\n\n\s*\$\('connectBtn'\)",
@@ -133,7 +165,7 @@ else:
         "renderWeeklyRoster(ctx)",
         "renderWeeklyOutlook(ctx)",
         "renderStartSit(ctx)",
-        "renderStreamerFinder(ctx,pool)",
+        "renderStreamerFinder(ctx)",
         "renderProjectionPanel(matchups,ctx)",
         "renderWeeklySimulation(matchups,ctx)",
         "renderLeagueMedian(matchups,ctx,simulation)",
