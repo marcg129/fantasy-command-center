@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T07:41:59.967472Z",
+  "generated_at": "2026-09-16T13:30:26.293949Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Cowboys' Caleb Downs explains why historically bad Week 1 defense is 'very fixable'",
+      "summary": "Dallas produced one of the NFL's worst defensive performances since the start of 2025, but its first-round rookie says the mistakes are correctable",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-defense-caleb-downs/",
+      "published_at": "2026-09-16T13:28:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 odds, picks: Jets continue to stay frisky, while Baker Mayfield torches former Browns team",
+      "summary": "Tyler Sullivan picks every game on the Week 2 schedule, plus five locks against the spread",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-odds-picks-jets-browns/",
+      "published_at": "2026-09-16T13:20:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Ole Miss-LSU, MLB betting on Wednesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-ole-miss-lsu-mlb-betting-wednesday/",
+      "published_at": "2026-09-16T13:07:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Predicting the entire NFL playoff bracket after Week 1, including a surprise Super Bowl winner",
+      "summary": "A wild opening week reshaped our projected playoff bracket, with the Patriots missing out",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-playoff-predictions-week-1-super-bowl/",
+      "published_at": "2026-09-16T13:07:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ranking the five best 2026 NFL Draft classes after Week 1: Chiefs rookies shine brightest",
+      "summary": "These five teams' rookies produced the most during Week 1 of the NFL season",
+      "url": "https://www.cbssports.com/nfl/news/ranking-the-five-best-2026-nfl-draft-classes-after-week-1-chiefs-rookies-shine-brightest/",
+      "published_at": "2026-09-16T12:26:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "2026 Week 2 NFL odds, start times, betting lines, spreads: Get Week 2 NFL picks, predictions for every game",
       "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
@@ -289,54 +349,6 @@
       "summary": "Allen had five completions of 30-plus yards, his most in a game in his career",
       "url": "https://www.cbssports.com/nfl/news/bills-re-unlocked-josh-allen-buffalo-offense-all-the-more-dangerous/",
       "published_at": "2026-09-14T12:10:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cover 32: Bengals see early returns from big offseason investment, plus game balls, biggest gaffes from Week 1",
-      "summary": "Tyler Sullivan dives into all the biggest items from Week 1 in the NFL, including Josh Allen ending his road woes against the Texans",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-storylines-game-balls-biggest-gaffes/",
-      "published_at": "2026-09-14T11:25:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL Week 2 early odds: Bills favored over Lions as Buffalo opens new stadium, Eagles road favorites",
-      "summary": "Here's a look at the lines for Week 2 in the NFL as we continue the start of the 2026 season",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-2-early-odds-bills-eagles/",
-      "published_at": "2026-09-14T11:17:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Titans' fresh start produces one of their most embarrassing losses yet",
-      "summary": "Tennessee changed its coach, roster, logo and uniforms, but a 23-10 loss to New York exposed familiar problems across every phase of the game",
-      "url": "https://www.cbssports.com/nfl/news/titans-loss-to-jets-cam-ward-robert-saleh/",
-      "published_at": "2026-09-14T02:54:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Vikings' stunning win over Packers ends with final score that's never happened before in NFL history",
-      "summary": "Ladies and gentlemen, we have a scorigami!",
-      "url": "https://www.cbssports.com/nfl/news/scorigami-vikings-packers-nfl-history/",
-      "published_at": "2026-09-14T02:06:59Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
