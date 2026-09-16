@@ -4,6 +4,19 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.16 — Lineup Consensus Engine
+**2026-09-15**
+
+- Add a two-model Start/Sit consensus layer instead of mathematically blending Weekly Outlook scores with projected fantasy points.
+- Run the existing Weekly Outlook optimizer and league-scored projection optimizer side by side for the selected week.
+- Label lineup changes supported by both models as `MODEL AGREEMENT` and surface disagreements as `MODEL SPLIT` review items rather than automatic starts.
+- Surface projection-only lineup changes inside Start/Sit so users no longer have to reconcile a separate projection card manually.
+- Show projected-point edges next to Outlook edges when both compared players have current-week projections.
+- Add lineup-summary context for current projected points, Outlook-optimal projected points, projection-optimal projected points, and starter-set agreement when projection coverage is sufficient.
+- Exclude OUT / IR / PUP / NFI / DOUBTFUL players from the Weekly Outlook optimized lineup, matching the existing positional-coverage and projection-optimizer availability guardrails.
+- Keep Weekly Outlook, projection points, and simulation probabilities as distinct concepts; no conversion of heuristic Outlook scores into fantasy points or win probability is introduced.
+- Preserve v2.15.3 in-season baseline cleanup, waiver, trade, league-median, simulation, usage, weather, news, and roster-management behavior.
+
 ## v2.15.3 — In-Season Baseline Cleanup
 **2026-09-15**
 
