@@ -19,7 +19,7 @@ one(
 )
 
 one(
-    'Weekly lineup, matchup, waiver, and roster-management command center. v2.16 uses independent Outlook and projection optimizers as a lineup consensus check while preserving the in-season baseline cleanup, simulation, and focused Weekly navigation.',
+    'Weekly lineup, matchup, waiver, and roster-management command center. v2.16 adds a two-model Start/Sit consensus layer that cross-checks Weekly Outlook against league-scored projections without blending the two models into fake precision.',
     'Weekly lineup, matchup, waiver, and roster-management command center. v2.16.1 keeps the two-model lineup consensus engine and moves nflverse usage into a same-origin automated snapshot so current-season workload data can load reliably in the browser.',
     'weekly hero copy',
 )
@@ -82,17 +82,19 @@ new = '''  async function loadUsageSeason(kind,season) {
 '''
 one(old, new, 'usage loader')
 
-one(
-    "v2.15.3 removes the Aug. 30 draft ECR and preseason news adjustments from Normal Weekly and Trade Intelligence baselines; those draft-era inputs remain isolated to Draft Day and immediate post-draft analysis.",
-    "v2.15.3 removes the Aug. 30 draft ECR and preseason news adjustments from Normal Weekly and Trade Intelligence baselines; those draft-era inputs remain isolated to Draft Day and immediate post-draft analysis. v2.16.1 snapshots nflverse player stats and snap counts through GitHub Actions so Weekly usage no longer depends on browser fetches to redirected GitHub release assets.",
-    'beta caveat usage note',
-)
+if "v2.15.3 removes the Aug. 30 draft ECR and preseason news adjustments from Normal Weekly and Trade Intelligence baselines; those draft-era inputs remain isolated to Draft Day and immediate post-draft analysis." in text:
+    text = text.replace(
+        "v2.15.3 removes the Aug. 30 draft ECR and preseason news adjustments from Normal Weekly and Trade Intelligence baselines; those draft-era inputs remain isolated to Draft Day and immediate post-draft analysis.",
+        "v2.15.3 removes the Aug. 30 draft ECR and preseason news adjustments from Normal Weekly and Trade Intelligence baselines; those draft-era inputs remain isolated to Draft Day and immediate post-draft analysis. v2.16.1 snapshots nflverse player stats and snap counts through GitHub Actions so Weekly usage no longer depends on browser fetches to redirected GitHub release assets.",
+        1,
+    )
 
-one(
-    'v2.16 keeps the Aug. 29/30 half-PPR expert-consensus snapshot isolated to Draft Day and immediate post-draft analysis.',
-    'v2.16.1 keeps the Aug. 29/30 half-PPR expert-consensus snapshot isolated to Draft Day and immediate post-draft analysis.',
-    'footer version',
-)
+if 'v2.16 keeps the Aug. 29/30 half-PPR expert-consensus snapshot isolated to Draft Day and immediate post-draft analysis.' in text:
+    text = text.replace(
+        'v2.16 keeps the Aug. 29/30 half-PPR expert-consensus snapshot isolated to Draft Day and immediate post-draft analysis.',
+        'v2.16.1 keeps the Aug. 29/30 half-PPR expert-consensus snapshot isolated to Draft Day and immediate post-draft analysis.',
+        1,
+    )
 
 if './data/usage.json?ts=' not in text:
     raise SystemExit('same-origin usage snapshot was not installed')
