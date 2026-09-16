@@ -4,6 +4,15 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.17.2 — Weekly Check Regression Fix
+**2026-09-16**
+
+- Restore the projection helper functions accidentally removed by the v2.17.1 calibration-summary replacement.
+- Fix the runtime failure that allowed Sleeper connection to succeed but prevented `Run Weekly Check` from rendering roster, Outlook, Start/Sit, availability, and simulation results.
+- Restore league-scored projection lookup, lineup projection totals, projection-optimal lineup construction, projected league median, and nonlinear scoring-key detection.
+- Preserve all v2.17.1 simulation confidence guardrails, no-action thresholds, calibration collection, current-week resolution, usage, median strategy, waivers, trades, and Enter-to-Connect behavior.
+- Add semantic regression checks requiring every restored projection helper to exist before the hotfix can commit.
+
 ## v2.17.1 — Simulation Confidence Guardrails
 **2026-09-16**
 
