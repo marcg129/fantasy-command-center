@@ -1,0 +1,49 @@
+name: Apply v2.19 Transaction Priority Queue
+
+on:
+  push:
+    branches: [feature/v2.19-transaction-priority-queue]
+    paths:
+      - 'scripts/apply_v2_19_transaction_priority.py'
+      - '.github/workflows/apply-v2.19-transaction-priority.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/v2.19-transaction-priority-queue
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Apply v2.19
+        run: python scripts/apply_v2_19_transaction_priority.py
+      - name: Verify Weekly contract
+        run: python tests/weekly_contract_test.py
+      - name: Verify Streamer handoff contract
+        run: python tests/streamer_waiver_handoff_test.py
+      - name: Verify Transaction Priority behavior
+        run: python tests/weekly_transaction_priority_test.py
+      - name: Commit implementation
+        run: |
+          if git diff --quiet -- index.html CHANGELOG.md; then
+            echo 'No implementation changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html CHANGELOG.md
+          git commit -m 'Add Transaction Priority Queue'
+          git push origin HEAD:feature/v2.19-transaction-priority-queue
