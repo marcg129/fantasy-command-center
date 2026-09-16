@@ -3,7 +3,7 @@ name: Weekly regression tests
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, feature/v2.19-transaction-priority-queue]
     paths:
       - 'index.html'
       - 'tests/**'
@@ -40,6 +40,8 @@ jobs:
         run: python tests/weekly_contract_test.py
       - name: Validate Streamer to Waiver Planner handoff
         run: python tests/streamer_waiver_handoff_test.py
+      - name: Validate Transaction Priority Queue
+        run: python tests/weekly_transaction_priority_test.py
 
   sleeper-integration:
     runs-on: ubuntu-latest
