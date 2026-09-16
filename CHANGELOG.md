@@ -4,6 +4,17 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.17.1 — Simulation Confidence Guardrails
+**2026-09-16**
+
+- Label simulation probabilities as `PROVISIONAL • LOW CONFIDENCE` while empirical calibration is still collecting instead of presenting early-season probabilities with false precision.
+- Automatically upgrade confidence to `CALIBRATED • MED CONFIDENCE` once empirical position variance begins blending, and reserve `HIGH CONFIDENCE` for at least four completed calibration weeks with five position groups ready.
+- Add an explicit simulation lineup-change threshold: 3.0 percentage points while confidence is low, 2.0 pp at medium confidence, and 1.5 pp at high confidence.
+- Treat projection-optimal lineup probability changes below the active threshold as a `NO-ACTION TIE` rather than an actionable edge.
+- If a projection-optimal lineup clears the active threshold, surface it as simulation support for review without allowing the simulator to override the separate Start/Sit consensus engine automatically.
+- Avoid positive/green simulation styling solely from favorable probabilities while calibration confidence remains low; under-pressure outcomes can still show warning context.
+- Preserve the 6,000-iteration pregame simulation, 12% same-team shared factor, empirical-calibration collection, projection coverage requirements, league-median modeling, and live-scoring guardrail.
+
 ## v2.17 — Simulation Calibration Foundation
 **2026-09-16**
 

@@ -367,7 +367,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • week-aware management • v2.17</div>
+    <div class="sub">Multi-manager beta • week-aware management • v2.17.1</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -464,7 +464,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.17 adds projection-error calibration infrastructure while preserving current-week resolution, lineup consensus, median strategy, and reliable usage.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.17.1 adds simulation-confidence guardrails and explicit no-action thresholds while preserving calibration, current-week resolution, lineup consensus, median strategy, and reliable usage.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -3252,119 +3252,25 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
       const cv=Number.isFinite(v)&&v>0?v:defaults[pos];
       return `${pos} ${Math.round(cv*100)}%`;
     }).join(', ');
-    if(!feed) return {
-      label:'HEURISTIC VARIANCE v1',
-      note:`Calibration file is not available yet; conservative baseline CVs remain active (${cvText}).`
-    };
-    if(!ready.length) return {
-      label:`CALIBRATION COLLECTING • ${weeks.length}W`,
-      note:`Projection-error calibration is collecting frozen pregame snapshots. ${weeks.length}/${Number(feed.minimum_completed_weeks)||2} completed weeks are available; conservative baseline CVs remain active (${cvText}).`
-    };
-    return {
-      label:`CALIBRATION BLEND • ${weeks.length}W`,
-      note:`Empirical projection-error variance is active for ${ready.length} position groups using ${Number(feed.sample_count)||0} samples across ${weeks.length} completed weeks. Current CVs: ${cvText}. Estimates are shrunk toward the conservative baseline to reduce early-season overfitting.`
-    };
-  }
 
-  function projectionRowForId(id) {
-    return state.projectionByPlayer.get(String(id))||null;
-  }
+    let mode='unavailable';
+    let confidence='LOW';
+    let label='HEURISTIC VARIANCE v1';
+    let note=`Calibration file is not available yet; conservative baseline CVs remain active (${cvText}).`;
 
-  function projectionPointsAllowedBandKey(points) {
-    const n=Number(points);
-    if(!Number.isFinite(n)) return null;
-    if(n<=0) return 'pts_allow_0';
-    if(n<=6) return 'pts_allow_1_6';
-    if(n<=13) return 'pts_allow_7_13';
-    if(n<=20) return 'pts_allow_14_20';
-    if(n<=27) return 'pts_allow_21_27';
-    if(n<=34) return 'pts_allow_28_34';
-    return 'pts_allow_35p';
-  }
-
-  function projectionScoringForId(id) {
-    const row=projectionRowForId(id);
-    const stats=row?.stats;
-    const scoring=state.league?.scoring_settings||{};
-    if(!stats || typeof stats!=='object') return null;
-    let points=0;
-    let matched=0;
-    const nonlinear=[];
-    for(const [key,rawWeight] of Object.entries(scoring)) {
-      const weight=Number(rawWeight);
-      if(!Number.isFinite(weight) || weight===0) continue;
-      if(key.startsWith('bonus_')) { nonlinear.push(key); continue; }
-      if(key.startsWith('pts_allow_')) continue;
-      const stat=Number(stats[key]);
-      if(Number.isFinite(stat)) {
-        points+=stat*weight;
-        matched++;
-      }
+    if(feed && !ready.length) {
+      mode='collecting';
+      label=`CALIBRATION COLLECTING • ${weeks.length}W`;
+      note=`Projection-error calibration is collecting frozen pregame snapshots. ${weeks.length}/${Number(feed.minimum_completed_weeks)||2} completed weeks are available; conservative baseline CVs remain active (${cvText}).`;
+    } else if(feed && ready.length) {
+      mode='blend';
+      confidence=(weeks.length>=4 && ready.length>=5)?'HIGH':'MEDIUM';
+      label=`CALIBRATION BLEND • ${weeks.length}W`;
+      note=`Empirical projection-error variance is active for ${ready.length} position groups using ${Number(feed.sample_count)||0} samples across ${weeks.length} completed weeks. Current CVs: ${cvText}. Estimates are shrunk toward the conservative baseline to reduce early-season overfitting.`;
     }
-    const allow=Number(stats.pts_allow);
-    if(Number.isFinite(allow)) {
-      const band=projectionPointsAllowedBandKey(allow);
-      const weight=band?Number(scoring[band]):NaN;
-      if(Number.isFinite(weight)) { points+=weight; matched++; }
-    }
-    if(!matched) return null;
-    return {points,matched,nonlinear};
-  }
 
-  function projectedPointsForId(id) {
-    return projectionScoringForId(id)?.points ?? null;
-  }
-
-  function projectionTotalForIds(ids=[]) {
-    let total=0, projected=0;
-    const clean=(ids||[]).map(String).filter(id=>id && id!=='0');
-    for(const id of clean) {
-      const pts=projectedPointsForId(id);
-      if(Number.isFinite(pts)) { total+=pts; projected++; }
-    }
-    return {total,projected,slots:clean.length,coverage:clean.length?projected/clean.length:0};
-  }
-
-  function projectionOptimalLineup(ctx) {
-    const slots=startingLineupSlots();
-    const flexNames=new Set(['FLEX','W/R/T','WRRB_FLEX','REC_FLEX','W/R','WRRB','W/T','WRTE','R/T','RBTE','SUPER_FLEX','SUPERFLEX','Q/W/R/T']);
-    const players=(ctx.players||[])
-      .filter(id=>!ctx.reserve.has(String(id)))
-      .map(id=>({
-        id:String(id),p:state.players[String(id)],pos:normalizedFantasyPos(state.players[String(id)]),score:projectedPointsForId(id)
-      }))
-      .filter(x=>x.p && Number.isFinite(x.score) && playerUsableForRequiredStart(x.p));
-    const order=slots.map((slot,index)=>({slot,index,flex:flexNames.has(slot)})).sort((a,b)=>Number(a.flex)-Number(b.flex));
-    const used=new Set();
-    const assignments=new Array(slots.length).fill(null);
-    for(const s of order) {
-      const eligible=players.filter(x=>!used.has(x.id) && eligibleForLineupSlot(x.pos,s.slot)).sort((a,b)=>b.score-a.score);
-      const chosen=eligible[0]||null;
-      if(chosen) { used.add(chosen.id); assignments[s.index]={slot:s.slot,index:s.index,id:chosen.id,p:chosen.p,score:chosen.score}; }
-      else assignments[s.index]={slot:s.slot,index:s.index,id:null,p:null,score:null};
-    }
-    return assignments;
-  }
-
-  function projectedLeagueMedian(matchups) {
-    const teams=(matchups||[]).filter(m=>Number.isFinite(Number(m?.roster_id))).map(m=>{
-      const t=projectionTotalForIds(m.starters||[]);
-      return {rosterId:Number(m.roster_id),...t};
-    });
-    if(!teams.length) return null;
-    const usable=teams.filter(t=>t.slots>0 && t.coverage>=0.70);
-    if(usable.length<Math.ceil(teams.length*0.80)) return {teams,usable,median:null};
-    const vals=usable.map(t=>t.total).sort((a,b)=>a-b);
-    const n=vals.length;
-    const median=n%2?vals[Math.floor(n/2)]:(vals[n/2-1]+vals[n/2])/2;
-    return {teams,usable,median};
-  }
-
-  function projectionNonlinearKeys() {
-    const scoring=state.league?.scoring_settings||{};
-    return Object.entries(scoring)
-      .filter(([k,v])=>k.startsWith('bonus_') && Number(v)!==0)
-      .map(([k])=>k);
+    const edgeThreshold=confidence==='HIGH'?1.5:(confidence==='MEDIUM'?2.0:3.0);
+    return {label,note,mode,confidence,edgeThreshold,weeks:weeks.length,readyPositions:ready.length};
   }
 
   function simulationVarianceProfile(pos,mean) {
@@ -3585,13 +3491,27 @@ if(team.rosterId===mine.rosterId) {
     const risk=(h2hPct<45 || (Number.isFinite(medianPct)&&medianPct<45))?1:0;
     box.dataset.alert=String(risk);
 
-    const cls=(h2hPct>=60 && (!Number.isFinite(medianPct)||medianPct>=60))
-      ? 'simulation-good'
-      : (risk?'simulation-warn':'simulation-neutral');
-    setPill('simulationPill',`${ITER.toLocaleString()} pregame sims`,risk?'warn':'good');
+    const cls=risk
+      ? 'simulation-warn'
+      : ((calibration.confidence!=='LOW' && h2hPct>=60 && (!Number.isFinite(medianPct)||medianPct>=60))?'simulation-good':'simulation-neutral');
+    setPill('simulationPill',`${ITER.toLocaleString()} pregame sims`,risk?'warn':(calibration.confidence==='LOW'?'warn':'good'));
+
+    const decisionThreshold=Number(calibration.edgeThreshold)||3.0;
+    const candidateDeltas=[h2hDelta,doubleDelta];
+    if(Number.isFinite(medianDelta)) candidateDeltas.push(medianDelta);
+    const bestPositiveDelta=Math.max(0,...candidateDeltas.filter(Number.isFinite));
+    const clearsDecisionThreshold=incoming.length>0 && bestPositiveDelta>=decisionThreshold;
+    const confidenceChip=calibration.confidence==='HIGH'
+      ? 'CALIBRATED • HIGH CONFIDENCE'
+      : (calibration.confidence==='MEDIUM'?'CALIBRATED • MED CONFIDENCE':'PROVISIONAL • LOW CONFIDENCE');
+    const edgeChip=!incoming.length
+      ? 'NO LINEUP CHANGE'
+      : (clearsDecisionThreshold?`SIM EDGE ≥${decisionThreshold.toFixed(1)}PP`:`NO-ACTION TIE <${decisionThreshold.toFixed(1)}PP`);
 
     const swapText=incoming.length
-      ? `Projection-optimal would start ${incoming.map(id=>esc(pName(state.players[id]))).join(', ')}${outgoing.length?` over ${outgoing.map(id=>esc(pName(state.players[id]))).join(', ')}`:''}.`
+      ? (clearsDecisionThreshold
+          ? `Projection-optimal would start ${incoming.map(id=>esc(pName(state.players[id]))).join(', ')}${outgoing.length?` over ${outgoing.map(id=>esc(pName(state.players[id]))).join(', ')}`:''}. Its best modeled probability lift is ${bestPositiveDelta.toFixed(1)} pp, clearing the current ${decisionThreshold.toFixed(1)} pp simulation decision threshold; this supports review, not an automatic lineup change.`
+          : `Projection-optimal would start ${incoming.map(id=>esc(pName(state.players[id]))).join(', ')}${outgoing.length?` over ${outgoing.map(id=>esc(pName(state.players[id]))).join(', ')}`:''}, but its best modeled probability lift is only ${bestPositiveDelta.toFixed(1)} pp. That does not clear the current ${decisionThreshold.toFixed(1)} pp threshold, so the simulation treats it as a no-action tie.`)
       : 'Projection-optimal uses the same starter set as your current lineup.';
 
     const strategy=Number.isFinite(medianPct)
@@ -3617,11 +3537,13 @@ if(team.rosterId===mine.rosterId) {
         </div>
         <div style="margin-top:8px">
 <span class="simulation-model-chip">${esc(calibration.label)}</span>
+<span class="simulation-model-chip">${esc(confidenceChip)}</span>
+<span class="simulation-model-chip">${esc(edgeChip)}</span>
 <span class="simulation-model-chip">12% SAME-TEAM SHARED FACTOR</span>
 <span class="simulation-model-chip">PREGAME ONLY</span>
         </div>
         <div class="whyline" style="margin-top:8px">${swapText} ${strategy}</div>
-        <div class="whyline" style="margin-top:6px"><b>Calibration note:</b> ${esc(calibration.note)} Treat small probability differences as noise rather than actionable edges.${medianReady&&adequateTeams.length<teams.length?` League-median simulation uses the ${adequateTeams.length} teams meeting the strict projection-coverage threshold, so that percentage is lower confidence.`:''}</div>
+        <div class="whyline" style="margin-top:6px"><b>Confidence guardrail:</b> ${esc(calibration.note)} Current lineup-change threshold: ${decisionThreshold.toFixed(1)} percentage points. Differences below that threshold are explicitly treated as a no-action tie rather than an edge.${medianReady&&adequateTeams.length<teams.length?` League-median simulation uses the ${adequateTeams.length} teams meeting the strict projection-coverage threshold, so that percentage is lower confidence.`:''}</div>
       </div>
     </div>`;
 
