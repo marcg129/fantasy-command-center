@@ -4,6 +4,16 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.18 — Streamer Finder
+**2026-09-16**
+
+- Add a dedicated Waivers-tab Streamer Finder for one-week QB, TE, K, and DEF decisions; RB/WR remain in the normal waiver/add-drop engine.
+- Compare the current starter with the strongest usable available option using league-scored projected points as the primary decision signal, with Weekly Outlook, game environment, and availability as supporting context.
+- Use conservative position thresholds (QB/DEF +2.0 projected points; TE/K +1.5) and label smaller apparent gains as `NO-ACTION STREAMING EDGE` rather than recommending churn.
+- Prevent players with meaningful availability penalties from becoming automatic stream recommendations, and require Outlook not to strongly contradict a projection-led move.
+- Treat a missing/unusable required-position starter as a coverage case, while keeping roster-space/drop decisions in the existing Drop Review and Waiver Planner instead of assuming the incumbent starter should be cut.
+- Add Streamer Finder to the Waivers sub-navigation and the permanent Weekly regression contract.
+
 ## v2.17.3 — Weekly Regression Tests
 **2026-09-16**
 
