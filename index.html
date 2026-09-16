@@ -464,7 +464,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.18.3 carries an exact Streamer Finder recommendation into Waiver Claim Planner for a safe roster-space review without assuming the incumbent starter should be dropped.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.19 adds a Transaction Priority Queue that resolves competing streamer and waiver recommendations against real roster capacity before surfacing the next move.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -577,6 +577,18 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
           <span class="pill" id="usagePanelPill">Usage —</span>
         </div>
         <div id="weeklyUsage" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
+      </div>
+
+      <div class="card" style="margin-top:12px">
+        <div class="weekly-section-head">
+          <div>
+            <div class="tiny">MOVE PRIORITY</div>
+            <h3>Transaction Priority Queue</h3>
+            <div class="tiny">Resolves competing streamer and waiver recommendations against the roster spots you actually have. Only one recommendation can consume each open slot; later moves must identify a protected safe drop or remain blocked.</div>
+          </div>
+          <span class="pill" id="movePriorityPill">Moves —</span>
+        </div>
+        <div id="weeklyMovePriority" class="weekly-table"><div class="tiny">Run a weekly check.</div></div>
       </div>
 
       <div class="card" style="margin-top:12px">
@@ -5849,6 +5861,143 @@ if(team.rosterId===mine.rosterId) {
     target?.scrollIntoView({behavior:'smooth',block:'start'});
   }
 
+  // TRANSACTION_PRIORITY_CORE_START
+  function transactionPriorityScore(c) {
+    const starter=Number.isFinite(Number(c?.starterGain))?Math.max(0,Number(c.starterGain)):0;
+    const roster=Number.isFinite(Number(c?.rosterGain))?Math.max(0,Number(c.rosterGain)):0;
+    const competition=Number.isFinite(Number(c?.competitionLevel))?Math.max(0,Number(c.competitionLevel)):0;
+    const cost=Number.isFinite(Number(c?.transactionCost))?Math.max(0,Number(c.transactionCost)):0;
+    const coverage=c?.coverageNeed?35:0;
+    return coverage + starter*10 + Math.min(30,roster)*0.6 + competition*1.25 - cost;
+  }
+
+  function allocateTransactionResources(candidates,openSlots=0) {
+    let slots=Math.max(0,Math.floor(Number(openSlots)||0));
+    const usedDrops=new Set();
+    const ranked=(candidates||[])
+      .map((c,index)=>({...c,priorityScore:transactionPriorityScore(c),_sourceOrder:index}))
+      .sort((a,b)=>b.priorityScore-a.priorityScore || a._sourceOrder-b._sourceOrder);
+
+    return ranked.map(c=>{
+      if(slots>0) {
+        slots-=1;
+        return {...c,resource:'OPEN SLOT',dropName:null,blocked:false};
+      }
+      const safeDrop=String(c.safeDropName||'').trim();
+      if(safeDrop && !usedDrops.has(safeDrop)) {
+        usedDrops.add(safeDrop);
+        return {...c,resource:'SAFE DROP',dropName:safeDrop,blocked:false};
+      }
+      return {...c,resource:'BLOCKED — NO SAFE DROP',dropName:null,blocked:true};
+    });
+  }
+  // TRANSACTION_PRIORITY_CORE_END
+
+  function buildTransactionPriorityCandidates(ctx,streamers,moves) {
+    const profile=waiverLeagueProfile(ctx);
+    const reviewCut=state.weeklyMode==='postdraft'?5:8;
+    const candidates=[];
+
+    for(const r of (streamers||[])) {
+      if(r?.status!=='STREAM' || !r?.best?.b) continue;
+      const review=streamerWaiverReviewForRecommendation(ctx,r);
+      if(!review) continue;
+      const competition=waiverCompetitionRisk(review.add);
+      const coverageNeed=!r.current || !r.current.usable;
+      const safeDropName=review.drop && Number.isFinite(review.gap) && review.gap>=review.reviewCut
+        ? review.drop.name
+        : null;
+      candidates.push({
+        id:String(review.add.player_id||review.add.pdata?.player_id||review.add.name),
+        type:'STREAM',
+        name:review.add.name,
+        pos:review.add.pos,
+        add:review.add,
+        starterGain:Number.isFinite(r.projectionEdge)?Math.max(0,r.projectionEdge):(coverageNeed?7.5:0),
+        rosterGain:Number.isFinite(review.gap)?review.gap:null,
+        coverageNeed,
+        competitionLevel:competition.level,
+        transactionCost:0,
+        safeDropName,
+        currentName:review.currentName,
+        reason:r.reason
+      });
+    }
+
+    for(const m of (moves||[])) {
+      if(!m?.add) continue;
+      const coverageNeed=!!m.coverageNeed;
+      if(!coverageNeed && (!Number.isFinite(m.gap) || m.gap<reviewCut)) continue;
+      const competition=waiverCompetitionRisk(m.add);
+      const premiumPriorityCost=profile.waiverPosition && profile.waiverPosition<=4 ? 1.5 : 0;
+      const budgetCost=profile.waiverBudget!==null ? 0.5 : 0;
+      candidates.push({
+        id:String(m.add.player_id||m.add.pdata?.player_id||m.add.name),
+        type:'WAIVER',
+        name:m.add.name,
+        pos:m.add.pos,
+        add:m.add,
+        starterGain:coverageNeed?7.5:0,
+        rosterGain:Number.isFinite(m.gap)?m.gap:null,
+        coverageNeed,
+        competitionLevel:competition.level,
+        transactionCost:premiumPriorityCost+budgetCost,
+        safeDropName:m.drop && Number.isFinite(m.gap) && m.gap>=reviewCut ? m.drop.name : null,
+        currentName:null,
+        reason:coverageNeed?'Restores a required starting-position coverage gap.':'Clears the existing roster-utility review threshold.'
+      });
+    }
+
+    const byPlayer=new Map();
+    for(const c of candidates) {
+      const existing=byPlayer.get(c.id);
+      if(!existing || (c.type==='STREAM' && existing.type!=='STREAM') ||
+         (c.type===existing.type && transactionPriorityScore(c)>transactionPriorityScore(existing))) {
+        byPlayer.set(c.id,c);
+      }
+    }
+    return [...byPlayer.values()];
+  }
+
+  function renderTransactionPriorityQueue(ctx,streamers,moves) {
+    const openSlots=Math.max(0,(ctx.activeCapacity||0)-(ctx.activePlayers||0));
+    const candidates=buildTransactionPriorityCandidates(ctx,streamers,moves);
+    const queue=allocateTransactionResources(candidates,openSlots);
+    const ready=queue.filter(x=>!x.blocked).length;
+
+    if(!queue.length) {
+      setPill('movePriorityPill','No priority move','good');
+      $('weeklyMovePriority').innerHTML='<div class="goodbox"><b>HOLD.</b> No streamer, coverage, or waiver move currently clears the action thresholds.</div>';
+      return [];
+    }
+
+    setPill('movePriorityPill',ready?`${ready} actionable • ${queue.length} ranked`:`${queue.length} ranked • none safe`,ready?'warn':'good');
+    $('weeklyMovePriority').innerHTML=queue.slice(0,5).map((m,i)=>{
+      const resourceText=m.resource==='OPEN SLOT'
+        ? 'OPEN SLOT • no drop required'
+        : (m.resource==='SAFE DROP'
+            ? `SAFE DROP • ${m.dropName}`
+            : 'BLOCKED — NO SAFE DROP');
+      const impactText=m.type==='STREAM'
+        ? `one-week starter gain ${Number.isFinite(m.starterGain)?'+'+m.starterGain.toFixed(1)+' projected pts':'coverage driven'}`
+        : (m.coverageNeed
+            ? 'required-position coverage restoration'
+            : `roster-utility gain ${Number.isFinite(m.rosterGain)?(m.rosterGain>=0?'+':'')+Math.round(m.rosterGain):'—'}`);
+      const costText=m.transactionCost>0?' • premium waiver/FAAB cost slightly lowers priority':'';
+      const cls=m.blocked?'claim-watch':'strong move-priority-ready';
+      return `<div class="waiver-row ${cls}">
+        <div class="waiver-rank">MOVE<b>${i+1}</b></div>
+        <div>
+          <b>${m.blocked?'HOLD':'ADD'} ${esc(m.name)} <span class="pos ${m.pos}">${m.pos}</span></b>
+          <div class="meta">${esc(resourceText)} • ${esc(m.type)}${m.coverageNeed?' • COVERAGE NEED':''}</div>
+          <div class="whyline">${esc(impactText)}${esc(costText)}. ${m.blocked?'The higher-priority move consumes the available roster capacity and this move does not have a distinct protected churn path.':'This is the highest remaining transaction that fits the roster resources allocated ahead of it.'} Verify the transaction state in Sleeper before submitting.</div>
+        </div>
+        <div class="value-badge">${m.type==='STREAM'&&Number.isFinite(m.starterGain)?`+${m.starterGain.toFixed(1)}`:(Number.isFinite(m.rosterGain)?`${m.rosterGain>=0?'+':''}${Math.round(m.rosterGain)}`:'—')}<div class="tiny">${m.type==='STREAM'?'starter':'utility'}</div></div>
+      </div>`;
+    }).join('');
+    return queue;
+  }
+
   function renderStreamerFinder(ctx) {
     const pool=streamingCandidatePool(ctx);
     const positions=['QB','TE','K','DEF'];
@@ -6135,9 +6284,18 @@ if(team.rosterId===mine.rosterId) {
       ${oppPlayers.slice(0,6).map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${normalizedFantasyPos(x.p)}">${normalizedFantasyPos(x.p)}</span></b><div class="tiny">${esc(x.p.team||'FA')} • value ${Math.round(x.score)}${gameEnvironmentTextForPlayer(x.p)?' • '+esc(gameEnvironmentTextForPlayer(x.p)):''}</div></div></div>`).join('')}`;
   }
 
-  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[],matchups=[],simulation=null) {
+  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[],matchups=[],simulation=null,priorities=[]) {
     const items=[];
     const post=state.weeklyMode==='postdraft';
+    const topMovePriority=(priorities||[])[0]||null;
+    if(topMovePriority) {
+      const route=topMovePriority.resource==='OPEN SLOT'
+        ? 'use the open roster slot'
+        : (topMovePriority.resource==='SAFE DROP'
+            ? `drop ${topMovePriority.dropName}`
+            : 'do not force the transaction — no safe roster path remains');
+      items.push(`<b>Move priority #1:</b> ${topMovePriority.blocked?'HOLD ':''}${esc(topMovePriority.name)} ${esc(topMovePriority.pos)} • ${esc(route)}.${topMovePriority.type==='STREAM'&&Number.isFinite(topMovePriority.starterGain)?` Projected starter gain: +${topMovePriority.starterGain.toFixed(1)}.`:''}`);
+    }
     const top=pool[0];
     const topSteal=steals[0];
 
@@ -6404,7 +6562,7 @@ if(team.rosterId===mine.rosterId) {
     const byId={
       overview:['weeklyActionPlan','weeklyMedian','weeklyProjection','weeklySimulation','weeklyMatchup','weeklyRoster'],
       lineup:['weeklyStartSit','weeklyOutlook','weeklySimulation','weeklyAvailability','weeklyUsage','weeklyRoster','weeklyIR'],
-      waivers:['weeklyAdds','weeklyDrops','weeklyMoves','weeklyClaims','weeklyStreamers','postDraftScanCard'],
+      waivers:['weeklyMovePriority','weeklyAdds','weeklyDrops','weeklyMoves','weeklyClaims','weeklyStreamers','postDraftScanCard'],
       trades:['tradeScanView','tradeExplorerView'],
       intel:['weeklyNews','weeklyGameEnvironment','weeklyTrendingAdds','weeklyTrendingMoves']
     };
@@ -6560,12 +6718,13 @@ if(team.rosterId===mine.rosterId) {
       const lineup=renderStartSit(ctx);
       renderUsagePanel(ctx);
       const pool=renderWeeklyAdds(ctx);
-      renderStreamerFinder(ctx);
+      const streamers=renderStreamerFinder(ctx);
       renderNewsPanel(ctx,pool);
       const steals=renderPostDraftSteals(ctx,pool);
       const drops=renderWeeklyDrops(ctx);
       const moves=renderWeeklyMoves(ctx,pool,drops);
       const claims=renderWaiverClaims(ctx,moves,pool);
+      const priorities=renderTransactionPriorityQueue(ctx,streamers,moves);
       const trades=renderTradeIntelligence(ctx);
       renderWeeklyTrending(ctx);
       renderWeeklyTransactions();
@@ -6574,7 +6733,7 @@ if(team.rosterId===mine.rosterId) {
       const simulation=renderWeeklySimulation(matchups,ctx);
       renderLeagueMedian(matchups,ctx,simulation);
       renderWeeklyMatchup(matchups,ctx);
-      renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups,simulation);
+      renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups,simulation,priorities);
       $('postDraftScanCard').style.display=state.weeklyMode==='postdraft'?'block':'none';
       refreshWeeklyNavBadges();
       let activeWeeklyTab='overview';

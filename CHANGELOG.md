@@ -4,6 +4,16 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.19 — Transaction Priority Queue
+**2026-09-16**
+
+- Add a unified Move Priority card that ranks actionable Streamer Finder and ordinary waiver/add-drop recommendations against the same roster-capacity budget.
+- Rank true one-week starter improvements primarily by projected starter gain, then use roster-utility improvement, coverage urgency, competition, and a modest transaction-cost signal as supporting factors.
+- Allocate open roster slots sequentially so only the highest-priority move can consume a single free slot; later moves must identify a distinct protected churn path or show `BLOCKED — NO SAFE DROP`.
+- Deduplicate the same free agent when he appears in both Streamer Finder and ordinary waiver logic, preserving the richer streaming context for QB/TE/K/DEF decisions.
+- Feed Move Priority #1 into This Week's Action Plan while preserving the detailed Streamer Finder, Waiver Claim Planner, Add/Drop, and Drop Review evidence underneath.
+- Add a real JavaScript behavior regression fixture for the Week 2 two-streamers/one-open-slot case: Jake Ferguson (+5.2) ranks ahead of Tampa Bay (+3.7), gets the open slot, and Tampa Bay is blocked unless a safe drop exists.
+
 ## v2.18.3 — Streamer → Waiver Planner Handoff
 **2026-09-16**
 
