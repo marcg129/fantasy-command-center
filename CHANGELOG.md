@@ -4,6 +4,19 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.16.3 — Median Strategy Integration
+**2026-09-16**
+
+- Bring the already-existing league-median live panel and pregame simulation probability into one coherent median view instead of making the manager reconcile separate cards.
+- Keep live score, live median, and live league rank as the in-game source of truth.
+- Add a pregame median forecast showing the connected lineup projection, projected league median, and simulated probability of beating the median when coverage requirements are met.
+- Reuse the existing 6,000-iteration Weekly Simulation output rather than creating a second probability model.
+- Remove the stale v2.14-era message claiming Probability Above Median is not available now that the projection and simulation layers exist.
+- Avoid showing a misleading 1/10-style league rank before scoring begins; pregame rank is displayed as unavailable until teams actually score.
+- Add conservative pregame median context to the Weekly Action Plan for under-pressure, swing-zone, and clearly favorable median paths.
+- Do not automatically override Start/Sit on the basis of median probability; model-split lineup changes still require a meaningful projection, role, availability, or consensus edge.
+- Preserve current-week resolution, usage snapshots, lineup consensus, H2H simulation, waivers, trades, news, weather, and availability behavior.
+
 ## v2.16.2 — Current Week Resolution
 **2026-09-15**
 

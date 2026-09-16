@@ -367,7 +367,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 <header>
   <div>
     <h1>Access GRANTed ’26 — Multi-Manager Beta</h1>
-    <div class="sub">Multi-manager beta • week-aware management • v2.16.2</div>
+    <div class="sub">Multi-manager beta • week-aware management • v2.16.3</div>
   </div>
   <div class="controls">
     <div class="field grow"><label>League ID</label><input id="leagueId" value="1314532597539291136" inputmode="numeric"></div>
@@ -464,7 +464,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.16.2 resolves the active management week from Sleeper plus fresh same-season data snapshots, while preserving manual week selection, lineup consensus, simulation, and reliable usage.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.16.3 resolves the active management week from Sleeper plus fresh same-season data snapshots, while preserving manual week selection, lineup consensus, simulation, and reliable usage.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -746,7 +746,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
 </section>
 
 <div class="footer">
-  v2.16.2 keeps the Aug. 29/30 half-PPR expert-consensus snapshot isolated to Draft Day and immediate post-draft analysis. Normal Weekly and Trade Intelligence use current Sleeper/search market rank as a lighter season-long anchor, while Start/Sit now cross-checks the Weekly Outlook optimizer against the independent league-scored projection optimizer and labels consensus versus model splits explicitly. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, a shared Weekly Outlook & Opportunity engine, required-position coverage logic, league-median intelligence, a league-scored weekly projection foundation, a conservative pregame H2H/median simulation layer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
+  v2.16.3 keeps the Aug. 29/30 half-PPR expert-consensus snapshot isolated to Draft Day and immediate post-draft analysis. Normal Weekly and Trade Intelligence use current Sleeper/search market rank as a lighter season-long anchor, while Start/Sit now cross-checks the Weekly Outlook optimizer against the independent league-scored projection optimizer and labels consensus versus model splits explicitly. League scoring remains tuned to this league: 10 teams, 2 FLEX, 0.5 PPR, 6-point passing TDs, -4 interceptions, and yardage bonuses. Sleeper syncing is read-only. Weekly mode now adds IR-aware roster management, redundant-position logic, required K/DST protection, role-weighted free-agent analysis, league-specific free-agent detection, Sleeper trending signals, a legal-lineup optimizer, waiver-claim planning, adjustable Trade Intelligence plus a player-focused Trade Explorer, a shared Weekly Outlook & Opportunity engine, required-position coverage logic, league-median intelligence, a league-scored weekly projection foundation, a conservative pregame H2H/median simulation layer, nflverse schedule/game-environment context, nflverse recent player stats and snap counts, Open-Meteo outdoor weather adjustments, transactions, roster risk review, and matchup context.
 </div>
 </div>
 
@@ -5718,7 +5718,7 @@ if(team.rosterId===mine.rosterId) {
     return {teams,median,myPoints,margin,anyScoring,rank,aboveCount,belowCount};
   }
 
-  function renderLeagueMedian(matchups,ctx) {
+  function renderLeagueMedian(matchups,ctx,simulation=null) {
     const configured=leagueMedianConfigured();
     if(!configured) {
       setPill('medianPill','Median OFF','');
@@ -5747,6 +5747,29 @@ if(team.rosterId===mine.rosterId) {
           ? {label:'BELOW MEDIAN',cls:'median-low',detail:`Currently ${snap.margin.toFixed(2)} below the live median.`}
           : {label:'TIED WITH MEDIAN',cls:'median-neutral',detail:'Currently exactly on the live median.'};
 
+    const projected=projectedLeagueMedian(matchups);
+    const projectedMedian=Number.isFinite(projected?.median)?projected.median:null;
+    const myProjected=projectionTotalForIds(ctx.my?.starters||[]);
+    const myProjectionReady=myProjected.slots>0 && myProjected.coverage>=0.70;
+    const simReady=Number.isFinite(simulation?.medianPct);
+    const rankText=snap.anyScoring?`${snap.rank}/${snap.teams.length}`:`—/${snap.teams.length}`;
+
+    let forecast='';
+    if(!snap.anyScoring && (myProjectionReady || Number.isFinite(projectedMedian) || simReady)) {
+      forecast=`
+        <div class="tiny labelish" style="margin-top:10px">PREGAME MEDIAN FORECAST</div>
+        <div class="median-grid">
+          <div class="median-stat"><div class="k">Your starter projection</div><div class="v">${myProjectionReady?myProjected.total.toFixed(1):'—'}</div></div>
+          <div class="median-stat"><div class="k">Projected league median</div><div class="v">${Number.isFinite(projectedMedian)?projectedMedian.toFixed(1):'—'}</div></div>
+          <div class="median-stat"><div class="k">Beat league median</div><div class="v">${simReady?simulation.medianPct.toFixed(1)+'%':'—'}</div></div>
+        </div>
+        <div class="whyline" style="margin-top:8px">${simReady
+          ? `Probability comes from the same ${Number(simulation.iterations||0).toLocaleString()}-iteration pregame simulation used by Weekly Simulation. It is a heuristic estimate, not a guarantee.`
+          : 'Median probability is withheld unless the stricter league-wide simulation coverage requirements are met.'}</div>`;
+    } else if(snap.anyScoring) {
+      forecast='<div class="whyline" style="margin-top:8px">Pregame probability is intentionally not carried forward after live scoring begins. Use the live median margin and score rank above during games.</div>';
+    }
+
     $('weeklyMedian').innerHTML=`<div class="waiver-row ${status.cls}">
       <div class="waiver-rank">LM</div>
       <div>
@@ -5754,13 +5777,13 @@ if(team.rosterId===mine.rosterId) {
         <div class="whyline">${esc(status.detail)} Sleeper's <code>league_average_match</code> setting was detected automatically.</div>
         <div class="median-grid">
           <div class="median-stat"><div class="k">Your live score</div><div class="v">${snap.myPoints.toFixed(2)}</div></div>
-          <div class="median-stat"><div class="k">League median</div><div class="v">${snap.median.toFixed(2)}</div></div>
-          <div class="median-stat"><div class="k">League score rank</div><div class="v">${snap.rank}/${snap.teams.length}</div></div>
+          <div class="median-stat"><div class="k">Live league median</div><div class="v">${snap.median.toFixed(2)}</div></div>
+          <div class="median-stat"><div class="k">League score rank</div><div class="v">${rankText}</div></div>
         </div>
-        <div class="whyline" style="margin-top:8px">The median is live and can move as every team scores. Probability Above Median is intentionally not shown yet; that requires a true fantasy-points projection/simulation layer rather than converting the Outlook score into a fake probability.</div>
+        ${forecast}
       </div>
     </div>`;
-    return snap;
+    return {...snap,projectedMedian,medianPct:simReady?simulation.medianPct:null};
   }
 
   function renderWeeklyMatchup(matchups,ctx) {
@@ -5800,7 +5823,7 @@ if(team.rosterId===mine.rosterId) {
       ${oppPlayers.slice(0,6).map(x=>`<div class="row"><div><b>${esc(pName(x.p))} <span class="pos ${normalizedFantasyPos(x.p)}">${normalizedFantasyPos(x.p)}</span></b><div class="tiny">${esc(x.p.team||'FA')} • value ${Math.round(x.score)}${gameEnvironmentTextForPlayer(x.p)?' • '+esc(gameEnvironmentTextForPlayer(x.p)):''}</div></div></div>`).join('')}`;
   }
 
-  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[],matchups=[]) {
+  function renderWeeklyActionPlan(ctx,pool,drops,moves,steals=[],matchups=[],simulation=null) {
     const items=[];
     const post=state.weeklyMode==='postdraft';
     const top=pool[0];
@@ -5811,6 +5834,17 @@ if(team.rosterId===mine.rosterId) {
       items.push(`<b>League median race:</b> you are ${Math.abs(medianSnap.margin).toFixed(2)} points below the current Week ${state.weeklyWeek} median. Every expected point matters for both your head-to-head matchup and the extra median result.`);
     } else if(medianSnap?.anyScoring && Math.abs(medianSnap.margin)<=6) {
       items.push(`<b>League median race:</b> you are within ${Math.abs(medianSnap.margin).toFixed(2)} points of the live median. Treat marginal start/sit edges as more consequential this week.`);
+    }
+
+    if(medianSnap && !medianSnap.anyScoring && Number.isFinite(simulation?.medianPct)) {
+      const medianPct=Number(simulation.medianPct);
+      if(medianPct<45) {
+        items.push(`<b>Pregame median path:</b> the heuristic simulation puts your chance to beat the Week ${state.weeklyWeek} median at ${medianPct.toFixed(1)}%. Prioritize meaningful consensus or role/upside edges, but do not chase tiny projection differences.`);
+      } else if(medianPct<=55) {
+        items.push(`<b>Pregame median path:</b> ${medianPct.toFixed(1)}% to beat the projected league median places this week in the median swing zone. Small lineup decisions matter, but model-split changes still require a real edge.`);
+      } else if(medianPct>=65) {
+        items.push(`<b>Pregame median path:</b> ${medianPct.toFixed(1)}% to beat the projected league median is a favorable baseline. Avoid forcing marginal high-variance swaps solely to chase ceiling.`);
+      }
     }
 
     const irCandidates=ctx.players
@@ -6221,11 +6255,11 @@ if(team.rosterId===mine.rosterId) {
       renderWeeklyTrending(ctx);
       renderWeeklyTransactions();
       renderGameEnvironment(ctx,matchups);
-      renderLeagueMedian(matchups,ctx);
       renderProjectionPanel(matchups,ctx);
-      renderWeeklySimulation(matchups,ctx);
+      const simulation=renderWeeklySimulation(matchups,ctx);
+      renderLeagueMedian(matchups,ctx,simulation);
       renderWeeklyMatchup(matchups,ctx);
-      renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups);
+      renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups,simulation);
       $('postDraftScanCard').style.display=state.weeklyMode==='postdraft'?'block':'none';
       refreshWeeklyNavBadges();
       let activeWeeklyTab='overview';
