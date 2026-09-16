@@ -41,10 +41,10 @@ else:
         "effectiveKeepValue(drop,ctx)",
         "openSlots",
         "freeAgentScore(add,ctx",
-        "addValue",
+        "add,drop,openSlots,keepValue,addValue,gap",
     ]:
         if required not in body:
-            errors.append(f"streamer waiver review must use existing safe-drop/value logic: {required}")
+            errors.append(f"streamer waiver review must use and return existing safe-drop/value logic: {required}")
     if "Number(add.weeklyValue)" in body:
         errors.append("streamer waiver review must not rely on weeklyValue from the dedicated streaming pool")
     if "drop:r.current" in body or "drop=current" in body:
