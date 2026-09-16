@@ -1,3 +1,4 @@
+# v2.17.3 baseline: this file change intentionally exercises the permanent regression workflow.
 import json
 import os
 from pathlib import Path
