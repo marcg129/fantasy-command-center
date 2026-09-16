@@ -5,6 +5,10 @@ on:
     workflows: ["Update fantasy projection data"]
     types: [completed]
   workflow_dispatch:
+  push:
+    paths:
+      - "scripts/update_calibration.py"
+      - ".github/workflows/update-calibration.yml"
 
 permissions:
   contents: write
@@ -15,7 +19,7 @@ concurrency:
 
 jobs:
   update-calibration:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
