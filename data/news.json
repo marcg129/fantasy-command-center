@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-16T18:12:02.167460Z",
+  "generated_at": "2026-09-16T21:18:42.257077Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use FanDuel promo code to get $350 in bonus bets for Lions-Bills, LSU-Ole Miss, NFL, MLB games on Wednesday",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-lions-bills-lsu-ole-miss-nfl-mlb-games-wednesday/",
+      "published_at": "2026-09-16T21:14:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 injury report: Lions down two starting offensive lineman vs. Bills, including Blake Miller",
+      "summary": "Here's how each team is doing on the injury front as they gear up for Week 2",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-lions-down-two-offensive-lineman-bills/",
+      "published_at": "2026-09-16T21:00:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Joe Burrow injury watch: Why Bengals QB was limited in practice and what it means for Week 2 vs. Texans",
+      "summary": "The Cincinnati quarterback brushed off back tightness that limited his practice time Wednesday, making it clear he expects to suit up Sunday against the Texans",
+      "url": "https://www.cbssports.com/nfl/news/joe-burrow-injury-watch-nfl-week-2/",
+      "published_at": "2026-09-16T20:42:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL Week 2 injury panic meter: Myles Garrett, A.J. Brown, Sam Darnold sidelined with lower body issues",
+      "summary": "Gauging the outlook for some of the league's biggest Week 1 injuries",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-2-injury-panic-meter-myles-garrett-a-j-brown-sam-darnold/",
+      "published_at": "2026-09-16T20:32:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Agent's Take: 2026 ultimate 53-man roster that's the best team money can buy",
+      "summary": "A look at our ultimate 53-man roster, with salary cap and draft restrictions taken into account",
+      "url": "https://www.cbssports.com/nfl/news/agents-take-2026-ultimate-53-man-roster/",
+      "published_at": "2026-09-16T20:28:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Buccaneers' Baker Mayfield surprisingly not carrying vengeful spirit into Week 2 showdown with Browns",
+      "summary": "Mayfield once said he had Week 2 circled, but had a different demeanor on Wednesday in addressing the franchise that cast him aside",
+      "url": "https://www.cbssports.com/nfl/news/buccaneers-baker-mayfield-surprisingly-not-carrying-vengeful-spirit-into-week-2-showdown-with-browns/",
+      "published_at": "2026-09-16T19:49:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Vikings place Jordan Mason on injured reserve due to thumb fracture: Who's up next",
+      "summary": "Minnesota added some pieces to its RB room recently, but Mason will be required to miss the next four games at minimum",
+      "url": "https://www.cbssports.com/nfl/news/vikings-jordan-mason-on-injured-reserve-thumb-fracture-whos-up-next/",
+      "published_at": "2026-09-16T19:36:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Predicting the entire NFL playoff bracket after Week 1, including a surprise Super Bowl winner",
       "summary": "A wild opening week reshaped our projected playoff bracket, with the Patriots missing out",
@@ -85,18 +169,6 @@
       "summary": "Pete Prisco reveals all of his Week 2 picks, including the Jaguars handing the Broncos another loss",
       "url": "https://www.cbssports.com/nfl/news/priscos-week-2-nfl-picks/",
       "published_at": "2026-09-16T15:05:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets for Lions-Bills, LSU-Ole Miss, NFL MLB on Wednesday",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-lions-bills-lsu-ole-miss-nfl-mlb-wednesday/",
-      "published_at": "2026-09-16T14:56:10Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -186,18 +258,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL Week 2 injury panic meter: Myles Garrett, A.J. Brown, Sam Darnold sidelined with lower body issues",
-      "summary": "Gauging the outlook for some of the league's biggest Week 1 injuries",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-2-injury-panic-meter-myles-garrett-a-j-brown-sam-darnold/",
-      "published_at": "2026-09-15T15:59:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -294,54 +354,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "John Harbaugh effect: Five reasons Giants are different under Super Bowl winning coach",
-      "summary": "New York looked like a whole new version of itself in Sunday's win over the Cowboys",
-      "url": "https://www.cbssports.com/nfl/news/john-harbaugh-effect-five-reasons-new-york-giants-are-different/",
-      "published_at": "2026-09-14T20:08:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 overreactions: Bears to score most and allow most points in NFL? Lamar Jackson for MVP?",
-      "summary": "Plus, was DJ Moore the best offseason addition in the NFL?",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-overreactions-bears-lamar-jackson-mvp/",
-      "published_at": "2026-09-14T17:57:07Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 winners and losers, plus grades for every team and Broncos-Chiefs predictions for Monday night",
-      "summary": "Here's everything you need to know about the NFL for Sept. 14",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-winners-and-losers-plus-grades-for-every-team-and-broncos-chiefs-predictions-for-monday-night/",
-      "published_at": "2026-09-14T16:59:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Points, points, points: Sunday was the highest-scoring NFL Week 1 of all time",
-      "summary": "Teams averaged a record 53.3 points per game across the league, highlighted by the Bears piling up 59 points in a historic shootout with the Panthers",
-      "url": "https://www.cbssports.com/nfl/news/sunday-was-the-highest-scoring-nfl-week-1-of-all-time/",
-      "published_at": "2026-09-14T16:39:56Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
