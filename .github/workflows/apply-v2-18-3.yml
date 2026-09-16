@@ -6,6 +6,7 @@ on:
       - feature/v2.18.3-streamer-waiver-handoff
     paths:
       - 'scripts/apply_v2_18_3.py'
+      - 'scripts/update_weekly_contract_v2_18_3.py'
       - '.github/workflows/apply-v2-18-3.yml'
 
 permissions:
@@ -30,6 +31,8 @@ jobs:
           node-version: '22'
       - name: Apply v2.18.3 implementation
         run: python scripts/apply_v2_18_3.py
+      - name: Update Weekly handoff contract
+        run: python scripts/update_weekly_contract_v2_18_3.py
       - name: Run Weekly contract
         run: python tests/weekly_contract_test.py
       - name: Run Streamer waiver handoff contract
