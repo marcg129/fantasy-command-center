@@ -35,7 +35,7 @@ jobs:
         run: python scripts/update_calibration.py
       - name: Commit changed calibration data
         run: |
-          if git diff --quiet -- data/calibration.json; then
+          if [ -z "$(git status --porcelain -- data/calibration.json)" ]; then
             echo "No calibration-data changes to commit."
             exit 0
           fi
