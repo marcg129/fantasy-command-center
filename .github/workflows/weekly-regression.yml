@@ -3,7 +3,7 @@ name: Weekly regression tests
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [main, feature/v2.19-transaction-priority-queue]
     paths:
       - 'index.html'
       - 'tests/**'
