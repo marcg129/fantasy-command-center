@@ -40,9 +40,13 @@ else:
         "primaryChurnCandidate(ctx,drops)",
         "effectiveKeepValue(drop,ctx)",
         "openSlots",
+        "freeAgentScore(add,ctx",
+        "addValue",
     ]:
         if required not in body:
-            errors.append(f"streamer waiver review must use existing safe-drop logic: {required}")
+            errors.append(f"streamer waiver review must use existing safe-drop/value logic: {required}")
+    if "Number(add.weeklyValue)" in body:
+        errors.append("streamer waiver review must not rely on weeklyValue from the dedicated streaming pool")
     if "drop:r.current" in body or "drop=current" in body:
         errors.append("streamer waiver review must never assume the incumbent starter is the drop")
 
@@ -109,4 +113,4 @@ elif "state.streamerWaiverReview=null" not in load_weekly_match.group(1):
 if errors:
     raise SystemExit("Streamer waiver handoff contract failed:\n- " + "\n- ".join(errors))
 
-print("Streamer waiver handoff PASS: exact candidate propagation, safe-drop review, no-auto-incumbent-drop, and stale-review reset contracts are intact.")
+print("Streamer waiver handoff PASS: exact candidate propagation, computed roster value, safe-drop review, no-auto-incumbent-drop, and stale-review reset contracts are intact.")
