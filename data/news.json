@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T21:21:29.476657Z",
+  "generated_at": "2026-09-16T00:20:40.605125Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "2026 Week 2 NFL odds, start times, betting lines, spreads: Get Week 2 NFL picks, predictions for every game",
+      "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
+      "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-odds-betting-lines-spreads-picks-predictions/",
+      "published_at": "2026-09-15T21:42:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Ole Miss-LSU, Tigers-Blue Jays, MLB",
       "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Tuesday",
@@ -61,18 +73,6 @@
       "summary": "After a 426-yard breakout performance against Oregon, former North Texas transfer Drew Mestemaker is rapidly rising in early 2027 NFL Draft evaluations",
       "url": "https://www.cbssports.com/nfl/draft/news/walk-on-nfl-draft-prospect-qb-drew-mestemaker-oklahoma-state/",
       "published_at": "2026-09-15T19:21:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 Week 2 NFL odds, start times, betting lines, spreads: Get Week 2 NFL picks, predictions for every game",
-      "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
-      "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-odds-betting-lines-spreads-picks-predictions/",
-      "published_at": "2026-09-15T18:16:23Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
