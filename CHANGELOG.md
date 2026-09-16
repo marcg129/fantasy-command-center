@@ -4,6 +4,16 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.17.3 — Weekly Regression Tests
+**2026-09-16**
+
+- Add a permanent GitHub Actions regression workflow for Weekly-mode changes instead of relying only on manual post-deploy checks.
+- Add a structural Weekly contract test that verifies the complete `loadWeekly()` dependency chain, critical projection/simulation helpers, required DOM anchors, Enter/Connect and Weekly Check event wiring, confidence-guardrail copy, and frontend JavaScript syntax.
+- Explicitly protect the projection helpers whose accidental removal caused the v2.17.1 Weekly Check regression.
+- Add a live Sleeper integration smoke test that verifies the configured league, manager, owned roster, current matchup endpoint, and the same-origin projection, usage, and calibration snapshots used by Weekly mode.
+- Run the regression suite automatically for `index.html`, test, and regression-workflow changes, and on pull requests that touch those paths.
+- Keep the suite intentionally lightweight and dependency-free so it can fail quickly before future Weekly changes are treated as validated.
+
 ## v2.17.2 — Weekly Check Regression Fix
 **2026-09-16**
 
