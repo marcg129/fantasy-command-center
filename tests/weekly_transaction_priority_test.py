@@ -64,6 +64,13 @@ const withDrop = allocateTransactionResources([
   {{name:'Tampa Bay Buccaneers',type:'STREAM',starterGain:3.7,rosterGain:-68,coverageNeed:false,competitionLevel:1,transactionCost:0,safeDropName:null}}
 ], 0);
 if (withDrop[0].resource !== 'SAFE DROP' || withDrop[0].dropName !== 'Jakobi Meyers' || withDrop[0].blocked) throw new Error('safe churn candidate should make a no-slot move actionable');
+
+const executableFirst = allocateTransactionResources([
+  {{name:'Blocked Stream',type:'STREAM',starterGain:8.0,rosterGain:-20,coverageNeed:false,competitionLevel:1,transactionCost:0,safeDropName:null}},
+  {{name:'Actionable Waiver',type:'WAIVER',starterGain:0,rosterGain:12,coverageNeed:false,competitionLevel:1,transactionCost:1,safeDropName:'Bench Churn'}}
+], 0);
+if (executableFirst[0].name !== 'Actionable Waiver' || executableFirst[0].blocked) throw new Error('an executable transaction must rank ahead of a blocked higher-score idea');
+if (executableFirst[1].name !== 'Blocked Stream' || !executableFirst[1].blocked) throw new Error('blocked ideas should remain visible after actionable moves');
 console.log('transaction priority behavior ok');
 """
 
