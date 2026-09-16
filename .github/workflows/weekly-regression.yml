@@ -38,6 +38,8 @@ jobs:
           node-version: '22'
       - name: Validate Weekly dependency contract
         run: python tests/weekly_contract_test.py
+      - name: Validate Streamer to Waiver Planner handoff
+        run: python tests/streamer_waiver_handoff_test.py
 
   sleeper-integration:
     runs-on: ubuntu-latest
