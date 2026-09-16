@@ -35,7 +35,7 @@ jobs:
       - name: Commit changed usage data
         shell: bash
         run: |
-          if git diff --quiet -- data/usage.json; then
+          if [ -z "$(git status --porcelain -- data/usage.json)" ]; then
             echo "No usage-data changes to commit."
             exit 0
           fi
