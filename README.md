@@ -2,7 +2,7 @@
 
 A responsive fantasy-football decision-support tool built around the Sleeper public API.
 
-**Live demo:** https://marccg129.github.io/fantasy-command-center/
+**Live demo:** https://marcg129.github.io/fantasy-command-center/
 
 ## Overview
 
