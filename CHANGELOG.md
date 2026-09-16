@@ -4,6 +4,19 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.15.3 — In-Season Baseline Cleanup
+**2026-09-15**
+
+- Isolate the Aug. 29/30 expert-consensus ECR snapshot and embedded preseason news adjustments to Draft Day / immediate post-draft analysis.
+- Remove preseason `newsAdjustments` from Normal Weekly scoring and free-agent rationale.
+- Replace the Weekly base-value market anchor with current Sleeper/search market rank at a lighter weight, allowing live role, usage, availability, current news, game environment, weather, projections, and roster construction to carry more of the in-season decision signal.
+- Remove stale draft ECR from Trade Intelligence market ranking while preserving its existing current usage, availability, news, age, position-scarcity, keeper, and roster-impact adjustments.
+- Use current in-season market rank for normal-weekly free-agent tie breaks and TE-depth filtering; retain draft ECR only where the user explicitly runs the immediate Post-Draft scan.
+- Change Best Available Adds metadata from preseason ECR-first wording to current market rank, with draft ECR shown only in Post-Draft mode.
+- Replace the Weekly `Strategy rankings: Aug 30 snapshot` badge with `In-season model: current` and relabel the global snapshot badge as `Draft board snapshot: Aug 30`.
+- Keep the v2.15 projection layer as an independent cross-check rather than silently making projected points the primary Weekly Outlook input.
+- Preserve the v2.15.2 pregame simulation engine, league-median logic, navigation, positional coverage, waiver, and Start/Sit guardrails.
+
 ## v2.15.2 — Weekly Simulation Engine
 **2026-09-15**
 
