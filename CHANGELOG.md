@@ -4,6 +4,16 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.16.2 — Current Week Resolution
+**2026-09-15**
+
+- Resolve the default Weekly management week from Sleeper's official NFL state plus fresh same-season projection and usage snapshots instead of assuming the raw state pill is always the best management-week signal.
+- Allow a fresh projection/usage snapshot to move the default at most one week ahead when Sleeper's raw state is still on the prior week, preventing Week 2 analysis from reconnecting to Week 1.
+- Keep the Week field fully editable; a manually selected historical/future week is never overwritten by a normal Weekly check.
+- Make the NFL-state pill explicit when values differ: it can show `analysis W2 • Sleeper state W1`, or `selected W3 • current W2` for a manual override, instead of misleadingly labeling the selected analysis as the raw Sleeper week.
+- Prefer Sleeper `week` / `leg` as official state fields and treat `display_week` only as a fallback because Sleeper permits display week to differ from the underlying week.
+- Preserve v2.16.1 usage snapshots, v2.16 lineup consensus, projections, simulation, league median, waiver, trade, news, and availability behavior.
+
 ## v2.16.1 — Usage Snapshot Reliability
 **2026-09-15**
 
