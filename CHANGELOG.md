@@ -4,6 +4,15 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.16.1 — Usage Snapshot Reliability
+**2026-09-15**
+
+- Fix the Week 2 `usage baseline unavailable` condition caused by browser-time dependency on redirected GitHub release assets.
+- Add `scripts/update_usage.py` and a permanent GitHub Actions workflow that snapshots nflverse weekly player stats and snap counts into `data/usage.json` four times per day during NFL-season months.
+- Load the same-origin usage snapshot first in Weekly mode, with the previous direct nflverse CSV request retained only as a fallback.
+- Store current-season completed-week data plus a compact late-season prior-year fallback so Week 1 can still use a deliberately down-weighted historical workload baseline.
+- Preserve the existing usage model, player matching, target/carry/snap calculations, Start/Sit consensus engine, projections, simulation, waiver, trade, news, and availability logic.
+
 ## v2.16 — Lineup Consensus Engine
 **2026-09-15**
 
