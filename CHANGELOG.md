@@ -4,6 +4,16 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.18.2 — Streamer Decision Clarity
+**2026-09-16**
+
+- Make `HOLD` headlines name the incumbent starter being kept rather than the free-agent comparison, so examples read `HOLD Joe Burrow` and `HOLD Jake Bates`.
+- Separate true projection-threshold misses from cases where the projection clears the streaming threshold but Weekly Outlook strongly disagrees.
+- Label projection-vs-Outlook disagreements as `MODEL CONFLICT` and explain which model favors the incumbent instead of incorrectly saying the projection still needs to clear the threshold.
+- Add an `AVAILABILITY CONFLICT` hold reason when the projection clears the threshold but the available option carries a meaningful availability penalty.
+- Keep `STREAM` headlines focused on the incoming free agent and preserve the existing Review waiver move handoff.
+- Extend the permanent Weekly regression contract to protect incumbent HOLD naming and explicit model-conflict handling.
+
 ## v2.18.1 — Streamer Candidate Pool Fix
 **2026-09-16**
 
