@@ -4,6 +4,24 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.15.2 — Weekly Simulation Engine
+**2026-09-15**
+
+- Add a conservative pregame Monte Carlo simulation layer on top of the league-scored projection foundation.
+- Run 6,000 repeated weekly outcomes and estimate P(beat H2H opponent), P(beat league median), and the combined 2–0 weekly result when median scoring applies.
+- Simulate the full adequately-projected league each iteration so the median threshold moves with simulated team scores rather than being treated as a fixed number.
+- Compare the current starter set with the projection-optimal legal lineup using common random draws, allowing the app to show how a proposed lineup swap changes H2H, median, and 2–0 probabilities.
+- Add a middle-50% team-score range so projected outcomes are presented as a distribution instead of a single mean.
+- Require at least 90% starter-projection coverage for the connected team and H2H opponent before producing probabilities.
+- Require at least 80% of league teams to meet that stricter coverage threshold before producing a league-median probability.
+- Use position-level variance assumptions plus a modest shared same-NFL-team factor so stacked players are not modeled as completely independent.
+- Label the variance model HEURISTIC VARIANCE v1; it is not yet calibrated from this season's projection errors.
+- Treat small probability differences as noise rather than automatic lineup-change signals.
+- Withhold simulation probabilities once live scoring begins rather than mixing full-game projections with incomplete in-game results.
+- Surface a small Overview alert badge when the pregame model puts either the H2H or median path below 45%.
+- Show Weekly Simulation in both Overview and Lineup without allowing it to override the existing Outlook optimizer automatically.
+- Preserve all v2.15.1 navigation, current-week selection, waiver, trade, injury, usage, weather, projection, and league-median behavior.
+
 ## v2.15.1 — Weekly Navigation & Current Week
 **2026-09-15**
 
