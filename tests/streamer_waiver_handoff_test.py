@@ -96,7 +96,17 @@ else:
     if "reviewStreamerWaiverMove(ctx,rows[index])" not in body:
         errors.append("Streamer Finder must pass the exact recommendation into Waiver Planner")
 
+load_weekly_match = re.search(
+    r"async\s+function\s+loadWeekly\s*\(\)\s*\{(.*?)\n\s*\}\n\n\s*\$\('connectBtn'\)",
+    html,
+    flags=re.S,
+)
+if not load_weekly_match:
+    errors.append("could not isolate loadWeekly() for stale streamer-review reset")
+elif "state.streamerWaiverReview=null" not in load_weekly_match.group(1):
+    errors.append("each new Weekly Check must clear any stale pinned streamer review")
+
 if errors:
     raise SystemExit("Streamer waiver handoff contract failed:\n- " + "\n- ".join(errors))
 
-print("Streamer waiver handoff PASS: exact candidate propagation, safe-drop review, and no-auto-incumbent-drop contract are intact.")
+print("Streamer waiver handoff PASS: exact candidate propagation, safe-drop review, no-auto-incumbent-drop, and stale-review reset contracts are intact.")
