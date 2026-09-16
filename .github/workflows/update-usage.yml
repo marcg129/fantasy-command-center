@@ -1,0 +1,47 @@
+name: Update fantasy usage data
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/update_usage.py"
+      - ".github/workflows/update-usage.yml"
+  schedule:
+    # Refresh four times daily during the NFL season months.
+    - cron: "17 */6 * 1,2,8,9,10,11,12 *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fantasy-usage-update
+  cancel-in-progress: true
+
+jobs:
+  update-usage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Build usage snapshot
+        run: python scripts/update_usage.py
+
+      - name: Commit changed usage data
+        shell: bash
+        run: |
+          if git diff --quiet -- data/usage.json; then
+            echo "No usage-data changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/usage.json
+          git commit -m "Refresh fantasy usage data"
+          git push
