@@ -5817,8 +5817,11 @@ if(team.rosterId===mine.rosterId) {
     const drops=dropCandidates(ctx);
     const drop=primaryChurnCandidate(ctx,drops);
     const keepValue=drop?effectiveKeepValue(drop,ctx):null;
-    let gap=drop && Number.isFinite(Number(add.weeklyValue))
-      ? Number(add.weeklyValue)-keepValue
+    const addMap=trendMap(state.trendingAdds);
+    const dropMap=trendMap(state.trendingDrops);
+    const addValue=freeAgentScore(add,ctx,addMap,dropMap,state.weeklyMode);
+    let gap=drop && Number.isFinite(addValue)
+      ? addValue-keepValue
       : null;
 
     if(drop && Number.isFinite(gap)) {
@@ -5829,7 +5832,7 @@ if(team.rosterId===mine.rosterId) {
     const reviewCut=state.weeklyMode==='postdraft'?5:8;
     const safeDrop=openSlots>0 || (!!drop && Number.isFinite(gap) && gap>=reviewCut);
     return {
-      add,drop,openSlots,keepValue,gap,reviewCut,safeDrop,
+      add,drop,openSlots,keepValue,addValue,gap,reviewCut,safeDrop,
       projectionEdge:r.projectionEdge,
       outlookEdge:r.outlookEdge,
       pos:r.pos,
