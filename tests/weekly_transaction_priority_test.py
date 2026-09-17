@@ -15,6 +15,8 @@ required = [
     'NO SAFE DROP',
     'DIRECT REPLACEMENT',
     'ROSTER CHURN',
+    'ROSTER OPPORTUNITY COST',
+    'function transactionChurnOpportunityScore(',
     'TRANSACTION_PRIORITY_CORE_START',
     'TRANSACTION_PRIORITY_CORE_END',
     'function renderTransactionPriorityQueue(',
