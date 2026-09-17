@@ -5893,12 +5893,15 @@ if(team.rosterId===mine.rosterId) {
     const threshold=Number(r.threshold)||0;
     const reviewCut=Number(baseReview?.reviewCut ?? (state.weeklyMode==='postdraft'?5:8));
 
-    // K/DEF are normally streamed as direct one-for-one roster replacements once
-    // the football recommendation already clears its streaming threshold. QB/TE
-    // incumbents must also be expendable on post-swap roster value so a one-week
-    // edge never turns into an automatic Joe Burrow-style drop.
+    // K/DEF get a more permissive post-swap roster-value guardrail than QB/TE,
+    // because carrying two specialists has a real opportunity cost. Projection
+    // threshold alone is still not enough to auto-cut an incumbent with clearly
+    // stronger retained value.
+    const projectionClears=Number.isFinite(projectionEdge) && projectionEdge>=threshold;
+    const specialistValueFloor=-Math.max(5,reviewCut);
+    const specialistValueOkay=Number.isFinite(gap) && gap>=specialistValueFloor;
     const justified=['K','DEF'].includes(pos)
-      ? (Number.isFinite(projectionEdge) && projectionEdge>=threshold)
+      ? (projectionClears && specialistValueOkay)
       : (Number.isFinite(gap) && gap>=reviewCut);
 
     return {
