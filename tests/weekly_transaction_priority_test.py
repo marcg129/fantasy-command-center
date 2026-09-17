@@ -101,4 +101,38 @@ console.log('transaction priority behavior ok');
 
 proc = subprocess.run(["node", "-e", node_script], capture_output=True, text=True)
 assert proc.returncode == 0, proc.stderr or proc.stdout
+
+# Exercise the direct-replacement evaluator itself. A K/DEF streamer may have a
+# lower bar than QB/TE, but a cleared weekly projection threshold alone must not
+# authorize cutting an incumbent whose post-swap roster value is still much higher.
+direct_start = source.index('function streamerDirectReplacementReview(')
+direct_end = source.index('\n\n  function reviewStreamerWaiverMove', direct_start)
+direct_helper = source[direct_start:direct_end]
+
+direct_guardrail_script = f"""
+const state = {{weeklyMode:'weekly'}};
+function dropCandidates(ctx) {{
+  return [{{
+    id:'JAX', name:'Jacksonville Jaguars', pos:'DEF',
+    isKeeper:false, isReserve:false, irEligible:false,
+    protectedInjuryStash:false, recentlyAdded:false,
+    isStarter:true, isOptimizedStarter:true, lineupProtected:true,
+    soleRequired:true, displacedOneStarter:false,
+    redundantQB:false, redundantTE:false
+  }}];
+}}
+function effectiveKeepValue(drop,ctx) {{ return 70; }}
+function streamerWaiverReviewForRecommendation(ctx,r) {{ return {{addValue:20,reviewCut:8}}; }}
+{direct_helper}
+const recommendation = {{
+  status:'STREAM', pos:'DEF', threshold:2.0, projectionEdge:3.7,
+  current:{{id:'JAX',p:{{player_id:'JAX'}}}}
+}};
+const review = streamerDirectReplacementReview({{}},recommendation,{{addValue:20,reviewCut:8}});
+if (review.justified || review.drop) throw new Error('valuable DEF incumbent must not be direct-replaced solely because the weekly projection threshold clears');
+console.log('specialist incumbent value guardrail ok');
+"""
+
+guardrail_proc = subprocess.run(["node", "-e", direct_guardrail_script], capture_output=True, text=True)
+assert guardrail_proc.returncode == 0, guardrail_proc.stderr or guardrail_proc.stdout
 print("weekly transaction priority contract ok")
