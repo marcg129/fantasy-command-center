@@ -1,0 +1,29 @@
+name: Apply v2.19.1 specialist guardrail
+
+on:
+  push:
+    branches: [feature/v2.19.1-position-aware-routing]
+    paths:
+      - '.github/workflows/apply-v2.19.1-specialist-guardrail.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/v2.19.1-position-aware-routing
+      - name: Apply specialist guardrail
+        run: python scripts/apply_v2_19_1_specialist_guardrail.py
+      - name: Commit implementation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "Guard K/DEF direct replacements by roster value"
+          git push
