@@ -5955,14 +5955,29 @@ if(team.rosterId===mine.rosterId) {
     return coverage + starter*10 + Math.min(30,roster)*0.6 + competition*1.25 - cost;
   }
 
+  function transactionChurnOpportunityScore(c) {
+    const starter=Math.max(0,Number(c?.starterGain)||0);
+    const roster=Math.max(0,Number(c?.rosterGain)||0);
+    const cost=Math.max(0,Number(c?.transactionCost)||0);
+    const thresholdRaw=Number(c?.actionThreshold);
+    const threshold=Number.isFinite(thresholdRaw) && thresholdRaw>0
+      ? thresholdRaw
+      : (c?.type==='STREAM'?2:8);
+    if(c?.coverageNeed) return 1000 + starter;
+    if(c?.type==='STREAM') {
+      return (starter/threshold) + Math.min(0.5,roster/100) - cost*0.05;
+    }
+    return (roster/threshold) + Math.min(0.5,starter/10) - cost*0.1;
+  }
+
   function allocateTransactionResources(candidates,openSlots=0) {
     let slots=Math.max(0,Math.floor(Number(openSlots)||0));
-    const usedDrops=new Set();
+    const usedDrops=new Map();
     const ranked=(candidates||[])
       .map((c,index)=>({...c,priorityScore:transactionPriorityScore(c),_sourceOrder:index}))
       .sort((a,b)=>b.priorityScore-a.priorityScore || a._sourceOrder-b._sourceOrder);
 
-    const allocated=ranked.map(c=>{
+    const allocated=ranked.map((c,index)=>{
       if(slots>0) {
         slots-=1;
         return {...c,resource:'OPEN SLOT',dropName:null,blocked:false};
@@ -5970,13 +5985,46 @@ if(team.rosterId===mine.rosterId) {
 
       const directDrop=String(c.directDropName||'').trim();
       if(directDrop && !usedDrops.has(directDrop)) {
-        usedDrops.add(directDrop);
+        usedDrops.set(directDrop,c.name);
         return {...c,resource:'DIRECT REPLACEMENT',dropName:directDrop,blocked:false};
       }
 
       const safeDrop=String(c.safeDropName||'').trim();
-      if(safeDrop && !usedDrops.has(safeDrop)) {
-        usedDrops.add(safeDrop);
+      if(safeDrop) {
+        if(usedDrops.has(safeDrop)) {
+          return {
+            ...c,
+            resource:'ROSTER OPPORTUNITY COST',
+            dropName:null,
+            blocked:true,
+            opportunityWinnerName:usedDrops.get(safeDrop),
+            opportunityDropName:safeDrop
+          };
+        }
+
+        const sharedContenders=ranked
+          .slice(index+1)
+          .filter(other=>{
+            const otherDrop=String(other.safeDropName||'').trim();
+            const otherDirect=String(other.directDropName||'').trim();
+            return otherDrop===safeDrop && !otherDirect;
+          });
+        const stronger=sharedContenders
+          .filter(other=>transactionChurnOpportunityScore(other)>transactionChurnOpportunityScore(c)+0.01)
+          .sort((a,b)=>transactionChurnOpportunityScore(b)-transactionChurnOpportunityScore(a) || b.priorityScore-a.priorityScore)[0];
+
+        if(stronger) {
+          return {
+            ...c,
+            resource:'ROSTER OPPORTUNITY COST',
+            dropName:null,
+            blocked:true,
+            opportunityWinnerName:stronger.name,
+            opportunityDropName:safeDrop
+          };
+        }
+
+        usedDrops.set(safeDrop,c.name);
         return {...c,resource:'ROSTER CHURN',dropName:safeDrop,blocked:false};
       }
 
@@ -6020,6 +6068,7 @@ if(team.rosterId===mine.rosterId) {
         coverageNeed,
         competitionLevel:competition.level,
         transactionCost:0,
+        actionThreshold:Number(r.threshold)||streamingThresholdForPosition(review.add.pos),
         directDropName:direct?.justified && direct.drop ? direct.drop.name : null,
         directCandidateName:direct?.candidateName||null,
         directDropGap:Number.isFinite(direct?.gap)?direct.gap:null,
@@ -6048,6 +6097,7 @@ if(team.rosterId===mine.rosterId) {
         coverageNeed,
         competitionLevel:competition.level,
         transactionCost:premiumPriorityCost+budgetCost,
+        actionThreshold:reviewCut,
         directDropName:null,
         directCandidateName:null,
         safeDropName:m.drop && Number.isFinite(m.gap) && m.gap>=reviewCut ? m.drop.name : null,
@@ -6095,6 +6145,11 @@ if(team.rosterId===mine.rosterId) {
       } else if(m.resource==='ROSTER CHURN') {
         resourceText=`ROSTER CHURN • ${m.dropName}`;
         routeExplanation=`Keep the incumbent and use ${m.dropName} as the justified lower-value roster churn path.`;
+      } else if(m.resource==='ROSTER OPPORTUNITY COST') {
+        const preserved=m.opportunityDropName||m.churnCandidateName||'the churn slot';
+        const winner=m.opportunityWinnerName||'a stronger competing move';
+        resourceText=`ROSTER OPPORTUNITY COST • preserve ${preserved} for ${winner}`;
+        routeExplanation=`This move competes for ${preserved}, but ${winner} is the stronger normalized use of that shared roster resource. Preserve the churn slot rather than force the lower-value transaction.`;
       } else if(m.resource==='NO JUSTIFIED DROP') {
         resourceText='NO JUSTIFIED DROP';
         routeExplanation='A drop candidate exists, but the value lost is greater than this move justifies. Do not force the transaction.';
