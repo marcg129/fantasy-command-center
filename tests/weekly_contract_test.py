@@ -23,6 +23,7 @@ required_ids = [
     "weeklyProjection",
     "weeklySimulation",
     "weeklyStreamers",
+    "weeklyMovePriority",
 ]
 
 # These are the core helpers directly or transitively required by loadWeekly().
@@ -55,6 +56,10 @@ required_functions = [
     "streamingCandidatePool",
     "streamingRecommendationForPosition",
     "renderStreamerFinder",
+    "transactionPriorityScore",
+    "allocateTransactionResources",
+    "buildTransactionPriorityCandidates",
+    "renderTransactionPriorityQueue",
     "renderTradeIntelligence",
     "renderWeeklyTrending",
     "renderWeeklyTransactions",
@@ -90,6 +95,8 @@ required_fragments = [
     "QB:2.0,TE:1.5,K:1.5,DEF:2.0",
     "Roster-space decisions stay in Drop Review/Waiver Planner",
     "Review waiver move",
+    "Transaction Priority Queue",
+    "BLOCKED — NO SAFE DROP",
 ]
 
 errors = []
@@ -185,11 +192,12 @@ else:
         "renderWeeklyOutlook(ctx)",
         "renderStartSit(ctx)",
         "renderStreamerFinder(ctx)",
+        "renderTransactionPriorityQueue(ctx,streamers,moves)",
         "renderProjectionPanel(matchups,ctx)",
         "renderWeeklySimulation(matchups,ctx)",
         "renderLeagueMedian(matchups,ctx,simulation)",
         "renderWeeklyMatchup(matchups,ctx)",
-        "renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups,simulation)",
+        "renderWeeklyActionPlan(ctx,pool,drops,moves,steals,matchups,simulation,priorities)",
     ]
     for call in pipeline_calls:
         if call not in body:
