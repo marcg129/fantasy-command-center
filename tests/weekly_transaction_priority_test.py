@@ -102,15 +102,15 @@ console.log('transaction priority behavior ok');
 proc = subprocess.run(["node", "-e", node_script], capture_output=True, text=True)
 assert proc.returncode == 0, proc.stderr or proc.stdout
 
-# Exercise the direct-replacement evaluator itself. A K/DEF streamer may have a
-# lower bar than QB/TE, but a cleared weekly projection threshold alone must not
-# authorize cutting an incumbent whose post-swap roster value is still much higher.
+# Exercise the direct-replacement evaluator itself. K/DEF gets a more permissive
+# post-swap value guardrail than QB/TE, but projection threshold alone is not enough.
 direct_start = source.index('function streamerDirectReplacementReview(')
 direct_end = source.index('\n\n  function reviewStreamerWaiverMove', direct_start)
 direct_helper = source[direct_start:direct_end]
 
 direct_guardrail_script = f"""
 const state = {{weeklyMode:'weekly'}};
+let incumbentKeepValue = 70;
 function dropCandidates(ctx) {{
   return [{{
     id:'JAX', name:'Jacksonville Jaguars', pos:'DEF',
@@ -121,15 +121,19 @@ function dropCandidates(ctx) {{
     redundantQB:false, redundantTE:false
   }}];
 }}
-function effectiveKeepValue(drop,ctx) {{ return 70; }}
+function effectiveKeepValue(drop,ctx) {{ return incumbentKeepValue; }}
 function streamerWaiverReviewForRecommendation(ctx,r) {{ return {{addValue:20,reviewCut:8}}; }}
 {direct_helper}
 const recommendation = {{
   status:'STREAM', pos:'DEF', threshold:2.0, projectionEdge:3.7,
   current:{{id:'JAX',p:{{player_id:'JAX'}}}}
 }};
-const review = streamerDirectReplacementReview({{}},recommendation,{{addValue:20,reviewCut:8}});
+let review = streamerDirectReplacementReview({{}},recommendation,{{addValue:20,reviewCut:8}});
 if (review.justified || review.drop) throw new Error('valuable DEF incumbent must not be direct-replaced solely because the weekly projection threshold clears');
+
+incumbentKeepValue = 24;
+review = streamerDirectReplacementReview({{}},recommendation,{{addValue:20,reviewCut:8}});
+if (!review.justified || !review.drop || review.drop.name !== 'Jacksonville Jaguars') throw new Error('modest K/DEF value disadvantage should still permit a direct replacement when the stream clears its weekly threshold');
 console.log('specialist incumbent value guardrail ok');
 """
 
