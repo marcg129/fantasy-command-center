@@ -42,6 +42,8 @@ jobs:
         run: python tests/streamer_waiver_handoff_test.py
       - name: Validate Transaction Priority Queue
         run: python tests/weekly_transaction_priority_test.py
+      - name: Validate optimized Streamer Finder baseline
+        run: python tests/streamer_optimized_baseline_test.py
 
   sleeper-integration:
     runs-on: ubuntu-latest
