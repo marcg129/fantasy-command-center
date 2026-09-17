@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T21:18:42.257077Z",
+  "generated_at": "2026-09-17T00:32:50.327689Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -21,6 +21,30 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 2 injury report: Lions down two starting offensive lineman vs. Bills, including Blake Miller",
+      "summary": "Here's how each team is doing on the injury front as they gear up for Week 2",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-lions-down-two-offensive-lineman-bills/",
+      "published_at": "2026-09-17T00:17:29Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Seahawks rule out Sam Darnold for Week 2, but potential timetable for return emerges",
+      "summary": "Seattle reportedly has no plans to place its starting quarterback on injured reserve",
+      "url": "https://www.cbssports.com/nfl/news/seattle-seahawks-rule-out-sam-darnold-for-week-2/",
+      "published_at": "2026-09-17T00:03:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
       "title": "Use FanDuel promo code to get $350 in bonus bets for Lions-Bills, LSU-Ole Miss, NFL, MLB games on Wednesday",
       "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-lions-bills-lsu-ole-miss-nfl-mlb-games-wednesday/",
@@ -30,18 +54,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 injury report: Lions down two starting offensive lineman vs. Bills, including Blake Miller",
-      "summary": "Here's how each team is doing on the injury front as they gear up for Week 2",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-lions-down-two-offensive-lineman-bills/",
-      "published_at": "2026-09-16T21:00:04Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -193,18 +205,6 @@
       "summary": "Tyler Sullivan picks every game on the Week 2 schedule, plus five locks against the spread",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-2-odds-picks-jets-browns/",
       "published_at": "2026-09-16T13:20:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Ole Miss-LSU, MLB betting on Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL and college football betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-ole-miss-lsu-mlb-betting-wednesday/",
-      "published_at": "2026-09-16T13:07:45Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
