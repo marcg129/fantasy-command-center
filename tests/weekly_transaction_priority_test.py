@@ -96,6 +96,15 @@ const executableFirst = allocateTransactionResources([
 ], 0);
 if (executableFirst[0].name !== 'Actionable Waiver' || executableFirst[0].blocked) throw new Error('an executable transaction must rank ahead of a blocked higher-score idea');
 if (executableFirst[1].name !== 'Blocked Stream' || !executableFirst[1].blocked) throw new Error('blocked ideas should remain visible after actionable moves');
+
+const sharedChurnOpportunity = allocateTransactionResources([
+  {name:'Tampa Bay Buccaneers',type:'STREAM',pos:'DEF',starterGain:3.7,rosterGain:82,coverageNeed:false,competitionLevel:1,transactionCost:0,safeDropName:'Michael Mayer',churnCandidateName:'Michael Mayer',directDropName:null,actionThreshold:2.0},
+  {name:'Emmett Johnson',type:'WAIVER',pos:'RB',starterGain:0,rosterGain:82,coverageNeed:false,competitionLevel:1,transactionCost:2,safeDropName:'Michael Mayer',churnCandidateName:'Michael Mayer',directDropName:null,actionThreshold:8.0}
+], 0);
+if (sharedChurnOpportunity[0].name !== 'Emmett Johnson' || sharedChurnOpportunity[0].resource !== 'ROSTER CHURN' || sharedChurnOpportunity[0].dropName !== 'Michael Mayer' || sharedChurnOpportunity[0].blocked) throw new Error('strong season-long waiver upgrade should preserve the shared churn slot over a moderate discretionary stream');
+const tampaOpportunity = sharedChurnOpportunity.find(x=>x.name==='Tampa Bay Buccaneers');
+if (!tampaOpportunity || tampaOpportunity.resource !== 'ROSTER OPPORTUNITY COST' || !tampaOpportunity.blocked) throw new Error('streamer that loses a shared churn slot must be labeled ROSTER OPPORTUNITY COST');
+if (tampaOpportunity.opportunityWinnerName !== 'Emmett Johnson' || tampaOpportunity.opportunityDropName !== 'Michael Mayer') throw new Error('opportunity-cost block should identify the competing move and preserved churn resource');
 console.log('transaction priority behavior ok');
 """
 
