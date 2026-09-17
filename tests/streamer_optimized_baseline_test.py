@@ -18,7 +18,7 @@ required = [
 missing = [token for token in required if token not in source]
 assert not missing, f"optimized streamer baseline contract missing: {missing}"
 
-start = source.index("function streamingStarterForPosition(")
+start = source.index("function streamingThresholdForPosition(")
 end = source.index("\n\n  function streamerWaiverReviewForRecommendation", start)
 streaming_block = source[start:end]
 
