@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T18:14:19.277920Z",
+  "generated_at": "2026-09-17T21:25:29.234440Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "Former Giants DC Wink Martindale takes veiled jab at Brian Daboll over Jaxson Dart, Cam Ward",
+      "summary": "The development of Dart and Ward seems to be trending in opposite directions after their coaching changes",
+      "url": "https://www.cbssports.com/nfl/news/former-giants-dc-wink-martindale-takes-veiled-jab-at-brian-daboll/",
+      "published_at": "2026-09-17T21:01:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $350 in bonus bets for Lions vs. Bills on NFL Thursday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code to get ready for Thursday Night Football",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-bills-lions-nfl-thursday-night-football/",
+      "published_at": "2026-09-17T20:55:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL odds: Week 2 parlays featuring favorites, underdogs include Giants vs. Rams, Jaguars vs. Broncos",
+      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 2 of the NFL season",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-2-parlays-featuring-favorites-underdogs-include-giants-vs-rams-jaguars-vs-broncos/",
+      "published_at": "2026-09-17T20:48:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Browns expected to sign Shedeur Sanders' college WR teammate Jimmy Horn Jr.",
+      "summary": "Horn was recently released by the Panthers and played with Sanders for two seasons at Colorado",
+      "url": "https://www.cbssports.com/nfl/news/browns-to-sign-jimmy-horn-jr-shedeur-sanders-college-teammate/",
+      "published_at": "2026-09-17T20:32:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Previewing Lions vs. Bills: High-powered offenses kick off Week 2 as Buffalo unveils new stadium",
+      "summary": "Josh Allen and Jahmyr Gibbs headline an explosive Thursday night showdown as Buffalo opens the new Highmark Stadium against Detroit's banged-up front line",
+      "url": "https://www.cbssports.com/nfl/news/previewing-prediction-lions-bills-nfl-week-2-thursday/",
+      "published_at": "2026-09-17T20:00:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Zay Flowers injury: Who will step up if Ravens star WR misses Week 2 matchup against Saints?",
+      "summary": "Flowers did not participate in Baltimore's first two practices this week",
+      "url": "https://www.cbssports.com/nfl/news/zay-flowers-injury-who-will-step-up-baltimore-ravens-new-orleans-saints/",
+      "published_at": "2026-09-17T19:09:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Pro Football Hall of Fame cuts Super Bowl-winning coach and 24 others from selection committee, per report",
+      "summary": "The committee is being reduced from 50 members down to 28, leaving Dan Fouts and James Lofton as the only enshrinees remaining on the voting panel",
+      "url": "https://www.cbssports.com/nfl/news/pro-football-hall-of-fame-selection-committee/",
+      "published_at": "2026-09-17T18:42:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Russell Wilson: Lamar Jackson could end his career as best dynamic QB of all time",
       "summary": "On CBS Sports' 'Set Hut,' Wilson made his case for why Jackson could pass Michael Vick in that conversation",
@@ -57,18 +141,6 @@
       "confidence": 0.88
     },
     {
-      "title": "2026 Week 2 NFL odds, betting lines, spreads, start times: Get Week 2 NFL picks, predictions for every game",
-      "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
-      "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-picks-odds-spreads-betting-lines-predictions/",
-      "published_at": "2026-09-17T16:18:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Chiefs' Travis Kelce admits he got away with obvious penalty on key play during Week 1 win over Broncos",
       "summary": "Kelce admitted on his podcast that officials missed an obvious holding penalty on Patrick Mahomes' opening touchdown run against the Broncos",
       "url": "https://www.cbssports.com/nfl/news/chiefs-travis-kelce-penalty-week-1-broncos/",
@@ -85,18 +157,6 @@
       "summary": "The Mavericks All-Star guard and Texans Pro Bowl linebacker have both been outspoken advocates for Palestine",
       "url": "https://www.cbssports.com/nfl/news/kyrie-irving-azeez-al-shaairs-fine-tribute-palestinian-girl/",
       "published_at": "2026-09-17T15:15:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets for Bills vs. Lions on NFL Thursday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code to get ready for Thursday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-lions-bills-nfl-thursday-night-football/",
-      "published_at": "2026-09-17T15:14:26Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -153,34 +213,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Previewing Lions vs. Bills: High-powered offenses kick off Week 2 as Buffalo unveils new stadium",
-      "summary": "Josh Allen and Jahmyr Gibbs headline an explosive Thursday night showdown as Buffalo opens the new Highmark Stadium against Detroit's banged-up front line",
-      "url": "https://www.cbssports.com/nfl/news/previewing-prediction-lions-bills-nfl-week-2-thursday/",
-      "published_at": "2026-09-17T13:01:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Previewing high-octane Bills-Lions matchup; LSU QB Sam Leavitt doubtful for Ole Miss game",
       "summary": "Plus, we predict the entire NFL playoff bracket after Week 1",
       "url": "https://www.cbssports.com/nfl/news/previewing-high-octane-bills-lions-matchup-lsu-qb-sam-leavitt-doubtful-for-ole-miss-game/",
       "published_at": "2026-09-17T13:00:20Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Lions-Bills on Thursday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Bils vs. Lions on Thursday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-lions-bills-thursday-night-football/",
-      "published_at": "2026-09-17T12:58:42Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -349,30 +385,6 @@
       "summary": "Pete Prisco reveals all of his Week 2 picks, including the Jaguars handing the Broncos another loss",
       "url": "https://www.cbssports.com/nfl/news/priscos-week-2-nfl-picks/",
       "published_at": "2026-09-16T15:05:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys' Caleb Downs explains why historically bad Week 1 defense is 'very fixable'",
-      "summary": "Dallas produced one of the NFL's worst defensive performances since the start of 2025, but its first-round rookie says the mistakes are correctable",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-defense-caleb-downs/",
-      "published_at": "2026-09-16T13:35:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 odds, picks: Jets continue to stay frisky, while Baker Mayfield torches former Browns team",
-      "summary": "Tyler Sullivan picks every game on the Week 2 schedule, plus five locks against the spread",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-odds-picks-jets-browns/",
-      "published_at": "2026-09-16T13:20:40Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
