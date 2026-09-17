@@ -464,7 +464,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
     <div>
       <div class="tiny">POST-DRAFT + WEEKLY MANAGEMENT BETA</div>
       <h2 style="margin:3px 0 5px">Weekly Command Center</h2>
-      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.19 adds a Transaction Priority Queue that resolves competing streamer and waiver recommendations against real roster capacity before surfacing the next move.</div>
+      <div class="tiny">Weekly lineup, matchup, waiver, and roster-management command center. v2.19.1 makes Transaction Priority position-aware: it evaluates the same-position incumbent first, distinguishes direct replacement from unrelated roster churn, and explains when a drop exists but is not justified.</div>
     </div>
     <div class="weekly-controls">
       <div class="field"><label>Mode</label>
@@ -584,7 +584,7 @@ button{border:0;border-radius:10px;padding:10px 13px;min-height:42px;cursor:poin
           <div>
             <div class="tiny">MOVE PRIORITY</div>
             <h3>Transaction Priority Queue</h3>
-            <div class="tiny">Resolves competing streamer and waiver recommendations against the roster spots you actually have. Only one recommendation can consume each open slot; later moves must identify a protected safe drop or remain blocked.</div>
+            <div class="tiny">Resolves competing streamer and waiver recommendations against the roster spots you actually have. Streamers first compare against the incumbent they would replace; roster routing then chooses an open slot, justified direct replacement, justified roster churn, or an explicit hold reason.</div>
           </div>
           <span class="pill" id="movePriorityPill">Moves —</span>
         </div>
@@ -5852,6 +5852,68 @@ if(team.rosterId===mine.rosterId) {
     };
   }
 
+
+  function streamerDirectReplacementReview(ctx,r,review=null) {
+    if(r?.status!=='STREAM' || !r?.current?.p) return null;
+    const pos=String(r.pos||'').toUpperCase();
+    const currentId=String(r.current.id||r.current.p?.player_id||'');
+    if(!currentId) return null;
+
+    const incumbent=dropCandidates(ctx).find(d=>String(d.id)===currentId) || null;
+    if(!incumbent) return null;
+
+    // Re-evaluate the incumbent after the hypothetical stream is added and started.
+    // Starter / sole-required protection should not survive that hypothetical swap,
+    // but keepers, reserve/injury stashes, and recent adds stay protected.
+    const hardProtected=!!(
+      incumbent.isKeeper || incumbent.isReserve || incumbent.irEligible ||
+      incumbent.protectedInjuryStash || incumbent.recentlyAdded
+    );
+    if(hardProtected) {
+      return {candidateName:incumbent.name,drop:null,justified:false,gap:null,keepValue:null,reason:'protected incumbent'};
+    }
+
+    const hypothetical={
+      ...incumbent,
+      isStarter:false,
+      isOptimizedStarter:false,
+      lineupProtected:false,
+      soleRequired:false,
+      displacedOneStarter:['QB','TE'].includes(pos),
+      redundantQB:pos==='QB',
+      redundantTE:pos==='TE'
+    };
+    const keepValue=effectiveKeepValue(hypothetical,ctx);
+    const baseReview=review||streamerWaiverReviewForRecommendation(ctx,r);
+    const addValue=Number(baseReview?.addValue);
+    let gap=Number.isFinite(addValue)?addValue-keepValue:null;
+    if(Number.isFinite(gap)) gap+=1.5; // same-position replacement fit
+
+    const projectionEdge=Number(r.projectionEdge);
+    const threshold=Number(r.threshold)||0;
+    const reviewCut=Number(baseReview?.reviewCut ?? (state.weeklyMode==='postdraft'?5:8));
+
+    // K/DEF get a more permissive post-swap roster-value guardrail than QB/TE,
+    // because carrying two specialists has a real opportunity cost. Projection
+    // threshold alone is still not enough to auto-cut an incumbent with clearly
+    // stronger retained value.
+    const projectionClears=Number.isFinite(projectionEdge) && projectionEdge>=threshold;
+    const specialistValueFloor=-Math.max(5,reviewCut);
+    const specialistValueOkay=Number.isFinite(gap) && gap>=specialistValueFloor;
+    const justified=['K','DEF'].includes(pos)
+      ? (projectionClears && specialistValueOkay)
+      : (Number.isFinite(gap) && gap>=reviewCut);
+
+    return {
+      candidateName:incumbent.name,
+      drop:justified?incumbent:null,
+      justified,
+      gap,
+      keepValue,
+      reason:justified?'same-position replacement clears routing guardrails':'incumbent remains more valuable than the one-week roster swap'
+    };
+  }
+
   function reviewStreamerWaiverMove(ctx,r) {
     const review=streamerWaiverReviewForRecommendation(ctx,r);
     if(!review) return;
@@ -5883,12 +5945,24 @@ if(team.rosterId===mine.rosterId) {
         slots-=1;
         return {...c,resource:'OPEN SLOT',dropName:null,blocked:false};
       }
+
+      const directDrop=String(c.directDropName||'').trim();
+      if(directDrop && !usedDrops.has(directDrop)) {
+        usedDrops.add(directDrop);
+        return {...c,resource:'DIRECT REPLACEMENT',dropName:directDrop,blocked:false};
+      }
+
       const safeDrop=String(c.safeDropName||'').trim();
       if(safeDrop && !usedDrops.has(safeDrop)) {
         usedDrops.add(safeDrop);
-        return {...c,resource:'SAFE DROP',dropName:safeDrop,blocked:false};
+        return {...c,resource:'ROSTER CHURN',dropName:safeDrop,blocked:false};
       }
-      return {...c,resource:'BLOCKED — NO SAFE DROP',dropName:null,blocked:true};
+
+      const evaluatedDrop=String(c.churnCandidateName||c.directCandidateName||'').trim();
+      if(evaluatedDrop) {
+        return {...c,resource:'NO JUSTIFIED DROP',dropName:null,blocked:true};
+      }
+      return {...c,resource:'NO SAFE DROP',dropName:null,blocked:true};
     });
 
     return [
@@ -5907,6 +5981,7 @@ if(team.rosterId===mine.rosterId) {
       if(r?.status!=='STREAM' || !r?.best?.b) continue;
       const review=streamerWaiverReviewForRecommendation(ctx,r);
       if(!review) continue;
+      const direct=streamerDirectReplacementReview(ctx,r,review);
       const competition=waiverCompetitionRisk(review.add);
       const coverageNeed=!r.current || !r.current.usable;
       const safeDropName=review.drop && Number.isFinite(review.gap) && review.gap>=review.reviewCut
@@ -5923,7 +5998,11 @@ if(team.rosterId===mine.rosterId) {
         coverageNeed,
         competitionLevel:competition.level,
         transactionCost:0,
+        directDropName:direct?.justified && direct.drop ? direct.drop.name : null,
+        directCandidateName:direct?.candidateName||null,
+        directDropGap:Number.isFinite(direct?.gap)?direct.gap:null,
         safeDropName,
+        churnCandidateName:review.drop?.name||null,
         currentName:review.currentName,
         reason:r.reason
       });
@@ -5947,7 +6026,10 @@ if(team.rosterId===mine.rosterId) {
         coverageNeed,
         competitionLevel:competition.level,
         transactionCost:premiumPriorityCost+budgetCost,
+        directDropName:null,
+        directCandidateName:null,
         safeDropName:m.drop && Number.isFinite(m.gap) && m.gap>=reviewCut ? m.drop.name : null,
+        churnCandidateName:m.drop?.name||null,
         currentName:null,
         reason:coverageNeed?'Restores a required starting-position coverage gap.':'Clears the existing roster-utility review threshold.'
       });
@@ -5976,15 +6058,28 @@ if(team.rosterId===mine.rosterId) {
       return [];
     }
 
-    setPill('movePriorityPill',ready?`${ready} actionable • ${queue.length} ranked`:`${queue.length} ranked • none safe`,ready?'warn':'good');
-    $('weeklyMovePriority').innerHTML=queue.slice(0,5).map((m,i)=>{
-      const resourceText=m.resource==='OPEN SLOT'
-        ? 'OPEN SLOT • no drop required'
-        : (m.resource==='SAFE DROP'
-            ? `SAFE DROP • ${m.dropName}`
-            : 'BLOCKED — NO SAFE DROP');
+    setPill('movePriorityPill',`${ready} actionable • ${queue.length} ranked`,ready?'warn':'good');
+    $('weeklyMovePriority').innerHTML=queue.slice(0,6).map((m,i)=>{
+      let resourceText='NO SAFE DROP';
+      let routeExplanation='No legal/protected drop candidate is available after roster resources are allocated.';
+      if(m.resource==='OPEN SLOT') {
+        resourceText='OPEN SLOT • no drop required';
+        routeExplanation=m.type==='STREAM' && m.currentName
+          ? `Start ${m.name} over ${m.currentName} this week while keeping the incumbent rostered.`
+          : 'This move uses currently available roster capacity without cutting anyone.';
+      } else if(m.resource==='DIRECT REPLACEMENT') {
+        resourceText=`DIRECT REPLACEMENT • ${m.dropName}`;
+        routeExplanation=`The same-position incumbent ${m.dropName} was re-evaluated after the hypothetical lineup swap and is expendable enough to replace directly.`;
+      } else if(m.resource==='ROSTER CHURN') {
+        resourceText=`ROSTER CHURN • ${m.dropName}`;
+        routeExplanation=`Keep the incumbent and use ${m.dropName} as the justified lower-value roster churn path.`;
+      } else if(m.resource==='NO JUSTIFIED DROP') {
+        resourceText='NO JUSTIFIED DROP';
+        routeExplanation='A drop candidate exists, but the value lost is greater than this move justifies. Do not force the transaction.';
+      }
+
       const impactText=m.type==='STREAM'
-        ? `one-week starter gain ${Number.isFinite(m.starterGain)?'+'+m.starterGain.toFixed(1)+' projected pts':'coverage driven'}`
+        ? `one-week starter gain ${Number.isFinite(m.starterGain)?'+'+m.starterGain.toFixed(1)+' projected pts':'coverage driven'}${m.currentName?` vs ${m.currentName}`:''}`
         : (m.coverageNeed
             ? 'required-position coverage restoration'
             : `roster-utility gain ${Number.isFinite(m.rosterGain)?(m.rosterGain>=0?'+':'')+Math.round(m.rosterGain):'—'}`);
@@ -5995,7 +6090,7 @@ if(team.rosterId===mine.rosterId) {
         <div>
           <b>${m.blocked?'HOLD':'ADD'} ${esc(m.name)} <span class="pos ${m.pos}">${m.pos}</span></b>
           <div class="meta">${esc(resourceText)} • ${esc(m.type)}${m.coverageNeed?' • COVERAGE NEED':''}</div>
-          <div class="whyline">${esc(impactText)}${esc(costText)}. ${m.blocked?'This move does not have remaining open-slot capacity or a distinct protected churn path.':'This is the highest remaining transaction that fits the roster resources allocated ahead of it.'} Verify the transaction state in Sleeper before submitting.</div>
+          <div class="whyline">${esc(impactText)}${esc(costText)}. ${esc(routeExplanation)} Verify the transaction state in Sleeper before submitting.</div>
         </div>
         <div class="value-badge">${m.type==='STREAM'&&Number.isFinite(m.starterGain)?`+${m.starterGain.toFixed(1)}`:(Number.isFinite(m.rosterGain)?`${m.rosterGain>=0?'+':''}${Math.round(m.rosterGain)}`:'—')}<div class="tiny">${m.type==='STREAM'?'starter':'utility'}</div></div>
       </div>`;
@@ -6295,10 +6390,14 @@ if(team.rosterId===mine.rosterId) {
     const topMovePriority=(priorities||[])[0]||null;
     if(topMovePriority) {
       const route=topMovePriority.resource==='OPEN SLOT'
-        ? 'use the open roster slot'
-        : (topMovePriority.resource==='SAFE DROP'
-            ? `drop ${topMovePriority.dropName}`
-            : 'do not force the transaction — no safe roster path remains');
+        ? 'use the open roster slot and keep the incumbent'
+        : (topMovePriority.resource==='DIRECT REPLACEMENT'
+            ? `directly replace ${topMovePriority.dropName}`
+            : (topMovePriority.resource==='ROSTER CHURN'
+                ? `keep the incumbent and drop ${topMovePriority.dropName}`
+                : (topMovePriority.resource==='NO JUSTIFIED DROP'
+                    ? 'hold — a drop exists, but this move does not justify the roster cost'
+                    : 'hold — no legal/protected drop path exists')));
       items.push(`<b>Move priority #1:</b> ${topMovePriority.blocked?'HOLD ':''}${esc(topMovePriority.name)} ${esc(topMovePriority.pos)} • ${esc(route)}.${topMovePriority.type==='STREAM'&&Number.isFinite(topMovePriority.starterGain)?` Projected starter gain: +${topMovePriority.starterGain.toFixed(1)}.`:''}`);
     }
     const top=pool[0];

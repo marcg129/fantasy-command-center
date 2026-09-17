@@ -4,6 +4,16 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.19.1 — Position-Aware Transaction Routing
+**2026-09-17**
+
+- Keep the Streamer Finder's same-position starter comparison as the first football decision, then resolve the separate roster-space decision explicitly.
+- Re-evaluate the incumbent after a hypothetical streamer add so pre-transaction starter/sole-position protection does not incorrectly prevent a legitimate direct replacement.
+- Allow K/DEF streams that already clear the streaming model to use a guarded `DIRECT REPLACEMENT` path instead of sacrificing unrelated RB/WR depth.
+- Require QB/TE incumbents to clear post-swap roster-value guardrails before direct replacement, preventing a one-week projection edge from turning into an automatic drop of a valuable starter.
+- Distinguish `ROSTER CHURN`, `NO JUSTIFIED DROP`, and literal `NO SAFE DROP`, eliminating the apparent contradiction between Move Priority and Drop Review.
+- Keep open-slot routing first: when space exists, add the streamer, start him over the incumbent for the week, and retain the incumbent.
+
 ## v2.19 — Transaction Priority Queue
 **2026-09-16**
 
