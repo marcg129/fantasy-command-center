@@ -1,0 +1,29 @@
+name: Apply v2.19.2 optimized streamer baseline
+
+on:
+  push:
+    branches: [feature/v2.19.2-optimized-streamer-baseline]
+    paths:
+      - '.github/workflows/apply-v2.19.2-streamer-baseline.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out feature branch
+        uses: actions/checkout@v4
+        with:
+          ref: feature/v2.19.2-optimized-streamer-baseline
+      - name: Apply optimized baseline implementation
+        run: python scripts/apply_v2_19_2_streamer_baseline.py
+      - name: Commit implementation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html CHANGELOG.md
+          git commit -m "Use optimized starter for streamer baseline"
+          git push
