@@ -55,6 +55,7 @@ required_functions = [
     "streamingPlayerSnapshot",
     "streamingCandidatePool",
     "streamingRecommendationForPosition",
+    "streamerDirectReplacementReview",
     "renderStreamerFinder",
     "transactionPriorityScore",
     "allocateTransactionResources",
@@ -96,7 +97,10 @@ required_fragments = [
     "Roster-space decisions stay in Drop Review/Waiver Planner",
     "Review waiver move",
     "Transaction Priority Queue",
-    "BLOCKED — NO SAFE DROP",
+    "DIRECT REPLACEMENT",
+    "ROSTER CHURN",
+    "NO JUSTIFIED DROP",
+    "NO SAFE DROP",
 ]
 
 errors = []
@@ -146,7 +150,7 @@ else:
         errors.append("streamingCandidatePool() must be limited to QB/TE/K/DEF")
 
 streamer_reco_match = re.search(
-    r"function\s+streamingRecommendationForPosition\s*\(ctx,pool,pos\)\s*\{(.*?)\n\s*\}\n\n\s*function\s+renderStreamerFinder",
+    r"function\s+streamingRecommendationForPosition\s*\(ctx,pool,pos\)\s*\{(.*?)\n\s*\}\n\n\s*function\s+streamerWaiverReviewForRecommendation",
     html,
     flags=re.S,
 )
