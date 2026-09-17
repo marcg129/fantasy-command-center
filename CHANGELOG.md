@@ -4,6 +4,15 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.19.3 — Shared Churn Opportunity Cost
+**2026-09-17**
+
+- Treat a justified drop candidate as a shared roster resource when multiple recommendations compete to use the same churn slot.
+- Compare competing uses on normalized opportunity strength: streaming moves use starter gain relative to their action threshold, while ordinary waiver moves use roster-utility gain relative to the waiver review threshold.
+- Preserve required-position coverage, open roster slots, and independent direct replacements before applying shared-churn arbitration.
+- Label a losing recommendation `ROSTER OPPORTUNITY COST` and identify both the preserved drop candidate and the stronger competing move.
+- Add a regression for the live Tampa Bay / Emmett Johnson / Michael Mayer case so a moderate DEF stream cannot consume Mayer ahead of a substantially stronger season-long waiver upgrade.
+
 ## v2.19.2 — Optimized Streamer Finder Baseline
 **2026-09-17**
 
