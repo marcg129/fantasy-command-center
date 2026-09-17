@@ -4,6 +4,15 @@ All notable changes to Fantasy Command Center are documented here.
 
 The project is currently in active beta development. Version numbers reflect iterative product updates rather than formal production releases.
 
+## v2.19.2 — Optimized Streamer Finder Baseline
+**2026-09-17**
+
+- Compare QB/TE/K/DEF streaming candidates against the app's optimized same-position starter instead of blindly using the currently submitted Sleeper starter.
+- Preserve the submitted Sleeper starter as visible context when it differs from the optimized baseline, making stale lineup state obvious rather than silently driving the streaming math.
+- Fall back to the submitted starter when the optimizer cannot supply a usable same-position baseline.
+- Keep transaction routing aligned with the optimized incumbent so Streamer Finder, Start/Sit, Drop Review, and Move Priority do not disagree about which player a streamer would actually replace.
+- Add a permanent regression for the Bowers/Mayer/Schultz case: Schultz beating submitted starter Mayer is not actionable when optimized starter Bowers remains the stronger TE baseline.
+
 ## v2.19.1 — Position-Aware Transaction Routing
 **2026-09-17**
 
