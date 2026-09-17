@@ -5727,6 +5727,24 @@ if(team.rosterId===mine.rosterId) {
     return null;
   }
 
+  function streamingStarterBaselineForPosition(ctx,pos) {
+    const submitted=streamingStarterForPosition(ctx,pos);
+    const score=x=>Number.isFinite(Number(x?.score))?Number(x.score):-999;
+    const optimized=(optimizedLineup(ctx)||[])
+      .filter(x=>x?.id && x.p && normalizedFantasyPos(x.p)===pos)
+      .sort((a,b)=>score(a)-score(b));
+    const chosen=optimized[0]||null;
+
+    if(chosen) {
+      return {
+        baseline:{id:String(chosen.id),p:chosen.p},
+        submitted,
+        source:'OPTIMIZED'
+      };
+    }
+    return {baseline:submitted,submitted,source:'SUBMITTED'};
+  }
+
   function streamingPlayerSnapshot(id,p) {
     if(!p) return null;
     const outlook=weeklyOutlookForPlayer(p);
@@ -5764,8 +5782,12 @@ if(team.rosterId===mine.rosterId) {
   }
 
   function streamingRecommendationForPosition(ctx,pool,pos) {
-    const current=streamingStarterForPosition(ctx,pos);
+    const baselineInfo=streamingStarterBaselineForPosition(ctx,pos);
+    const current=baselineInfo.baseline;
+    const submittedCurrent=baselineInfo.submitted;
     const currentSnap=current?streamingPlayerSnapshot(current.id,current.p):null;
+    const submittedSnap=submittedCurrent?streamingPlayerSnapshot(submittedCurrent.id,submittedCurrent.p):null;
+    const baselineMeta={submittedCurrent:submittedSnap,baselineSource:baselineInfo.source};
     const candidates=(pool||[])
       .filter(b=>b.pos===pos && b.player_id && b.pdata)
       .map(b=>({b,snap:streamingPlayerSnapshot(b.player_id,b.pdata)}))
@@ -5783,11 +5805,11 @@ if(team.rosterId===mine.rosterId) {
     const threshold=streamingThresholdForPosition(pos);
 
     if(!currentSnap) {
-      if(!best) return {pos,status:'NO STARTER',kind:'warn',threshold,current:null,best:null,projectionEdge:null,outlookEdge:null,reason:`No current ${pos} starter and no usable available replacement was found.`};
-      return {pos,status:'STREAM',kind:'strong',threshold,current:null,best,projectionEdge:null,outlookEdge:null,reason:`No current ${pos} starter is set. Add ${pName(best.snap.p)} to restore required-position coverage; use Drop Review/Waiver Planner for the roster spot.`};
+      if(!best) return {pos,status:'NO STARTER',kind:'warn',threshold,current:null,best:null,projectionEdge:null,outlookEdge:null,...baselineMeta,reason:`No current ${pos} starter and no usable available replacement was found.`};
+      return {pos,status:'STREAM',kind:'strong',threshold,current:null,best,projectionEdge:null,outlookEdge:null,...baselineMeta,reason:`No current ${pos} starter is set. Add ${pName(best.snap.p)} to restore required-position coverage; use Drop Review/Waiver Planner for the roster spot.`};
     }
 
-    if(!best) return {pos,status:'HOLD',kind:'',threshold,current:currentSnap,best:null,projectionEdge:null,outlookEdge:null,reason:`No usable available ${pos} clears the basic availability screen.`};
+    if(!best) return {pos,status:'HOLD',kind:'',threshold,current:currentSnap,best:null,projectionEdge:null,outlookEdge:null,...baselineMeta,reason:`No usable available ${pos} clears the basic availability screen.`};
 
     const projectionEdge=Number.isFinite(best.snap.projection)&&Number.isFinite(currentSnap.projection)
       ? best.snap.projection-currentSnap.projection:null;
@@ -5799,27 +5821,27 @@ if(team.rosterId===mine.rosterId) {
     const candidateHealthy=best.snap.availability>=-4;
 
     if(currentUnavailable && best.snap.usable) {
-      return {pos,status:'STREAM',kind:'strong',threshold,current:currentSnap,best,projectionEdge,outlookEdge,reason:`Your current ${pos} starter is not usable for required-position planning. ${pName(best.snap.p)} is the best available coverage option.`};
+      return {pos,status:'STREAM',kind:'strong',threshold,current:currentSnap,best,projectionEdge,outlookEdge,...baselineMeta,reason:`Your optimized ${pos} baseline is not usable for required-position planning. ${pName(best.snap.p)} is the best available coverage option.`};
     }
     if(projectionClears && !outlookNotStronglyAgainst) {
       const outlookAgainst=Math.abs(Number(outlookEdge)||0);
       return {
-        pos,status:'HOLD',kind:'watch',threshold,current:currentSnap,best,projectionEdge,outlookEdge,reasonCode:'MODEL CONFLICT',
-        reason:`Projection clears the +${threshold.toFixed(1)}-point streaming threshold, but Weekly Outlook favors ${pName(currentSnap.p)} by ${Math.round(outlookAgainst)} outlook points. HOLD the incumbent rather than stream on projection alone.`
+        pos,status:'HOLD',kind:'watch',threshold,current:currentSnap,best,projectionEdge,outlookEdge,...baselineMeta,reasonCode:'MODEL CONFLICT',
+        reason:`Projection clears the +${threshold.toFixed(1)}-point streaming threshold, but Weekly Outlook favors ${pName(currentSnap.p)} by ${Math.round(outlookAgainst)} outlook points. HOLD the optimized incumbent rather than stream on projection alone.`
       };
     }
     if(projectionClears && outlookNotStronglyAgainst && !candidateHealthy) {
       return {
-        pos,status:'HOLD',kind:'watch',threshold,current:currentSnap,best,projectionEdge,outlookEdge,reasonCode:'AVAILABILITY CONFLICT',
-        reason:`Projection clears the +${threshold.toFixed(1)}-point streaming threshold, but ${pName(best.snap.p)} carries a meaningful availability penalty. HOLD the incumbent unless that concern clears.`
+        pos,status:'HOLD',kind:'watch',threshold,current:currentSnap,best,projectionEdge,outlookEdge,...baselineMeta,reasonCode:'AVAILABILITY CONFLICT',
+        reason:`Projection clears the +${threshold.toFixed(1)}-point streaming threshold, but ${pName(best.snap.p)} carries a meaningful availability penalty. HOLD the optimized incumbent unless that concern clears.`
       };
     }
     if(projectionClears && outlookNotStronglyAgainst && candidateHealthy) {
-      return {pos,status:'STREAM',kind:'strong',threshold,current:currentSnap,best,projectionEdge,outlookEdge,reasonCode:null,reason:`Projection edge clears the ${threshold.toFixed(1)}-point streaming threshold without a strong Outlook or availability conflict.`};
+      return {pos,status:'STREAM',kind:'strong',threshold,current:currentSnap,best,projectionEdge,outlookEdge,...baselineMeta,reasonCode:null,reason:`Projection edge clears the ${threshold.toFixed(1)}-point streaming threshold against the optimized incumbent without a strong Outlook or availability conflict.`};
     }
 
     const edgeText=Number.isFinite(projectionEdge)?`${projectionEdge>=0?'+':''}${projectionEdge.toFixed(1)} projected pts`:'projection edge unavailable';
-    return {pos,status:'HOLD',kind:projectionEdge>0?'watch':'',threshold,current:currentSnap,best,projectionEdge,outlookEdge,reasonCode:'NO-ACTION EDGE',reason:`NO-ACTION STREAMING EDGE: ${edgeText}; projection does not clear the +${threshold.toFixed(1)}-point threshold with supporting context, so hold the incumbent.`};
+    return {pos,status:'HOLD',kind:projectionEdge>0?'watch':'',threshold,current:currentSnap,best,projectionEdge,outlookEdge,...baselineMeta,reasonCode:'NO-ACTION EDGE',reason:`NO-ACTION STREAMING EDGE: ${edgeText}; projection does not clear the +${threshold.toFixed(1)}-point threshold against the optimized incumbent with supporting context, so hold.`};
   }
 
   function streamerWaiverReviewForRecommendation(ctx,r) {
@@ -6107,6 +6129,7 @@ if(team.rosterId===mine.rosterId) {
 
     $('weeklyStreamers').innerHTML=rows.map((r,index)=>{
       const currentName=r.current?pName(r.current.p):'none';
+      const submittedName=r.submittedCurrent?pName(r.submittedCurrent.p):'none';
       const bestName=r.best?pName(r.best.snap.p):'none';
       const currentProj=Number.isFinite(r.current?.projection)?r.current.projection.toFixed(1):'—';
       const bestProj=Number.isFinite(r.best?.snap?.projection)?r.best.snap.projection.toFixed(1):'—';
@@ -6114,9 +6137,12 @@ if(team.rosterId===mine.rosterId) {
       const outlookEdge=Number.isFinite(r.outlookEdge)?`${r.outlookEdge>=0?'+':''}${Math.round(r.outlookEdge)}`:'—';
       const gameEdge=Number.isFinite(r.best?.snap?.game)&&Number.isFinite(r.current?.game)?r.best.snap.game-r.current.game:null;
       const cls=r.kind==='strong'?'strong':(r.kind==='watch'?'watch':'');
+      const baselineContext=r.baselineSource==='OPTIMIZED' && submittedName!=='none' && submittedName!==currentName
+        ? `optimized baseline; Sleeper currently starts ${submittedName}`
+        : '';
       const meta=r.best
-        ? `${esc(currentName)} ${currentProj} proj → ${esc(bestName)} ${bestProj} proj • projection edge ${projEdge} • Outlook edge ${outlookEdge}${Number.isFinite(gameEdge)?` • game-env ${gameEdge>=0?'+':''}${gameEdge.toFixed(1)}`:''}`
-        : `${esc(currentName)} ${currentProj} proj • no usable available comparison`;
+        ? `${esc(currentName)} ${currentProj} proj → ${esc(bestName)} ${bestProj} proj • projection edge ${projEdge} • Outlook edge ${outlookEdge}${Number.isFinite(gameEdge)?` • game-env ${gameEdge>=0?'+':''}${gameEdge.toFixed(1)}`:''}${baselineContext?` • ${esc(baselineContext)}`:''}`
+        : `${esc(currentName)} ${currentProj} proj • no usable available comparison${baselineContext?` • ${esc(baselineContext)}`:''}`;
       const headlineName=r.status==='HOLD'?currentName:bestName;
       const decisionChip=r.reasonCode?`<span class="claim-chip ${r.reasonCode==='MODEL CONFLICT'?'warn':''}">${esc(r.reasonCode)}</span> `:'';
       return `<div class="waiver-row ${cls}">
@@ -6124,7 +6150,7 @@ if(team.rosterId===mine.rosterId) {
         <div>
           <b>${esc(r.status)}${headlineName&&headlineName!=='none'?` ${esc(headlineName)} <span class="pos ${r.pos}">${r.pos}</span>`:''}</b>
           <div class="meta">${meta}</div>
-          <div class="whyline">${decisionChip}${esc(r.reason)}${r.status==='STREAM'?' Roster-space decisions stay in Drop Review/Waiver Planner; this card never assumes the current starter should be dropped.':''}</div>
+          <div class="whyline">${decisionChip}${esc(r.reason)}${r.status==='STREAM'?' Roster-space decisions stay in Drop Review/Waiver Planner; this card never assumes the optimized incumbent should be dropped.':''}</div>
           ${r.status==='STREAM'?`<button class="ghost streamerWaiverBtn" type="button" data-streamer-index="${index}" style="margin-top:7px;min-height:34px;padding:6px 9px">Review waiver move</button>`:''}
         </div>
         <div class="value-badge">${Number.isFinite(r.best?.snap?.projection)?r.best.snap.projection.toFixed(1):'—'}</div>
