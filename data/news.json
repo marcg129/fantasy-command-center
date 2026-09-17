@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-17T07:40:07.462162Z",
+  "generated_at": "2026-09-17T13:28:22.077158Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,102 @@
     }
   ],
   "articles": [
+    {
+      "title": "Previewing Lions vs. Bills: High-powered offenses kick off Week 2 as Buffalo unveils new stadium",
+      "summary": "Josh Allen and Jahmyr Gibbs headline an explosive Thursday night showdown as Buffalo opens the new Highmark Stadium against Detroit's banged-up front line",
+      "url": "https://www.cbssports.com/nfl/news/previewing-prediction-lions-bills-nfl-week-2-thursday/",
+      "published_at": "2026-09-17T13:01:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Previewing high-octane Bills-Lions matchup; LSU QB Sam Leavitt doubtful for Ole Miss game",
+      "summary": "Plus, we predict the entire NFL playoff bracket after Week 1",
+      "url": "https://www.cbssports.com/nfl/news/previewing-high-octane-bills-lions-matchup-lsu-qb-sam-leavitt-doubtful-for-ole-miss-game/",
+      "published_at": "2026-09-17T13:00:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Lions-Bills on Thursday Night Football",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Bils vs. Lions on Thursday Night Football",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-lions-bills-thursday-night-football/",
+      "published_at": "2026-09-17T12:58:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chiefs' Travis Kelce among the victims in Ponzi scheme, per report",
+      "summary": "Kelce was named as an investor in a fund run by Siddarth Jawahar, who pleaded guilty in a federal fraud case",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-travis-kelce-among-the-victims-in-ponzi-scheme-per-report/",
+      "published_at": "2026-09-17T12:55:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 picks: Our experts face off on Lions at Bills Thursday night, Bengals vs. Texans and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-picks-lions-bills-bengals-texans/",
+      "published_at": "2026-09-17T12:25:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "It wouldn't shock me IF ... NFL Week 2: Jets finally snap historic streak, Deshaun Watson benched",
+      "summary": "Don't be surprised if we see these storylines develop over the course of Week 2",
+      "url": "https://www.cbssports.com/nfl/news/predicting-nfl-week-2-storylines-jets-finally-snap-historic-streak/",
+      "published_at": "2026-09-17T12:03:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "role",
+      "impact": "watch",
+      "score_adjustment": -2,
+      "confidence": 0.88
+    },
+    {
+      "title": "Upset alert for NFL Week 2? Why these 5 favorites could easily drop their matchup, including the Ravens",
+      "summary": "Green Bay and Houston are also on upset alert",
+      "url": "https://www.cbssports.com/nfl/news/upset-alert-nfl-week-2-odds-picks/",
+      "published_at": "2026-09-17T11:54:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Defense panic levels for Super Bowl contenders: Why Texans and Cowboys should not worry yet",
+      "summary": "It's only Week 2, but I'm here to tell you if you should be worried or not about your team's defense",
+      "url": "https://www.cbssports.com/nfl/news/nfl-defense-panic-meter-super-bowl-contenders/",
+      "published_at": "2026-09-17T11:47:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 2 injury report: Lions down two starting offensive lineman vs. Bills, including Blake Miller",
       "summary": "Here's how each team is doing on the injury front as they gear up for Week 2",
@@ -270,90 +366,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 picks and score predictions: Bills top Lions in Thursday shootout, Seahawks suffer shocking loss",
-      "summary": "Here's your weekly dose of John Breech's NFL picks",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-picks-score-predictions/",
-      "published_at": "2026-09-15T12:27:17Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs vs. Broncos overreactions: Should Sean Payton reclaim play-calling duties? Patrick Mahomes fully back?",
-      "summary": "Are these storylines from Kansas City's 'Monday Night Football' win over Denver valid or mere overreactions?",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-broncos-overreactions-sean-payton-patrick-mahomes/",
-      "published_at": "2026-09-15T11:43:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "These five rookies balled out in their NFL debuts, but is their early success sustainable?",
-      "summary": "A closer look at snap counts, pressure rates, usage and other underlying numbers helps separate potentially sustainable rookie performances from one-game outliers",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-rookies-week-1-standouts/",
-      "published_at": "2026-09-15T11:32:19Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 1 grades for all 32 teams: Chiefs earn an 'A' for destroying Broncos, Ravens roll to an 'A-'",
-      "summary": "Here are the Week 1 grades for every team so far",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-1-grades-for-all-32-teams-ravens-roll-bills-earn-high-mark/",
-      "published_at": "2026-09-15T03:19:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Broncos tried to lure Drew Brees out of retirement for AFC Championship after Bo Nix injury, per report",
-      "summary": "Brees reportedly gave serious consideration to joining Denver for its Super Bowl bid",
-      "url": "https://www.cbssports.com/nfl/news/broncos-drew-brees-comeback-bo-nix/",
-      "published_at": "2026-09-15T00:17:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs vs. Broncos: Division rivals Patrick Mahomes, Bo Nix make their return in Monday night matchup",
-      "summary": "Patrick Mahomes and Bo Nix return from major injuries in an AFC West showdown",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-broncos-where-to-watch-odds-prediction/",
-      "published_at": "2026-09-14T23:14:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Lions' Isiah Pacheco undergoes back surgery, expected to miss significant time",
-      "summary": "Pacheco reportedly faces a 12-week recovery and could return in December",
-      "url": "https://www.cbssports.com/nfl/news/isiah-pacheco-injury-update-lions/",
-      "published_at": "2026-09-14T22:59:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
