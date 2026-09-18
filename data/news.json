@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-18T17:40:59.995832Z",
+  "generated_at": "2026-09-18T20:54:51.976403Z",
   "lookback_days": 7,
-  "article_count": 25,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Here's what Tom Cruise and Taylor Swift talked about at the Chiefs' NFL opener",
+      "summary": "Cruise attended his first NFL game in many years, and described the experience and discussions with Taylor Swift",
+      "url": "https://www.cbssports.com/nfl/news/tom-cruise-taylor-swift-chiefs/",
+      "published_at": "2026-09-18T20:47:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Joey Porter Jr. best trade fits: Why Cowboys make sense, two NFC North teams could be in line to make offer",
+      "summary": "Five possible mock trade fits for Porter, who is still at odds with the Steelers and is out for Week 2",
+      "url": "https://www.cbssports.com/nfl/news/joey-porter-jr-best-trade-fits-why-cowboys-make-sense-chargers-bills/",
+      "published_at": "2026-09-18T20:04:18Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Vikings rule out Kyler Murray for Week 2 vs. Bears, Carson Wentz to start",
+      "summary": "Murray remains in concussion protocol after his anticipated Vikings debut lasted less than one quarter",
+      "url": "https://www.cbssports.com/nfl/news/kyler-murray-injury-vikings-qb-carson-wentz/",
+      "published_at": "2026-09-18T19:31:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Why Cowboys need to sign free agent Bobby Wagner to fix defensive woes, communication",
+      "summary": "Dallas rookie Jaishawn Barham is poised to fill in at the middle linebacker role with DeMarvion Overshown sidelined. But Wagner is the veteran presence they need",
+      "url": "https://www.cbssports.com/nfl/news/why-dallas-cowboys-need-free-agent-bobby-wagner/",
+      "published_at": "2026-09-18T18:00:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Falcons to start Cooper Rush vs. Panthers as Michael Penix Jr. continues recovery",
+      "summary": "Rush took Atlanta's first-team reps Friday and will start against Carolina while Penix continues recovering from last season's ACL tear",
+      "url": "https://www.cbssports.com/nfl/news/falcons-starting-qb-cooper-rush-panthers/",
+      "published_at": "2026-09-18T17:35:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "role",
+      "impact": "positive",
+      "score_adjustment": 4,
+      "confidence": 0.88
+    },
     {
       "title": "Giants' Cam Skattebo addresses viral video of epic arrival to MetLife ahead of SNF",
       "summary": "Skattebo is back and has arrived in style",
@@ -270,54 +330,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Previewing Lions vs. Bills: High-powered offenses kick off Week 2 as Buffalo unveils new stadium",
-      "summary": "Josh Allen and Jahmyr Gibbs headline an explosive Thursday night showdown as Buffalo opens the new Highmark Stadium against Detroit's banged-up front line",
-      "url": "https://www.cbssports.com/nfl/news/previewing-prediction-lions-bills-nfl-week-2-thursday/",
-      "published_at": "2026-09-17T22:28:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Former Giants DC Wink Martindale takes veiled jab at Brian Daboll over Jaxson Dart, Cam Ward",
-      "summary": "The development of Dart and Ward seems to be trending in opposite directions after their coaching changes",
-      "url": "https://www.cbssports.com/nfl/news/former-giants-dc-wink-martindale-takes-veiled-jab-at-brian-daboll/",
-      "published_at": "2026-09-17T21:01:39Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL odds: Week 2 parlays featuring favorites, underdogs include Giants vs. Rams, Jaguars vs. Broncos",
-      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 2 of the NFL season",
-      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-2-parlays-featuring-favorites-underdogs-include-giants-vs-rams-jaguars-vs-broncos/",
-      "published_at": "2026-09-17T20:48:22Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Browns expected to sign Shedeur Sanders' college WR teammate Jimmy Horn Jr.",
-      "summary": "Horn was recently released by the Panthers and played with Sanders for two seasons at Colorado",
-      "url": "https://www.cbssports.com/nfl/news/browns-to-sign-jimmy-horn-jr-shedeur-sanders-college-teammate/",
-      "published_at": "2026-09-17T20:32:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
