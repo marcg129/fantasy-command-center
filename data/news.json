@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T00:20:13.888924Z",
+  "generated_at": "2026-09-18T07:24:36.527599Z",
   "lookback_days": 7,
   "article_count": 29,
   "sources": [
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Lions' loss to Bills has panic level high after another poor performance by defense",
+      "summary": "Detroit has yielded 30 and 41 points in back-to-back games",
+      "url": "https://www.cbssports.com/nfl/news/lions-loss-bills-poor-defense/",
+      "published_at": "2026-09-18T05:24:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 picks: Our experts face off on Giants at Rams, Bengals vs. Texans and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-picks-lions-bills-bengals-texans/",
+      "published_at": "2026-09-18T04:00:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 2 NFL picks: Rams rout Giants; Chargers, Patriots, Cowboys bounce back",
+      "summary": "Pete Prisco reveals all of his Week 2 picks, including the Jaguars handing the Broncos another loss",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-2-nfl-picks/",
+      "published_at": "2026-09-18T03:58:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Pro Football Hall of Fame cuts Super Bowl-winning coach and 24 others from selection committee, per report",
+      "summary": "The committee is being reduced from 50 members down to 28, leaving Dan Fouts and James Lofton as the only enshrinees remaining on the voting panel",
+      "url": "https://www.cbssports.com/nfl/news/pro-football-hall-of-fame-selection-committee/",
+      "published_at": "2026-09-18T02:51:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "D.J. Moore injury: Bills wideout ruled out after injuring shoulder vs. Lions",
+      "summary": "The injury occurred during the second quarter of Buffalo's home opener",
+      "url": "https://www.cbssports.com/nfl/news/d-j-moore-injury-bills-wideout-shoulder-injury/",
+      "published_at": "2026-09-18T02:13:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
     {
       "title": "Use FanDuel promo code to get $350 in bonus bets for Lions vs. Bills, NFL Thursday Night Football betting",
       "summary": "Sign up and bet with the latest FanDuel promo code to get ready for Thursday Night Football",
@@ -165,18 +225,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Pro Football Hall of Fame cuts Super Bowl-winning coach and 24 others from selection committee, per report",
-      "summary": "The committee is being reduced from 50 members down to 28, leaving Dan Fouts and James Lofton as the only enshrinees remaining on the voting panel",
-      "url": "https://www.cbssports.com/nfl/news/pro-football-hall-of-fame-selection-committee/",
-      "published_at": "2026-09-17T18:42:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Russell Wilson: Lamar Jackson could end his career as best dynamic QB of all time",
       "summary": "On CBS Sports' 'Set Hut,' Wilson made his case for why Jackson could pass Michael Vick in that conversation",
       "url": "https://www.cbssports.com/nfl/news/russell-wilson-lamar-jackson-could-be-best-dynamic-qb-of-all-time/",
@@ -285,18 +333,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 2 picks: Our experts face off on Lions at Bills Thursday night, Bengals vs. Texans and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-picks-lions-bills-bengals-texans/",
-      "published_at": "2026-09-17T12:25:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "It wouldn't shock me IF ... NFL Week 2: Jets finally snap historic streak, Deshaun Watson benched",
       "summary": "Don't be surprised if we see these storylines develop over the course of Week 2",
       "url": "https://www.cbssports.com/nfl/news/predicting-nfl-week-2-storylines-jets-finally-snap-historic-streak/",
@@ -330,42 +366,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 injury report: Lions down two starting offensive lineman vs. Bills, including Blake Miller",
-      "summary": "Here's how each team is doing on the injury front as they gear up for Week 2",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-lions-down-two-offensive-lineman-bills/",
-      "published_at": "2026-09-17T00:17:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Seahawks rule out Sam Darnold for Week 2, but potential timetable for return emerges",
-      "summary": "Seattle reportedly has no plans to place its starting quarterback on injured reserve",
-      "url": "https://www.cbssports.com/nfl/news/seattle-seahawks-rule-out-sam-darnold-for-week-2/",
-      "published_at": "2026-09-17T00:03:22Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL Week 2 injury panic meter: Myles Garrett, A.J. Brown, Sam Darnold sidelined with lower body issues",
-      "summary": "Gauging the outlook for some of the league's biggest Week 1 injuries",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-2-injury-panic-meter-myles-garrett-a-j-brown-sam-darnold/",
-      "published_at": "2026-09-16T20:32:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
