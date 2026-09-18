@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-18T07:24:36.527599Z",
+  "generated_at": "2026-09-18T12:58:18.154030Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "D.J. Moore injury: Bills wideout suffers AC Joint injury in win vs. Lions, Week 3 status in doubt",
+      "summary": "The injury occurred during the second quarter of Buffalo's home opener",
+      "url": "https://www.cbssports.com/nfl/news/d-j-moore-injury-bills-wideout-shoulder-injury/",
+      "published_at": "2026-09-18T12:30:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams, Packers, Chargers, Patriots: Which Week 1 losses should scare us most?",
+      "summary": "We went back to 2015 to see which Week 1 problems were hardest for preseason contenders to overcome",
+      "url": "https://www.cbssports.com/nfl/news/rams-packers-chargers-patriots-week-1-losses-that-scare-us-most/",
+      "published_at": "2026-09-18T12:02:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 odds, predictions, expert picks: Can blitz-heavy Vikings overtake Bears? Will Cards upset Seahawks?",
+      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 2",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-odds-predictions-expert-picks-can-blitz-heavy-vikings-overtake-bears-will-cards-upset-seahawks/",
+      "published_at": "2026-09-18T10:00:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Lions' loss to Bills has panic level high after another poor performance by defense",
       "summary": "Detroit has yielded 30 and 41 points in back-to-back games",
@@ -66,18 +102,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "D.J. Moore injury: Bills wideout ruled out after injuring shoulder vs. Lions",
-      "summary": "The injury occurred during the second quarter of Buffalo's home opener",
-      "url": "https://www.cbssports.com/nfl/news/d-j-moore-injury-bills-wideout-shoulder-injury/",
-      "published_at": "2026-09-18T02:13:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     },
     {
@@ -157,18 +181,6 @@
       "summary": "Josh Allen and Jahmyr Gibbs headline an explosive Thursday night showdown as Buffalo opens the new Highmark Stadium against Detroit's banged-up front line",
       "url": "https://www.cbssports.com/nfl/news/previewing-prediction-lions-bills-nfl-week-2-thursday/",
       "published_at": "2026-09-17T22:28:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Lions-Bills, NFL Thursday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Bils vs. Lions on Thursday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-lions-bills-nfl-thursday-night-football/",
-      "published_at": "2026-09-17T21:50:45Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
