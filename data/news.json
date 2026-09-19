@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T12:30:02.738571Z",
+  "generated_at": "2026-09-19T17:17:17.796246Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -24,12 +24,96 @@
       "title": "NFL Week 2 injury report: Joe Burrow questionable, Brock Bowers doubtful, Kyler Murray out",
       "summary": "Joe Burrow appears to be trending toward playing, but Brock Bowers and Zay Flowers face uncertain outlooks while several starting quarterbacks have been ruled out",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-joe-burrow/",
-      "published_at": "2026-09-18T23:00:49Z",
+      "published_at": "2026-09-19T17:08:55Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers vs. Patriots: How to watch Maye vs. Rodgers in New England, prediction",
+      "summary": "The Steelers are hoping to get off to a 2-0 start, while the Patriots remain in search of their first win",
+      "url": "https://www.cbssports.com/nfl/news/steelers-vs-patriots-how-to-watch-maye-vs-rodgers/",
+      "published_at": "2026-09-19T17:08:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 Week 2 NFL picks, predictions, player props at NFL sportsbooks like DraftKings, FanDuel, BetMGM",
+      "summary": "Bet on Week 2 NFL player props at NFL sportsbooks like DraftKings, FanDuel and BetMGM",
+      "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-picks-predictions-player-props-nfl-sportsbooks-draftkings-fanduel-betmgm/",
+      "published_at": "2026-09-19T17:05:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 Week 2 NFL odds, betting lines, spreads, start times: Get Week 2 NFL picks, predictions for every game",
+      "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
+      "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-picks-odds-predictions-betting-lines-spreads/",
+      "published_at": "2026-09-19T15:41:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bengals vs. Texans: How to watch as Houston attempts to avoid starting 0-2",
+      "summary": "Everything you need to know to tune into this AFC matchup",
+      "url": "https://www.cbssports.com/nfl/news/bengals-vs-texans-how-to-watch-prediction-preview/",
+      "published_at": "2026-09-19T14:37:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chiefs vs. Colts: How to watch, stream 'Sunday Night Football,' plus odds and prediction",
+      "summary": "Patrick Mahomes and the Chiefs host the Colts on Sunday night; here is how to watch the game, along with the latest odds and our prediction",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-colts-how-to-watch-tv-channel-live-stream-nfl-start-time-odds/",
+      "published_at": "2026-09-19T14:25:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jaguars vs. Broncos: Jacksonville aims for 10th consecutive regular-season win",
+      "summary": "Denver must bounce back from its Week 1 struggles in order to contain the scalding-hot Jaguars",
+      "url": "https://www.cbssports.com/nfl/news/how-to-watch-jaguars-vs-broncos-preview-prediction/",
+      "published_at": "2026-09-19T13:56:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "No, Pack, no: Missing Micah Parsons, Green Bay ties grim NFL record -- and may currently be NFC's worst team",
+      "summary": "Parsons' absence can't be the only excuse, which is why Matt LaFleur should be on a warming seat",
+      "url": "https://www.cbssports.com/nfl/news/packers-without-micah-parsons-worst-team-in-nfc/",
+      "published_at": "2026-09-19T13:07:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -165,18 +249,6 @@
       "confidence": 0.88
     },
     {
-      "title": "2026 Week 2 NFL odds, betting lines, spreads, start times: Get Week 2 NFL picks, predictions for every game",
-      "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
-      "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-picks-odds-predictions-spreads-betting-lines/",
-      "published_at": "2026-09-18T15:39:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Rams' nightmare trip: Sean McVay doesn't want to play in Australia ever again after ugly Week 1 plan backfired",
       "summary": "The Rams arrived in Melbourne one day before their Week 1 game and suffered a 27-7 loss to the 49ers",
       "url": "https://www.cbssports.com/nfl/news/sean-mcvay-rams-nfl-games-in-australia/",
@@ -282,66 +354,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 2 NFL picks: Rams rout Giants; Chargers, Patriots, Cowboys bounce back",
-      "summary": "Pete Prisco reveals all of his Week 2 picks, including the Jaguars handing the Broncos another loss",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-2-nfl-picks/",
-      "published_at": "2026-09-18T03:58:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to land $350 in bonus bets for Lions vs. Bills on NFL Thursday Night Football",
-      "summary": "Sign up with the latest FanDuel promo code and bet on Lions vs. Bills TNF to get your bonus bets",
-      "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-land-350-bonus-bets-lions-bills-nfl-thursday-night-football/",
-      "published_at": "2026-09-17T23:46:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bills vs. Lions betting guide: Odds, picks, anytime TD scorers for NFL Week 2 Thursday Night Football game",
-      "summary": "Buffalo opens its new stadium in a high-powered Thursday night clash with Detroit featuring a massive 54.5-point total, player props for Josh Allen and Jahmyr Gibbs, and a first-half betting angle",
-      "url": "https://www.cbssports.com/betting/news/bills-vs-lions-betting-guide-odds-picks-anytime-td-scorers-for-nfl-week-2-thursday-night-football-game/",
-      "published_at": "2026-09-17T23:15:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Seahawks' Mike Macdonald describes mental health struggles during first season in Seattle",
-      "summary": "Macdonald opened up about 'extremely difficult' first season in Seattle",
-      "url": "https://www.cbssports.com/nfl/news/seahawks-mike-macdonald-describes-extremely-difficult-first-season/",
-      "published_at": "2026-09-17T23:01:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys' recipe for success in Week 2? Start fast and make a splash to help struggling defense",
-      "summary": "After defensive struggles severely limited possessions in Week 1, Dallas is prioritizing explosive plays from CeeDee Lamb and George Pickens to maximize every drive against Washington",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-offense-looks-to-start-fast-week-2-vs-commanders/",
-      "published_at": "2026-09-17T22:49:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
