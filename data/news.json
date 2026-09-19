@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-18T20:54:51.976403Z",
+  "generated_at": "2026-09-19T00:21:34.882854Z",
   "lookback_days": 7,
-  "article_count": 26,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 2 injury report: Joe Burrow questionable, Brock Bowers doubtful, Kyler Murray out",
+      "summary": "Joe Burrow appears to be trending toward playing, but Brock Bowers and Zay Flowers face uncertain outlooks while several starting quarterbacks have been ruled out",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-joe-burrow/",
+      "published_at": "2026-09-18T23:00:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bengals star Joe Burrow listed as questionable: Here's what Zac Taylor said about Week 2 status",
+      "summary": "Why the Bengals' QB was listed as questionable for Week 2",
+      "url": "https://www.cbssports.com/nfl/news/joe-burrow-injury-update-bengals-qb-questionable/",
+      "published_at": "2026-09-18T22:40:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Texans rule out two-time Pro Bowl WR Nico Collins for Week 2 vs. Bengals",
+      "summary": "Collins had seven catches and a touchdown in Week 1, but he suffered a hamstring injury during Wednesday's practice",
+      "url": "https://www.cbssports.com/nfl/news/nico-collins-hamstring-injury-status-unclear-for-week-2-per-report/",
+      "published_at": "2026-09-18T20:59:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Here's what Tom Cruise and Taylor Swift talked about at the Chiefs' NFL opener",
       "summary": "Cruise attended his first NFL game in many years, and described the experience and discussions with Taylor Swift",
@@ -153,18 +189,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Houston vs. Texas Tech, college football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL, college football betting on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-houston-texas-tech-college-football-friday/",
-      "published_at": "2026-09-18T15:04:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Aaron Donald return: Cam Skattebo issues blunt message to Rams star defender ahead of 'MNF' matchup",
       "summary": "Skattebo told the Rams star to be ready and praised Donald, who is set to make his re-debut with the Rams in Week 2 after coming out of retirement",
       "url": "https://www.cbssports.com/nfl/news/aaron-donald-return-cam-skattebo-issues-message-to-rams/",
@@ -193,18 +217,6 @@
       "summary": "Cleveland is in the final year of the albatross that is Deshaun Watson's five-year, fully-guaranteed $230 million contract",
       "url": "https://www.cbssports.com/nfl/news/what-is-browns-qb-plan-deshaun-watson-baker-mayfield/",
       "published_at": "2026-09-18T13:50:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 odds, predictions, expert picks: Can blitz-heavy Vikings overtake Bears? Will Cards upset Seahawks?",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 2",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-odds-predictions-expert-picks/",
-      "published_at": "2026-09-18T13:49:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
