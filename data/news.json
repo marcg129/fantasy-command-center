@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-19T17:17:17.796246Z",
+  "generated_at": "2026-09-19T20:40:45.874968Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,10 @@
   ],
   "articles": [
     {
-      "title": "NFL Week 2 injury report: Joe Burrow questionable, Brock Bowers doubtful, Kyler Murray out",
+      "title": "NFL Week 2 injury report: Puka Nacua and Joe Burrow questionable, Michael Pittman and Kyler Murray out",
       "summary": "Joe Burrow appears to be trending toward playing, but Brock Bowers and Zay Flowers face uncertain outlooks while several starting quarterbacks have been ruled out",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-joe-burrow/",
-      "published_at": "2026-09-19T17:08:55Z",
+      "published_at": "2026-09-19T20:22:18Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "availability",
@@ -33,15 +33,75 @@
       "confidence": 0.88
     },
     {
-      "title": "Steelers vs. Patriots: How to watch Maye vs. Rodgers in New England, prediction",
-      "summary": "The Steelers are hoping to get off to a 2-0 start, while the Patriots remain in search of their first win",
-      "url": "https://www.cbssports.com/nfl/news/steelers-vs-patriots-how-to-watch-maye-vs-rodgers/",
-      "published_at": "2026-09-19T17:08:10Z",
+      "title": "Aaron Donald returning for Rams' Week 2 matchup with Giants, Sean McVay confirms",
+      "summary": "Donald will make his season debut Monday night, giving Los Angeles a major reinforcement along its defensive front",
+      "url": "https://www.cbssports.com/nfl/news/aaron-donald-rams-giants/",
+      "published_at": "2026-09-19T19:36:00Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers vs. Patriots: How to watch Maye vs. Rodgers in New England, prediction",
+      "summary": "The Steelers are hoping to get off to a 2-0 start, while the Patriots remain in search of their first win",
+      "url": "https://www.cbssports.com/nfl/news/steelers-vs-patriots-how-to-watch-maye-vs-rodgers/",
+      "published_at": "2026-09-19T18:20:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jaguars vs. Broncos: Jacksonville aims for 10th consecutive regular-season win",
+      "summary": "Denver must bounce back from its Week 1 struggles in order to contain the scalding-hot Jaguars",
+      "url": "https://www.cbssports.com/nfl/news/how-to-watch-jaguars-vs-broncos-preview-prediction/",
+      "published_at": "2026-09-19T18:20:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chiefs vs. Colts: How to watch, stream 'Sunday Night Football,' plus odds and prediction",
+      "summary": "Patrick Mahomes and the Chiefs host the Colts on Sunday night; here is how to watch the game, along with the latest odds and our prediction",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-colts-how-to-watch-tv-channel-live-stream-nfl-start-time-odds/",
+      "published_at": "2026-09-19T18:18:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bengals vs. Texans: How to watch as Houston attempts to avoid starting 0-2",
+      "summary": "Everything you need to know to tune into this AFC matchup",
+      "url": "https://www.cbssports.com/nfl/news/bengals-vs-texans-how-to-watch-prediction-preview/",
+      "published_at": "2026-09-19T18:17:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jets rookie Omar Cooper Jr. headed to injured reserve, will miss at least four games",
+      "summary": "Cooper suffered the injury during the first half of New York's Week 1 victory over Tennessee",
+      "url": "https://www.cbssports.com/nfl/news/jets-omar-cooper-injured-reserve/",
+      "published_at": "2026-09-19T17:30:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
       "confidence": 0.88
     },
     {
@@ -61,42 +121,6 @@
       "summary": "SportsLine's model has analyzed the Week 2 NFL schedule and locked in its Week 2 NFL picks, predictions",
       "url": "https://www.cbssports.com/betting/news/2026-week-2-nfl-picks-odds-predictions-betting-lines-spreads/",
       "published_at": "2026-09-19T15:41:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bengals vs. Texans: How to watch as Houston attempts to avoid starting 0-2",
-      "summary": "Everything you need to know to tune into this AFC matchup",
-      "url": "https://www.cbssports.com/nfl/news/bengals-vs-texans-how-to-watch-prediction-preview/",
-      "published_at": "2026-09-19T14:37:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs vs. Colts: How to watch, stream 'Sunday Night Football,' plus odds and prediction",
-      "summary": "Patrick Mahomes and the Chiefs host the Colts on Sunday night; here is how to watch the game, along with the latest odds and our prediction",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-colts-how-to-watch-tv-channel-live-stream-nfl-start-time-odds/",
-      "published_at": "2026-09-19T14:25:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jaguars vs. Broncos: Jacksonville aims for 10th consecutive regular-season win",
-      "summary": "Denver must bounce back from its Week 1 struggles in order to contain the scalding-hot Jaguars",
-      "url": "https://www.cbssports.com/nfl/news/how-to-watch-jaguars-vs-broncos-preview-prediction/",
-      "published_at": "2026-09-19T13:56:19Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -237,18 +261,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Rams, Packers, Chargers, Patriots: Which Week 1 losses should scare us most?",
-      "summary": "We went back to 2015 to see which Week 1 problems were hardest for preseason contenders to overcome",
-      "url": "https://www.cbssports.com/nfl/news/rams-packers-chargers-patriots-week-1-losses-that-scare-us-most/",
-      "published_at": "2026-09-18T16:15:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Rams' nightmare trip: Sean McVay doesn't want to play in Australia ever again after ugly Week 1 plan backfired",
       "summary": "The Rams arrived in Melbourne one day before their Week 1 game and suffered a 27-7 loss to the 49ers",
       "url": "https://www.cbssports.com/nfl/news/sean-mcvay-rams-nfl-games-in-australia/",
@@ -330,30 +342,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Lions' loss to Bills has panic level high after another poor performance by defense",
-      "summary": "Detroit has yielded 30 and 41 points in back-to-back games",
-      "url": "https://www.cbssports.com/nfl/news/lions-loss-bills-poor-defense/",
-      "published_at": "2026-09-18T05:24:27Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 picks: Our experts face off on Giants at Rams, Bengals vs. Texans and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-picks-lions-bills-bengals-texans/",
-      "published_at": "2026-09-18T04:00:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
