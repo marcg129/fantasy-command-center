@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T20:40:45.874968Z",
+  "generated_at": "2026-09-20T00:09:41.314492Z",
   "lookback_days": 7,
   "article_count": 27,
   "sources": [
@@ -21,10 +21,22 @@
   ],
   "articles": [
     {
-      "title": "NFL Week 2 injury report: Puka Nacua and Joe Burrow questionable, Michael Pittman and Kyler Murray out",
+      "title": "Bengals star Joe Burrow listed as questionable: Here's what Zac Taylor said about Week 2 status",
+      "summary": "Why the Bengals' QB was listed as questionable for Week 2",
+      "url": "https://www.cbssports.com/nfl/news/joe-burrow-injury-update-bengals-qb-questionable/",
+      "published_at": "2026-09-20T00:03:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 injury report: Puka Nacua, Joe Burrow questionable, Zay Flowers, Michael Pittman, Kyler Murray out",
       "summary": "Joe Burrow appears to be trending toward playing, but Brock Bowers and Zay Flowers face uncertain outlooks while several starting quarterbacks have been ruled out",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-2-injury-report-joe-burrow/",
-      "published_at": "2026-09-19T20:22:18Z",
+      "published_at": "2026-09-19T21:08:49Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "availability",
@@ -138,18 +150,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bengals star Joe Burrow listed as questionable: Here's what Zac Taylor said about Week 2 status",
-      "summary": "Why the Bengals' QB was listed as questionable for Week 2",
-      "url": "https://www.cbssports.com/nfl/news/joe-burrow-injury-update-bengals-qb-questionable/",
-      "published_at": "2026-09-18T22:40:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
