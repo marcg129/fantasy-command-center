@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-20T00:09:41.314492Z",
+  "generated_at": "2026-09-20T04:54:19.911872Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -330,18 +330,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "D.J. Moore injury: Bills wideout suffers AC Joint injury in win vs. Lions, Week 3 status in doubt",
-      "summary": "The injury occurred during the second quarter of Buffalo's home opener",
-      "url": "https://www.cbssports.com/nfl/news/d-j-moore-injury-bills-wideout-shoulder-injury/",
-      "published_at": "2026-09-18T12:30:17Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
