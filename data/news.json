@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T04:56:41.297796Z",
+  "generated_at": "2026-09-21T12:49:03.367125Z",
   "lookback_days": 7,
   "article_count": 31,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "2026 NFL Week 3 early odds: Eagles road favorites vs. Bears after Caleb Williams injury; Broncos home dogs",
+      "summary": "Here's a look at the lines for Week 3 in the NFL as we continue the start of the 2026 season",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-early-odds/",
+      "published_at": "2026-09-21T11:55:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 2 grades for all 32 teams: Saints earn an 'A' for stunning Ravens, Steelers get low mark",
       "summary": "Your weekly NFL grades are here",
@@ -373,18 +385,6 @@
       "summary": "The Vikings visit the Bears in a matchup of 1-0 NFC North rivals for Week 2 of the NFL season",
       "url": "https://www.cbssports.com/betting/news/vikings-bears-odds-picks-predictions-betting-preview-advice-tips-nfl-week-2-matchup/",
       "published_at": "2026-09-20T15:07:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Colts WR Keenan Allen reportedly faces minimum three-game suspension after arrest",
-      "summary": "The Colts receiver reportedly registered a blood-alcohol level nearly three times the legal limit",
-      "url": "https://www.cbssports.com/nfl/news/colts-wr-keenan-allen-nfl-suspension/",
-      "published_at": "2026-09-20T15:02:18Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
