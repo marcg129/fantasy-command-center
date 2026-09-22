@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T16:57:42.924197Z",
+  "generated_at": "2026-09-22T21:19:37.828915Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,102 @@
     }
   ],
   "articles": [
+    {
+      "title": "Broncos' cheating accusation against Seahawks almost led to lawsuit in 2024, according to Mike Macdonald",
+      "summary": "This is one of the wildest stories you'll ever hear in the NFL",
+      "url": "https://www.cbssports.com/nfl/news/broncos-cheating-accusation-seahawks-mike-macdonald/",
+      "published_at": "2026-09-22T19:27:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants' Jaxson Dart could miss rest of season with knee injury, per report",
+      "summary": "Dart grabbed his knee in pain after being hit by two Rams defenders, and the Giants QB did not receive good news following his MRI",
+      "url": "https://www.cbssports.com/nfl/news/jaxson-dart-injury-update-giants-qb-knee/",
+      "published_at": "2026-09-22T19:15:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL 2026 backup QB rankings: A look at the five best and worst signal callers",
+      "summary": "Injuries across the league have exposed a severe shortage of reliable depth as developmental pipelines struggle to produce capable passers",
+      "url": "https://www.cbssports.com/nfl/news/nfl-2026-backup-qb-rankings-five-best-worst/",
+      "published_at": "2026-09-22T19:14:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL Week 3 injury panic meter: Jaxson Dart, Caleb Williams, Jayden Daniels go down in losses",
+      "summary": "Projecting the outlook for some of the league's biggest Week 2 injuries",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-injury-panic-meter-jaxson-dart-caleb-williams-jayden-daniels/",
+      "published_at": "2026-09-22T18:46:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Tyson Bagent in concussion protocol as Bears could be down to third quarterback in Week 3, per report",
+      "summary": "Bagent and Caleb Williams both sustained injuries in the Week 2 loss to the Vikings",
+      "url": "https://www.cbssports.com/nfl/news/tyson-bagent-concussion-protocol-bears-eagles/",
+      "published_at": "2026-09-22T18:28:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jets adding a new QB: Titans cast-off Will Levis set to sign with New York's practice squad, per report",
+      "summary": "The Jets just added a new face to their QB room",
+      "url": "https://www.cbssports.com/nfl/news/jets-signing-will-levis-titans-cast-off/",
+      "published_at": "2026-09-22T17:55:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Falcons-Packers, NFL, MLB betting on Tuesday",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Tuesday to make your NFL and college football picks",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-falcons-packers-nfl-mlb-betting-tuesday/",
+      "published_at": "2026-09-22T17:12:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Three mock trades the Steelers could make to deal disgruntled CB Joey Porter Jr.",
+      "summary": "Pittsburgh will have options if they decide to deal Porter before the Nov. 10 deadline",
+      "url": "https://www.cbssports.com/nfl/news/joey-porter-jr-contract-three-mock-trades-steelers/",
+      "published_at": "2026-09-22T17:10:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Cardinals might have a Marvin Harrison Jr. problem: Former top 5 pick has disappeared from Arizona offense",
       "summary": "Coming off a down second season, Harrison has been a bust through the first two games, with just one catch",
@@ -78,18 +174,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL Week 3 injury panic meter: Jaxson Dart, Caleb Williams, Jayden Daniels go down in losses",
-      "summary": "Projecting the outlook for some of the league's biggest Week 2 injuries",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-injury-panic-meter-jaxson-dart-caleb-williams-jayden-daniels/",
-      "published_at": "2026-09-22T14:27:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -165,18 +249,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Giants' Jaxson Dart feared to have sprained MCL in Week 2 loss to Rams, per report",
-      "summary": "Dart grabbed his knee in pain after being hit by two Rams defenders, and the Giants QB will undergo an MRI to see the damage",
-      "url": "https://www.cbssports.com/nfl/news/jaxson-dart-injury-update-giants-qb-knee/",
-      "published_at": "2026-09-22T03:20:20Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL Week 2 grades for all 32 teams: Rams earn an 'A' for steamrolling Giants on Monday night",
       "summary": "Your weekly NFL grades are here",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-2-grades-saints-ravens-steelers/",
@@ -205,18 +277,6 @@
       "summary": "Plus, how to watch the game and a prediction for the Monday night matchup",
       "url": "https://www.cbssports.com/nfl/news/giants-vs-rams-how-to-watch-prediction-preview/",
       "published_at": "2026-09-21T23:49:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Aaron Rodgers makes eye-opening comment on Mike McCarthy's play-calling, Steelers' execution issues",
-      "summary": "Pittsburgh has managed just one touchdown through two games",
-      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-addresses-mike-mccarthys-playcalls-steelers-execution-issues/",
-      "published_at": "2026-09-21T23:30:32Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -313,54 +373,6 @@
       "summary": "Murray went down with a concussion in the season opener, and Carson Wentz stepped in, helping the Vikings start 2-0",
       "url": "https://www.cbssports.com/nfl/news/vikings-kyler-murray-clears-concussion-protocol-starter-for-week-3/",
       "published_at": "2026-09-21T18:56:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "Saints left tackle Kelvin Banks Jr. suffers severe high ankle sprain, reportedly will have surgery",
-      "summary": "Banks went down awkwardly after a sack",
-      "url": "https://www.cbssports.com/nfl/news/saints-kelvin-banks-jr-suffers-ankle-injury/",
-      "published_at": "2026-09-21T18:18:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 winners and losers, plus Caleb Williams injury details and Rams-Giants predictions for Monday night",
-      "summary": "Here's everything you need to know about the NFL for Sept. 21",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-winners-losers-plus-caleb-williams-injury-details-rams-giants-picks/",
-      "published_at": "2026-09-21T18:03:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Caleb Williams, Jayden Daniels injured in Week 2: What's the outlook for Bears, Commanders signal callers?",
-      "summary": "Williams hurt his hamstring on a run; Daniels dislocated his elbow after an awkward fall",
-      "url": "https://www.cbssports.com/nfl/news/caleb-williams-jayden-daniels-injured-week-2-outlook/",
-      "published_at": "2026-09-21T16:55:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Caleb Williams injury update: Bears QB reportedly avoids major hamstring injury, has shot to play in Week 3",
-      "summary": "Williams reportedly is not expected to miss much time and could play against the Eagles",
-      "url": "https://www.cbssports.com/nfl/news/caleb-williams-hamstring-injury-bears/",
-      "published_at": "2026-09-21T16:52:22Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "availability",
