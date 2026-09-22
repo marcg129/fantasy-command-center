@@ -1,92 +1,96 @@
 {
-  "completed_weeks": [],
-  "current_week": 2,
-  "generated_at": "2026-09-16T12:04:56.688075Z",
+  "completed_weeks": [
+    2
+  ],
+  "current_week": 3,
+  "generated_at": "2026-09-22T05:18:19.159945Z",
   "minimum_completed_weeks": 2,
   "minimum_position_samples": 50,
   "positions": {
     "DEF": {
       "baseline_cv": 0.55,
-      "bias_ppr": 0.0,
+      "bias_ppr": 0.5365,
       "blend_weight": 0.0,
       "cv_used": 0.55,
-      "empirical_cv": 0.55,
-      "error_sd_ppr": 0.0,
-      "mae_ppr": 0.0,
-      "mean_projection_ppr": 0.0,
+      "empirical_cv": 0.932,
+      "error_sd_ppr": 6.3545,
+      "mae_ppr": 4.81,
+      "mean_projection_ppr": 6.8184,
       "mode": "heuristic_collecting",
-      "n": 0,
-      "rmse_ppr": 0.0
+      "n": 31,
+      "rmse_ppr": 6.3771
     },
     "K": {
       "baseline_cv": 0.45,
-      "bias_ppr": 0.0,
+      "bias_ppr": 0.1397,
       "blend_weight": 0.0,
       "cv_used": 0.45,
-      "empirical_cv": 0.45,
-      "error_sd_ppr": 0.0,
-      "mae_ppr": 0.0,
-      "mean_projection_ppr": 0.0,
+      "empirical_cv": 0.5383,
+      "error_sd_ppr": 4.1807,
+      "mae_ppr": 3.3334,
+      "mean_projection_ppr": 7.7666,
       "mode": "heuristic_collecting",
-      "n": 0,
-      "rmse_ppr": 0.0
+      "n": 32,
+      "rmse_ppr": 4.183
     },
     "QB": {
       "baseline_cv": 0.32,
-      "bias_ppr": 0.0,
+      "bias_ppr": -0.1284,
       "blend_weight": 0.0,
       "cv_used": 0.32,
-      "empirical_cv": 0.32,
-      "error_sd_ppr": 0.0,
-      "mae_ppr": 0.0,
-      "mean_projection_ppr": 0.0,
+      "empirical_cv": 0.5198,
+      "error_sd_ppr": 8.7555,
+      "mae_ppr": 7.5809,
+      "mean_projection_ppr": 16.8441,
       "mode": "heuristic_collecting",
-      "n": 0,
-      "rmse_ppr": 0.0
+      "n": 32,
+      "rmse_ppr": 8.7565
     },
     "RB": {
       "baseline_cv": 0.5,
-      "bias_ppr": 0.0,
+      "bias_ppr": -1.8344,
       "blend_weight": 0.0,
       "cv_used": 0.5,
-      "empirical_cv": 0.5,
-      "error_sd_ppr": 0.0,
-      "mae_ppr": 0.0,
-      "mean_projection_ppr": 0.0,
+      "empirical_cv": 0.4467,
+      "error_sd_ppr": 4.7946,
+      "mae_ppr": 4.1252,
+      "mean_projection_ppr": 10.7329,
       "mode": "heuristic_collecting",
-      "n": 0,
-      "rmse_ppr": 0.0
+      "n": 63,
+      "rmse_ppr": 5.1336
     },
     "TE": {
       "baseline_cv": 0.55,
-      "bias_ppr": 0.0,
+      "bias_ppr": 0.7214,
       "blend_weight": 0.0,
       "cv_used": 0.55,
-      "empirical_cv": 0.55,
-      "error_sd_ppr": 0.0,
-      "mae_ppr": 0.0,
-      "mean_projection_ppr": 0.0,
+      "empirical_cv": 0.7752,
+      "error_sd_ppr": 6.0111,
+      "mae_ppr": 4.511,
+      "mean_projection_ppr": 7.7548,
       "mode": "heuristic_collecting",
-      "n": 0,
-      "rmse_ppr": 0.0
+      "n": 42,
+      "rmse_ppr": 6.0543
     },
     "WR": {
       "baseline_cv": 0.55,
-      "bias_ppr": 0.0,
+      "bias_ppr": 0.1246,
       "blend_weight": 0.0,
       "cv_used": 0.55,
-      "empirical_cv": 0.55,
-      "error_sd_ppr": 0.0,
-      "mae_ppr": 0.0,
-      "mean_projection_ppr": 0.0,
+      "empirical_cv": 0.7449,
+      "error_sd_ppr": 6.9687,
+      "mae_ppr": 5.0236,
+      "mean_projection_ppr": 9.3554,
       "mode": "heuristic_collecting",
-      "n": 0,
-      "rmse_ppr": 0.0
+      "n": 95,
+      "rmse_ppr": 6.9698
     }
   },
-  "sample_count": 0,
+  "sample_count": 295,
   "season": 2026,
   "snapshot_policy": "latest refresh through Thursday 18:00 America/New_York",
   "source": "Frozen Sleeper weekly projections vs realized Sleeper weekly stats (PPR error scale)",
-  "week_sample_counts": {}
+  "week_sample_counts": {
+    "2": 295
+  }
 }
