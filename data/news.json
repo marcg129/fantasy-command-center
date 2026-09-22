@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T23:16:48.819953Z",
+  "generated_at": "2026-09-22T04:56:52.815668Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Giants' Jaxson Dart feared to have sprained MCL in Week 2 loss to Rams, per report",
+      "summary": "Dart grabbed his knee in pain after being hit by two Rams defenders, and the Giants QB will undergo an MRI to see the damage",
+      "url": "https://www.cbssports.com/nfl/news/jaxson-dart-injury-update-giants-qb-knee/",
+      "published_at": "2026-09-22T03:20:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 2 grades for all 32 teams: Rams earn an 'A' for steamrolling Giants on Monday night",
+      "summary": "Your weekly NFL grades are here",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-grades-saints-ravens-steelers/",
+      "published_at": "2026-09-22T03:17:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "What happened to Colston Loveland? Why Bears tight end has one catch entering Week 3",
+      "summary": "Loveland leads the Bears in routes run despite receiving only five targets",
+      "url": "https://www.cbssports.com/nfl/news/bears-te-colston-loveland-what-happened-2026/",
+      "published_at": "2026-09-22T00:27:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams vs. Giants preview: Aaron Donald makes return for Los Angeles on 'MNF'",
+      "summary": "Plus, how to watch the game and a prediction for the Monday night matchup",
+      "url": "https://www.cbssports.com/nfl/news/giants-vs-rams-how-to-watch-prediction-preview/",
+      "published_at": "2026-09-21T23:49:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Aaron Rodgers makes eye-opening comment on Mike McCarthy's play-calling, Steelers' execution issues",
+      "summary": "Pittsburgh has managed just one touchdown through two games",
+      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-addresses-mike-mccarthys-playcalls-steelers-execution-issues/",
+      "published_at": "2026-09-21T23:30:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Giants vs. Rams on NFL Monday Night Football",
       "summary": "Sign up and bet with the latest FanDuel promo code on Monday to make NFL picks and get your bonus bets",
@@ -49,18 +109,6 @@
       "summary": "Sign up and bet with the latest FanDuel promo code to get your bonus bets for Giants vs. Rams on Monday Night Football in Week 2",
       "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-250-bonus-bets-giants-rams-monday-night-football-nfl-week-2/",
       "published_at": "2026-09-21T22:50:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams vs. Giants preview: Aaron Donald makes return for Los Angeles on 'MNF'",
-      "summary": "Plus, how to watch the game and a prediction for the Monday night matchup",
-      "url": "https://www.cbssports.com/nfl/news/giants-vs-rams-how-to-watch-prediction-preview/",
-      "published_at": "2026-09-21T22:48:45Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -126,18 +174,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Aaron Rodgers makes eye-opening comment on Mike McCarthy's play-calling, Steelers' execution issues",
-      "summary": "Pittsburgh has managed just one touchdown through two games",
-      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-addresses-mike-mccarthys-playcalls-steelers-execution-issues/",
-      "published_at": "2026-09-21T19:58:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -294,18 +330,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 2 grades for all 32 teams: Saints earn an 'A' for stunning Ravens, Steelers get low mark",
-      "summary": "Your weekly NFL grades are here",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-2-grades-saints-ravens-steelers/",
-      "published_at": "2026-09-21T04:07:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
