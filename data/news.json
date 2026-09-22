@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T04:56:52.815668Z",
+  "generated_at": "2026-09-22T11:39:14.828072Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -126,18 +126,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Rams-Giants, NFL Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Rams vs. Giants betting on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rams-giants-nfl-monday-night-football/",
-      "published_at": "2026-09-21T21:29:47Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
