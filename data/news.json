@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-22T21:19:37.828915Z",
+  "generated_at": "2026-09-23T00:33:38.075006Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Resetting expectations for these six NFL teams with injured quarterbacks: Giants eyeing draft again",
+      "summary": "Success looks different for each of the squads that saw their starters go down early in the season",
+      "url": "https://www.cbssports.com/nfl/news/resetting-expectations-nfl-teams-injured-quarterbacks/",
+      "published_at": "2026-09-22T23:01:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Another post-Eli Manning nightmare for Giants and their fans as Jaxson Dart feared done for season",
+      "summary": "New York turns to veteran Jameis Winston after an ESPN report revealed the promising second-year quarterback could miss the remainder of the season with a knee injury",
+      "url": "https://www.cbssports.com/nfl/news/another-post-eli-manning-nightmare-giants-fans-jaxson-dart/",
+      "published_at": "2026-09-22T21:07:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Broncos' cheating accusation against Seahawks almost led to lawsuit in 2024, according to Mike Macdonald",
       "summary": "This is one of the wildest stories you'll ever hear in the NFL",
@@ -201,18 +225,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Yankees-Rays, NFL, MLB betting Tuesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL, college football and MLB betting on Tuesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-yankees-rays-nfl-mlb-betting-tuesday/",
-      "published_at": "2026-09-22T13:24:02Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL head coach hot seat rankings: Jim Harbaugh on thin ice in Week 3 after Chargers' 0-2 start",
       "summary": "The Buccaneers' Todd Bowles claims the top spot, while Aaron Glenn and Dan Quinn also face questions after uneven starts",
       "url": "https://www.cbssports.com/nfl/news/nfl-head-coach-hot-seat-rankings-jim-harbaugh/",
@@ -354,30 +366,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "How Chiefs' Kahlil Benson went from undrafted rookie to starting LT protecting Patrick Mahomes' blindside",
-      "summary": "The undrafted rookie switched sides to protect Patrick Mahomes' blindside and has not allowed a sack through his first two NFL career starts",
-      "url": "https://www.cbssports.com/nfl/news/how-rookie-kahlil-benson-became-chiefs-lt-patrick-mahomes/",
-      "published_at": "2026-09-21T19:29:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Vikings' Kyler Murray clears concussion protocol, named starter for Week 3 vs. Buccaneers",
-      "summary": "Murray went down with a concussion in the season opener, and Carson Wentz stepped in, helping the Vikings start 2-0",
-      "url": "https://www.cbssports.com/nfl/news/vikings-kyler-murray-clears-concussion-protocol-starter-for-week-3/",
-      "published_at": "2026-09-21T18:56:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
       "confidence": 0.88
     }
   ]
