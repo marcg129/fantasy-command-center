@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T00:33:38.075006Z",
+  "generated_at": "2026-09-23T07:45:56.848852Z",
   "lookback_days": 7,
   "article_count": 29,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 3 picks and score predictions: Two undefeated teams go down, Broncos edge Rams in thriller",
+      "summary": "Here's your weekly dose of John Breech's NFL picks",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-picks-score-predictions/",
+      "published_at": "2026-09-23T02:15:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Resetting expectations for these six NFL teams with injured quarterbacks: Giants eyeing draft again",
       "summary": "Success looks different for each of the squads that saw their starters go down early in the season",
@@ -145,18 +157,6 @@
       "summary": "Coming off a down second season, Harrison has been a bust through the first two games, with just one catch",
       "url": "https://www.cbssports.com/nfl/news/cardinals-marvin-harrison-jr-potential-bust/",
       "published_at": "2026-09-22T16:44:16Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 picks and score predictions: Two undefeated teams go down, Broncos edge Rams in thriller",
-      "summary": "Here's your weekly dose of John Breech's NFL picks",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-picks-score-predictions/",
-      "published_at": "2026-09-22T16:41:05Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
