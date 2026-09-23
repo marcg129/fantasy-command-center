@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T18:24:09.592657Z",
+  "generated_at": "2026-09-23T22:57:05.957435Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,114 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 3 injury report: Packers offensive line in trouble; Michael Penix Jr. set to take over Falcons QB job",
+      "summary": "Caleb Williams, Jayden Daniels and Jaxson Dart are among the quarterbacks sidelined as we track every practice update across the league",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-injury-report-packers-offensive-line/",
+      "published_at": "2026-09-23T22:32:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Five QB trades the Giants could make with Jaxson Dart out for season, including two with ties to John Harbaugh",
+      "summary": "New York is turning to Jameis Winston for now, but several mobile quarterbacks and familiar faces could emerge as trade targets if the veteran struggles",
+      "url": "https://www.cbssports.com/nfl/news/giants-qb-trade-rumors-jaxson-dart-injury/",
+      "published_at": "2026-09-23T21:39:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants' Jaxson Dart to undergo knee surgery that will end his 2026 season",
+      "summary": "Dart's ACL is intact, but his season is over",
+      "url": "https://www.cbssports.com/nfl/news/jaxson-dart-knee-surgery-end-giants-qbs-2026-season/",
+      "published_at": "2026-09-23T21:23:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 3 picks, odds: Josh Allen furthers Chargers free fall, Saints stay hot in home opener",
+      "summary": "Tyler Sullivan picks every agme on the Week 3 schedule, plus five locks against the spread",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-picks-odds-predictions/",
+      "published_at": "2026-09-23T21:11:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 3 NFL picks: Browns upset Panthers, Giants rally behind Jameis Winston",
+      "summary": "Pete Prisco reveals all of his Week 3 picks, including Jaguars over Patriots and Bucs over Vikings",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-3-nfl-picks-browns-upset-panthers-giants-rally-behind-jameis-winston/",
+      "published_at": "2026-09-23T21:11:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Red Sox-Guardians, Falcons-Packers on Wednesday",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-by-targeting-red-sox-guardians-falcons-packers-wednesday/",
+      "published_at": "2026-09-23T20:43:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Tale of the Tape: Jayden Maiava, Dante Moore clash in battle of star QBs in NFL Draft when USC faces Oregon",
+      "summary": "Two projected first-round NFL Draft picks will take the field when the No. 12 Trojans take on the No. 20 Ducks",
+      "url": "https://www.cbssports.com/college-football/news/jayden-maiava-dante-moore-nfl-draft-usc-oregon-tale-of-the-tape/",
+      "published_at": "2026-09-23T18:46:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Predicting full 14-team NFL playoff bracket entering Week 3, including history-making Super Bowl",
+      "summary": "The early postseason forecast includes several surprises, from two winless AFC South teams getting in to Carolina winning its division with a losing record",
+      "url": "https://www.cbssports.com/nfl/news/nfl-playoff-predictions-2026-super-bowl-week-3/",
+      "published_at": "2026-09-23T18:23:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ben Johnson is facing challenge he's never encountered in coaching career as Bears prepare for Eagles",
+      "summary": "With Caleb Williams out and Tyson Bagent in concussion protocol, Ben Johnson could turn to a 38-year-old signal-caller",
+      "url": "https://www.cbssports.com/nfl/news/ben-johnson-qb-challenge-never-encountered-in-coaching-career-bears/",
+      "published_at": "2026-09-23T18:20:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
       "title": "Agent's Take: 2026 contract-year players to watch -- will Puka Nacua become NFL's highest-paid wide receiver?",
       "summary": "Baker Mayfield and Jonathan Taylor secured extensions ahead of the season, but George Pickens, Kyler Murray and others have plenty riding on 2026",
       "url": "https://www.cbssports.com/nfl/news/2026-nfl-contract-year-players-to-watch-puka-nacua/",
@@ -37,18 +145,6 @@
       "summary": "Minter has transformed defenses everywhere he's gone; now he's trying to get the Ravens over the hump",
       "url": "https://www.cbssports.com/nfl/news/jesse-minter-coach-profile-ravens-background-history/",
       "published_at": "2026-09-23T17:26:17Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Guardians-Red Sox, Falcons-Packers on Wednesday",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-by-targeting-guardians-red-sox-falcons-packers-wednesday/",
-      "published_at": "2026-09-23T17:04:25Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -81,34 +177,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Giants' Jaxson Dart expected to undergo knee surgery that will end his 2026 season, per report",
-      "summary": "Dart's ACL is intact, but his season is expected to be over",
-      "url": "https://www.cbssports.com/nfl/news/jaxson-dart-knee-surgery-end-giants-qbs-2026-season/",
-      "published_at": "2026-09-23T16:30:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
       "title": "Alleged Daejon Love victim says she reported scammer to 49ers eight months prior to arrest",
       "summary": "A 49ers spokesperson declined to comment on the reported message, while the FBI has said the organization has cooperated with its investigation",
       "url": "https://www.cbssports.com/nfl/news/daejon-love-arrest-victim-49ers-2026/",
       "published_at": "2026-09-23T16:20:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Tale of the Tape: Jayden Maiava, Dante Moore clash in battle of star QBs in NFL Draft when USC faces Oregon",
-      "summary": "Two projected first-round NFL Draft picks will take the field when the No. 12 Trojans take on the No. 20 Ducks",
-      "url": "https://www.cbssports.com/college-football/news/jayden-maiava-dante-moore-nfl-draft-usc-oregon-tale-of-the-tape/",
-      "published_at": "2026-09-23T16:07:08Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -165,18 +237,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 3 picks, odds: Josh Allen furthers Chargers free fall, Saints stay hot in home opener",
-      "summary": "Tyler Sullivan picks every agme on the Week 3 schedule, plus five locks against the spread",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-picks-odds-predictions/",
-      "published_at": "2026-09-23T12:54:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Panthers RB Jonathon Brooks headed to IR, Austin Ekeler scheduled for workout",
       "summary": "Brooks has played in just five games over the last three seasons and will miss another six weeks with core muscle surgery",
       "url": "https://www.cbssports.com/nfl/news/jonathon-brooks-injury-panthers-austin-ekeler/",
@@ -186,30 +246,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Predicting full 14-team NFL playoff bracket entering Week 3, including history-making Super Bowl",
-      "summary": "The early postseason forecast includes several surprises, from two winless AFC South teams getting in to Carolina winning its division with a losing record",
-      "url": "https://www.cbssports.com/nfl/news/nfl-playoff-predictions-2026-super-bowl-week-3/",
-      "published_at": "2026-09-23T11:56:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 3 NFL picks: Browns upset Panthers, Giants rally behind Jameis Winston",
-      "summary": "Pete Prisco reveals all of his Week 3 picks, including Jaguars over Patriots and Bucs over Vikings",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-3-nfl-picks-browns-upset-panthers-giants-rally-behind-jameis-winston/",
-      "published_at": "2026-09-23T11:27:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -285,18 +321,6 @@
       "confidence": 0.88
     },
     {
-      "title": "2026 NFL Week 3 injury panic meter: Jaxson Dart, Caleb Williams, Jayden Daniels go down in losses",
-      "summary": "Projecting the outlook for some of the league's biggest Week 2 injuries",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-injury-panic-meter-jaxson-dart-caleb-williams-jayden-daniels/",
-      "published_at": "2026-09-22T18:46:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "Tyson Bagent in concussion protocol as Bears could be down to third quarterback in Week 3, per report",
       "summary": "Bagent and Caleb Williams both sustained injuries in the Week 2 loss to the Vikings",
       "url": "https://www.cbssports.com/nfl/news/tyson-bagent-concussion-protocol-bears-eagles/",
@@ -361,18 +385,6 @@
       "summary": "Lukas Van Ness and Dallas Turner are wreaking havoc on opposing offenses",
       "url": "https://www.cbssports.com/nfl/news/six-lessons-learned-from-nfl-week-2/",
       "published_at": "2026-09-22T14:39:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Winless Chargers have made unwanted history, face season-defining NFL Week 3 game at Bills on Sunday",
-      "summary": "The 0-2 Chargers face what seems like a must-win game Sunday in Buffalo",
-      "url": "https://www.cbssports.com/betting/news/winless-chargers-have-made-unwanted-history-face-season-defining-nfl-week-3-game-at-bills-on-sunday/",
-      "published_at": "2026-09-22T13:33:11Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
