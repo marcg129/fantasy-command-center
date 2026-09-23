@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T07:45:56.848852Z",
+  "generated_at": "2026-09-23T13:38:56.244579Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "Ranking MVP candidates after Week 2: Josh Allen takes early lead, but a RB not too far behind",
+      "summary": "Evaluating 10 players who have made a case for early MVP consideration",
+      "url": "https://www.cbssports.com/nfl/news/ranking-mvp-candidates-after-week-2-josh-allen-kenneth-walker/",
+      "published_at": "2026-09-23T13:21:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Yankees-Rays, NFL, MLB betting Wednesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL, college football and MLB betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-yankees-rays-nfl-mlb-betting-wednesday/",
+      "published_at": "2026-09-23T12:55:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 3 picks, odds: Josh Allen furthers Chargers free fall, Saints stay hot in home opener",
+      "summary": "Tyler Sullivan picks every agme on the Week 3 schedule, plus five locks against the spread",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-picks-odds-predictions/",
+      "published_at": "2026-09-23T12:54:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Panthers RB Jonathon Brooks headed to IR, Austin Ekeler scheduled for workout",
+      "summary": "Brooks has played in just five games over the last three seasons and will miss another six weeks with core muscle surgery",
+      "url": "https://www.cbssports.com/nfl/news/jonathon-brooks-injury-panthers-austin-ekeler/",
+      "published_at": "2026-09-23T12:34:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Predicting full 14-team NFL playoff bracket entering Week 3, including history-making Super Bowl",
+      "summary": "The early postseason forecast includes several surprises, from two winless AFC South teams getting in to Carolina winning its division with a losing record",
+      "url": "https://www.cbssports.com/nfl/news/nfl-playoff-predictions-2026-super-bowl-week-3/",
+      "published_at": "2026-09-23T11:56:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 3 NFL picks: Browns upset Panthers, Giants rally behind Jameis Winston",
+      "summary": "Pete Prisco reveals all of his Week 3 picks, including Jaguars over Patriots and Bucs over Vikings",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-3-nfl-picks-browns-upset-panthers-giants-rally-behind-jameis-winston/",
+      "published_at": "2026-09-23T11:27:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Super Bowl stock report for Week 3: Bengals are total package, Chargers' season over before it started",
+      "summary": "We assess the NFL title race after Week 2 and identify four upcoming games that could reshape the Super Bowl picture",
+      "url": "https://www.cbssports.com/nfl/news/super-bowl-stock-report-nfl-week-3/",
+      "published_at": "2026-09-23T10:00:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 3 picks and score predictions: Two undefeated teams go down, Broncos edge Rams in thriller",
       "summary": "Here's your weekly dose of John Breech's NFL picks",
@@ -294,78 +378,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Eagles bringing back franchise legend Zach Ertz after Dallas Goedert injury",
-      "summary": "Ertz returns to the franchise that drafted him, with Dallas Goedert expected to miss action",
-      "url": "https://www.cbssports.com/nfl/news/eagles-zach-ertz-practice-squad/",
-      "published_at": "2026-09-21T23:01:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets for Giants vs. Rams Monday Night Football in NFL Week 2",
-      "summary": "Sign up and bet with the latest FanDuel promo code to get your bonus bets for Giants vs. Rams on Monday Night Football in Week 2",
-      "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-250-bonus-bets-giants-rams-monday-night-football-nfl-week-2/",
-      "published_at": "2026-09-21T22:50:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is Puka Nacua playing on 'MNF?' A look at the Rams WR's status against Giants",
-      "summary": "Nacua did not practice on Friday or Saturday ahead of Monday's matchup in Los Angeles and was officially ruled inactive",
-      "url": "https://www.cbssports.com/nfl/news/is-puka-nacua-playing-on-mnf-rams-wrs-status-against-giants/",
-      "published_at": "2026-09-21T22:46:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "Falcons announce starting QB for Week 3: Michael Penix gets call against Packers",
-      "summary": "Thursday night will mark Penix's first game in 10 months",
-      "url": "https://www.cbssports.com/nfl/news/falcons-announce-starting-qb-week-3-michael-penix-packers/",
-      "published_at": "2026-09-21T21:07:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Joey Porter contract: Steelers cornerback rejected lucrative contract extension, per report",
-      "summary": "Porter did not play in Pittsburgh's first two games and has been at odds with the Steelers since the offseason",
-      "url": "https://www.cbssports.com/nfl/news/joey-porter-contract-steelers-cornerback-rejected-contract-extension/",
-      "published_at": "2026-09-21T20:58:47Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jayden Daniels injury: Commanders QB examining options, Marcus Mariota to start Week 3",
-      "summary": "Daniels to get opinions from multiple experts",
-      "url": "https://www.cbssports.com/nfl/news/jayden-daniels-injury-commanders-qb-examining-options/",
-      "published_at": "2026-09-21T20:51:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
