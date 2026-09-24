@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T22:57:05.957435Z",
+  "generated_at": "2026-09-24T04:51:42.189813Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,15 +21,51 @@
   ],
   "articles": [
     {
+      "title": "What is happening with Marvin Harrison Jr.? Former top 5 pick has disappeared from Arizona offense",
+      "summary": "Coming off a down second season, Harrison has been a bust through the first two games, with just one catch",
+      "url": "https://www.cbssports.com/nfl/news/cardinals-marvin-harrison-jr-potential-bust/",
+      "published_at": "2026-09-24T00:32:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "NFL Week 3 injury report: Packers offensive line in trouble; Michael Penix Jr. set to take over Falcons QB job",
       "summary": "Caleb Williams, Jayden Daniels and Jaxson Dart are among the quarterbacks sidelined as we track every practice update across the league",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-3-injury-report-packers-offensive-line/",
-      "published_at": "2026-09-23T22:32:17Z",
+      "published_at": "2026-09-24T00:04:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ravens' Lamar Jackson comments on Rio field ahead of international game, as conditions draw criticism",
+      "summary": "The first ever Rio De Janeiro game between the Cowboys and Ravens will be broadcast on CBS this Sunday",
+      "url": "https://www.cbssports.com/nfl/news/ravens-lamar-jackson-comments-rio-field/",
+      "published_at": "2026-09-23T23:23:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 3 NFL picks: Browns upset Panthers, Giants rally behind Jameis Winston",
+      "summary": "Pete Prisco reveals all of his Week 3 picks, including Jaguars over Patriots and Bucs over Vikings",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-3-nfl-picks-browns-upset-panthers-giants-rally-behind-jameis-winston/",
+      "published_at": "2026-09-23T23:22:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -61,18 +97,6 @@
       "summary": "Tyler Sullivan picks every agme on the Week 3 schedule, plus five locks against the spread",
       "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-picks-odds-predictions/",
       "published_at": "2026-09-23T21:11:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 3 NFL picks: Browns upset Panthers, Giants rally behind Jameis Winston",
-      "summary": "Pete Prisco reveals all of his Week 3 picks, including Jaguars over Patriots and Bucs over Vikings",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-3-nfl-picks-browns-upset-panthers-giants-rally-behind-jameis-winston/",
-      "published_at": "2026-09-23T21:11:24Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -153,18 +177,6 @@
       "confidence": 0.88
     },
     {
-      "title": "What is happening with Marvin Harrison Jr.? Former top 5 pick has disappeared from Arizona offense",
-      "summary": "From MaserComing off a down second season, Harrison has been a bust through the first two games, with just one catch",
-      "url": "https://www.cbssports.com/nfl/news/cardinals-marvin-harrison-jr-potential-bust/",
-      "published_at": "2026-09-23T17:00:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Colts placing Alec Pierce on IR: Big-play WR aggravated heel injury, hopes to return this year",
       "summary": "Pierce underwent surgery on his left heel this offseason",
       "url": "https://www.cbssports.com/nfl/news/colts-alec-pierce-ir-heel-injury/",
@@ -217,18 +229,6 @@
       "summary": "Evaluating 10 players who have made a case for early MVP consideration",
       "url": "https://www.cbssports.com/nfl/news/ranking-mvp-candidates-after-week-2-josh-allen-kenneth-walker/",
       "published_at": "2026-09-23T13:21:56Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Yankees-Rays, NFL, MLB betting Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL, college football and MLB betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-yankees-rays-nfl-mlb-betting-wednesday/",
-      "published_at": "2026-09-23T12:55:19Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -318,6 +318,18 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL Week 3 injury panic meter: Jaxson Dart, Caleb Williams, Jayden Daniels go down in losses",
+      "summary": "Projecting the outlook for some of the league's biggest Week 2 injuries",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-injury-panic-meter-jaxson-dart-caleb-williams-jayden-daniels/",
+      "published_at": "2026-09-22T18:46:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
