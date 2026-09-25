@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T21:31:22.862304Z",
+  "generated_at": "2026-09-25T00:33:32.522692Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -21,46 +21,94 @@
   ],
   "articles": [
     {
-      "title": "Ja'Marr Chase plans to appeal NFL celebration fine, calls for NFLPA to fight for players' money",
-      "summary": "Chase and Bengals teammate Tee Higgins were among several players punished for celebrations in Week 2",
-      "url": "https://www.cbssports.com/nfl/news/bengals-jamarr-chase-nfl-celebration-fine-2026/",
-      "published_at": "2026-09-24T21:27:01Z",
+      "title": "Packers vs. Falcons odds, picks: Analysis, predictions, player props for Thursday Night Football in Week 3",
+      "summary": "Michael Penix Jr. returns under center to revive Atlanta's offense, creating prime betting value on the spread, and Drake London player props against an injury-hit Green Bay squad",
+      "url": "https://www.cbssports.com/betting/news/packers-vs-falcons-odds-picks-analysis-predictions-player-props-for-thursday-night-football-in-week-3/",
+      "published_at": "2026-09-24T23:58:58Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Falcons-Packers, Thursday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Falcons vs. Packers Thursday Night Football betting",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-falcons-packers-thursday-night-football/",
-      "published_at": "2026-09-24T21:25:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Packers vs. Falcons on Thursday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets when you make NFL picks",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-packers-falcons-thursday-night-football/",
-      "published_at": "2026-09-24T21:14:56Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
       "title": "Previewing Packers vs. Falcons: Atlanta seeks first win of season as Michael Penix Jr. returns on 'TNF'",
       "summary": "Michael Penix Jr. makes his season debut for a winless Atlanta offense looking for a spark, while Green Bay tries to overcome a rash of injuries in its home opener",
       "url": "https://www.cbssports.com/nfl/news/packers-falcons-preview-prediction-odds-how-to-watch/",
-      "published_at": "2026-09-24T21:08:23Z",
+      "published_at": "2026-09-24T23:46:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Falcons vs. Packers, Thursday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets when you make NFL picks",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-falcons-vs-packers-thursday-night-football/",
+      "published_at": "2026-09-24T23:38:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Falcons vs. Packers on TNF",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Falcons vs. Packers Thursday Night Football betting",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-falcons-vs-packers-thursday-night-football/",
+      "published_at": "2026-09-24T23:13:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets for Thursday Night Football, Falcons vs. Packers, NFL betting",
+      "summary": "Sign up and bet on Thursday Night Football with the latest FanDuel promo code to get your bonus bets for Falcons vs. Packers",
+      "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-250-bonus-bets-thursday-night-football-falcons-packers-nfl-betting/",
+      "published_at": "2026-09-24T23:04:08Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 Week 3 NFL odds, lines, start times, schedule: Picks, predictions for Packers-Falcons, every other game",
+      "summary": "Week 3 features a Thursday night trip to Lambeau, an international Cowboys-Ravens showdown, and two primetime games carrying major quarterback storylines",
+      "url": "https://www.cbssports.com/betting/news/2026-week-3-nfl-odds-lines-start-times-schedule-picks-predictions-packers-falcons-every-other-game/",
+      "published_at": "2026-09-24T22:48:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Falcons vs. Packers first touchdown prediction for Thursday Night Football in NFL Week 3",
+      "summary": "We'll go over the prediction markets at Kalshi for the first touchdown scorer in Falcons vs. Packers on TNF",
+      "url": "https://www.cbssports.com/prediction/news/falcons-vs-packers-first-touchdown-prediction-for-thursday-night-football-in-nfl-week-3/",
+      "published_at": "2026-09-24T22:45:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ja'Marr Chase plans to appeal NFL celebration fine, calls for NFLPA to fight for players' money",
+      "summary": "Chase and Bengals teammate Tee Higgins were among several players punished for celebrations in Week 2",
+      "url": "https://www.cbssports.com/nfl/news/bengals-jamarr-chase-nfl-celebration-fine-2026/",
+      "published_at": "2026-09-24T21:29:42Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -213,18 +261,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Falcons vs. Packers first touchdown prediction for Thursday Night Football in NFL Week 3",
-      "summary": "We'll go over the prediction markets at Kalshi for the first touchdown scorer in Falcons vs. Packers on TNF",
-      "url": "https://www.cbssports.com/prediction/news/falcons-vs-packers-first-touchdown-prediction-for-thursday-night-football-in-nfl-week-3/",
-      "published_at": "2026-09-24T15:21:11Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Why a Giants trade for Joe Flacco in wake of Jaxson Dart injury makes sense...and why it doesn't",
       "summary": "With Jaxson Dart out for the year, New York turns to Jameis Winston, but a reunion between John Harbaugh and his former Super Bowl MVP could make plenty of sense",
       "url": "https://www.cbssports.com/nfl/news/pros-and-cons-of-giants-trade-bengals-joe-flacco-jaxson-dart/",
@@ -318,42 +354,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Previewing 2026 Presidents Cup; NFL Week 3 picks; how can Giants replace Jaxson Dart?",
-      "summary": "Plus, Shohei Ohtani's return and Aaron Judge's Wild Card status",
-      "url": "https://www.cbssports.com/golf/news/previewing-2026-presidents-cup-nfl-week-3-picks-how-can-giants-replace-jaxson-dart/",
-      "published_at": "2026-09-24T13:00:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Panthers' Bryce Young is off to a hot start in 2026. Is it real or a mirage?",
-      "summary": "We watched all 80 of Young's dropbacks so far this season to see if Young can continue his hot streak or if this is just an outlier",
-      "url": "https://www.cbssports.com/nfl/news/panthers-bryce-young-is-off-to-a-hot-start-in-2026-is-it-real-or-a-mirage/",
-      "published_at": "2026-09-24T12:26:56Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "The secret weapon behind every 2-0 start: Bills may have a new star, Chiefs unlock deep threat",
-      "summary": "Stars receive most of the credit, but these overlooked players have filled essential roles for the NFL's eight remaining 2-0 teams",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-unsung-heroes-secret-weapons/",
-      "published_at": "2026-09-24T12:15:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
