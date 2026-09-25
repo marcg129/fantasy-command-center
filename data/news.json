@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T18:37:12.672875Z",
+  "generated_at": "2026-09-25T23:18:24.165108Z",
   "lookback_days": 7,
-  "article_count": 25,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Indiana-Northwestern, Cal-Clemson Friday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL, college football betting on Friday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-indiana-northwestern-cal-clemson-friday/",
+      "published_at": "2026-09-25T21:24:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL likely to shut down rulebook loophole Eagles have been exploiting for the past two weeks",
+      "summary": "Philadelphia and other teams have added a 12th man on kickoffs to hold the ball on the ground",
+      "url": "https://www.cbssports.com/nfl/news/nfl-likely-to-shut-down-rulebook-kickoff-loophole-eagles/",
+      "published_at": "2026-09-25T21:11:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Why Patriots QB coach uses chicken wings to motivate Drake Maye",
+      "summary": "There are apparently a lot of similarities between playing QB and eating a chicken wing",
+      "url": "https://www.cbssports.com/nfl/news/patriots-qb-coach-uses-chicken-wings-motivate-drake-maye/",
+      "published_at": "2026-09-25T20:15:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFLPA chief addresses Cowboys-Ravens field concerns in Brazil, questions standards for international games",
+      "summary": "JC Tretter expressed concern about the NFL expanding its international slate, among other issues",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-vs-ravens-field-conditions-nfl-brazil-game/",
+      "published_at": "2026-09-25T19:50:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants-Titans weather: MetLife Stadium conditions expected to be rainy and windy for Week 3 game",
+      "summary": "Here's how wind and rain could impact Sunday's game between New York and Tennessee",
+      "url": "https://www.cbssports.com/nfl/news/giants-titans-weather-nasty-conditions-week-3-game/",
+      "published_at": "2026-09-25T19:40:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "What is Puka Nacua's status for Rams' Week 3 showdown at Broncos?",
+      "summary": "Nacua missed Week 2 with a hip injury and is struggling to get healthy",
+      "url": "https://www.cbssports.com/nfl/news/what-is-puka-nacuas-status-rams-week-3-broncos/",
+      "published_at": "2026-09-25T19:16:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Bengals' Joe Flacco sets record straight on trade rumors to Giants after Jaxson Dart injury",
       "summary": "What the veteran backup said about his name being attached to speculation",
@@ -73,18 +145,6 @@
       "summary": "The SportsLine experts have locked in their top Week 3 picks from this week's NFL schedule, see who they are backing and fading here",
       "url": "https://www.cbssports.com/nfl/news/nfl-picks-against-the-spread-week-3-2026-expert-ats-picks-predictions-player-props-for-this-weeks-games/",
       "published_at": "2026-09-25T15:54:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Indiana-Northwestern, Clemson-Cal Friday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL, college football betting on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-indiana-northwestern-clemson-cal-friday/",
-      "published_at": "2026-09-25T15:46:56Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -265,54 +325,6 @@
       "summary": "After passing Tony Romo with his 249th touchdown, Prescott stands first in team history in a slew of statistical categories",
       "url": "https://www.cbssports.com/nfl/news/cowboys-qb-rankings-2026-dak-prescott/",
       "published_at": "2026-09-25T11:53:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Packers vs. Falcons odds, picks: Analysis, predictions, player props for Thursday Night Football in Week 3",
-      "summary": "Michael Penix Jr. returns under center to revive Atlanta's offense, creating prime betting value on the spread, and Drake London player props against an injury-hit Green Bay squad",
-      "url": "https://www.cbssports.com/betting/news/packers-vs-falcons-odds-picks-analysis-predictions-player-props-for-thursday-night-football-in-week-3/",
-      "published_at": "2026-09-24T23:58:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Previewing Packers vs. Falcons: Atlanta seeks first win of season as Michael Penix Jr. returns on 'TNF'",
-      "summary": "Michael Penix Jr. makes his season debut for a winless Atlanta offense looking for a spark, while Green Bay tries to overcome a rash of injuries in its home opener",
-      "url": "https://www.cbssports.com/nfl/news/packers-falcons-preview-prediction-odds-how-to-watch/",
-      "published_at": "2026-09-24T23:46:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets for Thursday Night Football, Falcons vs. Packers, NFL betting",
-      "summary": "Sign up and bet on Thursday Night Football with the latest FanDuel promo code to get your bonus bets for Falcons vs. Packers",
-      "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-250-bonus-bets-thursday-night-football-falcons-packers-nfl-betting/",
-      "published_at": "2026-09-24T23:04:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Ja'Marr Chase plans to appeal NFL celebration fine, calls for NFLPA to fight for players' money",
-      "summary": "Chase and Bengals teammate Tee Higgins were among several players punished for celebrations in Week 2",
-      "url": "https://www.cbssports.com/nfl/news/bengals-jamarr-chase-nfl-celebration-fine-2026/",
-      "published_at": "2026-09-24T21:29:42Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
