@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-25T07:49:12.813149Z",
+  "generated_at": "2026-09-25T13:48:15.713840Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Week 3 2026 bold predictions: Lackluster Steelers force multiple turnovers against Joe Burrow",
+      "summary": "Plus, Kenneth Walker III goes off against a tanking Dolphins team",
+      "url": "https://www.cbssports.com/nfl/news/week-3-2026-nfl-bold-predictions/",
+      "published_at": "2026-09-25T13:14:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Falcons shred Packers in Michael Penix Jr.'s return; MLB and WNBA playoffs take shape",
+      "summary": "Plus picks for every marquee matchup on a loaded college football Week 4 slate",
+      "url": "https://www.cbssports.com/nfl/news/falcons-packers-michael-penix-mlb-wnba-playoffs/",
+      "published_at": "2026-09-25T12:45:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chargers' offense has been abysmal through two weeks. Here's what's fixable and what's frankly not",
+      "summary": "Two games in, the Chargers' offense has been a disaster. Let's go under the hood and find out what's wrong.",
+      "url": "https://www.cbssports.com/nfl/news/nfl-2026-how-to-fix-chargers-offense/",
+      "published_at": "2026-09-25T12:20:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL odds: Week 3 parlays featuring favorites, underdogs include Cowboys vs. Ravens, Rams vs. Broncos",
+      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 3 of the NFL season",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-3-parlays-featuring-favorites-underdogs-include-cowboys-vs-ravens-rams-vs-broncos/",
+      "published_at": "2026-09-25T12:00:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ranking all-time Cowboys quarterbacks: Dak Prescott climbs record book, but two legends remain ahead",
+      "summary": "After passing Tony Romo with his 249th touchdown, Prescott stands first in team history in a slew of statistical categories",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-qb-rankings-2026-dak-prescott/",
+      "published_at": "2026-09-25T11:53:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Packers vs. Falcons odds, picks: Analysis, predictions, player props for Thursday Night Football in Week 3",
       "summary": "Michael Penix Jr. returns under center to revive Atlanta's offense, creating prime betting value on the spread, and Drake London player props against an injury-hit Green Bay squad",
@@ -49,18 +109,6 @@
       "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets when you make NFL picks",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-falcons-vs-packers-thursday-night-football/",
       "published_at": "2026-09-24T23:38:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Falcons vs. Packers on TNF",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Falcons vs. Packers Thursday Night Football betting",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-falcons-vs-packers-thursday-night-football/",
-      "published_at": "2026-09-24T23:13:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -318,42 +366,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Ranking NFL's 2-0 teams: Bengals are for real this year, but are Chiefs an imposter?",
-      "summary": "Not every 2-0 team should be considered equal",
-      "url": "https://www.cbssports.com/nfl/news/ranking-nfls-2-0-teams-bengals-chiefs-bills/",
-      "published_at": "2026-09-24T13:38:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 picks: Our experts face off on Falcons at Packers, Ravens vs. Cowboys and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-picks-falcons-at-packers-ravens-vs-cowboys/",
-      "published_at": "2026-09-24T13:28:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Mike Macdonald says Sam Darnold is 'on a good track' to return from his glute injury",
-      "summary": "Darnold has missed most of the season's first two games",
-      "url": "https://www.cbssports.com/nfl/news/mike-macdonald-says-sam-darnold-is-on-a-good-track-to-return-from-his-glute-injury/",
-      "published_at": "2026-09-24T13:26:22Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
