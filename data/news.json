@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-26T11:25:48.873940Z",
+  "generated_at": "2026-09-26T16:23:55.453165Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Is Zay Flowers playing vs. Cowboys in Week 3? Ravens WR could be on pitch count if he suits up, per report",
+      "summary": "Flowers is officially listed as questionable due to a hamstring injury",
+      "url": "https://www.cbssports.com/nfl/news/zay-flowers-cowboys-week-3-ravens-wr-status/",
+      "published_at": "2026-09-26T15:57:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants quarterback trade rumors: New York has made calls this week with a move possibly imminent",
+      "summary": "Jaxson Dart underwent season-ending knee surgery this week",
+      "url": "https://www.cbssports.com/nfl/news/giants-qb-trade-rumors/",
+      "published_at": "2026-09-26T15:03:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
     {
       "title": "NFL injury report for Week 3: Updates on Puka Nacua, Sam Darnold, Nick Bosa, Joey Porter and more",
       "summary": "Every team's final injury report and game statuses for Week 3",
@@ -133,30 +157,6 @@
       "summary": "No team in NFL history has ever held the top three picks in the draft, but the Jets theoretically have a chance",
       "url": "https://www.cbssports.com/nfl/news/how-new-york-jets-could-end-up-with-three-picks-nfl-draft/",
       "published_at": "2026-09-25T16:01:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL picks against the spread, Week 3 2026: Expert ATS picks, predictions, player props for this week's games",
-      "summary": "The SportsLine experts have locked in their top Week 3 picks from this week's NFL schedule, see who they are backing and fading here",
-      "url": "https://www.cbssports.com/nfl/news/nfl-picks-against-the-spread-week-3-2026-expert-ats-picks-predictions-player-props-for-this-weeks-games/",
-      "published_at": "2026-09-25T15:54:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 Week 3 NFL odds, lines, start times, schedule: Picks, predictions for Rams-Broncos, every other game",
-      "summary": "Week 3 features an international Cowboys-Ravens showdown and two primetime games carrying major quarterback storylines",
-      "url": "https://www.cbssports.com/betting/news/2026-week-3-nfl-odds-lines-start-times-schedule-picks-predictions-rams-broncos-every-other-game/",
-      "published_at": "2026-09-25T15:46:39Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -333,10 +333,34 @@
       "confidence": 0.88
     },
     {
+      "title": "Packers vs. Falcons odds, picks: Analysis, predictions, player props for Thursday Night Football in Week 3",
+      "summary": "Michael Penix Jr. returns under center to revive Atlanta's offense, creating prime betting value on the spread, and Drake London player props against an injury-hit Green Bay squad",
+      "url": "https://www.cbssports.com/betting/news/packers-vs-falcons-odds-picks-analysis-predictions-player-props-for-thursday-night-football-in-week-3/",
+      "published_at": "2026-09-24T23:58:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
       "title": "Previewing Packers vs. Falcons: Atlanta seeks first win of season as Michael Penix Jr. returns on 'TNF'",
       "summary": "Michael Penix Jr. makes his season debut for a winless Atlanta offense looking for a spark, while Green Bay tries to overcome a rash of injuries in its home opener",
       "url": "https://www.cbssports.com/nfl/news/packers-falcons-preview-prediction-odds-how-to-watch/",
       "published_at": "2026-09-24T23:46:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets for Thursday Night Football, Falcons vs. Packers, NFL betting",
+      "summary": "Sign up and bet on Thursday Night Football with the latest FanDuel promo code to get your bonus bets for Falcons vs. Packers",
+      "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-250-bonus-bets-thursday-night-football-falcons-packers-nfl-betting/",
+      "published_at": "2026-09-24T23:04:08Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
