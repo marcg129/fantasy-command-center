@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-26T21:10:39.991689Z",
+  "generated_at": "2026-09-27T00:36:45.888920Z",
   "lookback_days": 7,
-  "article_count": 26,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,10 @@
   ],
   "articles": [
     {
-      "title": "NFL Week 3 picks and score predictions: Two undefeated teams go down, Broncos edge Rams in thriller",
-      "summary": "Here's your weekly dose of John Breech's NFL picks",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-picks-score-predictions/",
-      "published_at": "2026-09-26T20:04:15Z",
+      "title": "It wouldn't shock me IF ... NFL Week 3: Steelers, Aaron Rodgers won't find end zone once again",
+      "summary": "Don't be surprised if we see these storylines develop over the course of Week 3",
+      "url": "https://www.cbssports.com/nfl/news/it-wouldnt-shock-me-if-nfl-week-3-aaron-rodgers-steelers/",
+      "published_at": "2026-09-26T22:13:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,10 +33,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Prisco's Week 3 NFL picks: Browns upset Panthers, Giants rally behind Jameis Winston",
-      "summary": "Pete Prisco reveals all of his Week 3 picks, including Jaguars over Patriots and Bucs over Vikings",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-3-nfl-picks-browns-upset-panthers-giants-rally-behind-jameis-winston/",
-      "published_at": "2026-09-26T20:03:12Z",
+      "title": "NFL Week 3 picks and score predictions: Two undefeated teams go down, Broncos edge Rams in thriller",
+      "summary": "Here's your weekly dose of John Breech's NFL picks",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-picks-score-predictions/",
+      "published_at": "2026-09-26T20:04:15Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -330,6 +330,18 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants' Jaxson Dart to undergo knee surgery for a full meniscus tear that will end his 2026 season",
+      "summary": "Dart's ACL is intact, but his season is over",
+      "url": "https://www.cbssports.com/nfl/news/jaxson-dart-knee-surgery-end-giants-qbs-2026-season/",
+      "published_at": "2026-09-25T14:18:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
