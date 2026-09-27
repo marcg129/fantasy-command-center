@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T00:36:45.888920Z",
+  "generated_at": "2026-09-27T08:10:56.262564Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 3 player props: Our favorite picks to score, including Seahawks rookie RB Jadarian Price",
+      "summary": "These five players could capitalize on their matchups and find the end zone during Sunday's NFL action",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-player-props-seahawks-jadarian-price/",
+      "published_at": "2026-09-27T01:00:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "It wouldn't shock me IF ... NFL Week 3: Steelers, Aaron Rodgers won't find end zone once again",
       "summary": "Don't be surprised if we see these storylines develop over the course of Week 3",
