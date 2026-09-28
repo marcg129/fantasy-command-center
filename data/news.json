@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T23:03:31.621636Z",
+  "generated_at": "2026-09-28T05:24:41.236723Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,114 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 3 grades for all 32 teams: Ravens get 'B+' for wild Rio win, Raiders earn 'A-' for beating Saints",
+      "summary": "Plus, two teams earn 'A+' grades after superb offensive performances, and another 'F' makes its way into the discussion",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-grades-patriots-stumble-commanders-shine/",
+      "published_at": "2026-09-28T05:01:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Controversial pass interference penalty sets up Broncos' game-winning touchdown against Rams",
+      "summary": "The penalty negated an interception, which could have effectively sealed a Rams victory",
+      "url": "https://www.cbssports.com/nfl/news/controversial-pass-interference-broncos-rams/",
+      "published_at": "2026-09-28T04:55:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers' offense finally shows its potential in shootout win over Bengals: Here's what sparked breakout",
+      "summary": "After scoring one touchdown in its first two games, Pittsburgh scored three touchdowns and had six scoring drives against Cincinnati",
+      "url": "https://www.cbssports.com/nfl/news/steelers-offense-shows-potential-vs-bengals/",
+      "published_at": "2026-09-28T03:34:46Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Lamar Jackson, Tyler Loop help Ravens exorcise demons, earn most important regular-season win in recent memory",
+      "summary": "Loop's 56-yard game-winner to beat the Cowboys in Brazil was a stark contrast to his Week 18 miss against the Steelers",
+      "url": "https://www.cbssports.com/nfl/news/ravens-exorcise-demons-beat-cowboys-in-brazil/",
+      "published_at": "2026-09-28T02:40:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 3 overreactions: Pats officially have a Drake Maye problem, Ravens can finally win big games again",
+      "summary": "Plus, did the Commanders just post the win of the year (so far)?",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-overreactions-drake-maye-patriots-trevor-lawrence-jaguars/",
+      "published_at": "2026-09-28T02:37:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' botched crucial kickoff decision opens door for Ravens' last-second win",
+      "summary": "A touchback and questionable timeout usage gave the Ravens precious seconds",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-ravens-ending-dallas-kickoff-mistake-2026/",
+      "published_at": "2026-09-28T02:12:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 3 winners, losers: Commanders spring season's biggest upset, Baker Mayfield becomes latest injured QB",
+      "summary": "Plus, Deshaun Watson might have earned himself a longer leash as the Browns' starting quarterback",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-winners-losers-commanders-upset-seahawks-drake-maye-struggles/",
+      "published_at": "2026-09-28T00:17:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Baker Mayfield dislocates thumb on throwing hand during Buccaneers' loss to Vikings",
+      "summary": "Mayfield was in serious pain following a fourth-quarter interception",
+      "url": "https://www.cbssports.com/nfl/news/baker-mayfield-injury-buccaneers-vikings-2026/",
+      "published_at": "2026-09-28T00:10:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Rams-Broncos NFL Week 3 Sunday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Sunday Night Football to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-rams-broncos-nfl-week-3-sunday-night-football/",
+      "published_at": "2026-09-27T22:45:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "49ers' Mike Evans ruled out with injury after taking a hit against Cardinals",
       "summary": "Evans was carted off the field after suffering a rib injury during the second quarter",
       "url": "https://www.cbssports.com/nfl/news/49ers-mike-evans-suffers-injury-vs-cardinals/",
@@ -30,30 +138,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 overreactions: Drake Maye's turnover problem to doom Patriots, Trevor Lawrence for MVP?",
-      "summary": "Plus, did the Commanders just post the win of the year (so far)?",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-overreactions-drake-maye-patriots-trevor-lawrence-jaguars/",
-      "published_at": "2026-09-27T22:26:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 winners, losers: Commanders spring season's biggest upset, Drake Maye's miserable start continues",
-      "summary": "Plus, Deshaun Watson might have earned himself a longer leash as the Browns' starting quarterback",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-winners-losers-commanders-upset-seahawks-drake-maye-struggles/",
-      "published_at": "2026-09-27T22:18:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "role",
-      "impact": "positive",
-      "score_adjustment": 4,
       "confidence": 0.88
     },
     {
@@ -306,78 +390,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL picks against the spread, Week 3 2026: Expert ATS picks, predictions, player props for Sunday",
-      "summary": "The SportsLine experts have locked in their top Week 3 picks from this week's NFL schedule, see who they are backing and fading here",
-      "url": "https://www.cbssports.com/nfl/news/nfl-picks-against-the-spread-week-3-2026-expert-ats-picks-predictions-player-props-for-sunday/",
-      "published_at": "2026-09-27T16:21:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL player props Week 3 2026: Best prop picks for Sunday's NFL games include Patrick Mahomes and Josh Allen",
-      "summary": "Bet on NFL player props Week 3 at NFL sportsbooks like DraftKings, FanDuel and BetMGM",
-      "url": "https://www.cbssports.com/betting/news/nfl-player-props-week-3-2026-best-prop-picks-for-sundays-nfl-games-include-patrick-mahomes-and-josh-allen/",
-      "published_at": "2026-09-27T16:16:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bengals vs. Steelers picks, odds, prediction: Start time, betting preview, spread for NFL Week 3 game",
-      "summary": "AFC North rivals meet in NFL Week 3 when the Steelers host the Bengals, but Cincinnati comes in 2-0 while Pittsburgh looks to rebound. We have everything bettors need to know",
-      "url": "https://www.cbssports.com/betting/news/bengals-steelers-picks-odds-prediction-start-time-betting-preview-spread-nfl-week-3-game/",
-      "published_at": "2026-09-27T16:16:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bills vs. Chargers prediction markets, NFL picks: Use best Kalshi promo code CBSSPORTS55 for $55 bonus",
-      "summary": "The downtrodden Los Angeles Chargers visit the Buffalo Bills in Week 3 of the NFL season and you can trade on the game with the Kalshi promo code CBSSPORTS55",
-      "url": "https://www.cbssports.com/prediction/news/bills-vs-chargers-prediction-markets-nfl-picks-use-best-kalshi-promo-code-cbssports55-55-bonus/",
-      "published_at": "2026-09-27T16:15:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs vs. Dolphins predictions, NFL picks, start time: Use best Kalshi promo code CBSSPORTS55 for $55 bonus",
-      "summary": "Undefeated Kansas City travels to Miami for an AFC clash on Sunday, which sports fans can trade on at Kalshi",
-      "url": "https://www.cbssports.com/prediction/news/chiefs-vs-dolphins-predictions-nfl-picks-start-time-use-best-kalshi-promo-code-cbssports55-55-bonus/",
-      "published_at": "2026-09-27T16:12:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Texans vs. Colts predictions, NFL picks, start time: Get a $50 bonus with Polymarket promo code CBSSPORTS",
-      "summary": "One of the teams should come away with its first victory Sunday when the Colts hosts the Texans in NFL Week 3",
-      "url": "https://www.cbssports.com/prediction/news/texans-vs-colts-predictions-nfl-picks-start-time-get-a-50-bonus-with-polymarket-promo-code-cbssports/",
-      "published_at": "2026-09-27T16:01:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
