@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T05:24:41.236723Z",
+  "generated_at": "2026-09-28T13:55:42.234933Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,118 @@
   ],
   "articles": [
     {
+      "title": "2026 NFL Week 4 early odds: Chiefs road favorites over undefeated Raiders, Bucs no longer favored vs. Packers",
+      "summary": "Plus, Bills are heavy favorites over the Pats. Here's a look at the lines for Week 4 in the NFL as we wrap up the first month of the 2026 season",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-4-early-odds-chiefs-raiders-packers/",
+      "published_at": "2026-09-28T13:43:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "NFL Week 3 grades for all 32 teams: Ravens get 'B+' for wild Rio win, Raiders earn 'A-' for beating Saints",
       "summary": "Plus, two teams earn 'A+' grades after superb offensive performances, and another 'F' makes its way into the discussion",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-3-grades-patriots-stumble-commanders-shine/",
-      "published_at": "2026-09-28T05:01:30Z",
+      "published_at": "2026-09-28T13:31:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Mike Vrabel says his concern level 'very high' for Pats, Drake Maye after disastrous Week 3 loss",
+      "summary": "Maye also called his own performance 'unacceptable' after a 1-2 start. Here's what the two leaders of the ship said following New England's humiliating road blowout",
+      "url": "https://www.cbssports.com/nfl/news/mike-vrabel-concern-level-very-high-for-pats-drake-maye/",
+      "published_at": "2026-09-28T13:26:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Bears-Eagles on Monday Night Football",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Eagles vs. Bears, NFL betting on Monday Night Football",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-bears-eagles-monday-night-football/",
+      "published_at": "2026-09-28T13:12:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cover 32: Chargers 0-3 start inches toward full reset, plus game balls, biggest gaffes from Week 3",
+      "summary": "Tyler Sullivan dives into all the biggest items from Week 3 in the NFL, including the Chargers' egregious start, Marcus Mariota shining, and the Patriots' Drake Maye problem",
+      "url": "https://www.cbssports.com/nfl/news/nfl-cover-32-week-3-chargers-game-balls-biggest-gaffes/",
+      "published_at": "2026-09-28T13:01:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Commanders expected to sign Austin Ekeler to active roster, reuniting with veteran RB, per report",
+      "summary": "Ekeler spent the 2024 and 2025 seasons with Washington, but suffered an injury that kept him out for much of last season",
+      "url": "https://www.cbssports.com/nfl/news/commanders-expected-to-sign-rb-austin-ekeler/",
+      "published_at": "2026-09-28T12:31:29Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Brian Burns suffered season-ending knee injury in Giants Week 3 win over Titans, per report",
+      "summary": "Burns will likely be out for the season after leaving Sunday's win over Tennessee in the fourth quarter",
+      "url": "https://www.cbssports.com/nfl/news/brian-burns-suffered-season-ending-knee-injury-giants-week-3/",
+      "published_at": "2026-09-28T12:15:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears expected to start Case Keenum vs. Eagles despite Tyson Bagent clearing concussion protocol",
+      "summary": "This will be Keenum's first start since Christmas Eve 2023",
+      "url": "https://www.cbssports.com/nfl/news/bears-expected-to-start-case-keenum-vs-eagles/",
+      "published_at": "2026-09-28T12:12:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears vs. Eagles preview: Philadelphia looks to remain unbeaten against Caleb Williams-less Chicago",
+      "summary": "Plus, how to watch the game and a prediction for the Monday night matchup",
+      "url": "https://www.cbssports.com/nfl/news/bears-vs-eagles-preview-pick-prediction-how-to-watch/",
+      "published_at": "2026-09-28T11:42:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "This unbelievable NFL record was set 75 years ago and somehow still stands",
+      "summary": "Norm Van Brocklin threw for 554 yards on September 28, 1951",
+      "url": "https://www.cbssports.com/nfl/news/this-unbelievable-nfl-record-was-set-75-years-ago-and-somehow-still-stands/",
+      "published_at": "2026-09-28T11:41:51Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -273,18 +381,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Is Zay Flowers playing vs. Cowboys in Week 3? Ravens WR active, but may be on pitch count",
-      "summary": "Flowers is officially listed as questionable due to a hamstring injury",
-      "url": "https://www.cbssports.com/nfl/news/zay-flowers-cowboys-week-3-ravens-wr-status/",
-      "published_at": "2026-09-27T18:55:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL in Rio: How field conditions look before Ravens-Cowboys Week 3 matchup in Brazil",
       "summary": "Baltimore and Dallas will kick off from Maracana Stadium in Rio de Janeiro, Brazil, Sunday on CBS",
       "url": "https://www.cbssports.com/nfl/news/nfl-clears-the-air-on-field-condition-concerns-for-ravens-cowboys-week-3-matchup-in-brazil/",
@@ -306,90 +402,6 @@
       "category": "transaction",
       "impact": "watch",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Ravens-Cowboys, Broncos-Rams, NFL Week 3",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Week 3 NFL betting on Sunday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-ravens-cowboys-broncos-rams-nfl-week-3/",
-      "published_at": "2026-09-27T18:44:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 Week 3 NFL odds, lines, schedule, start times: Picks, predictions for Ravens-Cowboys, every other game",
-      "summary": "Week 3 features an international Cowboys-Ravens showdown and two primetime games carrying major quarterback storylines",
-      "url": "https://www.cbssports.com/betting/news/2026-week-3-nfl-odds-lines-schedule-start-times-picks-predictions-ravens-cowboys-every-other-game/",
-      "published_at": "2026-09-27T18:40:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Tyson Bagent clears concussion protocol: Bears QB avoids injury designation for Week 3 game against Eagles",
-      "summary": "Bagent could handle the starting quarterback duties with Caleb Williams injured",
-      "url": "https://www.cbssports.com/nfl/news/tyson-bagent-practice-bears-qb-week-3-vs-eagles/",
-      "published_at": "2026-09-27T18:34:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL trade rumors: Cowboys seemingly have eyes on Steelers' Joey Porter Jr.",
-      "summary": "Porter will miss his third straight game as Dallas, Detroit and other teams reportedly explore trade possibilities",
-      "url": "https://www.cbssports.com/nfl/news/joey-porter-jr-2026-trade-rumors-cowboys-lions-steelers/",
-      "published_at": "2026-09-27T17:02:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 odds, predictions, expert picks: Who has edge in Rams-Broncos? Will Bucs earn first win?",
-      "summary": "Our complete Week 3 betting guide features expert picks for every matchup, including Ravens-Cowboys in Rio de Janeiro",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-3-picks-odds-rams-broncos/",
-      "published_at": "2026-09-27T17:01:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys vs. Ravens in Brazil: Lamar Jackson, Dak Prescott headline first Rio de Janeiro NFL game",
-      "summary": "There should be plenty of fireworks at Maracanã Stadium",
-      "url": "https://www.cbssports.com/nfl/news/how-to-watch-cowboys-vs-ravens-storylines-prediction/",
-      "published_at": "2026-09-27T17:00:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Ranking Giants' reported options at QB: Why Jimmy Garoppolo may make sense after Jaxson Dart injury",
-      "summary": "New York could cast a wide net after Jaxson Dart's injury",
-      "url": "https://www.cbssports.com/nfl/news/ranking-giants-reported-options-at-qb-jimmy-garoppolo/",
-      "published_at": "2026-09-27T16:44:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
