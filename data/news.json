@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T01:57:48.263115Z",
+  "generated_at": "2026-09-29T08:31:12.420733Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 3 grades for all 32 teams: Bears earn 'A+' for big Monday win, Raiders earn 'A-' for beating Saints",
+      "summary": "Plus, two teams earn 'A+' grades after superb offensive performances, and another 'F' makes its way into the discussion",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-grades-patriots-stumble-commanders-shine/",
+      "published_at": "2026-09-29T03:18:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Use FanDuel promo code to get $250 in bonus bets for Eagles vs. Bears on Monday Night Football in NFL Week 3",
       "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
@@ -54,18 +66,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Eagles vs. Bears, Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Eagles vs. Bears, NFL betting on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-eagles-vs-bears-monday-night-football/",
-      "published_at": "2026-09-28T21:41:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -237,18 +237,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 3 grades for all 32 teams: Ravens get 'B+' for wild Rio win, Raiders earn 'A-' for beating Saints",
-      "summary": "Plus, two teams earn 'A+' grades after superb offensive performances, and another 'F' makes its way into the discussion",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-grades-patriots-stumble-commanders-shine/",
-      "published_at": "2026-09-28T13:31:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Mike Vrabel says his concern level 'very high' for Pats, Drake Maye after disastrous Week 3 loss",
       "summary": "Maye also called his own performance 'unacceptable' after a 1-2 start. Here's what the two leaders of the ship said following New England's humiliating road blowout",
       "url": "https://www.cbssports.com/nfl/news/mike-vrabel-concern-level-very-high-for-pats-drake-maye/",
@@ -369,6 +357,18 @@
       "confidence": 0.88
     },
     {
+      "title": "NFL Week 3 winners, losers: Commanders spring season's biggest upset, Baker Mayfield becomes latest injured QB",
+      "summary": "Plus, Deshaun Watson might have earned himself a longer leash as the Browns' starting quarterback",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-winners-losers-commanders-upset-seahawks-drake-maye-struggles/",
+      "published_at": "2026-09-28T00:17:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
       "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Rams-Broncos NFL Week 3 Sunday Night Football",
       "summary": "Sign up and bet with the latest FanDuel promo code on Sunday Night Football to get your bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-rams-broncos-nfl-week-3-sunday-night-football/",
@@ -378,6 +378,18 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "49ers' Mike Evans ruled out with injury after taking a hit against Cardinals",
+      "summary": "Evans was carted off the field after suffering a rib injury during the second quarter",
+      "url": "https://www.cbssports.com/nfl/news/49ers-mike-evans-suffers-injury-vs-cardinals/",
+      "published_at": "2026-09-27T22:35:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
