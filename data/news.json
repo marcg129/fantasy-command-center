@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T20:33:37.642591Z",
+  "generated_at": "2026-09-29T01:57:48.263115Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,90 @@
   ],
   "articles": [
     {
+      "title": "Use FanDuel promo code to get $250 in bonus bets for Eagles vs. Bears on Monday Night Football in NFL Week 3",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-eagles-bears-monday-night-football-nfl-week-3/",
+      "published_at": "2026-09-28T22:25:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears vs. Eagles preview: Philadelphia looks to remain unbeaten against Caleb Williams-less Chicago",
+      "summary": "Plus, how to watch the game and a prediction for the Monday night matchup",
+      "url": "https://www.cbssports.com/nfl/news/bears-vs-eagles-preview-pick-prediction-how-to-watch/",
+      "published_at": "2026-09-28T21:57:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "J.J. McCarthy trade: Giants acquire Vikings QB in wake of Jaxson Dart injury",
+      "summary": "The Giants will add a former first-round pick to an ailing quarterback group",
+      "url": "https://www.cbssports.com/nfl/news/new-york-giants-to-trade-for-j-j-mccarthy-per-report/",
+      "published_at": "2026-09-28T21:42:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Eagles vs. Bears, Monday Night Football",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Eagles vs. Bears, NFL betting on Monday Night Football",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-eagles-vs-bears-monday-night-football/",
+      "published_at": "2026-09-28T21:41:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Eagles vs. Bears, NFL Monday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-eagles-vs-bears-nfl-monday-night-football/",
+      "published_at": "2026-09-28T21:39:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL asks Homeland Security to remove Brian Dawkins highlight video from social media",
+      "summary": "Neither the NFL nor the Eagles gave DHS permission to use the footage",
+      "url": "https://www.cbssports.com/nfl/news/nfl-homeland-security-brian-dawkins-video/",
+      "published_at": "2026-09-28T21:29:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Brian Burns suffered season-ending knee injury in Giants Week 3 win over Titans",
+      "summary": "Burns is out for the season after leaving Sunday's win over Tennessee in the fourth quarter",
+      "url": "https://www.cbssports.com/nfl/news/brian-burns-suffered-season-ending-knee-injury-giants-week-3/",
+      "published_at": "2026-09-28T20:39:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
       "title": "Vikings' Justin Jefferson suffers ankle sprain vs. Buccaneers, Week 4 status still unknown",
       "summary": "Jefferson avoided any serious injury and has a chance to play on Sunday against the Dolphins",
       "url": "https://www.cbssports.com/nfl/news/vikings-justin-jefferson-questionable-to-return-vs-buccaneers-with-a-knee-injury/",
@@ -37,30 +121,6 @@
       "summary": "We revisited four preseason contenders after Week 3, and the concern level has flipped",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-3-panic-meter-chargers-patriots-packers-rams/",
       "published_at": "2026-09-28T19:22:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bears vs. Eagles preview: Philadelphia looks to remain unbeaten against Caleb Williams-less Chicago",
-      "summary": "Plus, how to watch the game and a prediction for the Monday night matchup",
-      "url": "https://www.cbssports.com/nfl/news/bears-vs-eagles-preview-pick-prediction-how-to-watch/",
-      "published_at": "2026-09-28T19:21:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Eagles vs. Bears on NFL Monday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-eagles-bears-nfl-monday-night-football/",
-      "published_at": "2026-09-28T18:11:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -90,18 +150,6 @@
       "category": "transaction",
       "impact": "watch",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "J.J. McCarthy trade: Giants acquire Vikings QB in wake of Jaxson Dart injury",
-      "summary": "The Giants will add a former first-round pick to an ailing quarterback group",
-      "url": "https://www.cbssports.com/nfl/news/new-york-giants-to-trade-for-j-j-mccarthy-per-report/",
-      "published_at": "2026-09-28T17:38:04Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -213,18 +261,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Bears-Eagles on Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Eagles vs. Bears, NFL betting on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-bears-eagles-monday-night-football/",
-      "published_at": "2026-09-28T13:12:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Cover 32: Chargers 0-3 start inches toward full reset, plus game balls, biggest gaffes from Week 3",
       "summary": "Tyler Sullivan dives into all the biggest items from Week 3 in the NFL, including the Chargers' egregious start, Marcus Mariota shining, and the Patriots' Drake Maye problem",
       "url": "https://www.cbssports.com/nfl/news/nfl-cover-32-week-3-chargers-game-balls-biggest-gaffes/",
@@ -246,18 +282,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Brian Burns suffered season-ending knee injury in Giants Week 3 win over Titans, per report",
-      "summary": "Burns will likely be out for the season after leaving Sunday's win over Tennessee in the fourth quarter",
-      "url": "https://www.cbssports.com/nfl/news/brian-burns-suffered-season-ending-knee-injury-giants-week-3/",
-      "published_at": "2026-09-28T12:15:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     },
     {
@@ -345,46 +369,10 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 3 winners, losers: Commanders spring season's biggest upset, Baker Mayfield becomes latest injured QB",
-      "summary": "Plus, Deshaun Watson might have earned himself a longer leash as the Browns' starting quarterback",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-winners-losers-commanders-upset-seahawks-drake-maye-struggles/",
-      "published_at": "2026-09-28T00:17:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Rams-Broncos NFL Week 3 Sunday Night Football",
       "summary": "Sign up and bet with the latest FanDuel promo code on Sunday Night Football to get your bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-rams-broncos-nfl-week-3-sunday-night-football/",
       "published_at": "2026-09-27T22:45:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "49ers' Mike Evans ruled out with injury after taking a hit against Cardinals",
-      "summary": "Evans was carted off the field after suffering a rib injury during the second quarter",
-      "url": "https://www.cbssports.com/nfl/news/49ers-mike-evans-suffers-injury-vs-cardinals/",
-      "published_at": "2026-09-27T22:35:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "What happened to Drake Maye? Why his Year 3 collapse is getting harder to explain away",
-      "summary": "From Trevor Lawrence to Mitchell Trubisky, recent history shows two very different ways this can go",
-      "url": "https://www.cbssports.com/nfl/news/patriots-drake-maye-interceptions-2026-season-collapse/",
-      "published_at": "2026-09-27T22:07:34Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
