@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T08:31:12.420733Z",
+  "generated_at": "2026-09-29T16:31:01.972658Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,174 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 3 panic meter: Chargers in crisis, Patriots unraveling, Packers fading, but Rams will be fine",
+      "summary": "We revisited four preseason contenders after Week 3, and the concern level has flipped",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-panic-meter-chargers-patriots-packers-rams/",
+      "published_at": "2026-09-29T15:35:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears' Ben Johnson takes playful shot at his former quarterback Jared Goff",
+      "summary": "Johnson discussed the difference in preparing for a mobile vs. non-mobile quarterback",
+      "url": "https://www.cbssports.com/nfl/news/bears-hc-ben-johnson-takes-a-shot-at-jared-goffs-mobility/",
+      "published_at": "2026-09-29T15:28:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Who's to blame for Eagles' embarrassing loss to Bears? Jalen Hurts bears big responsibility but not all",
+      "summary": "Let's play the Eagles blame game after a disastrous loss in Chicago",
+      "url": "https://www.cbssports.com/nfl/news/whos-to-blame-for-eagles-embarrassing-loss-to-bears/",
+      "published_at": "2026-09-29T15:16:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ravens facing unexpected crisis at key offensive position heading into Week 4 game vs. Titans",
+      "summary": "The Ravens might need to start making some phone calls to fill this position",
+      "url": "https://www.cbssports.com/nfl/news/ravens-crisis-offense-week-4-game-vs-titans/",
+      "published_at": "2026-09-29T14:53:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Return of the feature back: Why NFL running backs are making a massive comeback",
+      "summary": "Several factors are helping fuel a major resurgence for ground attacks across the league",
+      "url": "https://www.cbssports.com/nfl/news/return-of-the-nfls-feature-back-run-game-resurgence/",
+      "published_at": "2026-09-29T14:33:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Yankees-Red Sox, Cubs-Padres, MLB today",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-yankees-red-sox-cubs-padres-mlb-today/",
+      "published_at": "2026-09-29T13:29:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "When will J.J. McCarthy start for Giants? Why John Harbaugh could make QB change sooner than expected",
+      "summary": "McCarthy must learn a new offense and prove he can protect the football, but Jameis Winston's uneven play could speed things up",
+      "url": "https://www.cbssports.com/nfl/news/j-j-mccarthy-trade-giants-starting-qb-jameis-winston/",
+      "published_at": "2026-09-29T13:27:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 4 picks and score predictions: Browns shock Steelers on Thursday night, Texans get first win",
+      "summary": "Here's your weekly dose of John Breech's NFL picks",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-picks-and-score-predictions-breech/",
+      "published_at": "2026-09-29T13:16:46Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Eagles coach Nick Sirianni expresses remorse for shouting expletive at Bears player for hit on Jalen Hurts",
+      "summary": "Sirianni said he let the emotions get the best of him",
+      "url": "https://www.cbssports.com/nfl/news/nick-sirianni-remorse-for-expletive-at-bear-jalen-hurts/",
+      "published_at": "2026-09-29T13:06:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 4 injury panic meter: Updates on Baker Mayfield, Justin Jefferson and more",
+      "summary": "A look at some of the biggest injuries from around the NFL",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-injury-panic-meter-baker-mayfield-justin-jefferson/",
+      "published_at": "2026-09-29T12:54:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Case Keenum, Bears score 'MNF' win over Eagles; MLB Wild Card preview; WNBA awards top rookie",
+      "summary": "Plus, the Giants acquire J.J. McCarthy from the Vikings",
+      "url": "https://www.cbssports.com/nfl/news/case-keenum-bears-mnf-eagles-mlb-wild-card-wnba-rookie/",
+      "published_at": "2026-09-29T12:45:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Six lessons learned in Week 3: Texans, Eagles offenses in major trouble, officials need help",
+      "summary": "Plus, it's Brock Bowers' world and we're just living in it",
+      "url": "https://www.cbssports.com/nfl/news/six-lessons-learned-week-3-texans-eagles-offenses-officials/",
+      "published_at": "2026-09-29T12:27:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Raiders' surprising 3-0 start: Will Las Vegas see Fernando Mendoza at all this season?",
+      "summary": "Kirk Cousins has fended off the No. 1 overall pick through three weeks",
+      "url": "https://www.cbssports.com/nfl/news/raiders-3-0-start-fernando-mendoza-likelihood-to-play-in-2026/",
+      "published_at": "2026-09-29T12:04:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL MVP race entering Week 4: Josh Allen stays No. 1, but the field is closing fast",
+      "summary": "A wide receiver, two running backs and even a defensive player join the quarterbacks in our ranking of the NFL's leading MVP candidates",
+      "url": "https://www.cbssports.com/nfl/news/nfl-mvp-candidates-2026-josh-allen-patrick-mahomes-week-4/",
+      "published_at": "2026-09-29T11:47:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 3 grades for all 32 teams: Bears earn 'A+' for big Monday win, Raiders earn 'A-' for beating Saints",
       "summary": "Plus, two teams earn 'A+' grades after superb offensive performances, and another 'F' makes its way into the discussion",
@@ -69,18 +237,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Eagles vs. Bears, NFL Monday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-eagles-vs-bears-nfl-monday-night-football/",
-      "published_at": "2026-09-28T21:39:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL asks Homeland Security to remove Brian Dawkins highlight video from social media",
       "summary": "Neither the NFL nor the Eagles gave DHS permission to use the footage",
       "url": "https://www.cbssports.com/nfl/news/nfl-homeland-security-brian-dawkins-video/",
@@ -114,18 +270,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 panic meter: Chargers in crisis, Patriots unraveling, Packers fading, but Rams will be fine",
-      "summary": "We revisited four preseason contenders after Week 3, and the concern level has flipped",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-panic-meter-chargers-patriots-packers-rams/",
-      "published_at": "2026-09-28T19:22:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -225,18 +369,6 @@
       "confidence": 0.88
     },
     {
-      "title": "2026 NFL Week 4 early odds: Chiefs road favorites over undefeated Raiders, Bucs no longer favored vs. Packers",
-      "summary": "Plus, Bills are heavy favorites over the Pats. Here's a look at the lines for Week 4 in the NFL as we wrap up the first month of the 2026 season",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-4-early-odds-chiefs-raiders-packers/",
-      "published_at": "2026-09-28T13:43:39Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Mike Vrabel says his concern level 'very high' for Pats, Drake Maye after disastrous Week 3 loss",
       "summary": "Maye also called his own performance 'unacceptable' after a 1-2 start. Here's what the two leaders of the ship said following New England's humiliating road blowout",
       "url": "https://www.cbssports.com/nfl/news/mike-vrabel-concern-level-very-high-for-pats-drake-maye/",
@@ -246,150 +378,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cover 32: Chargers 0-3 start inches toward full reset, plus game balls, biggest gaffes from Week 3",
-      "summary": "Tyler Sullivan dives into all the biggest items from Week 3 in the NFL, including the Chargers' egregious start, Marcus Mariota shining, and the Patriots' Drake Maye problem",
-      "url": "https://www.cbssports.com/nfl/news/nfl-cover-32-week-3-chargers-game-balls-biggest-gaffes/",
-      "published_at": "2026-09-28T13:01:11Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Commanders expected to sign Austin Ekeler to active roster, reuniting with veteran RB, per report",
-      "summary": "Ekeler spent the 2024 and 2025 seasons with Washington, but suffered an injury that kept him out for much of last season",
-      "url": "https://www.cbssports.com/nfl/news/commanders-expected-to-sign-rb-austin-ekeler/",
-      "published_at": "2026-09-28T12:31:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bears expected to start Case Keenum vs. Eagles despite Tyson Bagent clearing concussion protocol",
-      "summary": "This will be Keenum's first start since Christmas Eve 2023",
-      "url": "https://www.cbssports.com/nfl/news/bears-expected-to-start-case-keenum-vs-eagles/",
-      "published_at": "2026-09-28T12:12:17Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "This unbelievable NFL record was set 75 years ago and somehow still stands",
-      "summary": "Norm Van Brocklin threw for 554 yards on September 28, 1951",
-      "url": "https://www.cbssports.com/nfl/news/this-unbelievable-nfl-record-was-set-75-years-ago-and-somehow-still-stands/",
-      "published_at": "2026-09-28T11:41:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Controversial pass interference penalty sets up Broncos' game-winning touchdown against Rams",
-      "summary": "The penalty negated an interception, which could have effectively sealed a Rams victory",
-      "url": "https://www.cbssports.com/nfl/news/controversial-pass-interference-broncos-rams/",
-      "published_at": "2026-09-28T04:55:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Steelers' offense finally shows its potential in shootout win over Bengals: Here's what sparked breakout",
-      "summary": "After scoring one touchdown in its first two games, Pittsburgh scored three touchdowns and had six scoring drives against Cincinnati",
-      "url": "https://www.cbssports.com/nfl/news/steelers-offense-shows-potential-vs-bengals/",
-      "published_at": "2026-09-28T03:34:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Lamar Jackson, Tyler Loop help Ravens exorcise demons, earn most important regular-season win in recent memory",
-      "summary": "Loop's 56-yard game-winner to beat the Cowboys in Brazil was a stark contrast to his Week 18 miss against the Steelers",
-      "url": "https://www.cbssports.com/nfl/news/ravens-exorcise-demons-beat-cowboys-in-brazil/",
-      "published_at": "2026-09-28T02:40:47Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 overreactions: Pats officially have a Drake Maye problem, Ravens can finally win big games again",
-      "summary": "Plus, did the Commanders just post the win of the year (so far)?",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-overreactions-drake-maye-patriots-trevor-lawrence-jaguars/",
-      "published_at": "2026-09-28T02:37:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys' botched crucial kickoff decision opens door for Ravens' last-second win",
-      "summary": "A touchback and questionable timeout usage gave the Ravens precious seconds",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-ravens-ending-dallas-kickoff-mistake-2026/",
-      "published_at": "2026-09-28T02:12:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 3 winners, losers: Commanders spring season's biggest upset, Baker Mayfield becomes latest injured QB",
-      "summary": "Plus, Deshaun Watson might have earned himself a longer leash as the Browns' starting quarterback",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-3-winners-losers-commanders-upset-seahawks-drake-maye-struggles/",
-      "published_at": "2026-09-28T00:17:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Rams-Broncos NFL Week 3 Sunday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Sunday Night Football to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-rams-broncos-nfl-week-3-sunday-night-football/",
-      "published_at": "2026-09-27T22:45:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "49ers' Mike Evans ruled out with injury after taking a hit against Cardinals",
-      "summary": "Evans was carted off the field after suffering a rib injury during the second quarter",
-      "url": "https://www.cbssports.com/nfl/news/49ers-mike-evans-suffers-injury-vs-cardinals/",
-      "published_at": "2026-09-27T22:35:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
