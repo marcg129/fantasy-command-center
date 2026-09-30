@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T01:19:43.597756Z",
+  "generated_at": "2026-09-30T08:34:45.546986Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -21,6 +21,18 @@
   ],
   "articles": [
     {
+      "title": "Jerry Jones sounds off on Cowboys' coaching gaffes at end of Week 3 loss in Brazil: 'We made mistakes'",
+      "summary": "Brian Schottenheimer took blame for the final-minute clock management against the Ravens, but Dallas' owner made it clear he expects the coaching staff to learn from the breakdown without making any staff changes",
+      "url": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-coaching-gaffes-loss-to-ravens/",
+      "published_at": "2026-09-30T02:14:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Red Sox-Yankees, Cubs-Padres, MLB picks",
       "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Tuesday",
       "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-red-sox-yankees-cubs-padres-mlb-picks/",
@@ -37,18 +49,6 @@
       "summary": "New York parts ways with the wide receiver for the second time",
       "url": "https://www.cbssports.com/nfl/news/new-york-giants-release-odell-beckham-jr/",
       "published_at": "2026-09-29T20:21:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jerry Jones sounds off on Cowboys' coaching gaffes at end of Week 3 loss in Brazil: 'We made mistakes'",
-      "summary": "Brian Schottenheimer took blame for the final-minute clock management against the Ravens, but Dallas' owner made it clear he expects the coaching staff to learn from the breakdown without making any staff changes",
-      "url": "https://www.cbssports.com/nfl/news/jerry-jones-cowboys-coaching-gaffes-loss-to-ravens/",
-      "published_at": "2026-09-29T19:56:29Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
