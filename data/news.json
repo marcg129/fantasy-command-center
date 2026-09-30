@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-29T22:15:42.198784Z",
+  "generated_at": "2026-09-30T01:19:43.597756Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Red Sox-Yankees, Cubs-Padres, MLB picks",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-red-sox-yankees-cubs-padres-mlb-picks/",
+      "published_at": "2026-09-29T21:45:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Giants release Odell Beckham Jr.: Landing spots for veteran pass-catcher include Rams",
       "summary": "New York parts ways with the wide receiver for the second time",
