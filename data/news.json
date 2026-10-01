@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-01T01:19:28.571441Z",
+  "generated_at": "2026-10-01T08:56:52.283499Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,42 @@
   ],
   "articles": [
     {
+      "title": "Joey Porter Jr. trade grades: Steelers win trade after getting coveted high pick from Cowboys",
+      "summary": "Dallas will now have to pay up for Porter's extension",
+      "url": "https://www.cbssports.com/nfl/news/joey-porter-jr-trade-grades-steelers-cowboys/",
+      "published_at": "2026-10-01T04:51:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers trading Joey Porter Jr. to Cowboys for 2028 second-round pick and 2027 sixth-rounder",
+      "summary": "Porter is getting a fresh start after a tumultuous ending in Pittsburgh",
+      "url": "https://www.cbssports.com/nfl/news/steelers-joey-porter-jr-traded-to-cowboys/",
+      "published_at": "2026-10-01T04:42:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 4 injuries: Steelers' Joey Porter Jr. ruled out, Rams' Aaron Donald sits out of practice",
+      "summary": "Track the latest practice updates and game designations for Week 4, beginning with the Steelers-Browns matchup",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-injury-report-updates-joey-porter-baker-mayfield/",
+      "published_at": "2026-10-01T03:34:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
       "title": "Russell Wilson explains why Giants' controversial J.J. McCarthy trade could be a 'great' fit",
       "summary": "The former Giants quarterback says New York needs McCarthy just as much as the former first-round pick needs a reset",
       "url": "https://www.cbssports.com/nfl/news/jj-mccarthy-trade-giants-russell-wilson/",
@@ -37,18 +73,6 @@
       "summary": "Are New England's early season struggles leading to HC-QB drama?",
       "url": "https://www.cbssports.com/nfl/news/mike-vrabel-refutes-rift-report-drake-maye/",
       "published_at": "2026-09-30T23:14:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 4 injuries: Steelers' Joey Porter Jr. to miss fourth straight game",
-      "summary": "Track the latest practice updates and game designations for Week 4, beginning with the Steelers-Browns matchup",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-injury-report-updates-joey-porter-baker-mayfield/",
-      "published_at": "2026-09-30T23:08:27Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -378,18 +402,6 @@
       "category": "role",
       "impact": "watch",
       "score_adjustment": -2,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bears' Ben Johnson takes playful shot at his former quarterback Jared Goff",
-      "summary": "Johnson discussed the difference in preparing for a mobile vs. non-mobile quarterback",
-      "url": "https://www.cbssports.com/nfl/news/bears-hc-ben-johnson-takes-a-shot-at-jared-goffs-mobility/",
-      "published_at": "2026-09-29T15:28:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
