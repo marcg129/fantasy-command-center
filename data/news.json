@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-30T22:16:29.708571Z",
+  "generated_at": "2026-10-01T01:19:28.571441Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "Russell Wilson explains why Giants' controversial J.J. McCarthy trade could be a 'great' fit",
+      "summary": "The former Giants quarterback says New York needs McCarthy just as much as the former first-round pick needs a reset",
+      "url": "https://www.cbssports.com/nfl/news/jj-mccarthy-trade-giants-russell-wilson/",
+      "published_at": "2026-10-01T00:13:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Mike Vrabel refutes report of alleged rift with Drake Maye after gossip grows legs",
+      "summary": "Are New England's early season struggles leading to HC-QB drama?",
+      "url": "https://www.cbssports.com/nfl/news/mike-vrabel-refutes-rift-report-drake-maye/",
+      "published_at": "2026-09-30T23:14:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 4 injuries: Steelers' Joey Porter Jr. to miss fourth straight game",
+      "summary": "Track the latest practice updates and game designations for Week 4, beginning with the Steelers-Browns matchup",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-injury-report-updates-joey-porter-baker-mayfield/",
+      "published_at": "2026-09-30T23:08:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "John Harbaugh explains Odell Beckham Jr. release: 'It just wasn't working for us'",
       "summary": "Beckham played just 20 offensive snaps and failed to record a catch during his three-game return to New York",
@@ -57,18 +93,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Mike Vrabel refutes report of alleged rift with Drake Maye: 'I'm here because Drake was the quarterback'",
-      "summary": "Are New England's early season struggles leading to HC-QB drama?",
-      "url": "https://www.cbssports.com/nfl/news/mike-vrabel-refutes-rift-report-drake-maye/",
-      "published_at": "2026-09-30T18:13:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Agent's Take: Dissecting the twists and turns relating to Joey Porter Jr.'s contract stalemate with Steelers",
       "summary": "Pittsburgh should break its policy against in-season contract talks to keep its lockdown cornerback before a stalemate turns into a trade request",
       "url": "https://www.cbssports.com/nfl/news/agents-take-joey-porter-jr-s-contract-stalemate-with-steelers/",
@@ -77,18 +101,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Yankees-Red Sox, MLB playoffs 2026",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-by-targeting-yankees-red-sox-mlb-playoffs-2026/",
-      "published_at": "2026-09-30T17:45:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
