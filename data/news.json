@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T19:18:40.832013Z",
+  "generated_at": "2026-10-02T23:46:33.623341Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 4 injury report: Justin Jefferson out, Nico Collins in; Terry McLaurin suffers late-week injury",
+      "summary": "Here's a look at each game designation for Week 4 in the NFL",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-injury-report-justin-jefferson-aaron-donald-terry-mclaurin/",
+      "published_at": "2026-10-02T21:36:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Northwestern-Penn State, Friday football",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for college football, NFL betting on Friday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-northwestern-penn-state-friday-football/",
+      "published_at": "2026-10-02T21:35:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams' Aaron Donald to miss Week 4 game vs. Eagles, Puka Nacua's status updated",
+      "summary": "Donald will miss his second game of the season, but the Rams received some good news on Friday",
+      "url": "https://www.cbssports.com/nfl/news/los-angeles-rams-injury-aaron-donald-out-puka-nacua/",
+      "published_at": "2026-10-02T20:09:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
     {
       "title": "NFL suspends 49ers owner Jed York six games, fines him $500,000 after Ohio arrest",
       "summary": "York accepted responsibility after the NFL suspended him for violating its Personal Conduct Policy, with three games he already missed counting toward the punishment",
@@ -189,18 +225,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Penn State-Northwestern, Friday football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for college football, NFL betting on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-penn-state-northwestern-friday-football/",
-      "published_at": "2026-10-02T13:56:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL trade rumors: Browns would 'welcome deal at right price' for Shedeur Sanders, Dillon Gabriel, per report",
       "summary": "Cleveland may have options within its quarterback room now that Deshaun Watson has solidified himself as QB1 after a 3-1 start",
       "url": "https://www.cbssports.com/nfl/news/nfl-trades-browns-could-welcome-deal-shedeur-sanders-dillon-gabriel/",
@@ -325,42 +349,6 @@
       "summary": "Porter Jr. couldn't help but grin from ear to ear when talking about now being a Dallas Cowboy",
       "url": "https://www.cbssports.com/nfl/news/joey-porter-jr-embraces-fresh-start-cowboys-steelers/",
       "published_at": "2026-10-01T23:22:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Browns vs. Steelers preview: Winner takes the lead in AFC North in 'Thursday Night Football' matchup",
-      "summary": "How to watch the 'Thursday Night Football' matchup, plus a prediction and what to know",
-      "url": "https://www.cbssports.com/nfl/news/browns-vs-steelers-how-to-watch-storylines-prediction/",
-      "published_at": "2026-10-01T23:14:31Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jerry Jeudy has disappeared from Browns offense: Five teams that could trade for WR",
-      "summary": "Jeudy looks like the odd man out in a wide receiver group that features KC Concepcion and Denzel Boston",
-      "url": "https://www.cbssports.com/nfl/news/browns-trade-jerry-jeudy-2026-destinations/",
-      "published_at": "2026-10-01T23:13:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Steelers vs. Browns odds, picks: First touchdown predictions for Thursday Night Football in NFL Week 4",
-      "summary": "We'll go over the prediction markets at Kalshi for the first touchdown scorer in Steelers vs. Browns on TNF",
-      "url": "https://www.cbssports.com/prediction/news/steelers-browns-odds-picks-first-touchdown-predictions-thursday-night-football-nfl-week-4/",
-      "published_at": "2026-10-01T22:45:47Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
