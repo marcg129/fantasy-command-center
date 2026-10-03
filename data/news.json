@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T16:17:57.619958Z",
+  "generated_at": "2026-10-03T21:14:51.272128Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 4 picks: Our experts face off on Cowboys vs. Texans, Rams at Eagles and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-picks-our-experts-predictions/",
+      "published_at": "2026-10-03T20:56:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Seahawks place rookie Jadarian Price on injured reserve",
+      "summary": "The rookie aggravated a chest injury and will miss at least four games, leaving Emanuel Wilson and George Holani to shoulder backfield duties during a grueling stretch",
+      "url": "https://www.cbssports.com/nfl/news/seahawks-place-rookie-jadarian-price-injured-reserve/",
+      "published_at": "2026-10-03T20:55:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Who is Jalon Daniels? Buccaneers rookie quarterback went from undrafted to starting",
+      "summary": "The undrafted Kansas product makes franchise history as he steps in for an injured Baker Mayfield with Tampa Bay searching for its first win",
+      "url": "https://www.cbssports.com/nfl/news/who-is-jalon-daniels-buccaneers-rookie-quarterback/",
+      "published_at": "2026-10-03T17:38:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 4 injury report: Justin Jefferson out, Nico Collins in; Terry McLaurin suffers late-week injury",
+      "summary": "Here's a look at each game designation for Week 4 in the NFL",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-injury-report-justin-jefferson-aaron-donald-terry-mclaurin/",
+      "published_at": "2026-10-03T16:30:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears make starting QB decision for Week 4 matchup vs. Jets",
+      "summary": "Ben Johnson turns back to his primary backup over veteran Case Keenum, who threw two touchdowns in a shocking upset over the Eagles on Monday night",
+      "url": "https://www.cbssports.com/nfl/news/bears-make-starting-qb-decision-week-4-matchup-jets/",
+      "published_at": "2026-10-03T16:17:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Commanders vs. Colts: Jonathan Taylor, Marcus Mariota lead teams into London",
       "summary": "Both teams head to London after earning their first wins, but two of the NFL's worst defenses could allow this matchup to turn into a high-scoring battle",
@@ -78,18 +138,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 4 injury report: Justin Jefferson out, Nico Collins in; Terry McLaurin suffers late-week injury",
-      "summary": "Here's a look at each game designation for Week 4 in the NFL",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-injury-report-justin-jefferson-aaron-donald-terry-mclaurin/",
-      "published_at": "2026-10-02T21:36:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -181,18 +229,6 @@
       "summary": "After helping Lamar Jackson reach historic heights and winning two national championships at Georgia, Monken may be delivering his most impressive coaching performance yet",
       "url": "https://www.cbssports.com/nfl/news/todd-monken-deshaun-watson-first-place-browns-2026/",
       "published_at": "2026-10-02T16:15:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 4 picks: Our experts face off on Cowboys vs. Texans, Rams at Eagles and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-picks-our-experts-predictions/",
-      "published_at": "2026-10-02T16:12:27Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -337,42 +373,6 @@
       "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 4",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-4-odds-predictions-expert-picks-49ers-broncos/",
       "published_at": "2026-10-02T11:53:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "LOOK: Aaron Rodgers' heated exchange with Mike McCarthy caught on camera during Steelers-Browns",
-      "summary": "The former Packers partners exchanged words during a difficult first half for Pittsburgh against its AFC North rival",
-      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-mike-mccarthy-heated-exchange-steelers-browns/",
-      "published_at": "2026-10-02T04:40:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Here's why the Steelers' 22-year run without a losing season is now their biggest problem",
-      "summary": "Pittsburgh mastered staying respectable, the problem is respectable hasn't gotten them anywhere",
-      "url": "https://www.cbssports.com/nfl/news/steelers-losing-season-2026-mike-tomlin-mike-mccarthy/",
-      "published_at": "2026-10-02T04:06:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Steelers QB Aaron Rodgers held an NFL record for 16 minutes before immediately losing it vs. Browns",
-      "summary": "The Steelers QB made NFL history on Thursday, but only very briefly",
-      "url": "https://www.cbssports.com/nfl/news/steelers-aaron-rodgers-could-pass-brady-mahomes-for-nfl-record/",
-      "published_at": "2026-10-02T01:25:32Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
