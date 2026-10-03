@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T23:46:33.623341Z",
+  "generated_at": "2026-10-03T05:19:18.324236Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -30,18 +30,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Northwestern-Penn State, Friday football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for college football, NFL betting on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-northwestern-penn-state-friday-football/",
-      "published_at": "2026-10-02T21:35:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -353,6 +341,30 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Browns vs. Steelers preview: Winner takes the lead in AFC North in 'Thursday Night Football' matchup",
+      "summary": "How to watch the 'Thursday Night Football' matchup, plus a prediction and what to know",
+      "url": "https://www.cbssports.com/nfl/news/browns-vs-steelers-how-to-watch-storylines-prediction/",
+      "published_at": "2026-10-01T23:14:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jerry Jeudy has disappeared from Browns offense: Five teams that could trade for WR",
+      "summary": "Jeudy looks like the odd man out in a wide receiver group that features KC Concepcion and Denzel Boston",
+      "url": "https://www.cbssports.com/nfl/news/browns-trade-jerry-jeudy-2026-destinations/",
+      "published_at": "2026-10-01T23:13:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     }
