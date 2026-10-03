@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-03T11:41:28.701966Z",
+  "generated_at": "2026-10-03T16:17:57.619958Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Commanders vs. Colts: Jonathan Taylor, Marcus Mariota lead teams into London",
+      "summary": "Both teams head to London after earning their first wins, but two of the NFL's worst defenses could allow this matchup to turn into a high-scoring battle",
+      "url": "https://www.cbssports.com/nfl/news/commanders-vs-colts-where-to-watch-pick-odds-prediction/",
+      "published_at": "2026-10-03T16:00:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bengals vs. Jaguars prediction: Joe Burrow, Trevor Lawrence duel in battle of AFC contenders",
+      "summary": "Everything you need to know to tune into the AFC showdown",
+      "url": "https://www.cbssports.com/nfl/news/bengals-vs-jaguars-where-to-watch-pick-odds-prediction/",
+      "published_at": "2026-10-03T15:55:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bills vs. Patriots preview: Buffalo looks to stay perfect, New England looks to get right",
+      "summary": "Everything you need to know to tune into the AFC East showdown",
+      "url": "https://www.cbssports.com/nfl/news/bills-vs-patriots-prediction-odds-where-to-watch/",
+      "published_at": "2026-10-03T15:16:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 4 NFL odds, betting lines, spreads, totals, for every game, including Texans-Cowboys, Raiders-Chiefs",
+      "summary": "The Week 4 NFL schedule is here, featuring pivotal matchups like Cowboys vs. Texans, Raiders vs. Chiefs and Lions vs. Panthers",
+      "url": "https://www.cbssports.com/betting/news/week-4-nfl-betting-lines-odds-totals-spreads/",
+      "published_at": "2026-10-03T15:13:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Inside Drake Maye's alarming 2026 slump one year after Patriots QB was MVP runner-up",
+      "summary": "New England's franchise quarterback has six interceptions and an NFL-worst 58.6 passer rating as opposing evaluators question his confidence and pocket poise",
+      "url": "https://www.cbssports.com/nfl/news/inside-drake-mayes-alarming-slump-after-patriots-stars-mvp-runner-up-year/",
+      "published_at": "2026-10-03T13:30:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 4 injury report: Justin Jefferson out, Nico Collins in; Terry McLaurin suffers late-week injury",
       "summary": "Here's a look at each game designation for Week 4 in the NFL",
@@ -189,18 +249,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Week 4 NFL odds, betting lines, spreads, totals, for every game, including Texans-Cowboys, Chiefs-Raiders",
-      "summary": "The Week 4 NFL schedule is here, featuring pivotal matchups like Cowboys vs. Texans, Raiders vs. Chiefs and Lions vs. Panthers",
-      "url": "https://www.cbssports.com/betting/news/week-4-nfl-odds-betting-lines-totals-spreads/",
-      "published_at": "2026-10-02T14:04:26Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "'I'm personally not judging him yet': NFL sources see progress in Titans QB Cam Ward",
       "summary": "Ward's mechanics remain a concern, but NFL sources see improvement from 2025's No. 1 draft pick and reasons for patience",
       "url": "https://www.cbssports.com/nfl/news/cam-ward-titans-development-nfl-insiders-early-struggles/",
@@ -329,42 +377,6 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Joey Porter Jr. embraces fresh start with Cowboys after feeling 'disrespected' by Steelers",
-      "summary": "Porter Jr. couldn't help but grin from ear to ear when talking about now being a Dallas Cowboy",
-      "url": "https://www.cbssports.com/nfl/news/joey-porter-jr-embraces-fresh-start-cowboys-steelers/",
-      "published_at": "2026-10-01T23:22:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Browns vs. Steelers preview: Winner takes the lead in AFC North in 'Thursday Night Football' matchup",
-      "summary": "How to watch the 'Thursday Night Football' matchup, plus a prediction and what to know",
-      "url": "https://www.cbssports.com/nfl/news/browns-vs-steelers-how-to-watch-storylines-prediction/",
-      "published_at": "2026-10-01T23:14:31Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jerry Jeudy has disappeared from Browns offense: Five teams that could trade for WR",
-      "summary": "Jeudy looks like the odd man out in a wide receiver group that features KC Concepcion and Denzel Boston",
-      "url": "https://www.cbssports.com/nfl/news/browns-trade-jerry-jeudy-2026-destinations/",
-      "published_at": "2026-10-01T23:13:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     }
