@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-03T21:14:51.272128Z",
+  "generated_at": "2026-10-04T00:37:49.277938Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Panthers vs. Lions prediction: Explosive offenses poised for potential 'Sunday Night Football' shootout",
+      "summary": "Injury-riddled defenses will have trouble getting off the field in this clash between high-scoring squads",
+      "url": "https://www.cbssports.com/nfl/news/panthers-vs-lions-where-to-watch-pick-odds-prediction/",
+      "published_at": "2026-10-04T00:00:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 4 picks and score predictions: Texans get first win, Bengals edge Jaguars",
+      "summary": "Here's your weekly dose of John Breech's NFL picks",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-picks-and-score-predictions-breech/",
+      "published_at": "2026-10-03T22:46:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 4 picks: Our experts face off on Cowboys vs. Texans, Rams at Eagles and more",
       "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
@@ -337,42 +361,6 @@
       "summary": "Plus, the Jets finally intercept the Bears, and the Patriots have an running back that breaks free",
       "url": "https://www.cbssports.com/nfl/news/week-4-nfl-bold-predictions-raiders-chiefs-kyler-murray-vikings/",
       "published_at": "2026-10-02T12:35:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL odds: Week 4 parlays featuring favorites, underdogs include Rams vs. Eagles, Falcons vs. Saints",
-      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 4 of the NFL season",
-      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-4-parlays-featuring-favorites-underdogs-include-rams-vs-eagles-falcons-vs-saints/",
-      "published_at": "2026-10-02T12:00:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Where Dolphins rookie class ranks among play-time over last decade and how others fared",
-      "summary": "A look back at how previous NFL teams that relied heavily on first-year players fared in the standings and whether those massive draft classes built lasting foundations",
-      "url": "https://www.cbssports.com/nfl/news/where-dolphins-rookie-class-ranks-among-play-time/",
-      "published_at": "2026-10-02T11:55:07Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 4 odds, predictions, expert picks: Who wins 49ers-Broncos showdown? Colts or Commanders in London?",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 4",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-odds-predictions-expert-picks-49ers-broncos/",
-      "published_at": "2026-10-02T11:53:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
