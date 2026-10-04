@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-04T19:37:51.467556Z",
+  "generated_at": "2026-10-04T23:10:44.107515Z",
   "lookback_days": 7,
-  "article_count": 22,
+  "article_count": 24,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,70 @@
   ],
   "articles": [
     {
+      "title": "Mike Vrabel calls out official after being penalized during Patriots win over Bills",
+      "summary": "Vrabel's team overcame his penalty, which led to a Bills touchdown",
+      "url": "https://www.cbssports.com/nfl/news/mike-vrabel-calls-out-official-after-being-penalized-patriots-bills/",
+      "published_at": "2026-10-04T22:27:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Broncos' Patrick Surtain II exits 49ers game with non-contact ankle injury",
+      "summary": "The 2024 Defensive Player of the Year is officially questionable to return after exiting late in the first half",
+      "url": "https://www.cbssports.com/nfl/news/patrick-surtain-ankle-injury-update-broncos-2026/",
+      "published_at": "2026-10-04T22:26:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 4 winners and losers: Drake Maye delivers, Texans' season slips away",
+      "summary": "Maye rediscovered his 2025 form against the Bills, while Houston's latest loss left its playoff hopes hanging by a thread",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-winners-losers-drake-maye-texans/",
+      "published_at": "2026-10-04T22:22:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "CeeDee Lamb makes Cowboys history, caps career day with winning TD vs. Texans",
+      "summary": "The five-time Pro Bowler erupted for 11 catches and 140 yards after halftime before scoring the decisive touchdown with 40 seconds remaining",
+      "url": "https://www.cbssports.com/nfl/news/ceedee-lamb-stats-cowboys-record-texans/",
+      "published_at": "2026-10-04T22:13:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 4 overreactions: Should Rams still be Super Bowl favorites? Cowboys to win NFC East?",
+      "summary": "Plus, why Ben Johnson won't win Coach of the Year",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-overreactions-rams-jaguars-cowboys-win-nfc-east/",
+      "published_at": "2026-10-04T22:02:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Bill Belichick joins Giants' 1986 reunion following North Carolina's loss to Notre Dame",
       "summary": "Belichick quickly revisited one of his biggest NFL moments",
       "url": "https://www.cbssports.com/nfl/news/bill-belichick-joins-giants-reunion-following-north-carolinas-loss/",
-      "published_at": "2026-10-04T19:32:08Z",
+      "published_at": "2026-10-04T22:01:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,10 +93,22 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Chiefs-Raiders, Lions-Panthers, NFL",
+      "title": "Use FanDuel promo code to claim $250 bonus bets by targeting Lions-Panthers, NFL Week 4 Sunday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Sunday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-250-bonus-bets-lions-panthers-nfl-week-4-sunday-night-football/",
+      "published_at": "2026-10-04T21:41:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Lions-Panthers on Sunday Night Football",
       "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL on Sunday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-chiefs-raiders-lions-panthers-nfl-betting/",
-      "published_at": "2026-10-04T19:24:39Z",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-lions-panthers-sunday-night-football/",
+      "published_at": "2026-10-04T21:39:25Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -45,10 +117,22 @@
       "confidence": 0.88
     },
     {
-      "title": "Ravens' Lamar Jackson exits with ankle injury, Tyler Huntley takes over vs. Titans",
+      "title": "Packers fear Edgerrin Cooper suffered torn Achilles in win over Buccaneers",
+      "summary": "Matt LaFleur called the injury \"not good\" after the game, and the emerging defensive star is suspected to miss the rest of the year after being carted off against Tampa Bay",
+      "url": "https://www.cbssports.com/nfl/news/packers-fear-edgerrin-cooper-suffered-torn-achilles-in-win-over-buccaneers/",
+      "published_at": "2026-10-04T21:18:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Lamar Jackson injury: Ravens QB being monitored, considered day-to-day after exiting vs. Titans",
       "summary": "Tyler Huntley opened the second half at quarterback with Baltimore leading Tennessee 24-7",
       "url": "https://www.cbssports.com/nfl/news/ravens-lamar-jackson-injury-tyler-huntley-titans/",
-      "published_at": "2026-10-04T19:14:57Z",
+      "published_at": "2026-10-04T20:56:55Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "injury",
@@ -213,18 +297,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Bengals vs. Jaguars prediction: Joe Burrow, Trevor Lawrence duel in battle of AFC contenders",
-      "summary": "Everything you need to know to tune into the AFC showdown",
-      "url": "https://www.cbssports.com/nfl/news/bengals-vs-jaguars-where-to-watch-pick-odds-prediction/",
-      "published_at": "2026-10-04T12:24:31Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Kalshi promo code CBSSPORTS55 in Florida: Get $55 bonus for Jaguars, Dolphins, Buccaneers, NFL Week 4 games",
       "summary": "Kalshi Florida users can make trades on the state's three NFL teams and receive a $55 bonus for Week 4",
       "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-in-florida-get-55-bonus-for-jaguars-dolphins-buccaneers-nfl-week-4-games/",
@@ -234,54 +306,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 Week 4 NFL odds, schedule, start times: Bills-Patriots, Cowboys-Texans, Raiders-Chiefs, every other game",
-      "summary": "The Week 4 schedule includes a plethora of NFL betting opportunities, including Cowboys-Texans and Raiders-Chiefs",
-      "url": "https://www.cbssports.com/betting/news/2026-week-4-nfl-odds-schedule-start-times-bills-patriots-cowboys-texans-raiders-chiefs-every-other-game/",
-      "published_at": "2026-10-04T11:35:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Commanders vs. Colts: Jonathan Taylor, Marcus Mariota lead teams into London",
-      "summary": "Both teams head to London after earning their first wins, but two of the NFL's worst defenses could allow this matchup to turn into a high-scoring battle",
-      "url": "https://www.cbssports.com/nfl/news/commanders-vs-colts-where-to-watch-pick-odds-prediction/",
-      "published_at": "2026-10-04T11:00:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 4 NFL picks: Eagles upset Rams, Texans over Cowboys",
-      "summary": "Pete Prisco reveals all of his Week 4 picks, including the Browns upsetting the Steelers and the 49ers over the Broncos",
-      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-4-nfl-picks/",
-      "published_at": "2026-10-04T05:00:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Panthers vs. Lions prediction: Explosive offenses poised for potential 'Sunday Night Football' shootout",
-      "summary": "Injury-riddled defenses will have trouble getting off the field in this clash between high-scoring squads",
-      "url": "https://www.cbssports.com/nfl/news/panthers-vs-lions-where-to-watch-pick-odds-prediction/",
-      "published_at": "2026-10-04T00:00:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
