@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T00:37:49.277938Z",
+  "generated_at": "2026-10-04T08:27:15.997306Z",
   "lookback_days": 7,
   "article_count": 29,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Prisco's Week 4 NFL picks: Eagles upset Rams, Texans over Cowboys",
+      "summary": "Pete Prisco reveals all of his Week 4 picks, including the Browns upsetting the Steelers and the 49ers over the Broncos",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-4-nfl-picks/",
+      "published_at": "2026-10-04T05:00:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Panthers vs. Lions prediction: Explosive offenses poised for potential 'Sunday Night Football' shootout",
       "summary": "Injury-riddled defenses will have trouble getting off the field in this clash between high-scoring squads",
@@ -97,30 +109,6 @@
       "summary": "Ben Johnson turns back to his primary backup over veteran Case Keenum, who threw two touchdowns in a shocking upset over the Eagles on Monday night",
       "url": "https://www.cbssports.com/nfl/news/bears-make-starting-qb-decision-week-4-matchup-jets/",
       "published_at": "2026-10-03T16:17:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Commanders vs. Colts: Jonathan Taylor, Marcus Mariota lead teams into London",
-      "summary": "Both teams head to London after earning their first wins, but two of the NFL's worst defenses could allow this matchup to turn into a high-scoring battle",
-      "url": "https://www.cbssports.com/nfl/news/commanders-vs-colts-where-to-watch-pick-odds-prediction/",
-      "published_at": "2026-10-03T16:00:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bengals vs. Jaguars prediction: Joe Burrow, Trevor Lawrence duel in battle of AFC contenders",
-      "summary": "Everything you need to know to tune into the AFC showdown",
-      "url": "https://www.cbssports.com/nfl/news/bengals-vs-jaguars-where-to-watch-pick-odds-prediction/",
-      "published_at": "2026-10-03T15:55:52Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -361,6 +349,18 @@
       "summary": "Plus, the Jets finally intercept the Bears, and the Patriots have an running back that breaks free",
       "url": "https://www.cbssports.com/nfl/news/week-4-nfl-bold-predictions-raiders-chiefs-kyler-murray-vikings/",
       "published_at": "2026-10-02T12:35:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL odds: Week 4 parlays featuring favorites, underdogs include Rams vs. Eagles, Falcons vs. Saints",
+      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 4 of the NFL season",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-4-parlays-featuring-favorites-underdogs-include-rams-vs-eagles-falcons-vs-saints/",
+      "published_at": "2026-10-02T12:00:53Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
