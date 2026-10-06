@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-05T22:37:36.682116Z",
+  "generated_at": "2026-10-06T06:21:27.727213Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,15 +21,99 @@
   ],
   "articles": [
     {
-      "title": "Use FanDuel promo code to get $250 bonus bets by targeting Falcons vs. Saints Monday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-falcons-vs-saints-monday-night-football/",
-      "published_at": "2026-10-05T21:53:36Z",
+      "title": "NFL Week 4 grades for all 32 teams: Falcons earn 'A+' for destroying Saints; Bengals slip again",
+      "summary": "We're handing out grades for every Week 4 game",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-grades-for-all-32-teams-bears-bengals-patriots-rams/",
+      "published_at": "2026-10-06T03:43:55Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Saquon Barkley injury update: Eagles star considered week-to-week, per report",
+      "summary": "The star running back seems to have avoided a long-term injury",
+      "url": "https://www.cbssports.com/nfl/news/saquon-barkley-hamstring-injury-eagles-week-4-rams/",
+      "published_at": "2026-10-06T01:12:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Sean McVay addresses Rams assistant coaches' viral interaction with Eagles fans",
+      "summary": "McVay said he addressed the fourth-quarter exchange with Philadelphia fans and promised the coaching staff will handle high-emotion moments with more composure moving forward",
+      "url": "https://www.cbssports.com/nfl/news/sean-mcvay-addresses-rams-assistant-coaches-viral-interaction-eagles-fans/",
+      "published_at": "2026-10-05T23:49:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Falcons vs. Saints, Monday Night Football",
+      "summary": "Sign up and bet on Falcons vs. Saints NFL Week 4 MNF with the latest FanDuel promo code",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-falcons-vs-saints-monday-night-football/",
+      "published_at": "2026-10-05T23:40:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets by targeting Falcons vs Saints, Monday Night Football",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Saints vs. Falcons, Monday Night Football",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-falcons-vs-saints-on-monday-night-football/",
+      "published_at": "2026-10-05T23:25:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 bonus bets by targeting Falcons vs. Saints on Monday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-falcons-vs-saints-on-monday-night-football/",
+      "published_at": "2026-10-05T23:10:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Fueled by Sean Payton's 'disrespect,' 49ers' Dre Greenlaw dominates Broncos and lets former coach know",
+      "summary": "The linebacker led San Francisco with 12 tackles in Sunday's win before opening up about feeling ignored and disrespected during his lone season in Denver",
+      "url": "https://www.cbssports.com/nfl/news/sean-paytons-disrespect-49ers-dre-greenlaw-dominates-broncos/",
+      "published_at": "2026-10-05T23:10:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Seahawks signing Joe Mixon to aid depleted RB room, per report",
+      "summary": "Mixon missed the entire 2025 season with a foot injury, but he ran over 1,000 yards and over 10 TD in 2024",
+      "url": "https://www.cbssports.com/nfl/news/seahawks-signing-veteran-rb-joe-mixon/",
+      "published_at": "2026-10-05T22:40:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -237,18 +321,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 4 grades for all 32 teams: Ben Johnson, Bears earn 'A-' despite injury woes; Bengals slip again",
-      "summary": "We're handing out grades for every Week 4 game",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-4-grades-for-all-32-teams-bears-bengals-patriots-rams/",
-      "published_at": "2026-10-05T12:29:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL Week 5 early odds: Bears favorites at Lambeau, Bills underdogs to Rams",
       "summary": "Los Angeles is a slight favorite against Buffalo in a potential Super Bowl preview, while Chicago enters Lambeau Field favored over Green Bay",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-5-odds-lines-spreads-betting-2026/",
@@ -306,90 +378,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jayden Daniels update: Dan Quinn says 'the hope' is for Commanders QB to return in Week 5",
-      "summary": "The plan is for Daniels to practice in full this week",
-      "url": "https://www.cbssports.com/nfl/news/commanders-jayden-daniels-update-hope-week-5-return/",
-      "published_at": "2026-10-04T23:06:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets by targeting Lions vs. Panthers, Week 4 Sunday Night Football",
-      "summary": "Sign up and bet on Lions vs. Panthers NFL Week 4 SNF with the latest FanDuel promo code",
-      "url": "https://www.cbssports.com/nfl/news/use-fanduel-promo-code-to-get-250-bonus-bets-lions-vs-panthers-week-4-sunday-night-football/",
-      "published_at": "2026-10-04T22:52:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Mike Vrabel calls out official after being penalized during Patriots win over Bills",
-      "summary": "Vrabel's team overcame his penalty, which led to a Bills touchdown",
-      "url": "https://www.cbssports.com/nfl/news/mike-vrabel-calls-out-official-after-being-penalized-patriots-bills/",
-      "published_at": "2026-10-04T22:27:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Broncos' Patrick Surtain II exits 49ers game with non-contact ankle injury",
-      "summary": "The 2024 Defensive Player of the Year is officially questionable to return after exiting late in the first half",
-      "url": "https://www.cbssports.com/nfl/news/patrick-surtain-ankle-injury-update-broncos-2026/",
-      "published_at": "2026-10-04T22:26:47Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "CeeDee Lamb makes Cowboys history, caps career day with winning TD vs. Texans",
-      "summary": "The five-time Pro Bowler erupted for 11 catches and 140 yards after halftime before scoring the decisive touchdown with 40 seconds remaining",
-      "url": "https://www.cbssports.com/nfl/news/ceedee-lamb-stats-cowboys-record-texans/",
-      "published_at": "2026-10-04T22:13:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to claim $250 bonus bets by targeting Lions-Panthers, NFL Week 4 Sunday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Sunday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-250-bonus-bets-lions-panthers-nfl-week-4-sunday-night-football/",
-      "published_at": "2026-10-04T21:41:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Packers fear Edgerrin Cooper suffered torn Achilles in win over Buccaneers",
-      "summary": "Matt LaFleur called the injury \"not good\" after the game, and the emerging defensive star is suspected to miss the rest of the year after being carted off against Tampa Bay",
-      "url": "https://www.cbssports.com/nfl/news/packers-fear-edgerrin-cooper-suffered-torn-achilles-in-win-over-buccaneers/",
-      "published_at": "2026-10-04T21:18:21Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
