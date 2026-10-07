@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T17:25:37.943728Z",
+  "generated_at": "2026-10-07T23:05:36.507612Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,126 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL player props, Falcons vs. Ravens odds: Brian Robinson scored 3 touchdowns last week. He's +12500 to repeat",
+      "summary": "Brian Robinson of the Falcons is +15000 to score three times against the Ravens on Sunday Night Football",
+      "url": "https://www.cbssports.com/betting/news/nfl-player-props-falcons-vs-ravens-odds-brian-robinson-scored-3-touchdowns-last-week-hes-12500-to-repeat/",
+      "published_at": "2026-10-07T22:29:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Full list of 2026 NFL bye weeks for all 32 teams",
+      "summary": "Here are every team's NFL bye weeks all in one place so you can plan your fantasy lineups and game days.",
+      "url": "https://www.cbssports.com/nfl/news/nfl-bye-weeks-2026/",
+      "published_at": "2026-10-07T21:32:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL, NFLPA clarify celebration penalties, say imitating drinking won't be penalty or subject to fine",
+      "summary": "Kyle Juszczyk and Jake Ferguson had their fines rescinded Wednesday",
+      "url": "https://www.cbssports.com/nfl/news/nfl-nflpa-clarify-celebration-penalties-fines/",
+      "published_at": "2026-10-07T21:20:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1500 bonus bets by targeting Braves-Dodgers, Rays-Yankees on Wednesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-braves-dodgers-rays-yankees-wednesday/",
+      "published_at": "2026-10-07T21:18:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "DeMeco Ryans taking over defensive play-calling duties from Matt Burke as Texans try to climb out of 0-4 hole",
+      "summary": "Burke had called plays since early last season",
+      "url": "https://www.cbssports.com/nfl/news/texans-demeco-ryans-defensive-play-calling-duties-matt-burke/",
+      "published_at": "2026-10-07T20:55:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Are Eagles tanking? Why Philadelphia's teardown looks like a full-scale rebuild",
+      "summary": "The Eagles are stockpiling premium draft picks while dismantling a once-dominant offensive line",
+      "url": "https://www.cbssports.com/nfl/news/eagles-cam-jurgens-trade-lane-johnson-retirement-2026/",
+      "published_at": "2026-10-07T20:40:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL trade deadline: Three more players Eagles could shop after dealing Cam Jurgens",
+      "summary": "A franchise icon could be a popular target",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-eagles-who-could-be-dealt/",
+      "published_at": "2026-10-07T20:18:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys appear to have a glaring flaw that's been exploited in two straight games: 'We saw a weakness'",
+      "summary": "Texans coach DeMeco Ryans revealed how Houston copied Baltimore's plan to exploit the same weakness",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-blocked-field-goals-2026/",
+      "published_at": "2026-10-07T20:02:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Agent's Take: Kenneth Walker III among best veteran acquisitions after four games of 2026 NFL season",
+      "summary": "Walker III is dominating on the ground in Kansas City, Kirk Cousins has revived the Raiders, and key defensive stars are quickly reshaping contenders across the league",
+      "url": "https://www.cbssports.com/nfl/news/agents-take-kenneth-walker-iii-best-veteran-acquisitions-nfl/",
+      "published_at": "2026-10-07T18:49:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cam Jurgens trade grades: Eagles send two-time Pro Bowl center to the Ravens for two draft selections",
+      "summary": "Baltimore is reportedly sending Philadelphia a 2027 fifth-round pick and a 2028 second-rounder for Jurgens and a 2027 seventh-round pick",
+      "url": "https://www.cbssports.com/nfl/news/cam-jurgens-trade-eagles-ravens-nfl-draft-picks/",
+      "published_at": "2026-10-07T18:19:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Marvin Harrison Jr. trade packages: What Cardinals could get for former No. 4 overall pick",
       "summary": "These deals could move Harrison out of Arizona and help revitalize his career",
@@ -85,18 +205,6 @@
       "summary": "Don't sleep on Kyle Shanahan to win Coach of the Year either",
       "url": "https://www.cbssports.com/nfl/news/nfl-futures-bets-to-make-after-the-first-month-of-the-2026-season/",
       "published_at": "2026-10-07T13:51:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1500 bonus bets by targeting Yankees-Rays, Dodgers-Braves on Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-yankees-rays-dodgers-braves-wednesday/",
-      "published_at": "2026-10-07T13:17:03Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -294,102 +402,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Grading NFL QBs on rookie contracts: Panthers' Bryce Young earns highest mark, Cam Ward gets 'D+'",
-      "summary": "Young earns top marks after a dramatic year-four leap in Carolina, while Tyler Shough proves he is the real deal in New Orleans",
-      "url": "https://www.cbssports.com/nfl/news/grading-nfl-qbs-on-rookie-contracts-bryce-young-cam-ward/",
-      "published_at": "2026-10-06T15:29:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Former NFL first-round pick abruptly retires after playing 12 snaps in Week 4, per report",
-      "summary": "The Chicago Bears were hit by a surprise retirement this week",
-      "url": "https://www.cbssports.com/nfl/news/marcus-davenport-nfl-first-round-pick-abruptly-retires/",
-      "published_at": "2026-10-06T15:20:56Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Joey Porter Sr. says Steelers 'held us down for three weeks,' celebrates Cowboys victory over Texans",
-      "summary": "Porter Jr. didn't allow a single target across 25 snaps against Houston as his father, Steelers legend Joey Porter Sr., cheered him on in Dallas gear",
-      "url": "https://www.cbssports.com/nfl/news/joey-porter-sr-says-steelers-held-us-down-for-three-weeks-cowboys/",
-      "published_at": "2026-10-06T15:08:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 5 NFL odds, spreads, totals, betting lines, for all 16 games, including Buccaneers-Cowboys, Bears-Packers",
-      "summary": "The Week 5 NFL schedule is here, featuring pivotal matchups like Cowboys vs. Buccaneers, 49ers vs. Seahawks and Bills vs. Rams",
-      "url": "https://www.cbssports.com/betting/news/week-5-nfl-betting-odds-lines-totals-spreads/",
-      "published_at": "2026-10-06T14:28:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Tyler Shough reacts to fans booing after Saints blowout loss to Falcons: 'I'd boo, too'",
-      "summary": "New Orleans was blown out by the Falcons on 'Monday Night Football'",
-      "url": "https://www.cbssports.com/nfl/news/tyler-shough-reacts-to-fans-booing-after-saints-loss-falcons/",
-      "published_at": "2026-10-06T14:28:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "How non-first-round rookies are faring this NFL season: Denzel Boston among the leaders of the pack",
-      "summary": "A look at the non-Day 1 selections making an impact on this NFL season, including Browns wideout Denzel Boston and Titans linebacker Anthony Hill Jr",
-      "url": "https://www.cbssports.com/nfl/news/how-non-first-round-rookies-faring-this-nfl-season-denzel-boston/",
-      "published_at": "2026-10-06T13:37:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Lamar Jackson injury update: Ravens QB dealing with ankle sprain; Week 5 status still unknown, per report",
-      "summary": "Jackson injured his ankle in the first half of Sunday's win over the Titans",
-      "url": "https://www.cbssports.com/nfl/news/lamar-jackson-injury-update-ravens-qb-dealing-with-ankle-sprain/",
-      "published_at": "2026-10-06T13:35:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "False hope in Buffalo? Why Josh Allen's, Bills' 3-1 start isn't as impressive as it seems",
-      "summary": "Are the Bills good, or is their schedule just easy?",
-      "url": "https://www.cbssports.com/nfl/news/why-josh-allen-buffalo-bills-3-1-start-isnt-impressive-as-it-seems/",
-      "published_at": "2026-10-06T13:15:20Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
