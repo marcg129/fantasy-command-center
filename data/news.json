@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-06T20:59:02.912988Z",
+  "generated_at": "2026-10-07T01:32:30.263192Z",
   "lookback_days": 7,
-  "article_count": 32,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -24,7 +24,31 @@
       "title": "Eagles' Lane Johnson retires from NFL due to personal reasons after Week 4 absence",
       "summary": "Johnson's surprise exit from football ends a legendary career in Philadelphia",
       "url": "https://www.cbssports.com/nfl/news/eagles-lane-johnson-retires-from-nfl-after-week-4-absence/",
-      "published_at": "2026-10-06T20:35:40Z",
+      "published_at": "2026-10-06T23:08:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "How can Nick Sirianni save his job? Eagles' path becomes more difficult without Lane Johnson",
+      "summary": "Sirianni has his work cut out for him after his star right tackle called it a career",
+      "url": "https://www.cbssports.com/nfl/news/how-can-nick-sirianni-save-his-job-eagles-lane-johnson/",
+      "published_at": "2026-10-06T23:07:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL sets penalty record through Week 4 as tensions flare between teams, officials",
+      "summary": "Coaches, players and officials have not seen eye to eye during a flag-happy start to the season",
+      "url": "https://www.cbssports.com/nfl/news/nfl-sets-penalty-record-through-week-4-officials/",
+      "published_at": "2026-10-06T21:39:42Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -36,19 +60,7 @@
       "title": "Patriots QB Drake Maye sounds slightly skeptical of the moon landing: 'I'm not 100% sure'",
       "summary": "Maye isn't entirely sure whether the US landed on the moon or not in 1969, and he had some other thoughts on conspiracy theories",
       "url": "https://www.cbssports.com/nfl/news/patriots-drake-maye-slightly-skeptical-of-the-moon-landing/",
-      "published_at": "2026-10-06T20:24:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1500 bonus bets by targeting Braves-Dodgers, Brewers-Padres on Tuesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Tuesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-braves-dodgers-brewers-padres-tuesday/",
-      "published_at": "2026-10-06T20:02:28Z",
+      "published_at": "2026-10-06T21:17:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -369,34 +381,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Tyquan Thornton to have surgery after ankle injury; 'chance' Chiefs WR could return this season, per insider",
-      "summary": "Thornton had already established career highs in receiving yards and touchdowns before exiting late in Week 4 vs. the Raiders",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-tyquan-thornton-ankle-injury-raiders/",
-      "published_at": "2026-10-05T20:30:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL suspends official Jeff Seeman for incident with Cardinals' Trey McBride",
       "summary": "The altercation between the two went viral following New York's win over Arizona",
       "url": "https://www.cbssports.com/nfl/news/nfl-reviewing-incident-between-official-cardinals-trey-mcbride/",
       "published_at": "2026-10-05T20:19:19Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL suspends referee Adrian Hill for unprofessional conduct toward Vikings' Eric Wilson",
-      "summary": "The league reviewed two separate incidents involving a player and an official during Week 4",
-      "url": "https://www.cbssports.com/nfl/news/nfl-reviews-heated-exchange-referee-vikings-eric-wilson/",
-      "published_at": "2026-10-05T19:46:16Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
