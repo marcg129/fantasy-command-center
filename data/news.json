@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-07T23:05:36.507612Z",
+  "generated_at": "2026-10-08T06:04:45.402111Z",
   "lookback_days": 7,
-  "article_count": 32,
+  "article_count": 34,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Are Eagles tanking? Why Philadelphia's teardown looks like a full-scale rebuild",
+      "summary": "The Eagles are stockpiling premium draft picks while dismantling a once-dominant offensive line",
+      "url": "https://www.cbssports.com/nfl/news/eagles-cam-jurgens-trade-lane-johnson-retirement-2026/",
+      "published_at": "2026-10-08T01:00:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 5 injury report: Lamar Jackson, Ja'Marr Chase among several stars uncertain for Sunday",
+      "summary": "Commanders' Jayden Daniels logged a full practice on Wednesday and could return",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-injury-report-lamar-jackson-jamarr-chase/",
+      "published_at": "2026-10-08T00:46:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "NFL player props, Falcons vs. Ravens odds: Brian Robinson scored 3 touchdowns last week. He's +12500 to repeat",
       "summary": "Brian Robinson of the Falcons is +15000 to score three times against the Ravens on Sunday Night Football",
@@ -57,34 +81,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1500 bonus bets by targeting Braves-Dodgers, Rays-Yankees on Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-braves-dodgers-rays-yankees-wednesday/",
-      "published_at": "2026-10-07T21:18:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "DeMeco Ryans taking over defensive play-calling duties from Matt Burke as Texans try to climb out of 0-4 hole",
       "summary": "Burke had called plays since early last season",
       "url": "https://www.cbssports.com/nfl/news/texans-demeco-ryans-defensive-play-calling-duties-matt-burke/",
       "published_at": "2026-10-07T20:55:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Are Eagles tanking? Why Philadelphia's teardown looks like a full-scale rebuild",
-      "summary": "The Eagles are stockpiling premium draft picks while dismantling a once-dominant offensive line",
-      "url": "https://www.cbssports.com/nfl/news/eagles-cam-jurgens-trade-lane-johnson-retirement-2026/",
-      "published_at": "2026-10-07T20:40:16Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -402,6 +402,30 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Grading NFL QBs on rookie contracts: Panthers' Bryce Young earns highest mark, Cam Ward gets 'D+'",
+      "summary": "Young earns top marks after a dramatic year-four leap in Carolina, while Tyler Shough proves he is the real deal in New Orleans",
+      "url": "https://www.cbssports.com/nfl/news/grading-nfl-qbs-on-rookie-contracts-bryce-young-cam-ward/",
+      "published_at": "2026-10-06T15:29:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Former NFL first-round pick abruptly retires after playing 12 snaps in Week 4, per report",
+      "summary": "The Chicago Bears were hit by a surprise retirement this week",
+      "url": "https://www.cbssports.com/nfl/news/marcus-davenport-nfl-first-round-pick-abruptly-retires/",
+      "published_at": "2026-10-06T15:20:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
