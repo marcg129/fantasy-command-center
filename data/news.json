@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T00:23:17.340783Z",
+  "generated_at": "2026-10-09T09:05:04.775719Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Cowboys should be afraid of this one nightmare stat heading into Week 5 Thursday night game with Buccaneers",
+      "summary": "Everything appears to favor Dallas on Thursday night, but the Buccaneers fit the profile of a desperate winless team that has historically been primed for a breakthrough",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-buccaneers-upset-prediction-nfl-2026/",
+      "published_at": "2026-10-09T03:21:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 5 picks: Experts face off on 49ers at Seahawks, Falcons vs. Ravens and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-picks-buccaneers-at-cowboys-49ers-at-seahawks/",
+      "published_at": "2026-10-09T01:16:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 5 NFL picks: Packers upset Bears, Rams edge Bills on 'MNF'",
+      "summary": "Pete Prisco reveals all of his Week 5 picks, including the Texans getting their first win and the Jets over the Browns",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-5-nfl-picks-odds/",
+      "published_at": "2026-10-09T01:13:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ranking all 32 NFL teams into tiers: 49ers among the elite, but some teams not as good as they seem",
+      "summary": "Plus, the Rams still sit among the NFL's best despite slow start, and two squads sit at the very bottom of the barrel",
+      "url": "https://www.cbssports.com/nfl/news/ranking-all-32-nfl-teams-into-tiers-49ers-rams-miami/",
+      "published_at": "2026-10-09T00:56:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Is Justin Herbert 'elite'? He is NOT even one of the 10 best quarterbacks in the NFL",
+      "summary": "Upon further review, Herbert's top-10 QB credentials should be revoked",
+      "url": "https://www.cbssports.com/nfl/news/justin-herbert-is-not-even-one-of-the-10-best-quarterbacks-nfl/",
+      "published_at": "2026-10-09T00:41:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Joey Porter Jr. ruled out of Cowboys' Thursday night showdown with Buccaneers",
       "summary": "Porter was unable to play in his second game with Dallas after being traded from Pittsburgh",
@@ -49,18 +109,6 @@
       "summary": "Sign up and bet on Thursday's Bucs vs. Cowboys TNF matchup with the latest FanDuel promo code to get bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-250-bonus-bets-buccaneers-cowboys-thursday-night-football/",
       "published_at": "2026-10-08T23:22:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Cowboys vs. Buccaneers Thursday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Cowboys vs. Buccaneers on Thursday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-cowboys-vs-buccaneers-thursday-night-football/",
-      "published_at": "2026-10-08T23:20:03Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -141,18 +189,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Cowboys should be afraid of this one nightmare stat heading into Week 5 Thursday night game with Buccaneers",
-      "summary": "Everything appears to favor Dallas on Thursday night, but the Buccaneers fit the profile of a desperate winless team that has historically been primed for a breakthrough",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-buccaneers-upset-prediction-nfl-2026/",
-      "published_at": "2026-10-08T20:13:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "It wouldn't shock me IF ... NFL Week 5: Nick Sirianni's seat heats up, Sean Payton takes back playcalling",
       "summary": "Could the 49ers plant their flag as the Super Bowl favorites? Will Jacoby Brissett be the latest QB to light up the Lions?",
       "url": "https://www.cbssports.com/nfl/news/it-wouldnt-shock-me-if-nfl-week-5-nick-siriannis-sean-payton/",
@@ -185,18 +221,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is Justin Herbert \"elite\"? He is NOT even one of the 10 best quarterbacks in the NFL",
-      "summary": "Upon further review, Herbert's top-10 QB credentials should be revoked",
-      "url": "https://www.cbssports.com/nfl/news/justin-herbert-is-not-even-one-of-the-10-best-quarterbacks-nfl/",
-      "published_at": "2026-10-08T14:56:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
@@ -245,30 +269,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Ranking all 32 NFL teams into tiers: 49ers among the elite, but some teams not as good as they seem",
-      "summary": "Plus, the Rams still sit among the NFL's best despite slow start, and two squads sit at the very bottom of the barrel",
-      "url": "https://www.cbssports.com/nfl/news/ranking-all-32-nfl-teams-into-tiers-49ers-rams-miami/",
-      "published_at": "2026-10-08T12:38:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 5 picks: Experts face off on Buccaneers at Cowboys, 49ers at Seahawks and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-picks-buccaneers-at-cowboys-49ers-at-seahawks/",
-      "published_at": "2026-10-08T12:12:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
