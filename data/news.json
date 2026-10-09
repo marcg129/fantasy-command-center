@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-09T16:59:41.081801Z",
+  "generated_at": "2026-10-09T22:38:39.334188Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,118 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 5 injury report: Eagles' Saquon Barkley and DeVonta Smith out, Bears' Caleb Williams questionable",
+      "summary": "Here's a look at the game designations for Week 5 in the NFL",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-injury-report-eagles-saquon-barkley-devonta-smith-out/",
+      "published_at": "2026-10-09T22:22:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "More alarming injury news for Eagles as they prepare to face Jaguars in London",
+      "summary": "Philadelphia's offense could be stuck in the mud once again on Sunday",
+      "url": "https://www.cbssports.com/nfl/news/injury-news-saquon-barkley-eagles-jaguars-london/",
+      "published_at": "2026-10-09T21:00:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Eagles releasing QB Andy Dalton: Possible landing spots for the signal caller include Vikings, Titans",
+      "summary": "Dalton will begin the process of finding a new team",
+      "url": "https://www.cbssports.com/nfl/news/eagles-releasing-veteran-qb-andy-dalton/",
+      "published_at": "2026-10-09T20:17:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Arvell Reese, Sonny Styles to meet in Week 5: Did Giants make right choice between first-round linebackers?",
+      "summary": "There might not have been a wrong answer for the Giants at pick No. 5 in the 2026 NFL Draft",
+      "url": "https://www.cbssports.com/nfl/news/arvell-reese-sonny-styles-did-giants-make-right-choice/",
+      "published_at": "2026-10-09T19:59:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Former NFL star calls out Cowboys for controversial two-point decision in fourth quarter: \"Wasn't smart'",
+      "summary": "Dez Bryant didn't like Dallas' call to go for two, and he may have been right",
+      "url": "https://www.cbssports.com/nfl/news/dez-bryant-calls-out-cowboys-for-two-point-decision-vs-buccanneers/",
+      "published_at": "2026-10-09T18:46:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ravens rule out Lamar Jackson for Week 5 matchup vs. Falcons due to ankle injury",
+      "summary": "Tyler Huntley will make his first start of the year in Atlanta",
+      "url": "https://www.cbssports.com/nfl/news/ravens-rule-out-lamar-jackson-for-week-5-matchup-vs-falcons/",
+      "published_at": "2026-10-09T18:12:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Mike Ditka's five greatest moments as a player and coach: Super Bowl XX takes top spot",
+      "summary": "Ditka's football journey was one of a kind",
+      "url": "https://www.cbssports.com/nfl/news/mike-ditkas-five-greatest-moments/",
+      "published_at": "2026-10-09T18:11:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 5 picks: Experts face off on 49ers at Seahawks, Falcons vs. Ravens and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-picks-buccaneers-at-cowboys-49ers-at-seahawks/",
+      "published_at": "2026-10-09T17:52:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Tributes pour in as NFL world mourns, remembers football giant and HOFer Mike Ditka",
       "summary": "A Hall of Fame coach who guided the iconic 1985 Bears to a Super Bowl XX title, Ditka won 106 games in Chicago, second in franchise history",
       "url": "https://www.cbssports.com/nfl/news/tributes-pour-in-as-nfl-world-remembers-mike-ditka/",
-      "published_at": "2026-10-09T16:51:37Z",
+      "published_at": "2026-10-09T17:16:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' Jerry Jones expresses interest in making trades despite embarrassing loss to Buccaneers",
+      "summary": "Despite a stunning home loss to Tampa Bay, Dallas sits at 2-3 in a wide-open NFC East with enough draft capital to make another splash before the deadline",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-jerry-jones-trades-despite-embarrassing-loss-buccaneers/",
+      "published_at": "2026-10-09T17:00:45Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -37,18 +145,6 @@
       "summary": "Ditka was a fixture in the NFL for more than 50 years",
       "url": "https://www.cbssports.com/nfl/news/mike-ditka-bears-super-bowl-winning-coach-dies-at-age-86/",
       "published_at": "2026-10-09T16:48:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys' Jerry Jones expresses interest in making trades despite embarrassing loss to Buccaneers",
-      "summary": "Despite a stunning home loss to Tampa Bay, Dallas sits at 2-3 in a wide-open NFC East with enough draft capital to make another splash before the deadline",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-jerry-jones-trades-despite-embarrassing-loss-buccaneers/",
-      "published_at": "2026-10-09T16:40:02Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -153,18 +249,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Arvell Reese, Sonny Styles to meet in Week 4: Did Giants make right choice between first-round linebackers?",
-      "summary": "There might not have been a wrong answer for the Giants at pick No. 5 in the 2026 NFL Draft",
-      "url": "https://www.cbssports.com/nfl/news/arvell-reese-sonny-styles-did-giants-make-right-choice/",
-      "published_at": "2026-10-09T13:20:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Week 5 NFL bold predictions: Bijan Robinson makes NFL primetime history, struggling Packers upset Bears",
       "summary": "Plus, the Dolphins finally get more points on the board and other bold predictions for Week 5",
       "url": "https://www.cbssports.com/nfl/news/week-5-nfl-bold-predictions-bijan-robinson-packers-upset-bears/",
@@ -249,18 +333,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 5 picks: Experts face off on 49ers at Seahawks, Falcons vs. Ravens and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-picks-buccaneers-at-cowboys-49ers-at-seahawks/",
-      "published_at": "2026-10-09T01:16:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Prisco's Week 5 NFL picks: Packers upset Bears, Rams edge Bills on 'MNF'",
       "summary": "Pete Prisco reveals all of his Week 5 picks, including the Texans getting their first win and the Jets over the Browns",
       "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-5-nfl-picks-odds/",
@@ -294,54 +366,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to claim $250 bonus bets by targeting Buccaneers vs. Cowboys on Thursday Night Football",
-      "summary": "Sign up and bet on Thursday's Bucs vs. Cowboys TNF matchup with the latest FanDuel promo code to get bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-250-bonus-bets-buccaneers-cowboys-thursday-night-football/",
-      "published_at": "2026-10-08T23:22:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bengals' Jordan Battle reveals subtle Malik Willis tell ahead of Week 5 matchup against Dolphins",
-      "summary": "Cincinnati might have a leg up on Miami thanks to this scouting revelation",
-      "url": "https://www.cbssports.com/nfl/news/bengals-jordan-battle-reveals-subtle-malik-willis-tell-dolphins/",
-      "published_at": "2026-10-08T23:13:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "The hidden impact of George Pickens: How Cowboys WR is helping unlock CeeDee Lamb",
-      "summary": "Pickens may not be leading the box score, but his ability to draw coverage and create explosive plays has become a key ingredient in Dallas' offensive success",
-      "url": "https://www.cbssports.com/nfl/news/george-pickens-stats-cowboys-wr-ceedee-lamb/",
-      "published_at": "2026-10-08T21:49:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys vs. Buccaneers prediction: Can Tampa Bay slow down CeeDee Lamb and high-powered Dallas offense?",
-      "summary": "Dallas brings a historically efficient scoring attack into Thursday night against an 0-4 Tampa Bay squad turning to rookie quarterback Jalon Daniels",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-vs-buccaneers-prediction-where-to-watch-tnf/",
-      "published_at": "2026-10-08T21:25:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
