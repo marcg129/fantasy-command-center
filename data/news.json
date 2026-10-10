@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T18:36:22.666726Z",
+  "generated_at": "2026-10-10T23:33:59.962203Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Vikings reportedly elevate Odell Beckham Jr. with Justin Jefferson, Jordan Addison questionable",
+      "summary": "The veteran receiver could make his Minnesota debut only days after signing with the team's practice squad",
+      "url": "https://www.cbssports.com/nfl/news/vikings-elevate-odell-beckham-jr-saints-wr-injury/",
+      "published_at": "2026-10-10T19:44:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Cardinals finalizing Marvin Harrison Jr. trade, former No. 4 pick inactive vs. Lions per report",
       "summary": "The former No. 4 overall pick is inactive against the Lions after Arizona reportedly informed him of its decision",
@@ -313,30 +325,6 @@
       "summary": "A look at some of the less talked-about games of the week",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-5-schedule-underrated-games/",
       "published_at": "2026-10-09T14:15:18Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Brian Schottenheimer considers staff changes after Cowboys' loss, Jerry Jones responds to embarrassing loss",
-      "summary": "What the Dallas coach and owner both said after Thursday night's humiliating home loss to a previously winless team",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-brian-schottenheimer-considers-staff-changes-jerry-jones/",
-      "published_at": "2026-10-09T13:34:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Dak Prescott takes issue with 'embarrassing' comment by heckler after Cowboys' loss to Bucs",
-      "summary": "A detractor prompted a sharp response from Prescott both in the hallway and at the podium",
-      "url": "https://www.cbssports.com/nfl/news/dak-prescott-takes-issue-embarrassing-comment-cowboys-bucs/",
-      "published_at": "2026-10-09T13:27:51Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
