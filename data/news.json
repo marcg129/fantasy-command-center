@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-10T12:32:41.610253Z",
+  "generated_at": "2026-10-10T18:36:22.666726Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Cardinals finalizing Marvin Harrison Jr. trade, former No. 4 pick inactive vs. Lions per report",
+      "summary": "The former No. 4 overall pick is inactive against the Lions after Arizona reportedly informed him of its decision",
+      "url": "https://www.cbssports.com/nfl/news/cardinals-marvin-harrison-jr-trade-2026/",
+      "published_at": "2026-10-10T18:05:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 5 NFL odds, spreads, totals, betting lines, for all 16 games, including Bears-Packers, Falcons-Ravens",
+      "summary": "The Week 5 NFL schedule is here, featuring pivotal matchups like 49ers vs. Seahawks, Falcons vs. Ravens and Bills vs. Rams",
+      "url": "https://www.cbssports.com/betting/news/week-5-nfl-betting-odds-spreads-totals-lines/",
+      "published_at": "2026-10-10T16:58:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Will the Marvin Harrison Jr. trade unlock his potential? History offers hope, and a warning",
+      "summary": "Harrison's time in Arizona is reportedly over. Here's what his trade value could look like, what history says about a fresh start and three teams that could be on the other end of the deal",
+      "url": "https://www.cbssports.com/nfl/news/history-offers-hope-warning-for-marvin-harrison-jr-trade/",
+      "published_at": "2026-10-10T16:21:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Where to watch Patriots vs. Raiders: Keys to victory, injury news for AFC clash",
+      "summary": "Everything you need to know to catch Sunday AFC showdown",
+      "url": "https://www.cbssports.com/nfl/news/where-to-watch-patriots-vs-raiders-prediction-pick-odds-streaming/",
+      "published_at": "2026-10-10T14:10:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Is Bijan Robinson the best running back since Barry Sanders? Here's what the numbers say",
+      "summary": "The Falcons star's first 55 games compare favorably with Barry Sanders and several modern legends, putting him on a potential path to Canton",
+      "url": "https://www.cbssports.com/nfl/news/bijan-robinson-stats-2026-falcons-barry-sanders/",
+      "published_at": "2026-10-10T14:09:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bryce Young's breakout: How Panthers QB is looking 'like Alabama Bryce' and leading NFL in passing yards",
+      "summary": "A stronger supporting cast and an offense built around his strengths have helped Young take the next step in Year 4",
+      "url": "https://www.cbssports.com/nfl/news/bryce-young-panthers-breakout-nfl-passing-yards/",
+      "published_at": "2026-10-10T12:19:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Falcons vs. Ravens: How to watch Bijan Robinson vs. Derrick Henry on 'SNF'",
       "summary": "Tyler Huntley steps in for an injured Lamar Jackson as Baltimore faces a surging Atlanta offense led by Bijan Robinson",
@@ -249,18 +321,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Week 5 NFL odds, spreads, totals, betting lines, for all 16 games, including Bears-Packers, Falcons-Ravens",
-      "summary": "The Week 5 NFL schedule is here, featuring pivotal matchups like 49ers vs. Seahawks, Falcons vs. Ravens and Bills vs. Rams",
-      "url": "https://www.cbssports.com/betting/news/week-5-nfl-betting-odds-spreads-lines-totals/",
-      "published_at": "2026-10-09T13:38:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Brian Schottenheimer considers staff changes after Cowboys' loss, Jerry Jones responds to embarrassing loss",
       "summary": "What the Dallas coach and owner both said after Thursday night's humiliating home loss to a previously winless team",
       "url": "https://www.cbssports.com/nfl/news/cowboys-brian-schottenheimer-considers-staff-changes-jerry-jones/",
@@ -277,90 +337,6 @@
       "summary": "A detractor prompted a sharp response from Prescott both in the hallway and at the podium",
       "url": "https://www.cbssports.com/nfl/news/dak-prescott-takes-issue-embarrassing-comment-cowboys-bucs/",
       "published_at": "2026-10-09T13:27:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 5 NFL bold predictions: Bijan Robinson makes NFL primetime history, struggling Packers upset Bears",
-      "summary": "Plus, the Dolphins finally get more points on the board and other bold predictions for Week 5",
-      "url": "https://www.cbssports.com/nfl/news/week-5-nfl-bold-predictions-bijan-robinson-packers-upset-bears/",
-      "published_at": "2026-10-09T12:53:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bucs embarrass Cowboys for their first win of 2026; Guardians force ALDS Game 5 vs. White Sox",
-      "summary": "Plus ranking every NBA team's offense for the 2026-27 season",
-      "url": "https://www.cbssports.com/nfl/news/bucs-cowboys-guardians-alds-white-sox/",
-      "published_at": "2026-10-09T12:48:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL odds: Week 5 parlays featuring favorites, underdogs include Bears vs. Packers, 49ers vs. Seahawks",
-      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 5 of the NFL season",
-      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-5-parlays-featuring-favorites-underdogs-include-bears-vs-packers-49ers-vs-seahawks/",
-      "published_at": "2026-10-09T12:00:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is Brock Purdy the 'best QB in NFL?' His case is real entering a MVP statement game in Seattle",
-      "summary": "Purdy enters Week 5 as one of the NFL's hottest MVP candidates, but will that remain the case after he faces the Seahawks?",
-      "url": "https://www.cbssports.com/nfl/news/is-49ers-brock-purdy-the-best-qb-nfl-entering-mvp-statement-game-seattle/",
-      "published_at": "2026-10-09T11:30:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Super Bowl champion Seahawks defense vs. Brock Purdy's 49ers will be one of Week 5's top battles. Here's why",
-      "summary": "Purdy is playing the best of any QB in the league this season, but now he'll face the NFL's No. 1 defense",
-      "url": "https://www.cbssports.com/nfl/news/super-bowl-champion-seahawks-defense-vs-brock-purdys-49ers/",
-      "published_at": "2026-10-09T11:28:11Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 5 odds, predictions, expert picks: Who has edge in Eagles vs. Jaguars in London? Will Texans win?",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 5",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-odds-predictions-expert-picks/",
-      "published_at": "2026-10-09T10:01:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 5 picks, odds: Steelers bounce back vs. Colts, Browns upset Jets",
-      "summary": "Jordan Dajani gives his picks for Week 5 of the 2026 NFL season",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-picks-odds-steelers-bounce-back-browns-upset-jets/",
-      "published_at": "2026-10-09T10:00:54Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
