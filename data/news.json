@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T23:33:59.962203Z",
+  "generated_at": "2026-10-11T05:47:13.808633Z",
   "lookback_days": 7,
   "article_count": 26,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Prisco's Week 5 NFL picks: Jaguars roll over Eagles, Packers upset Bears, Rams edge Bills on 'MNF'",
+      "summary": "Pete Prisco reveals all of his Week 5 picks, including the Texans getting their first win and the Jets over the Browns",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-5-nfl-picks-odds/",
+      "published_at": "2026-10-11T05:00:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Vikings reportedly elevate Odell Beckham Jr. with Justin Jefferson, Jordan Addison questionable",
       "summary": "The veteran receiver could make his Minnesota debut only days after signing with the team's practice squad",
@@ -306,18 +318,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Just how embarrassing was Dallas' loss to the Bucs? What went wrong and where Cowboys go from here",
-      "summary": "Dallas blew a golden chance to position themselves to capitalize on a weakened NFC East vs. the winless Bucs",
-      "url": "https://www.cbssports.com/nfl/news/dallas-loss-to-the-bucs-what-went-wrong-where-cowboys-go-from-here/",
-      "published_at": "2026-10-09T14:16:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
