@@ -1,6 +1,6 @@
 {
   "calibration_snapshot": true,
-  "generated_at": "2026-10-12T06:24:51.775105Z",
+  "generated_at": "2026-10-12T15:58:47.812870Z",
   "player_count": 1050,
   "players": {
     "10210": {
@@ -22851,7 +22851,7 @@
   },
   "season": 2026,
   "season_type": "regular",
-  "snapshot_local_time": "2026-10-12T02:24:51.775105-04:00",
+  "snapshot_local_time": "2026-10-12T11:58:47.812870-04:00",
   "snapshot_policy": "latest refresh through Thursday 18:00 America/New_York",
   "source": "Sleeper weekly projections",
   "source_url": "https://api.sleeper.app/v1/projections/nfl/regular/2026/5",
