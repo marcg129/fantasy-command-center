@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T22:59:50.637671Z",
+  "generated_at": "2026-10-13T06:47:31.364101Z",
   "lookback_days": 7,
   "article_count": 32,
   "sources": [
@@ -21,6 +21,102 @@
   ],
   "articles": [
     {
+      "title": "What we learned in NFL Week 5: Mike Evans is perfect fit with Brock Purdy, Josh Allen extends MVP lead",
+      "summary": "Plus, this NFL Draft class is looking excellent early",
+      "url": "https://www.cbssports.com/nfl/news/six-lessons-learned-nfl-week-5-mike-evans-brock-purdy-josh-allen/",
+      "published_at": "2026-10-13T05:32:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Sean McVay cannot rely on the Rams' special teams -- and the Rams must fix it before it's too late ... again",
+      "summary": "The Rams are 32nd in the NFL in special teams expected points added",
+      "url": "https://www.cbssports.com/nfl/news/sean-mcvay-cannot-rely-on-rams-special-teams/",
+      "published_at": "2026-10-13T05:22:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 5 grades for every team: Bills earn 'B+' for wild Monday night win, while two teams get failing marks",
+      "summary": "We're handing out grades for every Week 5 game",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-grades-for-every-team-patriots-packers-bears/",
+      "published_at": "2026-10-13T04:12:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Should winless Titans bench Cam Ward? Why abandoning the former No. 1 pick will not fix Tennessee's turmoil",
+      "summary": "Turning to Mitch Trubisky will not fix an offense averaging just 11.6 points or an expensive, revamped defense that has disappointed",
+      "url": "https://www.cbssports.com/nfl/news/why-titans-should-not-bench-cam-ward-robert-saleh/",
+      "published_at": "2026-10-13T01:18:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bill Belichick noticeably absent from Patriots' celebration of 2001 Super Bowl team",
+      "summary": "Belichick recently attended the Giants' Super Bowl reunion",
+      "url": "https://www.cbssports.com/nfl/news/bill-belichick-absent-patriots-celebration-2001-super-bowl-team/",
+      "published_at": "2026-10-13T01:16:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams vs. Bills prediction, odds: Matthew Stafford, Josh Allen clash in Week 5 'MNF' matchup",
+      "summary": "Here's how to watch Rams vs. Bills, along with the latest odds, key matchups and our Week 5 'Monday Night Football' prediction",
+      "url": "https://www.cbssports.com/nfl/news/rams-vs-bills-how-to-watch-prediction-odds-monday-night-football/",
+      "published_at": "2026-10-13T00:00:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 bonus bets by targeting Rams vs. Bills, NFL Monday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-rams-vs-bills-nfl-monday-night-football/",
+      "published_at": "2026-10-12T23:30:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 bonus bets by targeting Bills vs. Rams on Monday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets when you place your MNF wagers",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-250-bonus-bets-bills-rams-monday-night-football/",
+      "published_at": "2026-10-12T22:58:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Is DJ Moore playing on 'Monday Night Football?' A look at the Bills WR's status vs. Rams",
       "summary": "Moore was initially listed as questionable with a shoulder injury",
       "url": "https://www.cbssports.com/nfl/news/is-dj-moore-playing-on-mnf-bills-wrs-status-vs-rams/",
@@ -33,34 +129,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Bills vs. Rams, NFL Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Rams vs. Bills betting on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-bills-rams-monday-night-football/",
-      "published_at": "2026-10-12T22:10:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Cowboys hire former NFL head coach, Packers' DC to help fix struggling defense",
       "summary": "Brian Schottenheimer is calling in reinforcements after Thursday night's loss against the Bucs",
       "url": "https://www.cbssports.com/nfl/news/cowboys-hire-mike-pettine-to-help-defense-christian-parker/",
       "published_at": "2026-10-12T21:37:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams vs. Bills prediction, odds: Matthew Stafford, Josh Allen clash in Week 5 'MNF' matchup",
-      "summary": "Here's how to watch Rams vs. Bills, along with the latest odds, key matchups and our Week 5 'Monday Night Football' prediction",
-      "url": "https://www.cbssports.com/nfl/news/rams-vs-bills-how-to-watch-prediction-odds-monday-night-football/",
-      "published_at": "2026-10-12T21:02:54Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -114,18 +186,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Should winless Titans bench Cam Ward? Why abandoning the former No. 1 pick will not fix Tennessee's' turmoil",
-      "summary": "Turning to Mitch Trubisky will not fix an offense averaging just 11.6 points or an expensive, revamped defense that has disappointed",
-      "url": "https://www.cbssports.com/nfl/news/why-titans-should-not-bench-cam-ward-robert-saleh/",
-      "published_at": "2026-10-12T18:22:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -185,18 +245,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 bonus bets by targeting Bills vs. Rams, NFL Monday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-bills-vs-rams-nfl-monday-night-football/",
-      "published_at": "2026-10-12T14:47:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
@@ -297,30 +345,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 5 grades for every team: Patriots, Packers earn 'A+' while two teams get failing marks",
-      "summary": "We're handing out grades for every Week 5 game",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-grades-for-every-team-patriots-packers-bears/",
-      "published_at": "2026-10-12T04:27:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Are the Pack back? Green Bay, Jordan Love erupt in dominant win vs. Bears behind retooled offensive line",
-      "summary": "Love's 367 yards passing are the most by a Packers QB vs. the Bears at Lambeau Field in series history",
-      "url": "https://www.cbssports.com/nfl/news/are-the-pack-back-green-bay-jordan-love-erupt-dominant-win-bears/",
-      "published_at": "2026-10-12T03:38:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Mike Evans trolls Trevon Diggs with name-check in 49ers' win over Seahawks",
       "summary": "Evans explained that he asked, \"Who are you?\" before checking Diggs' jersey and realizing who was talking trash to him",
       "url": "https://www.cbssports.com/nfl/news/49ers-seahawks-mike-evans-trolls-trevon-diggs/",
@@ -373,30 +397,6 @@
       "summary": "Johnson joined Commanders fans in questioning a disastrous final sequence that cost Washington an opportunity to defeat the Giants",
       "url": "https://www.cbssports.com/nfl/news/commanders-giants-overtime-clock-management-magic-johnson/",
       "published_at": "2026-10-11T23:45:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Robert Saleh backs Cam Ward as Titans' starting QB despite 0-5 start",
-      "summary": "Robert Saleh says Tennessee will give Ward \"every opportunity to be successful\" despite the quarterback's limited second-year progress",
-      "url": "https://www.cbssports.com/nfl/news/titans-robert-saleh-cam-ward-starting-qb-2026/",
-      "published_at": "2026-10-11T23:25:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 in bonus bets for Ravens vs. Falcons on Sunday Night Football",
-      "summary": "Sign up and bet on the NFL Week 5 Ravens vs. Falcons SNF matchup with the latest FanDuel promo code",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-ravens-vs-falcons-sunday-night-football/",
-      "published_at": "2026-10-11T23:19:59Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
