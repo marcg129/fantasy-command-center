@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-13T21:14:42.173986Z",
+  "generated_at": "2026-10-14T01:13:30.177773Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Bills' Joe Brady threatens playing time 'consequences' for James Cook III over fumble issues",
+      "summary": "Cook coughed the ball up twice against the Rams in Week 5 and has four fumbles on the year",
+      "url": "https://www.cbssports.com/nfl/news/bills-joe-brady-threatens-playing-time-consequences-james-cook/",
+      "published_at": "2026-10-13T23:50:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams' Alaric Jackson suspended for punching Bills' Bradley Chubb",
+      "summary": "Alaric Jackson hit the Bills' pass-rusher with an apparent sucker-punch following Buffalo's wild Monday night win",
+      "url": "https://www.cbssports.com/nfl/news/rams-left-tackle-punches-bills-bradley-chubb-mnf/",
+      "published_at": "2026-10-13T23:08:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Saints owner Gayle Benson voices frustration with 1-4 record, emphasizes 'urgency' to improve",
+      "summary": "Benson turned up the heat on the Saints' coaching staff and roster during their three-game losing streak",
+      "url": "https://www.cbssports.com/nfl/news/saints-owner-gayle-benson-voices-frustration-urgency-to-improve/",
+      "published_at": "2026-10-13T22:44:46Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Micah Parsons rips into Jayden Daniels for 'disgusting' OT blunder: 'Probably cost Dan Quinn his job'",
+      "summary": "Commanders head coach Dan Quinn was Parsons' first NFL defensive coordinator with the Dallas Cowboys, and he's taking Quinn's side after Washington's overtime mistakes",
+      "url": "https://www.cbssports.com/nfl/news/micah-parsons-rips-into-commanders-jayden-daniels-mistake-vs-giants/",
+      "published_at": "2026-10-13T21:59:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jauan Jennings landing spots: Could veteran WR reunite with 49ers after slow start in Minnesota?",
+      "summary": "With Jennings' trade market reportedly set to heat up, these destinations would be ideal fits",
+      "url": "https://www.cbssports.com/nfl/news/jauan-jennings-landing-spots-nfl-trade-deadline/",
+      "published_at": "2026-10-13T21:52:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Rays-Guardians, MLB, college football on Tuesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL, college football betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rays-guardians-mlb-college-football-tuesday/",
+      "published_at": "2026-10-13T21:27:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Bears' Montez Sweat suspended for violating NFL's performance-enhancing substances policy",
       "summary": "Sweat will miss two important games before his return in November",
@@ -213,18 +285,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Rams left tackle throws punch at Bills' Bradley Chubb following Buffalo's stunning Monday night win",
-      "summary": "Alaric Jackson hit the Bills' pass-rusher with an apparent sucker-punch following Buffalo's wild Monday night win",
-      "url": "https://www.cbssports.com/nfl/news/rams-left-tackle-punches-bills-bradley-chubb-mnf/",
-      "published_at": "2026-10-13T13:03:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Top 10 best NFL free agent acquisitions through Week 5: Kenneth Walker III, Mike Evans on top",
       "summary": "A look at the biggest game-changing free agents through the first five weeks of the 2026 NFL season and how they've impacted their teams",
       "url": "https://www.cbssports.com/nfl/news/best-nfl-free-agent-acquisitions-kenneth-walker-mike-evans/",
@@ -337,30 +397,6 @@
       "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets when you place your MNF wagers",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-250-bonus-bets-bills-rams-monday-night-football/",
       "published_at": "2026-10-12T22:58:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is DJ Moore playing on 'Monday Night Football?' A look at the Bills WR's status vs. Rams",
-      "summary": "Moore was initially listed as questionable with a shoulder injury",
-      "url": "https://www.cbssports.com/nfl/news/is-dj-moore-playing-on-mnf-bills-wrs-status-vs-rams/",
-      "published_at": "2026-10-12T22:51:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys hire former NFL head coach, Packers' DC to help fix struggling defense",
-      "summary": "Brian Schottenheimer is calling in reinforcements after Thursday night's loss against the Bucs",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-hire-mike-pettine-to-help-defense-christian-parker/",
-      "published_at": "2026-10-12T21:37:59Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
