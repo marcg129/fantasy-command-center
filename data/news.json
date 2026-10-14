@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T07:38:47.566737Z",
+  "generated_at": "2026-10-14T13:44:06.400793Z",
   "lookback_days": 7,
-  "article_count": 32,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL coaching hot-seat rankings: Todd Bowles, Dan Quinn and Jim Harbaugh face mounting pressure",
+      "summary": "Quinn is one of several coaches who are feeling the heat",
+      "url": "https://www.cbssports.com/nfl/news/nfl-coach-hot-seat-rankings-week-6-dan-quinn-jim-harbaugh/",
+      "published_at": "2026-10-14T12:59:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 6 picks, odds: Panthers stun Eagles in Philly, Buccaneers pull off upset",
+      "summary": "Tyler Sullivan picks every game on the Week 6 schedule, including five locks against the spread",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-predictions-bets-odds-scores-panthers-eagles/",
+      "published_at": "2026-10-14T12:52:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Dodgers-Brewers, MLB, NFL, CFB on Wednesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL, college football betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-dodgers-brewers-mlb-nfl-cfb-on-wednesday/",
+      "published_at": "2026-10-14T12:39:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 6 NFL picks: Seahawks over Broncos on Thursday night, Buccaneers upset Steelers",
+      "summary": "Pete Prisco reveals all of his Week 6 picks, including the Packers over the Cowboys on 'Sunday Night Football'",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-6-nfl-picks-odds-predictions/",
+      "published_at": "2026-10-14T10:00:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Bills' Joe Brady threatens playing time 'consequences' for James Cook III over fumble issues",
       "summary": "Cook coughed the ball up twice against the Rams in Week 5 and has four fumbles on the year",
@@ -342,66 +390,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 5 grades for every team: Bills earn 'B+' for wild Monday night win, while two teams get failing marks",
-      "summary": "We're handing out grades for every Week 5 game",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-5-grades-for-every-team-patriots-packers-bears/",
-      "published_at": "2026-10-13T04:12:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bill Belichick noticeably absent from Patriots' celebration of 2001 Super Bowl team",
-      "summary": "Belichick recently attended the Giants' Super Bowl reunion",
-      "url": "https://www.cbssports.com/nfl/news/bill-belichick-absent-patriots-celebration-2001-super-bowl-team/",
-      "published_at": "2026-10-13T01:16:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams vs. Bills prediction, odds: Matthew Stafford, Josh Allen clash in Week 5 'MNF' matchup",
-      "summary": "Here's how to watch Rams vs. Bills, along with the latest odds, key matchups and our Week 5 'Monday Night Football' prediction",
-      "url": "https://www.cbssports.com/nfl/news/rams-vs-bills-how-to-watch-prediction-odds-monday-night-football/",
-      "published_at": "2026-10-13T00:00:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 bonus bets by targeting Bills vs. Rams on Monday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets when you place your MNF wagers",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-250-bonus-bets-bills-rams-monday-night-football/",
-      "published_at": "2026-10-12T22:58:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is DJ Moore playing on 'Monday Night Football?' A look at the Bills WR's status vs. Rams",
-      "summary": "Moore was initially listed as questionable with a shoulder injury",
-      "url": "https://www.cbssports.com/nfl/news/is-dj-moore-playing-on-mnf-bills-wrs-status-vs-rams/",
-      "published_at": "2026-10-12T22:51:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
