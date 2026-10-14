@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T18:37:56.975924Z",
+  "generated_at": "2026-10-14T23:14:48.368324Z",
   "lookback_days": 7,
   "article_count": 31,
   "sources": [
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Mike Renner's 2027 NFL Draft Big Board: Ranking the top 150 prospects at college football midway point",
+      "summary": "Ohio State wide receiver Jeremiah Smith leads the way while Drew Mestemaker and CJ Carr emerge as early contenders to go No. 1 overall",
+      "url": "https://www.cbssports.com/nfl/draft/news/renners-2027-nfl-draft-big-board-ranking-top-150-prospects/",
+      "published_at": "2026-10-14T22:51:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' Joey Porter Jr. breaks silence after missing Week 5 game and how much does he plan to play at Packers",
+      "summary": "Porter Jr. began to feel sick on the day of Dallas' Thursday Night Football game in Week 5",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-joey-porter-jr-breaks-silence-after-missing-week-5/",
+      "published_at": "2026-10-14T22:10:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL addresses safety concerns for Steelers-Saints game in France as protests in Paris continue",
+      "summary": "The league says it is still planning to play the game as originally scheduled",
+      "url": "https://www.cbssports.com/nfl/news/nfl-addresses-safety-concerns-steelers-saints-france-protests-paris/",
+      "published_at": "2026-10-14T21:48:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Dodgers, MLB, NFL, CFB on Wednesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL, college football betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-brewers-dodgers-mlb-nfl-cfb-on-wednesday/",
+      "published_at": "2026-10-14T21:08:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Shedeur Sanders just made a curious move that could signal a trade is coming in Cleveland",
+      "summary": "Sanders' decision to hire an agent comes as Cleveland carries four healthy quarterbacks and speculation builds",
+      "url": "https://www.cbssports.com/nfl/news/shedeur-sanders-trade-rumors-browns-qb-landing-spots/",
+      "published_at": "2026-10-14T19:20:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Agent's Take: Making sense of Eagles' salary cap manipulation after Lane Johnson's retirement",
+      "summary": "The Eagles kept Johnson on their 53-man roster after his abrupt Week 5 retirement. Here's a look at why and what they gain from it",
+      "url": "https://www.cbssports.com/nfl/news/agents-take-eagles-salary-cap-manipulation-lane-johnson-retirement/",
+      "published_at": "2026-10-14T19:06:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "A.J. Brown injury update: Patriots opening up WR's practice window with return imminent",
       "summary": "Brown suffered a high ankle sprain in New England's season-opening loss to Seattle",
@@ -66,18 +138,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Mike Renner's 2027 NFL Draft Big Board: Ranking the top 150 prospects at college football midway point",
-      "summary": "Ohio State wide receiver Jeremiah Smith leads the way while Drew Mestemaker and CJ Carr emerge as early contenders to go No. 1 overall",
-      "url": "https://www.cbssports.com/nfl/draft/news/renners-2027-nfl-draft-big-board-ranking-top-150-prospects/",
-      "published_at": "2026-10-14T17:26:17Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -193,18 +253,6 @@
       "summary": "Tyler Sullivan picks every game on the Week 6 schedule, including five locks against the spread",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-predictions-bets-odds-scores-panthers-eagles/",
       "published_at": "2026-10-14T12:52:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Dodgers-Brewers, MLB, NFL, CFB on Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL, college football betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-dodgers-brewers-mlb-nfl-cfb-on-wednesday/",
-      "published_at": "2026-10-14T12:39:52Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -337,54 +385,6 @@
       "summary": "Flores, Steve Wilks and Ray Horton have an ongoing lawsuit against the NFL for racial discrimination",
       "url": "https://www.cbssports.com/nfl/news/brian-flores-recruiting-memo-filled-with-racial-stereotypes-attorneys-claim/",
       "published_at": "2026-10-13T19:17:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 6 NFL odds, spreads, totals, lines for all 14 games, including Seahawks-Broncos, Packers-Cowboys",
-      "summary": "Week 6 opens with Broncos-Seahawks on Thursday, while Packers-Cowboys and 49ers-Commanders headline primetime.",
-      "url": "https://www.cbssports.com/betting/news/week-6-nfl-betting-odds-lines-totals-spreads/",
-      "published_at": "2026-10-13T18:14:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams release kicker Harrison Mevis after disastrous loss to Bills, sign Jets' practice squad kicker",
-      "summary": "Mevis hit just 55.6% of his field goal attempts this season, which ranks last in the NFL",
-      "url": "https://www.cbssports.com/nfl/news/rams-release-kicker-harrison-mevis-sign-jets-blake-grupe/",
-      "published_at": "2026-10-13T17:59:17Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Josh Allen heaps high praise on Matthew Stafford, says he does this one thing better than any QB ever",
-      "summary": "Tom Brady has previously given that title to Aaron Rodgers",
-      "url": "https://www.cbssports.com/nfl/news/josh-allen-heaps-praise-matthew-stafford-nfl/",
-      "published_at": "2026-10-13T16:34:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Ranking Week 5 coaching blunders: Did Sean McVay, Jim Harbaugh, or an NFC East coach have the worst gaffe?",
-      "summary": "From Dan Quinn heating up his hot seat in Washington to Jim Harbaugh owning up to a fourth-quarter collapse in Los Angeles, we rank the week's most brutal sideline decisions",
-      "url": "https://www.cbssports.com/nfl/news/ranking-week-5-coaching-blunders-sean-mcvay-nick-sirianni-dan-quinn/",
-      "published_at": "2026-10-13T16:34:10Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
