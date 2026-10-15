@@ -6,22 +6,22 @@
     5
   ],
   "current_week": 6,
-  "generated_at": "2026-10-13T07:01:44.061528Z",
+  "generated_at": "2026-10-15T05:04:44.226586Z",
   "minimum_completed_weeks": 2,
   "minimum_position_samples": 50,
   "positions": {
     "DEF": {
       "baseline_cv": 0.55,
-      "bias_ppr": 0.0031,
+      "bias_ppr": 0.0112,
       "blend_weight": 0.4526,
       "cv_used": 0.6634,
-      "empirical_cv": 0.8005,
-      "error_sd_ppr": 5.4654,
-      "mae_ppr": 4.1057,
+      "empirical_cv": 0.8007,
+      "error_sd_ppr": 5.4666,
+      "mae_ppr": 4.1138,
       "mean_projection_ppr": 6.8275,
       "mode": "empirical_blend",
       "n": 124,
-      "rmse_ppr": 5.4654
+      "rmse_ppr": 5.4666
     },
     "K": {
       "baseline_cv": 0.45,
