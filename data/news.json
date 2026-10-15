@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-14T23:14:48.368324Z",
+  "generated_at": "2026-10-15T04:39:34.778341Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 6 injury report: Broncos' Patrick Surtain, Talanoa Hufanga ruled out",
+      "summary": "Lamar Jackson, Caleb Williams and Michael Penix Jr. could be back under center this week, while the Eagles hope to regain Saquon Barkley",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-broncos-patrick-surtain-talanoa-hufanga-ruled-out/",
+      "published_at": "2026-10-15T01:00:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
     {
       "title": "Mike Renner's 2027 NFL Draft Big Board: Ranking the top 150 prospects at college football midway point",
       "summary": "Ohio State wide receiver Jeremiah Smith leads the way while Drew Mestemaker and CJ Carr emerge as early contenders to go No. 1 overall",
@@ -49,18 +61,6 @@
       "summary": "The league says it is still planning to play the game as originally scheduled",
       "url": "https://www.cbssports.com/nfl/news/nfl-addresses-safety-concerns-steelers-saints-france-protests-paris/",
       "published_at": "2026-10-14T21:48:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Dodgers, MLB, NFL, CFB on Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for MLB, NFL, college football betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-brewers-dodgers-mlb-nfl-cfb-on-wednesday/",
-      "published_at": "2026-10-14T21:08:33Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -385,6 +385,18 @@
       "summary": "Flores, Steve Wilks and Ray Horton have an ongoing lawsuit against the NFL for racial discrimination",
       "url": "https://www.cbssports.com/nfl/news/brian-flores-recruiting-memo-filled-with-racial-stereotypes-attorneys-claim/",
       "published_at": "2026-10-13T19:17:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams release kicker Harrison Mevis after disastrous loss to Bills, sign Jets' practice squad kicker",
+      "summary": "Mevis hit just 55.6% of his field goal attempts this season, which ranks last in the NFL",
+      "url": "https://www.cbssports.com/nfl/news/rams-release-kicker-harrison-mevis-sign-jets-blake-grupe/",
+      "published_at": "2026-10-13T17:59:17Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
