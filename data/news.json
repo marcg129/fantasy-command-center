@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16T00:24:28.122413Z",
+  "generated_at": "2026-10-16T07:10:02.982425Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -42,18 +42,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to land $1,500 bonus bets for Broncos vs. Seahawks on Thursday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Broncos vs. Seahawks on Thursday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-land-1500-bonus-bets-for-broncos-vs-seahawks-thursday-night-football/",
-      "published_at": "2026-10-15T23:21:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -337,6 +325,30 @@
       "summary": "We assess the NFL title race after Week 5 and identify three upcoming games that could reshape the Super Bowl picture",
       "url": "https://www.cbssports.com/nfl/news/super-bowl-stock-report-for-nfl-week-6/",
       "published_at": "2026-10-15T11:22:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 6 injury report: Broncos' Patrick Surtain, Talanoa Hufanga ruled out",
+      "summary": "Lamar Jackson, Caleb Williams and Michael Penix Jr. could be back under center this week, while the Eagles hope to regain Saquon Barkley",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-broncos-patrick-surtain-talanoa-hufanga-ruled-out/",
+      "published_at": "2026-10-15T01:00:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' Joey Porter Jr. breaks silence after missing Week 5 game and how much does he plan to play at Packers",
+      "summary": "Porter Jr. began to feel sick on the day of Dallas' Thursday Night Football game in Week 5",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-joey-porter-jr-breaks-silence-after-missing-week-5/",
+      "published_at": "2026-10-14T22:10:15Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
