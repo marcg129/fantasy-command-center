@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16T18:03:39.105992Z",
+  "generated_at": "2026-10-16T21:09:09.470296Z",
   "lookback_days": 7,
-  "article_count": 26,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 6 injury report: Lamar Jackson, Jalen Hurts sidelined; Caleb Williams could return",
+      "summary": "Tyler Huntley and Tanner McKee will start in place of Jackson and Hurts, while Michael Penix Jr. is cleared to face Chicago",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-lamar-jackson-jalen-hurts-caleb-williams/",
+      "published_at": "2026-10-16T20:59:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Josh Jacobs, Jonathon Cooper to come off NFL commissioner exempt list, eligible to return in Week 7",
+      "summary": "Both players will become eligible for Week 7, although their teams must determine whether they are ready to play",
+      "url": "https://www.cbssports.com/nfl/news/josh-jacobs-jonathon-cooper-nfl-commissioner-exempt-list-week-7-return/",
+      "published_at": "2026-10-16T20:26:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL odds: Week 6 parlays featuring favorites, underdogs include Panthers-Eagles, Texans-Jaguars",
+      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 6 of the NFL season",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-6-parlays-featuring-favorites-underdogs-include-panthers-eagles-texans-jaguars/",
+      "published_at": "2026-10-16T20:14:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jaylen Waddle trade revisited: Bo Nix, Broncos struggling to integrate speedy WR who's also dropping passes",
+      "summary": "Neither the Denver passing offense nor Waddle are playing well",
+      "url": "https://www.cbssports.com/nfl/news/jaylen-waddle-trade-revisited-bo-nix-broncos/",
+      "published_at": "2026-10-16T18:26:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Mike Macdonald shuts down potential Seahawks quarterback change, sticking with Sam Darnold",
+      "summary": "Darnold has thrown an NFL-high seven interceptions, but Macdonald stands behind his starter",
+      "url": "https://www.cbssports.com/nfl/news/seahawks-starting-qb-sam-darnold-mike-macdonald-2026/",
+      "published_at": "2026-10-16T17:47:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "The Broncos have a Bo Nix problem, and their Super Bowl window may force a tough decision",
       "summary": "Bo Nix keeps winning, but the Broncos can't ignore what the numbers say",
@@ -97,18 +157,6 @@
       "summary": "NFL Week 6 continues with Chiefs-Chargers and Packers-Cowboys on Sunday",
       "url": "https://www.cbssports.com/betting/news/week-6-nfl-betting-odds-spreads-lines-totals/",
       "published_at": "2026-10-16T14:19:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Who is Tanner McKee? Eagles QB gets biggest opportunity yet with Jalen Hurts sidelined",
-      "summary": "The former Stanford quarterback takes over for Jalen Hurts with Philadelphia trying to end a three-game skid and remain in the NFC East race",
-      "url": "https://www.cbssports.com/nfl/news/who-is-tanner-mckee-eagles-qb-nfl-jalen-hurts/",
-      "published_at": "2026-10-16T14:10:58Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -301,30 +349,6 @@
       "summary": "Sign up and bet on Thursday's Seahawks vs. Broncos matchup with the latest FanDuel promo code to get bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-350-bonus-bets-by-jumping-on-seahawks-vs-broncos-on-thursday-night-football/",
       "published_at": "2026-10-15T22:45:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Seahawks vs. Broncos odds, first touchdown scorer picks, predictions for Thursday Night Football, NFL Week 6",
-      "summary": "We look over the prediction markets at Kalshi for the first touchdown scorer in Seahawks vs. Broncos on TNF",
-      "url": "https://www.cbssports.com/prediction/news/seahawks-vs-broncos-odds-first-touchdown-scorer-picks-predictions-for-thursday-night-football-nfl-week-6/",
-      "published_at": "2026-10-15T21:40:17Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jayden Daniels takes blame for Commanders' embarrassing gaffe vs. Giants: 'It was a failure'",
-      "summary": "Daniels defended Dan Quinn on Thursday and shouldered full responsibility for Washington letting the clock run out in field goal range",
-      "url": "https://www.cbssports.com/nfl/news/jayden-daniels-takes-blame-commanders-gaffe-vs-giants/",
-      "published_at": "2026-10-15T20:32:07Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
