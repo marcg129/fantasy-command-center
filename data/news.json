@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-17T12:11:38.687907Z",
+  "generated_at": "2026-10-17T15:35:30.171638Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 6 odds, predictions, expert picks: Cowboys roll into Lambeau Field to face Packers",
+      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 6",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-and-predictions-spread-odds-best-bets/",
+      "published_at": "2026-10-17T15:22:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 6 picks: Our experts face off on Ravens at Browns, Packers vs. Cowboys and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict Week 6's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-experts-on-seahawks-broncos-ravens-browns/",
+      "published_at": "2026-10-17T15:22:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Eagles not planning to place Jalen Hurts on IR, as he deals with superficial blood clot, per report",
+      "summary": "Hurts is out indefinitely and will miss the game against the Panthers on Sunday",
+      "url": "https://www.cbssports.com/nfl/news/eagles-not-planning-to-place-jalen-hurts-on-ir/",
+      "published_at": "2026-10-17T15:17:33Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "A.J. Brown injury update: Latest rumors, news on WR's status for Patriots in Week 6",
+      "summary": "Brown suffered a high ankle sprain in Week 1 and has missed the last four games",
+      "url": "https://www.cbssports.com/nfl/news/a-j-brown-injury-update-rumors-news-wrs-status-patriots/",
+      "published_at": "2026-10-17T14:47:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 6 NFL odds, spreads, totals, lines for all 14 games, including Chargers-Chiefs, Packers-Cowboys",
+      "summary": "NFL Week 6 continues with Chiefs-Chargers and Packers-Cowboys on Sunday",
+      "url": "https://www.cbssports.com/betting/news/week-6-nfl-betting-odds-spreads-totals-lines/",
+      "published_at": "2026-10-17T14:46:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 6 injury report: Lamar Jackson, Jalen Hurts sidelined; Caleb Williams could return",
       "summary": "Tyler Huntley and Tanner McKee will start in place of Jackson and Hurts, while Michael Penix Jr. is cleared to face Chicago",
@@ -117,34 +177,10 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 6 picks: Our experts face off on Ravens at Browns, Packers vs. Cowboys and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict Week 6's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-experts-on-seahawks-broncos-ravens-browns/",
-      "published_at": "2026-10-16T15:54:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Christian Parker contradicts Jerry Jones, to stay on sideline as Cowboys defense seeks answers",
       "summary": "Parker says he will \"most likely\" remain on the sideline, but the addition of Mike Pettine underscores the urgency in Dallas",
       "url": "https://www.cbssports.com/nfl/news/cowboys-defense-christian-parker-booth-move-jerry-jones/",
       "published_at": "2026-10-16T14:53:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 6 NFL odds, spreads, totals, lines for all 14 games, including Chiefs-Chargers, Packers-Cowboys",
-      "summary": "NFL Week 6 continues with Chiefs-Chargers and Packers-Cowboys on Sunday",
-      "url": "https://www.cbssports.com/betting/news/week-6-nfl-betting-odds-spreads-lines-totals/",
-      "published_at": "2026-10-16T14:19:34Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -237,18 +273,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 6 odds, predictions, expert picks: Cowboys roll into Lambeau Field to face Packers",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 6",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-and-predictions-spread-odds-best-bets/",
-      "published_at": "2026-10-16T12:20:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Prisco's Week 6 NFL picks: Buccaneers upset Steelers, Falcons over Bears",
       "summary": "Pete Prisco reveals all of his Week 6 picks, including the Packers over the Cowboys on 'Sunday Night Football'",
       "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-6-nfl-picks-odds-predictions/",
@@ -325,18 +349,6 @@
       "summary": "Denver is coming off a lackluster win vs. the Chargers, while Seattle looks to rebound after falling to the 49ers",
       "url": "https://www.cbssports.com/nfl/news/broncos-vs-seahawks-how-to-watch-preview-prediction/",
       "published_at": "2026-10-15T22:58:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to claim $350 bonus bets by jumping on Seahawks vs. Broncos on Thursday Night Football",
-      "summary": "Sign up and bet on Thursday's Seahawks vs. Broncos matchup with the latest FanDuel promo code to get bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-350-bonus-bets-by-jumping-on-seahawks-vs-broncos-on-thursday-night-football/",
-      "published_at": "2026-10-15T22:45:44Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
