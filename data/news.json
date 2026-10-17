@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-17T18:30:26.765460Z",
+  "generated_at": "2026-10-17T22:19:13.927592Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL fines Raiders' Maxx Crosby nearly $24,000 to top list of Week 5 discipline",
+      "summary": "A look at the fines handed out by the league this week",
+      "url": "https://www.cbssports.com/nfl/news/nfl-fines-raiders-maxx-crosby-nearly-24000-week-5-discipline/",
+      "published_at": "2026-10-17T21:47:18Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears expected to start Caleb Williams vs. Falcons, per report",
+      "summary": "The Chicago Bears are likely getting their No. 1 pick back this week",
+      "url": "https://www.cbssports.com/nfl/news/bears-expected-to-start-caleb-williams-vs-falcons/",
+      "published_at": "2026-10-17T21:03:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Eagles place Jalen Hurts on IR, as he deals with superficial blood clot",
+      "summary": "Hurts is out indefinitely and will miss the game against the Panthers on Sunday, and at least three more",
+      "url": "https://www.cbssports.com/nfl/news/eagles-not-planning-to-place-jalen-hurts-on-ir/",
+      "published_at": "2026-10-17T20:32:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jalen Hurts blood clot: Expert weighs in on Eagles' situation, and when QB could return to the field",
+      "summary": "A cardiologist weighs in on how Hurts' condition contrasts with DVTs, standard treatment methods and what could determine the recovery timeline",
+      "url": "https://www.cbssports.com/nfl/news/jalen-hurts-blood-clot-expert-weighs-in-eagles-qb/",
+      "published_at": "2026-10-17T20:28:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "A.J. Brown injury update: Latest rumors, news on WR's status for Patriots in Week 6",
+      "summary": "Brown suffered a high ankle sprain in Week 1 and has missed the last four games",
+      "url": "https://www.cbssports.com/nfl/news/a-j-brown-injury-update-rumors-news-wrs-status-patriots/",
+      "published_at": "2026-10-17T20:23:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 6 injury report: Lamar Jackson, Jalen Hurts sidelined; Caleb Williams could return",
       "summary": "Tyler Huntley and Tanner McKee will start in place of Jackson and Hurts, while Michael Penix Jr. is cleared to face Chicago",
@@ -66,30 +126,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Eagles not planning to place Jalen Hurts on IR, as he deals with superficial blood clot, per report",
-      "summary": "Hurts is out indefinitely and will miss the game against the Panthers on Sunday",
-      "url": "https://www.cbssports.com/nfl/news/eagles-not-planning-to-place-jalen-hurts-on-ir/",
-      "published_at": "2026-10-17T15:17:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "A.J. Brown injury update: Latest rumors, news on WR's status for Patriots in Week 6",
-      "summary": "Brown suffered a high ankle sprain in Week 1 and has missed the last four games",
-      "url": "https://www.cbssports.com/nfl/news/a-j-brown-injury-update-rumors-news-wrs-status-patriots/",
-      "published_at": "2026-10-17T14:47:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
