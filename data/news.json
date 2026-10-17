@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16T21:09:09.470296Z",
+  "generated_at": "2026-10-17T00:29:23.789701Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -24,7 +24,7 @@
       "title": "NFL Week 6 injury report: Lamar Jackson, Jalen Hurts sidelined; Caleb Williams could return",
       "summary": "Tyler Huntley and Tanner McKee will start in place of Jackson and Hurts, while Michael Penix Jr. is cleared to face Chicago",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-lamar-jackson-jalen-hurts-caleb-williams/",
-      "published_at": "2026-10-16T20:59:31Z",
+      "published_at": "2026-10-16T21:57:37Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "injury",
@@ -85,18 +85,6 @@
       "summary": "Bo Nix keeps winning, but the Broncos can't ignore what the numbers say",
       "url": "https://www.cbssports.com/nfl/news/broncos-super-bowl-bo-nix-stats-2026/",
       "published_at": "2026-10-16T17:41:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Purdue-Washington, college football on Friday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL, college football betting on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-purdue-washington-college-football-friday/",
-      "published_at": "2026-10-16T17:21:37Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
