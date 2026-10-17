@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-17T15:35:30.171638Z",
+  "generated_at": "2026-10-17T18:30:26.765460Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,22 @@
   ],
   "articles": [
     {
-      "title": "NFL Week 6 odds, predictions, expert picks: Cowboys roll into Lambeau Field to face Packers",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 6",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-and-predictions-spread-odds-best-bets/",
-      "published_at": "2026-10-17T15:22:52Z",
+      "title": "NFL Week 6 injury report: Lamar Jackson, Jalen Hurts sidelined; Caleb Williams could return",
+      "summary": "Tyler Huntley and Tanner McKee will start in place of Jackson and Hurts, while Michael Penix Jr. is cleared to face Chicago",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-lamar-jackson-jalen-hurts-caleb-williams/",
+      "published_at": "2026-10-17T16:56:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Texans vs. Jaguars prediction: Marvin Harrison Jr. makes Houston debut in London",
+      "summary": "Everything you need to know to catch a key AFC South game in London",
+      "url": "https://www.cbssports.com/nfl/news/texans-vs-jaguars-prediction-where-to-watch-london/",
+      "published_at": "2026-10-17T16:08:44Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,10 +45,22 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 6 picks: Our experts face off on Ravens at Browns, Packers vs. Cowboys and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict Week 6's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-experts-on-seahawks-broncos-ravens-browns/",
-      "published_at": "2026-10-17T15:22:15Z",
+      "title": "Bills vs. Raiders prediction: Can Las Vegas end losing streak? Everything to know for AFC matchup",
+      "summary": "Everything you need to know to catch this AFC matchup",
+      "url": "https://www.cbssports.com/nfl/news/bills-vs-raiders-prediction-where-to-watch/",
+      "published_at": "2026-10-17T15:59:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers vs. Buccaneers prediction: Both teams hoping to build off of impressive Week 5 wins",
+      "summary": "Plus, where to watch, what to know and a preview from an NFL expert",
+      "url": "https://www.cbssports.com/nfl/news/where-to-watch-steelers-vs-buccaneers-prediction/",
+      "published_at": "2026-10-17T15:51:31Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -61,30 +85,6 @@
       "summary": "Brown suffered a high ankle sprain in Week 1 and has missed the last four games",
       "url": "https://www.cbssports.com/nfl/news/a-j-brown-injury-update-rumors-news-wrs-status-patriots/",
       "published_at": "2026-10-17T14:47:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 6 NFL odds, spreads, totals, lines for all 14 games, including Chargers-Chiefs, Packers-Cowboys",
-      "summary": "NFL Week 6 continues with Chiefs-Chargers and Packers-Cowboys on Sunday",
-      "url": "https://www.cbssports.com/betting/news/week-6-nfl-betting-odds-spreads-totals-lines/",
-      "published_at": "2026-10-17T14:46:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 6 injury report: Lamar Jackson, Jalen Hurts sidelined; Caleb Williams could return",
-      "summary": "Tyler Huntley and Tanner McKee will start in place of Jackson and Hurts, while Michael Penix Jr. is cleared to face Chicago",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-injury-report-lamar-jackson-jalen-hurts-caleb-williams/",
-      "published_at": "2026-10-16T21:57:37Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "injury",
@@ -265,18 +265,6 @@
       "summary": "The Raiders may have to abandon their usual four-man rush and turn up the pressure to slow Allen and Buffalo's play-action attack",
       "url": "https://www.cbssports.com/nfl/news/bills-vs-raiders-week-6-maxx-crosby-josh-allen/",
       "published_at": "2026-10-16T12:35:19Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 6 NFL picks: Buccaneers upset Steelers, Falcons over Bears",
-      "summary": "Pete Prisco reveals all of his Week 6 picks, including the Packers over the Cowboys on 'Sunday Night Football'",
-      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-6-nfl-picks-odds-predictions/",
-      "published_at": "2026-10-16T11:44:32Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
