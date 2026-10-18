@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-18T04:34:24.377456Z",
+  "generated_at": "2026-10-18T11:05:46.407035Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "Prisco's Week 6 NFL picks: Buccaneers upset Steelers, Packers over Cowboys",
+      "summary": "Pete Prisco reveals all of his Week 6 picks, including the Bills to rout the Raiders",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-6-nfl-picks-odds-predictions/",
+      "published_at": "2026-10-18T10:01:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 6 odds, predictions, expert picks: Cowboys roll into Lambeau Field to face Packers",
+      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 6",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-and-predictions-spread-odds-best-bets/",
+      "published_at": "2026-10-18T10:01:08Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 6 picks, odds: Our experts face off on Ravens at Browns, Packers vs. Cowboys and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict Week 6's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-experts-on-seahawks-broncos-ravens-browns/",
+      "published_at": "2026-10-18T10:00:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Texans vs. Jaguars odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 London game",
+      "summary": "The Jaguars are still in the UK and will now face the Texans, and here's a look at the trading markets available at Kalshi for the matchup at Wembley Stadium",
+      "url": "https://www.cbssports.com/prediction/news/texans-vs-jaguars-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-london-game/",
+      "published_at": "2026-10-18T09:30:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Cowboys vs. Packers prediction: Dak Prescott, Jordan Love set for high-flying showdown on 'SNF'",
       "summary": "The last time these two teams met in Week 4 of the 2025 season, they combined for the highest-scoring tie in the Super Bowl era",
@@ -341,42 +389,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Broncos' cheating accusation against Seahawks almost led to lawsuit in 2024, according to Mike Macdonald",
-      "summary": "This is one of the wildest stories you'll ever hear in the NFL",
-      "url": "https://www.cbssports.com/nfl/news/broncos-cheating-accusation-seahawks-mike-macdonald/",
-      "published_at": "2026-10-15T23:53:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Caleb Williams responds to critics after hamstring injury: 'My character's been attacked'",
-      "summary": "Williams participated fully in consecutive practices, but the Bears quarterback said he has not yet been cleared to return to game action",
-      "url": "https://www.cbssports.com/nfl/news/caleb-williams-injury-update-hamstring-tear-return-timeline/",
-      "published_at": "2026-10-15T23:41:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Dak Prescott delivers message to NFL players after Jalen Hurts' blood-clot diagnosis",
-      "summary": "The Cowboys quarterback called Hurts' condition \"scary\" and encouraged athletes to communicate openly with medical personnel",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-dak-prescott-jalen-hurts-blood-clot/",
-      "published_at": "2026-10-15T23:13:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     }
