@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-18T15:52:17.152141Z",
+  "generated_at": "2026-10-18T18:38:28.210394Z",
   "lookback_days": 7,
-  "article_count": 26,
+  "article_count": 24,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,34 @@
   ],
   "articles": [
     {
-      "title": "LOOK: Marvin Harrison Jr. makes first catch as a member of the Texans",
-      "summary": "Harrison Jr. made his Texans debut on Sunday against the Jaguars",
-      "url": "https://www.cbssports.com/nfl/news/look-marvin-harrison-jr-makes-first-catch-texans/",
-      "published_at": "2026-10-18T15:33:50Z",
+      "title": "NFL, Saints address plans for Paris game during Week 6 as protests escalate in France",
+      "summary": "The league says its continuing with its original plans and monitoring the situation",
+      "url": "https://www.cbssports.com/nfl/news/nfl-saints-address-paris-game-plans-week-6-protests/",
+      "published_at": "2026-10-18T17:41:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 6 odds, predictions, expert picks: Cowboys roll into Lambeau Field to face Packers",
+      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 6",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-and-predictions-spread-odds-best-bets/",
+      "published_at": "2026-10-18T17:30:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL addresses safety concerns for Steelers-Saints game in France as protests in Paris continue",
+      "summary": "The league says it is still planning to play the game as originally scheduled",
+      "url": "https://www.cbssports.com/nfl/news/nfl-addresses-safety-concerns-steelers-saints-france-protests-paris/",
+      "published_at": "2026-10-18T16:34:26Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -34,9 +58,69 @@
     },
     {
       "title": "Week 6 NFL odds, spreads, totals, lines for every game, including Chargers-Chiefs, Packers-Cowboys",
-      "summary": "NFL Week 6 continues with Chiefs-Chargers and Packers-Cowboys on Sunday",
+      "summary": "See everything you need to know to bet on the NFL in our full NFL betting guide for Week 6",
       "url": "https://www.cbssports.com/betting/news/week-6-nfl-spreads-betting-odds-totals-lines/",
-      "published_at": "2026-10-18T15:31:26Z",
+      "published_at": "2026-10-18T16:15:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Steelers-Buccaneers, Chargers-Chiefs, NFL Week 6",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL betting on Sunday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-steelers-buccaneers-chargers-chiefs-nfl-week-6/",
+      "published_at": "2026-10-18T16:13:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Browns-Ravens, Chargers-Chiefs, NFL Week 6",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Sunday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-browns-ravens-chargers-chiefs-nfl-week-6/",
+      "published_at": "2026-10-18T16:08:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers vs. Buccaneers odds, predictions: Use Polymarket promo code CBSSPORTS in NFL Week 6 for $25 bonus",
+      "summary": "Aaron Rodgers and the Steelers visit the Bucs in Week 6, and we're taking a look at the prediction markets available on Polymarket",
+      "url": "https://www.cbssports.com/prediction/news/steelers-vs-buccaneers-odds-predictions-use-polymarket-promo-code-cbssports-in-nfl-week-6-for-25-bonus/",
+      "published_at": "2026-10-18T16:01:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears vs. Falcons odds, predictions: Use Polymarket promo code CBSSPORTS to get a $25 bonus for NFL Week 6",
+      "summary": "Atlanta clashes with Chicago and sports fans can use the latest Polymarket promo code to make predictions for Sunday's game",
+      "url": "https://www.cbssports.com/prediction/news/bears-vs-falcons-odds-predictions-use-polymarket-promo-code-cbssports-25-bonus-nfl-week-6/",
+      "published_at": "2026-10-18T16:01:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "LOOK: Marvin Harrison Jr. makes first catch as a member of the Texans",
+      "summary": "Harrison Jr. made his Texans debut on Sunday against the Jaguars",
+      "url": "https://www.cbssports.com/nfl/news/look-marvin-harrison-jr-makes-first-catch-texans/",
+      "published_at": "2026-10-18T15:33:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -73,30 +157,6 @@
       "summary": "We'll go over the prediction markets at Kalshi for the first touchdown scorer in Cowboys vs. Packers on Sunday Night Football",
       "url": "https://www.cbssports.com/prediction/news/cowboys-vs-packers-odds-picks-first-touchdown-predictions-for-sunday-night-football-week-6/",
       "published_at": "2026-10-18T14:00:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Steelers-Buccaneers, Chiefs-Chargers, NFL Week 6",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL betting on Sunday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-steelers-buccaneers-chiefs-chargers-nfl-week-6/",
-      "published_at": "2026-10-18T13:53:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Ravens-Browns, Chargers-Chiefs, NFL Week 6",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Sunday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-ravens-browns-chargers-chiefs-nfl-week-6/",
-      "published_at": "2026-10-18T13:24:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -165,30 +225,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Chargers vs. Chiefs odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 division game",
-      "summary": "The Chargers seek their first win while the Chiefs look to stay undefeated when the two sides meet in Week 6",
-      "url": "https://www.cbssports.com/prediction/news/chargers-vs-chiefs-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-division-game/",
-      "published_at": "2026-10-18T12:01:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cardinals vs. Rams odds, predictions: Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 6 division game",
-      "summary": "The Rams host the Cardinals in an NFC West battle Sunday, and we're looking at the trading markets available on the game at Kalshi",
-      "url": "https://www.cbssports.com/prediction/news/cardinals-vs-rams-odds-predictions-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-6-division-game/",
-      "published_at": "2026-10-18T12:00:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Texans vs. Jaguars prediction: Marvin Harrison Jr. makes Houston debut in London",
       "summary": "Everything you need to know to catch a key AFC South game in London",
       "url": "https://www.cbssports.com/nfl/news/texans-vs-jaguars-prediction-where-to-watch-london/",
@@ -213,34 +249,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Bills vs. Raiders odds, picks, Week 6 NFL predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-      "summary": "The Bills aim to move to 5-1 when they face the Raiders, who will try to snap a two-game losing streak",
-      "url": "https://www.cbssports.com/prediction/news/bills-vs-raiders-odds-picks-week-6-nfl-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-      "published_at": "2026-10-18T11:00:47Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Prisco's Week 6 NFL picks: Buccaneers upset Steelers, Packers over Cowboys",
       "summary": "Pete Prisco reveals all of his Week 6 picks, including the Bills to rout the Raiders",
       "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-6-nfl-picks-odds-predictions/",
       "published_at": "2026-10-18T10:01:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 6 odds, predictions, expert picks: Cowboys roll into Lambeau Field to face Packers",
-      "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 6",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-picks-and-predictions-spread-odds-best-bets/",
-      "published_at": "2026-10-18T10:01:08Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -294,42 +306,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Eagles place Jalen Hurts on IR, as he deals with superficial blood clot",
-      "summary": "Hurts is out indefinitely and will miss the game against the Panthers on Sunday, and at least three more",
-      "url": "https://www.cbssports.com/nfl/news/eagles-not-planning-to-place-jalen-hurts-on-ir/",
-      "published_at": "2026-10-17T20:32:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jalen Hurts blood clot: Expert weighs in on Eagles' situation, and when QB could return to the field",
-      "summary": "A cardiologist weighs in on how Hurts' condition contrasts with DVTs, standard treatment methods and what could determine the recovery timeline",
-      "url": "https://www.cbssports.com/nfl/news/jalen-hurts-blood-clot-expert-weighs-in-eagles-qb/",
-      "published_at": "2026-10-17T20:28:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "A.J. Brown injury update: Latest rumors, news on WR's status for Patriots in Week 6",
-      "summary": "Brown suffered a high ankle sprain in Week 1 and has missed the last four games",
-      "url": "https://www.cbssports.com/nfl/news/a-j-brown-injury-update-rumors-news-wrs-status-patriots/",
-      "published_at": "2026-10-17T20:23:11Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
