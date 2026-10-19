@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-19T04:41:03.862080Z",
+  "generated_at": "2026-10-19T13:16:27.851992Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "Rams, Giants among NFL Week 6 disasters; inside wildest day ever in college football",
+      "summary": "Plus, why the Rays have all the momentum entering ALCS Game 6",
+      "url": "https://www.cbssports.com/nfl/news/rams-giants-among-nfl-week-6-disasters-inside-wildest-day-ever-in-college-football/",
+      "published_at": "2026-10-19T12:53:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams' Kyren Williams questions playing time after offensive issues: 'Probably because I'm not out there'",
+      "summary": "Williams logged a season-low 13 touches in Los Angeles' loss to the Cardinals",
+      "url": "https://www.cbssports.com/nfl/news/rams-rb-kyren-williams-questions-playing-time/",
+      "published_at": "2026-10-19T12:50:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 early odds: Undefeated Chiefs are underdogs, first-place Browns are favorites",
+      "summary": "The early Week 7 board includes a surprising underdog spot for the undefeated Chiefs and a dramatic Cowboys-Eagles shift following the Jalen Hurts news",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-odds-2026-early-lines-chiefs-seahawks-packers-lions-browns/",
+      "published_at": "2026-10-19T12:48:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cover 32: C.J. Stroud has flipped the script, is set to cash in; plus game balls, biggest gaffes from Week 6",
+      "summary": "Tyler Sullivan dives into the biggest items from Week 6 in the NFL, including Travis Hunter's costly penalty and a breakout performance from a Steelers rookie",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-cover-32-c-j-stroud-game-balls-biggest-gaffes/",
+      "published_at": "2026-10-19T12:38:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Why Cowboys' star-studded offense has suddenly gone silent under Brian Schottenheimer",
+      "summary": "The Cowboys' defensive problems were predictable, but their offensive collapse was not",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-offensive-struggles-dak-prescott-brian-schottenheimer-2026/",
+      "published_at": "2026-10-19T12:13:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "49ers vs. Commanders how to watch: 'Monday Night Football' time, channel, odds and prediction",
+      "summary": "San Francisco can improve to 6-0 and strengthen its NFC West lead, while Washington enters Levi's Stadium looking to pull off a sizable road upset",
+      "url": "https://www.cbssports.com/nfl/news/49ers-vs-commanders-where-to-watch-tv-channel-odds-prediction/",
+      "published_at": "2026-10-19T11:31:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants have a QB controversy: J.J. McCarthy makes case to replace Jameis Winston",
+      "summary": "The Giants must decide whether to ride McCarthy's momentum immediately or give him the Week 8 bye to prepare for a potential change",
+      "url": "https://www.cbssports.com/nfl/news/j-j-mccarthy-vs-jameis-winston-giants-starting-qb-texans/",
+      "published_at": "2026-10-19T11:31:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Has the Travis Hunter breakout arrived? Jacksonville CB/WR showcases long-term, two-way potential vs. Texans",
       "summary": "Hunter is hitting his stride with his utilization in 2026, making history with an interception and a receiving touchdown in Week 6",
@@ -313,30 +397,6 @@
       "summary": "The league says it is still planning to play the game as originally scheduled",
       "url": "https://www.cbssports.com/nfl/news/nfl-addresses-safety-concerns-steelers-saints-france-protests-paris/",
       "published_at": "2026-10-18T16:34:26Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 6 NFL odds, spreads, totals, lines for every game, including Chargers-Chiefs, Packers-Cowboys",
-      "summary": "See everything you need to know to bet on the NFL in our full NFL betting guide for Week 6",
-      "url": "https://www.cbssports.com/betting/news/week-6-nfl-spreads-betting-odds-totals-lines/",
-      "published_at": "2026-10-18T16:15:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bears vs. Falcons odds, predictions: Use Polymarket promo code CBSSPORTS to get a $25 bonus for NFL Week 6",
-      "summary": "Atlanta clashes with Chicago and sports fans can use the latest Polymarket promo code to make predictions for Sunday's game",
-      "url": "https://www.cbssports.com/prediction/news/bears-vs-falcons-odds-predictions-use-polymarket-promo-code-cbssports-25-bonus-nfl-week-6/",
-      "published_at": "2026-10-18T16:01:16Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
