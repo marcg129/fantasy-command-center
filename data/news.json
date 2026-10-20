@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-20T04:51:29.936313Z",
+  "generated_at": "2026-10-20T11:37:23.505171Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Draft's first-round gamble: What Jets, Browns can learn from Super Bowl winners and failed rebuilds",
+      "summary": "Multiple first-round picks helped the Chiefs, Eagles and Seahawks win Super Bowls, but the Jets and Browns know the other side of the story",
+      "url": "https://www.cbssports.com/nfl/news/nfl-draft-first-round-gamble-what-jets-browns-can-learn/",
+      "published_at": "2026-10-20T11:33:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Revisiting the 2026 NFL Draft: Evaluating how well Seahawks have done re-tooling Super Bowl roster",
+      "summary": "Injuries to top picks like Jadarian Price and Bud Clark have derailed early returns of Seattle's draft class",
+      "url": "https://www.cbssports.com/nfl/news/revisiting-the-2026-nfl-draft-seattle-seahawks-roster/",
+      "published_at": "2026-10-20T11:32:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 picks and score predictions: Bears top Patriots in Thursday thriller, Chiefs edge Seahawks",
+      "summary": "Here's your weekly dose of John Breech's NFL picks",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-score-predictions-odds-chiefs-seahawks/",
+      "published_at": "2026-10-20T11:00:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jalen Hurts blood clots: Biggest unanswered questions for Eagles about star QB's health",
+      "summary": "The Eagles and Hurts' agent revealed more information about the quarterback's blood clot situation on Monday, but there are still lingering questions",
+      "url": "https://www.cbssports.com/nfl/news/biggest-unanswered-questions-eagles-jalen-hurts/",
+      "published_at": "2026-10-20T10:01:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Commanders' Terry McLaurin carted off after knee injury vs. 49ers: 'There's fear'",
+      "summary": "McLaurin went down while running a route late in the first quarter",
+      "url": "https://www.cbssports.com/nfl/news/commanders-terry-mclaurin-knee-injury-monday-night-football/",
+      "published_at": "2026-10-20T04:41:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 6 grades for every team that played: 49ers hold off furious Commanders rally, Colts get 'F'",
       "summary": "We're handing out grades for every Week 6 game, and we don't hold back",
@@ -126,18 +186,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams' Kyren Williams questions playing time after offensive issues: 'Probably because I'm not out there'",
-      "summary": "Williams logged a season-low 13 touches in Los Angeles' loss to the Cardinals",
-      "url": "https://www.cbssports.com/nfl/news/rams-rb-kyren-williams-questions-playing-time/",
-      "published_at": "2026-10-19T20:45:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -325,66 +373,6 @@
       "summary": "The incident resulted in Gardner-Johnson's second career ejection",
       "url": "https://www.cbssports.com/nfl/news/bills-c-j-gardner-johnson-ejected-raiders-spitting/",
       "published_at": "2026-10-19T13:33:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams, Giants among NFL Week 6 disasters; inside wildest day ever in college football",
-      "summary": "Plus, why the Rays have all the momentum entering ALCS Game 6",
-      "url": "https://www.cbssports.com/nfl/news/rams-giants-among-nfl-week-6-disasters-inside-wildest-day-ever-in-college-football/",
-      "published_at": "2026-10-19T12:53:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 7 early odds: Undefeated Chiefs are underdogs, first-place Browns are favorites",
-      "summary": "The early Week 7 board includes a surprising underdog spot for the undefeated Chiefs and a dramatic Cowboys-Eagles shift following the Jalen Hurts news",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-odds-2026-early-lines-chiefs-seahawks-packers-lions-browns/",
-      "published_at": "2026-10-19T12:48:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cover 32: C.J. Stroud has flipped the script, is set to cash in; plus game balls, biggest gaffes from Week 6",
-      "summary": "Tyler Sullivan dives into the biggest items from Week 6 in the NFL, including Travis Hunter's costly penalty and a breakout performance from a Steelers rookie",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-6-cover-32-c-j-stroud-game-balls-biggest-gaffes/",
-      "published_at": "2026-10-19T12:38:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Why Cowboys' star-studded offense has suddenly gone silent under Brian Schottenheimer",
-      "summary": "The Cowboys' defensive problems were predictable, but their offensive collapse was not",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-offensive-struggles-dak-prescott-brian-schottenheimer-2026/",
-      "published_at": "2026-10-19T12:13:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Giants have a QB controversy: J.J. McCarthy makes case to replace Jameis Winston",
-      "summary": "The Giants must decide whether to ride McCarthy's momentum immediately or give him the Week 8 bye to prepare for a potential change",
-      "url": "https://www.cbssports.com/nfl/news/j-j-mccarthy-vs-jameis-winston-giants-starting-qb-texans/",
-      "published_at": "2026-10-19T11:31:12Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
