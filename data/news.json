@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-19T23:42:41.073551Z",
+  "generated_at": "2026-10-20T04:51:29.936313Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,15 +21,39 @@
   ],
   "articles": [
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Commanders vs. 49ers on Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Commanders vs. 49ers on Monday Night Football",
-      "url": "https://www.cbssports.com/nfl/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-commanders-vs-49ers-on-monday-night-football/",
-      "published_at": "2026-10-19T23:11:32Z",
+      "title": "NFL Week 6 grades for every team that played: 49ers hold off furious Commanders rally, Colts get 'F'",
+      "summary": "We're handing out grades for every Week 6 game, and we don't hold back",
+      "url": "https://www.cbssports.com/nfl/news/nfl-grades-week-6-browns-ravens-afc-colts-2026/",
+      "published_at": "2026-10-20T03:55:14Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFC East makes unwanted history as first division ever to go winless in consecutive weeks",
+      "summary": "The division is 0-6-2 since Week 5",
+      "url": "https://www.cbssports.com/nfl/news/nfc-east-makes-unwanted-history-nfl/",
+      "published_at": "2026-10-20T03:51:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "49ers' Mike Evans ruled out with Achilles injury after leaving game late in first half",
+      "summary": "Evans was having a good first half before exiting",
+      "url": "https://www.cbssports.com/nfl/news/is-mike-evans-playing-monday-night-football/",
+      "published_at": "2026-10-20T02:16:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
       "confidence": 0.88
     },
     {
@@ -49,18 +73,6 @@
       "summary": "Diggs is officially listed as questionable with a hamstring injury",
       "url": "https://www.cbssports.com/nfl/news/is-stefon-diggs-playing-tonight-injury-update-commanders-vs-49ers/",
       "published_at": "2026-10-19T22:49:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is Mike Evans playing on Monday night? A look at the 49ers WR's status vs. Commanders",
-      "summary": "Evans is officially listed as questionable for Week 6",
-      "url": "https://www.cbssports.com/nfl/news/is-mike-evans-playing-monday-night-football/",
-      "published_at": "2026-10-19T22:47:47Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "injury",
