@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T17:10:00.173479Z",
+  "generated_at": "2026-10-20T21:37:34.150452Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -20,6 +20,138 @@
     }
   ],
   "articles": [
+    {
+      "title": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, per report",
+      "summary": "The NFL concluded the process to clear Hurts for Week 5 in London was handled appropriately",
+      "url": "https://www.cbssports.com/nfl/news/eagles-will-not-be-punished-jalen-hurts-blood-clots-situation/",
+      "published_at": "2026-10-20T20:54:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Lions expect Kerby Joseph to play in 2026, Brian Branch nears return: Can Detroit defense turn a corner?",
+      "summary": "With a healthy safety tandem, the Lions might be in for a defensive renaissance",
+      "url": "https://www.cbssports.com/nfl/news/lions-kerby-joseph-brian-branch-can-detroit-defense-turn-corner/",
+      "published_at": "2026-10-20T19:58:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Commanders' Terry McLaurin out for the season after knee injury on 'MNF'",
+      "summary": "McLaurin suffered a torn patellar tendon in Washington's loss vs. the 49ers",
+      "url": "https://www.cbssports.com/nfl/news/commanders-terry-mclaurin-knee-injury-monday-night-football/",
+      "published_at": "2026-10-20T19:26:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Draft's first-round gamble: What Jets, Browns can learn from Super Bowl winners and failed rebuilds",
+      "summary": "Multiple first-round picks helped the Chiefs, Eagles and Seahawks win Super Bowls, but the Jets and Browns know the other side of the story",
+      "url": "https://www.cbssports.com/nfl/news/nfl-draft-first-round-gamble-what-jets-browns-can-learn/",
+      "published_at": "2026-10-20T19:18:08Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Grading and ranking NFL first-year head coaches in new places after Week 6",
+      "summary": "How the league's 10 new head coaches rank through the first third of the 2026 regular season",
+      "url": "https://www.cbssports.com/nfl/news/grading-ranking-nfl-first-year-head-coaches/",
+      "published_at": "2026-10-20T19:03:29Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Mr. Irrelevant to Mr. Efficient: How Brock Purdy became NFL's all-time passer rating king",
+      "summary": "A former seventh-round draft pick is now the greatest per-throw passer in league history",
+      "url": "https://www.cbssports.com/nfl/news/mr-irrelevant-to-mr-efficient-brock-purdy-nfls-all-time-passer-rating/",
+      "published_at": "2026-10-20T18:39:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Are the Rams cooked? A look at why Sean McVay's team is so disappointing, and if they can bounce back",
+      "summary": "A disastrous special teams unit, Matthew Stafford's missing deep ball and a flurry of key injuries have sent the preseason Super Bowl favorites spiraling to a 2-4 start",
+      "url": "https://www.cbssports.com/nfl/news/inside-look-at-why-rams-are-so-disappointing/",
+      "published_at": "2026-10-20T18:26:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jalen Hurts blood clot diagnosis timeline: Where the situation started, how it developed and what now",
+      "summary": "A look at everything that's happened with Hurts' health",
+      "url": "https://www.cbssports.com/nfl/news/jalen-hurts-blood-clot-timeline-what-to-know/",
+      "published_at": "2026-10-20T18:22:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams QB Matthew Stafford on verge of tying NFL record for most losses ever by a quarterback",
+      "summary": "While it's not a record Stafford likely wants to hold, it does show he's been solid enough to stick around this long",
+      "url": "https://www.cbssports.com/nfl/news/rams-matthew-stafford-verge-tying-nfl-record-most-qb-losses/",
+      "published_at": "2026-10-20T18:21:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "What is the 'Peanut Punch' showing up across NFL? Why it's changing how defenses attack the football",
+      "summary": "What was once a novelty is now a tool every defensive player uses",
+      "url": "https://www.cbssports.com/nfl/news/what-is-the-peanut-punch-nfl-football/",
+      "published_at": "2026-10-20T17:57:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jim Nantz says viral 'Peanut Punch' sparked calls from Josh Allen and a former U.S. President",
+      "summary": "Nantz had some notable names checking in on him after the viral punch-out attempt in Week 6",
+      "url": "https://www.cbssports.com/nfl/news/jim-nantz-viral-peanut-punch-sparked-calls-josh-allen-u-s-president/",
+      "published_at": "2026-10-20T17:47:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "6 lessons learned in Week 6: Bears' defense gets a weapon back, lackluster Giants have two superstars",
       "summary": "Plus, the NFC East makes unwanted history, and it might not get better",
@@ -81,46 +213,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Jalen Hurts blood clot diagnosis timeline: Where the situation started, how it developed and what now",
-      "summary": "A look at everything that's happened with Hurts' health",
-      "url": "https://www.cbssports.com/nfl/news/jalen-hurts-blood-clot-timeline-what-to-know/",
-      "published_at": "2026-10-20T13:49:26Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for 76ers-Knicks, Thunder-Spurs, NBA Opening Night",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, NFL betting on Tuesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-76ers-knicks-thunder-spurs-nba-opening-night/",
-      "published_at": "2026-10-20T13:33:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Dan Quinn denies confusion after viral fourth-down clip in Commanders loss to 49ers",
       "summary": "Broadcast cameras appeared to catch Washington's head coach surprised by a turnover on downs against the 49ers, but he insists he was just fielding a question from his staff",
       "url": "https://www.cbssports.com/nfl/news/dan-quinn-viral-fourth-down-clip-commanders-vs-49ers/",
       "published_at": "2026-10-20T13:12:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Grading and ranking NFL first-year head coaches in new places after Week 6",
-      "summary": "How the league's 10 new head coaches rank through the first third of the 2026 regular season",
-      "url": "https://www.cbssports.com/nfl/news/grading-ranking-nfl-first-year-head-coaches/",
-      "published_at": "2026-10-20T13:07:28Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -165,18 +261,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Draft's first-round gamble: What Jets, Browns can learn from Super Bowl winners and failed rebuilds",
-      "summary": "Multiple first-round picks helped the Chiefs, Eagles and Seahawks win Super Bowls, but the Jets and Browns know the other side of the story",
-      "url": "https://www.cbssports.com/nfl/news/nfl-draft-first-round-gamble-what-jets-browns-can-learn/",
-      "published_at": "2026-10-20T11:33:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Revisiting the 2026 NFL Draft: Evaluating how well Seahawks have done re-tooling Super Bowl roster",
       "summary": "Injuries to top picks like Jadarian Price and Bud Clark have derailed early returns of Seattle's draft class",
       "url": "https://www.cbssports.com/nfl/news/revisiting-the-2026-nfl-draft-seattle-seahawks-roster/",
@@ -198,18 +282,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Commanders' Terry McLaurin carted off after knee injury vs. 49ers: 'There's fear'",
-      "summary": "McLaurin went down while running a route late in the first quarter",
-      "url": "https://www.cbssports.com/nfl/news/commanders-terry-mclaurin-knee-injury-monday-night-football/",
-      "published_at": "2026-10-20T04:41:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -306,78 +378,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "John Harbaugh provides update on Giants' QB situation between JJ McCarthy, Jameis Winston",
-      "summary": "McCarthy made his Giants debut on Sunday after Jameis Winston was benched",
-      "url": "https://www.cbssports.com/nfl/news/john-harbaugh-update-giants-qb-jj-mccarthy-jameis-winston/",
-      "published_at": "2026-10-19T20:08:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "role",
-      "impact": "watch",
-      "score_adjustment": -2,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jalen Hurts expected to miss rest of 2026 season after blood clots found in lungs",
-      "summary": "The Eagles quarterback is clinically stable and expected to make a full recovery, but he cannot participate in contact activities",
-      "url": "https://www.cbssports.com/nfl/news/jalen-hurts-blood-clot-update-eagles-qb-out-2026-season/",
-      "published_at": "2026-10-19T19:36:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL suspends Bills' C.J. Gardner-Johnson for spitting on Raiders' Brock Bowers",
-      "summary": "Gardner-Johnson was ejected during Sunday's game vs. the Raiders and will forfeit money and playing time",
-      "url": "https://www.cbssports.com/nfl/news/nfl-suspends-bills-c-j-gardner-johnson-spitting/",
-      "published_at": "2026-10-19T19:34:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams face historic Super Bowl challenge after stunning 2-4 start, but schedule offers path back",
-      "summary": "No team has ever stood in the Rams' position and proceeded to win the Super Bowl",
-      "url": "https://www.cbssports.com/nfl/news/rams-2026-schedule-2-4-start-super-bowl-hopes/",
-      "published_at": "2026-10-19T19:31:16Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys' Stephen Jones addresses Brian Schottenheimer's job status after team's 2-4 start",
-      "summary": "Dallas is 10-13 under Schottenheimer after a lackluster loss against the Packers on Sunday",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-stephen-jones-addresses-brian-schottenheimers-status/",
-      "published_at": "2026-10-19T19:14:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Why Colts fired Chris Ballard: Seven moves that contributed to GM's downfall",
-      "summary": "Messy coaching changes, one-sided trades and ill-fated quarterback signings led to Ballard's downfall",
-      "url": "https://www.cbssports.com/nfl/news/why-colts-fired-chris-ballard-worst-gm-moves-sauce-gardner-trade/",
-      "published_at": "2026-10-19T18:02:22Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
