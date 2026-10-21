@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21T13:48:44.235462Z",
+  "generated_at": "2026-10-21T18:39:19.876302Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,138 @@
     }
   ],
   "articles": [
+    {
+      "title": "Who will be NFL's last undefeated team? Evaluating odds, schedules for 49ers, Vikings and Chiefs",
+      "summary": "A Week 8 bye gives San Francisco a massive mathematical edge, while tricky road tests await Kansas City in Seattle and Minnesota down the stretch",
+      "url": "https://www.cbssports.com/betting/news/who-will-be-nfls-last-undefeated-team-evaluating-odds-schedules-for-49ers-vikings-and-chiefs/",
+      "published_at": "2026-10-21T18:05:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Titans release DT Jordan Elliott after incident with firearm at team facility, per report",
+      "summary": "The veteran defensive tackle appeared in five games this season after following Robert Saleh to Tennessee from San Francisco",
+      "url": "https://www.cbssports.com/nfl/news/titans-release-jordan-elliott-after-incident/",
+      "published_at": "2026-10-21T17:31:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Former NFL security committee member details how league operates amid civil unrest in Paris before Week 7 game",
+      "summary": "Amy Trask, the former CEO of the Oakland Raiders, served on the NFL's security committee",
+      "url": "https://www.cbssports.com/nfl/news/former-nfl-security-committee-member-civil-unrest-in-paris/",
+      "published_at": "2026-10-21T17:27:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, NFLPA responds",
+      "summary": "The NFL concluded the process to clear Hurts for Week 5 in London was handled appropriately",
+      "url": "https://www.cbssports.com/nfl/news/eagles-will-not-be-punished-jalen-hurts-blood-clots-situation/",
+      "published_at": "2026-10-21T16:51:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL trade deadline: 5 players we'd like to see get a change of scenery, including Jonathan Taylor",
+      "summary": "These blockbuster moves probably will not happen, but stars like Jonathan Taylor and Jeffery Simmons deserve a chance to play for true contenders",
+      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-5-players-in-need-of-change-of-scenery-jonathan-taylor/",
+      "published_at": "2026-10-21T16:41:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants plan to start JJ McCarthy vs. Texans in Week 7, per report",
+      "summary": "McCarthy is set to make his first career start for Big Blue",
+      "url": "https://www.cbssports.com/nfl/news/giants-plan-to-start-jj-mccarthy-vs-texans-in-week-7-per-report/",
+      "published_at": "2026-10-21T16:38:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Joe Thuney trade revisited: How Bears, Chiefs both came out as winners",
+      "summary": "Chicago acquired the stabilizing force its offense desperately needed, while Kansas City turned the draft capital into a potential star",
+      "url": "https://www.cbssports.com/nfl/news/joe-thuney-trade-revisited-bears-caleb-williams-chiefs/",
+      "published_at": "2026-10-21T15:36:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Full list of 2026 NFL bye weeks for all 32 teams",
+      "summary": "Here are every team's NFL bye weeks all in one place so you can plan your fantasy lineups and game days.",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-bye-weeks/",
+      "published_at": "2026-10-21T15:34:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Who will win the NFC East: Panel of experts states case for each team",
+      "summary": "The Giants currently sit atop the NFC East, but the Cowboys, Commanders and Eagles all have arguments for emerging from the NFL's most chaotic division race",
+      "url": "https://www.cbssports.com/nfl/news/nfc-east-standings-2026-giants-cowboys-eagles-commanders-week-7/",
+      "published_at": "2026-10-21T14:46:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Russell Wilson has one bold trade target that could make the Chiefs unstoppable",
+      "summary": "Russell Wilson explains why adding Kenneth Walker has made the Chiefs even more dangerous and why Garrett Wilson could be the next piece",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-news-nfl-trade-deadline-garrett-wilson-russell-wilson/",
+      "published_at": "2026-10-21T13:58:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Predicting the full 14-team NFL playoff bracket entering Week 7: NFC East produces a surprise winner",
+      "summary": "With Jalen Hurts sidelined and the NFC East in disarray, fresh playoff projections reveal who claims the division and which teams make a Super Bowl run",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-playoff-predictions-chiefs-49ers-nfc-east/",
+      "published_at": "2026-10-21T13:19:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Timberwolves-Heat, Warriors-Lakers, NBA Wednesday",
       "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, NFL betting on Wednesday",
@@ -45,18 +177,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Who will win the NFC East: Panel of experts states case for each team",
-      "summary": "The Giants currently sit atop the NFC East, but the Cowboys, Commanders and Eagles all have arguments for emerging from the NFL's most chaotic division race",
-      "url": "https://www.cbssports.com/nfl/news/nfc-east-standings-2026-giants-cowboys-eagles-commanders-week-7/",
-      "published_at": "2026-10-21T12:07:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL Week 7 picks, odds: Vikings and Chiefs stay undefeated, while Cardinals pull off another upset",
       "summary": "Tyler Sullivan picks every game on the Week 7 schedule, including five locks against the spread",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-against-the-spread-vikings-bengals-jets/",
@@ -69,34 +189,10 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL trade deadline: 5 players we'd like to see get a change of scenery, including Jonathan Taylor",
-      "summary": "These blockbuster moves probably will not happen, but stars like Jonathan Taylor and Jeffery Simmons deserve a chance to play for true contenders",
-      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-5-players-in-need-of-change-of-scenery-jonathan-taylor/",
-      "published_at": "2026-10-21T11:24:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Prisco's Week 7 NFL picks: Patriots upset Bears, Lions edge Packers",
       "summary": "Pete Prisco reveals all of his Week 7 picks, including the Chiefs over the Seahawks in Kenneth Walker's revenge game",
       "url": "https://www.cbssports.com/nfl/news/priscos-week-7-nfl-picks-odds-expert-picks-upsets/",
       "published_at": "2026-10-21T10:00:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, NFLPA responds",
-      "summary": "The NFL concluded the process to clear Hurts for Week 5 in London was handled appropriately",
-      "url": "https://www.cbssports.com/nfl/news/eagles-will-not-be-punished-jalen-hurts-blood-clots-situation/",
-      "published_at": "2026-10-21T00:46:53Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -273,34 +369,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Titans release DT Jordan Elliott after 'incident' at team facility",
-      "summary": "The veteran defensive tackle appeared in all five games this season after following head coach Robert Saleh to Tennessee from San Francisco",
-      "url": "https://www.cbssports.com/nfl/news/titans-release-jordan-elliott-after-incident/",
-      "published_at": "2026-10-20T14:48:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Dan Quinn denies confusion after viral fourth-down clip in Commanders loss to 49ers",
       "summary": "Broadcast cameras appeared to catch Washington's head coach surprised by a turnover on downs against the 49ers, but he insists he was just fielding a question from his staff",
       "url": "https://www.cbssports.com/nfl/news/dan-quinn-viral-fourth-down-clip-commanders-vs-49ers/",
       "published_at": "2026-10-20T13:12:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 7 picks and score predictions: Bears top Patriots in Thursday thriller, Chiefs edge Seahawks",
-      "summary": "Here's your weekly dose of John Breech's NFL picks",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-score-predictions-odds-chiefs-seahawks/",
-      "published_at": "2026-10-20T13:07:00Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -330,66 +402,6 @@
       "category": "transaction",
       "impact": "watch",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Revisiting the 2026 NFL Draft: Evaluating how well Seahawks have done re-tooling Super Bowl roster",
-      "summary": "Injuries to top picks like Jadarian Price and Bud Clark have derailed early returns of Seattle's draft class",
-      "url": "https://www.cbssports.com/nfl/news/revisiting-the-2026-nfl-draft-seattle-seahawks-roster/",
-      "published_at": "2026-10-20T11:32:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jalen Hurts blood clots: Biggest unanswered questions for Eagles about star QB's health",
-      "summary": "The Eagles and Hurts' agent revealed more information about the quarterback's blood clot situation on Monday, but there are still lingering questions",
-      "url": "https://www.cbssports.com/nfl/news/biggest-unanswered-questions-eagles-jalen-hurts/",
-      "published_at": "2026-10-20T10:01:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 6 grades for every team that played: 49ers hold off furious Commanders rally, Colts get 'F'",
-      "summary": "We're handing out grades for every Week 6 game, and we don't hold back",
-      "url": "https://www.cbssports.com/nfl/news/nfl-grades-week-6-browns-ravens-afc-colts-2026/",
-      "published_at": "2026-10-20T03:55:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFC East makes unwanted history as first division ever to go winless in consecutive weeks",
-      "summary": "The division is 0-6-2 since Week 5",
-      "url": "https://www.cbssports.com/nfl/news/nfc-east-makes-unwanted-history-nfl/",
-      "published_at": "2026-10-20T03:51:49Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "49ers' Mike Evans ruled out with Achilles injury after leaving game late in first half",
-      "summary": "Evans was having a good first half before exiting",
-      "url": "https://www.cbssports.com/nfl/news/is-mike-evans-playing-monday-night-football/",
-      "published_at": "2026-10-20T02:16:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
