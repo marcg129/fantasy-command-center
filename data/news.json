@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21T07:40:00.248387Z",
+  "generated_at": "2026-10-21T13:48:44.235462Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Timberwolves-Heat, Warriors-Lakers, NBA Wednesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, NFL betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-timberwolves-heat-warriors-lakers-nba-wednesday/",
+      "published_at": "2026-10-21T13:09:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "LeBron James shines in 76ers debut; CBS Sports Midseason All-Americans revealed",
+      "summary": "Plus why the NFL will not punish the Eagles for their handling of Jalen Hurts' blood clots",
+      "url": "https://www.cbssports.com/nba/news/lebron-james-76ers-knicks-thunder-spurs-nba-cbs-sports-college-football-all-americans/",
+      "published_at": "2026-10-21T12:50:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Who will win the NFC East: Panel of experts states case for each team",
+      "summary": "The Giants currently sit atop the NFC East, but the Cowboys, Commanders and Eagles all have arguments for emerging from the NFL's most chaotic division race",
+      "url": "https://www.cbssports.com/nfl/news/nfc-east-standings-2026-giants-cowboys-eagles-commanders-week-7/",
+      "published_at": "2026-10-21T12:07:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 picks, odds: Vikings and Chiefs stay undefeated, while Cardinals pull off another upset",
+      "summary": "Tyler Sullivan picks every game on the Week 7 schedule, including five locks against the spread",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-against-the-spread-vikings-bengals-jets/",
+      "published_at": "2026-10-21T12:07:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL trade deadline: 5 players we'd like to see get a change of scenery, including Jonathan Taylor",
+      "summary": "These blockbuster moves probably will not happen, but stars like Jonathan Taylor and Jeffery Simmons deserve a chance to play for true contenders",
+      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-5-players-in-need-of-change-of-scenery-jonathan-taylor/",
+      "published_at": "2026-10-21T11:24:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 7 NFL picks: Patriots upset Bears, Lions edge Packers",
+      "summary": "Pete Prisco reveals all of his Week 7 picks, including the Chiefs over the Seahawks in Kenneth Walker's revenge game",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-7-nfl-picks-odds-expert-picks-upsets/",
+      "published_at": "2026-10-21T10:00:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, NFLPA responds",
       "summary": "The NFL concluded the process to clear Hurts for Week 5 in London was handled appropriately",
@@ -177,18 +249,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Is a Colts fire sale coming? What that could look like and what big names could be traded away",
-      "summary": "The Colts don't have a 2027 first-round pick. But what could they get for top veterans in preparation for a 2027 rebuild?",
-      "url": "https://www.cbssports.com/nfl/news/chris-ballard-fired-what-colts-fire-sale-could-look-like/",
-      "published_at": "2026-10-20T15:50:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Giants release Najee Harris days after criticizing New York's running back rotation",
       "summary": "The move comes right after the veteran voiced frustration over his limited role and a crowded backfield rotation in Week 6",
       "url": "https://www.cbssports.com/nfl/news/giants-release-najee-harris-critical-of-coaching/",
@@ -330,54 +390,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 bonus bets by targeting 49ers vs. Commanders on Monday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Monday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-by-targeting-49ers-vs-commanders-on-monday-night-football/",
-      "published_at": "2026-10-19T22:50:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is Stefon Diggs playing Monday night? A look at the Commanders WR's status vs. 49ers on 'MNF'",
-      "summary": "Diggs is officially listed as questionable with a hamstring injury",
-      "url": "https://www.cbssports.com/nfl/news/is-stefon-diggs-playing-tonight-injury-update-commanders-vs-49ers/",
-      "published_at": "2026-10-19T22:49:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "From bad to worse for Rams: Davante Adams to miss 6-10 weeks with ruptured hamstring",
-      "summary": "Adams wasn't the only bad news L.A. got on Monday: Blake Grupe tore his ACL, Poona Ford ruptured his triceps, and Kobie Turner is projected to miss four to six weeks",
-      "url": "https://www.cbssports.com/nfl/news/rams-davante-adams-to-miss-6-10-weeks-ruptured-hamstring/",
-      "published_at": "2026-10-19T21:33:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "49ers vs. Commanders prediction: Can San Francisco remain unbeaten? Full 'Monday Night Football' breakdown",
-      "summary": "San Francisco can improve to 6-0 and strengthen its NFC West lead, while Washington enters Levi's Stadium looking to pull off a sizable road upset",
-      "url": "https://www.cbssports.com/nfl/news/49ers-vs-commanders-where-to-watch-tv-channel-odds-prediction/",
-      "published_at": "2026-10-19T21:16:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
