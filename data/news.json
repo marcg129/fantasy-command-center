@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T21:37:34.150452Z",
+  "generated_at": "2026-10-21T00:37:29.801631Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL, Saints address plans for Paris game during Week 6 as protests escalate in France",
+      "summary": "The league says its continuing with its original plans and monitoring the situation",
+      "url": "https://www.cbssports.com/nfl/news/nfl-saints-address-paris-game-plans-week-6-protests/",
+      "published_at": "2026-10-20T22:26:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for NBA Opening Night, Knicks-76ers, Thunder-Spurs",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, NFL betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nba-opening-night-knicks-76ers-thunder-spurs/",
+      "published_at": "2026-10-20T21:37:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, per report",
       "summary": "The NFL concluded the process to clear Hurts for Week 5 in London was handled appropriately",
@@ -354,30 +378,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "49ers vs. Commanders prediction: Can San Francisco remain unbeaten? Full 'Monday Night Football' breakdown",
-      "summary": "San Francisco can improve to 6-0 and strengthen its NFC West lead, while Washington enters Levi's Stadium looking to pull off a sizable road upset",
-      "url": "https://www.cbssports.com/nfl/news/49ers-vs-commanders-where-to-watch-tv-channel-odds-prediction/",
-      "published_at": "2026-10-19T21:16:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams special teams woes continue: Kicker Blake Grupe placed on injured reserve after knee injury",
-      "summary": "Grupe suffered the injury while making a tackle on a kickoff",
-      "url": "https://www.cbssports.com/nfl/news/rams-kicker-blake-grupe-suffers-knee-injury-updates/",
-      "published_at": "2026-10-19T20:59:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
