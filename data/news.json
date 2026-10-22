@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-22T17:10:52.801228Z",
+  "generated_at": "2026-10-22T21:35:58.868385Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,106 @@
   ],
   "articles": [
     {
+      "title": "Use FanDuel promo code to get $350 bonus bets by targeting Patriots vs. Bears, Thursday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-patriots-bears-thursday-night-football/",
+      "published_at": "2026-10-22T21:22:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "DeForest Buckner landing spots: Where Colts Pro Bowl DT could go in wake of Chris Ballard's firing",
+      "summary": "'I'm sick and tired of the same song and dance every year,' Buckner told reporters postgame on Sunday.",
+      "url": "https://www.cbssports.com/nfl/news/mock-trades-deforest-buckner-chris-ballard/",
+      "published_at": "2026-10-22T20:02:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bears vs. Patriots prediction: Chicago aims to stop Drake Maye's hot streak on 'TNF'",
+      "summary": "Here's how to watch, what to know, and an expert prediction before the Pats and Bears face off in Chicago",
+      "url": "https://www.cbssports.com/nfl/news/bears-vs-patriots-how-to-watch-odds-preview-prediction/",
+      "published_at": "2026-10-22T19:51:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' Jerry Jones says Dallas could be 'active' at trade deadline: Here's who it should target",
+      "summary": "Jones still believes his 2-4 squad could turn things around in a wide-open NFC East in 2026",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-jerry-jones-dallas-active-trade-deadline-three-targets/",
+      "published_at": "2026-10-22T19:14:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant",
+      "summary": "All the latest injury news as Week 7 gets set to kick off",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-injury-report-ravens-lamar-jackson-jets-breece-hall/",
+      "published_at": "2026-10-22T18:26:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chiefs to place Josh Simmons on injured reserve; LT not eligible to return until Week 11",
+      "summary": "Simmons has been dealing with a bulging disc in his back",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-to-place-josh-simmons-on-injured-reserve/",
+      "published_at": "2026-10-22T18:15:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Re-drafting top 10 of the 2024 NFL Draft: Caleb Williams holds onto top spot, Drake Maye moves up",
+      "summary": "Drake Maye jumps over Jayden Daniels to No. 2 after a Super Bowl run, while Caleb Williams holds onto the top spot and Malik Nabers crashes the top five",
+      "url": "https://www.cbssports.com/nfl/news/re-drafting-top-10-2024-nfl-draft-caleb-williams-drake-maye/",
+      "published_at": "2026-10-22T18:14:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL trade rumors: 5 receivers the Rams should target in a deal, including Cowboys' George Pickens",
+      "summary": "With Davante Adams out, the Rams suddenly need some help at wide receiver",
+      "url": "https://www.cbssports.com/nfl/news/nfl-trade-rumors-5-receivers-rams-should-target-george-pickens/",
+      "published_at": "2026-10-22T18:09:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Should Vikings trade for Justin Herbert? Making the case for and against potential blockbuster deal",
       "summary": "Minnesota has a championship-level defense, but the offense could use a spark",
       "url": "https://www.cbssports.com/nfl/news/should-vikings-trade-for-justin-herbert-chargers/",
-      "published_at": "2026-10-22T16:24:41Z",
+      "published_at": "2026-10-22T17:51:57Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "transaction",
@@ -81,18 +177,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Bears vs. Patriots: How to watch as Chicago aims to stop Drake Maye's hot streak on 'TNF'",
-      "summary": "Here's how to watch, what to know, and an expert prediction before the Pats and Bears face off in Chicago",
-      "url": "https://www.cbssports.com/nfl/news/bears-vs-patriots-how-to-watch-odds-preview-prediction/",
-      "published_at": "2026-10-22T14:29:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "5 most important games for playoff races in Week 7: Ravens-Bengals has huge implications",
       "summary": "Plus, the 'TNF' showdown between the Bears and the Patriots is big",
       "url": "https://www.cbssports.com/nfl/news/5-most-important-games-playoff-races-week-7/",
@@ -109,18 +193,6 @@
       "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Bears vs. Patriots on Thursday Night Football",
       "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-patriots-bears-thursday-night-football/",
       "published_at": "2026-10-22T14:02:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 bonus bets by targeting Patriots vs. Bears on Thursday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-patriots-vs-bears-thursday-night-football/",
-      "published_at": "2026-10-22T13:59:32Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -213,18 +285,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant",
-      "summary": "All the latest injury news as Week 7 gets set to kick off",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-injury-report-ravens-lamar-jackson-jets-breece-hall/",
-      "published_at": "2026-10-22T01:02:39Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL trade deadline 2026: Saquon Barkley to Seahawks among 10 moves that need to happen",
       "summary": "These needle-moving deals would define the trade deadline",
       "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-10-moves-saquon-barkley-seahawks/",
@@ -233,18 +293,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Who will be NFL's last undefeated team? Evaluating odds, schedules for 49ers, Vikings and Chiefs",
-      "summary": "A Week 8 bye gives San Francisco a massive mathematical edge, while tricky road tests await Kansas City in Seattle and Minnesota down the stretch",
-      "url": "https://www.cbssports.com/betting/news/who-will-be-nfls-last-undefeated-team-evaluating-odds-schedules-for-49ers-vikings-and-chiefs/",
-      "published_at": "2026-10-21T21:41:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
@@ -305,66 +353,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Former NFL security committee member details how league operates amid civil unrest in Paris before Week 7 game",
-      "summary": "Amy Trask, the former CEO of the Oakland Raiders, served on the NFL's security committee",
-      "url": "https://www.cbssports.com/nfl/news/former-nfl-security-committee-member-civil-unrest-in-paris/",
-      "published_at": "2026-10-21T17:27:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Eagles will not be punished for how team handled Jalen Hurts' blood clots situation, NFLPA responds",
-      "summary": "The NFL concluded the process to clear Hurts for Week 5 in London was handled appropriately",
-      "url": "https://www.cbssports.com/nfl/news/eagles-will-not-be-punished-jalen-hurts-blood-clots-situation/",
-      "published_at": "2026-10-21T16:51:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL trade deadline: 5 players we'd like to see get a change of scenery, including Jonathan Taylor",
-      "summary": "These blockbuster moves probably will not happen, but stars like Jonathan Taylor and Jeffery Simmons deserve a chance to play for true contenders",
-      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-5-players-in-need-of-change-of-scenery-jonathan-taylor/",
-      "published_at": "2026-10-21T16:41:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Joe Thuney trade revisited: How Bears, Chiefs both came out as winners",
-      "summary": "Chicago acquired the stabilizing force its offense desperately needed, while Kansas City turned the draft capital into a potential star",
-      "url": "https://www.cbssports.com/nfl/news/joe-thuney-trade-revisited-bears-caleb-williams-chiefs/",
-      "published_at": "2026-10-21T15:36:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Full list of 2026 NFL bye weeks for all 32 teams",
-      "summary": "Here are every team's NFL bye weeks all in one place so you can plan your fantasy lineups and game days.",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-bye-weeks/",
-      "published_at": "2026-10-21T15:34:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     }
