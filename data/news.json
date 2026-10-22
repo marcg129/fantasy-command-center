@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21T23:19:43.764951Z",
+  "generated_at": "2026-10-22T04:46:47.443768Z",
   "lookback_days": 7,
-  "article_count": 33,
+  "article_count": 34,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant",
+      "summary": "All the latest injury news as Week 7 gets set to kick off",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-injury-report-ravens-lamar-jackson-jets-breece-hall/",
+      "published_at": "2026-10-22T01:02:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL trade deadline 2026: Saquon Barkley to Seahawks among 10 moves that need to happen",
+      "summary": "These needle-moving deals would define the trade deadline",
+      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-10-moves-saquon-barkley-seahawks/",
+      "published_at": "2026-10-22T00:28:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Who will be NFL's last undefeated team? Evaluating odds, schedules for 49ers, Vikings and Chiefs",
       "summary": "A Week 8 bye gives San Francisco a massive mathematical edge, while tricky road tests await Kansas City in Seattle and Minnesota down the stretch",
@@ -65,18 +89,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Heat-Timberwolves, Warriors-Lakers, NBA Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-heat-timberwolves-warriors-lakers-nba-wednesday/",
-      "published_at": "2026-10-21T19:14:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
