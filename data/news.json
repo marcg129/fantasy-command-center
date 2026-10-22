@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T04:46:47.443768Z",
+  "generated_at": "2026-10-22T11:53:02.408439Z",
   "lookback_days": 7,
   "article_count": 34,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Super Bowl stock report for Week 7: Caleb Williams puts Bears back in contention, Rams devolve into disaster",
+      "summary": "We assess the NFL title race after Week 6 and identify three upcoming games that could reshape the Super Bowl picture",
+      "url": "https://www.cbssports.com/nfl/news/super-bowl-61-stock-report-nfl-week-bears-rams/",
+      "published_at": "2026-10-22T11:00:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 upset alert: Can Giants upset Texans with JJ McCarthy at QB? Can Falcons beat 49ers?",
+      "summary": "Baltimore and Denver are two other teams firmly at risk of being upset",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-upset-alert-why-five-favorites-could-fall-texans-49ers-seahawks/",
+      "published_at": "2026-10-22T10:00:46Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant",
       "summary": "All the latest injury news as Week 7 gets set to kick off",
@@ -297,18 +321,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Grading and ranking NFL first-year head coaches in new places after Week 6",
-      "summary": "How the league's 10 new head coaches rank through the first third of the 2026 regular season",
-      "url": "https://www.cbssports.com/nfl/news/grading-ranking-nfl-first-year-head-coaches/",
-      "published_at": "2026-10-20T19:03:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Mr. Irrelevant to Mr. Efficient: How Brock Purdy became NFL's all-time passer rating king",
       "summary": "A former seventh-round draft pick is now the greatest per-throw passer in league history",
       "url": "https://www.cbssports.com/nfl/news/mr-irrelevant-to-mr-efficient-brock-purdy-nfls-all-time-passer-rating/",
@@ -409,18 +421,6 @@
       "summary": "Broadcast cameras appeared to catch Washington's head coach surprised by a turnover on downs against the 49ers, but he insists he was just fielding a question from his staff",
       "url": "https://www.cbssports.com/nfl/news/dan-quinn-viral-fourth-down-clip-commanders-vs-49ers/",
       "published_at": "2026-10-20T13:12:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "6-0 Niners survive Commanders' late charge; Rays reach World Series; Reese lights up WNBA Finals",
-      "summary": "Plus, our 2026-27 NBA season predictions are in as the season tips off today",
-      "url": "https://www.cbssports.com/nfl/news/49ers-commanders-nfl-rays-world-series-mlb-reese-wnba-finals/",
-      "published_at": "2026-10-20T12:53:40Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
