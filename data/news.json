@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T00:40:26.884944Z",
+  "generated_at": "2026-10-23T07:32:49.697362Z",
   "lookback_days": 7,
   "article_count": 26,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Rare NFL penalty: Bears become first team in 16 years to get flagged for illegal forward handoff",
+      "summary": "The failed trick play against the Patriots sent viewers scrambling to learn about one of the most obscure rules in the NFL rulebook",
+      "url": "https://www.cbssports.com/nfl/news/what-is-illegal-forward-handing-bears-patriots-nfl-penalty/",
+      "published_at": "2026-10-23T02:16:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Brian Schottenheimer issues challenge to George Pickens as Cowboys search for answers on offense",
+      "summary": "With Dallas sitting at 2-4, Schottenheimer acknowledged that he must coach better",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-brian-schottenheimer-challenges-george-pickens/",
+      "published_at": "2026-10-23T01:37:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Bears vs. Patriots prediction: Chicago aims to stop Drake Maye's hot streak on 'TNF'",
       "summary": "Here's how to watch, what to know, and an expert prediction before the Pats and Bears face off in Chicago",
@@ -150,18 +174,6 @@
       "category": "transaction",
       "impact": "watch",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant",
-      "summary": "All the latest injury news as Week 7 gets set to kick off",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-injury-report-ravens-lamar-jackson-jets-breece-hall/",
-      "published_at": "2026-10-22T18:26:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -317,18 +329,6 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL trade deadline 2026: Saquon Barkley to Seahawks among 10 moves that need to happen",
-      "summary": "These needle-moving deals would define the trade deadline",
-      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-10-moves-saquon-barkley-seahawks/",
-      "published_at": "2026-10-22T00:28:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     }
