@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T13:27:19.283874Z",
+  "generated_at": "2026-10-23T18:21:59.765853Z",
   "lookback_days": 7,
-  "article_count": 25,
+  "article_count": 24,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "Baker Mayfield set to return for Buccaneers after three-game absence, will wear custom glove",
+      "summary": "After a three-week absence, Mayfield is back under center for Tampa Bay",
+      "url": "https://www.cbssports.com/nfl/news/buccaneers-baker-mayfield-cleared-to-play-thumb-injury-glove/",
+      "published_at": "2026-10-23T17:21:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Aaron Rodgers sounds annoyed with Steelers' travel plans for Paris: Why the QB is unhappy",
+      "summary": "The Steelers quarterback is set to become the first QB in NFL history to play international games in three straight seasons in three different countries",
+      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-steelers-travel-plans-nfl-paris-game-saints/",
+      "published_at": "2026-10-23T16:32:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Saquon Barkley on Jalen Hurts situation: 'It sucks that people tried to make it an Eagles vs. Jalen thing'",
+      "summary": "Philadelphia has faced heavy scrutiny after the quarterback was ruled out for the season with blood clots in his lungs, prompting the NFLPA to demand an investigation into his medical care",
+      "url": "https://www.cbssports.com/nfl/news/saquon-barkley-breaks-silence-jalen-hurts-situation/",
+      "published_at": "2026-10-23T15:56:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Colts' Anthony Richardson facing charge for marijuana possession, per report",
+      "summary": "Police cited the quarterback during an Oct. 12 traffic stop after officers discovered marijuana and THC gummies inside his vehicle",
+      "url": "https://www.cbssports.com/nfl/news/colts-anthony-richardson-charge-marijuana-possession/",
+      "published_at": "2026-10-23T15:39:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 bold predictions: Cardinals stun Broncos without scoring TD, Bijan Robinson shreds 49ers",
+      "summary": "The Cardinals produce another improbable victory behind a barrage of field goals, and the Dolphins finally hold their first lead of the season",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-bold-predictions-cardinals-broncos-bijan-robinson-49ers/",
+      "published_at": "2026-10-23T14:08:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jaguars LT Anton Harrison done for season with torn ACL, per report: options for Jaguars at the trade deadline",
+      "summary": "Walker Little will take over protecting Trevor Lawrence's blind side",
+      "url": "https://www.cbssports.com/nfl/news/anton-harrison-injury-jaguars-lt-out-for-season-torn-acl/",
+      "published_at": "2026-10-23T13:48:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys vs. Eagles rivalry game headlines three matchups with underrated big stakes",
+      "summary": "The unpredictable NFC East supplies two of this week's most intriguing under-the-radar matchups",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-underrated-games-cowboys-eagles-giants-texan/",
+      "published_at": "2026-10-23T13:20:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Caleb Williams wins duel of 2024 NFL Draft QBs; Brewers-Rays World Series opens with a twist",
       "summary": "Plus the Top 100 And 1 college basketball players for 2026-27",
@@ -222,102 +306,6 @@
       "category": "transaction",
       "impact": "watch",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Re-drafting top 10 of the 2024 NFL Draft: Caleb Williams holds onto top spot, Drake Maye moves up",
-      "summary": "Drake Maye jumps over Jayden Daniels to No. 2 after a Super Bowl run, while Caleb Williams holds onto the top spot and Malik Nabers crashes the top five",
-      "url": "https://www.cbssports.com/nfl/news/re-drafting-top-10-2024-nfl-draft-caleb-williams-drake-maye/",
-      "published_at": "2026-10-22T18:14:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL trade rumors: 5 receivers the Rams should target in a deal, including Cowboys' George Pickens",
-      "summary": "With Davante Adams out, the Rams suddenly need some help at wide receiver",
-      "url": "https://www.cbssports.com/nfl/news/nfl-trade-rumors-5-receivers-rams-should-target-george-pickens/",
-      "published_at": "2026-10-22T18:09:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Should Vikings trade for Justin Herbert? Making the case for and against potential blockbuster deal",
-      "summary": "Minnesota has a championship-level defense, but the offense could use a spark",
-      "url": "https://www.cbssports.com/nfl/news/should-vikings-trade-for-justin-herbert-chargers/",
-      "published_at": "2026-10-22T17:51:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Pick Six: Patriots-Bears predictions for Thursday night, plus NFL Week 7 picks and possible upsets",
-      "summary": "Here's everything you need to know about the NFL for Oct. 22",
-      "url": "https://www.cbssports.com/nfl/news/pick-six-patriots-bears-predictions-plus-nfl-week-7-picks-upsets/",
-      "published_at": "2026-10-22T16:02:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Are Chiefs, 49ers on collision course for third Super Bowl meeting? Here are teams that could stop them",
-      "summary": "Kansas City beat San Francisco in 2020 and 2024",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-49ers-collision-course-super-bowl-brock-purdy-patrick-mahomes/",
-      "published_at": "2026-10-22T15:26:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "CBS Sports names future Hall of Famer JJ Watt lead analyst for the 'NFL ON CBS'",
-      "summary": "Watt began calling games with Jim Nantz and Tracy Wolfson at the start of the 2026 season",
-      "url": "https://www.cbssports.com/nfl/news/cbs-sports-names-j-j-watt-lead-analyst-nfl-on-cbs/",
-      "published_at": "2026-10-22T14:59:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL punishes Patriots, Eagles and Jets head coaches with near-record fines, per report",
-      "summary": "Mike Vrabel, Nick Sirianni and Aaron Glenn will be taking a massive hit to their bank account",
-      "url": "https://www.cbssports.com/nfl/news/nfl-punishes-patriots-eagles-jets-head-coaches-record-fines/",
-      "published_at": "2026-10-22T13:01:56Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's NFL Week 7 picks ahead of Patriots vs. Bears; Dream take WNBA Finals lead on Valkyries",
-      "summary": "Plus, the Giants have announced J.J. McCarthy as their new starting quarterback",
-      "url": "https://www.cbssports.com/nfl/news/prisco-nfl-picks-patriots-bears-dream-wnba-finals-valkyries/",
-      "published_at": "2026-10-22T12:39:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "role",
-      "impact": "positive",
-      "score_adjustment": 4,
       "confidence": 0.88
     }
   ]
