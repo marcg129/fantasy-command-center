@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-23T07:32:49.697362Z",
+  "generated_at": "2026-10-23T13:27:19.283874Z",
   "lookback_days": 7,
-  "article_count": 26,
+  "article_count": 25,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Caleb Williams wins duel of 2024 NFL Draft QBs; Brewers-Rays World Series opens with a twist",
+      "summary": "Plus the Top 100 And 1 college basketball players for 2026-27",
+      "url": "https://www.cbssports.com/nfl/news/caleb-williams-drake-maye-nfl-draft-qb-brewers-rays-world-series-mlb/",
+      "published_at": "2026-10-23T12:49:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 odds, predictions, expert picks: Who wins Ravens-Bengals AFC North showdown? Texans keep rolling?",
+      "summary": "Our experts make their selections for Bengals-Ravens, Packers-Lions, Chiefs-Seahawks, Cowboys-Eagles and every other game on the Week 7 schedule",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-odds-predictions-expert-picks-against-the-spread/",
+      "published_at": "2026-10-23T12:47:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL odds: Week 7 parlays featuring favorites, underdogs include Buccaneers-Panthers, Bengals-Ravens",
+      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 7 of the NFL season",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-7-parlays-featuring-favorites-underdogs-include-buccaneers-panthers-bengals-ravens/",
+      "published_at": "2026-10-23T12:01:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Should the Chiefs trade for Garrett Wilson? Why blockbuster deal makes sense, and why it probably won't happen",
+      "summary": "Pairing the dynamic Jets wideout with Patrick Mahomes could solve Kansas City's receiver concerns, but several obstacles stand in the way",
+      "url": "https://www.cbssports.com/nfl/news/garrett-wilson-trade-chiefs-jets-star-receiver-2026/",
+      "published_at": "2026-10-23T11:44:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jared Goff vs. Packers' stifling secondary: How this crucial NFC North showdown will be won",
+      "summary": "How aggressive Goff decides to be against Green Bay's defensive backs with tight window throws will be critical",
+      "url": "https://www.cbssports.com/nfl/news/jared-goff-vs-packers-nfc-north-showdown-breakdown/",
+      "published_at": "2026-10-23T11:24:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Rare NFL penalty: Bears become first team in 16 years to get flagged for illegal forward handoff",
       "summary": "The failed trick play against the Patriots sent viewers scrambling to learn about one of the most obscure rules in the NFL rulebook",
@@ -61,18 +121,6 @@
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 7 Patriots vs. Bears TNF matchup",
       "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-get-55-bonus-for-patriots-vs-bears-thursday-night-football/",
       "published_at": "2026-10-22T23:44:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 7 picks: Our experts face off on Patriots at Bears, Cowboys at Eagles and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-experts-patriots-bears-cowboys-eagles/",
-      "published_at": "2026-10-22T23:22:34Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -249,18 +297,6 @@
       "confidence": 0.88
     },
     {
-      "title": "5 most important games for playoff races in Week 7: Ravens-Bengals has huge implications",
-      "summary": "Plus, the 'TNF' showdown between the Bears and the Patriots is big",
-      "url": "https://www.cbssports.com/nfl/news/5-most-important-games-playoff-races-week-7/",
-      "published_at": "2026-10-22T14:21:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL punishes Patriots, Eagles and Jets head coaches with near-record fines, per report",
       "summary": "Mike Vrabel, Nick Sirianni and Aaron Glenn will be taking a massive hit to their bank account",
       "url": "https://www.cbssports.com/nfl/news/nfl-punishes-patriots-eagles-jets-head-coaches-record-fines/",
@@ -282,54 +318,6 @@
       "category": "role",
       "impact": "positive",
       "score_adjustment": 4,
-      "confidence": 0.88
-    },
-    {
-      "title": "Titans release DT Jordan Elliott after incident with firearm at team facility",
-      "summary": "The veteran defensive tackle appeared in five games this season after following Robert Saleh to Tennessee from San Francisco",
-      "url": "https://www.cbssports.com/nfl/news/titans-release-jordan-elliott-after-incident/",
-      "published_at": "2026-10-22T12:38:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "It wouldn't shock me IF ... NFL Week 7: Broncos bench Bo Nix, Kenneth Walker III has muted return to Seattle",
-      "summary": "Could Aaron Glenn finally get a divisional win? How will JJ McCarthy fare?",
-      "url": "https://www.cbssports.com/nfl/news/it-wouldnt-shock-me-if-nfl-week-7-bold-predictions-bo-nix/",
-      "published_at": "2026-10-22T12:04:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Super Bowl stock report for Week 7: Caleb Williams puts Bears back in contention, Rams devolve into disaster",
-      "summary": "We assess the NFL title race after Week 6 and identify three upcoming games that could reshape the Super Bowl picture",
-      "url": "https://www.cbssports.com/nfl/news/super-bowl-61-stock-report-nfl-week-bears-rams/",
-      "published_at": "2026-10-22T11:00:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 7 upset alert: Can Giants upset Texans with JJ McCarthy at QB? Can Falcons beat 49ers?",
-      "summary": "Baltimore and Denver are two other teams firmly at risk of being upset",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-upset-alert-why-five-favorites-could-fall-texans-49ers-seahawks/",
-      "published_at": "2026-10-22T10:00:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
