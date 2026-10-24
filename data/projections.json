@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T16:11:18.024424Z",
-  "player_count": 1026,
+  "generated_at": "2026-10-24T18:56:26.524213Z",
+  "player_count": 1025,
   "players": {
     "10210": {
       "stats": {
@@ -17374,30 +17374,6 @@
         "pts_half_ppr": 0.16,
         "pts_ppr": 0.16,
         "pts_std": 0.16
-      }
-    },
-    "7666": {
-      "stats": {
-        "adp_dd_ppr": 999.0,
-        "def_pr_td": 0.05,
-        "def_pr_yd": 2.28,
-        "gp": 1.0,
-        "idp_ff": 0.05,
-        "idp_int": 0.2,
-        "idp_int_ret_yd": 2.28,
-        "idp_pass_def": 0.2,
-        "idp_qb_hit": 0.1,
-        "idp_sack": 0.05,
-        "idp_sack_yd": 0.25,
-        "idp_tkl": 3.72,
-        "idp_tkl_ast": 1.49,
-        "idp_tkl_loss": 0.05,
-        "idp_tkl_solo": 2.23,
-        "pass_int_td": 0.05,
-        "pos_adp_dd_ppr": 999.0,
-        "pts_half_ppr": 0.5,
-        "pts_ppr": 0.5,
-        "pts_std": 0.5
       }
     },
     "7667": {
