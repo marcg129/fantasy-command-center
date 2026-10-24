@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T11:01:04.260874Z",
+  "generated_at": "2026-10-24T15:57:14.632389Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Revisiting Raiders' 2026 NFL Draft: What Vegas is getting out of Fernando Mendoza, what's next",
+      "summary": "Sitting behind Kirk Cousins was always the initial plan, but the Raiders may soon be pressed to start the No. 1 overall selection",
+      "url": "https://www.cbssports.com/nfl/news/revisiting-raiders-2026-nfl-draft-no-1-pick-fernando-mendoza/",
+      "published_at": "2026-10-24T15:04:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL closes 'NFL House' in Paris amid security concerns as city braces for more protests",
+      "summary": "The Week 7 matchup between the Steelers and Saints is still on as scheduled",
+      "url": "https://www.cbssports.com/nfl/news/nfl-paris-updates-saints-steelers-nfl-house-france-protests/",
+      "published_at": "2026-10-24T14:41:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Revisiting Browns' 2026 NFL Draft: Did the K.C. Concepcion, Denzel Boston selections fix the offense?",
+      "summary": "Concepcion and Boston are sparking the pass game, while Spencer Fano and Austin Barber have quickly solidified the rebuilt offensive line",
+      "url": "https://www.cbssports.com/nfl/news/revisiting-browns-2026-nfl-draft-k-c-concepcion-denzel-boston/",
+      "published_at": "2026-10-24T14:27:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Revisiting Seahawks' trades for Leonard Williams, Ernest Jones IV: Duo powered Seattle's Super Bowl D",
+      "summary": "Williams and Jones were part of Mike Macdonald's defensive overhaul",
+      "url": "https://www.cbssports.com/nfl/news/revisiting-seahawks-trades-leonard-williams-ernest-jones-iv/",
+      "published_at": "2026-10-24T14:15:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Revisiting the 2026 NFL Draft: Jonah Coleman is all Broncos have to show for their efforts",
+      "summary": "Fourth-round running back Jonah Coleman is the only draft pick to see the field this year, as Denver gets virtually zero production from its first-year players through six games",
+      "url": "https://www.cbssports.com/nfl/news/revisiting-the-2026-nfl-draft-broncos-jonah-coleman/",
+      "published_at": "2026-10-24T13:55:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Cowboys' George Pickens brushes off Brian Schottenheimer's critique, says team needs to improve",
       "summary": "Schottenheimer challenged Pro Bowl WR George Pickens on his effort in the run game, Pickens talked about the team",
@@ -289,54 +349,6 @@
       "summary": "With Dallas sitting at 2-4, Schottenheimer acknowledged that he must coach better",
       "url": "https://www.cbssports.com/nfl/news/cowboys-brian-schottenheimer-challenges-george-pickens/",
       "published_at": "2026-10-23T01:37:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bears vs. Patriots prediction: Chicago aims to stop Drake Maye's hot streak on 'TNF'",
-      "summary": "Here's how to watch, what to know, and an expert prediction before the Pats and Bears face off in Chicago",
-      "url": "https://www.cbssports.com/nfl/news/bears-vs-patriots-how-to-watch-odds-preview-prediction/",
-      "published_at": "2026-10-23T00:12:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Get $55 bonus for Patriots vs. Bears on Thursday Night Football",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 7 Patriots vs. Bears TNF matchup",
-      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-get-55-bonus-for-patriots-vs-bears-thursday-night-football/",
-      "published_at": "2026-10-22T23:44:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Patriots vs. Bears odds, first touchdown scorer picks, predictions for NFL Week 7 Thursday Night Football",
-      "summary": "We look over the prediction markets at Kalshi for the first touchdown scorer in Patriots vs. Bears on TNF",
-      "url": "https://www.cbssports.com/prediction/news/patriots-vs-bears-odds-first-touchdown-scorer-picks-predictions-for-nfl-week-7-thursday-night-football/",
-      "published_at": "2026-10-22T23:01:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Paris protests force Steelers to cancel fan event ahead of historic NFL game",
-      "summary": "Sunday's historic game at Stade de France will proceed as planned, with the NFL working alongside local authorities and increasing security",
-      "url": "https://www.cbssports.com/nfl/news/steelers-cancel-paris-fan-event-amid-protests-saints-game/",
-      "published_at": "2026-10-22T22:50:59Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
