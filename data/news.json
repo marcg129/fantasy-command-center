@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T15:57:14.632389Z",
+  "generated_at": "2026-10-24T18:47:37.310948Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "Saints vs. Steelers: Aaron Rodgers, Tyler Shough to duel in first-ever game in Paris",
+      "summary": "Plus, how to watch, what to know and a preview from an NFL expert",
+      "url": "https://www.cbssports.com/nfl/news/steelers-vs-saints-how-to-watch-odds-preview-prediction/",
+      "published_at": "2026-10-24T17:51:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "John Harbaugh challenges Tom Brady to leave retirement: 'I doubt for one second he could'",
+      "summary": "The New York Giants coach sent a playful jab toward the future Pro Football Hall of Famer when assessing his quarterback situation",
+      "url": "https://www.cbssports.com/nfl/news/giants-john-harbaugh-challenges-tom-brady-retirement/",
+      "published_at": "2026-10-24T17:40:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Seahawks vs. Chiefs: How to watch as Kansas City's Kenneth Walker III returns to Seattle",
+      "summary": "Here's what you need to know to catch the game",
+      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-seahawks-how-to-watch-preview-odds-prediction/",
+      "published_at": "2026-10-24T17:21:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "National Tight Ends Day betting guide: 10 TEs who will score on this special Sunday",
+      "summary": "George Kittle headlines the top anytime TD scorer picks as the league celebrates its annual holiday with big plus-money value across the board",
+      "url": "https://www.cbssports.com/nfl/news/national-tight-ends-day-betting-guide-10-te-to-score/",
+      "published_at": "2026-10-24T16:50:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Revisiting Raiders' 2026 NFL Draft: What Vegas is getting out of Fernando Mendoza, what's next",
       "summary": "Sitting behind Kirk Cousins was always the initial plan, but the Raiders may soon be pressed to start the No. 1 overall selection",
@@ -337,18 +385,6 @@
       "summary": "The failed trick play against the Patriots sent viewers scrambling to learn about one of the most obscure rules in the NFL rulebook",
       "url": "https://www.cbssports.com/nfl/news/what-is-illegal-forward-handing-bears-patriots-nfl-penalty/",
       "published_at": "2026-10-23T02:16:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Brian Schottenheimer issues challenge to George Pickens as Cowboys search for answers on offense",
-      "summary": "With Dallas sitting at 2-4, Schottenheimer acknowledged that he must coach better",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-brian-schottenheimer-challenges-george-pickens/",
-      "published_at": "2026-10-23T01:37:34Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
