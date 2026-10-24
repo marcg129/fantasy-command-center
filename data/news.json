@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T23:09:13.963855Z",
+  "generated_at": "2026-10-24T04:37:13.248181Z",
   "lookback_days": 7,
   "article_count": 27,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Cowboys' George Pickens brushes off Brian Schottenheimer's critique, says team needs to improve",
+      "summary": "Schottenheimer challenged Pro Bowl WR George Pickens on his effort in the run game, Pickens talked about the team",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-george-pickens-deflects-brian-schottenheimers-critique/",
+      "published_at": "2026-10-24T00:14:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 7 injury report: Seahawks' Zach Charbonnet won't return for Sunday's game vs. Chiefs",
       "summary": "A look at game statuses across the league",
@@ -329,18 +341,6 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Saquon Barkley trade proposals: Six deals Eagles could consider, including stunning Giants reunion",
-      "summary": "A return to New York headlines six potential landing spots for Barkley if Philadelphia decides to reset its roster",
-      "url": "https://www.cbssports.com/nfl/news/eagles-saquon-barkley-trade-proposals-giants-bengals/",
-      "published_at": "2026-10-22T22:26:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     }
