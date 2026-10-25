@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T22:28:49.000520Z",
+  "generated_at": "2026-10-25T04:41:50.223736Z",
   "lookback_days": 7,
-  "article_count": 32,
+  "article_count": 33,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Prisco's Week 7 NFL picks: Lions edge Packers, Steelers top Saints in Paris",
+      "summary": "Pete Prisco reveals all of his Week 7 picks, including the Chiefs over the Seahawks in Kenneth Walker's revenge game",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-7-nfl-picks-odds-expert-picks-upsets/",
+      "published_at": "2026-10-25T03:00:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Giants' John Harbaugh details J.J. McCarthy decision with convincing explanation: 'Heck of a skill set'",
       "summary": "The switch from Jameis Winston to McCarthy comes after the third-year quarterback has been with the team for four weeks",
