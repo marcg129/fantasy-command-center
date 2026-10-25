@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-25T16:19:44.575780Z",
+  "generated_at": "2026-10-25T20:51:22.685353Z",
   "lookback_days": 7,
-  "article_count": 23,
+  "article_count": 21,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,22 @@
   ],
   "articles": [
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Panthers-Buccaneers, Packers-Lions, NFL betting",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL betting",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-panthers-buccaneers-packers-lions-nfl-betting/",
-      "published_at": "2026-10-25T16:13:43Z",
+      "title": "49ers RB Christian McCaffrey returns vs. Falcons after going to locker room with thigh injury",
+      "summary": "The Niners can breathe a sigh of relief with CMC back on the field",
+      "url": "https://www.cbssports.com/nfl/news/49ers-rb-christian-mccaffrey-injury-updates-falcons/",
+      "published_at": "2026-10-25T19:07:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "LOOK: Marvin Harrison Jr. catches first touchdown as a member of the Texans",
+      "summary": "Marvin Harrison Jr. is catching TD passes from C.J. Stroud, just like old times",
+      "url": "https://www.cbssports.com/nfl/news/look-marvin-harrison-jr-catches-first-touchdown-texans/",
+      "published_at": "2026-10-25T19:05:37Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,15 +45,51 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 7 odds, predictions, expert picks: Who wins Packers-Lions showdown? Texans keep rolling?",
-      "summary": "Our experts make their selections for Bengals-Ravens, Packers-Lions, Chiefs-Seahawks, Cowboys-Eagles and every other game on the Week 7 schedule",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-odds-predictions-expert-picks-against-the-spread/",
-      "published_at": "2026-10-25T16:09:22Z",
+      "title": "Rams vs. Raiders NFL Week 7 odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
+      "summary": "It's a critical game for both sides when the Raiders host the Rams, and here's a look at the trading markets available at Kalshi for Sunday's Week 7 matchup",
+      "url": "https://www.cbssports.com/prediction/news/rams-vs-raiders-nfl-week-7-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
+      "published_at": "2026-10-25T19:00:51Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Packers-Lions, Chiefs-Seahawks, NFL betting",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL betting",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-packers-lions-chiefs-seahawks-nfl-betting/",
+      "published_at": "2026-10-25T18:24:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 odds, predictions, expert picks: Who wins Packers-Lions showdown? Rams get back on track?",
+      "summary": "Our experts make their selections for every game on the Week 7 schedule",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-odds-predictions-expert-picks-against-the-spread/",
+      "published_at": "2026-10-25T17:01:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Buccaneers' Baker Mayfield gets unexpected help from World Series team to make return after injury",
+      "summary": "Mayfield is returning after missing three games with a thumb injury to his throwing hand",
+      "url": "https://www.cbssports.com/nfl/news/tampa-bay-rays-help-buccaneers-baker-mayfield-glove/",
+      "published_at": "2026-10-25T16:17:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -73,18 +121,6 @@
       "summary": "The Jets host the Dolphins for an AFC East battle on Sunday, and we're taking a look at some of the trading markets available on the game at Kalshi",
       "url": "https://www.cbssports.com/prediction/news/dolphins-vs-jets-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-for-nfl-week-7-showdown/",
       "published_at": "2026-10-25T15:30:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs vs. Seahawks odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus in NFL Week 7",
-      "summary": "Here's a look at the trading markets available at Kalshi for Week 7's Sunday Night Football matchup featuring the Kansas City Chiefs and Seattle Seahawks",
-      "url": "https://www.cbssports.com/prediction/news/chiefs-vs-seahawks-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-in-nfl-week-7/",
-      "published_at": "2026-10-25T15:13:27Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -234,66 +270,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rise of the Peanut Punch: Why it's changing how defenses attack the football",
-      "summary": "What was once a novelty is now a tool every defensive player uses",
-      "url": "https://www.cbssports.com/nfl/news/what-is-the-peanut-punch-nfl-football/",
-      "published_at": "2026-10-24T19:10:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Aaron Rodgers, Kenneth Walker III address Eagles' handling of Jalen Hurts blood clot situation: 'That's crazy'",
-      "summary": "Hurts is presumed to miss the rest of the 2026 regular season",
-      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-kenneth-walker-iii-eagles-handling-jalen-hurts-blood-clot/",
-      "published_at": "2026-10-24T18:58:18Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "John Harbaugh challenges Tom Brady to leave retirement: 'I doubt for one second he could'",
-      "summary": "The New York Giants coach sent a playful jab toward the future Pro Football Hall of Famer when assessing his quarterback situation",
-      "url": "https://www.cbssports.com/nfl/news/giants-john-harbaugh-challenges-tom-brady-retirement/",
-      "published_at": "2026-10-24T17:40:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Seahawks vs. Chiefs: How to watch as Kansas City's Kenneth Walker III returns to Seattle",
-      "summary": "Here's what you need to know to catch the game",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-vs-seahawks-how-to-watch-preview-odds-prediction/",
-      "published_at": "2026-10-24T17:21:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Revisiting Raiders' 2026 NFL Draft: What Vegas is getting out of Fernando Mendoza, what's next",
-      "summary": "Sitting behind Kirk Cousins was always the initial plan, but the Raiders may soon be pressed to start the No. 1 overall selection",
-      "url": "https://www.cbssports.com/nfl/news/revisiting-raiders-2026-nfl-draft-no-1-pick-fernando-mendoza/",
-      "published_at": "2026-10-24T15:04:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
