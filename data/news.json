@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-25T04:41:50.223736Z",
+  "generated_at": "2026-10-25T11:30:26.436594Z",
   "lookback_days": 7,
-  "article_count": 33,
+  "article_count": 32,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 7 odds, predictions, expert picks: Who wins Packers-Lions showdown? Texans keep rolling?",
+      "summary": "Our experts make their selections for Bengals-Ravens, Packers-Lions, Chiefs-Seahawks, Cowboys-Eagles and every other game on the Week 7 schedule",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-picks-odds-predictions-expert-picks-against-the-spread/",
+      "published_at": "2026-10-25T10:01:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Panthers vs. Buccaneers odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus for NFL Week 7",
+      "summary": "NFC South rivals collide in Week 7, and you can make predictions with the latest Kalshi promo code CBSSPORTS55",
+      "url": "https://www.cbssports.com/prediction/news/panthers-vs-buccaneers-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-for-nfl-week-7/",
+      "published_at": "2026-10-25T10:00:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers vs. Saints odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus, NFL Week 7 Paris game",
+      "summary": "The Saints and Steelers will face off at Stade de France in Paris, and here's a look at the trading markets available at Kalshi for Sunday's matchup",
+      "url": "https://www.cbssports.com/prediction/news/steelers-vs-saints-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-nfl-week-7-paris-game/",
+      "published_at": "2026-10-25T09:00:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Prisco's Week 7 NFL picks: Lions edge Packers, Steelers top Saints in Paris",
       "summary": "Pete Prisco reveals all of his Week 7 picks, including the Chiefs over the Seahawks in Kenneth Walker's revenge game",
@@ -366,54 +402,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys vs. Eagles rivalry game headlines three matchups with underrated big stakes",
-      "summary": "The unpredictable NFC East supplies two of this week's most intriguing under-the-radar matchups",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-underrated-games-cowboys-eagles-giants-texan/",
-      "published_at": "2026-10-23T13:20:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Caleb Williams wins duel of 2024 NFL Draft QBs; Brewers-Rays World Series opens with a twist",
-      "summary": "Plus the Top 100 And 1 college basketball players for 2026-27",
-      "url": "https://www.cbssports.com/nfl/news/caleb-williams-drake-maye-nfl-draft-qb-brewers-rays-world-series-mlb/",
-      "published_at": "2026-10-23T12:49:21Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL odds: Week 7 parlays featuring favorites, underdogs include Buccaneers-Panthers, Bengals-Ravens",
-      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 7 of the NFL season",
-      "url": "https://www.cbssports.com/betting/news/nfl-odds-week-7-parlays-featuring-favorites-underdogs-include-buccaneers-panthers-bengals-ravens/",
-      "published_at": "2026-10-23T12:01:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Should the Chiefs trade for Garrett Wilson? Why blockbuster deal makes sense, and why it probably won't happen",
-      "summary": "Pairing the dynamic Jets wideout with Patrick Mahomes could solve Kansas City's receiver concerns, but several obstacles stand in the way",
-      "url": "https://www.cbssports.com/nfl/news/garrett-wilson-trade-chiefs-jets-star-receiver-2026/",
-      "published_at": "2026-10-23T11:44:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
