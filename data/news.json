@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T00:23:22.532422Z",
+  "generated_at": "2026-10-26T07:48:12.140624Z",
   "lookback_days": 7,
-  "article_count": 19,
+  "article_count": 21,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "Cam Skattebo says he's going to keep breaking NFL rules after getting flagged for rarely enforced penalty",
+      "summary": "Skattebo made it clear he intends to keep seeking out contact",
+      "url": "https://www.cbssports.com/nfl/news/cam-skattebo-rare-penalty-giants-texans-2026/",
+      "published_at": "2026-10-26T03:40:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 grades: Falcons earn solid 'A' mark, while Panthers flop with a resounding 'F'",
+      "summary": "We're grading every game from Week 7 that has been played so far",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-grades-falcons-buccaneers-giants-panthers/",
+      "published_at": "2026-10-26T03:24:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 7 overreactions: Panthers have season's worst loss? Dan Campbell was right? Ravens to miss playoffs?",
+      "summary": "Plus, did the Vikings choose the right quarterback?",
+      "url": "https://www.cbssports.com/nfl/news/nfl-overreactions-panthers-bryce-young-ravens/",
+      "published_at": "2026-10-26T00:53:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 7 winners and losers: Cam Skattebo, J.J. McCarthy lift Giants; Aaron Glenn's seat heats up",
       "summary": "One of the New York teams is in much better shape than the other. Plus, what happened to the Panthers?",
@@ -49,18 +85,6 @@
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 7 Chiefs vs. Seahawks SNF matchup",
       "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-get-55-bonus-chiefs-vs-seahawks-sunday-night-football-nfl-week-7/",
       "published_at": "2026-10-25T23:11:27Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 7 overreactions: Worst Panthers loss of the season? Ravens to miss playoffs after another blown lead?",
-      "summary": "Plus, should the Vikings regret their quarterback choice?",
-      "url": "https://www.cbssports.com/nfl/news/nfl-overreactions-panthers-bryce-young-ravens/",
-      "published_at": "2026-10-25T23:05:50Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
