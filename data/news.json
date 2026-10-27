@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T21:00:47.595696Z",
+  "generated_at": "2026-10-27T01:28:54.018365Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,78 @@
   ],
   "articles": [
     {
+      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Cowboys vs. Eagles, Monday Night Football",
+      "summary": "Sign up and bet on Monday Night Football with the latest FanDuel promo code to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-cowboys-eagles-monday-night-football/",
+      "published_at": "2026-10-26T23:34:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Eagles vs. Cowboys on Monday Night Football",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Eagles vs. Cowboys on Monday Night Football",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-eagles-vs-cowboys-on-monday-night-football/",
+      "published_at": "2026-10-26T23:09:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys vs. Eagles odds: First touchdown scorer picks, predictions for NFL Week 7 Monday Night Football",
+      "summary": "Here's who we think are the best choices for first touchdown prediction markets on Monday Night Football between the Cowboys and Eagles",
+      "url": "https://www.cbssports.com/prediction/news/cowboys-vs-eagles-odds-first-touchdown-scorer-picks-predictions-nfl-week-7-monday-night-football/",
+      "published_at": "2026-10-26T23:03:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Eagles vs. Cowboys prediction: Dallas visits injury-ravaged Philadelphia on 'Monday Night Football'",
+      "summary": "Dallas has dropped two straight games, but Philadelphia enters the NFC East matchup without Jalen Hurts",
+      "url": "https://www.cbssports.com/nfl/news/eagles-vs-cowboys-prediction-odds-monday-night-football-2026/",
+      "published_at": "2026-10-26T22:58:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Will Saquon Barkley play vs. Cowboys? A look at the Eagles RB's status against Cowboys",
+      "summary": "Philadelphia has averaged just 28.5 rushing yards per game without Barkley, compared with 109.0 yards when he has played",
+      "url": "https://www.cbssports.com/nfl/news/saquon-barkley-injury-update-eagles-cowboys/",
+      "published_at": "2026-10-26T22:46:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Kalshi promo code CBSSPORTS55: Land $55 bonus for Cowboys vs. Eagles on Monday Night Football",
+      "summary": "New Kalshi users who make trades on the NFL Week 7 Cowboys vs. Eagles MNF matchup can get a $55 bonus after spending $25+",
+      "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-land-55-bonus-cowboys-vs-eagles-monday-night-football/",
+      "published_at": "2026-10-26T22:45:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "NFL trade rumors: 4 potential landing spots for Maxx Crosby if Raiders decide to sell at deadline",
       "summary": "As the Raiders stumble to 3-4 ahead of the Nov. 10 deadline, contenders like the Bears and Bills could pursue the star pass rusher to fuel a playoff push",
       "url": "https://www.cbssports.com/nfl/news/nfl-trade-rumors-landing-spots-maxx-crosby-raiders/",
@@ -33,18 +105,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Eagles vs. Cowboys, Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Eagles vs. Cowboys on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-eagles-vs-cowboys-monday-night-football/",
-      "published_at": "2026-10-26T20:29:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL trade deadline matchmaker: Vikings add Jonathan Taylor to boost offense, Chiefs nab WR",
       "summary": "Moves for several contenders who could look to buy",
       "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-matchmaker-vikings-jonathan-taylor-chiefs/",
@@ -53,30 +113,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys vs. Eagles odds: First touchdown scorer picks, predictions for NFL Week 7 Monday Night Football",
-      "summary": "Here's who we think are the best choices for first touchdown prediction markets on Monday Night Football between the Cowboys and Eagles",
-      "url": "https://www.cbssports.com/prediction/news/cowboys-vs-eagles-odds-first-touchdown-scorer-picks-predictions-nfl-week-7-monday-night-football/",
-      "published_at": "2026-10-26T18:49:31Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Will Saquon Barkley play vs. Cowboys? A look at the Eagles RB's status against Cowboys",
-      "summary": "Philadelphia has averaged just 28.5 rushing yards per game without Barkley, compared with 109.0 yards when he has played",
-      "url": "https://www.cbssports.com/nfl/news/saquon-barkley-injury-update-eagles-cowboys/",
-      "published_at": "2026-10-26T18:19:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
@@ -133,18 +169,6 @@
       "summary": "Safety Xavier McKinney unloaded on the referees following a 20-17 defeat, calling out phantom penalties that kept key drives alive for Detroit and that drew criticism from Tom Brady",
       "url": "https://www.cbssports.com/nfl/news/packers-blast-refs-after-loss-vs-lions-xavier-mckinney/",
       "published_at": "2026-10-26T15:30:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Cowboys vs. Eagles on Monday Night Football",
-      "summary": "Sign up and bet on Monday Night Football with the latest FanDuel promo code to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-cowboys-vs-eagles-monday-night-football/",
-      "published_at": "2026-10-26T15:20:14Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -234,18 +258,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Eagles vs. Cowboys prediction, odds, pick: Dallas visits injury-ravaged Philadelphia on Monday Night Football",
-      "summary": "Dallas has dropped two straight games, but Philadelphia enters the NFC East matchup without Jalen Hurts",
-      "url": "https://www.cbssports.com/nfl/news/eagles-vs-cowboys-prediction-odds-monday-night-football-2026/",
-      "published_at": "2026-10-26T11:51:40Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     },
     {
@@ -349,42 +361,6 @@
       "summary": "Rodgers is now the first quarterback to play an international game in three different countries in three straight years",
       "url": "https://www.cbssports.com/nfl/news/steelers-aaron-rodgers-nfl-once-considered-week-all-international-games/",
       "published_at": "2026-10-25T22:57:07Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Christian McCaffrey injury: 49ers' RB says leg 'just died' on him during loss to Falcons",
-      "summary": "McCaffrey expressed his frustrations with his limitations during the game",
-      "url": "https://www.cbssports.com/nfl/news/49ers-rb-christian-mccaffrey-injury-updates-falcons/",
-      "published_at": "2026-10-25T22:43:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "J.J. McCarthy, Cam Skattebo seize second chances as John Harbaugh's surprising Giants keep rolling",
-      "summary": "McCarthy impressed in his first start for New York, and Skattebo responded emphatically to his Week 6 benching",
-      "url": "https://www.cbssports.com/nfl/news/giants-overtime-win-john-harbaugh-j-j-mccarthy-cam-skattebo/",
-      "published_at": "2026-10-25T22:07:19Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cam Skattebo redemption game: Giants RB returns with stellar performance after benching",
-      "summary": "Fresh out of the dog house, the second-year back erupted for 124 yards and set up Devin Singletary's overtime touchdown to revive New York's run game",
-      "url": "https://www.cbssports.com/nfl/news/new-york-giants-cam-skattebo-shines-vs-houston-texans/",
-      "published_at": "2026-10-25T21:51:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
