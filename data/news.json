@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-27T01:28:54.018365Z",
+  "generated_at": "2026-10-27T07:52:31.055598Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,10 @@
   ],
   "articles": [
     {
-      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Cowboys vs. Eagles, Monday Night Football",
-      "summary": "Sign up and bet on Monday Night Football with the latest FanDuel promo code to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-cowboys-eagles-monday-night-football/",
-      "published_at": "2026-10-26T23:34:38Z",
+      "title": "NFL Week 7 grades: Cowboys earn high mark for big Monday night win, Panthers flop with an 'F'",
+      "summary": "We graded every game from Week 7",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-grades-falcons-buccaneers-giants-panthers/",
+      "published_at": "2026-10-27T03:27:01Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,10 +33,58 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Eagles vs. Cowboys on Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Eagles vs. Cowboys on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-eagles-vs-cowboys-on-monday-night-football/",
-      "published_at": "2026-10-26T23:09:43Z",
+      "title": "2027 Super Bowl headliner announced: Jay-Z picks himself to perform for Super Bowl LXI",
+      "summary": "This is a public service announcement sponsored by Roc Nation",
+      "url": "https://www.cbssports.com/nfl/news/2027-super-bowl-headliner-announced-jay-z-super-bowl-lxi/",
+      "published_at": "2026-10-27T02:43:07Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Every Super Bowl halftime performer ever: Full list as Jay Z announces himself as the 2027 artist",
+      "summary": "Explore the full list of halftime show performers",
+      "url": "https://www.cbssports.com/nfl/news/every-super-bowl-halftime-performer-in-history/",
+      "published_at": "2026-10-27T02:41:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Who will Jay-Z bring out for the 2027 Super Bowl halftime show? Four possible guests",
+      "summary": "Will Jay Z bring out any guests? If he does, here are some guesses of who they could be",
+      "url": "https://www.cbssports.com/nfl/news/2027-super-bowl-halftime-special-guests-jay-z/",
+      "published_at": "2026-10-27T02:39:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL makes rare double flex move by tweaking the schedule in Week 9 and Week 11",
+      "summary": "The NFL just tweaked the schedule for two different weeks in November",
+      "url": "https://www.cbssports.com/nfl/news/nfl-rare-double-flex-move-tweaking-schedule-in-week-9-week-11/",
+      "published_at": "2026-10-27T01:36:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $350 in bonus bets by targeting Cowboys vs. Eagles, Monday Night Football",
+      "summary": "Sign up and bet on Monday Night Football with the latest FanDuel promo code to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-350-bonus-bets-cowboys-eagles-monday-night-football/",
+      "published_at": "2026-10-26T23:34:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -237,18 +285,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 7 grades: Falcons earn solid 'A' mark, while Panthers flop with a resounding 'F'",
-      "summary": "We're grading every game from Week 7 that has been played so far",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-grades-falcons-buccaneers-giants-panthers/",
-      "published_at": "2026-10-26T12:56:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Peyton Manning for Colts GM after Chris Ballard's firing? Why timing isn't right for Hall of Fame QB",
       "summary": "The franchise legend spent 14 seasons in Indianapolis, winning Super Bowl XLI with the Colts",
       "url": "https://www.cbssports.com/nfl/news/peyton-manning-not-interested-colts-gm-chris-ballard/",
@@ -337,30 +373,6 @@
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 7 Chiefs vs. Seahawks SNF matchup",
       "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-get-55-bonus-chiefs-vs-seahawks-sunday-night-football-nfl-week-7/",
       "published_at": "2026-10-25T23:11:27Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs vs. Seahawks NFL Week 7 odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-      "summary": "Here's a look at the trading markets available at Kalshi for Week 7's Sunday Night Football matchup featuring the Kansas City Chiefs and Seattle Seahawks",
-      "url": "https://www.cbssports.com/prediction/news/chiefs-vs-seahawks-nfl-week-7-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-      "published_at": "2026-10-25T23:00:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Steelers' Aaron Rodgers reveals NFL once had a completely different plan for its international games",
-      "summary": "Rodgers is now the first quarterback to play an international game in three different countries in three straight years",
-      "url": "https://www.cbssports.com/nfl/news/steelers-aaron-rodgers-nfl-once-considered-week-all-international-games/",
-      "published_at": "2026-10-25T22:57:07Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
