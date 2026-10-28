@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T16:37:58.072640Z",
+  "generated_at": "2026-10-28T22:35:32.528903Z",
   "lookback_days": 7,
   "article_count": 29,
   "sources": [
@@ -21,14 +21,50 @@
   ],
   "articles": [
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 5, 76ers-Pacers",
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Rays-Brewers World Series Game 5, 76ers-Pacers",
       "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for World Series, NBA, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-5-76ers-pacers/",
-      "published_at": "2026-10-28T14:56:23Z",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rays-brewers-world-series-game-5-76ers-pacers/",
+      "published_at": "2026-10-28T20:57:33Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Agent's Take: Detroit Lions' Sam LaPorta contract problem isn't going away",
+      "summary": "LaPorta may have reason to wait if the Lions use the franchise tag, especially with Brock Bowers positioned to dramatically reshape the tight end market",
+      "url": "https://www.cbssports.com/nfl/news/agents-take-lions-sam-laporta-contract-problem/",
+      "published_at": "2026-10-28T20:24:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Two NFL teams set to unveil a new uniform in Week 8 with special 'Rivalries' helmet and jersey",
+      "summary": "The Lions and Jaguars will both be debuting new uniforms on Sunday",
+      "url": "https://www.cbssports.com/nfl/news/jaguars-lions-set-to-unveil-rivalries-uniform-week-8/",
+      "published_at": "2026-10-28T19:22:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Josh Downs landing spots after Colts WR reportedly asks out, Indy continues fire sale",
+      "summary": "Downs is in the final year of his rookie deal and drawing trade interest",
+      "url": "https://www.cbssports.com/nfl/news/colts-josh-downs-request-trade-landing-spots/",
+      "published_at": "2026-10-28T18:03:23Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     },
@@ -285,18 +321,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Who will Jay-Z bring out for the 2027 Super Bowl halftime show? Four possible guests",
-      "summary": "Will Jay Z bring out any guests? If he does, here are some guesses of who they could be",
-      "url": "https://www.cbssports.com/nfl/news/2027-super-bowl-halftime-special-guests-jay-z/",
-      "published_at": "2026-10-27T13:04:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Cowboys crush Eagles to revive NFC East hopes; Brewers hammer Rays for 3-0 World Series lead",
       "summary": "Plus, the Valkyries won a defensive struggle in Game 5 of the WNBA Finals",
       "url": "https://www.cbssports.com/nfl/news/cowboys-eagles-nfc-east-nfl-brewers-rays-world-series-mlb/",
@@ -337,30 +361,6 @@
       "summary": "Explore the full list of halftime show performers",
       "url": "https://www.cbssports.com/nfl/news/every-super-bowl-halftime-performer-in-history/",
       "published_at": "2026-10-27T02:41:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL makes rare double flex move by tweaking the schedule in Week 9 and Week 11",
-      "summary": "The NFL just tweaked the schedule for two different weeks in November",
-      "url": "https://www.cbssports.com/nfl/news/nfl-rare-double-flex-move-tweaking-schedule-in-week-9-week-11/",
-      "published_at": "2026-10-27T01:36:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cowboys vs. Eagles odds: First touchdown scorer picks, predictions for NFL Week 7 Monday Night Football",
-      "summary": "Here's who we think are the best choices for first touchdown prediction markets on Monday Night Football between the Cowboys and Eagles",
-      "url": "https://www.cbssports.com/prediction/news/cowboys-vs-eagles-odds-first-touchdown-scorer-picks-predictions-nfl-week-7-monday-night-football/",
-      "published_at": "2026-10-26T23:03:20Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
