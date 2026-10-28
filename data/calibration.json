@@ -8,22 +8,22 @@
     7
   ],
   "current_week": 8,
-  "generated_at": "2026-10-27T20:54:57.180458Z",
+  "generated_at": "2026-10-28T22:47:21.864810Z",
   "minimum_completed_weeks": 2,
   "minimum_position_samples": 50,
   "positions": {
     "DEF": {
       "baseline_cv": 0.55,
-      "bias_ppr": -0.2507,
-      "blend_weight": 0.5441,
-      "cv_used": 0.6947,
-      "empirical_cv": 0.816,
-      "error_sd_ppr": 5.5516,
-      "mae_ppr": 4.2266,
-      "mean_projection_ppr": 6.8038,
+      "bias_ppr": -0.2106,
+      "blend_weight": 0.5427,
+      "cv_used": 0.6934,
+      "empirical_cv": 0.8142,
+      "error_sd_ppr": 5.5413,
+      "mae_ppr": 4.2088,
+      "mean_projection_ppr": 6.8061,
       "mode": "empirical_blend",
-      "n": 179,
-      "rmse_ppr": 5.5573
+      "n": 178,
+      "rmse_ppr": 5.5453
     },
     "K": {
       "baseline_cv": 0.45,
@@ -91,7 +91,7 @@
       "rmse_ppr": 6.7628
     }
   },
-  "sample_count": 1404,
+  "sample_count": 1403,
   "season": 2026,
   "snapshot_policy": "latest refresh through Thursday 18:00 America/New_York",
   "source": "Frozen Sleeper weekly projections vs realized Sleeper weekly stats (PPR error scale)",
@@ -101,6 +101,6 @@
     "4": 288,
     "5": 29,
     "6": 256,
-    "7": 248
+    "7": 247
   }
 }
