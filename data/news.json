@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T20:42:06.112488Z",
+  "generated_at": "2026-10-28T01:22:23.567828Z",
   "lookback_days": 7,
   "article_count": 29,
   "sources": [
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "DeForest Buckner trade grades: 49ers get reunion with three-time Pro Bowler, Colts work toward rebuild",
+      "summary": "The trade makes sense for both sides",
+      "url": "https://www.cbssports.com/nfl/news/deforest-buckner-trade-grades-49ers-colts/",
+      "published_at": "2026-10-27T22:33:47Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "DeForest Buckner trade: Colts send DT to 49ers in exchange for 2027 fourth-round pick",
+      "summary": "Buckner began his NFL career with the Niners as a first round pick in 2016",
+      "url": "https://www.cbssports.com/nfl/news/deforest-buckner-trade-colts-49ers/",
+      "published_at": "2026-10-27T22:04:07Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 4, Pistons-Knicks",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for World Series, NBA, NFL betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-4-pistons-knicks/",
+      "published_at": "2026-10-27T21:57:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL trade deadline: Four Eagles, a star Colt and two starting QBs included among top 25 candidates",
+      "summary": "Saquon Barkley, Jonathan Taylor, Kirk Cousins and more could fetch returns at the trade deadline",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-rankings-top-25-eagles-colts/",
+      "published_at": "2026-10-27T21:11:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 8 picks and score predictions: Bills survive Baltimore, Browns end 38-year drought",
       "summary": "Week 8 brings Halloween scares for several contenders, including the Bills, Vikings, Chiefs and Seahawks",
@@ -73,18 +121,6 @@
       "summary": "A look at the pros and cons of acquiring Barkley",
       "url": "https://www.cbssports.com/nfl/news/case-for-against-giants-trading-for-saquon-barkley/",
       "published_at": "2026-10-27T18:13:53Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL trade deadline: Four Eagles, two more Colts and two starting QBs included among top 25 candidates",
-      "summary": "Saquon Barkley, Jonathan Taylor, Kirk Cousins and more could fetch returns at the trade deadline",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-rankings-top-25-eagles-colts/",
-      "published_at": "2026-10-27T17:35:09Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "transaction",
@@ -150,18 +186,6 @@
       "category": "availability",
       "impact": "positive",
       "score_adjustment": 4,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Brewers-Rays World Series Game 4, Knicks-Pistons",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for World Series, NBA, NFL betting on Tuesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-brewers-rays-world-series-game-4-knicks-pistons/",
-      "published_at": "2026-10-27T14:47:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -337,30 +361,6 @@
       "summary": "Here's everything you need to know about the NFL for Oct. 26",
       "url": "https://www.cbssports.com/nfl/news/pick-six-nfl-week-7-winners-losers-grades-cowboys-eagles-picks/",
       "published_at": "2026-10-26T16:38:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Garrett Wilson explains heated Jets sideline moment, says frustration wasn't directed at Geno Smith",
-      "summary": "The star receiver acknowledged that he was unhappy with New York's red-zone play calls during an animated conversation",
-      "url": "https://www.cbssports.com/nfl/news/garrett-wilson-geno-smith-heated-jets-sideline-exchange/",
-      "published_at": "2026-10-26T16:26:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Colts' Shane Steichen has 'not thought' about QB change despite Daniel Jones' struggles",
-      "summary": "Anthony Richardson and Riley Leonard offer little evidence that either would represent an upgrade",
-      "url": "https://www.cbssports.com/nfl/news/colts-bench-daniel-jones-shane-steichen-quarterback/",
-      "published_at": "2026-10-26T15:58:30Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
