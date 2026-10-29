@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T05:48:31.351889Z",
+  "generated_at": "2026-10-29T13:01:40.289062Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "Why extending Bo Nix will cripple Broncos, slam Denver's Super Bowl window shut",
+      "summary": "Nix's throwing the ball downfield like a 41-year-old Drew Brees with a degenerative right shoulder, despite being 26 years old",
+      "url": "https://www.cbssports.com/nfl/news/why-extending-bo-nix-cripple-broncos-slam-denvers-super-bowl/",
+      "published_at": "2026-10-29T12:26:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 8 picks: Our experts face off on Panthers at Packers, Ravens at Bills and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-picks-experts-face-off-panthers-packers-ravens-bills/",
+      "published_at": "2026-10-29T12:05:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 8 upset alert: Can Lamar Jackson stun Bills? Will Vikings stay undefeated?",
+      "summary": "Lamar Jackson's return gives Baltimore a chance to stun Buffalo",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-upset-picks-bills-vs-ravens-vikings-lions/",
+      "published_at": "2026-10-29T11:33:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL trade deadline candidates: Ranking big-name players possibly on the move into tiers",
+      "summary": "From proven stars like Jonathan Taylor and Maxx Crosby to discount playmakers and depth rentals, here is a look at who could switch teams before the window closes",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-candidates-impact-tiers/",
+      "published_at": "2026-10-29T11:31:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Most important NFL Week 8 games for playoff picture: Steelers-Browns AFC North battle looms large",
+      "summary": "Assessing the biggest games of the week using SportsLine projections",
+      "url": "https://www.cbssports.com/nfl/news/most-important-nfl-week-8-games-playoff-picture/",
+      "published_at": "2026-10-29T11:30:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Super Bowl stock report for Week 8: Joe Burrow's excellence ignites Bengals, Texans reach screeching halt",
+      "summary": "We assess the NFL title race after Week 7 and identify four upcoming games that could reshape the Super Bowl picture",
+      "url": "https://www.cbssports.com/nfl/news/super-bowl-stock-report-for-week-8-joe-burrow-bengals-texans/",
+      "published_at": "2026-10-29T11:30:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "It wouldn't shock me if ... NFL Week 8: Colts split Jonathan Taylor's reps, Lamar Jackson shows no rust",
+      "summary": "A Vikings' tight end breaks out? The first place Atlanta Falcons?",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-shocking-predictions-colts-jonathan-taylors-lamar-jackson/",
+      "published_at": "2026-10-29T11:28:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 8 injury report: Lamar Jackson practices in full, Lions star Kerby Joseph returns",
       "summary": "Get the latest Week 8 injury updates on Lamar Jackson, Kerby Joseph, Matthew Golden, Ja'Marr Chase, Saquon Barkley and other notable NFL players",
@@ -189,18 +273,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 8 picks and score predictions: Bills survive Baltimore, Browns end 38-year drought",
-      "summary": "Week 8 brings Halloween scares for several contenders, including the Bills, Vikings, Chiefs and Seahawks",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-picks-predictions-odds-bills-ravens-browns-steelers-vikings/",
-      "published_at": "2026-10-27T19:20:07Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL hot-seat rankings: Nick Sirianni's seat getting warmer? Shane Steichen running out of time",
       "summary": "These coaches are feeling the most heat entering Week 8",
       "url": "https://www.cbssports.com/nfl/news/nfl-hot-seat-rankings-2026-head-coach-aaron-glenn-jets-shane-steichen-colts/",
@@ -229,18 +301,6 @@
       "summary": "Seattle shores up protection for Sam Darnold with an eight-time Pro Bowler, while Indianapolis opens the door to sell more",
       "url": "https://www.cbssports.com/nfl/news/quenton-nelson-trade-grades-seahawks-colts/",
       "published_at": "2026-10-27T18:29:31Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Should the Giants trade for Saquon Barkley? Making the case for and against potential blockbuster deal",
-      "summary": "A look at the pros and cons of acquiring Barkley",
-      "url": "https://www.cbssports.com/nfl/news/case-for-against-giants-trading-for-saquon-barkley/",
-      "published_at": "2026-10-27T18:13:53Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "transaction",
@@ -321,58 +381,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Who will Jay-Z bring out for the 2027 Super Bowl halftime show? Four possible guests",
-      "summary": "Will Jay Z bring out any guests? If he does, here are some guesses of who they could be",
-      "url": "https://www.cbssports.com/nfl/news/2027-super-bowl-halftime-special-guests-jay-z/",
-      "published_at": "2026-10-27T13:04:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Cowboys crush Eagles to revive NFC East hopes; Brewers hammer Rays for 3-0 World Series lead",
       "summary": "Plus, the Valkyries won a defensive struggle in Game 5 of the WNBA Finals",
       "url": "https://www.cbssports.com/nfl/news/cowboys-eagles-nfc-east-nfl-brewers-rays-world-series-mlb/",
       "published_at": "2026-10-27T12:50:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Why Cowboys' offensive revival could launch an NFC East run",
-      "summary": "The Cowboys still have work to do, but their offensive ceiling and favorable upcoming schedule give them a chance",
-      "url": "https://www.cbssports.com/nfl/news/cowboys-nfc-east-run-dak-prescott-offense-eagles/",
-      "published_at": "2026-10-27T12:23:39Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 7 grades: Cowboys earn high mark for big Monday night win, Panthers flop with an 'F'",
-      "summary": "We graded every game from Week 7",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-7-grades-falcons-buccaneers-giants-panthers/",
-      "published_at": "2026-10-27T03:27:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Every Super Bowl halftime performer ever: Full list as Jay Z announces himself as the 2027 artist",
-      "summary": "Explore the full list of halftime show performers",
-      "url": "https://www.cbssports.com/nfl/news/every-super-bowl-halftime-performer-in-history/",
-      "published_at": "2026-10-27T02:41:42Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
