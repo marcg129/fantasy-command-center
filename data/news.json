@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T05:49:36.422271Z",
+  "generated_at": "2026-10-30T12:56:39.120011Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 8 picks: Experts split on Ravens vs. Bills as Lamar Jackson eyes return",
+      "summary": "From Ravens-Bills and Eagles-Commanders to Bears-Seahawks on Monday night, here's what our experts and the SportsLine model are forecasting in Week 8",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-expert-picks-predictions-odds-schedule-2026/",
+      "published_at": "2026-10-30T11:48:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Packers' Christian Watson returns against Panthers after chest injury, hospital visit",
       "summary": "The Packers wide receiver was injured on a 53-yard reception in the first half",
@@ -313,30 +325,6 @@
       "summary": "Lamar Jackson's return gives Baltimore a chance to stun Buffalo",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-8-upset-picks-bills-vs-ravens-vikings-lions/",
       "published_at": "2026-10-29T11:33:05Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL trade deadline candidates: Ranking big-name players possibly on the move into tiers",
-      "summary": "From proven stars like Jonathan Taylor and Maxx Crosby to discount playmakers and depth rentals, here is a look at who could switch teams before the window closes",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-candidates-impact-tiers/",
-      "published_at": "2026-10-29T11:31:39Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Most important NFL Week 8 games for playoff picture: Steelers-Browns AFC North battle looms large",
-      "summary": "Assessing the biggest games of the week using SportsLine projections",
-      "url": "https://www.cbssports.com/nfl/news/most-important-nfl-week-8-games-playoff-picture/",
-      "published_at": "2026-10-29T11:30:28Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
