@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-29T23:57:17.410946Z",
+  "generated_at": "2026-10-30T05:49:36.422271Z",
   "lookback_days": 7,
-  "article_count": 26,
+  "article_count": 27,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,22 @@
   ],
   "articles": [
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to land $1,500 bonus bets for Panthers vs. Packers, Thursday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Panthers vs. Packers on Thursday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-land-1500-bonus-bets-panthers-packers-thursday-night-football/",
-      "published_at": "2026-10-29T23:39:44Z",
+      "title": "Packers' Christian Watson returns against Panthers after chest injury, hospital visit",
+      "summary": "The Packers wide receiver was injured on a 53-yard reception in the first half",
+      "url": "https://www.cbssports.com/nfl/news/christian-watson-injury-update-packers-wr-hospital/",
+      "published_at": "2026-10-30T04:02:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 8 NFL picks: Lions hand Vikings their first loss, Chiefs over Broncos",
+      "summary": "Pete Prisco reveals all of his Week 8 picks, including the Bills to top the Ravens in a high-scoring game",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-8-nfl-picks-odds-predictions/",
+      "published_at": "2026-10-30T00:13:10Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
