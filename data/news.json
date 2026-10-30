@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T19:23:08.637921Z",
+  "generated_at": "2026-10-30T23:47:04.123737Z",
   "lookback_days": 7,
-  "article_count": 24,
+  "article_count": 25,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to land $1,500 bonus bets for 76ers-Knicks, NBA, Baylor-UCF, college football",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football and NFL betting",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-land-1500-bonus-bets-for-76ers-knicks-nba-baylor-ucf-college-football/",
+      "published_at": "2026-10-30T22:32:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 8 final injury report: Latest on Lamar Jackson, AJ Brown, George Pickens, more",
+      "summary": "A rundown of each team's final Week 8 injury report",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-injury-report-lamar-jackson-aj-brown-emeka-egbuka-more/",
+      "published_at": "2026-10-30T22:30:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 8 schedule: Why you should watch these three underrated games",
+      "summary": "Here are three games you should watch that people may not be talking about",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-schedule-where-to-watch-these-three-underrated-games/",
+      "published_at": "2026-10-30T21:24:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "LOOK: Cardinals' Budda Baker addresses trade rumors while wearing Halloween costume",
+      "summary": "Baker isn't letting trade speculation spoil his Halloween spirit",
+      "url": "https://www.cbssports.com/nfl/news/cardinals-budda-baker-addresses-trade-rumors-while-wearing-halloween-costume/",
+      "published_at": "2026-10-30T21:21:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "CeeDee Lamb says Cowboys have a Cardinals boogeyman: 'They've punched us in the mouth every single time'",
       "summary": "Dallas five-time Pro Bowl wide receiver CeeDee Lamb has never beaten Arizona, and they have won eight of the last nine matchups",
@@ -105,18 +153,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 8 schedule: Why you should watch these three underrated games",
-      "summary": "Here are three games you should watch that people may not be talking about",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-schedule-where-to-watch-these-three-underrated-games/",
-      "published_at": "2026-10-30T15:12:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "2026 NFL trade deadline: One position of need and potential options for all 32 teams",
       "summary": "Following Chicago's blockbuster deal for Jeffery Simmons, contenders and sellers across the league have less than two weeks to reshape their rosters",
       "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-needs-potential-options-all-32-teams/",
@@ -157,18 +193,6 @@
       "summary": "Jacobs says the celebration was a reference to a gospel song titled \"Break Every Chain\"",
       "url": "https://www.cbssports.com/nfl/news/packers-josh-jacobs-explains-touchdown-celebration-panthers/",
       "published_at": "2026-10-30T13:48:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to land $1,500 bonus bets for Knicks-76ers, NBA, Baylor-UCF, college football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football and NFL betting",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-land-1500-bonus-bets-knicks-76ers-nba-baylor-ucf-college-football/",
-      "published_at": "2026-10-30T13:15:41Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -289,18 +313,6 @@
       "summary": "Here's a look at the prediction markets at Kalshi for the first touchdown scorer in Panthers vs. Packers on TNF",
       "url": "https://www.cbssports.com/prediction/news/panthers-vs-packers-odds-first-touchdown-scorer-picks-predictions-for-nfl-week-8-thursday-night-football/",
       "published_at": "2026-10-29T23:15:25Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Unlock $55 bonus for Panthers vs. Packers on Thursday Night Football",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 8 Panthers vs. Packers TNF matchup",
-      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-unlock-55-bonus-panthers-vs-packers-thursday-night-football/",
-      "published_at": "2026-10-29T23:05:49Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
