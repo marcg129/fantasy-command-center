@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-30T23:47:04.123737Z",
+  "generated_at": "2026-10-31T05:41:27.473507Z",
   "lookback_days": 7,
-  "article_count": 25,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -313,6 +313,18 @@
       "summary": "Here's a look at the prediction markets at Kalshi for the first touchdown scorer in Panthers vs. Packers on TNF",
       "url": "https://www.cbssports.com/prediction/news/panthers-vs-packers-odds-first-touchdown-scorer-picks-predictions-for-nfl-week-8-thursday-night-football/",
       "published_at": "2026-10-29T23:15:25Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Best Kalshi promo code CBSSPORTS55: Unlock $55 bonus for Panthers vs. Packers on Thursday Night Football",
+      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 8 Panthers vs. Packers TNF matchup",
+      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-unlock-55-bonus-panthers-vs-packers-thursday-night-football/",
+      "published_at": "2026-10-29T23:05:49Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
