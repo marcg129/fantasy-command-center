@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T06:05:43.437887Z",
+  "generated_at": "2026-11-01T13:25:06.843881Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "Raiders vs. Jets odds, predictions: Use Kalshi promo code CBSSPORTS55 for $55 bonus on NFL Week 8 trades",
+      "summary": "The Raiders and Jets will try to turn things around, and here's a look at the trading markets available for Sunday's matchup at Kalshi",
+      "url": "https://www.cbssports.com/betting/news/raiders-vs-jets-odds-predictions-use-kalshi-promo-code-cbssports55-for-55-bonus-on-nfl-week-8-trades/",
+      "published_at": "2026-11-01T12:15:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 8 NFL expert picks: Lions hand Vikings their first loss, Chiefs over Broncos",
+      "summary": "Pete Prisco reveals all of his Week 8 picks, including the Bills to top the Ravens in a high-scoring game",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-8-nfl-picks-odds-predictions/",
+      "published_at": "2026-11-01T12:00:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 8 odds, predictions, expert picks: Who wins Ravens vs. Bills showdown?",
+      "summary": "From Ravens-Bills and Eagles-Commanders to Bears-Seahawks on Monday night, here's what our experts and the SportsLine model are forecasting in Week 8",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-expert-picks-predictions-odds-schedule-2026/",
+      "published_at": "2026-11-01T11:00:56Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Commanders vs. Eagles: Struggling NFC East squads face off on 'Sunday Night Football'",
       "summary": "Here's what you need to know to catch the game",
@@ -225,18 +261,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Steelers legend Kordell Stewart changes narrative on his NFL career in new HBO documentary",
-      "summary": "Stewart wants his career to be remembered for what happened on the field",
-      "url": "https://www.cbssports.com/nfl/news/steelers-legend-kordell-stewart-changes-narrative-hbo-documentary/",
-      "published_at": "2026-10-30T17:58:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Ravens coach Jesse Minter confirms Lamar Jackson will return from ankle injury, start vs. Bills",
       "summary": "The two-time MVP hasn't played since Week 4 after suffering a high ankle sprain",
       "url": "https://www.cbssports.com/nfl/news/ravens-lamar-jackson-injury-update-bills/",
@@ -329,30 +353,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Josh Jacobs explains controversial touchdown celebration vs. Panthers that seemed to mimic arrest",
-      "summary": "Jacobs says the celebration was a reference to a gospel song titled \"Break Every Chain\"",
-      "url": "https://www.cbssports.com/nfl/news/packers-josh-jacobs-explains-touchdown-celebration-panthers/",
-      "published_at": "2026-10-30T13:48:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Deshaun Watson vs. Steelers' suffocating secondary: How pivotal AFC North duel will be won",
-      "summary": "How Watson attacks Pittsburgh's zone coverage will be crucial",
-      "url": "https://www.cbssports.com/nfl/news/deshaun-watson-vs-steelers-how-pivotal-afc-north-duel-won/",
-      "published_at": "2026-10-30T13:12:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     }
