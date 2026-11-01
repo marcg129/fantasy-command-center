@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T23:23:51.207761Z",
+  "generated_at": "2026-11-01T06:05:43.437887Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Commanders vs. Eagles: Struggling NFC East squads face off on 'Sunday Night Football'",
+      "summary": "Here's what you need to know to catch the game",
+      "url": "https://www.cbssports.com/nfl/news/commanders-vs-eagles-where-to-watch-prediction/",
+      "published_at": "2026-10-31T23:00:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 8 final injury report: Patriots' AJ Brown ruled out, latest on Lamar Jackson, more",
       "summary": "A rundown of each team's final Week 8 injury report",
@@ -337,18 +349,6 @@
       "summary": "How Watson attacks Pittsburgh's zone coverage will be crucial",
       "url": "https://www.cbssports.com/nfl/news/deshaun-watson-vs-steelers-how-pivotal-afc-north-duel-won/",
       "published_at": "2026-10-30T13:12:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jordan Love picks Panthers apart; Christian Watson's midgame hospital trip; top 50 MLB free agents",
-      "summary": "Plus, predictions for this weekend's college football and NFL games",
-      "url": "https://www.cbssports.com/nfl/news/jordan-love-picks-panthers-apart-christian-watsons-midgame-hospital-trip-top-50-mlb-free-agents/",
-      "published_at": "2026-10-30T13:00:38Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
