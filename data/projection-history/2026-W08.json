@@ -1,7 +1,7 @@
 {
   "calibration_snapshot": true,
-  "generated_at": "2026-11-02T09:52:30.053281Z",
-  "player_count": 996,
+  "generated_at": "2026-11-02T20:28:49.136533Z",
+  "player_count": 995,
   "players": {
     "10210": {
       "stats": {
@@ -371,10 +371,10 @@
         "rec_yd": 5.47,
         "rush_2pt": 0.01,
         "rush_40p": 0.06,
-        "rush_att": 6.05,
+        "rush_att": 6.06,
         "rush_fd": 1.89,
         "rush_td": 0.21,
-        "rush_yd": 18.91
+        "rush_yd": 18.92
       }
     },
     "10236": {
@@ -1995,7 +1995,7 @@
         "rush_att": 6.59,
         "rush_fd": 2.77,
         "rush_td": 0.24,
-        "rush_yd": 27.67
+        "rush_yd": 27.68
       }
     },
     "11439": {
@@ -2169,16 +2169,16 @@
         "fum_lost": 0.18,
         "gp": 1.0,
         "pass_2pt": 0.07,
-        "pass_att": 32.52,
-        "pass_cmp": 20.43,
+        "pass_att": 32.51,
+        "pass_cmp": 20.42,
         "pass_cmp_40p": 0.4,
-        "pass_fd": 20.07,
-        "pass_inc": 12.09,
+        "pass_fd": 20.06,
+        "pass_inc": 12.08,
         "pass_int": 0.76,
         "pass_int_td": 0.0,
-        "pass_sack": 2.56,
+        "pass_sack": 2.55,
         "pass_td": 1.28,
-        "pass_yd": 200.68,
+        "pass_yd": 200.59,
         "pos_adp_dd_ppr": 19.0,
         "pts_half_ppr": 15.68,
         "pts_ppr": 15.68,
@@ -2188,7 +2188,7 @@
         "rush_att": 5.22,
         "rush_fd": 2.4,
         "rush_td": 0.18,
-        "rush_yd": 24.0
+        "rush_yd": 24.01
       }
     },
     "11563": {
@@ -2621,10 +2621,10 @@
         "rec_30_39": 0.32,
         "rec_40p": 0.32,
         "rec_5_9": 0.63,
-        "rec_fd": 3.64,
+        "rec_fd": 3.63,
         "rec_td": 0.17,
         "rec_tgt": 4.61,
-        "rec_yd": 36.36,
+        "rec_yd": 36.35,
         "rush_2pt": 0.0,
         "rush_40p": 0.01,
         "rush_att": 0.61,
@@ -2780,7 +2780,7 @@
         "fum_lost": 0.02,
         "gp": 1.0,
         "pos_adp_dd_ppr": 31.0,
-        "pts_half_ppr": 8.27,
+        "pts_half_ppr": 8.26,
         "pts_ppr": 10.02,
         "pts_std": 6.51,
         "rec": 3.51,
@@ -2791,10 +2791,10 @@
         "rec_30_39": 0.35,
         "rec_40p": 0.35,
         "rec_5_9": 0.7,
-        "rec_fd": 5.28,
+        "rec_fd": 5.27,
         "rec_td": 0.21,
         "rec_tgt": 6.34,
-        "rec_yd": 52.76,
+        "rec_yd": 52.73,
         "rush_2pt": 0.0,
         "rush_40p": 0.0,
         "rush_att": 0.01,
@@ -4441,7 +4441,7 @@
         "rec_fd": 1.14,
         "rec_td": 0.05,
         "rec_tgt": 1.61,
-        "rec_yd": 11.44,
+        "rec_yd": 11.43,
         "rush_2pt": 0.0,
         "rush_40p": 0.03,
         "rush_att": 3.29,
@@ -5023,7 +5023,7 @@
     "12497": {
       "stats": {
         "adp_dd_ppr": 130.0,
-        "bonus_rec_wr": 2.3,
+        "bonus_rec_wr": 2.29,
         "def_fum_td": 0.0,
         "def_kr_yd": 13.39,
         "fum": 0.02,
@@ -5033,9 +5033,9 @@
         "pr": 1.04,
         "pr_yd": 10.29,
         "pts_half_ppr": 5.76,
-        "pts_ppr": 6.91,
+        "pts_ppr": 6.9,
         "pts_std": 4.61,
-        "rec": 2.3,
+        "rec": 2.29,
         "rec_0_4": 0.46,
         "rec_10_19": 0.69,
         "rec_20_29": 0.46,
@@ -5043,10 +5043,10 @@
         "rec_30_39": 0.23,
         "rec_40p": 0.23,
         "rec_5_9": 0.46,
-        "rec_fd": 3.22,
+        "rec_fd": 3.21,
         "rec_td": 0.22,
-        "rec_tgt": 3.67,
-        "rec_yd": 32.15,
+        "rec_tgt": 3.66,
+        "rec_yd": 32.14,
         "rush_2pt": 0.0,
         "rush_40p": 0.0,
         "rush_att": 0.06,
@@ -5406,7 +5406,7 @@
         "rec_fd": 3.88,
         "rec_td": 0.27,
         "rec_tgt": 6.34,
-        "rec_yd": 38.82,
+        "rec_yd": 38.8,
         "rush_2pt": 0.0,
         "rush_40p": 0.0,
         "rush_att": 0.05,
@@ -5457,9 +5457,9 @@
         "fum_lost": 0.02,
         "gp": 1.0,
         "pos_adp_dd_ppr": 21.0,
-        "pts_half_ppr": 10.03,
+        "pts_half_ppr": 10.02,
         "pts_ppr": 12.38,
-        "pts_std": 7.68,
+        "pts_std": 7.67,
         "rec": 4.7,
         "rec_0_4": 0.94,
         "rec_10_19": 1.41,
@@ -5468,16 +5468,16 @@
         "rec_30_39": 0.47,
         "rec_40p": 0.47,
         "rec_5_9": 0.94,
-        "rec_fd": 5.77,
+        "rec_fd": 5.76,
         "rec_td": 0.26,
         "rec_tgt": 6.83,
-        "rec_yd": 57.65,
+        "rec_yd": 57.63,
         "rush_2pt": 0.0,
         "rush_40p": 0.01,
         "rush_att": 0.73,
         "rush_fd": 0.29,
         "rush_td": 0.02,
-        "rush_yd": 2.9
+        "rush_yd": 2.91
       }
     },
     "12520": {
@@ -8021,7 +8021,7 @@
     "13286": {
       "stats": {
         "adp_dd_ppr": 177.0,
-        "bonus_rec_rb": 0.41,
+        "bonus_rec_rb": 0.4,
         "def_fum_td": 0.0,
         "def_kr_td": 0.06,
         "def_kr_yd": 50.53,
@@ -8029,10 +8029,10 @@
         "fum_lost": 0.03,
         "gp": 1.0,
         "pos_adp_dd_ppr": 47.0,
-        "pts_half_ppr": 4.84,
+        "pts_half_ppr": 4.85,
         "pts_ppr": 5.05,
         "pts_std": 4.64,
-        "rec": 0.41,
+        "rec": 0.4,
         "rec_0_4": 0.08,
         "rec_10_19": 0.12,
         "rec_20_29": 0.08,
@@ -8046,10 +8046,10 @@
         "rec_yd": 3.95,
         "rush_2pt": 0.01,
         "rush_40p": 0.07,
-        "rush_att": 6.34,
+        "rush_att": 6.35,
         "rush_fd": 2.99,
         "rush_td": 0.19,
-        "rush_yd": 29.93
+        "rush_yd": 29.95
       }
     },
     "13288": {
@@ -8485,7 +8485,7 @@
         "rec_fd": 0.93,
         "rec_td": 0.06,
         "rec_tgt": 1.56,
-        "rec_yd": 9.31
+        "rec_yd": 9.3
       }
     },
     "13324": {
@@ -11561,7 +11561,7 @@
         "rec_fd": 3.02,
         "rec_td": 0.18,
         "rec_tgt": 3.61,
-        "rec_yd": 30.24,
+        "rec_yd": 30.23,
         "rush_2pt": 0.0,
         "rush_40p": 0.01,
         "rush_att": 0.18,
@@ -11687,7 +11687,7 @@
         "pr_yd": 0.62,
         "pts_half_ppr": 7.15,
         "pts_ppr": 8.64,
-        "pts_std": 5.66,
+        "pts_std": 5.65,
         "rec": 2.99,
         "rec_0_4": 0.6,
         "rec_10_19": 0.9,
@@ -11698,8 +11698,8 @@
         "rec_5_9": 0.6,
         "rec_fd": 4.3,
         "rec_td": 0.22,
-        "rec_tgt": 4.7,
-        "rec_yd": 43.02,
+        "rec_tgt": 4.69,
+        "rec_yd": 43.0,
         "rush_att": 0.07,
         "rush_fd": 0.04,
         "rush_td": 0.0,
@@ -12571,26 +12571,26 @@
         "fum_lost": 0.19,
         "gp": 1.0,
         "pass_2pt": 0.08,
-        "pass_att": 32.16,
+        "pass_att": 32.15,
         "pass_cmp": 20.63,
         "pass_cmp_40p": 0.42,
-        "pass_fd": 26.07,
-        "pass_inc": 11.53,
+        "pass_fd": 26.05,
+        "pass_inc": 11.52,
         "pass_int": 1.35,
         "pass_int_td": 0.0,
         "pass_sack": 2.66,
         "pass_td": 1.28,
-        "pass_yd": 260.66,
+        "pass_yd": 260.54,
         "pos_adp_dd_ppr": 16.0,
-        "pts_half_ppr": 16.3,
-        "pts_ppr": 16.3,
-        "pts_std": 16.3,
+        "pts_half_ppr": 16.29,
+        "pts_ppr": 16.29,
+        "pts_std": 16.29,
         "rush_2pt": 0.01,
         "rush_40p": 0.03,
         "rush_att": 3.15,
         "rush_fd": 1.5,
         "rush_td": 0.13,
-        "rush_yd": 15.02
+        "rush_yd": 15.03
       }
     },
     "4960": {
@@ -14985,10 +14985,10 @@
         "rec_yd": 18.91,
         "rush_2pt": 0.04,
         "rush_40p": 0.14,
-        "rush_att": 13.89,
+        "rush_att": 13.9,
         "rush_fd": 5.28,
         "rush_td": 0.65,
-        "rush_yd": 52.79
+        "rush_yd": 52.82
       }
     },
     "6791": {
@@ -15713,23 +15713,6 @@
         "pts_half_ppr": 0.24,
         "pts_ppr": 0.24,
         "pts_std": 0.24
-      }
-    },
-    "6972": {
-      "stats": {
-        "adp_dd_ppr": 999.0,
-        "gp": 1.0,
-        "idp_qb_hit": 0.17,
-        "idp_sack": 0.06,
-        "idp_sack_yd": 0.29,
-        "idp_tkl": 2.36,
-        "idp_tkl_ast": 1.21,
-        "idp_tkl_loss": 0.12,
-        "idp_tkl_solo": 1.15,
-        "pos_adp_dd_ppr": 999.0,
-        "pts_half_ppr": 0.06,
-        "pts_ppr": 0.06,
-        "pts_std": 0.06
       }
     },
     "6977": {
@@ -20435,9 +20418,9 @@
         "fum_lost": 0.03,
         "gp": 1.0,
         "pos_adp_dd_ppr": 1.0,
-        "pts_half_ppr": 21.56,
-        "pts_ppr": 25.21,
-        "pts_std": 17.91,
+        "pts_half_ppr": 21.55,
+        "pts_ppr": 25.2,
+        "pts_std": 17.9,
         "rec": 7.3,
         "rec_0_4": 1.46,
         "rec_10_19": 2.19,
@@ -20446,10 +20429,10 @@
         "rec_30_39": 0.73,
         "rec_40p": 0.73,
         "rec_5_9": 1.46,
-        "rec_fd": 12.07,
+        "rec_fd": 12.06,
         "rec_td": 0.91,
         "rec_tgt": 10.58,
-        "rec_yd": 120.69,
+        "rec_yd": 120.64,
         "rush_2pt": 0.0,
         "rush_40p": 0.01,
         "rush_att": 0.45,
@@ -20771,13 +20754,13 @@
         "rec_fd": 0.83,
         "rec_td": 0.04,
         "rec_tgt": 1.29,
-        "rec_yd": 8.31,
+        "rec_yd": 8.3,
         "rush_2pt": 0.03,
         "rush_40p": 0.07,
-        "rush_att": 6.85,
-        "rush_fd": 3.24,
+        "rush_att": 6.86,
+        "rush_fd": 3.25,
         "rush_td": 0.45,
-        "rush_yd": 32.45
+        "rush_yd": 32.46
       }
     },
     "9754": {
@@ -21029,7 +21012,7 @@
         "pts_std": 6.11,
         "sack": 2.3,
         "tkl_loss": 4.43,
-        "yds_allow": 384.38,
+        "yds_allow": 384.33,
         "yds_allow_350_399": 1.0
       }
     },
@@ -21539,7 +21522,7 @@
         "safe": 0.05,
         "st_td": 0.05,
         "tkl_loss": 4.38,
-        "yds_allow": 304.37,
+        "yds_allow": 304.33,
         "yds_allow_300_349": 1.0
       }
     },
@@ -21622,7 +21605,7 @@
   },
   "season": 2026,
   "season_type": "regular",
-  "snapshot_local_time": "2026-11-02T04:52:30.053281-05:00",
+  "snapshot_local_time": "2026-11-02T15:28:49.136533-05:00",
   "snapshot_policy": "latest refresh through Thursday 18:00 America/New_York",
   "source": "Sleeper weekly projections",
   "source_url": "https://api.sleeper.app/v1/projections/nfl/regular/2026/8",
