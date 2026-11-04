@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T21:48:18.546324Z",
+  "generated_at": "2026-11-04T02:20:19.396704Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "Bills release C.J. Gardner-Johnson just days after being suspended for spitting incident",
+      "summary": "Gardner-Johnson signed a one-year deal with Buffalo back in March",
+      "url": "https://www.cbssports.com/nfl/news/bills-release-c-j-gardner-johnson-days-after-being-suspended-spitting-incident/",
+      "published_at": "2026-11-03T22:04:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Giants sign Greg Newsome to three-year, $46 million extension, per report",
+      "summary": "Newsome was playing on a one-year deal he signed with New York in March",
+      "url": "https://www.cbssports.com/nfl/news/giants-sign-greg-newsome-three-year-46-million-extension/",
+      "published_at": "2026-11-03T21:40:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ravens name Joe Fagnano starter for Week 9 matchup vs. Jaguars with Lamar Jackson, Tyler Huntley injured",
+      "summary": "Joe Fagnano will make his first NFL start Thursday against the Jaguars, with Lamar Jackson and Tyler Huntley likely headed to injured reserve",
+      "url": "https://www.cbssports.com/nfl/news/ravens-starting-qb-joe-fagnano-jaguars-lamar-jackson-tyler-huntley-injured/",
+      "published_at": "2026-11-03T21:29:18Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "2026 midseason rookie grades: Ranking the early hits, misses and biggest surprises",
       "summary": "Grading every first-round pick after eight weeks, from breakout stars to disappointing starts. Plus, 10 Day 2 and Day 3 rookies making their mark.",
@@ -342,42 +378,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Should Ravens trade for QB after Lamar Jackson, Tyler Huntley injuries? Possible candidates to watch",
-      "summary": "Baltimore could be without Jackson for the rest of the year",
-      "url": "https://www.cbssports.com/nfl/news/ravens-quarterback-trade-rumors-lamar-jackson-tyson-bagent/",
-      "published_at": "2026-11-02T18:35:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Pick Six: Seahawks, Bears picks for 'MNF'; plus 15 crazy stats from Week 8",
-      "summary": "Here's everything you need to know about the NFL for Nov. 2",
-      "url": "https://www.cbssports.com/nfl/news/pick-six-seahawks-bears-picks-mnf-15-crazy-stats-week-8/",
-      "published_at": "2026-11-02T17:46:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jaguars lose standout DT DaVon Hamilton: Trade partners for Jacksonville include Cowboys, Colts",
-      "summary": "Hamilton has been a stud for one of the league's best run defenses",
-      "url": "https://www.cbssports.com/nfl/news/jaguars-lose-davon-hamilton-trade-deadline-options/",
-      "published_at": "2026-11-02T16:17:48Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
       "confidence": 0.88
     }
   ]
