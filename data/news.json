@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T12:08:31.851309Z",
+  "generated_at": "2026-11-04T19:45:25.853707Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -20,6 +20,126 @@
     }
   ],
   "articles": [
+    {
+      "title": "Lions' Jack Campbell issues statement updating condition after scary injury vs. Vikings",
+      "summary": "The Lions linebacker says he has full movement in his lower body and is making progress with his upper body following a scary collision against the Vikings",
+      "url": "https://www.cbssports.com/nfl/news/lions-jack-campbell-issues-statement-after-injury-vikings/",
+      "published_at": "2026-11-04T18:58:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jets' Garrett Wilson enters concussion protocol a week before 2026 NFL trade deadline",
+      "summary": "Could Wilson's status as potential trade bait be impacted by entering the concussion protocol?",
+      "url": "https://www.cbssports.com/nfl/news/jets-garrett-wilson-enters-concussion-protocol/",
+      "published_at": "2026-11-04T18:56:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Robert Kraft named one of five contributor nominees for 2027 Pro Football Hall of Fame class",
+      "summary": "The Patriots owner is one of five contributor nominees still under consideration after falling short of induction in the previous Hall of Fame cycle",
+      "url": "https://www.cbssports.com/nfl/news/2027-football-hall-of-fame-nominees-robert-kraft/",
+      "published_at": "2026-11-04T18:42:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ravens trade candidates: Three quarterbacks Baltimore should consider amid injury crisis",
+      "summary": "With Lamar Jackson sidelined and Tyler Huntley out for the year, Baltimore could look to Jacoby Brissett or Anthony Richardson before the trade deadline to keep its 4-4 season alive",
+      "url": "https://www.cbssports.com/nfl/news/ravens-trade-candidates-quarterback-injuries-lamar-jackson/",
+      "published_at": "2026-11-04T17:21:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jadeveon Clowney mock trades: Cowboys reunion headlines four deals Texans can make before NFL trade deadline",
+      "summary": "Clowney's name has surfaced in trade discussions this week",
+      "url": "https://www.cbssports.com/nfl/news/jadeveon-clowney-mock-trades-cowboys-texans-nfl-trade-deadline/",
+      "published_at": "2026-11-04T17:05:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Browns' Deshaun Watson in concussion protocol: Shedeur Sanders potentially in line to start Week 9 at Saints",
+      "summary": "Watson cleared evaluation Sunday but started having symptoms Monday night",
+      "url": "https://www.cbssports.com/nfl/news/browns-deshaun-watson-concussion-protocol-shedeur-sanders-week-9-saints/",
+      "published_at": "2026-11-04T15:31:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Brandon Aiyuk files to be reinstated, will report to 49ers facility this week, per report",
+      "summary": "San Francisco now has the option to trade or release the disgruntled wide receiver, with an outright cut viewed as the most likely outcome after a turbulent year away from the team",
+      "url": "https://www.cbssports.com/nfl/news/brandon-aiyuk-files-to-be-reinstated-49ers/",
+      "published_at": "2026-11-04T15:17:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for 76ers-Pistons, NBA, college football on Wednesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, NFL betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-76ers-pistons-nba-college-football-on-wednesday/",
+      "published_at": "2026-11-04T14:58:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Midseason All-Rookie Team: QB Jalon Daniels leads team filled with multiple Browns, Jets",
+      "summary": "A dynamic Browns wide receiver duo and Titans standout Carnell Tate highlight the offensive playmakers making an immediate impact through the first eight weeks",
+      "url": "https://www.cbssports.com/nfl/news/nfl-midseason-all-rookie-team-jalon-daniels-browns-jets/",
+      "published_at": "2026-11-04T14:28:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Tyler Huntley out for season: Ravens lose top backup with Lamar Jackson already out, per report",
+      "summary": "Baltimore will start undrafted rookie Joe Fagnano on Thursday",
+      "url": "https://www.cbssports.com/nfl/news/ravens-tyler-huntley-injury-update-turf-toe-out-for-season/",
+      "published_at": "2026-11-04T13:49:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "role",
+      "impact": "positive",
+      "score_adjustment": 4,
+      "confidence": 0.88
+    },
     {
       "title": "Prisco's Week 9 NFL expert picks: Jaguars roll over Lamar Jackson-less Ravens, Cowboys rebound",
       "summary": "Pete Prisco reveals all of his Week 9 picks, including the Bills handing the Vikings their second straight loss",
@@ -97,18 +217,6 @@
       "summary": "Jeffery Simmons transforms Chicago's defense and the Chiefs need to address their biggest issue before it's too late",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-8-lessons-bears-super-bowl-chiefs-kicker/",
       "published_at": "2026-11-03T20:09:06Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 9 NFL odds, lines, totals, spreads for every game, including Jaguars-Ravens, Jets-Chiefs, Giants-Eagles",
-      "summary": "Check the Week 9 NFL odds, spreads, moneylines, and totals for all 15 games, including Ravens-Jaguars on TNF.",
-      "url": "https://www.cbssports.com/betting/news/week-9-nfl-betting-odds-lines-totals-spreads/",
-      "published_at": "2026-11-03T20:05:56Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -225,18 +333,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 9 picks and score predictions: Packers ruin Tom Brady's trip to New England, Jaguars destroy Ravens",
-      "summary": "John Breech makes his Week 9 NFL picks, including Jacksonville cruising past a short-handed Baltimore team and Green Bay spoiling a star-studded weekend in New England",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-picks-score-predictions-packers-patriots/",
-      "published_at": "2026-11-03T15:25:02Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Ravens add possible starting QB just two days ahead of Week 9 showdown with Jaguars",
       "summary": "With Lamar Jackson and Tyler Huntley sidelined and Joe Fagnano battling an ankle injury, Baltimore could turn to Kedon Slovis",
       "url": "https://www.cbssports.com/nfl/news/ravens-add-starting-qb-kedon-slovis-week-9/",
@@ -282,102 +378,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 8 grades for every team: Bears earn 'A+' for destroying Seahawks, Cowboys get an 'F' for choking",
-      "summary": "We're handing out grades for every team that played in Week 8",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-8-grades-cowboys-get-an-f-steelers-surge-to-a/",
-      "published_at": "2026-11-03T04:41:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL reinstates James Pearce Jr. after eight-game suspension: Why EDGE returns at critical time for Falcons",
-      "summary": "Pearce's insertion into the lineup could be the lift the Falcons need to emerge as the NFC South's top team",
-      "url": "https://www.cbssports.com/nfl/news/nfl-reinstates-james-pearce-jr-after-eight-game-suspension-falcons/",
-      "published_at": "2026-11-03T01:09:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Get $55 bonus for Bears vs. Seahawks, Monday Night Football, election",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 8 Bears vs. Seahawks MNF matchup",
-      "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-get-55-bonus-bears-vs-seahawks-monday-night-football-election/",
-      "published_at": "2026-11-03T00:10:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Is Jadarian Price playing on MNF? Latest Seahawks RB injury update for game vs. Bears",
-      "summary": "The Seahawks could activate Jadarian Price from injured reserve before Monday night's game, but Mike Macdonald offered few clues about the rookie's status",
-      "url": "https://www.cbssports.com/nfl/news/is-jadarian-price-playing-seahawks-bears-monday-night-football/",
-      "published_at": "2026-11-02T23:25:03Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cardinals name Gardner Minshew as starter, Carson Beck No. 2: What's next for Jacoby Brissett?",
-      "summary": "Brissett has been demoted to third string after Arizona's comeback win against the Cowboys",
-      "url": "https://www.cbssports.com/nfl/news/cardinals-name-gardner-minshew-carson-beck-no-2-jacoby-brissett/",
-      "published_at": "2026-11-02T22:27:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "role",
-      "impact": "watch",
-      "score_adjustment": -2,
-      "confidence": 0.88
-    },
-    {
-      "title": "Seahawks vs. Bears prediction: Caleb Williams faces toughest test yet in Seattle defense",
-      "summary": "The Bears take their surging offense into Seattle for a matchup with one of the NFL's best defenses",
-      "url": "https://www.cbssports.com/nfl/news/seahawks-vs-bears-how-to-watch-prediction-odds-caleb-williams/",
-      "published_at": "2026-11-02T22:12:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "1-on-1 with Pittsburgh's Jalen Ramsey: How he views state of the Steelers, offense's improvement",
-      "summary": "A Super Bowl champion with the Rams, Ramsey spoke with CBS Sports about where he sees the Steelers organization at 6-2 this season",
-      "url": "https://www.cbssports.com/nfl/news/interview-pittsburghs-jalen-ramsey-state-of-steelers/",
-      "published_at": "2026-11-02T22:03:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jack Campbell injury updates: Lions LB remains in hospital, but 'indications are positive'",
-      "summary": "The All-Pro linebacker suffered what appeared to be a serious injury vs. the Vikings",
-      "url": "https://www.cbssports.com/nfl/news/lions-jack-campbell-injury-updates-vikings/",
-      "published_at": "2026-11-02T20:12:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
