@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T00:54:07.484051Z",
+  "generated_at": "2026-11-05T09:29:44.517455Z",
   "lookback_days": 7,
   "article_count": 31,
   "sources": [
@@ -21,22 +21,22 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 9 injury report: Micah Parsons returns to Packers practice, Rams lose Jaylen Watson for season",
+      "summary": "Parsons has opened his 21-day practice window, while Jackson, Sam Darnold and Deshaun Watson headline the notable quarterback injuries entering Week 9",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-injury-report-micah-parsons-jaylen-watson-rams/",
+      "published_at": "2026-11-05T03:07:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
       "title": "Predicting the full 14-team NFL playoff bracket entering Week 9: Bears make Super Bowl run",
       "summary": "Are the Bears the best team in the NFC? Our latest playoff projection answers that question",
       "url": "https://www.cbssports.com/nfl/news/predicting-the-full-14-team-nfl-playoff-bracket-week-9-bears/",
       "published_at": "2026-11-04T23:31:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Pistons-76ers, NBA, college football on Wednesday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-pistons-76ers-nba-college-football-on-wednesday/",
-      "published_at": "2026-11-04T22:18:37Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
