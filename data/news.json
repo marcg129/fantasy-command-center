@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T23:38:39.888430Z",
+  "generated_at": "2026-11-06T06:46:53.783495Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,54 @@
     }
   ],
   "articles": [
+    {
+      "title": "Prisco's Week 9 NFL expert picks: Bengals rout Falcons in Madrid, Cowboys rebound",
+      "summary": "Pete Prisco reveals all of his Week 9 picks, including the Bills handing the Vikings their second straight loss",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-9-nfl-expert-picks-jaguars-roll-over-lamar-jackson-less-ravens-cowboys-rebound/",
+      "published_at": "2026-11-06T01:27:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Dak Prescott delivers blunt assessment of Cowboys' offensive identity: 'Are we proud of it? I don't know'",
+      "summary": "Prescott's frustrations could be boiling over as Dallas reaches its midseason point",
+      "url": "https://www.cbssports.com/nfl/news/dak-prescott-cowboys-offensive-identity-comment-brian-schottenheimer/",
+      "published_at": "2026-11-06T01:19:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Best Kalshi promo code CBSSPORTS55: Secure $55 bonus for Jaguars vs. Ravens, Thursday Night Football picks",
+      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 9 Jaguars vs. Ravens TNF matchup",
+      "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-jaguars-vs-ravens-thursday-night-football-picks/",
+      "published_at": "2026-11-06T00:32:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to claim $200 bonus bets by targeting Jaguars vs. Ravens on Thursday Night Football",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-200-bonus-bets-by-targeting-jaguars-vs-ravens-thursday-night-football/",
+      "published_at": "2026-11-06T00:01:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Jaguars vs. Ravens odds, first touchdown scorer picks, predictions for Thursday Night Football, NFL Week 9",
       "summary": "We highlight some first touchdown scorer prediction markets at Kalshi for Jaguars vs. Ravens on Thursday Night Football",
@@ -61,18 +109,6 @@
       "summary": "Love and his wife dressed as \"blind refs\" less than a week after controversial calls contributed to a Packers loss",
       "url": "https://www.cbssports.com/nfl/news/jordan-love-halloween-costume-nfl-fine/",
       "published_at": "2026-11-05T22:11:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Jaguars-Ravens on Thursday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Ravens vs. Jaguars betting on Thursday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-jaguars-ravens-thursday-night-football/",
-      "published_at": "2026-11-05T21:51:25Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -169,18 +205,6 @@
       "summary": "O'Connell's handling of his quarterback position and currently sagging offense merits a closer look",
       "url": "https://www.cbssports.com/nfl/news/why-vikings-coach-kevin-oconnell-should-be-on-hot-seat/",
       "published_at": "2026-11-05T15:34:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $200 bonus bets by targeting Jaguars vs. Ravens on Thursday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-by-targeting-jaguars-vs-ravens-thursday-night-football/",
-      "published_at": "2026-11-05T15:33:07Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -345,18 +369,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Eagles to start Joe Milton at quarterback vs. Giants, replacing Tanner McKee",
-      "summary": "Milton will replace Tanner McKee and become Philadelphia's third starting quarterback of the season when the Eagles face the NFC East-leading Giants",
-      "url": "https://www.cbssports.com/nfl/news/eagles-joe-milton-starting-quarterback-giants-tanner-mckee/",
-      "published_at": "2026-11-04T19:52:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "role",
-      "impact": "positive",
-      "score_adjustment": 4,
-      "confidence": 0.88
-    },
-    {
       "title": "Sam Darnold out for Seahawks in Week 9 as Drew Lock gets another start vs. Cardinals",
       "summary": "Darnold will sit with a quad injury, while Lock is expected to make his second start of the season despite dealing with an elbow issue.",
       "url": "https://www.cbssports.com/nfl/news/sam-darnold-out-injury-seahawks-qb-drew-lock-cardinals/",
@@ -366,30 +378,6 @@
       "category": "injury",
       "impact": "watch",
       "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Lions' Jack Campbell issues statement updating condition after scary injury vs. Vikings",
-      "summary": "The Lions linebacker says he has full movement in his lower body and is making progress with his upper body following a scary collision against the Vikings",
-      "url": "https://www.cbssports.com/nfl/news/lions-jack-campbell-issues-statement-after-injury-vikings/",
-      "published_at": "2026-11-04T18:58:43Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jets' Garrett Wilson enters concussion protocol a week before 2026 NFL trade deadline",
-      "summary": "Could Wilson's status as potential trade bait be impacted by entering the concussion protocol?",
-      "url": "https://www.cbssports.com/nfl/news/jets-garrett-wilson-enters-concussion-protocol/",
-      "published_at": "2026-11-04T18:56:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
       "confidence": 0.88
     }
   ]
