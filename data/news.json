@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T06:46:53.783495Z",
+  "generated_at": "2026-11-06T15:55:22.953898Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 26,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,138 @@
     }
   ],
   "articles": [
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for 76ers-Cavaliers, NBA, New Mexico-Nevada Friday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, and NFL betting on Friday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-76ers-cavaliers-nba-new-mexico-nevada-friday/",
+      "published_at": "2026-11-06T15:12:07Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 9 underrated games: An international game, two AFC vs. NFC showdowns to add to your watch list",
+      "summary": "A look at three games you should keep an eye on this week",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-underrated-games-madrid-falcons-bengals/",
+      "published_at": "2026-11-06T15:00:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Texans vs. Chargers betting trends, picks: Matchup of struggling teams to make NFL history for wrong reasons",
+      "summary": "Unwanted NFL history, at least for the two teams involved, will be made Sunday when the Texans visit the Chargers",
+      "url": "https://www.cbssports.com/betting/news/texans-vs-chargers-betting-trends-picks-matchup-of-struggling-teams-to-make-nfl-history-for-wrong-reasons/",
+      "published_at": "2026-11-06T14:47:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jaguars rout undermanned Ravens; Miami vs. Notre Dame college football picks; LIV Golf shuts down",
+      "summary": "Plus, which teams are on upset alert for Week 9 in the NFL",
+      "url": "https://www.cbssports.com/nfl/news/jaguars-ravens-nfl-miami-notre-dame-college-football-picks-liv-golf/",
+      "published_at": "2026-11-06T13:48:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL odds, picks, predictions: Favorites, underdogs parlays for Week 9 feature Packers-Patriots, Bills-Vikings",
+      "summary": "SportsLine football expert Mike Tierney gives out his favorite parlays for Week 9 of the NFL season",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-favorites-underdogs-parlays-for-week-9-feature-packers-patriots-bills-vikings/",
+      "published_at": "2026-11-06T13:00:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ballin' with backups: Malik Nabers is most QB proof WR since Larry Fitzgerald, DeAndre Hopkins",
+      "summary": "Malik Nabers has four straight 100-yard receiving games with backup QBs entering Sunday's game vs. Philadelphia",
+      "url": "https://www.cbssports.com/nfl/news/giants-malik-nabers-ballin-with-backup-quarterbacks-jj-mccarthy/",
+      "published_at": "2026-11-06T12:44:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "100 days until Super Bowl LXI: 100 things to know about the playoff race, contenders, predictions",
+      "summary": "We are officially 100 days from the Super Bowl. Here are 100 facts and storylines to get you ready",
+      "url": "https://www.cbssports.com/nfl/news/100-days-until-super-bowl-lxi-100-things-to-know/",
+      "published_at": "2026-11-06T12:25:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 9 picks: Our experts face off on Bengals vs. Falcons, Packers at Patriots and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-picks-experts-face-off-jaguars-ravens-bengals-falcons/",
+      "published_at": "2026-11-06T12:21:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 9 bold predictions: Joe Milton-led Eagles upset first-place Giants, Vikings torture Josh Allen",
+      "summary": "Plus, the Dolphins stifle Jared Goff and the roaring Lions offense",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-bold-predictions-joe-milton-eagles-vikings-josh-allen/",
+      "published_at": "2026-11-06T11:49:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Tee Higgins is putting up historic numbers, and it's changing the Bengals offense",
+      "summary": "Higgins has always been one of the NFL's best contested-catch receivers, but new dimensions in his game have him producing at a historic pace",
+      "url": "https://www.cbssports.com/nfl/news/tee-higgins-states-2026-bengals-offense/",
+      "published_at": "2026-11-06T11:28:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL trade deadline: One realistic, one pipe dream trade scenario for every playoff contender",
+      "summary": "What does each contender need to put them over the top?",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-realistic-dream-trade-scenario-playoff-contenders/",
+      "published_at": "2026-11-06T11:00:59Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Prisco's Week 9 NFL expert picks: Bengals rout Falcons in Madrid, Cowboys rebound",
       "summary": "Pete Prisco reveals all of his Week 9 picks, including the Bills handing the Vikings their second straight loss",
@@ -49,18 +181,6 @@
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 9 Jaguars vs. Ravens TNF matchup",
       "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-jaguars-vs-ravens-thursday-night-football-picks/",
       "published_at": "2026-11-06T00:32:26Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to claim $200 bonus bets by targeting Jaguars vs. Ravens on Thursday Night Football",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Thursday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-claim-200-bonus-bets-by-targeting-jaguars-vs-ravens-thursday-night-football/",
-      "published_at": "2026-11-06T00:01:28Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -141,18 +261,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL playoff picture: Five games with the biggest postseason implications as Packers face pivotal test",
-      "summary": "SportsLine projections reveal how Packers-Patriots and four other pivotal matchups could alter postseason chances",
-      "url": "https://www.cbssports.com/nfl/news/nfl-playoff-picture-standings-packers-patriots-2026/",
-      "published_at": "2026-11-05T17:18:10Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Great player, bad pick? Ashton Jeanty, Jeremiyah Love and the high price of drafting a RB in the top 10",
       "summary": "The Raiders and Cardinals spent premium picks on RBs. Their slow starts raise a bigger question about draft value and missed opportunities.",
       "url": "https://www.cbssports.com/nfl/news/great-player-bad-pick-ashton-jeanty-jeremiyah-love-drafting-rb-in-top-10/",
@@ -213,30 +321,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 9 upset alert: Texans allow Chargers their first win, Vikings overtake Josh Allen's Bills",
-      "summary": "Plus, Denver is a road favorite that could be due for a letdown",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-upset-alert-texans-chargers-vikings-bills/",
-      "published_at": "2026-11-05T15:14:24Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "It wouldn't shock me if ... NFL Week 9: Chargers fire Mike McDaniel, another QB change in Arizona",
-      "summary": "Is it finally over for Mike McDaniel in Los Angeles?",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-surprise-predictions-cardinals-carson-beck-chargers-fire-mike-mcdaniel/",
-      "published_at": "2026-11-05T14:59:16Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Micah Parsons details why knee recovery has taken so long, refuses to set timeline for Packers return",
       "summary": "Parsons has been out since tearing his ACL late last season",
       "url": "https://www.cbssports.com/nfl/news/packers-micah-parsons-update-details-timeline-for-return/",
@@ -246,138 +330,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Why Ravens should trade Derrick Henry: Don't let Baltimore's QB woes drag down 'King Henry'",
-      "summary": "The running back should have a chance to win his elusive crown before it's too late",
-      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-why-ravens-should-trade-derrick-henry/",
-      "published_at": "2026-11-05T14:13:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 9 picks: Our experts face off on Jaguars at Ravens, Bengals vs. Falcons and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-picks-experts-face-off-jaguars-ravens-bengals-falcons/",
-      "published_at": "2026-11-05T14:05:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Predicting the full 14-team NFL playoff bracket entering Week 9: Bears make Super Bowl run",
-      "summary": "Are the Bears the best team in the NFC? Our latest playoff projection answers that question",
-      "url": "https://www.cbssports.com/nfl/news/predicting-the-full-14-team-nfl-playoff-bracket-week-9-bears/",
-      "published_at": "2026-11-05T13:20:00Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 9 NFL odds, lines, totals, spreads for every game, including Ravens-Jaguars, Jets-Chiefs, Giants-Eagles",
-      "summary": "Check the Week 9 NFL odds, spreads, moneylines, and totals for all 15 games, including Ravens-Jaguars on TNF.",
-      "url": "https://www.cbssports.com/betting/news/week-9-nfl-betting-lines-odds-totals-spreads/",
-      "published_at": "2026-11-05T13:18:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 9 Super Bowl stock report: Jeffery Simmons trade legitimizes Bears, QB injuries tank Ravens",
-      "summary": "We assess the NFL title race after Week 8 and identify three upcoming games that could reshape the Super Bowl picture",
-      "url": "https://www.cbssports.com/nfl/news/super-bowl-stock-report-week-9-jeffery-simmons-bears-ravens/",
-      "published_at": "2026-11-05T13:09:21Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 9 injury report: Micah Parsons returns to Packers practice, Rams lose Jaylen Watson for season",
-      "summary": "Parsons has opened his 21-day practice window, while Jackson, Sam Darnold and Deshaun Watson headline the notable quarterback injuries entering Week 9",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-injury-report-micah-parsons-jaylen-watson-rams/",
-      "published_at": "2026-11-05T03:07:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Matthew Stafford's wife calls out NFL over apparent scheduling disadvantage given to Rams",
-      "summary": "Los Angeles will play in the NFL's first-ever Thanksgiving Eve game, which doesn't give the Rams a true bye week",
-      "url": "https://www.cbssports.com/nfl/news/matthew-staffords-wife-calls-out-nfl-rams-thanksgiving-eve/",
-      "published_at": "2026-11-04T21:27:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "positive",
-      "score_adjustment": 4,
-      "confidence": 0.88
-    },
-    {
-      "title": "Agent's Take: What's next between Lamar Jackson, Ravens after yet another injury",
-      "summary": "Jackson's contract with the Ravens expires after the 2027 season, but can he and Baltimore reach an agreement before then? What happens if they can't?",
-      "url": "https://www.cbssports.com/nfl/news/agents-take-whats-next-lamar-jackson-ravens-contract/",
-      "published_at": "2026-11-04T20:53:47Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL trade deadline tracker: Latest deals, grades as Jacoby Brissett heads to Baltimore",
-      "summary": "Track every completed deal before the Nov. 10 deadline, including Chicago's blockbuster addition of Jeffery Simmons and the Colts' trades of Quenton Nelson and DeForest Buckner",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-tracker-latest-deals-grades/",
-      "published_at": "2026-11-04T20:49:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jacoby Brissett trade: Ravens strike deal for Cardinals QB amid injury crisis",
-      "summary": "Baltimore is expected to acquire the veteran quarterback from Arizona after injuries to Lamar Jackson, Tyler Huntley and Joe Fagnano decimated its depth chart",
-      "url": "https://www.cbssports.com/nfl/news/jacoby-brissett-trade-ravens-cardinals-lamar-jackson/",
-      "published_at": "2026-11-04T20:23:16Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Sam Darnold out for Seahawks in Week 9 as Drew Lock gets another start vs. Cardinals",
-      "summary": "Darnold will sit with a quad injury, while Lock is expected to make his second start of the season despite dealing with an elbow issue.",
-      "url": "https://www.cbssports.com/nfl/news/sam-darnold-out-injury-seahawks-qb-drew-lock-cardinals/",
-      "published_at": "2026-11-04T19:46:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
