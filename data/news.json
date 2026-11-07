@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T16:27:04.979159Z",
+  "generated_at": "2026-11-07T21:51:13.259065Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,102 @@
     }
   ],
   "articles": [
+    {
+      "title": "Pick your poison: Rams' Myles Garrett anticipates matchup nightmares in first game with Aaron Donald",
+      "summary": "An injured reserve stint delayed the first look at Garrett and Donald in the same lineup, but now they could dominate opposing offenses",
+      "url": "https://www.cbssports.com/nfl/news/rams-myles-garrett-anticipates-matchup-nightmares-first-game-aaron-donald/",
+      "published_at": "2026-11-07T20:38:18Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Saints motivated to face 'smiling' Shedeur Sanders after Browns QB offers bulletin board material",
+      "summary": "The maligned New Orleans defense will have a chip on its shoulder in Sanders' first start of the season",
+      "url": "https://www.cbssports.com/nfl/news/saints-motivated-to-face-browns-shedeur-sanders/",
+      "published_at": "2026-11-07T18:00:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams' Quentin Lake apologizes to Justin Herbert for 'deli meat' remarks, Chargers not moving QB via trade",
+      "summary": "Herbert leads the NFL in interceptions and holds the league's worst QBR through seven games",
+      "url": "https://www.cbssports.com/nfl/news/rams-quentin-lake-apologizes-justin-herbert-deli-meat-remarks-chargers/",
+      "published_at": "2026-11-07T17:20:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL trade deadline rumors: Could Giants' John Harbaugh reunite with former running back?",
+      "summary": "Harbaugh brought seven players with him from the Ravens when he took the Giants job. Might an eighth be on the way?",
+      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-rumors-giants-john-harbaugh-reunite-former-running-back/",
+      "published_at": "2026-11-07T17:14:07Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chargers not interested in Khalil Mack trade, will retain top offensive players despite 0-7 record, per report",
+      "summary": "The winless Chargers will stick to the status quo",
+      "url": "https://www.cbssports.com/nfl/news/trade-deadline-chargers-to-retain-khalil-mack-top-offensive-players-despite-0-7-record/",
+      "published_at": "2026-11-07T16:35:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL trade deadline candidates: Ranking big-name players into tiers",
+      "summary": "From proven stars like Jonathan Taylor and Maxx Crosby to discount playmakers and depth rentals, here is a look at who could switch teams before the window closes",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-candidates-impact-tiers/",
+      "published_at": "2026-11-07T16:24:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL trade deadline: Four Eagles, two more Colts and a starting QB included among top candidates",
+      "summary": "Saquon Barkley, Jonathan Taylor, Kirk Cousins and more could fetch returns at the trade deadline",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-rankings-top-25-eagles-colts/",
+      "published_at": "2026-11-07T16:22:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys should consider trading George Pickens: 5 logical destinations at NFL trade deadline",
+      "summary": "Pickens received only four targets in Dallas' historic collapse against Arizona, adding urgency to the Cowboys' decision before the NFL trade deadline",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-nfl-trade-deadline-george-pickens-destinations/",
+      "published_at": "2026-11-07T16:21:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "NFL Week 9 bold predictions: Joe Milton-led Eagles upset first-place Giants, Vikings torture Josh Allen",
       "summary": "Plus, the Dolphins stifle Jared Goff and the roaring Lions offense",
@@ -41,18 +137,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 9 NFL odds, lines, totals, spreads for every game, including Cowboys-Colts, Jets-Chiefs, Giants-Eagles",
-      "summary": "Check the Week 9 NFL odds, spreads, moneylines, and totals for all 15 games, including Bears-Buccaneers",
-      "url": "https://www.cbssports.com/betting/news/week-9-nfl-betting-lines-spreads-odds-totals/",
-      "published_at": "2026-11-07T15:01:49Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
@@ -305,42 +389,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 9 NFL expert picks: Bengals rout Falcons in Madrid, Cowboys rebound",
-      "summary": "Pete Prisco reveals all of his Week 9 picks, including the Bills handing the Vikings their second straight loss",
-      "url": "https://www.cbssports.com/nfl/news/priscos-week-9-nfl-expert-picks-jaguars-roll-over-lamar-jackson-less-ravens-cowboys-rebound/",
-      "published_at": "2026-11-06T01:27:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Dak Prescott delivers blunt assessment of Cowboys' offensive identity: 'Are we proud of it? I don't know'",
-      "summary": "Prescott's frustrations could be boiling over as Dallas reaches its midseason point",
-      "url": "https://www.cbssports.com/nfl/news/dak-prescott-cowboys-offensive-identity-comment-brian-schottenheimer/",
-      "published_at": "2026-11-06T01:19:02Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Secure $55 bonus for Jaguars vs. Ravens, Thursday Night Football picks",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 9 Jaguars vs. Ravens TNF matchup",
-      "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-jaguars-vs-ravens-thursday-night-football-picks/",
-      "published_at": "2026-11-06T00:32:26Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     }
