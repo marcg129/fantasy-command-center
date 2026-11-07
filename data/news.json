@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T01:55:47.350110Z",
+  "generated_at": "2026-11-07T08:47:23.799006Z",
   "lookback_days": 7,
   "article_count": 27,
   "sources": [
@@ -30,18 +30,6 @@
       "category": "availability",
       "impact": "negative",
       "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Nevada-New Mexico, college football, NBA",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, and NFL betting on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nevada-new-mexico-college-football-nba/",
-      "published_at": "2026-11-07T00:53:15Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
       "confidence": 0.88
     },
     {
@@ -337,6 +325,18 @@
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 9 Jaguars vs. Ravens TNF matchup",
       "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-jaguars-vs-ravens-thursday-night-football-picks/",
       "published_at": "2026-11-06T00:32:26Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jaguars vs. Ravens odds, first touchdown scorer picks, predictions for Thursday Night Football, NFL Week 9",
+      "summary": "We highlight some first touchdown scorer prediction markets at Kalshi for Jaguars vs. Ravens on Thursday Night Football",
+      "url": "https://www.cbssports.com/prediction/news/jaguars-vs-ravens-odds-first-touchdown-scorer-picks-predictions-for-thursday-night-football-nfl-week-9/",
+      "published_at": "2026-11-05T23:21:33Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
