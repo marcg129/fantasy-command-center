@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-07T21:51:13.259065Z",
+  "generated_at": "2026-11-08T01:26:23.604618Z",
   "lookback_days": 7,
   "article_count": 31,
   "sources": [
@@ -20,6 +20,30 @@
     }
   ],
   "articles": [
+    {
+      "title": "Falcons vs. Bengals: Cincinnati seeks first international win as division contenders travel to Madrid",
+      "summary": "The NFL returns to Spain for the second straight season with a matchup that features many of the league's top offensive stars",
+      "url": "https://www.cbssports.com/nfl/news/falcons-vs-bengals-prediction-odds-where-to-watch/",
+      "published_at": "2026-11-08T00:01:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL fines Jaquan Brisker, two others for illegal Week 8 hits that placed opponents in concussion protocol",
+      "summary": "Each of the players on the receiving end of those collisions will miss Week 9",
+      "url": "https://www.cbssports.com/nfl/news/nfl-fines-jaquan-brisker-two-others-for-illegal-week-8-hits/",
+      "published_at": "2026-11-07T22:01:31Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
     {
       "title": "Pick your poison: Rams' Myles Garrett anticipates matchup nightmares in first game with Aaron Donald",
       "summary": "An injured reserve stint delayed the first look at Garrett and Donald in the same lineup, but now they could dominate opposing offenses",
@@ -365,30 +389,6 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Tee Higgins is putting up historic numbers, and it's changing the Bengals offense",
-      "summary": "Higgins has always been one of the NFL's best contested-catch receivers, but new dimensions in his game have him producing at a historic pace",
-      "url": "https://www.cbssports.com/nfl/news/tee-higgins-states-2026-bengals-offense/",
-      "published_at": "2026-11-06T11:28:02Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL trade deadline: One realistic, one pipe dream trade scenario for every playoff contender",
-      "summary": "What does each contender need to put them over the top?",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-trade-deadline-realistic-dream-trade-scenario-playoff-contenders/",
-      "published_at": "2026-11-06T11:00:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     }
