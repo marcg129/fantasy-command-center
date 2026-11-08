@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T01:26:23.604618Z",
+  "generated_at": "2026-11-08T08:59:24.311734Z",
   "lookback_days": 7,
   "article_count": 31,
   "sources": [
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Bears vs. Buccaneers: Chicago looks to tame Tampa's running game while staying atop the NFC North",
+      "summary": "Plus, where to watch, what to know and a preview from an NFL expert",
+      "url": "https://www.cbssports.com/nfl/news/bears-vs-buccaneers-odds-prediction-where-to-watch/",
+      "published_at": "2026-11-08T03:00:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Falcons vs. Bengals: Cincinnati seeks first international win as division contenders travel to Madrid",
       "summary": "The NFL returns to Spain for the second straight season with a matchup that features many of the league's top offensive stars",
@@ -137,18 +149,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 9 bold predictions: Joe Milton-led Eagles upset first-place Giants, Vikings torture Josh Allen",
-      "summary": "Plus, the Dolphins stifle Jared Goff and the roaring Lions offense",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-bold-predictions-joe-milton-eagles-vikings-josh-allen/",
-      "published_at": "2026-11-07T16:00:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
