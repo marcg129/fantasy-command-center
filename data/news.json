@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T04:07:17.161384Z",
+  "generated_at": "2026-11-10T12:39:28.700202Z",
   "lookback_days": 7,
   "article_count": 30,
   "sources": [
@@ -21,6 +21,30 @@
   ],
   "articles": [
     {
+      "title": "Six lessons learned from NFL Week 9: Arvell Reese a superstar in the making, C.J. Stroud having career year",
+      "summary": "Plus, there's a bell cow running back emerging for one of the NFL's best teams",
+      "url": "https://www.cbssports.com/nfl/news/six-lessons-nfl-week-9-arvell-reese-c-j-stroud/",
+      "published_at": "2026-11-10T04:44:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 9 grades for every team: Bills earn impressive mark for beating Vikings, Cowboys barely pass",
+      "summary": "We're handing out grades for every team that played in Week 9",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-9-grades-cowboys-bengals-patriots-packers/",
+      "published_at": "2026-11-10T04:34:29Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Can Carson Beck convince the Cardinals not to draft a QB? He has eight games to make his case",
       "summary": "The third-round rookie has eight games to prove he can be this year's Tyler Shough, but history says that won't be easy",
       "url": "https://www.cbssports.com/nfl/news/can-carson-beck-convince-cardinals-not-to-draft-a-qb/",
@@ -37,18 +61,6 @@
       "summary": "Carson Beck would get the start if Minshew is sidelined",
       "url": "https://www.cbssports.com/nfl/news/cardinals-gardner-minshew-feared-torn-ucl-could-out-for-season-report/",
       "published_at": "2026-11-10T00:22:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 in bonus bets for Bills vs. Vikings, NFL Monday Night Football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Bills vs. Vikings on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-bills-vs-vikings-nfl-monday-night-football/",
-      "published_at": "2026-11-10T00:13:13Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -349,18 +361,6 @@
       "summary": "Plus, NFL trade deadline is a day away, and we project AP Top 25 after college basketball's opening week",
       "url": "https://www.cbssports.com/nfl/news/bears-overcome-caleb-williams-interceptions-for-snf-win-resetting-cfp-race-after-week-10/",
       "published_at": "2026-11-09T13:53:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cover 32: What every team should do at NFL trade deadline, plus game balls and gaffes from Week 9",
-      "summary": "Tyler Sullivan analyzes which contenders should go all-in and who needs to sell before it's too late",
-      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-cover-32-week-9-2026/",
-      "published_at": "2026-11-09T13:36:43Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "transaction",
