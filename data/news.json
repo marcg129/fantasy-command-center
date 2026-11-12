@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-12T00:43:39.263413Z",
+  "generated_at": "2026-11-12T09:50:37.997485Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,18 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 10 injury report: Mike Evans still not practicing, Puka Nacua facing multi-week absence",
+      "summary": "Here is the latest practice participation, game status and injury news for every team playing Thursday or Sunday in Week 10",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-week-10-injury-report-mike-evans-puka-nacua/",
+      "published_at": "2026-11-12T01:08:15Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
       "title": "Bengals nearly made a costly trade-deadline blunder, and Zac Taylor had to explain it",
       "summary": "The Bengals agreed to acquire Ebiketie from the Eagles before discovering the deal could cost them way more than they thought",
       "url": "https://www.cbssports.com/nfl/news/bengals-nfl-trade-deadline-arnold-ebiketie-zac-taylor/",
@@ -29,18 +41,6 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Rockets-Warriors, Buffalo-Ball State, NBA",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rockets-warriors-buffalo-ball-state-nba/",
-      "published_at": "2026-11-11T22:27:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     },
@@ -353,6 +353,30 @@
       "source_confidence": 0.88,
       "category": "transaction",
       "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jonathan Taylor mock trades: How Giants, Broncos, Vikings could target Colts star RB",
+      "summary": "The Colts need to replenish their draft assets, and dealing their three-time Pro Bowl running back could produce a significant return",
+      "url": "https://www.cbssports.com/nfl/news/nfl-trade-deadline-jonathan-taylor-mock-trades/",
+      "published_at": "2026-11-10T18:51:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Dolphins lose captain Zach Sieler for season with ruptured biceps",
+      "summary": "The Dolphins captain ruptured his biceps on the opening play against the Lions but remarkably finished the game",
+      "url": "https://www.cbssports.com/nfl/news/dolphins-zach-sieler-injury-2026/",
+      "published_at": "2026-11-10T16:47:24Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
       "score_adjustment": 0,
       "confidence": 0.88
     }
