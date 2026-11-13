@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T17:45:26.892120Z",
+  "generated_at": "2026-11-13T23:34:18.630437Z",
   "lookback_days": 7,
-  "article_count": 25,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,138 @@
     }
   ],
   "articles": [
+    {
+      "title": "Vikings officially announce Kirk Cousins will start vs. Packers following trade deadline",
+      "summary": "Minnesota traded for their old friend on Tuesday at the NFL trade deadline, and he will start for the Vikings right away on Sunday",
+      "url": "https://www.cbssports.com/nfl/news/vikings-officially-announce-kirk-cousins-start-vs-packers-lambeau-field-sunday/",
+      "published_at": "2026-11-13T21:48:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "role",
+      "impact": "positive",
+      "score_adjustment": 4,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 10 underrated games: 3 games you should watch this week, from divisional matchups to first QB starts",
+      "summary": "A look at three games that should be on your radar this week",
+      "url": "https://www.cbssports.com/nfl/news/week-10-underrated-games-browns-texans-raiders-seahawks/",
+      "published_at": "2026-11-13T21:05:09Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jerry Jones reveals when he thinks NFL expands to 18-game season, but process to get there is complicated",
+      "summary": "Jones sees the NFL 'maybe' expanding to an 18-game regular season sooner than one might think",
+      "url": "https://www.cbssports.com/nfl/news/jerry-jones-on-nfl-expansion-18-game-regular-season/",
+      "published_at": "2026-11-13T20:36:20Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Revisiting the 2026 NFL Draft: Did the Titans take the right receiver at No. 4 overall?",
+      "summary": "Carnell Tate has given quarterback Cam Ward a reliable target against zone coverage, but ball security issues and questions about his ultimate ceiling complicate the pick",
+      "url": "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-did-titans-take-right-receiver-4-overall/",
+      "published_at": "2026-11-13T20:23:40Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Eagles release wide receiver Hollywood Brown upon his request, according to report",
+      "summary": "Brown wasn't used much in the Eagles offense this year",
+      "url": "https://www.cbssports.com/nfl/news/eagles-release-wide-receiver-hollywood-brown-upon-his-request-according-to-report/",
+      "published_at": "2026-11-13T20:19:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cardinals reportedly extend No. 2 TE Elijah Higgins, going all-in on tight ends amid WR injuries",
+      "summary": "Coupled with the McBride extension in 2025, the Cardinals have now signed over $100 million in contracts for their top two tight ends",
+      "url": "https://www.cbssports.com/nfl/news/cardinals-sign-2-tight-end-elijah-higgins-three-year-extension-per-report/",
+      "published_at": "2026-11-13T19:38:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' Joey Porter Jr. breaks silence on chatter that absence is contract related",
+      "summary": "Porter Jr. missed Week 5 with a stomach bug and Week 9 at the Indianapolis Colts because of a foot injury",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-joey-porter-jr-breaks-silence-on-chatter-that-absence-is-contract-related/",
+      "published_at": "2026-11-13T19:26:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Star on the rise: Cowboys' Dak Prescott feels Jason Witten could 'absolutely' be an NFL head coach",
+      "summary": "Dallas' future Hall of Fame tight end has risen quickly from being a Texas high school head coach to being the interim offensive coordinator at the University of Oklahoma",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-dak-prescott-feels-jason-witten-could-absolutely-be-nfl-head-coach/",
+      "published_at": "2026-11-13T19:09:53Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 10 picks: Our experts face off on Vikings at Packers, Steelers at Bengals and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-picks-experts-face-off-commanders-giants-vikings-packers/",
+      "published_at": "2026-11-13T18:08:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Prisco's Week 10 NFL picks: Lions top Patriots in Munich, Cowboys upset 49ers",
+      "summary": "Pete Prisco reveals all of his Week 10 picks, including the Packers to spoil Kirk Cousins' return with the Vikings",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-10-expert-nfl-picks/",
+      "published_at": "2026-11-13T18:03:06Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Bengals facing massive NFL scheduling disadvantage vs. Steelers in Week 10: No team has ever overcome this",
+      "summary": "The NFL didn't really think through this part of the schedule",
+      "url": "https://www.cbssports.com/nfl/news/bengals-facing-massive-nfl-scheduling-disadvantage-vs-steelers-week-10-no-team-ever/",
+      "published_at": "2026-11-13T17:38:46Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Grading every NFL team at the midway point: Chargers get an 'F,' three teams get solid 'A' grade",
       "summary": "Buffalo is among the highest-rated teams, while the Eagles sit at the opposite end as a big disappointment",
@@ -117,18 +249,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Knicks-Pacers, UCLA-Illinois, college football",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, NFL on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-knicks-pacers-ucla-illinois-college-football-friday/",
-      "published_at": "2026-11-13T15:18:19Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Ravens announce Lamar Jackson had surgery on broken and dislocated thumb, will be out 6-10 weeks",
       "summary": "The Ravens will turn to Jacoby Brissett under center in Jackson's absence",
       "url": "https://www.cbssports.com/nfl/news/ravens-announce-lamar-jackson-surgery-broken-dislocated-thumb-out-6-10-weeks/",
@@ -213,18 +333,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Giants vs. Commanders prediction: New York, Washington look to rebound on 'TNF' after embarrassing Week 5 tie",
-      "summary": "How to watch the 'Thursday Night Football' matchup, plus a preview and prediction",
-      "url": "https://www.cbssports.com/nfl/news/giants-vs-commanders-how-to-watch-odds-spread-preview-prediction/",
-      "published_at": "2026-11-13T00:50:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Best Kalshi promo code CBSSPORTS55: Secure $55 bonus for Commanders vs. Giants, Thursday Night Football picks",
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 10 Commander vs. Giants TNF matchup",
       "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-commanders-vs-giants-thursday-night-football-picks/",
@@ -241,78 +349,6 @@
       "summary": "We go over first touchdown scorer prediction markets at Kalshi for Commanders vs. Giants NFL Week 10 Thursday Night Football",
       "url": "https://www.cbssports.com/prediction/news/commanders-vs-giants-odds-first-touchdown-scorer-picks-predictions-thursday-night-football-nfl-week-10/",
       "published_at": "2026-11-13T00:16:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chargers' Jim Harbaugh implores NFL to investigate 'loophole' that nixed Daiyan Henley trade",
-      "summary": "The Broncos and Chargers called off their agreed-upon trade following Henley's physical",
-      "url": "https://www.cbssports.com/nfl/news/chargers-jim-harbaugh-implores-nfl-investigate-loophole-daiyan-henley-trade/",
-      "published_at": "2026-11-12T21:34:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL midseason awards: Expert picks for Super Bowl winner, MVP, Coach of the Year, OPOY and more",
-      "summary": "The CBS Sports NFL staff predicts winners at the halfway point",
-      "url": "https://www.cbssports.com/nfl/news/2026-nfl-midseason-awards-expert-picks-super-bowl-mvp-coach-of-year-opoy-more/",
-      "published_at": "2026-11-12T17:29:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL nightmare: How a six-win NFC East team could end up making the playoffs if Commanders beat the Giants",
-      "summary": "This would be the NFL's worst nightmare",
-      "url": "https://www.cbssports.com/nfl/news/how-a-six-win-nfc-east-team-could-end-up-making-the-playoffs-commanders-giants/",
-      "published_at": "2026-11-12T17:20:02Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Pick Six: What to know about the NFL after the trade deadline, ahead of Week 10",
-      "summary": "Picks for Commanders vs. Giants, plus midseason award predictions and full playoff projections",
-      "url": "https://www.cbssports.com/nfl/news/pick-six-what-to-know-about-nfl-trade-deadline-week-10/",
-      "published_at": "2026-11-12T17:11:18Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Broncos announce trade for Chargers LB Daiyan Henley falls through, 'will not be finalized'",
-      "summary": "Henley will return to the Chargers after an initial agreement was reached on Tuesday to send him to Denver",
-      "url": "https://www.cbssports.com/nfl/news/broncos-chargers-trade-daiyan-henley-will-not-be-finalized/",
-      "published_at": "2026-11-12T16:57:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Revisiting the 2026 NFL Draft: Was Arvell Reese a luxury for Giants? Has Francis Mauigoa turned a corner?",
-      "summary": "New York's top-10 investments are already fueling a 5-2-1 start, with a Defensive Rookie of the Year candidate emerging on defense and a reshaped offensive line",
-      "url": "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-giants-arvell-reese-francis-mauigoa/",
-      "published_at": "2026-11-12T15:52:25Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
