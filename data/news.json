@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-13T23:34:18.630437Z",
+  "generated_at": "2026-11-14T06:23:24.032719Z",
   "lookback_days": 7,
-  "article_count": 28,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,22 @@
   ],
   "articles": [
     {
+      "title": "NFL Week 10 injury report: Chiefs' Kenneth Walker has new groin injury, Patriots' A.J. Brown questionable",
+      "summary": "The final injury reports for every NFL team playing on Sunday in Week 10",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-injury-report-chiefs-kenneth-walker-aj-brown/",
+      "published_at": "2026-11-14T01:35:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
       "title": "Vikings officially announce Kirk Cousins will start vs. Packers following trade deadline",
       "summary": "Minnesota traded for their old friend on Tuesday at the NFL trade deadline, and he will start for the Vikings right away on Sunday",
       "url": "https://www.cbssports.com/nfl/news/vikings-officially-announce-kirk-cousins-start-vs-packers-lambeau-field-sunday/",
-      "published_at": "2026-11-13T21:48:22Z",
+      "published_at": "2026-11-14T01:33:03Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "role",
