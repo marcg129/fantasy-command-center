@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-14T20:43:20.807983Z",
+  "generated_at": "2026-11-15T01:55:52.896584Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,10 +21,10 @@
   ],
   "articles": [
     {
-      "title": "Lions vs. Patriots prediction: Detroit seeks fifth straight victory, while New England looks to bounce back",
-      "summary": "Everything you need to know to catch the game",
-      "url": "https://www.cbssports.com/nfl/news/lions-vs-patriots-prediction-odds-where-to-watch-munich/",
-      "published_at": "2026-11-14T19:51:21Z",
+      "title": "FAA ground stop forces NFL to reshuffle officiating crews for Week 10",
+      "summary": "The changes include one referee pulling double-duty on Sunday",
+      "url": "https://www.cbssports.com/nfl/news/nfl-major-officiating-changes-week-10-faa-ground-stop/",
+      "published_at": "2026-11-15T01:19:25Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -33,10 +33,22 @@
       "confidence": 0.88
     },
     {
-      "title": "FAA ground stop forces NFL to reshuffle officiating crews for Week 10",
-      "summary": "The changes include one referee pulling double-duty on Sunday",
-      "url": "https://www.cbssports.com/nfl/news/nfl-major-officiating-changes-week-10-faa-ground-stop/",
-      "published_at": "2026-11-14T19:02:32Z",
+      "title": "Bengals vs. Steelers prediction: AFC North rivals to battle for first place in the division on 'SNF'",
+      "summary": "Pittsburgh won the first matchup between the two teams back in Week 3",
+      "url": "https://www.cbssports.com/nfl/news/bengals-vs-steelers-prediction-odds-how-to-watch/",
+      "published_at": "2026-11-15T01:01:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Lions vs. Patriots prediction: Detroit seeks fifth straight victory, while New England looks to bounce back",
+      "summary": "Everything you need to know to catch the game",
+      "url": "https://www.cbssports.com/nfl/news/lions-vs-patriots-prediction-odds-where-to-watch-munich/",
+      "published_at": "2026-11-14T19:51:21Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -337,30 +349,6 @@
       "summary": "What could stop your favorite team from winning it all?",
       "url": "https://www.cbssports.com/nfl/news/fatal-flaw-super-bowl-contenders-49ers-bears-packers/",
       "published_at": "2026-11-13T13:58:41Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cardinals name Carson Beck starting QB: Rookie faces Aaron Donald, Myles Garrett in NFL debut",
-      "summary": "Gardner Minshew's season-ending injury opens the door for Beck, whose first assignment comes against one of the NFL's most accomplished pass-rushing duos",
-      "url": "https://www.cbssports.com/nfl/news/cardinals-starting-qb-carson-beck-2026/",
-      "published_at": "2026-11-13T02:09:28Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Secure $55 bonus for Commanders vs. Giants, Thursday Night Football picks",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 10 Commander vs. Giants TNF matchup",
-      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-commanders-vs-giants-thursday-night-football-picks/",
-      "published_at": "2026-11-13T00:25:45Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
