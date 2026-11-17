@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T02:55:44.165282Z",
+  "generated_at": "2026-11-17T13:27:08.007934Z",
   "lookback_days": 7,
   "article_count": 27,
   "sources": [
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 11 picks and score predictions: 49ers win thriller Mexico City thriller, Bengals stay hot",
+      "summary": "We pick every Week 11 game as Joe Burrow draws an inviting matchup, the 49ers battle the Vikings in Mexico City",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-picks-score-predictions-49ers-vikings-mexico/",
+      "published_at": "2026-11-17T12:52:43Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ranking all 50 NFL quarterbacks to start in 2026: Joe Burrow in a class all by himself",
+      "summary": "Every quarterback to start an NFL game this season is ranked across 10 tiers, with Joe Burrow setting the gold standar",
+      "url": "https://www.cbssports.com/nfl/news/2026-nfl-starting-quarterback-rankings-joe-burrow-josh-allen/",
+      "published_at": "2026-11-17T12:25:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 10 grades: Chargers earn 'A-' for picking up first win, Packers fail in showdown with Vikings",
+      "summary": "We're handing out grades for every team that played in Week 10",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-grades-packers-vikings-patrick-mahomes/",
+      "published_at": "2026-11-17T04:48:03Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Joe Burrow isn't just chasing MVP, he's chasing the greatest passing season ever",
       "summary": "With 20 touchdown passes during Cincinnati's five-game winning streak, Burrow has separated himself in the MVP race while closing in on historic territory",
@@ -109,18 +145,6 @@
       "summary": "Here's everything you need to know about the NFL for Nov. 16",
       "url": "https://www.cbssports.com/nfl/news/pick-six-nfl-week-10-losers-grades-every-team-ravens-chargers-picks-monday-night/",
       "published_at": "2026-11-16T18:51:18Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Ravens-Chargers, Monday Night Football betting",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for Ravens vs. Chargers on Monday Night Football",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-ravens-chargers-monday-night-football-betting/",
-      "published_at": "2026-11-16T18:17:43Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -261,18 +285,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 10 grades: Packers fail in showdown with Vikings, Patrick Mahomes catches fire",
-      "summary": "We're handing out grades for every team that played in Week 10",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-grades-packers-vikings-patrick-mahomes/",
-      "published_at": "2026-11-16T04:36:08Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Scorigami: Cowboys-49ers ends with score never before seen in NFL history thanks to Dak Prescott",
       "summary": "Dak Prescott's otherwise meaningless two-point conversion helped make history",
       "url": "https://www.cbssports.com/nfl/news/scorigami-cowboys-49ers-ends-with-score-never-seen-nfl/",
@@ -325,18 +337,6 @@
       "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL betting",
       "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-steelers-bengals-nfl-sunday-night-football-picks/",
       "published_at": "2026-11-16T00:23:19Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Score $55 bonus for Bengals vs. Steelers, NFL Sunday Night Football",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on all of Sunday's NFL Week 10 action",
-      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-score-55-bonus-for-bengals-steelers-nfl-sunday-night-football/",
-      "published_at": "2026-11-16T00:13:11Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
