@@ -11,22 +11,22 @@
     10
   ],
   "current_week": 11,
-  "generated_at": "2026-11-17T13:46:30.010153Z",
+  "generated_at": "2026-11-17T22:35:51.106433Z",
   "minimum_completed_weeks": 2,
   "minimum_position_samples": 50,
   "positions": {
     "DEF": {
       "baseline_cv": 0.55,
-      "bias_ppr": 0.2736,
+      "bias_ppr": 0.2774,
       "blend_weight": 0.6359,
-      "cv_used": 0.7148,
-      "empirical_cv": 0.8091,
-      "error_sd_ppr": 5.4147,
-      "mae_ppr": 4.1847,
+      "cv_used": 0.7149,
+      "empirical_cv": 0.8094,
+      "error_sd_ppr": 5.4163,
+      "mae_ppr": 4.1885,
       "mean_projection_ppr": 6.6921,
       "mode": "empirical_blend",
       "n": 262,
-      "rmse_ppr": 5.4216
+      "rmse_ppr": 5.4234
     },
     "K": {
       "baseline_cv": 0.45,
