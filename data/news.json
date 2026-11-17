@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T18:32:47.940776Z",
+  "generated_at": "2026-11-17T02:55:44.165282Z",
   "lookback_days": 7,
   "article_count": 27,
   "sources": [
@@ -21,10 +21,94 @@
   ],
   "articles": [
     {
+      "title": "Joe Burrow isn't just chasing MVP, he's chasing the greatest passing season ever",
+      "summary": "With 20 touchdown passes during Cincinnati's five-game winning streak, Burrow has separated himself in the MVP race while closing in on historic territory",
+      "url": "https://www.cbssports.com/nfl/news/joe-burrow-stats-mvp-bengals-qb-2026/",
+      "published_at": "2026-11-17T02:21:00Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Best Kalshi promo code CBSSPORTS55: Claim $55 bonus for Chargers vs. Ravens, Monday Night Football predictions",
+      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 10 Chargers vs. Ravens MNF matchup",
+      "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-claim-55-bonus-for-chargers-vs-ravens-monday-night-football-predictions/",
+      "published_at": "2026-11-17T00:46:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Kalshi promo code CBSSPORTS55: Receive $55 bonus for Ravens vs. Chargers, NFL Week 10 Monday Night Football",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on Monday Night Football betwen the Chargers and Ravens",
-      "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-receive-55-bonus-ravens-vs-chargers-nfl-week-10-monday-night-football/",
-      "published_at": "2026-11-16T18:25:18Z",
+      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on Monday Night Football between the Chargers and Ravens",
+      "url": "https://www.cbssports.com/prediction/news/kalshi-promo-code-cbssports55-receive-55-bonus-ravens-chargers-nfl-week-10-monday-night-football/",
+      "published_at": "2026-11-17T00:40:01Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ravens vs. Chargers prediction: Can L.A. get its first win on 'MNF' against the injury-plagued Ravens?",
+      "summary": "Plus, how to watch, odds, a preview and a prediction for the Monday night matchup",
+      "url": "https://www.cbssports.com/nfl/news/ravens-vs-chargers-how-to-watch-spread-odds-preview-prediction/",
+      "published_at": "2026-11-17T00:28:13Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chargers vs. Ravens odds: NFL Week 10 first touchdown scorer picks, NFL predictions for Monday Night Football",
+      "summary": "Here are our top picks for first touchdown prediction markets on Monday Night Football between the Chargers and Ravens to end Week 10",
+      "url": "https://www.cbssports.com/betting/news/chargers-vs-ravens-odds-nfl-week-10-first-touchdown-scorer-picks-nfl-predictions-for-monday-night-football/",
+      "published_at": "2026-11-16T23:50:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Sophomore bounce-back or letdown? Will Campbell quietly improving, Ashton Jeanty among 2025 first-round busts",
+      "summary": "Last year's top draft picks reached a pivot point in their careers, and not everyone is on the right trajectory",
+      "url": "https://www.cbssports.com/nfl/news/sophomore-bounce-back-letdown-will-campbell-quietly-improving-ashton-jeanty-among-2025-first-round-busts/",
+      "published_at": "2026-11-16T22:51:37Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Sean Payton disputes Jim Harbaugh's 'loophole' claim after Broncos-Chargers trade falls apart",
+      "summary": "The Broncos coach rejected Harbaugh's criticism of the process that derailed Denver's trade for Chargers linebacker Daiyan Henley",
+      "url": "https://www.cbssports.com/nfl/news/broncos-chargers-trade-sean-payton-jim-harbaugh-loophole/",
+      "published_at": "2026-11-16T19:05:42Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 10 losers, plus grades for every team and Ravens-Chargers picks for Monday night",
+      "summary": "Here's everything you need to know about the NFL for Nov. 16",
+      "url": "https://www.cbssports.com/nfl/news/pick-six-nfl-week-10-losers-grades-every-team-ravens-chargers-picks-monday-night/",
+      "published_at": "2026-11-16T18:51:18Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -69,18 +153,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Raiders' Brock Bowers suffers ankle injury, misses majority of Fernando Mendoza's first career start",
-      "summary": "Mendoza was without his top target for much of his starting debut",
-      "url": "https://www.cbssports.com/nfl/news/brock-bowers-injury-raiders-fernando-mendoza-debut/",
-      "published_at": "2026-11-16T16:58:20Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "Sam Darnold or Drew Lock? Breaking down the Seahawks' surprising QB debate",
       "summary": "Drew Lock is 4-0 as Seattle's primary quarterback and has dramatically outperformed Sam Darnold in several key metric",
       "url": "https://www.cbssports.com/nfl/news/seahawks-starting-qb-sam-darnold-or-drew-lock-battle-2026/",
@@ -109,18 +181,6 @@
       "summary": "Plus why Kayla Harrison should retire after UFC 334",
       "url": "https://www.cbssports.com/nfl/news/joe-burrow-strengthens-mvp-case-with-four-more-tds-college-football-rankings-projections/",
       "published_at": "2026-11-16T14:08:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chargers vs. Ravens odds: First touchdown scorer picks, NFL predictions for Monday Night Football Week 10",
-      "summary": "Here are our top picks for first touchdown prediction markets on Monday Night Football between the Chargers and Ravens to end Week 10",
-      "url": "https://www.cbssports.com/prediction/news/chargers-vs-ravens-odds-first-touchdown-scorer-picks-nfl-predictions-for-monday-night-football-week-10/",
-      "published_at": "2026-11-16T14:00:47Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -189,18 +249,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Ravens vs. Chargers: Can LA get its first win on 'MNF' against the injury-plagued Ravens?",
-      "summary": "Plus, how to watch, odds, a preview and a prediction for the Monday night matchup",
-      "url": "https://www.cbssports.com/nfl/news/ravens-vs-chargers-how-to-watch-spread-odds-preview-prediction/",
-      "published_at": "2026-11-16T12:02:55Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "Bengals' blowout win over Steelers makes NFL history with 1,100th 'scorigami'",
       "summary": "Cincinnati's 38-18 victory became the 1,100th unique final score in NFL history",
       "url": "https://www.cbssports.com/nfl/news/bengals-steelers-sunday-night-football-2026-scorigami/",
@@ -229,18 +277,6 @@
       "summary": "Dak Prescott's otherwise meaningless two-point conversion helped make history",
       "url": "https://www.cbssports.com/nfl/news/scorigami-cowboys-49ers-ends-with-score-never-seen-nfl/",
       "published_at": "2026-11-16T01:29:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 10 overreactions: Patriots to miss playoffs? Texans' DeMeco Ryans on the hot seat?",
-      "summary": "Drake Maye got hurt, and New England got blown out in Germany as the Pats playoff hopes slip away",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-10-overreactions-patriots-lions-demeco-ryans-texans/",
-      "published_at": "2026-11-16T01:14:59Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -305,42 +341,6 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Receive $55 bonus for Steelers vs. Bengals on Sunday Night Football",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 10 Steelers vs. Bengals SNF matchup",
-      "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-receive-55-bonus-steelers-vs-bengals-sunday-night-football/",
-      "published_at": "2026-11-16T00:09:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Bengals vs. Steelers prediction: First place in AFC North up for grabs in rivalry battle on 'SNF'",
-      "summary": "Pittsburgh won the first matchup between the two teams back in Week 3. Plus, how to watch, what to know, and a prediction",
-      "url": "https://www.cbssports.com/nfl/news/bengals-vs-steelers-prediction-odds-how-to-watch/",
-      "published_at": "2026-11-16T00:03:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chiefs trade deadline move for Josh Downs unlocks MVP Patrick Mahomes of old",
-      "summary": "Mahomes' MVP is back thanks to his new downfield deep threat: NFL trade deadline WR addition Josh Downs",
-      "url": "https://www.cbssports.com/nfl/news/chiefs-trade-deadline-move-josh-downs-unlocks-mvp-patrick-mahomes/",
-      "published_at": "2026-11-15T23:10:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "transaction",
-      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     }
