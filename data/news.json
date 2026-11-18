@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-17T22:24:34.363292Z",
+  "generated_at": "2026-11-18T07:28:54.937692Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -341,6 +341,18 @@
       "source_confidence": 0.88,
       "category": "news",
       "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Steelers' receiver problem proves they made a massive NFL trade deadline mistake",
+      "summary": "Pittsburgh declined to add a receiver at the trade deadline, leaving Aaron Rodgers without the help he needed",
+      "url": "https://www.cbssports.com/nfl/news/steelers-bengals-blowout-nfl-trade-deadline-aaron-rodgers/",
+      "published_at": "2026-11-16T12:18:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "transaction",
+      "impact": "watch",
       "score_adjustment": 0,
       "confidence": 0.88
     }
