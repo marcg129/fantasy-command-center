@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T17:15:30.520389Z",
+  "generated_at": "2026-11-19T00:23:08.073353Z",
   "lookback_days": 7,
-  "article_count": 25,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,114 @@
     }
   ],
   "articles": [
+    {
+      "title": "Giants' Cam Skattebo to halt backflip celebrations after Aidan Hutchinson jumping celebration injury",
+      "summary": "Hutchinson suffered a season-ending knee injury while jumping to celebrate a sack in Week 10",
+      "url": "https://www.cbssports.com/nfl/news/giants-cam-skattebo-backflip-celebrations-aidan-hutchinson-injury/",
+      "published_at": "2026-11-18T23:43:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ravens CB Marlon Humphrey apologizes after saying Baltimore is 'best at making criminals'",
+      "summary": "Humphrey criticized the city where he has played all 10 of his NFL seasons on his podcast before apologizing Wednesday afternoon",
+      "url": "https://www.cbssports.com/nfl/news/ravens-pro-bowl-cb-marlon-humphrey-apologizes-baltimore-best-making-criminals/",
+      "published_at": "2026-11-18T23:22:16Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Cowboys' handling of DC Christian Parker is bizarre, leaving Dallas with more questions than answers",
+      "summary": "Dallas head coach Brian Schottenheimer maintains Parker has an \"incredibly bright future\" with the Cowboys despite taking play-calling away from his first-year coordinator",
+      "url": "https://www.cbssports.com/nfl/news/cowboys-handling-defensive-coordinator-christian-parker-mike-pettine/",
+      "published_at": "2026-11-18T22:41:54Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $200 bonus bets by targeting Buffalo-Central Michigan, NBA on Wednesday",
+      "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-buffalo-central-michigan-nba-wednesday/",
+      "published_at": "2026-11-18T21:56:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Nuggets-Celtics, Kansas-West Virginia Players Era",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college basketball, NFL betting on Wednesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nuggets-celtics-kansas-west-virginia-players-era/",
+      "published_at": "2026-11-18T20:20:49Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Agent's Take: Breaking down Dolphins' historic dead money and where they go from here",
+      "summary": "Miami's $188.88 million in dead money is unprecedented, but a number the Dolphins felt was necessary to rebuild",
+      "url": "https://www.cbssports.com/nfl/news/agents-take-breaking-down-dolphins-historic-dead-money-salary-cap/",
+      "published_at": "2026-11-18T20:13:11Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "49ers might have just outsmarted the Vikings with unique travel plan for Week 11 NFC showdown in Mexico City",
+      "summary": "The 49ers-Vikings game will be held at an elevation of almost 7,400 feet. The two teams are taking an opposite approach with their preparation",
+      "url": "https://www.cbssports.com/nfl/news/49ers-outsmarted-vikings-unique-travel-plan-week-11-nfc-showdown-mexico-city/",
+      "published_at": "2026-11-18T18:49:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "With Kyle Shanahan and Brian Flores, Vikings-49ers will be a matchup for the modern NFL",
+      "summary": "The winner of the battle between Kyle Shanahan and Brian Flores could define what the NFL becomes schematically",
+      "url": "https://www.cbssports.com/nfl/news/kyle-shanahan-brian-flores-vikings-49ers-matchup-modern-nfl/",
+      "published_at": "2026-11-18T18:32:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 11 upset alert: Two straight losses for Steelers? Can Titans shock Cowboys?",
+      "summary": "The Jets could also send the Chargers back into the loss column",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-upset-alert-predictions-steelers-titans-cowboys/",
+      "published_at": "2026-11-18T17:38:21Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Why Jaguars' Trevor Lawrence has legitimate 2026 NFL MVP case, is destined to win one at some point",
       "summary": "Across Lawrence's last 17 regular season games, he has 15-plus wins and 45-plus TD. He is only 1 of 10 QBs to achieve that feat",
@@ -45,18 +153,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Celtics-Nuggets, Kansas-West Virginia Players Era",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college basketball, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-celtics-nuggets-kansas-west-virginia-players-era/",
-      "published_at": "2026-11-18T15:30:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Week 11 NFL odds, lines, totals, spreads for every game, including Colts-Texans, Steelers-Eagles, more",
       "summary": "A look at the latest Week 11 NFL odds and updated lines for all 13 matchups.",
       "url": "https://www.cbssports.com/betting/news/week-11-nfl-betting-odds-lines-totals-spreads/",
@@ -73,18 +169,6 @@
       "summary": "The league might be witnessing the greatest season ever by a wide receiver, which could earn him the first back-to-back OPOY honors in a quarter century",
       "url": "https://www.cbssports.com/nfl/news/why-seahawks-jaxon-smith-njigba-back-to-back-nfl-offensive-player-of-the-year/",
       "published_at": "2026-11-18T14:49:09Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $200 bonus bets by targeting Central Michigan-Buffalo, NBA on Wednesday",
-      "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-central-michigan-buffalo-nba-wednesday/",
-      "published_at": "2026-11-18T14:34:17Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -277,42 +361,6 @@
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 10 Chargers vs. Ravens MNF matchup",
       "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-claim-55-bonus-for-chargers-vs-ravens-monday-night-football-predictions/",
       "published_at": "2026-11-17T00:46:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Ravens vs. Chargers prediction: Can L.A. get its first win on 'MNF' against the injury-plagued Ravens?",
-      "summary": "Plus, how to watch, odds, a preview and a prediction for the Monday night matchup",
-      "url": "https://www.cbssports.com/nfl/news/ravens-vs-chargers-how-to-watch-spread-odds-preview-prediction/",
-      "published_at": "2026-11-17T00:28:13Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Chargers vs. Ravens odds: NFL Week 10 first touchdown scorer picks, NFL predictions for Monday Night Football",
-      "summary": "Here are our top picks for first touchdown prediction markets on Monday Night Football between the Chargers and Ravens to end Week 10",
-      "url": "https://www.cbssports.com/betting/news/chargers-vs-ravens-odds-nfl-week-10-first-touchdown-scorer-picks-nfl-predictions-for-monday-night-football/",
-      "published_at": "2026-11-16T23:50:42Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Sophomore bounce-back or letdown? Will Campbell quietly improving, Ashton Jeanty among 2025 first-round busts",
-      "summary": "Last year's top draft picks reached a pivot point in their careers, and not everyone is on the right trajectory",
-      "url": "https://www.cbssports.com/nfl/news/sophomore-bounce-back-letdown-will-campbell-quietly-improving-ashton-jeanty-among-2025-first-round-busts/",
-      "published_at": "2026-11-16T22:51:37Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
