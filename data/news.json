@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-19T00:23:08.073353Z",
+  "generated_at": "2026-11-19T10:20:57.653740Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Week 11 injury report: Latest update on Chiefs' Kenneth Walker III; Lions' Kerby Joseph practices fully",
+      "summary": "Get the latest Week 11 injury updates on Kenneth Walker III, Kerby Joseph, Baker Mayfield, Mike Evans and other notable NFL players",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-injury-report-chiefs-kenneth-walker-iii-lions-kerby-joseph/",
+      "published_at": "2026-11-19T01:17:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Giants' Cam Skattebo to halt backflip celebrations after Aidan Hutchinson jumping celebration injury",
       "summary": "Hutchinson suffered a season-ending knee injury while jumping to celebrate a sack in Week 10",
@@ -61,18 +73,6 @@
       "summary": "Sign up and bet with the latest FanDuel promo code on Wednesday to get your bonus bets",
       "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-200-bonus-bets-buffalo-central-michigan-nba-wednesday/",
       "published_at": "2026-11-18T21:56:12Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Nuggets-Celtics, Kansas-West Virginia Players Era",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college basketball, NFL betting on Wednesday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nuggets-celtics-kansas-west-virginia-players-era/",
-      "published_at": "2026-11-18T20:20:49Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -361,6 +361,18 @@
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on the NFL Week 10 Chargers vs. Ravens MNF matchup",
       "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-claim-55-bonus-for-chargers-vs-ravens-monday-night-football-predictions/",
       "published_at": "2026-11-17T00:46:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chargers vs. Ravens odds: NFL Week 10 first touchdown scorer picks, NFL predictions for Monday Night Football",
+      "summary": "Here are our top picks for first touchdown prediction markets on Monday Night Football between the Chargers and Ravens to end Week 10",
+      "url": "https://www.cbssports.com/betting/news/chargers-vs-ravens-odds-nfl-week-10-first-touchdown-scorer-picks-nfl-predictions-for-monday-night-football/",
+      "published_at": "2026-11-16T23:50:42Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
