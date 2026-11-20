@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-20T03:15:21.377792Z",
+  "generated_at": "2026-11-20T12:53:47.714079Z",
   "lookback_days": 7,
-  "article_count": 31,
+  "article_count": 30,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,18 @@
     }
   ],
   "articles": [
+    {
+      "title": "Prisco's Week 11 NFL picks: Cowboys rout Titans, 49ers over Vikings, Panthers edge Ravens",
+      "summary": "Pete Prisco reveals all of his Week 11 picks, including the Jaguars to handle the Giants on the road",
+      "url": "https://www.cbssports.com/nfl/news/priscos-week-11-nfl-picks-odds-expert-picks-predictions/",
+      "published_at": "2026-11-20T04:33:10Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Most important Week 11 games for NFL playoff races: Can anyone gain separation in NFC North or NFC South?",
       "summary": "Plus, can the Giants bounce back?",
@@ -361,30 +373,6 @@
       "summary": "Dallas head coach Brian Schottenheimer maintains Parker has an \"incredibly bright future\" with the Cowboys despite taking play-calling away from his first-year coordinator",
       "url": "https://www.cbssports.com/nfl/news/cowboys-handling-defensive-coordinator-christian-parker-mike-pettine/",
       "published_at": "2026-11-18T22:41:54Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Agent's Take: Breaking down Dolphins' historic dead money and where they go from here",
-      "summary": "Miami's $188.88 million in dead money is unprecedented, but a number the Dolphins felt was necessary to rebuild",
-      "url": "https://www.cbssports.com/nfl/news/agents-take-breaking-down-dolphins-historic-dead-money-salary-cap/",
-      "published_at": "2026-11-18T20:13:11Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "With Kyle Shanahan and Brian Flores, Vikings-49ers will be a matchup for the modern NFL",
-      "summary": "The winner of the battle between Kyle Shanahan and Brian Flores could define what the NFL becomes schematically",
-      "url": "https://www.cbssports.com/nfl/news/kyle-shanahan-brian-flores-vikings-49ers-matchup-modern-nfl/",
-      "published_at": "2026-11-18T18:32:57Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
