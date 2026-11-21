@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T12:39:25.059316Z",
+  "generated_at": "2026-11-21T20:31:37.939206Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Cardinals turn to Josh Johnson — fourth starting QB in four weeks — with Carson Beck (back) sidelined",
+      "summary": "Johnson will make his season debut vs. Chiefs, the eighth team he's taken regular-season snaps for.",
+      "url": "https://www.cbssports.com/nfl/news/carson-beck-back-spasms-josh-johnson-force-cardinals-start-fourth-quarterback-four-weeks/",
+      "published_at": "2026-11-21T20:12:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Carmelo Anthony calls out Ravens' Marlon Humphrey after controversial Baltimore 'criminals' comment",
+      "summary": "Anthony spent his formative years growing up in Baltimore and wasn't going to let Humphrey's comments slide",
+      "url": "https://www.cbssports.com/nba/news/carmelo-anthony-marlon-humphrey-controversial-baltimore-criminals-comment/",
+      "published_at": "2026-11-21T18:50:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Titans' Jaylen Harrell hospitalized after serious car accident, remains in hospital in Tampa",
+      "summary": "The Titans said edge defender Jaylen Harrell remains hospitalized and is receiving care after a serious car accident Friday night in his hometown of Tampa",
+      "url": "https://www.cbssports.com/nfl/news/titans-jaylen-harrell-car-accident-hospital-tampa/",
+      "published_at": "2026-11-21T18:09:36Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Why Jaguars' Trevor Lawrence has legitimate 2026 NFL MVP case, is destined to win one at some point",
+      "summary": "Across Lawrence's last 17 regular season games, he has 15-plus wins and 45-plus TD. He is only 1 of 10 QBs to achieve that feat",
+      "url": "https://www.cbssports.com/nfl/news/jaguars-trevor-lawrence-legitimate-2026-nfl-mvp-case-destined-win-one-some-point/",
+      "published_at": "2026-11-21T14:14:48Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Don't sleep on these three NFL Week 11 games, from Joe Burrow's historic run to a rookie QB encore",
+      "summary": "Joe Burrow's historic MVP push, Tampa Bay's dominant rushing attack and Fernando Mendoza's second NFL start highlight three overlooked Week 11 games worth watching",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-games-joe-burrow-bengals-commanders/",
+      "published_at": "2026-11-21T14:04:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Tom Brady says it's 'obvious' who the NFL's best quarterback is right now: 'Numbers don't lie'",
+      "summary": "There is one QB who's playing at a higher level than any other QB in the league right now, according to Brady",
+      "url": "https://www.cbssports.com/nfl/news/tom-brady-says-its-obvious-who-nfls-best-quarterback-is-right-now/",
+      "published_at": "2026-11-21T13:01:35Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Colts waive Daniel Jones: Indy not trading QB or Jonathan Taylor at deadline now a major second-guess",
       "summary": "Indy has put themselves in a very tough spot after sitting on the fence at the deadline.",
@@ -129,18 +201,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Carson Beck back spasms could force Cardinals to start fourth quarterback in five weeks",
-      "summary": "Carson Beck did not practice Friday due to a back injury",
-      "url": "https://www.cbssports.com/nfl/news/carson-beck-back-spasms-could-force-cardinals-to-start-fourth-quarterback-in-five-weeks/",
-      "published_at": "2026-11-20T18:44:46Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -6,
-      "confidence": 0.88
-    },
-    {
       "title": "Revisiting 2026 NFL Draft: Were the Saints wise in taking a chance on injury-prone Jordyn Tyson?",
       "summary": "New Orleans took a gamble on the explosive wideout at No. 8 overall, and his early impact alongside Tyler Shough is proving the top-10 talent was worth the durability concerns",
       "url": "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-saints-took-chance-on-jordyn-tyson/",
@@ -205,18 +265,6 @@
       "summary": "NFL teams might have to change the way they travel for international games",
       "url": "https://www.cbssports.com/nfl/news/nfl-exploring-possibility-implementing-new-travel-rules-international-games/",
       "published_at": "2026-11-20T15:28:44Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Week 11 NFL odds, lines, totals, spreads for every game, including Steelers-Eagles, 49ers-Vikings, more",
-      "summary": "A look at the latest Week 11 NFL odds and updated lines for all 13 matchups.",
-      "url": "https://www.cbssports.com/betting/news/week-11-nfl-betting-odds-lines-spreads-totals/",
-      "published_at": "2026-11-20T15:19:55Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -297,18 +345,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Texans vs. Colts prediction: Houston looks to bounce back on 'TNF' vs. lowly Indy after rough Week 10 loss",
-      "summary": "Plus, how to watch, what to know and a prediction before the 'Thursday Night Football' matchup",
-      "url": "https://www.cbssports.com/nfl/news/texans-vs-colts-how-to-watch-odds-preview-prediction/",
-      "published_at": "2026-11-20T00:38:59Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Colts vs. Texans odds, first touchdown scorer picks, odds, predictions for Thursday Night Football",
       "summary": "We look at first touchdown scorer prediction markets at Kalshi for Colts vs. Texans NFL Week 11 Thursday Night Football",
       "url": "https://www.cbssports.com/prediction/news/colts-vs-texans-odds-first-touchdown-scorer-picks-odds-predictions-thursday-night-football/",
@@ -318,42 +354,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Secure $55 bonus for Colts vs. Texans, Thursday Night Football picks",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on Colts vs. Texans TNF",
-      "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-secure-55-bonus-colts-vs-texans-thursday-night-football-picks/",
-      "published_at": "2026-11-19T23:43:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "How Aidan Hutchinson injury could grant Lions a salary cap credit in 2027",
-      "summary": "The Lions would not be the first team to receive cap relief for an injured player",
-      "url": "https://www.cbssports.com/nfl/news/how-aidan-hutchinson-injury-could-grant-lions-a-salary-cap-credit-in-2027/",
-      "published_at": "2026-11-19T23:37:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams' Puka Nacua suspended three games, will serve ban during injured reserve stint",
-      "summary": "The NFL threatened Nacua with potential \"banishment\" from the league for future violations of the personal conduct policy",
-      "url": "https://www.cbssports.com/nfl/news/rams-puka-nacua-suspended-three-games-will-serve-ban-during-injured-reserve-stint/",
-      "published_at": "2026-11-19T21:46:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
