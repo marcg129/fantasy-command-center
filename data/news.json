@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T21:49:07.349280Z",
+  "generated_at": "2026-11-21T03:13:17.018938Z",
   "lookback_days": 7,
   "article_count": 27,
   "sources": [
@@ -20,6 +20,42 @@
     }
   ],
   "articles": [
+    {
+      "title": "Colts waive Daniel Jones: Indy not trading QB or Jonathan Taylor at deadline now a major second-guess",
+      "summary": "Indy has put themselves in a very tough spot after sitting on the fence at the deadline.",
+      "url": "https://www.cbssports.com/nfl/news/colts-daniel-jones-not-trading-qb-jonathan-taylor-deadline-major-second-guess/",
+      "published_at": "2026-11-21T01:37:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "49ers lose shot at breaking NFL record for most miles traveled due to Week 11 travel detour en route to Mexico",
+      "summary": "The 49ers are taking a detour in Week 11 that's going to cost them the NFL record for most miles traveled",
+      "url": "https://www.cbssports.com/nfl/news/49ers-lose-shot-breaking-nfl-record-most-miles-traveled-week-11-travel-detour/",
+      "published_at": "2026-11-20T23:51:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 11 injury report: Latest updates on Kenneth Walker III, Mike Evans, Baker Mayfield and more",
+      "summary": "A look at the game status for each team leading up to Week 11",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-11-injury-report-kenneth-walker-iii-mike-evans-baker-mayfield/",
+      "published_at": "2026-11-20T22:42:12Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
     {
       "title": "Jerry Jones calls Cowboys 'a bad team'; says team has chance to play better after Christian Parker's demotion",
       "summary": "Jones feels Dallas is a bad team right now, but he defended the puzzling decision to demote Parker and keep him on staff",
@@ -306,42 +342,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "How Aidan Hutchinson injury could grant Lions a salary cap credit in 2027",
-      "summary": "The Lions would not be the first team to receive cap relief for an injured player",
-      "url": "https://www.cbssports.com/nfl/news/how-aidan-hutchinson-injury-could-grant-lions-a-salary-cap-credit-in-2027/",
-      "published_at": "2026-11-19T23:37:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "What Cowboys' Christian Parker said about demotion: DC considered leaving, pushed back on decision",
-      "summary": "Parker mulled departing Dallas after Brian Schottenheimer took defensive play-calling",
-      "url": "https://www.cbssports.com/nfl/news/what-cowboys-christian-parker-said-defensive-coordinator-demotion/",
-      "published_at": "2026-11-19T23:20:39Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams' Puka Nacua suspended three games, will serve ban during injured reserve stint",
-      "summary": "The NFL threatened Nacua with potential \"banishment\" from the league for future violations of the personal conduct policy",
-      "url": "https://www.cbssports.com/nfl/news/rams-puka-nacua-suspended-three-games-will-serve-ban-during-injured-reserve-stint/",
-      "published_at": "2026-11-19T21:46:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "availability",
-      "impact": "negative",
-      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
