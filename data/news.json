@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-21T03:13:17.018938Z",
+  "generated_at": "2026-11-21T12:39:25.059316Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -189,18 +189,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Rockets-Nuggets, Oregon-Michigan State on Friday",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college football, NFL betting on Friday",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-rockets-nuggets-oregon-michigan-state-friday/",
-      "published_at": "2026-11-20T15:34:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Lions' Jahmyr Gibbs laying early foundation for one of the best running back careers ever",
       "summary": "Gibbs is only 3.5 years into his NFL career, and he's on a few different record-breaking paces",
       "url": "https://www.cbssports.com/nfl/news/lions-jahmyr-gibbs-laying-early-foundation-for-rb-goat-case/",
@@ -342,6 +330,30 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "How Aidan Hutchinson injury could grant Lions a salary cap credit in 2027",
+      "summary": "The Lions would not be the first team to receive cap relief for an injured player",
+      "url": "https://www.cbssports.com/nfl/news/how-aidan-hutchinson-injury-could-grant-lions-a-salary-cap-credit-in-2027/",
+      "published_at": "2026-11-19T23:37:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Rams' Puka Nacua suspended three games, will serve ban during injured reserve stint",
+      "summary": "The NFL threatened Nacua with potential \"banishment\" from the league for future violations of the personal conduct policy",
+      "url": "https://www.cbssports.com/nfl/news/rams-puka-nacua-suspended-three-games-will-serve-ban-during-injured-reserve-stint/",
+      "published_at": "2026-11-19T21:46:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
       "confidence": 0.88
     }
   ]
