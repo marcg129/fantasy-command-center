@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-22T02:13:58.490111Z",
+  "generated_at": "2026-11-22T09:49:33.298275Z",
   "lookback_days": 7,
-  "article_count": 29,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -354,18 +354,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "How Aidan Hutchinson injury could grant Lions a salary cap credit in 2027",
-      "summary": "The Lions would not be the first team to receive cap relief for an injured player",
-      "url": "https://www.cbssports.com/nfl/news/how-aidan-hutchinson-injury-could-grant-lions-a-salary-cap-credit-in-2027/",
-      "published_at": "2026-11-19T23:37:50Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
