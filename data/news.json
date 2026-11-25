@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-24T17:45:09.689813Z",
+  "generated_at": "2026-11-25T02:29:38.400867Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 29,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,90 @@
     }
   ],
   "articles": [
+    {
+      "title": "NFL Thanksgiving injury report: Micah Parsons cleared for season debut, Kenneth Walker III practices",
+      "summary": "Injury reports for every NFL team playing on Wednesday and Thursday in Week 12",
+      "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-injury-report-micah-parsons-cleared-kenneth-walker-iii-practices/",
+      "published_at": "2026-11-25T00:20:02Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Brandon Aiyuk to meet with Commanders, per report: Free agent WR seeks reunion with Jayden Daniels",
+      "summary": "Aiyuk may already have a destination lined up shortly after his release from the 49ers and waiver clearance.",
+      "url": "https://www.cbssports.com/nfl/news/brandon-aiyuk-meeting-commanders-report-free-agent-wr-reunion-jayden-daniels/",
+      "published_at": "2026-11-24T23:04:41Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Broncos suspend RB J.K. Dobbins one game for conduct detrimental to team",
+      "summary": "Dobbins will not play against the Steelers on Friday as Denver holds a slight lead over Kansas City in the AFC West race",
+      "url": "https://www.cbssports.com/nfl/news/broncos-suspend-rb-j-k-dobbins-one-game-conduct-detrimental-team/",
+      "published_at": "2026-11-24T22:07:45Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -6,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for Nuggets-Mavericks, Texas Tech-Louisville Tuesday",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NBA, college basketball, NFL betting on Tuesday",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nuggets-mavericks-texas-tech-louisville/",
+      "published_at": "2026-11-24T21:57:27Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Week 12 Super Bowl stock report: 49ers separate from pack, Jaguars show imperfections",
+      "summary": "We assess the NFL title race after Week 11 and identify three upcoming games that could reshape the Super Bowl picture",
+      "url": "https://www.cbssports.com/nfl/news/week-12-super-bowl-stock-report-49ers-separate-from-pack-jaguars-show-imperfections/",
+      "published_at": "2026-11-24T21:30:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Micah Parsons injury update: Packers star activated, cleared to make 2026 debut vs. Rams in Week 12",
+      "summary": "Green Bay's star pass rusher is set to make his 2026 debut against Los Angeles after missing nearly a year to multiple knee injuries",
+      "url": "https://www.cbssports.com/nfl/news/micah-parsons-injury-update-packers-return-rams-2026/",
+      "published_at": "2026-11-24T19:46:55Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Ranking NFL division races from first to worst: NFC North, NFC South entertaining for very different reasons",
+      "summary": "Plus, one division race is already over, per our projections",
+      "url": "https://www.cbssports.com/nfl/news/ranking-nfl-division-races-first-worst-nfc-north-nfc-south-entertaining/",
+      "published_at": "2026-11-24T18:29:57Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Sean McVay on Puka Nacua: 'Can't say for certain' what his Rams future will be amid pending free agency",
       "summary": "Nacua is set to hit free agency this offseason",
@@ -201,18 +285,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Micah Parsons injury update: Packers star cleared to make 2026 debut vs. Rams in Week 12",
-      "summary": "Green Bay's star pass rusher is set to make his 2026 debut against Los Angeles after missing nearly a year because of multiple knee injuries",
-      "url": "https://www.cbssports.com/nfl/news/micah-parsons-injury-update-packers-return-rams-2026/",
-      "published_at": "2026-11-23T23:44:04Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
       "title": "Brandon Aiyuk landing spots: Commanders, Steelers among four potential fits for former 49ers star",
       "summary": "A reunion with Jayden Daniels, an NFC West revenge tour and two potential AFC opportunities headline Aiyuk's most intriguing options",
       "url": "https://www.cbssports.com/nfl/news/brandon-aiyuk-landing-spots-commanders-steelers-49ers/",
@@ -285,94 +357,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Steelers' DK Metcalf denies trying to poke Eagles' Cooper DeJean in the eye",
-      "summary": "Metcalf was ejected from the game and will likely face further discipline from the NFL",
-      "url": "https://www.cbssports.com/nfl/news/steelers-dk-metcalf-denies-poke-eagles-cooper-dejean-eye/",
-      "published_at": "2026-11-23T18:31:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Pick Six: NFL Week 11 losers, plus grades for every team and Bengals-Commanders picks for Monday night",
       "summary": "Here's everything you need to know about the NFL for Nov. 23",
       "url": "https://www.cbssports.com/nfl/news/pick-six-nfl-week-11-losers-grades-every-team-bengals-commanders-picks-monday-night-football/",
       "published_at": "2026-11-23T18:29:35Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Josh Jacobs (finger) not expected to play in Rams-Packers Thanksgiving Eve showdown: Who Green Bay could use",
-      "summary": "Jacobs suffered the finger injury in Week 9",
-      "url": "https://www.cbssports.com/nfl/news/josh-jacobs-finger-not-expected-play-rams-packers-thanksgiving-eve-showdown-green-bay-replacement/",
-      "published_at": "2026-11-23T18:00:39Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
-      "confidence": 0.88
-    },
-    {
-      "title": "Jayden Daniels on relationship with fellow LSU alum Joe Burrow amid jersey number complaint",
-      "summary": "Daniels and Burrow meet for the second time on 'Monday Night Football'",
-      "url": "https://www.cbssports.com/nfl/news/jayden-daniels-relationship-lsu-alum-joe-burrow-its-all-love-beef/",
-      "published_at": "2026-11-23T17:14:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Parker Washington non-catch controversy: Jevón Holland says 'Shout out Vegas,' NFL says call was correct",
-      "summary": "Holland's tongue-in-cheek comment likely won't sit well at the league office",
-      "url": "https://www.cbssports.com/nfl/news/parker-washington-non-catch-controversy-jevon-holland-vegas-nfl-call-correct/",
-      "published_at": "2026-11-23T14:05:30Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "49ers, Giants, Cowboys earn top grades in NFL Week 11; fallout from Tarik Skubal's historic Mets deal",
-      "summary": "Plus why the Big Ten faces a bleak CFP outlook",
-      "url": "https://www.cbssports.com/nfl/news/49ers-giants-cowboys-earn-top-grades-in-nfl-week-11-fallout-from-tarik-skubals-historic-mets-deal/",
-      "published_at": "2026-11-23T13:57:57Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Cover 32: AFC contender is at risk of missing playoffs entirely, plus game balls, biggest gaffes from Week 11",
-      "summary": "Tyler Sullivan dives into all of the biggest items from Week 11 in the NFL, including DK Metcalf's ejection and Brock Purdy's stellar day against the Vikings defense",
-      "url": "https://www.cbssports.com/nfl/news/cover-32-afc-contender-risk-missing-playoffs-entirely-plus-game-balls-gaffes-week-11/",
-      "published_at": "2026-11-23T13:49:38Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 12 early odds: Bills favored over Chiefs for Thanksgiving showdown, Steelers home underdogs",
-      "summary": "The Bears are road favorites for their Thanksgiving matchup in Detroit",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-early-odds-bills-over-chiefs-thanksgiving-steelers/",
-      "published_at": "2026-11-23T13:15:13Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
