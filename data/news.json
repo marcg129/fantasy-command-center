@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-26T21:32:06.724217Z",
+  "generated_at": "2026-11-27T04:15:20.431996Z",
   "lookback_days": 7,
-  "article_count": 27,
+  "article_count": 28,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -21,6 +21,138 @@
   ],
   "articles": [
     {
+      "title": "Prisco's Week 12 NFL picks: Browns over Raiders, Steelers overcome issues to upset Broncos",
+      "summary": "Pete Prisco reveals all of his Week 12 picks, including the Steelers to upset the Broncos on Black Friday",
+      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-12-nfl-picks-odds-expert-picks/",
+      "published_at": "2026-11-27T03:42:14Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 12 picks: Our experts face off on Broncos at Steelers, Seahawks at 49ers and more",
+      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
+      "published_at": "2026-11-27T03:39:29Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Former Steelers coach Mike Tomlin on Aaron Rodgers-Mike McCarthy saga: 'It's a dumpster fire'",
+      "summary": "Tomlin revealed his thoughts on the entire Rodgers-McCarthy mess on Thursday night",
+      "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-aaron-rodgers-mike-mccarthy-saga-dumpster-fire/",
+      "published_at": "2026-11-27T03:37:34Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 12 grades for Thanksgiving: Cowboys choke their way to a 'D,' Bears earn 'B' for big win",
+      "summary": "Caleb Williams delivers late magic to Rome Odunze in a wild shootout, while Detroit's defense collapses and Jordan Love struggles without Christian Watson",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
+      "published_at": "2026-11-27T02:08:04Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Best Kalshi promo code CBSSPORTS55: Earn $55 bonus for Bills vs. Chiefs, NFL on Thanksgiving Day",
+      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on a strong Thanksgiving Day schedule in NFL Week 12",
+      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-earn-55-bonus-for-bills-chiefs-nfl-thanksgiving-day/",
+      "published_at": "2026-11-27T00:36:22Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Best Kalshi promo code CBSSPORTS55: Receive $55 bonus for Bills vs. Chiefs, Thanksgiving Day NFL",
+      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on Thanksgiving Day NFL games",
+      "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-receive-55-bonus-bills-chiefs-thanksgiving-day-nfl/",
+      "published_at": "2026-11-27T00:31:19Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for NFL Thanksgiving, Chiefs vs. Bills",
+      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL Thanksgiving betting 2026",
+      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-nfl-thanksgiving-chiefs-vs-bills/",
+      "published_at": "2026-11-27T00:00:51Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Chiefs vs. Bills odds, NFL Thanksgiving picks, prediction: Use Polymarket promo code CBSSPORTS for $25 bonus",
+      "summary": "Get a $25 bonus with the Polymarket promo code CBSSPORTS for Bills vs. Chiefs on Thanksgiving.",
+      "url": "https://www.cbssports.com/prediction/news/chiefs-vs-bills-odds-nfl-thanksgiving-picks-prediction-use-polymarket-promo-code-cbssports-25-bonus/",
+      "published_at": "2026-11-26T23:40:52Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Use FanDuel promo code to get $250 bonus bets by targeting NFL Thanksgiving, Bills vs. Chiefs betting",
+      "summary": "Sign up and bet with the latest FanDuel promo code to get your bonus bets on Thanksgiving",
+      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-nfl-thanksgiving-bills-chiefs-betting/",
+      "published_at": "2026-11-26T23:29:39Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "2026 NFL Thanksgiving odds, Bills-Chiefs predictions, picks: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
+      "summary": "Get a $55 bonus with the Kalshi promo code CBSSPORTS55 for Bills vs. Chiefs on Thanksgiving.",
+      "url": "https://www.cbssports.com/prediction/news/2026-nfl-thanksgiving-odds-bills-chiefs-predictions-picks-use-kalshi-promo-code-cbssports55-55-bonus/",
+      "published_at": "2026-11-26T23:16:50Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "It wouldn't shock me if ... for NFL Week 12: Steelers fall out of playoff picture minus Aaron Rodgers",
+      "summary": "Our five bold calls for Week 12 include a career day for Quinshon Judkins and mounting pressure on the Seahawks to play Drew Lock",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-predictions-colston-loveland-thanksgiving/",
+      "published_at": "2026-11-26T21:44:28Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
       "title": "Bills vs. Chiefs prediction: Which team wins latest chapter of Josh Allen-Patrick Mahomes saga?",
       "summary": "Legendary quarterbacks close out the holiday slate in one of the biggest games of the season",
       "url": "https://www.cbssports.com/nfl/news/bills-vs-chiefs-prediction-odds-how-to-watch-thanksgiving/",
@@ -33,70 +165,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Best Kalshi promo code CBSSPORTS55: Receive $55 bonus for Bills-Chiefs, Cowboys-Eagles, Thanksgiving Day NFL",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on Thanksgiving Day NFL games",
-      "url": "https://www.cbssports.com/betting/news/best-kalshi-promo-code-cbssports55-receive-55-bonus-bills-chiefs-cowboys-eagles-thanksgiving-day-nfl/",
-      "published_at": "2026-11-26T20:18:04Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "2026 NFL Thanksgiving odds, predictions, picks: Use Kalshi promo code CBSSPORTS55 for $55 bonus",
-      "summary": "Get a $55 bonus with the Kalshi promo code CBSSPORTS55 for Cowboys-Eagles and Bills-Chiefs on Thanksgiving.",
-      "url": "https://www.cbssports.com/prediction/news/2026-nfl-thanksgiving-odds-predictions-picks-use-kalshi-promo-code-cbssports55-for-55-bonus/",
-      "published_at": "2026-11-26T20:08:45Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Earn $55 bonus for Bills-Chiefs, Eagles-Cowboys, NFL on Thanksgiving Day",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on a strong Thanksgiving Day schedule in NFL Week 12",
-      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-earn-55-bonus-bills-chiefs-eagles-cowboys-nfl-thanksgiving-day/",
-      "published_at": "2026-11-26T20:03:36Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for NFL Thanksgiving, Cowboys-Eagles, Chiefs-Bills",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL Thanksgiving betting 2026",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-nfl-thanksgiving-cowboys-eagles-chiefs-bills/",
-      "published_at": "2026-11-26T20:00:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Steelers president backs Mike McCarthy after Aaron Rodgers release: 'Insubordination can't be tolerated'",
       "summary": "Rooney said the Steelers could not tolerate Rodgers' ultimatum or his decision to criticize McCarthy publicly days before a key game",
       "url": "https://www.cbssports.com/nfl/news/steelers-president-mike-mccarthy-after-aaron-rodgers-insubordination/",
       "published_at": "2026-11-26T18:04:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Prisco's Week 12 NFL picks: Cowboys feast on Eagles, Bills win thriller over Chiefs",
-      "summary": "Pete Prisco reveals all of his Week 12 picks, including the Steelers to upset the Broncos on Black Friday",
-      "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-12-nfl-picks-odds-expert-picks/",
-      "published_at": "2026-11-26T18:01:01Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -121,18 +193,6 @@
       "summary": "Former Packers players criticized Rodgers for attacking McCarthy publicly and putting his ex-Steelers teammates in an uncomfortable position",
       "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-packers-teammates-mike-mccarthy-steelers/",
       "published_at": "2026-11-26T17:48:21Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 bonus bets by targeting NFL Thanksgiving, Cowboys-Eagles, Bills-Chiefs",
-      "summary": "Sign up and bet with the latest FanDuel promo code to get your bonus bets on Thanksgiving",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-nfl-thanksgiving-cowboys-eagles-bills-chiefs/",
-      "published_at": "2026-11-26T17:22:14Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -201,34 +261,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Chiefs vs. Bills odds, NFL Thanksgiving picks, prediction: Use Polymarket promo code CBSSPORTS for $25 bonus",
-      "summary": "Get a $25 bonus with the Polymarket promo code CBSSPORTS for Bills vs. Chiefs on Thanksgiving.",
-      "url": "https://www.cbssports.com/prediction/news/chiefs-vs-bills-odds-nfl-thanksgiving-picks-prediction-use-polymarket-promo-code-cbssports-for-25-bonus/",
-      "published_at": "2026-11-26T13:49:58Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Will Mike McCarthy survive Aaron Rodgers' backlash? Steelers reportedly standing by coach, but for how long?",
       "summary": "The next seven games may determine McCarthy's future in Pittsburgh beyond 2026",
       "url": "https://www.cbssports.com/nfl/news/will-mike-mccarthy-survive-aaron-rodgers-backlash-steelers/",
       "published_at": "2026-11-26T13:29:32Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 12 picks: Our experts face off on Bears at Lions, Chiefs at Bills and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
-      "published_at": "2026-11-26T13:19:20Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -309,18 +345,6 @@
       "confidence": 0.88
     },
     {
-      "title": "Mike McCarthy responds to Aaron Rodgers, confirms QB gave him 'ultimatum:' 'I know how to win'",
-      "summary": "McCarthy responded to Rodgers' tirade against him",
-      "url": "https://www.cbssports.com/nfl/news/steelers-mike-mccarthy-responds-to-aaron-rodgers-after-pat-mcafee-interview/",
-      "published_at": "2026-11-25T23:11:02Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Packers vs. Rams predictions, odds, 2026 Thanksgiving Eve: Use Polymarket promo code CBSSPORTS for $25 bonus",
       "summary": "Get a $25 bonus with the Polymarket promo code CBSSPORTS for Packers vs. Rams on Thanksgiving Eve.",
       "url": "https://www.cbssports.com/prediction/news/packers-vs-rams-predictions-odds-2026-thanksgiving-eve-use-polymarket-promo-code-cbssports-for-25-bonus/",
@@ -330,18 +354,6 @@
       "category": "news",
       "impact": "neutral",
       "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Rams vs. Packers prediction: Can Green Bay continue success with deep ball? Will L.A. overcome injuries?",
-      "summary": "Micah Parsons makes his season debut for Green Bay as an injury-depleted Los Angeles offense leans on its ground attack in the NFL's first Thanksgiving Eve showdown",
-      "url": "https://www.cbssports.com/nfl/news/rams-vs-packers-prediction-odds-how-to-watch-thanksgiving-eve/",
-      "published_at": "2026-11-25T22:42:01Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "injury",
-      "impact": "watch",
-      "score_adjustment": -3,
       "confidence": 0.88
     }
   ]
