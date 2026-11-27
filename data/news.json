@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T04:15:20.431996Z",
+  "generated_at": "2026-11-27T13:56:46.990820Z",
   "lookback_days": 7,
   "article_count": 28,
   "sources": [
@@ -20,6 +20,66 @@
     }
   ],
   "articles": [
+    {
+      "title": "Hope is now gone for Cowboys' season after historic Thanksgiving collapse vs. Eagles",
+      "summary": "After two franchise-record meltdowns this season, the Cowboys can say goodbye to their NFC East title hopes",
+      "url": "https://www.cbssports.com/nfl/news/hope-is-gone-for-dak-prescott-cowboys-thanksgiving-loss-eagles/",
+      "published_at": "2026-11-27T13:41:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL odds, picks, predictions: Broncos, Seahawks keys to parlays involving favorites, underdogs in Week 12",
+      "summary": "SportsLine football expert Mike Tierney locks in his top parlays for Week 12 NFL games",
+      "url": "https://www.cbssports.com/betting/news/nfl-odds-picks-predictions-broncos-seahawks-keys-to-parlays-involving-favorites-underdogs-in-week-12/",
+      "published_at": "2026-11-27T13:00:30Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 12 grades for Thanksgiving: Cowboys choke their way to a 'D,' Bears earn 'B' for big win",
+      "summary": "Caleb Williams delivers late magic to Rome Odunze in a wild shootout, while Detroit's defense collapses and Jordan Love struggles without Christian Watson",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
+      "published_at": "2026-11-27T05:13:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Thanksgiving overreactions: Bears a shoo-in for NFC North title? Should Joe Milton be a full-time QB1?",
+      "summary": "Plus, is Jahmyr Gibbs truly an MVP candidate?",
+      "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-overreactions-bears-a-shoo-in-nfc-north-title-joe-milton-full-time-qb1/",
+      "published_at": "2026-11-27T05:07:38Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Jerry Jones refutes Aaron Rodgers' accusations, calls Mike McCarthy 'outstanding'",
+      "summary": "Rodgers accused McCarthy of being late to meetings, sleeping in meetings and being behind on film prep",
+      "url": "https://www.cbssports.com/nfl/news/jerry-jones-calls-mike-mccarthy-outstanding-refutes-aaron-rodgers-accusations/",
+      "published_at": "2026-11-27T04:49:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Prisco's Week 12 NFL picks: Browns over Raiders, Steelers overcome issues to upset Broncos",
       "summary": "Pete Prisco reveals all of his Week 12 picks, including the Steelers to upset the Broncos on Black Friday",
@@ -57,18 +117,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 12 grades for Thanksgiving: Cowboys choke their way to a 'D,' Bears earn 'B' for big win",
-      "summary": "Caleb Williams delivers late magic to Rome Odunze in a wild shootout, while Detroit's defense collapses and Jordan Love struggles without Christian Watson",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
-      "published_at": "2026-11-27T02:08:04Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Best Kalshi promo code CBSSPORTS55: Earn $55 bonus for Bills vs. Chiefs, NFL on Thanksgiving Day",
       "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on a strong Thanksgiving Day schedule in NFL Week 12",
       "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-earn-55-bonus-for-bills-chiefs-nfl-thanksgiving-day/",
@@ -93,34 +141,10 @@
       "confidence": 0.88
     },
     {
-      "title": "Use BetMGM bonus code CBSSPORTS to get $1,500 bonus bets for NFL Thanksgiving, Chiefs vs. Bills",
-      "summary": "Use the latest MGM promo code CBSSPORTS to get $1,500 in bonus bets if your first bet loses for NFL Thanksgiving betting 2026",
-      "url": "https://www.cbssports.com/betting/news/use-betmgm-bonus-code-cbssports-to-get-1500-bonus-bets-for-nfl-thanksgiving-chiefs-vs-bills/",
-      "published_at": "2026-11-27T00:00:51Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "Chiefs vs. Bills odds, NFL Thanksgiving picks, prediction: Use Polymarket promo code CBSSPORTS for $25 bonus",
       "summary": "Get a $25 bonus with the Polymarket promo code CBSSPORTS for Bills vs. Chiefs on Thanksgiving.",
       "url": "https://www.cbssports.com/prediction/news/chiefs-vs-bills-odds-nfl-thanksgiving-picks-prediction-use-polymarket-promo-code-cbssports-25-bonus/",
       "published_at": "2026-11-26T23:40:52Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 bonus bets by targeting NFL Thanksgiving, Bills vs. Chiefs betting",
-      "summary": "Sign up and bet with the latest FanDuel promo code to get your bonus bets on Thanksgiving",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-nfl-thanksgiving-bills-chiefs-betting/",
-      "published_at": "2026-11-26T23:29:39Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
@@ -325,30 +349,6 @@
       "summary": "Here's a look at first touchdown scorer prediction markets available at Kalshi for Packers vs. Rams NFL Week 12 on Thanksgiving Eve",
       "url": "https://www.cbssports.com/prediction/news/packers-vs-rams-first-touchdown-scorer-odds-for-nfl-thanksgiving-eve-game-picks-include-christian-watson/",
       "published_at": "2026-11-25T23:45:33Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Pocket $55 bonus for Rams vs. Packers, Thanksgiving Eve NFL predictions",
-      "summary": "Get a $55 bonus with the Kalshi promo code CBSSPORTS55 for Rams vs. Packers on Thanksgiving Eve 2026",
-      "url": "https://www.cbssports.com/nfl/news/best-kalshi-promo-code-cbssports55-pocket-55-bonus-rams-vs-packers-thanksgiving-eve-nfl-predictions/",
-      "published_at": "2026-11-25T23:30:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Packers vs. Rams predictions, odds, 2026 Thanksgiving Eve: Use Polymarket promo code CBSSPORTS for $25 bonus",
-      "summary": "Get a $25 bonus with the Polymarket promo code CBSSPORTS for Packers vs. Rams on Thanksgiving Eve.",
-      "url": "https://www.cbssports.com/prediction/news/packers-vs-rams-predictions-odds-2026-thanksgiving-eve-use-polymarket-promo-code-cbssports-for-25-bonus/",
-      "published_at": "2026-11-25T23:10:23Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
