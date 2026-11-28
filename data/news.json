@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-27T22:42:54.295325Z",
+  "generated_at": "2026-11-28T07:49:24.271842Z",
   "lookback_days": 7,
-  "article_count": 30,
+  "article_count": 31,
   "sources": [
     {
       "source": "CBS Sports NFL",
@@ -20,6 +20,78 @@
     }
   ],
   "articles": [
+    {
+      "title": "Chargers poised to start DJ Uiagalelei with Justin Herbert ruled out for Week 12",
+      "summary": "Uiagalelei's first career start marks a new low for Los Angeles' maligned offense",
+      "url": "https://www.cbssports.com/nfl/news/chargers-poised-to-start-dj-uiagalelei-with-justin-herbert-ruled-out-for-week-12/",
+      "published_at": "2026-11-28T03:43:58Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "availability",
+      "impact": "negative",
+      "score_adjustment": -10,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 12 injury report: Brock Purdy, Justin Herbert out as QB health dwindles across league",
+      "summary": "Final injury reports for every team playing on Sunday in Week 12",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-injury-report-brock-purdy-justin-herbert-out/",
+      "published_at": "2026-11-28T02:36:32Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "injury",
+      "impact": "watch",
+      "score_adjustment": -3,
+      "confidence": 0.88
+    },
+    {
+      "title": "Aaron Rodgers claims he was 'barred' from Steelers' facility: Why QB went scorched earth on Mike McCarthy",
+      "summary": "Here's why the QB went scorched earth on Mike McCarthy",
+      "url": "https://www.cbssports.com/nfl/news/aaron-rodgers-barred-from-steelers-facility-qb-went-scorched-earth-on-mike-mccarthy/",
+      "published_at": "2026-11-28T00:15:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Mason Rudolph and Steelers defense can clean up Aaron Rodgers' mess, but the franchise's problems run deeper",
+      "summary": "Pittsburgh's post-Rodgers resurgence offers hope for this season, but the organization's long-term problems aren't going away",
+      "url": "https://www.cbssports.com/nfl/news/mason-rudolph-defense-can-steady-steelers-but-real-progress-far-off/",
+      "published_at": "2026-11-27T23:45:17Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "Black Friday scorigami: Steelers-Broncos ends with final score that's never happened before in NFL history",
+      "summary": "The Broncos and Steelers combined to make NFL history on Black Friday",
+      "url": "https://www.cbssports.com/nfl/news/black-friday-scorigami-steelers-broncos-final-score-nfl-history/",
+      "published_at": "2026-11-27T23:27:44Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
+    {
+      "title": "NFL Week 12 grades for Black Friday and Thanksgiving: Steelers ace post Aaron Rodgers test",
+      "summary": "Caleb Williams delivers late magic to Rome Odunze in a wild shootout, while Detroit's defense collapses and Jordan Love struggles without Christian Watson",
+      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
+      "published_at": "2026-11-27T22:58:05Z",
+      "source": "CBS Sports NFL",
+      "source_confidence": 0.88,
+      "category": "news",
+      "impact": "neutral",
+      "score_adjustment": 0,
+      "confidence": 0.88
+    },
     {
       "title": "Jaguars lose WR Parker Washington, RB Bhayshul Tuten to injury as playoffs draw near",
       "summary": "Jacksonville's top target is evaluated week-to-week with a shoulder issue, while leading rusher Bhayshul Tuten is also out",
@@ -261,30 +333,6 @@
       "confidence": 0.88
     },
     {
-      "title": "NFL Week 12 grades for Thanksgiving: Cowboys choke their way to a 'D,' Bears earn 'B' for big win",
-      "summary": "Caleb Williams delivers late magic to Rome Odunze in a wild shootout, while Detroit's defense collapses and Jordan Love struggles without Christian Watson",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-grades-thanksgiving-bears-earn-b-packers-get-d/",
-      "published_at": "2026-11-27T14:49:23Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Use FanDuel promo code to get $250 bonus bets by targeting Broncos vs. Steelers, NFL Black Friday Game betting",
-      "summary": "Sign up and bet with the latest FanDuel promo code to get your bonus bets on Black Friday",
-      "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-broncos-vs-steelers-nfl-black-friday-game-betting/",
-      "published_at": "2026-11-27T14:29:37Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
       "title": "NFL Week 12 expert picks hub: Who wins 49ers-Seahawks showdown? Will Vikings rebound?",
       "summary": "CBSSports.com and SportsLine break down every single NFL game in Week 12",
       "url": "https://www.cbssports.com/nfl/news/nfl-week-12-expert-picks-hub-odds-best-bets-49ers-seahawks/",
@@ -337,42 +385,6 @@
       "summary": "Pete Prisco reveals all of his Week 12 picks, including the Steelers to upset the Broncos on Black Friday",
       "url": "https://www.cbssports.com/nfl/news/pete-priscos-week-12-nfl-picks-odds-expert-picks/",
       "published_at": "2026-11-27T03:42:14Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "NFL Week 12 picks: Our experts face off on Broncos at Steelers, Seahawks at 49ers and more",
-      "summary": "CBS Sports writers Jordan Dajani and Jared Dubin predict this weekend's top games",
-      "url": "https://www.cbssports.com/nfl/news/nfl-week-12-picks-our-experts-face-off-on-bears-at-lions-chiefs-at-bills-and-more/",
-      "published_at": "2026-11-27T03:39:29Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Former Steelers coach Mike Tomlin on Aaron Rodgers-Mike McCarthy saga: 'It's a dumpster fire'",
-      "summary": "Tomlin revealed his thoughts on the entire Rodgers-McCarthy mess on Thursday night",
-      "url": "https://www.cbssports.com/nfl/news/former-steelers-coach-mike-tomlin-aaron-rodgers-mike-mccarthy-saga-dumpster-fire/",
-      "published_at": "2026-11-27T03:37:34Z",
-      "source": "CBS Sports NFL",
-      "source_confidence": 0.88,
-      "category": "news",
-      "impact": "neutral",
-      "score_adjustment": 0,
-      "confidence": 0.88
-    },
-    {
-      "title": "Best Kalshi promo code CBSSPORTS55: Earn $55 bonus for Bills vs. Chiefs, NFL on Thanksgiving Day",
-      "summary": "New Kalshi users can get a $55 bonus after making $25+ in trades on a strong Thanksgiving Day schedule in NFL Week 12",
-      "url": "https://www.cbssports.com/prediction/news/best-kalshi-promo-code-cbssports55-earn-55-bonus-for-bills-chiefs-nfl-thanksgiving-day/",
-      "published_at": "2026-11-27T00:36:22Z",
       "source": "CBS Sports NFL",
       "source_confidence": 0.88,
       "category": "news",
